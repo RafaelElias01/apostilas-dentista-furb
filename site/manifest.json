@@ -1,0 +1,21 @@
+{
+  "name": "Estudo Cirurgião-Dentista FURB",
+  "short_name": "Dentista FURB",
+  "description": "Treino com questões de provas anteriores da banca FURB para Cirurgião-Dentista.",
+  "start_url": "/apostilas-dentista-furb/",
+  "scope": "/apostilas-dentista-furb/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f0f3fa",
+  "theme_color": "#3b5bdb",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education"]
+}
