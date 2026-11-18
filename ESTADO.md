@@ -10,8 +10,8 @@
   - Copiados do projeto HCPA (só leitura lá): Lei 8.080, documento base do HumanizaSUS e Carta dos Direitos dos Usuários.
 - **curso/edital.md**: edital verificado, com a fonte de cada dado. A base é o PSPS 003/2025 de Blumenau: 40 questões (LP 10, CGL 10, CE 20). Tem as edições anteriores e as pendências.
 - **curso/questoes-anteriores.json**: 1.440 questões.
-  - 840 de Blumenau, de 21 cadernos de dentista.
-  - 600 de outros municípios FURB, só de referência.
+  - 850 de Blumenau, de 21 cadernos de dentista (5 editais: 2019, 2021×2, 2023, 2025).
+  - 590 de outros municípios FURB, só de referência (Florianópolis 80, Biguaçu 300, Itapema 210).
 - **curso/radar-banca.json**: 8 apostilas, com 374 questões únicas de Blumenau.
   - Amostra pequena: 5 editais de um só município, 2019 a 2025.
   - Os tópicos de outros municípios foram classificados automaticamente e servem só de complemento.
@@ -20,7 +20,7 @@
 
 ## Auditoria do radar e do banco de questões (2026-11-18, Opus)
 Scripts de conferência na pasta scratchpad da sessão, fora do repo.
-- **Gabaritos:** comparei as 840 questões de Blumenau com o texto dos gabaritos oficiais (2019, 2021 e 2021 concurso; 2023 "após recursos do resultado preliminar"; 2025 "Correta: X" impresso no caderno oficial). **Nenhuma divergência.**
+- **Gabaritos:** comparei as 850 questões de Blumenau com o texto dos gabaritos oficiais (2019, 2021 e 2021 concurso; 2023 "após recursos do resultado preliminar"; 2025 "Correta: X" impresso no caderno oficial). **Nenhuma divergência.**
   - Em 2023, cinco questões de LP estavam anuladas no gabarito oficial e voltaram a valer no gabarito "após recursos do resultado preliminar", que é o documento mais recente. O JSON segue esse último, e está certo.
   - Em 2025 (BMF), a questão 10 tem o gabarito em outra página (quebra de página). Conferi à mão: D.
 - **Estrutura:** os 21 cadernos estão completos, com numeração contínua, 5 alternativas e tópico em todas as questões.
