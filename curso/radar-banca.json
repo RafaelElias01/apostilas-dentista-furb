@@ -1,0 +1,2044 @@
+{
+ "geradoEm": "2026-11-18",
+ "banca": "FURB",
+ "aviso": "Amostra pequena: 4 processos seletivos (2019, 2021, 2023, 2025) e 1 concurso público (2021) da Prefeitura de Blumenau, todos FURB. Contagem por questão ÚNICA de cada edital (as provas das 5 especialidades repetem as mesmas questões em ordem embaralhada). Balneário Camboriú ainda NÃO tem prova de dentista pela FURB: edital 2026 não publicado. Frequências indicam tendência, não garantia.",
+ "metodo": "Questões extraídas dos cadernos oficiais (texto do PDF) e cruzadas com o gabarito oficial (2019, 2021: gabarito oficial; 2023: gabarito oficial após recursos do resultado preliminar; 2025: gabarito oficial impresso no caderno \"com gabarito oficial\"). Classificação MANUAL (Opus) para todas as questões de Blumenau; outros municípios: classificação automática por palavra-chave, só como referência complementar.",
+ "edicoesBlumenau": [
+  "2019 PSPS 002/2019",
+  "2021 Concurso Público 002/2021",
+  "2021 PSPS 002/2021",
+  "2023 PSPS 003/2023",
+  "2025 PSPS 003/2025"
+ ],
+ "composicaoProvaBlumenau": {
+  "PSPS (2019-2025)": {
+   "LP": 10,
+   "CGL": 10,
+   "CE": 20,
+   "total": 40,
+   "valorQuestao": 0.25
+  },
+  "Concurso Público 002/2021": {
+   "LP": 10,
+   "CGL": 10,
+   "CE": 30,
+   "total": 50,
+   "valorQuestao": 0.2
+  }
+ },
+ "apostilas": [
+  {
+   "numero": 1,
+   "id": "portugues",
+   "titulo": "Língua Portuguesa",
+   "questoesUnicasBlumenau": 50,
+   "topicos": [
+    {
+     "topico": "lp.classes",
+     "rotulo": "Classes gramaticais (inclui tempos e modos verbais)",
+     "questoesUnicas": 10,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 3,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 5
+     },
+     "emProvaDeClinicoGeral": 10,
+     "comumATodasAsEspecialidades": 5,
+     "anuladas": 2
+    },
+    {
+     "topico": "lp.coord_subord",
+     "rotulo": "Coordenação e subordinação; valores semânticos dos conectivos",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 2,
+      "2021 PSPS 002/2021": 3
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 5,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.sintaxe",
+     "rotulo": "Sintaxe (termos da oração, período, vozes verbais)",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2023 PSPS 003/2023": 2,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 2
+    },
+    {
+     "topico": "lp.compreensao",
+     "rotulo": "Compreensão e interpretação de textos",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 3,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.acentuacao",
+     "rotulo": "Acentuação gráfica",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 2
+    },
+    {
+     "topico": "lp.semantica",
+     "rotulo": "Significação das palavras (sinônimos, antônimos, parônimos, sentido no texto)",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 2,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.crase",
+     "rotulo": "Crase (acento grave)",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 1
+    },
+    {
+     "topico": "lp.pontuacao",
+     "rotulo": "Pontuação",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.ortografia",
+     "rotulo": "Ortografia (inclui hífen)",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.regencia",
+     "rotulo": "Regência nominal e verbal",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.coesao",
+     "rotulo": "Coesão referencial e sequencial",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 1
+    },
+    {
+     "topico": "lp.generos_funcoes",
+     "rotulo": "Gêneros do discurso, estrutura e funções da linguagem",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.figuras_sentido",
+     "rotulo": "Figuras de linguagem, sentido denotativo/conotativo",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.formacao",
+     "rotulo": "Estrutura e formação de palavras",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "lp.colocacao",
+     "rotulo": "Colocação pronominal",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "id": "conhecimentos-gerais-legislacao",
+   "titulo": "Conhecimentos Gerais e Legislação Municipal",
+   "questoesUnicasBlumenau": 50,
+   "topicos": [
+    {
+     "topico": "cgl.lom",
+     "rotulo": "Lei Orgânica do Município de Blumenau",
+     "questoesUnicas": 11,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 4,
+      "2025 PSPS 003/2025": 3,
+      "2021 Concurso Público 002/2021": 2
+     },
+     "emProvaDeClinicoGeral": 11,
+     "comumATodasAsEspecialidades": 9,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.brasil_mundo",
+     "rotulo": "Aspectos históricos, políticos, econômicos e sociais: Brasil e mundo (atualidades)",
+     "questoesUnicas": 10,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 2,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 3,
+      "2025 PSPS 003/2025": 2,
+      "2021 Concurso Público 002/2021": 2
+     },
+     "emProvaDeClinicoGeral": 10,
+     "comumATodasAsEspecialidades": 8,
+     "anuladas": 1
+    },
+    {
+     "topico": "cgl.historia_cultura_sc",
+     "rotulo": "História, cultura e economia de Santa Catarina e Blumenau",
+     "questoesUnicas": 8,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 3,
+      "2021 PSPS 002/2021": 2,
+      "2021 Concurso Público 002/2021": 3
+     },
+     "emProvaDeClinicoGeral": 8,
+     "comumATodasAsEspecialidades": 5,
+     "anuladas": 1
+    },
+    {
+     "topico": "cgl.ciencia_inovacao",
+     "rotulo": "Descobertas e inovações científicas",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 2,
+      "2025 PSPS 003/2025": 3
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 5,
+     "anuladas": 1
+    },
+    {
+     "topico": "cgl.lei7564",
+     "rotulo": "Lei Ordinária Municipal n.º 7.564/2010 (contratação temporária)",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 3
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.lc660",
+     "rotulo": "LC 660/2007 (Estatuto dos Servidores) - FORA do edital 003/2025",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.lc661",
+     "rotulo": "LC 661/2007 (Plano de Cargos) - FORA do edital 003/2025",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.urbano",
+     "rotulo": "Desenvolvimento urbano brasileiro",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.cultura_artes",
+     "rotulo": "Cultura e sociedade brasileira: arte, literatura, mídias",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "cgl.lc1234",
+     "rotulo": "LC 1.234/2019 (Estrutura Administrativa) - FORA do edital 003/2025",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "id": "sus-saude-publica",
+   "titulo": "SUS, Políticas de Saúde e Epidemiologia",
+   "questoesUnicasBlumenau": 30,
+   "topicos": [
+    {
+     "topico": "sus.lei8080",
+     "rotulo": "Lei 8.080/1990: princípios, diretrizes, objetivos, competências, organização",
+     "questoesUnicas": 8,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 5
+     },
+     "emProvaDeClinicoGeral": 8,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 1
+    },
+    {
+     "topico": "sus.atencao_basica",
+     "rotulo": "Modelo assistencial, níveis de atenção, PNAB, ESF, NASF, redes",
+     "questoesUnicas": 6,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 2,
+      "2021 PSPS 002/2021": 2,
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 6,
+     "comumATodasAsEspecialidades": 6,
+     "anuladas": 0
+    },
+    {
+     "topico": "sus.epidemiologia",
+     "rotulo": "Epidemiologia: bases conceituais, indicadores, sistemas de informação",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 2,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 1
+    },
+    {
+     "topico": "sus.controle_social",
+     "rotulo": "Controle social: conselhos e conferências",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 2,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 0
+    },
+    {
+     "topico": "sus.lei8142",
+     "rotulo": "Lei 8.142/1990: participação da comunidade e transferências",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "sus.humanizacao_politicas",
+     "rotulo": "Humanização (PNH, Lei 15.126/2025) e políticas do SUS",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "sus.gestao",
+     "rotulo": "Gestão: comissões intergestores, gestão colegiada, responsabilidade sanitária",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 1
+    },
+    {
+     "topico": "sus.financiamento_planejamento",
+     "rotulo": "Planejamento, orçamento e financiamento (FNS)",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2025 PSPS 003/2025": 2
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "sus.saude_trabalhador",
+     "rotulo": "Saúde do trabalhador no SUS",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 4,
+   "id": "etica-biosseguranca",
+   "titulo": "Ética, Relações Humanas, Biossegurança e Prontuário",
+   "questoesUnicasBlumenau": 26,
+   "topicos": [
+    {
+     "topico": "bio.biosseguranca",
+     "rotulo": "Biossegurança: antissepsia, esterilização e seu monitoramento, EPIs, risco de transmissão",
+     "questoesUnicas": 7,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 3,
+      "2025 PSPS 003/2025": 2,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 2,
+     "anuladas": 0
+    },
+    {
+     "topico": "etica.relacoes",
+     "rotulo": "Relações humanas no trabalho",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 4,
+     "anuladas": 0
+    },
+    {
+     "topico": "etica.servico_publico",
+     "rotulo": "Ética profissional no serviço público",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 0
+    },
+    {
+     "topico": "etica.codigo_cfo",
+     "rotulo": "Código de Ética Odontológica (CFO)",
+     "questoesUnicas": 4,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 3,
+      "2025 PSPS 003/2025": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "etica.responsabilidade",
+     "rotulo": "Responsabilidade profissional (negligência, imprudência, imperícia)",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 3
+     },
+     "emProvaDeClinicoGeral": 0,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "bio.residuos",
+     "rotulo": "Gerenciamento de resíduos (PGRSS)",
+     "questoesUnicas": 2,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 2
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "bio.prontuario",
+     "rotulo": "Prontuário odontológico",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 0,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "id": "cariologia-prevencao-odontopediatria",
+   "titulo": "Cariologia, Prevenção, Saúde Bucal Coletiva e Odontopediatria",
+   "questoesUnicasBlumenau": 41,
+   "topicos": [
+    {
+     "topico": "ped",
+     "rotulo": "Odontopediatria: desenvolvimento, manejo, maloclusões, lesões e terapia pulpar em decíduos",
+     "questoesUnicas": 20,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 5,
+      "2021 PSPS 002/2021": 5,
+      "2023 PSPS 003/2023": 6,
+      "2025 PSPS 003/2025": 3,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "prev.epi_bucal",
+     "rotulo": "Epidemiologia em saúde bucal (índices, levantamentos)",
+     "questoesUnicas": 7,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 4,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "cario",
+     "rotulo": "Cariologia: etiologia, biofilme, saliva, diagnóstico e risco",
+     "questoesUnicas": 6,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 4,
+      "2021 Concurso Público 002/2021": 2
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "prev.fluor",
+     "rotulo": "Flúor: mecanismos, métodos, fluorose e toxicidade",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 2,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "clin.plano_tratamento",
+     "rotulo": "Plano de tratamento integrado",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "prev.saude_coletiva",
+     "rotulo": "Saúde bucal coletiva, programas e promoção de saúde",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "clin.pacientes_especiais",
+     "rotulo": "Pacientes especiais e idosos",
+     "questoesUnicas": 1,
+     "porEdicao": {
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "id": "dentistica-endodontia-trauma",
+   "titulo": "Dentística, Materiais, Oclusão, Endodontia e Traumatismo",
+   "questoesUnicasBlumenau": 76,
+   "topicos": [
+    {
+     "topico": "endo",
+     "rotulo": "Endodontia: diagnóstico, anatomia, preparo, irrigação, medicação, obturação, urgências",
+     "questoesUnicas": 30,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 9,
+      "2021 PSPS 002/2021": 8,
+      "2023 PSPS 003/2023": 9,
+      "2025 PSPS 003/2025": 4
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 0
+    },
+    {
+     "topico": "dent",
+     "rotulo": "Dentística e materiais: preparo, resinas, amálgama, CIV, adesivos, clareamento, proteção pulpar",
+     "questoesUnicas": 21,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 2,
+      "2021 PSPS 002/2021": 7,
+      "2023 PSPS 003/2023": 6,
+      "2025 PSPS 003/2025": 1,
+      "2021 Concurso Público 002/2021": 5
+     },
+     "emProvaDeClinicoGeral": 18,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 3
+    },
+    {
+     "topico": "trauma",
+     "rotulo": "Traumatismo dentoalveolar",
+     "questoesUnicas": 14,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 5,
+      "2021 PSPS 002/2021": 3,
+      "2023 PSPS 003/2023": 2,
+      "2025 PSPS 003/2025": 3,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 5,
+     "comumATodasAsEspecialidades": 3,
+     "anuladas": 0
+    },
+    {
+     "topico": "dent.oclusao_dtm",
+     "rotulo": "Oclusão e DTM",
+     "questoesUnicas": 6,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 3,
+      "2023 PSPS 003/2023": 2,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "radio",
+     "rotulo": "Radiologia e imagem",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2021 PSPS 002/2021": 3,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 1,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    }
+   ]
+  },
+  {
+   "numero": 7,
+   "id": "periodontia",
+   "titulo": "Periodontia",
+   "questoesUnicasBlumenau": 38,
+   "topicos": [
+    {
+     "topico": "perio",
+     "rotulo": "Periodontia: anatomia, classificação, etiologia, diagnóstico, tratamento e manutenção",
+     "questoesUnicas": 38,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 13,
+      "2021 PSPS 002/2021": 7,
+      "2023 PSPS 003/2023": 12,
+      "2025 PSPS 003/2025": 4,
+      "2021 Concurso Público 002/2021": 2
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 1,
+     "anuladas": 1
+    }
+   ]
+  },
+  {
+   "numero": 8,
+   "id": "cirurgia-farmacologia-patologia",
+   "titulo": "Cirurgia, Anestesia, Farmacologia, Emergências e Patologia Bucal",
+   "questoesUnicasBlumenau": 63,
+   "topicos": [
+    {
+     "topico": "cir",
+     "rotulo": "Cirurgia oral e bucomaxilofacial: exodontia, técnica cirúrgica, fraturas, cistos",
+     "questoesUnicas": 28,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 5,
+      "2021 PSPS 002/2021": 8,
+      "2023 PSPS 003/2023": 12,
+      "2025 PSPS 003/2025": 3
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "pato",
+     "rotulo": "Patologia e estomatologia: lesões, infecções, cancerizáveis, glândulas salivares",
+     "questoesUnicas": 12,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 5,
+      "2021 PSPS 002/2021": 4,
+      "2023 PSPS 003/2023": 1,
+      "2025 PSPS 003/2025": 2
+     },
+     "emProvaDeClinicoGeral": 7,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "anest",
+     "rotulo": "Anestesia local: anestésicos, técnicas, complicações",
+     "questoesUnicas": 9,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 3,
+      "2023 PSPS 003/2023": 4,
+      "2021 Concurso Público 002/2021": 1
+     },
+     "emProvaDeClinicoGeral": 3,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "farm",
+     "rotulo": "Farmacologia e terapêutica (antimicrobianos, analgésicos, profilaxia)",
+     "questoesUnicas": 6,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 1,
+      "2023 PSPS 003/2023": 1,
+      "2021 Concurso Público 002/2021": 3
+     },
+     "emProvaDeClinicoGeral": 4,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 1
+    },
+    {
+     "topico": "anat",
+     "rotulo": "Anatomia de cabeça e pescoço (inervação, vascularização, ossos)",
+     "questoesUnicas": 5,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 1,
+      "2021 PSPS 002/2021": 2,
+      "2023 PSPS 003/2023": 2
+     },
+     "emProvaDeClinicoGeral": 2,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    },
+    {
+     "topico": "emerg",
+     "rotulo": "Emergências médicas no consultório",
+     "questoesUnicas": 3,
+     "porEdicao": {
+      "2019 PSPS 002/2019": 3
+     },
+     "emProvaDeClinicoGeral": 0,
+     "comumATodasAsEspecialidades": 0,
+     "anuladas": 0
+    }
+   ]
+  }
+ ],
+ "complementarOutrosMunicipiosAuto": [
+  {
+   "apostila": 0,
+   "topico": "?",
+   "questoes": 25
+  },
+  {
+   "apostila": 0,
+   "topico": "cgl.?",
+   "questoes": 45
+  },
+  {
+   "apostila": 0,
+   "topico": "lp.?",
+   "questoes": 145
+  },
+  {
+   "apostila": 0,
+   "topico": "mat",
+   "questoes": 35
+  },
+  {
+   "apostila": 0,
+   "topico": "rl",
+   "questoes": 75
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.atencao_basica",
+   "questoes": 20
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.controle_social",
+   "questoes": 9
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.epidemiologia",
+   "questoes": 17
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.financiamento_planejamento",
+   "questoes": 9
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.humanizacao_politicas",
+   "questoes": 7
+  },
+  {
+   "apostila": 3,
+   "topico": "sus.lei8080",
+   "questoes": 27
+  },
+  {
+   "apostila": 4,
+   "topico": "bio.biosseguranca",
+   "questoes": 5
+  },
+  {
+   "apostila": 4,
+   "topico": "etica.relacoes",
+   "questoes": 1
+  },
+  {
+   "apostila": 4,
+   "topico": "etica.servico_publico",
+   "questoes": 40
+  },
+  {
+   "apostila": 5,
+   "topico": "cario",
+   "questoes": 25
+  },
+  {
+   "apostila": 5,
+   "topico": "ped",
+   "questoes": 3
+  },
+  {
+   "apostila": 5,
+   "topico": "prev.fluor",
+   "questoes": 4
+  },
+  {
+   "apostila": 6,
+   "topico": "dent",
+   "questoes": 14
+  },
+  {
+   "apostila": 6,
+   "topico": "dent.oclusao_dtm",
+   "questoes": 6
+  },
+  {
+   "apostila": 6,
+   "topico": "endo",
+   "questoes": 31
+  },
+  {
+   "apostila": 6,
+   "topico": "radio",
+   "questoes": 3
+  },
+  {
+   "apostila": 6,
+   "topico": "trauma",
+   "questoes": 1
+  },
+  {
+   "apostila": 7,
+   "topico": "perio",
+   "questoes": 26
+  },
+  {
+   "apostila": 8,
+   "topico": "anat",
+   "questoes": 2
+  },
+  {
+   "apostila": 8,
+   "topico": "anest",
+   "questoes": 2
+  },
+  {
+   "apostila": 8,
+   "topico": "cir",
+   "questoes": 4
+  },
+  {
+   "apostila": 8,
+   "topico": "farm",
+   "questoes": 1
+  },
+  {
+   "apostila": 8,
+   "topico": "pato",
+   "questoes": 8
+  }
+ ],
+ "provas": [
+  {
+   "id": "blu-2019-bmf",
+   "municipio": "Blumenau",
+   "ano": 2019,
+   "edital": "PSPS 002/2019",
+   "cargo": "Cirurgião Dentista Buco-Maxilo-Facial",
+   "arquivo": "fontes/blumenau-2019-psps-002/provas/CIRURGIAO-DENTISTA-BUCO-MAXILO-FACIAL.pdf",
+   "gabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2019-clinico",
+   "municipio": "Blumenau",
+   "ano": 2019,
+   "edital": "PSPS 002/2019",
+   "cargo": "Cirurgião Dentista Clínico Geral",
+   "arquivo": "fontes/blumenau-2019-psps-002/provas/CIRURGIAO-DENTISTA-CLINICO-GERAL.pdf",
+   "gabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2019-endo",
+   "municipio": "Blumenau",
+   "ano": 2019,
+   "edital": "PSPS 002/2019",
+   "cargo": "Cirurgião Dentista Endodontista",
+   "arquivo": "fontes/blumenau-2019-psps-002/provas/CIRURGIAO-DENTISTA-ENDODONTISTA.pdf",
+   "gabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2019-odontoped",
+   "municipio": "Blumenau",
+   "ano": 2019,
+   "edital": "PSPS 002/2019",
+   "cargo": "Cirurgião Dentista Odontopediatra",
+   "arquivo": "fontes/blumenau-2019-psps-002/provas/CIRURGIAO-DENTISTA-ODONTOPEDIATRA.pdf",
+   "gabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2019-perio",
+   "municipio": "Blumenau",
+   "ano": 2019,
+   "edital": "PSPS 002/2019",
+   "cargo": "Cirurgião Dentista Periodontista",
+   "arquivo": "fontes/blumenau-2019-psps-002/provas/CIRURGIAO-DENTISTA-PERIODONTISTA.pdf",
+   "gabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021-bmf",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "PSPS 002/2021",
+   "cargo": "Cirurgião Dentista Buco-Maxilo-Facial",
+   "arquivo": "fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-BUCO-MAXILO-FACIAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q6: A -> E"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021-clinico",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "PSPS 002/2021",
+   "cargo": "Cirurgião Dentista Clínico Geral",
+   "arquivo": "fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-CLINICO-GERAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 1,
+   "alteradasAposGabaritoPreliminar": [
+    "q10: B -> E",
+    "q34: C -> D",
+    "q36: D -> B",
+    "q37: B -> ANULADA",
+    "q38: B -> E"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021-endo",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "PSPS 002/2021",
+   "cargo": "Cirurgião Dentista Endodontista",
+   "arquivo": "fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q3: A -> E"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021-odontoped",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "PSPS 002/2021",
+   "cargo": "Cirurgião Dentista Odontopediatra",
+   "arquivo": "fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q10: D -> B"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021-perio",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "PSPS 002/2021",
+   "cargo": "Cirurgião Dentista Periodontista",
+   "arquivo": "fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
+   "questoes": 40,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q9: B -> D"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2023-bmf",
+   "municipio": "Blumenau",
+   "ano": 2023,
+   "edital": "PSPS 003/2023",
+   "cargo": "Cirurgião Dentista Buco-Maxilo-Facial",
+   "arquivo": "fontes/blumenau-2023-psps-003/provas/CIRURGIAO-DENTISTA-BUCO-MAXILO-FACIAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2023-psps-003/gabarito-oficial-apos-recursos-resultado-preliminar.pdf",
+   "questoes": 40,
+   "anuladas": 4,
+   "alteradasAposGabaritoPreliminar": [
+    "q5: D -> ANULADA",
+    "q7: C -> ANULADA",
+    "q16: A -> ANULADA",
+    "q37: E -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2023-clinico",
+   "municipio": "Blumenau",
+   "ano": 2023,
+   "edital": "PSPS 003/2023",
+   "cargo": "Cirurgião Dentista Clínico Geral",
+   "arquivo": "fontes/blumenau-2023-psps-003/provas/CIRURGIAO-DENTISTA-CLINICO-GERAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2023-psps-003/gabarito-oficial-apos-recursos-resultado-preliminar.pdf",
+   "questoes": 40,
+   "anuladas": 6,
+   "alteradasAposGabaritoPreliminar": [
+    "q2: D -> ANULADA",
+    "q1: C -> ANULADA",
+    "q13: D -> ANULADA",
+    "q36: A -> ANULADA",
+    "q23: E -> ANULADA",
+    "q27: C -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2023-endo",
+   "municipio": "Blumenau",
+   "ano": 2023,
+   "edital": "PSPS 003/2023",
+   "cargo": "Cirurgião Dentista Endodontista",
+   "arquivo": "fontes/blumenau-2023-psps-003/provas/CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2023-psps-003/gabarito-oficial-apos-recursos-resultado-preliminar.pdf",
+   "questoes": 40,
+   "anuladas": 4,
+   "alteradasAposGabaritoPreliminar": [
+    "q1: E -> ANULADA",
+    "q3: C -> ANULADA",
+    "q12: C -> ANULADA",
+    "q38: E -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2023-odontoped",
+   "municipio": "Blumenau",
+   "ano": 2023,
+   "edital": "PSPS 003/2023",
+   "cargo": "Cirurgião Dentista Odontopediatra",
+   "arquivo": "fontes/blumenau-2023-psps-003/provas/CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2023-psps-003/gabarito-oficial-apos-recursos-resultado-preliminar.pdf",
+   "questoes": 40,
+   "anuladas": 4,
+   "alteradasAposGabaritoPreliminar": [
+    "q6: A -> ANULADA",
+    "q7: D -> ANULADA",
+    "q11: B -> ANULADA",
+    "q38: C -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2023-perio",
+   "municipio": "Blumenau",
+   "ano": 2023,
+   "edital": "PSPS 003/2023",
+   "cargo": "Cirurgião Dentista Periodontista",
+   "arquivo": "fontes/blumenau-2023-psps-003/provas/CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2023-psps-003/gabarito-oficial-apos-recursos-resultado-preliminar.pdf",
+   "questoes": 40,
+   "anuladas": 5,
+   "alteradasAposGabaritoPreliminar": [
+    "q2: C -> ANULADA",
+    "q4: E -> ANULADA",
+    "q17: E -> ANULADA",
+    "q38: C -> ANULADA",
+    "q24: C -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2025-bmf",
+   "municipio": "Blumenau",
+   "ano": 2025,
+   "edital": "PSPS 003/2025",
+   "cargo": "Cirurgião Dentista Buco-Maxilo-Facial",
+   "arquivo": "fontes/blumenau-2025-psps-003/provas/5783-CIRURGIAO-DENTISTA-BUCO-MAXILO-FACIAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2025-psps-003/provas/5783-CIRURGIAO-DENTISTA-BUCO-MAXILO-FACIAL-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 40,
+   "anuladas": 3,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2025-clinico",
+   "municipio": "Blumenau",
+   "ano": 2025,
+   "edital": "PSPS 003/2025",
+   "cargo": "Cirurgião Dentista Clínico Geral",
+   "arquivo": "fontes/blumenau-2025-psps-003/provas/5784-CIRURGIAO-DENTISTA-CLINICO-GERAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2025-psps-003/provas/5784-CIRURGIAO-DENTISTA-CLINICO-GERAL-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 40,
+   "anuladas": 3,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2025-endo",
+   "municipio": "Blumenau",
+   "ano": 2025,
+   "edital": "PSPS 003/2025",
+   "cargo": "Cirurgião Dentista Endodontista",
+   "arquivo": "fontes/blumenau-2025-psps-003/provas/5785-CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2025-psps-003/provas/5785-CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 40,
+   "anuladas": 3,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2025-odontoped",
+   "municipio": "Blumenau",
+   "ano": 2025,
+   "edital": "PSPS 003/2025",
+   "cargo": "Cirurgião Dentista Odontopediatra",
+   "arquivo": "fontes/blumenau-2025-psps-003/provas/5786-CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2025-psps-003/provas/5786-CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 40,
+   "anuladas": 3,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2025-perio",
+   "municipio": "Blumenau",
+   "ano": 2025,
+   "edital": "PSPS 003/2025",
+   "cargo": "Cirurgião Dentista Periodontista",
+   "arquivo": "fontes/blumenau-2025-psps-003/provas/5787-CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2025-psps-003/provas/5787-CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 40,
+   "anuladas": 3,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "blu-2021c-cd",
+   "municipio": "Blumenau",
+   "ano": 2021,
+   "edital": "Concurso Público 002/2021",
+   "cargo": "Cirurgião Dentista",
+   "arquivo": "fontes/blumenau-2021-concurso-002/provas/CIRURGIAO-DENTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/blumenau-2021-concurso-002/gabarito-oficial.pdf",
+   "questoes": 50,
+   "anuladas": 8,
+   "alteradasAposGabaritoPreliminar": [
+    "q1: D -> ANULADA",
+    "q2: D -> ANULADA",
+    "q5: D -> ANULADA",
+    "q19: D -> ANULADA",
+    "q25: B -> C",
+    "q27: E -> ANULADA",
+    "q36: C -> ANULADA",
+    "q42: B -> C"
+   ],
+   "usadaNoRadarPrincipal": true
+  },
+  {
+   "id": "fln-2024-endo",
+   "municipio": "Florianópolis (OUTRO MUNICÍPIO)",
+   "ano": 2024,
+   "edital": "Concurso Público 001/2024",
+   "cargo": "Odontólogo - Endodontista",
+   "arquivo": "fontes/outros-municipios-furb/florianopolis-2024-concurso-001/provas/4227-ODONTOLOGO-ENDODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/florianopolis-2024-concurso-001/gabarito-oficial.pdf",
+   "questoes": 80,
+   "anuladas": 4,
+   "alteradasAposGabaritoPreliminar": [
+    "q1: C -> ANULADA",
+    "q74: E -> ANULADA",
+    "q76: E -> ANULADA",
+    "q78: A -> ANULADA"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-endo",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo Especialista I - Endodontia",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/251-ODONTOLOGO-ESPECIALISTA-I-ENDODONTIA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/251-ODONTOLOGO-ESPECIALISTA-I-ENDODONTIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q47: C -> A",
+    "q48: C -> E"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-protese",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo Especialista VI - Próteses",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/255-ODONTOLOGO-ESPECIALISTA-VI-PROTESES-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/255-ODONTOLOGO-ESPECIALISTA-VI-PROTESES-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [
+    "q48: C -> E",
+    "q47: B -> C"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-odontoped",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo Especialista II - Odontopediatria",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/252-ODONTOLOGO-ESPECIALISTA-II-ODONTOPEDIATRIA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/252-ODONTOLOGO-ESPECIALISTA-II-ODONTOPEDIATRIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 1,
+   "alteradasAposGabaritoPreliminar": [
+    "q47: D -> B",
+    "q48: C -> A",
+    "q3: B -> ANULADA",
+    "q5: A -> C",
+    "q6: C -> E"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-bmf",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo Especialista III - Cirúrgico-Buco-Maxilar",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/253-ODONTOLOGO-ESPECIALISTA-III-CIRURGICO-BUCO-MAXILAR-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/253-ODONTOLOGO-ESPECIALISTA-III-CIRURGICO-BUCO-MAXILAR-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 1,
+   "alteradasAposGabaritoPreliminar": [
+    "q48: C -> E",
+    "q47: A -> B",
+    "q2: C -> ANULADA",
+    "q5: A -> B",
+    "q6: A -> B"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-perio",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo Especialista V - Periodontia",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/254-ODONTOLOGO-ESPECIALISTA-V-PERIODONTIA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/254-ODONTOLOGO-ESPECIALISTA-V-PERIODONTIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 1,
+   "alteradasAposGabaritoPreliminar": [
+    "q47: D -> C",
+    "q48: B -> D",
+    "q1: C -> ANULADA",
+    "q6: E -> C",
+    "q5: E -> A"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "big-2025-clinico",
+   "municipio": "Biguaçu (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Concurso Público 001/2025",
+   "cargo": "Odontólogo I e II",
+   "arquivo": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/256-ODONTOLOGO-I-E-II-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/256-ODONTOLOGO-I-E-II-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 50,
+   "anuladas": 1,
+   "alteradasAposGabaritoPreliminar": [
+    "q47: A -> B",
+    "q48: C -> E",
+    "q2: E -> ANULADA",
+    "q6: A -> B",
+    "q5: D -> B"
+   ],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-clinico",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5639-CIRURGIAO-DENTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5639-CIRURGIAO-DENTISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-bmf",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista Bucomaxilofacial",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5640-CIRURGIAO-DENTISTA-BUCOMAXILOFACIAL-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5640-CIRURGIAO-DENTISTA-BUCOMAXILOFACIAL-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-pne",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista de Atendimento a PNE",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5641-CIRURGIAO-DENTISTA-DE-ATENDIMENTO-APNE-(PACIENTES-COM-NECESS-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5641-CIRURGIAO-DENTISTA-DE-ATENDIMENTO-APNE-(PACIENTES-COM-NECESS-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-endo",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista Endodontista",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5642-CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5642-CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-odontoped",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista Odontopediatra",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5643-CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5643-CIRURGIAO-DENTISTA-ODONTOPEDIATRA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-perio",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista Periodontista",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5644-CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5644-CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  },
+  {
+   "id": "ita-2025-radio",
+   "municipio": "Itapema (OUTRO MUNICÍPIO)",
+   "ano": 2025,
+   "edital": "Processo Seletivo 012/2025",
+   "cargo": "Cirurgião Dentista Radiologista",
+   "arquivo": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5645-CIRURGIAO-DENTISTA-RADIOLOGISTA-1-MATRIZ.pdf",
+   "gabarito": "fontes/outros-municipios-furb/itapema-2025-ps-012/provas/5645-CIRURGIAO-DENTISTA-RADIOLOGISTA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
+   "questoes": 30,
+   "anuladas": 0,
+   "alteradasAposGabaritoPreliminar": [],
+   "usadaNoRadarPrincipal": false
+  }
+ ],
+ "referenciasPorTopico": {
+  "lp.classes": [
+   "G0005: blu-2019-bmf#5, blu-2019-clinico#5, blu-2019-endo#5, blu-2019-odontoped#5, blu-2019-perio#5",
+   "G0006: blu-2019-bmf#6, blu-2019-clinico#6, blu-2019-endo#6, blu-2019-odontoped#6, blu-2019-perio#6",
+   "G0008: blu-2019-bmf#8, blu-2019-clinico#8, blu-2019-endo#8, blu-2019-odontoped#8, blu-2019-perio#8",
+   "G0100: blu-2021-bmf#8, blu-2021-clinico#8, blu-2021-endo#1, blu-2021-odontoped#7, blu-2021-perio#2",
+   "G0187: blu-2023-bmf#3, blu-2023-clinico#6, blu-2023-endo#2, blu-2023-odontoped#1, blu-2023-perio#6",
+   "G0328: blu-2021c-cd#4",
+   "G0329: blu-2021c-cd#5",
+   "G0330: blu-2021c-cd#6",
+   "G0331: blu-2021c-cd#7",
+   "G0333: blu-2021c-cd#9"
+  ],
+  "lp.coord_subord": [
+   "G0002: blu-2019-bmf#2, blu-2019-clinico#2, blu-2019-endo#2, blu-2019-odontoped#2, blu-2019-perio#2",
+   "G0003: blu-2019-bmf#3, blu-2019-clinico#3, blu-2019-endo#3, blu-2019-odontoped#3, blu-2019-perio#3",
+   "G0095: blu-2021-bmf#3, blu-2021-clinico#4, blu-2021-endo#8, blu-2021-odontoped#5, blu-2021-perio#10",
+   "G0099: blu-2021-bmf#7, blu-2021-clinico#3, blu-2021-endo#6, blu-2021-odontoped#2, blu-2021-perio#3",
+   "G0102: blu-2021-bmf#10, blu-2021-clinico#5, blu-2021-endo#5, blu-2021-odontoped#8, blu-2021-perio#5"
+  ],
+  "lp.sintaxe": [
+   "G0007: blu-2019-bmf#7, blu-2019-clinico#7, blu-2019-endo#7, blu-2019-odontoped#7, blu-2019-perio#7",
+   "G0190: blu-2023-bmf#6, blu-2023-clinico#3, blu-2023-endo#4, blu-2023-odontoped#3, blu-2023-perio#3",
+   "G0191: blu-2023-bmf#7, blu-2023-clinico#1, blu-2023-endo#3, blu-2023-odontoped#7, blu-2023-perio#4",
+   "G0274: blu-2025-bmf#2, blu-2025-clinico#4, blu-2025-endo#4, blu-2025-odontoped#5, blu-2025-perio#5",
+   "G0326: blu-2021c-cd#2"
+  ],
+  "lp.compreensao": [
+   "G0185: blu-2023-bmf#1, blu-2023-clinico#4, blu-2023-endo#5, blu-2023-odontoped#4, blu-2023-perio#7",
+   "G0188: blu-2023-bmf#4, blu-2023-clinico#7, blu-2023-endo#7, blu-2023-odontoped#5, blu-2023-perio#5",
+   "G0193: blu-2023-bmf#9, blu-2023-clinico#9, blu-2023-endo#9, blu-2023-odontoped#8, blu-2023-perio#9",
+   "G0273: blu-2025-bmf#1, blu-2025-clinico#5, blu-2025-endo#5, blu-2025-odontoped#8, blu-2025-perio#6",
+   "G0332: blu-2021c-cd#8"
+  ],
+  "lp.acentuacao": [
+   "G0004: blu-2019-bmf#4, blu-2019-clinico#4, blu-2019-endo#4, blu-2019-odontoped#4, blu-2019-perio#4",
+   "G0096: blu-2021-bmf#4, blu-2021-clinico#1, blu-2021-endo#10, blu-2021-odontoped#9, blu-2021-perio#6",
+   "G0278: blu-2025-bmf#6, blu-2025-clinico#1, blu-2025-endo#6, blu-2025-odontoped#1, blu-2025-perio#1",
+   "G0325: blu-2021c-cd#1"
+  ],
+  "lp.semantica": [
+   "G0009: blu-2019-bmf#9, blu-2019-clinico#9, blu-2019-endo#9, blu-2019-odontoped#9, blu-2019-perio#9",
+   "G0094: blu-2021-bmf#2, blu-2021-clinico#7, blu-2021-endo#9, blu-2021-odontoped#1, blu-2021-perio#1",
+   "G0101: blu-2021-bmf#9, blu-2021-clinico#6, blu-2021-endo#4, blu-2021-odontoped#6, blu-2021-perio#4",
+   "G0276: blu-2025-bmf#4, blu-2025-clinico#2, blu-2025-endo#8, blu-2025-odontoped#7, blu-2025-perio#2"
+  ],
+  "lp.crase": [
+   "G0001: blu-2019-bmf#1, blu-2019-clinico#1, blu-2019-endo#1, blu-2019-odontoped#1, blu-2019-perio#1",
+   "G0280: blu-2025-bmf#8, blu-2025-clinico#3, blu-2025-endo#3, blu-2025-odontoped#2, blu-2025-perio#8",
+   "G0327: blu-2021c-cd#3"
+  ],
+  "lp.pontuacao": [
+   "G0093: blu-2021-bmf#1, blu-2021-clinico#2, blu-2021-endo#2, blu-2021-odontoped#4, blu-2021-perio#8",
+   "G0194: blu-2023-bmf#10, blu-2023-clinico#10, blu-2023-endo#10, blu-2023-odontoped#10, blu-2023-perio#10",
+   "G0277: blu-2025-bmf#5, blu-2025-clinico#6, blu-2025-endo#7, blu-2025-odontoped#6, blu-2025-perio#7"
+  ],
+  "lp.ortografia": [
+   "G0010: blu-2019-bmf#10, blu-2019-clinico#10, blu-2019-endo#10, blu-2019-odontoped#10, blu-2019-perio#10",
+   "G0334: blu-2021c-cd#10"
+  ],
+  "lp.regencia": [
+   "G0098: blu-2021-bmf#6, blu-2021-clinico#10, blu-2021-endo#3, blu-2021-odontoped#10, blu-2021-perio#9",
+   "G0281: blu-2025-bmf#9, blu-2025-clinico#9, blu-2025-endo#9, blu-2025-odontoped#10, blu-2025-perio#9"
+  ],
+  "lp.coesao": [
+   "G0189: blu-2023-bmf#5, blu-2023-clinico#2, blu-2023-endo#1, blu-2023-odontoped#6, blu-2023-perio#2",
+   "G0275: blu-2025-bmf#3, blu-2025-clinico#7, blu-2025-endo#2, blu-2025-odontoped#3, blu-2025-perio#4"
+  ],
+  "lp.generos_funcoes": [
+   "G0192: blu-2023-bmf#8, blu-2023-clinico#8, blu-2023-endo#8, blu-2023-odontoped#9, blu-2023-perio#8",
+   "G0279: blu-2025-bmf#7, blu-2025-clinico#8, blu-2025-endo#1, blu-2025-odontoped#4, blu-2025-perio#3"
+  ],
+  "lp.figuras_sentido": [
+   "G0097: blu-2021-bmf#5, blu-2021-clinico#9, blu-2021-endo#7, blu-2021-odontoped#3, blu-2021-perio#7"
+  ],
+  "lp.formacao": [
+   "G0186: blu-2023-bmf#2, blu-2023-clinico#5, blu-2023-endo#6, blu-2023-odontoped#2, blu-2023-perio#1"
+  ],
+  "lp.colocacao": [
+   "G0282: blu-2025-bmf#10, blu-2025-clinico#10, blu-2025-endo#10, blu-2025-odontoped#9, blu-2025-perio#10"
+  ],
+  "cgl.lom": [
+   "G0011: blu-2019-bmf#11, blu-2019-clinico#11, blu-2019-endo#11, blu-2019-odontoped#11, blu-2019-perio#11",
+   "G0105: blu-2021-bmf#13, blu-2021-clinico#19, blu-2021-endo#11, blu-2021-odontoped#14, blu-2021-perio#19",
+   "G0195: blu-2023-bmf#11, blu-2023-clinico#17, blu-2023-endo#20, blu-2023-odontoped#12, blu-2023-perio#18",
+   "G0197: blu-2023-bmf#13, blu-2023-clinico#16, blu-2023-endo#13, blu-2023-odontoped#17, blu-2023-perio#12",
+   "G0202: blu-2023-bmf#18, blu-2023-clinico#18, blu-2023-endo#18, blu-2023-odontoped#20, blu-2023-perio#14",
+   "G0204: blu-2023-bmf#20, blu-2023-clinico#20, blu-2023-endo#11, blu-2023-odontoped#18, blu-2023-perio#16",
+   "G0283: blu-2025-bmf#11, blu-2025-clinico#19, blu-2025-endo#18, blu-2025-odontoped#19, blu-2025-perio#19",
+   "G0284: blu-2025-bmf#12, blu-2025-clinico#18, blu-2025-endo#13, blu-2025-odontoped#15, blu-2025-perio#11",
+   "G0286: blu-2025-bmf#14, blu-2025-clinico#12, blu-2025-endo#19, blu-2025-odontoped#18, blu-2025-perio#15",
+   "G0339: blu-2021c-cd#15",
+   "G0342: blu-2021c-cd#18"
+  ],
+  "cgl.brasil_mundo": [
+   "G0017: blu-2019-bmf#17, blu-2019-clinico#17, blu-2019-endo#17, blu-2019-odontoped#17, blu-2019-perio#17",
+   "G0019: blu-2019-bmf#19, blu-2019-clinico#19, blu-2019-endo#19, blu-2019-odontoped#19, blu-2019-perio#19",
+   "G0104: blu-2021-bmf#12, blu-2021-clinico#18, blu-2021-endo#17, blu-2021-odontoped#11, blu-2021-perio#13",
+   "G0196: blu-2023-bmf#12, blu-2023-clinico#19, blu-2023-endo#19, blu-2023-odontoped#13, blu-2023-perio#20",
+   "G0198: blu-2023-bmf#14, blu-2023-clinico#15, blu-2023-endo#15, blu-2023-odontoped#14, blu-2023-perio#15",
+   "G0200: blu-2023-bmf#16, blu-2023-clinico#13, blu-2023-endo#12, blu-2023-odontoped#11, blu-2023-perio#17",
+   "G0290: blu-2025-bmf#18, blu-2025-clinico#20, blu-2025-endo#16, blu-2025-odontoped#14, blu-2025-perio#12",
+   "G0291: blu-2025-bmf#19, blu-2025-clinico#14, blu-2025-endo#12, blu-2025-odontoped#17, blu-2025-perio#16",
+   "G0335: blu-2021c-cd#11",
+   "G0337: blu-2021c-cd#13"
+  ],
+  "cgl.historia_cultura_sc": [
+   "G0014: blu-2019-bmf#14, blu-2019-clinico#14, blu-2019-endo#14, blu-2019-odontoped#14, blu-2019-perio#14",
+   "G0015: blu-2019-bmf#15, blu-2019-clinico#15, blu-2019-endo#15, blu-2019-odontoped#15, blu-2019-perio#15",
+   "G0016: blu-2019-bmf#16, blu-2019-clinico#16, blu-2019-endo#16, blu-2019-odontoped#16, blu-2019-perio#16",
+   "G0106: blu-2021-bmf#14, blu-2021-clinico#14, blu-2021-endo#16, blu-2021-odontoped#16, blu-2021-perio#20",
+   "G0112: blu-2021-bmf#20, blu-2021-clinico#16, blu-2021-endo#20, blu-2021-odontoped#15, blu-2021-perio#16",
+   "G0336: blu-2021c-cd#12",
+   "G0343: blu-2021c-cd#19",
+   "G0344: blu-2021c-cd#20"
+  ],
+  "cgl.ciencia_inovacao": [
+   "G0103: blu-2021-bmf#11, blu-2021-clinico#20, blu-2021-endo#15, blu-2021-odontoped#18, blu-2021-perio#15",
+   "G0107: blu-2021-bmf#15, blu-2021-clinico#12, blu-2021-endo#18, blu-2021-odontoped#13, blu-2021-perio#14",
+   "G0285: blu-2025-bmf#13, blu-2025-clinico#17, blu-2025-endo#11, blu-2025-odontoped#13, blu-2025-perio#18",
+   "G0288: blu-2025-bmf#16, blu-2025-clinico#16, blu-2025-endo#14, blu-2025-odontoped#20, blu-2025-perio#17",
+   "G0292: blu-2025-bmf#20, blu-2025-clinico#11, blu-2025-endo#20, blu-2025-odontoped#16, blu-2025-perio#13"
+  ],
+  "cgl.lei7564": [
+   "G0111: blu-2021-bmf#19, blu-2021-clinico#17, blu-2021-endo#13, blu-2021-odontoped#12, blu-2021-perio#11",
+   "G0199: blu-2023-bmf#15, blu-2023-clinico#12, blu-2023-endo#17, blu-2023-odontoped#16, blu-2023-perio#11",
+   "G0201: blu-2023-bmf#17, blu-2023-clinico#14, blu-2023-endo#14, blu-2023-odontoped#19, blu-2023-perio#19",
+   "G0203: blu-2023-bmf#19, blu-2023-clinico#11, blu-2023-endo#16, blu-2023-odontoped#15, blu-2023-perio#13"
+  ],
+  "cgl.lc660": [
+   "G0012: blu-2019-bmf#12, blu-2019-clinico#12, blu-2019-endo#12, blu-2019-odontoped#12, blu-2019-perio#12",
+   "G0108: blu-2021-bmf#16, blu-2021-clinico#15, blu-2021-endo#19, blu-2021-odontoped#20, blu-2021-perio#12",
+   "G0341: blu-2021c-cd#17"
+  ],
+  "cgl.lc661": [
+   "G0013: blu-2019-bmf#13, blu-2019-clinico#13, blu-2019-endo#13, blu-2019-odontoped#13, blu-2019-perio#13",
+   "G0110: blu-2021-bmf#18, blu-2021-clinico#11, blu-2021-endo#14, blu-2021-odontoped#19, blu-2021-perio#18",
+   "G0340: blu-2021c-cd#16"
+  ],
+  "cgl.urbano": [
+   "G0018: blu-2019-bmf#18, blu-2019-clinico#18, blu-2019-endo#18, blu-2019-odontoped#18, blu-2019-perio#18",
+   "G0287: blu-2025-bmf#15, blu-2025-clinico#13, blu-2025-endo#17, blu-2025-odontoped#12, blu-2025-perio#14"
+  ],
+  "cgl.cultura_artes": [
+   "G0020: blu-2019-bmf#20, blu-2019-clinico#20, blu-2019-endo#20, blu-2019-odontoped#20, blu-2019-perio#20",
+   "G0289: blu-2025-bmf#17, blu-2025-clinico#15, blu-2025-endo#15, blu-2025-odontoped#11, blu-2025-perio#20"
+  ],
+  "cgl.lc1234": [
+   "G0109: blu-2021-bmf#17, blu-2021-clinico#13, blu-2021-endo#12, blu-2021-odontoped#17, blu-2021-perio#17",
+   "G0338: blu-2021c-cd#14"
+  ],
+  "sus.lei8080": [
+   "G0027: blu-2019-bmf#27, blu-2019-clinico#27, blu-2019-endo#27, blu-2019-odontoped#27, blu-2019-perio#27",
+   "G0218: blu-2023-bmf#34, blu-2023-clinico#37, blu-2023-endo#37, blu-2023-odontoped#33, blu-2023-perio#34",
+   "G0295: blu-2025-bmf#23, blu-2025-clinico#23, blu-2025-endo#26, blu-2025-odontoped#22, blu-2025-perio#25",
+   "G0347: blu-2021c-cd#23",
+   "G0348: blu-2021c-cd#24",
+   "G0350: blu-2021c-cd#26",
+   "G0351: blu-2021c-cd#27",
+   "G0355: blu-2021c-cd#31"
+  ],
+  "sus.atencao_basica": [
+   "G0024: blu-2019-bmf#24, blu-2019-clinico#24, blu-2019-endo#24, blu-2019-odontoped#24, blu-2019-perio#24",
+   "G0025: blu-2019-bmf#25, blu-2019-clinico#25, blu-2019-endo#25, blu-2019-odontoped#25, blu-2019-perio#25",
+   "G0115: blu-2021-bmf#23, blu-2021-clinico#25, blu-2021-endo#23, blu-2021-odontoped#25, blu-2021-perio#23",
+   "G0116: blu-2021-bmf#24, blu-2021-clinico#27, blu-2021-endo#27, blu-2021-odontoped#23, blu-2021-perio#27",
+   "G0222: blu-2023-bmf#38, blu-2023-clinico#38, blu-2023-endo#35, blu-2023-odontoped#37, blu-2023-perio#33",
+   "G0294: blu-2025-bmf#22, blu-2025-clinico#24, blu-2025-endo#21, blu-2025-odontoped#26, blu-2025-perio#27"
+  ],
+  "sus.epidemiologia": [
+   "G0119: blu-2021-bmf#27, blu-2021-clinico#26, blu-2021-endo#25, blu-2021-odontoped#21, blu-2021-perio#25",
+   "G0220: blu-2023-bmf#36, blu-2023-clinico#35, blu-2023-endo#36, blu-2023-odontoped#36, blu-2023-perio#35",
+   "G0221: blu-2023-bmf#37, blu-2023-clinico#36, blu-2023-endo#38, blu-2023-odontoped#38, blu-2023-perio#38",
+   "G0299: blu-2025-bmf#27, blu-2025-clinico#22, blu-2025-endo#24, blu-2025-odontoped#27, blu-2025-perio#22"
+  ],
+  "sus.controle_social": [
+   "G0117: blu-2021-bmf#25, blu-2021-clinico#23, blu-2021-endo#26, blu-2021-odontoped#24, blu-2021-perio#26",
+   "G0118: blu-2021-bmf#26, blu-2021-clinico#24, blu-2021-endo#24, blu-2021-odontoped#22, blu-2021-perio#24",
+   "G0298: blu-2025-bmf#26, blu-2025-clinico#27, blu-2025-endo#27, blu-2025-odontoped#25, blu-2025-perio#24"
+  ],
+  "sus.lei8142": [
+   "G0026: blu-2019-bmf#26, blu-2019-clinico#26, blu-2019-endo#26, blu-2019-odontoped#26, blu-2019-perio#26",
+   "G0349: blu-2021c-cd#25"
+  ],
+  "sus.humanizacao_politicas": [
+   "G0217: blu-2023-bmf#33, blu-2023-clinico#34, blu-2023-endo#34, blu-2023-odontoped#34, blu-2023-perio#36",
+   "G0293: blu-2025-bmf#21, blu-2025-clinico#26, blu-2025-endo#23, blu-2025-odontoped#24, blu-2025-perio#28"
+  ],
+  "sus.gestao": [
+   "G0219: blu-2023-bmf#35, blu-2023-clinico#33, blu-2023-endo#33, blu-2023-odontoped#35, blu-2023-perio#37",
+   "G0300: blu-2025-bmf#28, blu-2025-clinico#21, blu-2025-endo#28, blu-2025-odontoped#28, blu-2025-perio#23"
+  ],
+  "sus.financiamento_planejamento": [
+   "G0296: blu-2025-bmf#24, blu-2025-clinico#28, blu-2025-endo#25, blu-2025-odontoped#21, blu-2025-perio#26",
+   "G0297: blu-2025-bmf#25, blu-2025-clinico#25, blu-2025-endo#22, blu-2025-odontoped#23, blu-2025-perio#21"
+  ],
+  "sus.saude_trabalhador": [
+   "G0023: blu-2019-bmf#23, blu-2019-clinico#23, blu-2019-endo#23, blu-2019-odontoped#23, blu-2019-perio#23"
+  ],
+  "bio.biosseguranca": [
+   "G0028: blu-2019-bmf#28",
+   "G0136: blu-2021-clinico#31",
+   "G0174: blu-2021-perio#30",
+   "G0179: blu-2021-perio#35",
+   "G0301: blu-2025-bmf#29, blu-2025-clinico#35, blu-2025-endo#29, blu-2025-odontoped#33, blu-2025-perio#34",
+   "G0304: blu-2025-bmf#32, blu-2025-clinico#29, blu-2025-endo#33, blu-2025-odontoped#29, blu-2025-perio#32",
+   "G0372: blu-2021c-cd#48"
+  ],
+  "etica.relacoes": [
+   "G0021: blu-2019-bmf#21, blu-2019-clinico#21, blu-2019-endo#21, blu-2019-odontoped#21, blu-2019-perio#21",
+   "G0114: blu-2021-bmf#22, blu-2021-clinico#22, blu-2021-endo#21, blu-2021-odontoped#27, blu-2021-perio#22",
+   "G0223: blu-2023-bmf#39, blu-2023-clinico#39, blu-2023-endo#40, blu-2023-odontoped#39, blu-2023-perio#39",
+   "G0312: blu-2025-bmf#40, blu-2025-clinico#40, blu-2025-endo#39, blu-2025-odontoped#40, blu-2025-perio#40",
+   "G0346: blu-2021c-cd#22"
+  ],
+  "etica.servico_publico": [
+   "G0022: blu-2019-bmf#22, blu-2019-clinico#22, blu-2019-endo#22, blu-2019-odontoped#22, blu-2019-perio#22",
+   "G0113: blu-2021-bmf#21, blu-2021-clinico#21, blu-2021-endo#22, blu-2021-odontoped#26, blu-2021-perio#21",
+   "G0224: blu-2023-bmf#40, blu-2023-clinico#40, blu-2023-endo#39, blu-2023-odontoped#40, blu-2023-perio#40",
+   "G0345: blu-2021c-cd#21"
+  ],
+  "etica.codigo_cfo": [
+   "G0031: blu-2019-bmf#31",
+   "G0066: blu-2019-endo#40",
+   "G0087: blu-2019-perio#35",
+   "G0311: blu-2025-bmf#39, blu-2025-clinico#39, blu-2025-endo#40, blu-2025-odontoped#39, blu-2025-perio#39"
+  ],
+  "etica.responsabilidade": [
+   "G0039: blu-2019-bmf#39",
+   "G0059: blu-2019-endo#33",
+   "G0072: blu-2019-odontoped#33"
+  ],
+  "bio.residuos": [
+   "G0036: blu-2019-bmf#36",
+   "G0051: blu-2019-clinico#38"
+  ],
+  "bio.prontuario": [
+   "G0175: blu-2021-perio#31"
+  ],
+  "ped": [
+   "G0042: blu-2019-clinico#29",
+   "G0069: blu-2019-odontoped#30",
+   "G0073: blu-2019-odontoped#34",
+   "G0075: blu-2019-odontoped#36",
+   "G0078: blu-2019-odontoped#39",
+   "G0160: blu-2021-odontoped#29",
+   "G0165: blu-2021-odontoped#34",
+   "G0166: blu-2021-odontoped#35",
+   "G0169: blu-2021-odontoped#38",
+   "G0170: blu-2021-odontoped#39",
+   "G0250: blu-2023-odontoped#22",
+   "G0252: blu-2023-odontoped#24",
+   "G0254: blu-2023-odontoped#26",
+   "G0255: blu-2023-odontoped#27",
+   "G0259: blu-2023-odontoped#31",
+   "G0260: blu-2023-odontoped#32",
+   "G0319: blu-2025-odontoped#36",
+   "G0320: blu-2025-odontoped#37",
+   "G0321: blu-2025-odontoped#38",
+   "G0363: blu-2021c-cd#39"
+  ],
+  "prev.epi_bucal": [
+   "G0037: blu-2019-bmf#37",
+   "G0060: blu-2019-endo#34",
+   "G0064: blu-2019-endo#38",
+   "G0079: blu-2019-odontoped#40",
+   "G0145: blu-2021-clinico#40",
+   "G0256: blu-2023-odontoped#28",
+   "G0366: blu-2021c-cd#42"
+  ],
+  "cario": [
+   "G0134: blu-2021-clinico#29",
+   "G0140: blu-2021-clinico#35",
+   "G0163: blu-2021-odontoped#32",
+   "G0164: blu-2021-odontoped#33",
+   "G0352: blu-2021c-cd#28",
+   "G0359: blu-2021c-cd#35"
+  ],
+  "prev.fluor": [
+   "G0077: blu-2019-odontoped#38",
+   "G0161: blu-2021-odontoped#30",
+   "G0168: blu-2021-odontoped#37",
+   "G0258: blu-2023-odontoped#30",
+   "G0369: blu-2021c-cd#45"
+  ],
+  "clin.plano_tratamento": [
+   "G0050: blu-2019-clinico#37"
+  ],
+  "prev.saude_coletiva": [
+   "G0353: blu-2021c-cd#29"
+  ],
+  "clin.pacientes_especiais": [
+   "G0362: blu-2021c-cd#38"
+  ],
+  "endo": [
+   "G0046: blu-2019-clinico#33",
+   "G0054: blu-2019-endo#28",
+   "G0055: blu-2019-endo#29",
+   "G0056: blu-2019-endo#30",
+   "G0057: blu-2019-endo#31",
+   "G0058: blu-2019-endo#32",
+   "G0061: blu-2019-endo#35",
+   "G0062: blu-2019-endo#36",
+   "G0063: blu-2019-endo#37",
+   "G0147: blu-2021-endo#29",
+   "G0148: blu-2021-endo#30",
+   "G0150: blu-2021-endo#32",
+   "G0151: blu-2021-endo#33",
+   "G0152: blu-2021-endo#34",
+   "G0153: blu-2021-endo#35",
+   "G0155: blu-2021-endo#37",
+   "G0157: blu-2021-endo#39",
+   "G0237: blu-2023-endo#21",
+   "G0238: blu-2023-endo#22",
+   "G0240: blu-2023-endo#24",
+   "G0241: blu-2023-endo#25",
+   "G0242: blu-2023-endo#26",
+   "G0243: blu-2023-endo#27",
+   "G0245: blu-2023-endo#29",
+   "G0246: blu-2023-endo#30",
+   "G0248: blu-2023-endo#32",
+   "G0302: blu-2025-bmf#30, blu-2025-clinico#30, blu-2025-endo#34, blu-2025-odontoped#35, blu-2025-perio#30",
+   "G0316: blu-2025-endo#36",
+   "G0317: blu-2025-endo#37",
+   "G0318: blu-2025-endo#38"
+  ],
+  "dent": [
+   "G0047: blu-2019-clinico#34",
+   "G0048: blu-2019-clinico#35",
+   "G0137: blu-2021-clinico#32",
+   "G0138: blu-2021-clinico#33",
+   "G0139: blu-2021-clinico#34",
+   "G0141: blu-2021-clinico#36",
+   "G0142: blu-2021-clinico#37",
+   "G0143: blu-2021-clinico#38",
+   "G0144: blu-2021-clinico#39",
+   "G0227: blu-2023-clinico#23",
+   "G0231: blu-2023-clinico#27",
+   "G0235: blu-2023-clinico#31",
+   "G0244: blu-2023-endo#28",
+   "G0251: blu-2023-odontoped#23",
+   "G0253: blu-2023-odontoped#25",
+   "G0313: blu-2025-clinico#36",
+   "G0354: blu-2021c-cd#30",
+   "G0357: blu-2021c-cd#33",
+   "G0358: blu-2021c-cd#34",
+   "G0361: blu-2021c-cd#37",
+   "G0367: blu-2021c-cd#43"
+  ],
+  "trauma": [
+   "G0035: blu-2019-bmf#35",
+   "G0043: blu-2019-clinico#30",
+   "G0065: blu-2019-endo#39",
+   "G0070: blu-2019-odontoped#31",
+   "G0071: blu-2019-odontoped#32",
+   "G0121: blu-2021-bmf#29",
+   "G0126: blu-2021-bmf#34",
+   "G0167: blu-2021-odontoped#36",
+   "G0239: blu-2023-endo#23",
+   "G0257: blu-2023-odontoped#29",
+   "G0303: blu-2025-bmf#31, blu-2025-clinico#31, blu-2025-endo#32, blu-2025-odontoped#31, blu-2025-perio#29",
+   "G0305: blu-2025-bmf#33, blu-2025-clinico#33, blu-2025-endo#31, blu-2025-odontoped#30, blu-2025-perio#35",
+   "G0306: blu-2025-bmf#34, blu-2025-clinico#32, blu-2025-endo#30, blu-2025-odontoped#32, blu-2025-perio#31",
+   "G0374: blu-2021c-cd#50"
+  ],
+  "dent.oclusao_dtm": [
+   "G0123: blu-2021-bmf#31",
+   "G0173: blu-2021-perio#29",
+   "G0183: blu-2021-perio#39",
+   "G0229: blu-2023-clinico#25",
+   "G0230: blu-2023-clinico#26",
+   "G0364: blu-2021c-cd#40"
+  ],
+  "radio": [
+   "G0129: blu-2021-bmf#37",
+   "G0146: blu-2021-endo#28",
+   "G0156: blu-2021-endo#38",
+   "G0247: blu-2023-endo#31",
+   "G0370: blu-2021c-cd#46"
+  ],
+  "perio": [
+   "G0041: blu-2019-clinico#28",
+   "G0080: blu-2019-perio#28",
+   "G0081: blu-2019-perio#29",
+   "G0082: blu-2019-perio#30",
+   "G0083: blu-2019-perio#31",
+   "G0084: blu-2019-perio#32",
+   "G0085: blu-2019-perio#33",
+   "G0086: blu-2019-perio#34",
+   "G0088: blu-2019-perio#36",
+   "G0089: blu-2019-perio#37",
+   "G0090: blu-2019-perio#38",
+   "G0091: blu-2019-perio#39",
+   "G0092: blu-2019-perio#40",
+   "G0172: blu-2021-perio#28",
+   "G0176: blu-2021-perio#32",
+   "G0177: blu-2021-perio#33",
+   "G0178: blu-2021-perio#34",
+   "G0180: blu-2021-perio#36",
+   "G0181: blu-2021-perio#37",
+   "G0182: blu-2021-perio#38",
+   "G0261: blu-2023-perio#21",
+   "G0262: blu-2023-perio#22",
+   "G0263: blu-2023-perio#23",
+   "G0264: blu-2023-perio#24",
+   "G0265: blu-2023-perio#25",
+   "G0266: blu-2023-perio#26",
+   "G0267: blu-2023-perio#27",
+   "G0268: blu-2023-perio#28",
+   "G0269: blu-2023-perio#29",
+   "G0270: blu-2023-perio#30",
+   "G0271: blu-2023-perio#31",
+   "G0272: blu-2023-perio#32",
+   "G0307: blu-2025-bmf#35, blu-2025-clinico#34, blu-2025-endo#35, blu-2025-odontoped#34, blu-2025-perio#33",
+   "G0322: blu-2025-perio#36",
+   "G0323: blu-2025-perio#37",
+   "G0324: blu-2025-perio#38",
+   "G0371: blu-2021c-cd#47",
+   "G0373: blu-2021c-cd#49"
+  ],
+  "cir": [
+   "G0032: blu-2019-bmf#32",
+   "G0033: blu-2019-bmf#33",
+   "G0038: blu-2019-bmf#38",
+   "G0040: blu-2019-bmf#40",
+   "G0049: blu-2019-clinico#36",
+   "G0120: blu-2021-bmf#28",
+   "G0122: blu-2021-bmf#30",
+   "G0124: blu-2021-bmf#32",
+   "G0125: blu-2021-bmf#33",
+   "G0127: blu-2021-bmf#35",
+   "G0128: blu-2021-bmf#36",
+   "G0130: blu-2021-bmf#38",
+   "G0131: blu-2021-bmf#39",
+   "G0206: blu-2023-bmf#22",
+   "G0207: blu-2023-bmf#23",
+   "G0208: blu-2023-bmf#24",
+   "G0209: blu-2023-bmf#25",
+   "G0210: blu-2023-bmf#26",
+   "G0213: blu-2023-bmf#29",
+   "G0214: blu-2023-bmf#30",
+   "G0215: blu-2023-bmf#31",
+   "G0216: blu-2023-bmf#32",
+   "G0225: blu-2023-clinico#21",
+   "G0226: blu-2023-clinico#22",
+   "G0233: blu-2023-clinico#29",
+   "G0308: blu-2025-bmf#36",
+   "G0309: blu-2025-bmf#37",
+   "G0310: blu-2025-bmf#38"
+  ],
+  "pato": [
+   "G0044: blu-2019-clinico#31",
+   "G0045: blu-2019-clinico#32",
+   "G0053: blu-2019-clinico#40",
+   "G0067: blu-2019-odontoped#28",
+   "G0076: blu-2019-odontoped#37",
+   "G0133: blu-2021-clinico#28",
+   "G0135: blu-2021-clinico#30",
+   "G0159: blu-2021-odontoped#28",
+   "G0184: blu-2021-perio#40",
+   "G0249: blu-2023-odontoped#21",
+   "G0314: blu-2025-clinico#37",
+   "G0315: blu-2025-clinico#38"
+  ],
+  "anest": [
+   "G0034: blu-2019-bmf#34",
+   "G0154: blu-2021-endo#36",
+   "G0162: blu-2021-odontoped#31",
+   "G0171: blu-2021-odontoped#40",
+   "G0205: blu-2023-bmf#21",
+   "G0211: blu-2023-bmf#27",
+   "G0234: blu-2023-clinico#30",
+   "G0236: blu-2023-clinico#32",
+   "G0365: blu-2021c-cd#41"
+  ],
+  "farm": [
+   "G0052: blu-2019-clinico#39",
+   "G0132: blu-2021-bmf#40",
+   "G0212: blu-2023-bmf#28",
+   "G0356: blu-2021c-cd#32",
+   "G0360: blu-2021c-cd#36",
+   "G0368: blu-2021c-cd#44"
+  ],
+  "anat": [
+   "G0074: blu-2019-odontoped#35",
+   "G0149: blu-2021-endo#31",
+   "G0158: blu-2021-endo#40",
+   "G0228: blu-2023-clinico#24",
+   "G0232: blu-2023-clinico#28"
+  ],
+  "emerg": [
+   "G0029: blu-2019-bmf#29",
+   "G0030: blu-2019-bmf#30",
+   "G0068: blu-2019-odontoped#29"
+  ]
+ }
+}

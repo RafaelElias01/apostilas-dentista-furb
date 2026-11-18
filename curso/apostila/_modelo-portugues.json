@@ -1,0 +1,490 @@
+{
+  "_comentario": "Apostila Premium 1 (Lingua Portuguesa). Conteudo conceitual (gramatica normativa): todos os pontos levam conceito:true. Ordem das licoes = recorrencia nas 3 provas reais da FUNDATEC (curso/radar-banca.json). Nivel = numero de provas (0 a 3) em que o grupo caiu. Sem previsao nem garantia.",
+  "id": "portugues",
+  "numero": 1,
+  "arquivoPdf": "apostila-01-lingua-portuguesa.pdf",
+  "titulo": "Língua Portuguesa",
+  "subtitulo": "Apostila Premium · Soldado da Brigada Militar do RS · banca FUNDATEC · com ênfase no que mais cai",
+  "fontes": [],
+  "rotuloPontos": "A regra, passo a passo (com exemplos)",
+  "limiteFonte": "Esta apostila segue a norma-padrão (inclusive o Acordo Ortográfico vigente) e, na lição de Redação Oficial, o Manual de Redação da Presidência da República. Confira o edital vigente. A ordem das lições vem de apenas 3 provas reais da FUNDATEC (2017, 2021 e 2025): é amostra pequena, indício e não previsão.",
+  "comoUsar": [
+    "A base deste ranking são 3 provas reais da FUNDATEC para soldado da BM/RS (2017, 2021 e 2025), com 10 questões de Português em cada prova (30 no total). É uma amostra pequena: serve de indício do que a banca repete, não de previsão do que vai cair.",
+    "As lições estão em ordem de recorrência: o que apareceu nas 3 provas vem primeiro. Em Português caíram nas 3 provas: crase, conectores e significado de palavras no contexto (substituição por sinônimo).",
+    "Ortografia, acentuação e crase (8 questões) e Sintaxe, concordância e regência (8 questões) foram os dois grupos maiores. Redação Oficial caiu em 2 provas, com pronome de tratamento. Morfologia e verbos caiu em apenas 1.",
+    "Em cada lição, leia a regra, veja o exemplo certo e o errado e só então faça as questões. Grave a frase verde de cada questão: é a resposta certa escrita como afirmação correta.",
+    "Nas 30 questões de Português analisadas, os formatos mais comuns foram as assertivas I, II e III (“quais estão corretas”) e a pergunta direta (9 questões cada), seguidos do preenchimento de lacunas (6): teste cada afirmação separadamente."
+  ],
+  "ranking": [
+    { "rotulo": "Ortografia, Acentuação e Crase (8 de 30 questões; 3 de 3 provas)", "nivel": 3 },
+    { "rotulo": "Sintaxe, Concordância e Regência (8 de 30 questões; 3 de 3 provas)", "nivel": 3 },
+    { "rotulo": "Compreensão e Interpretação de Textos (5 de 30 questões; 3 de 3 provas)", "nivel": 3 },
+    { "rotulo": "Coesão e Coerência Textual (4 de 30 questões; 3 de 3 provas)", "nivel": 3 },
+    { "rotulo": "Redação Oficial (4 de 30 questões; 2 de 3 provas)", "nivel": 2 },
+    { "rotulo": "Morfologia e Verbos (1 de 30 questões; 1 de 3 provas)", "nivel": 1 }
+  ],
+  "licoes": [
+    {
+      "id": "crase",
+      "titulo": "Crase",
+      "nivel": 3,
+      "grupoBanco": "Ortografia, Acentuação e Crase",
+      "qtdQuestoes": 8,
+      "intro": "O emprego do sinal de crase foi cobrado nas 3 provas (2017, 2021 e 2025): é um dos três tópicos de Português que caíram nas 3 provas, ao lado de conectores e de significado de palavras no contexto. Crase é a fusão da preposição “a” com o artigo “a(s)” ou com o “a” inicial de aquele, aquela, aquilo. Sem preposição ou sem artigo, não há crase.",
+      "pontos": [
+        { "ref": "A conta da crase", "conceito": true, "texto": "Crase = preposição a + artigo a. Por isso só ocorre antes de palavra feminina que aceite artigo e depois de verbo ou nome que peça a preposição “a”. Exemplo: “Fui à escola” (fui a + a escola)." },
+        { "ref": "Teste do verbo “voltar”", "conceito": true, "texto": "Troque o verbo por “voltar”. Se ficar “voltar da”, há crase; se ficar “voltar de”, não há. “Vou à Bahia” (volto da Bahia), mas “Vou a Roma” (volto de Roma)." },
+        { "ref": "Teste da palavra masculina", "conceito": true, "texto": "Troque a palavra feminina por uma masculina. Se aparecer “ao”, há crase na versão feminina: “Fui à escola” / “Fui ao colégio”. Se aparecer só “a”, não há: “Assisti a uma peça”." },
+        { "ref": "Crase obrigatória", "conceito": true, "texto": "Locuções adverbiais, prepositivas e conjuntivas femininas: à noite, às vezes, à direita, à esquerda, às pressas, à toa, à vista, à custa de, à procura de, à medida que. Indicação de hora: “às 8 horas”, “à uma hora”. Antes de aquele, aquela, aquilo quando o termo pede “a”: “Refiro-me àquela decisão”." },
+        { "ref": "Crase proibida", "conceito": true, "texto": "Não há crase antes de palavra masculina, de verbo (“começou a chover”), de pronome pessoal (“falei a ela”), de demonstrativos como esta e essa, de expressões com palavra repetida (“frente a frente”, “gota a gota”) e de nomes de cidades sem determinante (“Cheguei a Porto Alegre”)." },
+        { "ref": "Crase facultativa", "conceito": true, "texto": "É facultativa antes de pronome possessivo feminino singular (“Entreguei à minha chefe” ou “a minha chefe”) e antes de nome próprio feminino de pessoa (“Falei à Maria” ou “a Maria”)." },
+        { "ref": "Plural e artigo", "conceito": true, "texto": "Com palavra feminina no plural e artigo, a preposição “a” + “as” dá “às”: “Obedeço às ordens”. Sem artigo (sentido indeterminado) não há crase: “Refiro-me a ordens superiores”." }
+      ],
+      "tabela": {
+        "titulo": "Crase: com ou sem?",
+        "cab": ["Situação", "Crase?", "Exemplo"],
+        "linhas": [
+          ["Locução adverbial feminina", "Sim", "Saí à noite."],
+          ["Hora determinada", "Sim", "A reunião é às 14 horas."],
+          ["Palavra masculina", "Não", "Vou a pé."],
+          ["Verbo no infinitivo", "Não", "Começou a chover."],
+          ["Cidade sem determinante", "Não", "Cheguei a Porto Alegre."],
+          ["Possessivo feminino singular", "Facultativa", "Entreguei à / a minha chefe."]
+        ]
+      },
+      "macete": "Duas perguntas resolvem quase tudo: (1) o verbo ou nome pede “a”? (2) a palavra seguinte é feminina e aceita “a” antes? Se as duas respostas forem sim, há crase. Para confirmar, use o teste do “voltar da”.",
+      "pegadinhas": [
+        "Colocar crase antes de palavra masculina ou de verbo: não existe crase aí.",
+        "Esquecer que “a” + aquele, aquela, aquilo vira “àquele”, “àquela”, “àquilo” quando o termo anterior pede a preposição.",
+        "Confundir “às 8 horas” (hora determinada, com crase) com “a 8 horas de distância” (distância ou duração, sem crase).",
+        "Crase antes de cidade: só quando a cidade vem determinada (“Voltei à Roma antiga”); sozinha, não há (“Voltei a Roma”)."
+      ],
+      "cobra": [
+        "Assertivas I, II e III: “em qual frase o emprego da crase está correto?”",
+        "Lacunas em que se escolhe entre “a” e “à” em cada espaço.",
+        "A crase aparece nas 3 provas analisadas (2017, 2021 e 2025): vale estudar com prioridade."
+      ],
+      "mapa": {
+        "centro": "Crase",
+        "ramos": [
+          { "t": "Conta", "f": ["Preposição a + artigo a", "Aquele, aquela, aquilo"] },
+          { "t": "Testes", "f": ["Voltar da / voltar de", "Trocar por palavra masculina"] },
+          { "t": "Sempre", "f": ["Locuções femininas", "Hora: às 8 horas"] },
+          { "t": "Nunca", "f": ["Masculino", "Verbo", "Pronome pessoal", "Palavra repetida"] },
+          { "t": "Facultativa", "f": ["Possessivo feminino", "Nome próprio feminino"] }
+        ]
+      }
+    },
+    {
+      "id": "ortografia",
+      "titulo": "Ortografia oficial e acentuação gráfica",
+      "nivel": 3,
+      "grupoBanco": "Ortografia, Acentuação e Crase",
+      "qtdQuestoes": 8,
+      "intro": "O grupo de Ortografia, Acentuação e Crase empatou com Sintaxe, Concordância e Regência como o maior de Português (8 de 30 questões cada, presente nas 3 provas). Dentro dele, a ortografia oficial vigente caiu em 2 provas, fonemas em 2 e acentuação gráfica em 1. Aqui entram o Acordo Ortográfico em vigor, as regras de acento e os pares de palavras que a banca gosta de trocar.",
+      "pontos": [
+        { "ref": "Trema e ditongos abertos", "conceito": true, "texto": "O trema não existe mais em palavras portuguesas (“linguiça”, “frequência”); só se mantém em nomes estrangeiros (Müller). Ditongos abertos éi e ói perdem o acento nas paroxítonas (“ideia”, “assembleia”, “heroico”, “jiboia”), mas ficam nas oxítonas (“herói”, “papéis”, “troféu”)." },
+        { "ref": "Hiatos oo e ee", "conceito": true, "texto": "Perdem o acento: “voo”, “enjoo”, “leem”, “veem”, “creem”, “deem”. Também desapareceu o acento diferencial de “pára” (verbo), “pélo”, “pêra”, “pólo” e “côa”. Permanecem “pôr” (verbo) × “por” (preposição) e “pôde” (passado) × “pode” (presente)." },
+        { "ref": "Hífen com prefixos", "conceito": true, "texto": "Usa-se hífen quando o segundo elemento começa com h (“anti-higiênico”, “super-homem”) ou quando a letra final do prefixo é igual à inicial do segundo elemento, caso de vogal (“micro-ondas”, “anti-inflamatório”). Com ex-, vice-, pós-, pré-, pró-: hífen (“ex-aluno”, “vice-presidente”, “pré-escolar”, “pós-graduação”)." },
+        { "ref": "Prefixo com r ou s e com vogal diferente", "conceito": true, "texto": "Prefixo terminado em vogal + palavra começada por r ou s: dobra-se a consoante e não há hífen (“antirrábico”, “ultrassom”, “minissaia”, “contrarregra”). Prefixo terminado em vogal + vogal diferente: junta (“autoescola”, “extraoficial”, “aeroespacial”)." },
+        { "ref": "Regras de acentuação", "conceito": true, "texto": "Oxítonas terminadas em a, e, o (seguidos ou não de s), em, ens são acentuadas (“sofá”, “café”, “avô”, “também”, “parabéns”). Paroxítonas terminadas em l, n, r, x, ps, ã, ão, i, is, um, uns, us e ditongo são acentuadas (“útil”, “hífen”, “caráter”, “tórax”, “bíceps”, “órgão”, “táxi”, “lápis”, “álbum”, “vírus”). Todas as proparoxítonas são acentuadas (“lâmpada”, “máximo”)." },
+        { "ref": "Hiatos e “têm/vêm”", "conceito": true, "texto": "Acentuam-se o i e o u tônicos do hiato quando sozinhos na sílaba ou seguidos de s (“saída”, “país”, “baú”, “saúde”). Na 3ª pessoa do plural, “têm”, “vêm”, “contêm”, “mantêm” levam circunflexo; no singular, “tem”, “vem”, “contém”, “mantém”." },
+        { "ref": "Pares que a banca troca", "conceito": true, "texto": "Mau (oposto de bom) × mal (oposto de bem). Mas (oposição) × mais (quantidade). Há (tempo passado: “há dois anos”) × a (tempo futuro ou distância: “daqui a dois anos”). Senão (caso contrário, a não ser) × se não (condição). Afim (afinidade) × a fim de (finalidade). Cessão (ceder) × seção (parte) × sessão (reunião, tempo de duração). Concertar (harmonizar) × consertar (reparar)." },
+        { "ref": "Porque, por que, porquê, por quê", "conceito": true, "texto": "Porque = conjunção (resposta ou causa). Por que = pergunta no meio da frase ou “por qual razão”. Porquê = substantivo (“o porquê da decisão”). Por quê = pergunta no fim da frase (“Faltou por quê?”)." }
+      ],
+      "tabela": {
+        "titulo": "Acordo Ortográfico em uma olhada",
+        "cab": ["Regra", "Antes", "Hoje"],
+        "linhas": [
+          ["Trema", "lingüiça", "linguiça"],
+          ["Ditongo aberto em paroxítona", "idéia", "ideia"],
+          ["Hiato oo", "vôo", "voo"],
+          ["Hiato ee", "lêem", "leem"],
+          ["Acento diferencial de verbo", "pára", "para (verbo)"],
+          ["Prefixo + r/s", "anti-rábico", "antirrábico"]
+        ]
+      },
+      "macete": "Na dúvida sobre acento, classifique a palavra pela sílaba tônica (oxítona, paroxítona ou proparoxítona) e use o grupo de terminações de cada uma. Sobre hífen, pergunte: o segundo elemento começa por h? A vogal final e a inicial são iguais? É ex-, vice-, pós-, pré-, pró-?",
+      "pegadinhas": [
+        "Alternativa que acentua “ideia”, “heroico” ou “voo”: ficaram sem acento após o Acordo.",
+        "Escrever “anti-rábico” ou “extra-oficial”: com r/s dobra-se a consoante e com vogal diferente junta-se.",
+        "Trocar “mau” e “mal”, “mas” e “mais”, “há” e “a”: leia o contexto e teste o oposto (bom/bem).",
+        "Usar “por que” onde cabe “porque”, e vice-versa: veja se a frase é pergunta ou resposta."
+      ],
+      "cobra": [
+        "“Em qual alternativa todas as palavras estão grafadas corretamente?”",
+        "Assertivas sobre acentuação e uso do hífen para marcar certas e erradas.",
+        "Questões de fonemas (letras e sons: dígrafos, encontros consonantais), que apareceram em 2 provas."
+      ],
+      "mapa": {
+        "centro": "Ortografia e acentuação",
+        "ramos": [
+          { "t": "Acordo", "f": ["Sem trema", "Ideia, heroico", "Voo, leem"] },
+          { "t": "Hífen", "f": ["Prefixo + h", "Vogal igual", "ex-, vice-, pós-, pré-, pró-"] },
+          { "t": "Acento", "f": ["Oxítonas a e o em", "Paroxítonas l n r x ps", "Todas as proparoxítonas"] },
+          { "t": "Pares", "f": ["Mau / mal", "Mas / mais", "Há / a"] },
+          { "t": "Porque", "f": ["Porque", "Por que", "Porquê", "Por quê"] }
+        ]
+      }
+    },
+    {
+      "id": "concordancia",
+      "titulo": "Concordância verbal e nominal",
+      "nivel": 3,
+      "grupoBanco": "Sintaxe, Concordância e Regência",
+      "qtdQuestoes": 8,
+      "intro": "Sintaxe, concordância e regência foi o outro grupo maior de Português (8 questões nas 3 provas). Concordância verbal e nominal apareceu em 2 provas. A regra geral é que o verbo concorda com o sujeito e o adjetivo concorda com o substantivo; a banca explora as exceções.",
+      "pontos": [
+        { "ref": "Regra geral", "conceito": true, "texto": "O verbo concorda em número e pessoa com o sujeito; o adjetivo, o artigo e o pronome concordam em gênero e número com o substantivo. Para achar o sujeito, pergunte “quem?” ao verbo e ignore palavras que estão entre sujeito e verbo." },
+        { "ref": "Verbos impessoais", "conceito": true, "texto": "“Haver” no sentido de existir e “fazer” indicando tempo não têm sujeito e ficam no singular: “Há muitas pessoas”, “Havia problemas”, “Deve haver soluções”, “Faz dois anos”. Já “existir” é pessoal: “Existem muitas pessoas”." },
+        { "ref": "Sujeito composto", "conceito": true, "texto": "Sujeito composto antes do verbo leva o verbo ao plural: “O soldado e o cabo chegaram”. Posposto ao verbo, o verbo pode concordar com o núcleo mais próximo ou ir ao plural: “Chegou o soldado e o cabo” / “Chegaram o soldado e o cabo”." },
+        { "ref": "Verbo com “se”", "conceito": true, "texto": "Com o “se” apassivador, o verbo concorda com o sujeito: “Vendem-se casas”. Com o “se” índice de indeterminação (verbo sem objeto direto), o verbo fica no singular: “Precisa-se de funcionários”, “Trata-se de questões importantes”." },
+        { "ref": "Expressões fixas", "conceito": true, "texto": "“Mais de um” leva verbo no singular (“Mais de um aluno saiu”). Horas: “É uma hora”, “São duas horas”. Nomes de obra ou lugar no plural com artigo plural pedem verbo no plural: “Os Estados Unidos são um país grande”." },
+        { "ref": "Concordância nominal: invariáveis", "conceito": true, "texto": "“Meio” como advérbio fica invariável (“Ela está meio cansada”), mas como numeral flexiona (“meia hora”). “Bastante” antes de substantivo flexiona (“bastantes motivos”) e antes de adjetivo fica invariável (“bastante cansados”). “Anexo” flexiona (“as fotos anexas”); “em anexo” é invariável. “Obrigado” concorda com quem fala." },
+        { "ref": "É proibido / é necessário", "conceito": true, "texto": "Com artigo definido o adjetivo concorda: “É proibida a entrada”. Sem artigo fica no masculino singular: “É proibido entrada”. O mesmo vale para “é necessário”, “é bom”, “é permitido”." }
+      ],
+      "tabela": {
+        "titulo": "Concordância em casos comuns",
+        "cab": ["Caso", "Regra", "Exemplo"],
+        "linhas": [
+          ["Haver = existir", "Singular", "Havia dúvidas."],
+          ["Fazer (tempo)", "Singular", "Faz três anos."],
+          ["Mais de um", "Singular", "Mais de um saiu."],
+          ["Se apassivador", "Concorda com o sujeito", "Alugam-se salas."],
+          ["Se indeterminação", "Singular", "Precisa-se de agentes."],
+          ["Meio (advérbio)", "Invariável", "Meio cansada."]
+        ]
+      },
+      "macete": "Localize o verbo, pergunte “quem?” e descubra o núcleo do sujeito. Depois verifique se o caso é uma exceção da tabela (haver, fazer, se, mais de um). Em concordância nominal, pergunte se a palavra é adjetivo (flexiona) ou advérbio (não flexiona).",
+      "pegadinhas": [
+        "Trocar “Havia problemas” por “Haviam problemas”: haver impessoal não vai ao plural.",
+        "Concordar o verbo com o substantivo mais próximo em vez do núcleo do sujeito.",
+        "Confundir “Vendem-se casas” (apassivador) com “Precisa-se de casas” (indeterminação).",
+        "Flexionar “meio” e “bastante” quando são advérbios (“meias cansadas”, “bastantes cansados”)."
+      ],
+      "cobra": [
+        "Assertivas I, II e III: “quais frases respeitam a concordância verbal?”",
+        "Pergunta pela alternativa INCORRETA: uma delas traz o verbo errado na concordância.",
+        "Concordância verbal e nominal apareceu em 2 das 3 provas analisadas."
+      ],
+      "mapa": {
+        "centro": "Concordância",
+        "ramos": [
+          { "t": "Verbal", "f": ["Verbo com sujeito", "Núcleo do sujeito"] },
+          { "t": "Impessoais", "f": ["Haver (existir)", "Fazer (tempo)"] },
+          { "t": "Com se", "f": ["Apassivador: concorda", "Indeterminação: singular"] },
+          { "t": "Nominal", "f": ["Adjetivo concorda", "Meio, bastante: advérbio fixo"] },
+          { "t": "Fixos", "f": ["Mais de um: singular", "Horas: é uma, são duas"] }
+        ]
+      }
+    },
+    {
+      "id": "regencia",
+      "titulo": "Regência verbal e nominal",
+      "nivel": 3,
+      "grupoBanco": "Sintaxe, Concordância e Regência",
+      "qtdQuestoes": 8,
+      "intro": "Regência é a relação entre o verbo (ou nome) e o complemento que ele pede, com ou sem preposição. Regência verbal e nominal caiu em 2 das 3 provas. A banca costuma escolher verbos que mudam de sentido conforme a regência.",
+      "pontos": [
+        { "ref": "Como funciona", "conceito": true, "texto": "Verbo transitivo direto pede complemento sem preposição; transitivo indireto pede preposição. Antes de usar pronome relativo, descubra a preposição do verbo: “O filme a que assisti” (assistir a), “A lei de que falei” (falar de)." },
+        { "ref": "Assistir", "conceito": true, "texto": "No sentido de ver, é transitivo indireto: “Assisti ao filme”. No sentido de ajudar, é transitivo direto: “O médico assistiu o paciente”." },
+        { "ref": "Aspirar e visar", "conceito": true, "texto": "“Aspirar” no sentido de inalar é transitivo direto (“Aspirou o perfume”); no de desejar, é indireto (“Aspiro a uma promoção”). “Visar” é direto no sentido de mirar ou pôr visto (“Visou o alvo”) e indireto no de ter por objetivo (“Visamos ao sucesso”)." },
+        { "ref": "Obedecer, preferir, namorar", "conceito": true, "texto": "“Obedecer” e “desobedecer” pedem “a”: “Obedeço às normas”. “Preferir” pede “a”, sem “do que” e sem “mais”: “Prefiro estudar a dormir”. “Namorar” é transitivo direto: “Ele namora a vizinha”." },
+        { "ref": "Ir, chegar, morar", "conceito": true, "texto": "Verbos de movimento pedem “a” para o destino: “Fui ao quartel”, “Cheguei a Brasília”. “Morar” pede “em”: “Moro em Canoas”." },
+        { "ref": "Esquecer, lembrar, implicar, custar", "conceito": true, "texto": "“Esquecer” e “lembrar” sem pronome são diretos (“Esqueci o livro”); com pronome pedem “de” (“Esqueci-me do livro”, “Lembrei-me do prazo”). “Implicar” no sentido de acarretar é direto (“A decisão implica custos”). “Custar” no sentido de ser difícil é indireto e o sujeito é a coisa difícil: “Custou-me aceitar”." },
+        { "ref": "Regência nominal", "conceito": true, "texto": "Alguns nomes pedem preposição fixa: acesso a, alusão a, devoção a, apto a ou para, capaz de, necessidade de, preferência por, residente em, ansioso por ou para." }
+      ],
+      "tabela": {
+        "titulo": "Verbos que a banca gosta de trocar",
+        "cab": ["Verbo", "Sentido", "Regência"],
+        "linhas": [
+          ["Assistir", "Ver", "a: assistir ao jogo"],
+          ["Assistir", "Ajudar", "Direto: assistir o paciente"],
+          ["Aspirar", "Desejar", "a: aspirar a um cargo"],
+          ["Preferir", "—", "a: prefiro A a B"],
+          ["Obedecer", "—", "a: obedecer às ordens"],
+          ["Namorar", "—", "Direto: namorar alguém"]
+        ]
+      },
+      "macete": "Antes de escolher a alternativa, descubra a preposição do verbo e teste com a pergunta “assistir a quê?”, “obedecer a quem?”. Se a frase usa pronome relativo (que, o qual, cujo), a preposição vem antes dele: “o filme a que assisti”.",
+      "pegadinhas": [
+        "“Assisti o filme” (sentido de ver) e “Prefiro mais A do que B”: ambos fogem da regência-padrão.",
+        "Trocar “aspirar a” (desejar) por “aspirar” direto, ou o contrário.",
+        "Retirar a preposição antes de pronome relativo: “O jogo que assisti” em vez de “a que assisti”.",
+        "“Ir em” lugar, “chegar em” lugar: a regência-padrão é “ir a” e “chegar a”."
+      ],
+      "cobra": [
+        "“Em qual alternativa a regência verbal segue a norma-padrão?”",
+        "Reescrita que muda o verbo e exige preposição diferente.",
+        "Regência verbal e nominal apareceu em 2 das 3 provas analisadas."
+      ],
+      "mapa": {
+        "centro": "Regência",
+        "ramos": [
+          { "t": "Ideia", "f": ["Verbo ou nome pede complemento", "Com ou sem preposição"] },
+          { "t": "Mudam de sentido", "f": ["Assistir", "Aspirar", "Visar"] },
+          { "t": "Pedem a", "f": ["Obedecer", "Preferir", "Ir, chegar"] },
+          { "t": "Diretos", "f": ["Namorar", "Implicar (acarretar)"] },
+          { "t": "Nomes", "f": ["Acesso a", "Necessidade de", "Capaz de"] }
+        ]
+      }
+    },
+    {
+      "id": "sintaxe",
+      "titulo": "Sintaxe do período e pontuação",
+      "nivel": 3,
+      "grupoBanco": "Sintaxe, Concordância e Regência",
+      "qtdQuestoes": 6,
+      "intro": "Estrutura do período simples e composto apareceu em 2 provas; relações de subordinação e pontuação apareceram em 1 prova cada. É a base para entender coordenação, subordinação e para saber onde a vírgula entra ou não.",
+      "pontos": [
+        { "ref": "Termos essenciais e integrantes", "conceito": true, "texto": "Sujeito e predicado são os termos essenciais. Os termos integrantes completam o sentido de outro termo: o verbo transitivo pede objeto direto (sem preposição) ou objeto indireto (com preposição); o complemento nominal, sempre com preposição, completa o sentido de um nome (substantivo, adjetivo ou advérbio: “confiança na tropa”); o agente da passiva é quem pratica a ação na voz passiva." },
+        { "ref": "Termos acessórios", "conceito": true, "texto": "Adjunto adnominal (qualifica ou determina um substantivo), adjunto adverbial (circunstância de lugar, tempo, modo, causa etc.), aposto (explica ou resume um termo) e vocativo (chamamento)." },
+        { "ref": "Coordenação", "conceito": true, "texto": "Orações coordenadas são independentes entre si. Podem ser aditivas (e, nem), adversativas (mas, porém, contudo), alternativas (ou, ora... ora), conclusivas (logo, portanto) e explicativas (pois, porque, que)." },
+        { "ref": "Subordinação", "conceito": true, "texto": "A oração subordinada depende da principal. As substantivas funcionam como sujeito, objeto etc. (“É certo que ele virá”); as adjetivas qualificam um substantivo (“O aluno que estudou passou”); as adverbiais indicam circunstância (“Saí quando amanheceu”)." },
+        { "ref": "Adjetiva restritiva e explicativa", "conceito": true, "texto": "A restritiva, sem vírgula, restringe o sentido do termo: “Os soldados que treinaram foram aprovados” (só os que treinaram). A explicativa, entre vírgulas, vale para todos: “Os soldados, que treinaram, foram aprovados”." },
+        { "ref": "Vírgula: quando usar", "conceito": true, "texto": "Usa-se para separar elementos de uma enumeração, aposto, vocativo, adjunto adverbial deslocado, orações adjetivas explicativas, expressões explicativas (“isto é”, “ou seja”) e conectores no meio da frase (“Ele, porém, não veio”)." },
+        { "ref": "Vírgula: quando NÃO usar", "conceito": true, "texto": "Não se separa o sujeito do verbo nem o verbo do complemento: “O soldado chegou cedo” (sem vírgula entre soldado e chegou). Não se separa da principal a oração subordinada substantiva (exceto a apositiva, que vem após dois-pontos ou vírgula)." }
+      ],
+      "tabela": {
+        "titulo": "Orações coordenadas",
+        "cab": ["Tipo", "Ideia", "Conectivos"],
+        "linhas": [
+          ["Aditiva", "Soma", "e, nem"],
+          ["Adversativa", "Oposição", "mas, porém, contudo, todavia"],
+          ["Alternativa", "Escolha", "ou, ora... ora"],
+          ["Conclusiva", "Conclusão", "logo, portanto"],
+          ["Explicativa", "Justificativa", "pois, porque, que"]
+        ]
+      },
+      "macete": "Para analisar um período, ache primeiro os verbos: cada verbo é uma oração. Depois descubra se o conectivo liga orações independentes (coordenação) ou se uma depende da outra (subordinação). Para a vírgula, lembre: não separe sujeito do verbo.",
+      "pegadinhas": [
+        "Vírgula entre sujeito e verbo: “Os policiais, chegaram” está errado.",
+        "Confundir adjetiva restritiva (sem vírgula) com explicativa (com vírgula): o sentido muda.",
+        "Tratar “porque” e “pois” explicativos como se fossem adverbiais de causa.",
+        "Confundir objeto indireto com complemento nominal: o primeiro completa verbo, o segundo completa nome."
+      ],
+      "cobra": [
+        "Identificar a função sintática de um termo ou a classificação de uma oração.",
+        "Decidir qual frase tem a vírgula usada corretamente.",
+        "Assertivas I, II e III sobre período simples e composto."
+      ],
+      "mapa": {
+        "centro": "Sintaxe e pontuação",
+        "ramos": [
+          { "t": "Período", "f": ["Simples: 1 verbo", "Composto: 2 ou mais"] },
+          { "t": "Coordenação", "f": ["Independentes", "Aditiva, adversativa, alternativa, conclusiva, explicativa"] },
+          { "t": "Subordinação", "f": ["Substantiva", "Adjetiva", "Adverbial"] },
+          { "t": "Adjetiva", "f": ["Restritiva: sem vírgula", "Explicativa: com vírgula"] },
+          { "t": "Vírgula", "f": ["Aposto, vocativo, enumeração", "Nunca entre sujeito e verbo"] }
+        ]
+      }
+    },
+    {
+      "id": "interpretacao",
+      "titulo": "Significado no contexto e interpretação de textos",
+      "nivel": 3,
+      "grupoBanco": "Compreensão e Interpretação de Textos",
+      "qtdQuestoes": 8,
+      "intro": "A significação das palavras e a substituição de palavras ou trechos do texto apareceram nas 3 provas (2025 q4, 2021 q4, 2017 q10). Em interpretação, a resposta certa está no texto: a banca monta as erradas acrescentando algo (extrapolação) ou contrariando o que o texto diz.",
+      "pontos": [
+        { "ref": "O que o texto afirma", "conceito": true, "texto": "Sublinhe o trecho que sustenta a alternativa. Se você precisa de um conhecimento de fora para justificá-la, ela extrapola o texto e está errada." },
+        { "ref": "Inferência x extrapolação", "conceito": true, "texto": "Inferência é a conclusão que decorre do que está escrito. Extrapolação é ir além do texto, com dados que ele não traz. Alternativas com “sempre”, “nunca”, “somente” costumam extrapolar." },
+        { "ref": "Significado da palavra no contexto", "conceito": true, "texto": "Uma palavra pode ter vários sentidos (polissemia); o contexto decide qual vale. Ao trocar uma palavra por outra, o substituto precisa manter o sentido naquela frase, a classe gramatical e a regência." },
+        { "ref": "Teste do sinônimo", "conceito": true, "texto": "Releia a frase com a palavra proposta no lugar da original. Se o sentido muda, se a frase fica sem sentido ou se a regência fica errada, a substituição não serve, mesmo que as palavras sejam sinônimas em outro contexto." },
+        { "ref": "Denotação e conotação", "conceito": true, "texto": "Denotação é o sentido literal, de dicionário (“O vento é frio”). Conotação é o sentido figurado, criado pelo contexto (“Ele tem um coração de pedra”)." },
+        { "ref": "Implícitos", "conceito": true, "texto": "Pressuposto é a informação que a frase dá como certa (“Ele parou de fumar” pressupõe que fumava). Subentendido é a conclusão que o leitor tira e que o autor pode negar. Não confunda ambos com o que está dito." },
+        { "ref": "Ideia principal e ideias secundárias", "conceito": true, "texto": "A ideia principal é aquela que organiza o texto e à qual as outras servem. As secundárias a explicam, ilustram ou reforçam. Cada parágrafo costuma ter um tópico frasal." },
+        { "ref": "Tipologia e gênero", "conceito": true, "texto": "Tipos: narração (fatos no tempo), descrição (características), exposição (informa e explica), argumentação (defende tese) e injunção (orienta). Gênero é o formato do texto (notícia, carta, receita) e pode misturar tipos." }
+      ],
+      "tabela": {
+        "titulo": "Como julgar uma alternativa",
+        "cab": ["Se a alternativa...", "Então é...", "O que fazer"],
+        "linhas": [
+          ["Repete ou resume o texto", "Certa", "Localize o trecho"],
+          ["Conclui algo que decorre do texto", "Inferência válida", "Confira a lógica"],
+          ["Traz dado que o texto não dá", "Extrapolação", "Elimine"],
+          ["Contradiz o texto", "Errada", "Elimine"],
+          ["Usa “sempre”, “nunca”, “somente”", "Suspeita", "Procure autorização no texto"]
+        ]
+      },
+      "macete": "Antes de olhar as alternativas, diga com suas palavras o que o texto afirma. Depois elimine as que acrescentam ou contrariam algo. Em substituição de palavra, releia a frase inteira com o substituto e confira o sentido.",
+      "pegadinhas": [
+        "Alternativa verdadeira no mundo real, mas que o texto não afirma.",
+        "Sinônimo correto em geral, mas errado naquele contexto (outro sentido da palavra).",
+        "Trocar uma palavra e mudar sem querer a regência ou a ideia da frase.",
+        "Confundir gênero (notícia) com tipo (expositivo) ao responder sobre tipologia."
+      ],
+      "cobra": [
+        "“No texto, a palavra X pode ser substituída, sem alterar o sentido, por...”: apareceu nas 3 provas.",
+        "O que o texto afirma sobre o assunto principal.",
+        "Assertivas I, II e III sobre ideias do texto."
+      ],
+      "mapa": {
+        "centro": "Interpretação",
+        "ramos": [
+          { "t": "Regra de ouro", "f": ["A resposta está no texto", "Extrapolar é errar"] },
+          { "t": "Palavra no contexto", "f": ["Polissemia", "Teste do sinônimo"] },
+          { "t": "Sentido", "f": ["Denotação", "Conotação"] },
+          { "t": "Implícitos", "f": ["Pressuposto", "Subentendido"] },
+          { "t": "Tipos", "f": ["Narrar, descrever", "Expor, argumentar", "Instruir"] }
+        ]
+      }
+    },
+    {
+      "id": "coesao",
+      "titulo": "Coesão textual: conectores e referenciação",
+      "nivel": 3,
+      "grupoBanco": "Coesão e Coerência Textual",
+      "qtdQuestoes": 8,
+      "intro": "Conectores e mecanismos de sequenciação textual caíram nas 3 provas (2025 q3, 2021 q3, 2017 q4). Elementos de referenciação, substituição e repetição apareceram em 1 prova. Conectar bem é dar à frase a relação certa: causa, oposição, concessão, conclusão e assim por diante.",
+      "pontos": [
+        { "ref": "O que é coesão", "conceito": true, "texto": "Coesão é a ligação entre as partes do texto, feita por conectivos, pronomes, repetições e substituições. Coerência é a lógica das ideias. Um texto pode ter conectivos e continuar incoerente." },
+        { "ref": "Oposição e concessão", "conceito": true, "texto": "Oposição (mas, porém, contudo, todavia, no entanto, entretanto) contrasta duas ideias. Concessão (embora, ainda que, mesmo que, apesar de que) admite um fato que não impede o outro. “Embora” não é sinônimo de “mas”: a oração com “embora” é subordinada e o verbo vai ao subjuntivo." },
+        { "ref": "Causa e consequência", "conceito": true, "texto": "Causa: porque, já que, visto que, uma vez que, como (no início da frase). Consequência: de modo que, de forma que, tanto que, tão... que. Conclusão: logo, portanto, por isso, por conseguinte, assim." },
+        { "ref": "Condição, finalidade, conformidade", "conceito": true, "texto": "Condição: se, caso, desde que, a menos que, contanto que. Finalidade: para que, a fim de que. Conformidade: conforme, segundo, consoante. Proporção: à medida que, quanto mais... mais." },
+        { "ref": "Adição, explicação e tempo", "conceito": true, "texto": "Adição: e, nem, além disso, também. Explicação: isto é, ou seja, a saber. Tempo: quando, assim que, logo que, enquanto, antes que." },
+        { "ref": "O conectivo “pois”", "conceito": true, "texto": "Antes do verbo, “pois” explica ou dá causa (“Foi dispensado, pois chegou atrasado”). Depois do verbo, entre vírgulas, conclui (“Ele é o mais antigo; deve, pois, assumir a chefia”). Use o sentido da frase para decidir." },
+        { "ref": "Referenciação", "conceito": true, "texto": "Um termo retoma outro por pronome (ele, o qual, isso), por sinônimo, por termo mais geral (hiperônimo) ou por elipse. Anáfora retoma o que já foi dito; catáfora antecipa o que vem a seguir." },
+        { "ref": "Substituição de conectivo", "conceito": true, "texto": "Para trocar um conectivo, a relação de sentido precisa ser a mesma e o verbo pode mudar de modo. “Estudou, mas não passou” = “Embora tenha estudado, não passou”." }
+      ],
+      "tabela": {
+        "titulo": "Conectivos por relação de sentido",
+        "cab": ["Relação", "Conectivos"],
+        "linhas": [
+          ["Oposição", "mas, porém, contudo, todavia, no entanto"],
+          ["Concessão", "embora, ainda que, mesmo que"],
+          ["Causa", "porque, já que, visto que, uma vez que"],
+          ["Conclusão", "logo, portanto, por isso"],
+          ["Condição", "se, caso, desde que"],
+          ["Finalidade", "para que, a fim de que"],
+          ["Conformidade", "conforme, segundo, consoante"]
+        ]
+      },
+      "macete": "Identifique a relação entre as duas ideias antes de olhar o conectivo: uma causa a outra? uma contradiz a outra? uma admite um obstáculo que não impediu? Só então escolha o conectivo que traduz essa relação.",
+      "pegadinhas": [
+        "Trocar “mas” (oposição) por “embora” (concessão) sem ajustar o verbo e a estrutura.",
+        "Conectivo de causa no lugar de conclusão (“porque” x “portanto”): a ordem das ideias se inverte.",
+        "Substituir um conectivo por outro de relação diferente, mudando o sentido do período.",
+        "Confundir condição (“se”, “caso”) com concessão (“embora”, “ainda que”): “se chover” impõe uma condição; “ainda que chova” admite um obstáculo que não impede o fato."
+      ],
+      "cobra": [
+        "“Qual conectivo preenche a lacuna mantendo a coerência?”: apareceu nas 3 provas.",
+        "Reescrita do trecho com outro conectivo sem alterar o sentido.",
+        "Identificar a que termo um pronome se refere."
+      ],
+      "mapa": {
+        "centro": "Coesão",
+        "ramos": [
+          { "t": "Ideia", "f": ["Ligação entre partes", "Diferente de coerência"] },
+          { "t": "Oposição", "f": ["Mas, porém, contudo", "Embora = concessão"] },
+          { "t": "Causa e conclusão", "f": ["Porque, já que", "Logo, portanto"] },
+          { "t": "Outros", "f": ["Condição: se, caso", "Finalidade: para que"] },
+          { "t": "Referência", "f": ["Pronome", "Sinônimo", "Elipse"] }
+        ]
+      }
+    },
+    {
+      "id": "redacao-oficial",
+      "titulo": "Redação oficial e pronomes de tratamento",
+      "nivel": 2,
+      "grupoBanco": "Redação Oficial",
+      "qtdQuestoes": 8,
+      "intro": "Redação Oficial caiu em 2 das 3 provas (2025 e 2021), 2 questões em cada: pronome de tratamento nas duas (em 2021, vocativo e tratamento do Presidente da República; em 2025, a qual cargo não cabe “Vossa Excelência”, questão depois anulada), aspectos gerais da redação oficial (2021) e partes do padrão ofício (2025). Esta lição segue o Manual vigente (3ª edição, 2018).",
+      "pontos": [
+        { "ref": "Princípios da redação oficial", "conceito": true, "texto": "A redação oficial é impessoal, formal e padronizada, escrita no padrão culto da língua, com clareza, precisão e concisão. Não admite gírias, regionalismos nem expressão de opinião pessoal." },
+        { "ref": "Padrão ofício", "conceito": true, "texto": "Até a 2ª edição do Manual havia três expedientes: aviso (expedido por Ministros de Estado para autoridades de mesma hierarquia), ofício (para e pelas demais autoridades) e memorando (entre unidades de um mesmo órgão). A 3ª edição (2018) aboliu essa distinção: hoje se usa só o nome “ofício” nas três hipóteses, com diagramação única, o “padrão ofício”." },
+        { "ref": "Estrutura do ofício", "conceito": true, "texto": "Na ordem do Manual: cabeçalho (brasão e nome do órgão), identificação do expediente (“OFÍCIO Nº 652/2018/SAA/SE/MT”), local e data (“Brasília, 2 de fevereiro de 2018.”), endereçamento (tratamento, nome, cargo e endereço do destinatário), assunto (em negrito, sem verbo, com ponto-final), texto (introdução, desenvolvimento e conclusão), fecho e identificação do signatário." },
+        { "ref": "Fechos", "conceito": true, "texto": "O Manual admite só dois fechos: “Respeitosamente”, para autoridades de hierarquia superior à do remetente, inclusive o Presidente da República, e “Atenciosamente”, para autoridades de mesma hierarquia, de hierarquia inferior ou demais casos." },
+        { "ref": "Vocativo", "conceito": true, "texto": "Chefes de Poder recebem “Excelentíssimo Senhor” + cargo, seguido de vírgula: “Excelentíssimo Senhor Presidente da República,”. As demais autoridades, mesmo as tratadas por Vossa Excelência, recebem “Senhor” ou “Senhora” + cargo (“Senhora Senadora,”, “Senhor Juiz,”). Estão abolidos “Digníssimo” (DD.) e “Ilustríssimo” (Ilmo.), e deve-se evitar “doutor” como tratamento." },
+        { "ref": "Pronomes de tratamento: quem recebe", "conceito": true, "texto": "Na tabela do Manual (3ª edição), recebem Vossa Excelência: Presidente e Vice-Presidente da República, Presidentes do Congresso Nacional e do STF, Ministros de Estado, Secretários-Executivos de Ministério, embaixadores, oficiais-generais das Forças Armadas, senadores, deputados federais, Ministros do TCU e dos Tribunais Superiores; o próprio Manual diz que a lista é só exemplificativa. Outros postos militares recebem Vossa Senhoria, que também se usa para particulares. Formas tradicionais da 2ª edição, que não estão na tabela da 3ª: Vossa Magnificência (reitores), Vossa Santidade (Papa), Vossa Eminência (cardeais)." },
+        { "ref": "Vossa x Sua", "conceito": true, "texto": "Usa-se “Vossa” quando se fala COM a pessoa (“Vossa Excelência determinou”) e “Sua” quando se fala DA pessoa (“Sua Excelência o Ministro chegou”)." },
+        { "ref": "Concordância com pronome de tratamento", "conceito": true, "texto": "O verbo e os pronomes possessivos ficam na 3ª pessoa (“Vossa Excelência encaminhou o seu parecer”, não “vosso”). Os adjetivos concordam com o sexo da pessoa a que se refere: “Vossa Excelência está atarefada” (se for mulher)." }
+      ],
+      "tabela": {
+        "titulo": "Pronomes de tratamento",
+        "cab": ["Pronome", "Para quem"],
+        "linhas": [
+          ["Vossa Excelência", "Presidente e Vice-Presidente da República, chefes de Poder, Ministros de Estado, embaixadores, oficiais-generais, senadores, deputados, ministros de tribunais (lista exemplificativa do Manual)"],
+          ["Vossa Senhoria", "Outros postos militares e particulares"],
+          ["Excelentíssimo Senhor + cargo", "Vocativo só para chefes de Poder"],
+          ["Senhor / Senhora + cargo", "Vocativo das demais autoridades"],
+          ["Vossa Magnificência", "Reitores (forma tradicional, da 2ª edição)"],
+          ["Vossa Santidade", "Papa (forma tradicional, da 2ª edição)"]
+        ]
+      },
+      "macete": "Pronome de tratamento é de 3ª pessoa, mesmo quando se fala com a pessoa: verbo e possessivo na 3ª (“seu”, nunca “vosso”). Fale COM = Vossa; fale DA = Sua. Fecho: para cima, Respeitosamente; para igual ou para baixo, Atenciosamente.",
+      "pegadinhas": [
+        "Alternativa que usa “vosso” depois de “Vossa Excelência”: o possessivo correto é “seu”.",
+        "Trocar Vossa Excelência (chefes de Poder, ministros etc.) por Vossa Senhoria, ou o contrário.",
+        "Usar “Excelentíssimo Senhor” no vocativo de um senador ou de um ministro: no Manual, só chefes de Poder o recebem; os demais, “Senhor” + cargo.",
+        "Tratar aviso e memorando como documentos distintos do ofício: a 3ª edição do Manual aboliu essa distinção.",
+        "Usar “Vossa Excelência” para se referir à autoridade na frase em que se fala DELA: o correto é “Sua Excelência”.",
+        "Fecho “Atenciosamente” para autoridade superior: o adequado é “Respeitosamente”."
+      ],
+      "cobra": [
+        "Qual tratamento cabe a determinada autoridade.",
+        "Correção de trecho de ofício quanto a pronome, concordância e fecho.",
+        "Características da redação oficial: impessoalidade, formalidade, clareza, concisão."
+      ],
+      "mapa": {
+        "centro": "Redação oficial",
+        "ramos": [
+          { "t": "Princípios", "f": ["Impessoal e formal", "Clareza e concisão"] },
+          { "t": "Padrão ofício", "f": ["Só o nome “ofício” (3ª ed.)", "Aviso e memorando abolidos", "Diagramação única"] },
+          { "t": "Tratamento", "f": ["Vossa Excelência", "Vossa Senhoria", "Vossa Magnificência"] },
+          { "t": "Vossa x Sua", "f": ["Vossa: fala COM", "Sua: fala DA"] },
+          { "t": "Fecho", "f": ["Respeitosamente: superior", "Atenciosamente: igual ou inferior"] }
+        ]
+      }
+    },
+    {
+      "id": "verbos",
+      "titulo": "Verbos, vozes e colocação pronominal",
+      "nivel": 1,
+      "grupoBanco": "Morfologia e Verbos",
+      "qtdQuestoes": 6,
+      "intro": "Morfologia e Verbos caiu em apenas 1 das 3 provas (vozes verbais, em 2025). Por isso vem por último: é indício de baixa frequência, mas o assunto é curto e dá pontos com pouco estudo.",
+      "pontos": [
+        { "ref": "Vozes verbais", "conceito": true, "texto": "Voz ativa: o sujeito pratica a ação (“O soldado prendeu o suspeito”). Voz passiva: o sujeito sofre a ação (“O suspeito foi preso pelo soldado”). Voz reflexiva: o sujeito pratica e sofre a ação (“O soldado feriu-se”)." },
+        { "ref": "Conversão ativa em passiva", "conceito": true, "texto": "O objeto direto da ativa vira sujeito da passiva, o sujeito da ativa vira agente da passiva e o verbo passa a ser “ser” + particípio no mesmo tempo. “A banca elaborou a prova” → “A prova foi elaborada pela banca”." },
+        { "ref": "Passiva sintética", "conceito": true, "texto": "Verbo transitivo direto + “se” com sujeito paciente: “Vendem-se casas” = “Casas são vendidas”. O verbo concorda com o sujeito." },
+        { "ref": "Futuro do subjuntivo", "conceito": true, "texto": "Segue o radical da 3ª pessoa do plural do pretérito perfeito. Do verbo ver: “se eu vir”; do verbo vir: “se ele vier”. Também: “puser” (pôr), “fizer”, “disser”, “houver”, “trouxer”, “mantiver”. Errado: “se você ver”, “se ele manter”." },
+        { "ref": "Próclise", "conceito": true, "texto": "O pronome átono vem antes do verbo quando há palavra atrativa: negação, advérbio, pronome relativo ou indefinido, conjunção subordinativa. “Não me disseram”, “Ninguém me avisou”, “O livro que me emprestou”, “Aqui se trabalha”." },
+        { "ref": "Ênclise", "conceito": true, "texto": "O pronome vem depois do verbo quando o verbo inicia a frase (norma culta não começa frase com pronome átono) e no imperativo afirmativo: “Entregue-me o documento”." },
+        { "ref": "Mesóclise", "conceito": true, "texto": "Pronome no meio do verbo, apenas no futuro do presente e no futuro do pretérito, sem palavra atrativa: “Dar-lhe-ei o documento”, “Far-se-ia justiça”. Com palavra atrativa, usa-se próclise: “Não lhe darei”." }
+      ],
+      "tabela": {
+        "titulo": "Voz ativa e passiva",
+        "cab": ["Voz", "Estrutura", "Exemplo"],
+        "linhas": [
+          ["Ativa", "Sujeito pratica a ação", "O soldado prendeu o suspeito."],
+          ["Passiva analítica", "Ser + particípio", "O suspeito foi preso pelo soldado."],
+          ["Passiva sintética", "Verbo + se", "Prendeu-se o suspeito."],
+          ["Reflexiva", "Sujeito pratica e sofre", "O soldado feriu-se."]
+        ]
+      },
+      "macete": "Para converter ativa em passiva: (1) ache o objeto direto e faça dele o sujeito; (2) use “ser” no mesmo tempo do verbo original + particípio concordando com o novo sujeito; (3) o antigo sujeito vira agente da passiva com “por”.",
+      "pegadinhas": [
+        "Passiva com tempo diferente do original: “prendeu” vira “foi preso”, não “é preso”.",
+        "Particípio sem concordar com o novo sujeito.",
+        "Mesóclise com palavra atrativa (“Não dar-lhe-ei”): o correto é “Não lhe darei”.",
+        "“Se você ver”, “se ele manter”: o futuro do subjuntivo correto é “vir” e “mantiver”."
+      ],
+      "cobra": [
+        "Reescrita de frase da voz ativa para a passiva (ou o contrário).",
+        "Reconhecer o tipo de voz verbal em um trecho.",
+        "Escolha do verbo na forma correta (tempo e modo)."
+      ],
+      "mapa": {
+        "centro": "Verbos e pronomes",
+        "ramos": [
+          { "t": "Vozes", "f": ["Ativa", "Passiva", "Reflexiva"] },
+          { "t": "Conversão", "f": ["Objeto vira sujeito", "Ser + particípio", "Agente com por"] },
+          { "t": "Próclise", "f": ["Não, que, advérbio"] },
+          { "t": "Ênclise", "f": ["Início de frase", "Imperativo afirmativo"] },
+          { "t": "Mesóclise", "f": ["Futuro do presente", "Futuro do pretérito"] }
+        ]
+      }
+    }
+  ]
+}
