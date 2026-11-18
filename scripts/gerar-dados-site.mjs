@@ -34,6 +34,7 @@ const questoes = qs.questoes.map((q) => {
   if (!texto(q.prova)) problemas.push(`${idq}: prova ausente`);
   if (q.num == null || q.num === '') problemas.push(`${idq}: num ausente`);
   if (!Number.isInteger(q.ano)) problemas.push(`${idq}: ano inválido (${q.ano})`);
+  if (!texto(q.topico)) problemas.push(`${idq}: topico ausente ou não é texto`);
   if (!texto(q.secao)) problemas.push(`${idq}: secao ausente`);
   if (typeof q.enunciado !== 'string' || !q.enunciado.trim()) problemas.push(`${idq}: enunciado vazio`);
   if (q.fonte && (typeof q.fonte.arquivo !== 'string' || !q.fonte.arquivo.trim())) problemas.push(`${idq}: fonte sem arquivo`);
@@ -83,22 +84,25 @@ const provas = (radar.provas || []).map((p) => ({
   cargo: p.cargo,
   alvo: !!(alvosPorProva.get(p.id) || new Set()).has(true),
 }));
-const idsProvas = new Set(provas.map((p) => p.id));
-for (const q of qs.questoes) {
-  if (!idsProvas.has(q.prova)) {
-    idsProvas.add(q.prova);
-    provas.push({ id: q.prova, municipio: q.municipio, ano: q.ano, edital: q.edital, cargo: q.cargo, alvo: !!q.alvo });
-  }
-}
-
+// toda prova vem do radar: ids únicos, campos completos, e cada questão aponta para uma prova existente
+const idsProvas = new Set();
 for (const p of provas) {
-  if (typeof p.edital !== 'string' || !p.edital.trim()) problemas.push(`prova ${p.id}: sem edital`);
+  if (typeof p.id !== 'string' || !p.id.trim()) { problemas.push('prova do radar sem id'); continue; }
+  if (idsProvas.has(p.id)) problemas.push(`prova ${p.id}: id duplicado no radar`);
+  idsProvas.add(p.id);
+  for (const campo of ['municipio', 'edital', 'cargo']) {
+    if (typeof p[campo] !== 'string' || !p[campo].trim()) problemas.push(`prova ${p.id}: ${campo} ausente`);
+  }
+  if (!Number.isInteger(p.ano)) problemas.push(`prova ${p.id}: ano inválido`);
+}
+for (const q of qs.questoes) {
+  if (!idsProvas.has(q.prova)) problemas.push(`${q.prova}#${q.num}: prova não existe em radar.provas`);
 }
 
 // lista única de tópicos para o filtro: código, rótulo (do radar, senão o próprio código) e nº de questões
 const contagem = new Map();
 for (const q of questoes) {
-  if (q.top && !q.top.includes('?')) contagem.set(q.top, (contagem.get(q.top) || 0) + 1);
+  if (typeof q.top === 'string' && q.top && !q.top.includes('?')) contagem.set(q.top, (contagem.get(q.top) || 0) + 1);
 }
 const topicosLista = [...contagem.entries()]
   .map(([c, n]) => ({ c, r: Object.hasOwn(topicos, c) && topicos[c] ? topicos[c] : c, n }))

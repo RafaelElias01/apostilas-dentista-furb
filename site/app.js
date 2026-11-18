@@ -23,9 +23,15 @@ function estado() {
     if (bruto) o = JSON.parse(bruto);
   } catch (e) { o = null; }
   if (!o || typeof o !== 'object') o = {};
-  o.resp = o.resp && typeof o.resp === 'object' ? o.resp : {}; // id -> {l: letra, ok: bool}
-  o.erros = o.erros && typeof o.erros === 'object' ? o.erros : {}; // id -> true
-  o.sims = Array.isArray(o.sims) ? o.sims : [];
+  // saneia o que veio do localStorage (pode estar corrompido): descarta entradas fora do formato
+  const limpa = (obj, vale) => {
+    const r = {};
+    if (obj && typeof obj === 'object' && !Array.isArray(obj)) for (const [k, v] of Object.entries(obj)) if (k !== '__proto__' && vale(v)) r[k] = v;
+    return r;
+  };
+  o.resp = limpa(o.resp, (v) => v && typeof v === 'object' && typeof v.ok === 'boolean'); // id -> {l: letra, ok: bool}
+  o.erros = limpa(o.erros, (v) => v === true); // id -> true
+  o.sims = Array.isArray(o.sims) ? o.sims.filter((x) => x && typeof x === 'object' && Number.isFinite(x.certas) && Number.isFinite(x.validas) && Number.isFinite(x.n) && Number.isFinite(x.min) && typeof x.d === 'string') : [];
   memoria = o;
   return o;
 }
@@ -84,9 +90,11 @@ async function json(url) {
   return r.json();
 }
 // fallback se o questoes.json não trouxer topicosLista: deriva das questões
+// ATENÇÃO: a mesma lógica existe no gerador (scripts/gerar-dados-site.mjs, "topicosLista"); mantenha as duas cópias iguais.
+const topicoValido = (t) => typeof t === 'string' && t !== '' && !t.includes('?');
 function derivarTopicos(questoes, rotulos) {
   const cont = new Map();
-  for (const q of questoes) if (q.top && !q.top.includes('?')) cont.set(q.top, (cont.get(q.top) || 0) + 1);
+  for (const q of questoes) if (topicoValido(q.top)) cont.set(q.top, (cont.get(q.top) || 0) + 1);
   return [...cont.entries()].map(([c, n]) => ({ c, r: Object.hasOwn(rotulos, c) && rotulos[c] ? rotulos[c] : c, n }))
     .sort((a, b) => (a.c < b.c ? -1 : a.c > b.c ? 1 : 0));
 }
@@ -118,10 +126,10 @@ function cartaoQuestao(q, opts) {
   const revelar = opts.revelar;
   const tags = [
     h('span', { class: 'tag' }, `${prova.municipio || q.prova} ${q.ano}`),
-    h('span', { class: 'tag' }, prova.edital || ''),
-    h('span', { class: 'tag' }, prova.cargo || ''),
+    prova.edital ? h('span', { class: 'tag' }, prova.edital) : null,
+    prova.cargo ? h('span', { class: 'tag' }, prova.cargo) : null,
     h('span', { class: 'tag' }, nomeSecao(q.sec)),
-    q.top && !q.top.includes('?') ? h('span', { class: 'tag' }, rotuloTopico(q.top)) : null,
+    topicoValido(q.top) ? h('span', { class: 'tag' }, rotuloTopico(q.top)) : null,
     q.alvo ? h('span', { class: 'tag ok' }, 'cargo-alvo') : null,
     anulada ? h('span', { class: 'tag anulada' }, 'anulada') : null,
     semGab ? h('span', { class: 'tag anulada' }, 'sem gabarito') : null,
@@ -325,7 +333,7 @@ function viewTreino(raiz, param) {
     );
     area.append(nav);
   }
-  const filtros = blocoFiltros(f, () => { treino.i = 0; refazer(); desenhar(); resumo(); }, extras);
+  const filtros = blocoFiltros(f, () => { treino.i = 0; refazer(); desenhar(); }, extras);
   function resumo() {
     const st = estado();
     const l = ids.map((id) => D.porId.get(id)).filter(Boolean); // lista congelada da sessão
@@ -358,18 +366,30 @@ function viewSimulado(raiz) {
   const inN = h('input', { type: 'number', id: 's-n', min: '1', max: '200', value: String(sim.n) });
   const inM = h('input', { type: 'number', id: 's-min', min: '1', max: '600', value: String(sim.min) });
   const poolDe = () => aplicarFiltros(f).filter(temGabarito);
-  const atualiza = () => { info.textContent = `${poolDe().length} questões com gabarito disponíveis nestes filtros (anuladas ficam de fora).`; };
+  const atualiza = () => {
+    const n = poolDe().length;
+    const pedido = Math.min(200, Math.max(1, parseInt(inN.value, 10) || 1)); // mesmo limite aplicado em iniciar()
+    info.textContent = `${n} questões com gabarito disponíveis nestes filtros (anuladas ficam de fora).` +
+      (n > 0 && n < pedido ? ` Só há ${n}: o simulado terá ${n} questões e o tempo será ajustado proporcionalmente.` : '');
+  };
+  inN.addEventListener('input', atualiza);
   const filtros = blocoFiltros(f, atualiza, [
     h('label', { for: 's-n' }, 'Número de questões', inN),
     h('label', { for: 's-min' }, 'Tempo (minutos, você define)', inM),
   ]);
   const iniciar = () => {
     const pool = poolDe();
-    sim.n = Math.max(1, parseInt(inN.value, 10) || 1);
-    sim.min = Math.max(1, parseInt(inM.value, 10) || 1);
+    sim.n = Math.min(200, Math.max(1, parseInt(inN.value, 10) || 1));
+    sim.min = Math.min(600, Math.max(1, parseInt(inM.value, 10) || 1));
     if (!pool.length) { info.textContent = 'Nenhuma questão disponível com estes filtros.'; return; }
     const sel = embaralhar(pool).slice(0, sim.n);
-    simAtivo = { ids: sel.map((q) => q.id), resp: {}, ini: Date.now(), dur: sim.min * 60, fim: false, i: 0 };
+    let dur = sim.min * 60;
+    let aviso = null;
+    if (sel.length < sim.n) { // pool menor que o pedido: avisa e ajusta o tempo proporcionalmente
+      dur = Math.max(60, Math.round((dur * sel.length) / sim.n));
+      aviso = `Você pediu ${sim.n} questões, mas só há ${sel.length} com estes filtros. O tempo foi ajustado para ${fmtTempo(dur)}.`;
+    }
+    simAtivo = { ids: sel.map((q) => q.id), resp: {}, ini: Date.now(), dur, fim: false, i: 0, aviso };
     render();
   };
   raiz.append(
@@ -417,6 +437,7 @@ function desenharSimulado(raiz) {
   }, 500);
   raiz.append(
     h('h1', null, 'Simulado em andamento'),
+    s.aviso ? h('p', { class: 'aviso', role: 'note' }, s.aviso) : null,
     h('div', { class: 'linha' }, h('span', null, 'Tempo restante: '), tempo),
     area,
     h('div', { class: 'linha' },
@@ -547,16 +568,24 @@ function viewRadar(raiz) {
 
 /* ---------- APOSTILAS ---------- */
 function viewApostilas(raiz) {
-  const pub = new Map(D.apostilas.map((a) => [a.numero, a]));
+  const pub = new Map();
+  const problemasNum = [];
+  for (const a of D.apostilas) {
+    const n = Number(a && a.numero);
+    if (!a || !Number.isInteger(n) || n < 1) { problemasNum.push('numero inválido'); continue; }
+    if (pub.has(n)) problemasNum.push(`numero ${n} duplicado`);
+    else pub.set(n, a);
+  }
+  const erroApos = [D.apostilasErro, ...(problemasNum.length ? [`dados/apostilas.json: ${[...new Set(problemasNum)].join('; ')}`] : [])].filter(Boolean).join(' | ');
   raiz.append(
     h('h1', null, 'Apostilas'),
     h('p', null, 'Uma apostila em PDF por área, numeradas. As que ainda não estão prontas aparecem como "em preparação".'),
   );
-  if (D.apostilasErro) raiz.append(h('p', { class: 'aviso', role: 'alert' }, `Não foi possível ler a lista de apostilas publicadas (${D.apostilasErro}). Os links de PDF podem estar faltando.`));
+  if (erroApos) raiz.append(h('p', { class: 'aviso', role: 'alert' }, `Problema na lista de apostilas publicadas (${erroApos}). Os links de PDF podem estar faltando.`));
   const ul = h('ul', { class: 'lista' });
   for (const a of D.radar.apostilas || []) {
     const nn = String(a.numero).padStart(2, '0');
-    const p = pub.get(a.numero);
+    const p = pub.get(Number(a.numero));
     const li = h('li', null, h('strong', null, `Apostila ${nn} · ${a.titulo}`), ' ');
     if (p && p.arquivo) li.append(h('a', { class: 'btn', href: `apostilas/${encodeURIComponent(p.arquivo)}`, download: '' }, 'Baixar PDF'));
     else li.append(h('span', { class: 'tag anulada' }, 'em preparação'));
@@ -576,7 +605,12 @@ function render() {
   const nome = Object.hasOwn(VIEWS, rota) ? rota : 'treino';
   const main = document.getElementById('conteudo');
   main.replaceChildren();
-  VIEWS[nome](main, param);
+  try {
+    VIEWS[nome](main, param);
+  } catch (e) { // erro ao desenhar a tela: não é falha de carga, então não oferece recarregar os dados
+    console.error(e);
+    main.replaceChildren(h('p', { class: 'aviso', role: 'alert' }, `Erro ao exibir esta tela (${e && e.message ? e.message : e}). Tente outra aba do menu.`));
+  }
   document.title = `${{ treino: 'Treino', simulado: 'Simulado', erros: 'Caderno de erros', radar: 'O que mais cai', apostilas: 'Apostilas' }[nome]} · Estudo Dentista FURB`;
   document.querySelectorAll('#menu a').forEach((a) => {
     if (a.dataset.rota === nome) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
