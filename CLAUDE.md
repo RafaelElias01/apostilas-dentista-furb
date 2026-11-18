@@ -1,6 +1,6 @@
 # CLAUDE.md — Apostilas Dentista (FURB: Balneário Camboriú SC e Blumenau SC)
 
-Projeto enxuto, criado em 2026-11-18 a partir do curso-template (Brigada Academy). **Sem site, sem e-mail, sem pagamento.** Foco único: **uma apostila PDF por disciplina do edital, numeradas, perfeitas, baseadas nas provas anteriores** (banca FURB). Reaproveitar conteúdo do projeto HCPA (`C:\Users\rafael-ioppi\Documents\hcpa-ps32-estudo-main`) quando servir (matérias comuns: português, informática, SUS, legislação etc.).
+Projeto enxuto, criado em 2026-11-18 a partir do curso-template (Brigada Academy). **Sem e-mail e sem pagamento. Site: só um site estático de estudo (pasta `site/`, GitHub Pages, repositório público https://github.com/RafaelElias01/apostilas-dentista-furb), sem login e sem backend; os dados dele são gerados por `node scripts/gerar-dados-site.mjs` a partir de `curso/questoes-anteriores.json` e `curso/radar-banca.json` (rodar de novo sempre que o radar mudar). `memoria/` NÃO vai para o git público (tem IP da VM, e-mails e telefone).** Foco único: **uma apostila PDF por disciplina do edital, numeradas, perfeitas, baseadas nas provas anteriores** (banca FURB). Reaproveitar conteúdo do projeto HCPA (`C:\Users\rafael-ioppi\Documents\hcpa-ps32-estudo-main`) quando servir (matérias comuns: português, informática, SUS, legislação etc.).
 
 ## Regras permanentes (herdadas; valem aqui)
 - **Responder sempre em português.**
