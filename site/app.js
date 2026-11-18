@@ -594,8 +594,65 @@ function viewApostilas(raiz) {
   raiz.append(h('div', { class: 'card' }, ul));
 }
 
+/* ---------- CONCURSO ---------- */
+/* dados/concurso.json é mantido à mão e carregado só aqui: se faltar ou quebrar, só esta aba mostra aviso */
+const txt = (v) => (typeof v === 'string' || typeof v === 'number' ? String(v) : '');
+const lista_ = (v) => (Array.isArray(v) ? v : []);
+function tabela(legenda, colunas, linhas) {
+  return h('div', { class: 'rolavel', role: 'region', 'aria-label': legenda, tabindex: '0' }, h('table', null,
+    h('caption', { class: 'so-leitor' }, legenda),
+    h('thead', null, h('tr', null, colunas.map((t) => h('th', { scope: 'col' }, t)))),
+    h('tbody', null, lista_(linhas).map((l) => h('tr', null, colunas.map((_, i) => h('td', null, txt(lista_(l)[i]) || '—')))))));
+}
+function desenharConcurso(raiz, C) {
+  const ref = C.referencia && typeof C.referencia === 'object' ? C.referencia : {};
+  const ant = C.anteriores && typeof C.anteriores === 'object' ? C.anteriores : null;
+  const bloco = (it) => h('div', null, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
+  if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
+  if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
+  if (lista_(C.situacao).length) {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, lista_(C.situacao).map(bloco)));
+  }
+  if (lista_(C.inscricao).length) {
+    raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, lista_(C.inscricao).map((it) => h('div', null,
+      h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)),
+      txt(it.fonte) ? h('p', { class: 'suave' }, `Fonte: ${txt(it.fonte)}`) : null))));
+  }
+  if (txt(ref.titulo)) {
+    const cron = ref.cronograma, prova = ref.prova, des = ref.desempate;
+    raiz.append(h('h2', null, txt(ref.titulo)),
+      h('div', { class: 'card' },
+        lista_(ref.itens).map(bloco),
+        cron ? [h('h3', null, txt(cron.titulo)), tabela(txt(cron.titulo), ['Etapa', 'Data'], cron.linhas)] : null,
+        prova ? [h('h3', null, txt(prova.titulo)), h('p', null, txt(prova.texto)), tabela('Questões por disciplina', ['Disciplina', 'Questões'], prova.linhas)] : null,
+        des ? bloco(des) : null,
+        txt(ref.naoConfirmado) ? h('p', { class: 'aviso', role: 'note' }, txt(ref.naoConfirmado)) : null,
+      ));
+  }
+  if (ant && lista_(ant.colunas).length) {
+    raiz.append(h('h2', null, txt(ant.titulo)), tabela(txt(ant.titulo), ant.colunas.map(txt), ant.linhas),
+      txt(ant.legenda) ? h('p', { class: 'suave' }, txt(ant.legenda)) : null);
+  }
+  if (txt(C.fonte)) raiz.append(h('p', { class: 'suave' }, txt(C.fonte)));
+}
+function viewConcurso(raiz) {
+  raiz.append(h('h1', null, 'Concurso'));
+  const area = h('div', null, h('p', null, 'Carregando...'));
+  raiz.append(area);
+  json('dados/concurso.json').then((C) => {
+    if (!area.isConnected) return; // o usuário já mudou de aba
+    if (!C || typeof C !== 'object' || Array.isArray(C)) throw new Error('formato inesperado');
+    area.replaceChildren();
+    desenharConcurso(area, C);
+  }).catch((e) => {
+    if (!area.isConnected) return;
+    area.replaceChildren(h('p', { class: 'aviso', role: 'alert' },
+      `Não foi possível carregar as informações do concurso (${e && e.message ? e.message : e}). Confirme tudo no site oficial da FURB (concursos.furb.br).`));
+  });
+}
+
 /* ---------- roteamento ---------- */
-const VIEWS = { treino: viewTreino, simulado: viewSimulado, erros: viewErros, radar: viewRadar, apostilas: viewApostilas };
+const VIEWS = { concurso: viewConcurso, treino: viewTreino, simulado: viewSimulado, erros: viewErros, radar: viewRadar, apostilas: viewApostilas };
 function render() {
   pararTimer();
   if (!carregado) return; // dados ainda carregando: a tela mostra "Carregando..."
@@ -611,7 +668,7 @@ function render() {
     console.error(e);
     main.replaceChildren(h('p', { class: 'aviso', role: 'alert' }, `Erro ao exibir esta tela (${e && e.message ? e.message : e}). Tente outra aba do menu.`));
   }
-  document.title = `${{ treino: 'Treino', simulado: 'Simulado', erros: 'Caderno de erros', radar: 'O que mais cai', apostilas: 'Apostilas' }[nome]} · Estudo Dentista FURB`;
+  document.title = `${{ concurso: 'Concurso', treino: 'Treino', simulado: 'Simulado', erros: 'Caderno de erros', radar: 'O que mais cai', apostilas: 'Apostilas' }[nome]} · Estudo Dentista FURB`;
   document.querySelectorAll('#menu a').forEach((a) => {
     if (a.dataset.rota === nome) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });

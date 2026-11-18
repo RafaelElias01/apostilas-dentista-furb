@@ -1,0 +1,66 @@
+{
+  "atualizadoEm": "18/11/2026",
+  "avisoTopo": "Dados de editais anteriores. Confirme sempre no site oficial da FURB (concursos.furb.br) antes de se inscrever.",
+  "situacao": [
+    {
+      "titulo": "Balneário Camboriú",
+      "texto": "Ainda não há edital publicado. A prefeitura contratou a FURB por dispensa de licitação em 10/10/2026 para um concurso de cadastro de reserva, mas o documento não lista cargos, vagas nem datas, e não confirma que haverá Cirurgião-Dentista. Inscrições e datas: a divulgar."
+    },
+    {
+      "titulo": "Blumenau",
+      "texto": "Hoje não há edital aberto com o cargo. Os dois editais de 2026 (SEMED 001/2026 e Pró-Família 002/2026) não têm Cirurgião-Dentista."
+    },
+    {
+      "titulo": "Referência para estudar",
+      "texto": "O edital mais recente com o cargo, o Processo Seletivo 003/2025 de Blumenau. Os dados abaixo são dele e valem como referência, não como regra do próximo edital."
+    }
+  ],
+  "referencia": {
+    "titulo": "Edital de referência: Blumenau PSPS 003/2025",
+    "itens": [
+      { "titulo": "Tipo", "texto": "Processo seletivo simplificado, contratação por tempo determinado. A banca é a FURB." },
+      { "titulo": "Vagas", "texto": "Cadastro de reserva, sem número de vagas." },
+      { "titulo": "Cargos e vencimento", "texto": "Endodontista, Periodontista, Odontopediatra e Buco-Maxilo-Facial: R$ 10.296,01, 20h. Clínico Geral: R$ 10.094,13, 20h ou 40h. Todos exigem Odontologia e CRO. As especialidades exigem também a especialização na área." },
+      { "titulo": "Inscrição", "texto": "Taxa de R$ 150,00. Reserva de 20% das vagas para pessoas com deficiência." }
+    ],
+    "cronograma": {
+      "titulo": "Cronograma",
+      "linhas": [
+        ["Edital", "30/10/2025"],
+        ["Inscrições", "14/11 a 01/12/2025"],
+        ["Prova", "14/12/2025, 15h15 às 18h15"],
+        ["Gabarito preliminar", "15/12/2025"],
+        ["Gabarito oficial", "26/01/2026"],
+        ["Resultado final", "05/02/2026"]
+      ]
+    },
+    "prova": {
+      "titulo": "Prova",
+      "texto": "40 questões de 5 alternativas, cada uma valendo 0,25 (nota de 0 a 10).",
+      "linhas": [
+        ["Língua Portuguesa", "10"],
+        ["Conhecimentos Gerais e Legislação", "10"],
+        ["Conhecimentos Específicos", "20"]
+      ]
+    },
+    "desempate": {
+      "titulo": "Desempate",
+      "texto": "Idoso; depois mais acertos em Específicos, depois em Gerais e Legislação, depois em Português; depois quem foi jurado; por fim, maior idade."
+    },
+    "naoConfirmado": "Não confirmado: nota mínima de aprovação (o texto extraído do edital não a traz)."
+  },
+  "inscricao": [],
+  "anteriores": {
+    "titulo": "Edições anteriores",
+    "colunas": ["Edital", "Prova", "Questões", "Composição", "Observação"],
+    "linhas": [
+      ["PSPS 002/2019", "17/11/2019", "40", "LP 10, CGL 10, CE 20, 0,25 cada", ""],
+      ["PSPS 002/2021", "07/11/2021", "40", "LP 10, CGL 10, CE 20, 0,25 cada (mesma composição)", ""],
+      ["Concurso Público 002/2021", "13/03/2022", "50", "LP 10, CGL 10, CE 30, 0,20 cada", "Efetivo, cargo único Cirurgião Dentista, cadastro de reserva"],
+      ["PSPS 003/2023", "12/11/2023", "40", "LP 10, CGL 10, CE 20, 0,25 cada", ""],
+      ["PSPS 003/2025", "14/12/2025", "40", "", ""]
+    ],
+    "legenda": "LP: Língua Portuguesa. CGL: Conhecimentos Gerais e Legislação. CE: Conhecimentos Específicos."
+  },
+  "fonte": "Fonte: editais da FURB (arquivos em fontes/ do projeto), conferidos em 18/11/2026."
+}
