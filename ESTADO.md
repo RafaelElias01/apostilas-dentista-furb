@@ -33,7 +33,7 @@ Scripts de conferência na pasta scratchpad da sessão, fora do repo.
 - **Limite:** não auditei a classificação automática dos outros municípios (`complementarOutrosMunicipiosAuto`, que tem tópicos "?").
 
 ## O que falta (PENDENTE)
-1. **Balneário Camboriú:** edital não publicado. A FURB foi contratada em 10/10/2026, e o documento não diz se haverá o cargo de dentista. Quando sair, atualizar o edital.md e rever a legislação municipal das apostilas.
+1. **Balneário Camboriú:** edital não publicado. A FURB foi contratada por dispensa de licitação (Termo 114/2026; justificativa datada de 10/10/2026, divulgação em 10/11/2026 segundo a imprensa), e o documento não diz se haverá o cargo de dentista. Quando sair, atualizar o edital.md e rever a legislação municipal das apostilas.
 2. **Lei Orgânica de Blumenau:** falta o texto consolidado vigente. O arquivo atual é de 2021, com texto não extraível; existem as Emendas 52/2022 e 53/2025.
 3. **Lei 7.564/2010:** baixar e conferir as leis alteradoras (8.649/2018 e 8.820/2019).
 4. **Normas federais:** conferir com o Planalto quando houver rede; hoje a fonte é a Câmara dos Deputados.

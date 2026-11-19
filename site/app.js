@@ -84,8 +84,10 @@ function selectCom(rotulo, id, opcoes, valor) {
 let carregado = false;
 const D = { q: [], provas: [], topicos: {}, topicosLista: [], aviso: '', radar: null, apostilas: [], apostilasErro: '', porId: new Map() };
 const provaPorId = (id) => D.provas.find((p) => p.id === id);
-async function json(url) {
-  const r = await fetch(url);
+// revalidar=true: arquivos editados à mão (concurso.json, apostilas.json) são revalidados a cada carga
+// para não mostrar versão antiga; os grandes e gerados (questoes.json, radar.json) usam o cache normal.
+async function json(url, revalidar = false) {
+  const r = await fetch(url, revalidar ? { cache: 'no-cache' } : undefined);
   if (!r.ok) { const e = new Error(`${url}: ${r.status}`); e.status = r.status; throw e; }
   return r.json();
 }
@@ -104,7 +106,7 @@ async function carregar() {
     json('dados/questoes.json'),
     json('dados/radar.json'),
     // arquivo manual: só a ausência (404) é normal; JSON quebrado vira aviso na aba Apostilas
-    json('dados/apostilas.json').catch((e) => { if (e.status === 404) return []; D.apostilasErro = e.message; return []; }),
+    json('dados/apostilas.json', true).catch((e) => { if (e.status === 404) return []; D.apostilasErro = e.message; return []; }),
   ]);
   D.q = qs.questoes;
   D.provas = qs.provas;
@@ -598,31 +600,36 @@ function viewApostilas(raiz) {
 /* dados/concurso.json é mantido à mão e carregado só aqui: se faltar ou quebrar, só esta aba mostra aviso */
 const txt = (v) => (typeof v === 'string' || typeof v === 'number' ? String(v) : '');
 const lista_ = (v) => (Array.isArray(v) ? v : []);
+const ehObj = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+const objs_ = (v) => lista_(v).filter(ehObj); // ignora itens nulos/não-objeto
 function tabela(legenda, colunas, linhas) {
   return h('div', { class: 'rolavel', role: 'region', 'aria-label': legenda, tabindex: '0' }, h('table', null,
     h('caption', { class: 'so-leitor' }, legenda),
     h('thead', null, h('tr', null, colunas.map((t) => h('th', { scope: 'col' }, t)))),
-    h('tbody', null, lista_(linhas).map((l) => h('tr', null, colunas.map((_, i) => h('td', null, txt(lista_(l)[i]) || '—')))))));
+    h('tbody', null, lista_(linhas).filter(Array.isArray).map((l) => {
+      if (l.length > colunas.length) console.warn(`tabela "${legenda}": linha com ${l.length} células e só ${colunas.length} colunas; células extras ignoradas`);
+      return h('tr', null, colunas.map((_, i) => h('td', null, txt(l[i]) || '—')));
+    }))));
 }
 function desenharConcurso(raiz, C) {
-  const ref = C.referencia && typeof C.referencia === 'object' ? C.referencia : {};
-  const ant = C.anteriores && typeof C.anteriores === 'object' ? C.anteriores : null;
+  const ref = ehObj(C.referencia) ? C.referencia : {};
+  const ant = ehObj(C.anteriores) ? C.anteriores : null;
   const bloco = (it) => h('div', null, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
   if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
   if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
-  if (lista_(C.situacao).length) {
-    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, lista_(C.situacao).map(bloco)));
+  if (objs_(C.situacao).length) {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map(bloco)));
   }
-  if (lista_(C.inscricao).length) {
-    raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, lista_(C.inscricao).map((it) => h('div', null,
+  if (objs_(C.inscricao).length) {
+    raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,
       h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)),
       txt(it.fonte) ? h('p', { class: 'suave' }, `Fonte: ${txt(it.fonte)}`) : null))));
   }
   if (txt(ref.titulo)) {
-    const cron = ref.cronograma, prova = ref.prova, des = ref.desempate;
+    const cron = ehObj(ref.cronograma) ? ref.cronograma : null, prova = ehObj(ref.prova) ? ref.prova : null, des = ehObj(ref.desempate) ? ref.desempate : null;
     raiz.append(h('h2', null, txt(ref.titulo)),
       h('div', { class: 'card' },
-        lista_(ref.itens).map(bloco),
+        objs_(ref.itens).map(bloco),
         cron ? [h('h3', null, txt(cron.titulo)), tabela(txt(cron.titulo), ['Etapa', 'Data'], cron.linhas)] : null,
         prova ? [h('h3', null, txt(prova.titulo)), h('p', null, txt(prova.texto)), tabela('Questões por disciplina', ['Disciplina', 'Questões'], prova.linhas)] : null,
         des ? bloco(des) : null,
@@ -637,18 +644,24 @@ function desenharConcurso(raiz, C) {
 }
 function viewConcurso(raiz) {
   raiz.append(h('h1', null, 'Concurso'));
-  const area = h('div', null, h('p', null, 'Carregando...'));
+  const area = h('div', null);
   raiz.append(area);
-  json('dados/concurso.json').then((C) => {
-    if (!area.isConnected) return; // o usuário já mudou de aba
-    if (!C || typeof C !== 'object' || Array.isArray(C)) throw new Error('formato inesperado');
-    area.replaceChildren();
-    desenharConcurso(area, C);
-  }).catch((e) => {
-    if (!area.isConnected) return;
-    area.replaceChildren(h('p', { class: 'aviso', role: 'alert' },
-      `Não foi possível carregar as informações do concurso (${e && e.message ? e.message : e}). Confirme tudo no site oficial da FURB (concursos.furb.br).`));
-  });
+  const carregarConcurso = () => {
+    area.replaceChildren(h('p', { role: 'status' }, 'Carregando...'));
+    json('dados/concurso.json', true).then((C) => {
+      if (!area.isConnected) return; // o usuário já mudou de aba
+      if (!ehObj(C)) throw new Error('formato inesperado');
+      area.replaceChildren();
+      desenharConcurso(area, C);
+    }).catch((e) => {
+      console.error('concurso.json:', e);
+      if (!area.isConnected) return;
+      area.replaceChildren(h('p', { class: 'aviso', role: 'alert' },
+        'Não foi possível carregar as informações do concurso. Confirme tudo no site oficial da FURB (concursos.furb.br).'),
+      h('button', { type: 'button', onclick: carregarConcurso }, 'Tentar de novo'));
+    });
+  };
+  carregarConcurso();
 }
 
 /* ---------- roteamento ---------- */
