@@ -56,7 +56,12 @@ export const NAVEGADORES = ['C:/Program Files (x86)/Microsoft/Edge/Application/m
 // ---------- navegador e PDF ----------
 // O rodape "Pagina X de Y" (margin box @bottom-center + counter(pages)) so existe no Chrome/Edge >= 131.
 export const VERSAO_MINIMA_RODAPE = 131;
-export function escolherNavegador() { return [process.env.NAVEGADOR_PDF, ...NAVEGADORES].filter(Boolean).find(p => fs.existsSync(p)); }
+// Se NAVEGADOR_PDF estiver definida, ela manda: caminho inexistente = sem navegador (nao cai em silencio num Edge/Chrome padrao).
+export function escolherNavegador() {
+  const env = process.env.NAVEGADOR_PDF;
+  if (env) return fs.existsSync(env) ? env : undefined;
+  return NAVEGADORES.find(p => fs.existsSync(p));
+}
 // Versao principal do navegador, lida do PROPRIO executavel (VersionInfo no Windows; senao "--version"). Devolve numero ou null (desconhecida).
 export function versaoNavegador(nav) {
   if (process.platform === 'win32') {

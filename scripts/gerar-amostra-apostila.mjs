@@ -72,7 +72,7 @@ const st = JSON.parse(mStats[1]);
 const bancoJson = lerJsonObrigatorio(arqQuestoes || 'curso/questoes-anteriores.json', 'banco de questoes');
 const limites = secaoLimites({
   limiteFonte: A.limiteFonte,
-  trechos: { n: st.n, refOk: st.refOk, refSem: st.refSem, semMarcador: st.semMarcador, arquivos: st.arquivos },
+  trechos: { n: st.n, refOk: st.refOk, refArtSo: st.refArtSo, refSem: st.refSem, semMarcador: st.semMarcador, arquivos: st.arquivos },
   conceitos: st.conceitos,
   radar: !!aula && aula.includes('No radar da banca'),
   questoes: { n: st.q, teste: TESTE, bancoAviso: bancoJson.aviso, excl: null },

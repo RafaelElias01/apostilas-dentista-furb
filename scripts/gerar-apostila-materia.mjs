@@ -202,10 +202,14 @@ for (const q of BANCO) {
   grupos.get(chave).push(q);
 }
 let anuladas = 0, semGabarito = 0, divergentes = 0;
+const foraPorFigura = []; // questoes marcadas "dependeDeFigura" no banco (a figura/imagem nao esta no banco): nunca entram nas licoes nem no simulado
+const foraPorTranscricao = []; // questoes marcadas "transcricaoSuspeita" no banco (alternativas/enunciado provavelmente mal transcritos do PDF): tambem ficam de fora
 const unicas = new Map();
 for (const [chave, copias] of grupos) {
   const rep1 = copias.find(q => topicosUsados.has(q.topico));
   if (!rep1) continue; // grupo de topico que nenhuma licao usa: fora (as checagens abaixo ja olham TODAS as copias do grupo)
+  if (copias.some(q => q.dependeDeFigura === true)) { foraPorFigura.push({ grupo: chave, licoes: A.licoes.filter(l => (l.topicosBanco || []).includes(rep1.topico)).map(l => l.id) }); continue; }
+  if (copias.some(q => q.transcricaoSuspeita === true)) { foraPorTranscricao.push({ grupo: chave, licoes: A.licoes.filter(l => (l.topicosBanco || []).includes(rep1.topico)).map(l => l.id) }); continue; }
   if (copias.some(q => q.gabaritoOficial === 'ANULADA')) { anuladas++; continue; }
   if (copias.some(q => !valida(q))) { semGabarito++; continue; }
   // As copias podem ter as alternativas embaralhadas (a LETRA muda de uma especialidade para outra): divergencia = o TEXTO da alternativa certa difere.
@@ -322,6 +326,8 @@ const arqHtml = path.join(dirHtml, `${base}.html`);
 fs.writeFileSync(arqHtml, html);
 console.log('HTML:', arqHtml, `(${Math.round(html.length / 1024)} KB, ${A.licoes.length} lições, ${Object.values(treinoPorLicao).reduce((s, x) => s + x.length, 0)} questões nas lições, ${simulado.length} no simulado)`);
 if (anuladas || semGabarito || divergentes) console.log(`(questões únicas dos tópicos usados que ficaram de fora: ${anuladas} anulada(s); ${semGabarito} sem gabarito em letra válida; ${divergentes} descartada(s) por divergência de gabarito entre as cópias)`);
+if (foraPorFigura.length) console.warn(`AVISO: ${foraPorFigura.length} questão(ões) fora por depender de figura: ${foraPorFigura.map(f => `${f.grupo} (${f.licoes.join(', ') || 'sem lição'})`).join('; ')}`);
+if (foraPorTranscricao.length) console.warn(`AVISO: ${foraPorTranscricao.length} questão(ões) fora por transcrição suspeita: ${foraPorTranscricao.map(f => `${f.grupo} (${f.licoes.join(', ') || 'sem lição'})`).join('; ')}`);
 for (const a of aviso) console.warn('AVISO:', a);
 
 // HTML e do PDF: o PDF numerado (Apostila 0N · titulo · Pagina X de Y) vai para material-premium (ou --saida); com --sem-rodape

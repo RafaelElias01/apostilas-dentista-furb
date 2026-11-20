@@ -1,1 +1,7 @@
-[]
+[
+  { "numero": 1, "arquivo": "apostila-01-lingua-portuguesa.pdf" },
+  { "numero": 5, "arquivo": "apostila-05-cariologia-prevencao-odontopediatria.pdf" },
+  { "numero": 6, "arquivo": "apostila-06-dentistica-endodontia-trauma.pdf" },
+  { "numero": 7, "arquivo": "apostila-07-periodontia.pdf" },
+  { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf" }
+]

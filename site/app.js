@@ -266,7 +266,14 @@ function blocoFiltros(f, aoMudar, extras) {
   );
 }
 
-const avisoDados = () => (D.aviso ? h('p', { class: 'aviso', role: 'note' }, D.aviso) : null);
+// fragmento vazio (e não null): raiz.append(null) escreveria o texto "null" na tela
+const avisoDados = () => (D.aviso ? h('p', { class: 'aviso', role: 'note' }, D.aviso) : document.createDocumentFragment());
+const reduzMovimento = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// depois de responder: garante que o resultado/explicação apareça dentro da tela
+function mostrarResultado(area) {
+  const alvo = area.querySelector('.res');
+  if (alvo) alvo.scrollIntoView({ block: 'nearest', behavior: reduzMovimento() ? 'auto' : 'smooth' });
+}
 
 /* ---------- TREINO ---------- */
 const treino = { f: { sec: '', topico: '', ano: '', mun: '', prova: '', alvo: false, dedup: true, mostrar: '' }, i: 0, vistas: {} };
@@ -322,6 +329,7 @@ function viewTreino(raiz, param) {
         registrar(q, letra);
         resumo();
         desenhar();
+        mostrarResultado(area);
       },
     });
     if (antes && !vista) cartao.insertBefore(h('p', { class: 'suave' }, `Você já respondeu esta questão (${antes.ok ? 'acertou' : 'errou'}). Pode responder de novo.`), cartao.children[1]);
@@ -329,7 +337,7 @@ function viewTreino(raiz, param) {
     const nav = h('div', { class: 'linha' },
       h('button', { type: 'button', class: 'sec', disabled: treino.i === 0 || null, onclick: () => { treino.i--; desenhar(); window.scrollTo(0, 0); } }, 'Anterior'),
       h('button', { type: 'button', class: 'sec', disabled: treino.i >= l.length - 1 || null, onclick: () => { treino.i++; desenhar(); window.scrollTo(0, 0); } }, 'Próxima'),
-      !vista ? h('button', { type: 'button', class: 'sec', onclick: () => { treino.vistas[q.id] = null; desenhar(); } }, 'Ver gabarito sem responder') : null,
+      !vista ? h('button', { type: 'button', class: 'sec', onclick: () => { treino.vistas[q.id] = null; desenhar(); mostrarResultado(area); } }, 'Ver gabarito sem responder') : null,
       vista && marcada !== q.g ? h('button', { type: 'button', class: 'sec', onclick: () => { delete treino.vistas[q.id]; desenhar(); } }, 'Tentar de novo') : null,
       h('button', { type: 'button', class: 'sec', onclick: () => { treino.i = Math.floor(Math.random() * l.length); desenhar(); window.scrollTo(0, 0); } }, 'Aleatória'),
     );
@@ -344,7 +352,7 @@ function viewTreino(raiz, param) {
     cabeca.replaceChildren(h('p', { class: 'suave' },
       `${l.length} questões na lista atual (filtros e "Mostrar"). Respondidas: ${resp.length} (acertos: ${certas}, ${pct(certas, resp.length)}%). Questões anuladas ou sem gabarito não entram na conta.`));
   }
-  raiz.append(h('h1', null, 'Treino de questões'), avisoDados(), msgTopico ? h('p', { class: 'aviso', role: 'alert' }, msgTopico) : null, h('div', { class: 'card' }, filtros), cabeca, area);
+  raiz.append(h('h1', null, 'Treino de questões'), avisoDados(), ...(msgTopico ? [h('p', { class: 'aviso', role: 'alert' }, msgTopico)] : []), h('div', { class: 'card' }, filtros), cabeca, area);
   refazer();
   desenhar();
 }
@@ -685,6 +693,10 @@ function render() {
   document.querySelectorAll('#menu a').forEach((a) => {
     if (a.dataset.rota === nome) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
+  // celular: o menu rola na horizontal dentro do próprio bloco; deixa a aba atual visível (sem mexer na rolagem da página)
+  const menu = document.getElementById('menu');
+  const atual = menu && menu.querySelector('a[aria-current]');
+  if (atual && menu.scrollWidth > menu.clientWidth) menu.scrollLeft = Math.max(0, atual.offsetLeft - (menu.clientWidth - atual.offsetWidth) / 2);
 }
 // "Ir para o conteúdo": só dá foco, sem passar pelo roteador por hash
 const pular = document.querySelector('a.pular');

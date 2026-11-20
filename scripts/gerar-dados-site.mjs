@@ -26,7 +26,10 @@ for (const a of radar.apostilas || []) {
 }
 const topicos = Object.fromEntries(mapaTopicos);
 const idsVistos = new Set();
-const questoes = qs.questoes.map((q) => {
+// Questões que dependem de figura/imagem que o banco não tem (campo "dependeDeFigura") não vão para o site (Treino/Simulado); continuam no banco.
+const foraPorFigura = qs.questoes.filter((q) => q.dependeDeFigura === true);
+const foraPorTranscricao = qs.questoes.filter((q) => q.transcricaoSuspeita === true && q.dependeDeFigura !== true);
+const questoes = qs.questoes.filter((q) => q.dependeDeFigura !== true && q.transcricaoSuspeita !== true).map((q) => {
   const idq = `${q.prova}#${q.num}`;
   if (idsVistos.has(idq)) problemas.push(`${idq}: id duplicado`);
   idsVistos.add(idq);
@@ -135,3 +138,5 @@ writeFileSync(
 
 console.log(`questoes.json: ${questoes.length} questões, ${provas.length} provas, ${Object.keys(topicos).length} rótulos de tópico`);
 console.log(`radar.json: ${(radar.apostilas || []).length} apostilas`);
+if (foraPorTranscricao.length) console.warn(`AVISO: ${foraPorTranscricao.length} questão(ões) fora do site por transcrição suspeita: ${foraPorTranscricao.map((q) => `${q.grupo} (${q.prova}#${q.num})`).join(', ')}`);
+if (foraPorFigura.length) console.warn(`AVISO: ${foraPorFigura.length} questão(ões) fora do site por depender de figura: ${foraPorFigura.map((q) => `${q.grupo} (${q.prova}#${q.num})`).join(', ')}`);

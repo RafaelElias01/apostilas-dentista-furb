@@ -1,0 +1,688 @@
+{
+  "_comentario": "Apostila 01 (Lingua Portuguesa), banca FURB, Cirurgiao-Dentista de Blumenau. Ordem das licoes = roteiro (curso/roteiro-apostilas.md, Apostila 01): mais questoes unicas, depois mais edicoes, depois mais questoes em 2025, depois empate em ordem alfabetica do codigo. Contagens vem do radar; exemplos, pegadinhas e formatos vem de questoes reais do banco (alvo:true, sem anuladas como resposta certa). Conteudo gramatical: explicacao do autor, todos os pontos com conceito:true.",
+  "id": "portugues",
+  "numero": 1,
+  "arquivoPdf": "apostila-01-lingua-portuguesa.pdf",
+  "titulo": "Língua Portuguesa",
+  "subtitulo": "Cirurgião-Dentista · Prefeitura de Blumenau (SC) · banca FURB · com ênfase no que mais cai",
+  "fontes": [],
+  "rotuloPontos": "A regra, passo a passo (com exemplos)",
+  "limiteFonte": "Conteúdo gramatical escrito como explicação do autor, seguindo a norma-padrão e o Acordo Ortográfico de 1990. Fontes abertas usadas na conferência (acesso em 19/11/2026): Acordo Ortográfico da Língua Portuguesa de 1990, promulgado pelo Decreto 6.583/2008 (lido no texto da Câmara dos Deputados); VOLP, o Vocabulário Ortográfico da Língua Portuguesa, da Academia Brasileira de Letras (busca em academia.org.br); Manual de Redação da Presidência da República, 3ª edição (2018), capítulo 11 (concordância, regência e pontuação), lido numa cópia hospedada pela UFGD e não no PDF do Planalto; e Conselho Nacional de Justiça, Dicas de Português: Sintaxe (2015). Nas dúvidas de grafia, vale o VOLP. Nenhuma dessas fontes é uma gramática completa (gramáticas como Bechara, Rocha Lima ou Cunha e Cintra não foram consultadas), e o que nenhuma delas trata é explicação do autor. PENDENTE: o texto de cada questão foi transcrito das provas e ainda não foi conferido contra o PDF original; em textos-base longos pode haver colunas juntadas. O programa de Língua Portuguesa é o do edital PSPS 003/2025 de Blumenau, Anexo III (p. 44, conforme registrado em curso/edital.md).",
+  "comoUsar": [
+    "Esta apostila reúne as questões de Língua Portuguesa das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 50 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025), das quais 8 foram anuladas e ficam de fora do treino. Sobram 42 questões usáveis. Na prova atual são 10 questões de Português entre as 40 (2,50 dos 10 pontos).",
+    "A amostra é pequena: 5 editais de um só município, de 2019 a 2025. A frequência indica tendência, não garantia. Um assunto que não apareceu pode cair, e um que caiu muito pode não cair de novo.",
+    "Siglas das edições: 2019 = PSPS 002/2019; 2021P = PSPS 002/2021; 2021C = Concurso Público 002/2021 (50 questões); 2023 = PSPS 003/2023; 2025 = PSPS 003/2025. PSPS quer dizer Processo Seletivo Público Simplificado.",
+    "Ordem das lições: do assunto com mais questões únicas para o com menos. Em caso de empate, vale quem apareceu em mais edições; depois, quem teve mais questões em 2025; se ainda empatar, a apostila avisa EMPATE e usa a ordem alfabética do código só para ter uma sequência. A etiqueta de incidência segue esta régua: Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0.",
+    "Como estudar cada lição: leia as regras e os exemplos, veja as pegadinhas (elas saem das alternativas erradas das provas reais), leia como a banca cobra e só então faça as questões, marcando antes de olhar a resposta em verde. O código G0xxx que aparece nas lições identifica a questão no banco do projeto.",
+    "Atenção ao formato: as provas da FURB trazem muitas questões com afirmativas I, II e III (ou IV) e a pergunta “é correto o que se afirma em”, e questões de V ou F em sequência. Teste cada afirmativa separadamente. Em 2025, em quatro questões todas as afirmativas estavam corretas (G0273, G0276, G0277 e G0282); em 2023, também em G0190. Não parta do princípio de que sempre existe uma errada.",
+    "Este material é independente e não tem vínculo com a FURB (Fundação Universidade Regional de Blumenau) nem com a Prefeitura de Blumenau. Confira sempre o edital vigente."
+  ],
+  "ranking": [
+    { "rotulo": "Classes gramaticais, inclui tempos e modos verbais (10 questões únicas; 4 edições)", "nivel": 3 },
+    { "rotulo": "Sintaxe: termos da oração, período e vozes verbais (5 questões únicas; 4 edições)", "nivel": 3 },
+    { "rotulo": "Compreensão e interpretação de textos (5 questões únicas; 3 edições)", "nivel": 3 },
+    { "rotulo": "Coordenação e subordinação; valor dos conectivos (5 questões únicas; 2 edições)", "nivel": 3 },
+    { "rotulo": "Acentuação gráfica (4 questões únicas; 4 edições)", "nivel": 3 },
+    { "rotulo": "Significação das palavras (4 questões únicas; 3 edições)", "nivel": 2 },
+    { "rotulo": "Crase (3 questões únicas; 3 edições; EMPATE com pontuação)", "nivel": 2 },
+    { "rotulo": "Pontuação (3 questões únicas; 3 edições; EMPATE com crase)", "nivel": 2 },
+    { "rotulo": "Coesão referencial e sequencial (2 questões únicas; 2 edições; EMPATE de 3 assuntos)", "nivel": 1 },
+    { "rotulo": "Gêneros do discurso e funções da linguagem (2 questões únicas; 2 edições; EMPATE de 3 assuntos)", "nivel": 1 },
+    { "rotulo": "Regência nominal e verbal (2 questões únicas; 2 edições; EMPATE de 3 assuntos)", "nivel": 1 },
+    { "rotulo": "Ortografia, inclui hífen (2 questões únicas; 2 edições)", "nivel": 1 },
+    { "rotulo": "Colocação pronominal (1 questão única; 1 edição)", "nivel": 1 },
+    { "rotulo": "Figuras de linguagem; denotação e conotação (1 questão única; EMPATE com formação de palavras)", "nivel": 1 },
+    { "rotulo": "Estrutura e formação de palavras (1 questão única; EMPATE com figuras de linguagem)", "nivel": 1 },
+    { "rotulo": "Itens do edital sem questão na amostra: concordância, fonética, modalização, produção de texto", "nivel": 0 }
+  ],
+  "licoes": [
+    {
+      "id": "classes",
+      "titulo": "Classes gramaticais (inclui tempos e modos verbais)",
+      "nivel": 3,
+      "topicosBanco": ["lp.classes"],
+      "intro": "É o assunto de Português que mais caiu: 10 questões únicas em 4 edições (2019: 3; 2021P: 1; 2023: 1; 2021C: 5). No concurso de 2021 (2021C) foi o assunto de Português mais cobrado, com 5 questões. Duas dessas 10 foram anuladas (G0328 e G0329) e não aparecem no treino; sobram 8. O edital pede as 10 classes: substantivo, artigo, adjetivo, pronome, numeral, verbo, advérbio, preposição, conjunção e interjeição. Na prática, a banca cobra principalmente verbo (tempo, modo e formas nominais), pronome e a identificação da classe de uma palavra no contexto.",
+      "pontos": [
+        { "ref": "As 10 classes e a regra de ouro", "conceito": true, "texto": "Seis classes variam (flexionam): substantivo, artigo, adjetivo, pronome, numeral e verbo. Quatro não variam: advérbio, preposição, conjunção e interjeição. Regra de ouro: a classe depende da função da palavra na frase, não da palavra isolada. “Só” pode ser advérbio (“só ele sabe”, no sentido de somente) ou adjetivo (“estou só”, no sentido de sozinho). Sempre olhe a palavra no trecho que a prova mostra." },
+        { "ref": "Advérbio × adjetivo × substantivo", "conceito": true, "texto": "Advérbio modifica verbo, adjetivo ou outro advérbio e não varia (“Ele fala baixo”). Adjetivo modifica substantivo e concorda com ele (“vozes baixas”). Na prova G0100 a palavra destacada era “somente” em “Somente você será responsabilizado por seus atos”: a resposta oficial é advérbio (palavra de exclusão, equivale a “apenas”). Teste prático: se dá para trocar por “apenas” ou “só” e a palavra não muda de forma, é advérbio de exclusão. Cuidado: “muito” é advérbio em “fala muito”, mas pronome em “muitas pessoas”." },
+        { "ref": "Pronome: os tipos", "conceito": true, "texto": "Pessoal (eu, ele, nós; oblíquos me, o, lhe, nos), possessivo (meu, sua), demonstrativo (este, esse, aquele), indefinido (alguns, todo), interrogativo (quem? qual?), relativo (que, o qual, cujo, onde) e de tratamento (você, senhor). O mesmo termo pode ser classes diferentes: “se” pode ser pronome (“feriu-se”) ou conjunção (“se chover, volto”); “que” pode ser pronome relativo (“o livro que li”) ou conjunção (“disse que viria”)." },
+        { "ref": "Preposição × conjunção × artigo", "conceito": true, "texto": "Preposição liga um termo a outro e cria uma relação (de, em, por, para, com, sem, sobre…). Na prova G0006 a palavra pedida era a preposição “por”; as outras alternativas eram advérbios (“já”, “não”), artigo ou numeral (“um”) e pronome ou conjunção (“se”). Conjunção liga orações (e, mas, porque, se, que). Artigo acompanha o substantivo e o determina: definido (o, a, os, as) ou indefinido (um, uma)." },
+        { "ref": "Verbo: tempo e modo", "conceito": true, "texto": "Modos: indicativo (certeza, fato), subjuntivo (dúvida, hipótese, desejo) e imperativo (ordem, pedido). Tempos do indicativo: presente, pretérito perfeito (“teve”), pretérito imperfeito (“possuíam”, “tinham”, “existia”, “adotavam”), pretérito mais-que-perfeito (“fora”), futuro do presente e futuro do pretérito. Tempos do subjuntivo: presente, pretérito imperfeito (“se ele fosse”) e futuro (“quando eu for”). Dica: pretérito perfeito é ação concluída (“Ele teve”); imperfeito é ação em andamento ou hábito no passado (“Eles tinham”, “adotavam”)." },
+        { "ref": "“Fosse”: ser ou ir? O contexto decide", "conceito": true, "texto": "Os verbos ser e ir têm formas iguais no pretérito perfeito (“eu fui”), no mais-que-perfeito (“eu fora”), no imperfeito do subjuntivo (“se eu fosse”) e no futuro do subjuntivo (“quando eu for”). Para saber qual é, leia a frase: em G0008 (“Se o critério… fosse adotado agora…”) o “fosse” é do verbo SER no pretérito imperfeito do subjuntivo, porque forma a voz passiva (“fosse adotado”). A banca marcou como correta apenas a afirmativa que dizia isso." },
+        { "ref": "Formas nominais do verbo", "conceito": true, "texto": "São três: infinitivo (terminado em -r: “rebocar”), gerúndio (-ndo: “traduzindo”) e particípio (-ado, -ido ou irregular: “feita”). Não flexionam em modo e tempo como as formas finitas. Na prova G0331 pediam exatamente a sequência “rebocar, traduzindo, feita”, e a resposta é: infinitivo, gerúndio, particípio. Cuidado com “gerundismo”: isso é um vício de linguagem, não uma forma nominal." },
+        { "ref": "Questões de lista: achar o intruso", "conceito": true, "texto": "Em G0333 vinham cinco listas de palavras e a pergunta era quais listas continham palavras de uma mesma classe. A lista de pronomes (“suas, alguns, essas, onde”) e a lista de adjetivos (“novo, comuns, atual, aparentes”) eram homogêneas; as demais tinham um intruso, como o artigo “as” no meio das preposições “com, de, em” e o artigo “os” no meio das conjunções “e, que, ou”. Para resolver, classifique palavra por palavra e procure quem destoa." }
+      ],
+      "tabela": {
+        "titulo": "Tempos e modos que a banca já cobrou",
+        "cab": ["Forma", "Tempo e modo", "Exemplo (G = questão da prova)"],
+        "linhas": [
+          ["possuíam, tinham", "Pretérito imperfeito do indicativo", "G0005"],
+          ["teve", "Pretérito perfeito do indicativo", "G0330"],
+          ["fosse (de ser)", "Pretérito imperfeito do subjuntivo", "G0008"],
+          ["rebocar", "Infinitivo (forma nominal)", "G0331"],
+          ["traduzindo", "Gerúndio (forma nominal)", "G0331"],
+          ["feita", "Particípio (forma nominal)", "G0331"]
+        ]
+      },
+      "macete": "Antes de responder, escreva ao lado da palavra a pergunta: o que ela faz na frase? Se acompanha o nome, é artigo, adjetivo, pronome ou numeral; se muda o verbo, é advérbio; se liga termos, é preposição; se liga orações, é conjunção. Para verbo, localize primeiro o modo (fato, hipótese ou ordem) e só depois o tempo.",
+      "pegadinhas": [
+        "G0005: trocar pretérito imperfeito por perfeito ou mais-que-perfeito. “Possuíam” e “tinham” descrevem situação em andamento no passado: imperfeito do indicativo. A alternativa “pretérito imperfeito do subjuntivo” foi o engano mais tentador por trazer a palavra “imperfeito”.",
+        "G0330: na lista “existia, eram, tinham, teve, adotavam”, só “teve” é pretérito perfeito; todas as outras são imperfeito. A banca usa o intruso no meio de várias formas parecidas.",
+        "G0008: afirmar que “fosse” é do verbo IR ou que é pretérito perfeito do subjuntivo. No contexto dado, “fosse adotado” é voz passiva do verbo ser.",
+        "G0331: marcar “Infinitivo pessoal, Gerundismo, Particípio passado irregular”. Gerundismo não é forma verbal; o certo é gerúndio.",
+        "G0333: marcar “I, II, III, IV e V” (todas as listas). A resposta é “I e V, apenas” (alternativa D). As listas II, III e IV têm intruso (o artigo “as” entre preposições, “afirmativa” entre advérbios, o artigo “os” entre conjunções); só I e V são homogêneas.",
+        "G0100: confundir advérbio com pronome, substantivo, conjunção ou adjetivo para a palavra “somente”."
+      ],
+      "cobra": [
+        "Pergunta direta com cinco alternativas de classe gramatical (“a palavra destacada pertence a qual classe?”): G0100, G0006 (achar a preposição) e G0330 (achar o verbo no pretérito perfeito).",
+        "Tempo e modo de verbos tirados do texto: G0005 (possuíam e tinham).",
+        "Afirmativas I, II e III sobre uma forma verbal (“fosse”): G0008.",
+        "Sequência de classes para seis palavras destacadas num mesmo parágrafo, na ordem em que aparecem: G0187 (2023).",
+        "Cinco listas de palavras e a pergunta “quais pertencem à mesma classe”: G0333.",
+        "Formas nominais do verbo: G0331."
+      ],
+      "mapa": {
+        "centro": "Classes gramaticais",
+        "ramos": [
+          { "t": "Variáveis", "f": ["Substantivo", "Artigo", "Adjetivo", "Pronome", "Numeral", "Verbo"] },
+          { "t": "Invariáveis", "f": ["Advérbio", "Preposição", "Conjunção", "Interjeição"] },
+          { "t": "Verbo: modos", "f": ["Indicativo", "Subjuntivo", "Imperativo"] },
+          { "t": "Formas nominais", "f": ["Infinitivo: -r", "Gerúndio: -ndo", "Particípio: -ado, -ido"] },
+          { "t": "Dica", "f": ["Classe vem da função", "Teste por “apenas”", "Ser e ir se confundem"] }
+        ]
+      }
+    },
+    {
+      "id": "sintaxe",
+      "titulo": "Sintaxe: termos da oração, período e vozes verbais",
+      "nivel": 3,
+      "topicosBanco": ["lp.sintaxe"],
+      "qtdQuestoes": 3,
+      "intro": "5 questões únicas em 4 edições (2019: 1; 2023: 2; 2025: 1; 2021C: 1). Duas foram anuladas (G0191, de 2023, e G0326, de 2021C): não use o texto delas como resposta certa. Sobram 3 questões para treinar. O edital cita “aspectos sintáticos e semânticos”, e as provas cobraram sujeito, complementos do verbo, voz passiva e função de uma palavra na frase.",
+      "pontos": [
+        { "ref": "Tipos de sujeito", "conceito": true, "texto": "Simples (um núcleo: “A dieta é saudável”), composto (dois ou mais núcleos: “A situação financeira e a viabilidade já haviam sido alvo de um estudo”, G0007, resposta: sujeito composto), desinencial ou oculto (a terminação do verbo mostra quem é: “Cheguei cedo”), indeterminado (não se identifica o sujeito: “Precisa-se de dentistas”, “Disseram que choveu”) e oração sem sujeito (verbos de fenômeno da natureza, “haver” no sentido de existir e “fazer” ou “haver” indicando tempo: “Choveu”, “Há vagas”, “Faz dois anos”)." },
+        { "ref": "Como achar o núcleo do sujeito", "conceito": true, "texto": "Pergunte ao verbo “quem?” ou “o quê?” e conte os núcleos. Em “A situação financeira e a viabilidade dos municípios… haviam sido alvo…”, o verbo está no plural e há dois núcleos (“situação” e “viabilidade”) ligados por “e”: sujeito composto. “Dos municípios” não é núcleo; é complemento de “viabilidade”." },
+        { "ref": "Predicado e complementos do verbo", "conceito": true, "texto": "Verbo intransitivo não pede complemento (“Ele age com sinceridade”: “com sinceridade” é adjunto adverbial). Transitivo direto pede complemento sem preposição (objeto direto: “comparou a saúde”). Transitivo indireto pede preposição obrigatória (objeto indireto: “obedecer ao médico”). Verbo de ligação (ser, estar, ficar, parecer, permanecer) liga o sujeito a uma característica (predicativo): “A dieta é rica em fibras”. Em G0190 a banca cobrou que “comparar” é transitivo direto e que seu sujeito era “um estudo recente com 48 mil pessoas com mais de 18 anos”." },
+        { "ref": "Vozes verbais", "conceito": true, "texto": "Voz ativa: o sujeito pratica a ação (“O engenheiro construiu a casa”). Voz passiva analítica: o sujeito sofre a ação, formada por verbo ser + particípio, e o agente aparece com “por” (“A casa foi construída pelo engenheiro”). Voz passiva sintética: verbo transitivo direto + “se” (“Vendem-se casas” = casas são vendidas). Voz reflexiva: o sujeito pratica e sofre a ação (“O paciente feriu-se”). Ao passar da passiva para a ativa, o tempo verbal deve ser mantido: “foi construída” (pretérito perfeito) vira “construiu”, e não “tinha construído”." },
+        { "ref": "A mesma palavra com funções diferentes", "conceito": true, "texto": "Em G0274 a palavra “conta” apareceu duas vezes: em “dá conta de tudo” (expressão já cristalizada, com sentido de ser capaz, conseguir; ali “conta” é substantivo que completa o verbo, e não o sujeito) e em “a conta não fecha” (substantivo ligado ao ato de contar, calcular, e aí sim sujeito de “fecha”). A afirmativa de que as duas eram sujeito era falsa. Lição: antes de classificar, descubra qual é o verbo e quem pratica a ação." },
+        { "ref": "“Recomenda-se que…”: cuidado com a nomenclatura", "conceito": true, "texto": "Em G0190 (2023) a banca deu como correto que, em “Recomenda-se que os adultos consumam 1,5 microgramas de vitamina B12 por dia”, o sujeito de “recomendar” é indeterminado e o de “consumir” é “os adultos”. Grave esse gabarito, mas saiba a regra. O Manual de Redação da Presidência da República (3ª ed., 2018, item 11.7.1, h e i) ensina: com verbo transitivo direto, o “se” é apassivador e o verbo concorda com o sujeito, “que vem a ser o paciente da ação” (“Vendem-se apartamentos” = apartamentos são vendidos). O “se” indetermina o sujeito com verbo transitivo indireto ou intransitivo (CNJ, Dicas de Português: Sintaxe, p. 25-26) (“Precisa-se de homens”, “Trata-se de questões”). Como “recomendar” é transitivo direto (recomenda-se algo), por essa regra o que é recomendado, a oração “que os adultos consumam…”, seria o sujeito (oração subordinada substantiva subjetiva). Essa aplicação à frase é dedução da regra do Manual: nenhuma fonte aberta analisa esta frase específica (a conferir). A questão irmã, G0191, dizia que essa mesma oração era “objetiva direta”: o gabarito preliminar a deu como correta, e depois a questão foi anulada (o motivo não consta no banco). Na prova: se a banca repetir literalmente a afirmativa de G0190, lembre do gabarito; em qualquer outra frase com verbo transitivo direto + se, use a regra do Manual." },
+        { "ref": "Período simples e composto", "conceito": true, "texto": "Período simples tem um só verbo ou locução verbal (uma oração). Período composto tem dois ou mais verbos (duas ou mais orações). Ligadas por coordenação ou por subordinação: veja a lição seguinte para o valor dos conectivos. Em geral, a pergunta de classificar a oração destacada exige primeiro dizer se ela depende da outra (subordinada) ou não (coordenada)." }
+      ],
+      "tabela": {
+        "titulo": "Sujeito: como identificar",
+        "cab": ["Tipo", "Como reconhecer", "Exemplo"],
+        "linhas": [
+          ["Simples", "Um só núcleo", "A dieta vegana é saudável."],
+          ["Composto", "Dois ou mais núcleos", "A situação e a viabilidade já haviam sido alvo de estudo (G0007)."],
+          ["Desinencial", "Só a terminação do verbo mostra", "Fomos treinadas para agradar."],
+          ["Indeterminado", "Não se quer ou não se pode dizer quem", "Precisa-se de dentistas."],
+          ["Oração sem sujeito", "Fenômeno da natureza, haver, fazer (tempo)", "Choveu. Faz dois anos."]
+        ]
+      },
+      "macete": "Sempre grife o verbo primeiro. Depois pergunte “quem?” ou “o quê?” para o sujeito e “quem sofre a ação?” para ver a voz. Na dúvida entre ativa e passiva, procure ser + particípio ou o “se” junto de verbo transitivo direto.",
+      "pegadinhas": [
+        "G0007: classificar como “sujeito simples” uma frase com dois núcleos ligados por “e”. As alternativas também traziam “desinencial”, “indeterminado” e “oração sem sujeito”, que servem só de distração.",
+        "G0274: afirmar que as duas ocorrências de “conta” são sujeito. A primeira completa o verbo “dar”; a segunda é sujeito de “fecha”.",
+        "G0190: trocar o tipo de sujeito ou o tipo de verbo. A afirmativa dizia que “comparar” é transitivo direto e que o sujeito é um estudo recente: a banca a deu como correta, então não tente achar erro onde não há.",
+        "Voz passiva: ao reescrever na ativa, mudar o tempo verbal (por exemplo, de “foi feito” para “tinha feito”). Mantenha o tempo."
+      ],
+      "cobra": [
+        "Pergunta direta sobre a classificação do sujeito de uma oração do texto: G0007 (2019).",
+        "Afirmativas I, II e III sobre a análise sintática de períodos do texto, com “é correto o que se afirma em”: G0190 (2023).",
+        "V ou F em sequência sobre o uso de uma mesma palavra duas vezes no excerto: G0274 (2025).",
+        "As duas questões anuladas (G0191 e G0326) eram do mesmo tipo: afirmativas sobre período composto e sobre voz passiva. Estude o conteúdo, mas não use o texto delas como gabarito."
+      ],
+      "mapa": {
+        "centro": "Sintaxe",
+        "ramos": [
+          { "t": "Sujeito", "f": ["Simples", "Composto", "Desinencial", "Indeterminado", "Sem sujeito"] },
+          { "t": "Verbo", "f": ["Intransitivo", "Transitivo direto", "Transitivo indireto", "De ligação"] },
+          { "t": "Voz", "f": ["Ativa", "Passiva analítica: ser + particípio", "Passiva sintética: -se", "Reflexiva"] },
+          { "t": "Período", "f": ["Simples: 1 verbo", "Composto: 2 ou mais", "Coordenação ou subordinação"] }
+        ]
+      }
+    },
+    {
+      "id": "compreensao",
+      "titulo": "Compreensão e interpretação de textos",
+      "nivel": 3,
+      "topicosBanco": ["lp.compreensao"],
+      "qtdQuestoes": 5,
+      "intro": "5 questões únicas em 3 edições (2023: 3; 2025: 1; 2021C: 1), nenhuma anulada. É o assunto mais estável nas provas mais recentes: caiu em 2023 e em 2025. O edital pede leitura de textos de diferentes gêneros (artístico-literário, estudo e pesquisa, vida pública e jornalístico-midiático). Na prova, o texto-base serve a várias questões; leia o texto uma vez com atenção e use as perguntas como guia na segunda leitura. Observação: a questão G0332 está classificada neste assunto no banco, mas traz também vírgula, sinônimo e crase.",
+      "pontos": [
+        { "ref": "Tema, ideia central e objetivo", "conceito": true, "texto": "Tema é o assunto (“dietas veganas e vegetarianas”). Ideia central é o que o texto diz sobre o tema. Objetivo é a intenção do autor (informar, convencer, criticar, ensinar). Em G0188 pediam o objetivo central do texto e a resposta foi: informar os leitores sobre aspectos da adoção dessas dietas, com prós e contras, com base em estudos científicos recentes." },
+        { "ref": "Explícito, implícito e inferência", "conceito": true, "texto": "Informação explícita está escrita no texto. Inferência é a conclusão que o texto autoriza, mesmo sem dizer. Pressuposto é o que a frase dá como já sabido. Regra: só é inferência o que o texto sustenta; opinião sua ou conhecimento externo que contradiz o texto não vale. A banca, porém, às vezes pede “conhecimentos prévios” junto da leitura (G0273)." },
+        { "ref": "O gênero e as marcas do texto", "conceito": true, "texto": "Reportagem digital traz dados, citação de especialistas e linguagem impessoal; texto pessoal traz 1ª pessoa e impressões do autor; canção trabalha com ritmo, imagens e repetição. Em G0185 foram dadas como corretas as afirmativas de que o texto se aproxima da reportagem de jornalismo digital e de que o autor usa citação direta como argumento de autoridade; foi dada como errada a de que o texto estava em 1ª pessoa e com exemplos do senso comum." },
+        { "ref": "Afirmativas absolutas e generalizações", "conceito": true, "texto": "Palavras como “apenas”, “somente”, “sempre”, “nunca”, “não podendo”, “jamais” tornam a afirmativa fácil de refutar. Em G0193 a afirmativa de que o texto contemplaria apenas duas pessoas específicas, “não podendo a situação ser generalizada” para outras pessoas, foi dada como errada. As corretas eram as que diziam que a amizade perdura mesmo com a separação física e que a letra relaciona a canção à lembrança da pessoa ausente." },
+        { "ref": "Quando todas as afirmativas estão certas", "conceito": true, "texto": "Em G0273 (2025) as afirmativas I, II e III estavam todas corretas (alternativa “I, II e III”). Em G0185 estavam corretas I e II. Não parta da ideia de que uma tem de estar errada: confira uma por vez no texto. Em G0332, a afirmativa de que a vírgula marcava “adjunto adverbial de lugar” estava errada porque “Nas primeiras décadas da Colônia Blumenau” indica tempo, e não lugar." },
+        { "ref": "Passo a passo para cada questão", "conceito": true, "texto": "1) Leia o enunciado e marque o que se pede (correta, incorreta, EXCETO). 2) Volte ao parágrafo citado. 3) Teste cada afirmativa contra o texto. 4) Elimine as extremas. 5) Confirme a escolha relendo a frase do texto que a sustenta." }
+      ],
+      "tabela": {
+        "titulo": "Tipos de afirmativa e como tratá-los",
+        "cab": ["Tipo de afirmativa", "Como tratar", "Exemplo real"],
+        "linhas": [
+          ["Objetivo central do texto", "Escolha a alternativa que cobre o texto inteiro, sem extremos", "G0188: informar, com prós e contras"],
+          ["Gênero ou marcas do texto", "Procure pessoa verbal, citação, dados, linguagem", "G0185"],
+          ["Mensagem de uma canção", "Prefira a ideia geral, evite “apenas” e “somente”", "G0193"],
+          ["Conhecimentos prévios", "Use o texto e o que é senso geral, sem inventar", "G0273"],
+          ["Análise de um trecho", "Cada afirmativa tem uma regra diferente (vírgula, sinônimo, crase)", "G0332"]
+        ]
+      },
+      "macete": "Primeiro descubra o gênero e a intenção do texto. Depois, para cada afirmativa, cole nela uma frase do texto que a prove. Se não achar a frase, desconfie. Cuidado redobrado com afirmativas muito fortes e com as que mudam a pessoa do texto.",
+      "pegadinhas": [
+        "G0188: as alternativas erradas eram “defender a adoção de dietas” e “convencer a não serem veganos”, que atribuem ao texto uma intenção que ele não tem (texto informativo, não de defesa nem de convencimento). Também erravam por tamanho: “explicar os diferentes tipos de dietas” (estreito demais) e “panorama das pesquisas no mundo” (amplo demais).",
+        "G0193: afirmativa com “não podendo” e “específicas” transformando uma canção sobre amizade em relato de apenas duas pessoas.",
+        "G0185: afirmar que o texto jornalístico está em 1ª pessoa e baseado no senso comum, quando ele traz citação de estudo e dados.",
+        "G0332: trocar “tempo” por “lugar” ao classificar o adjunto adverbial."
+      ],
+      "cobra": [
+        "Afirmativas I, II e III sobre o texto, com “é correto o que se afirma em”: G0185 (2023), G0193 (2023), G0273 (2025), G0332 (2021C, com I a III).",
+        "Pergunta direta sobre o objetivo central do texto, com cinco alternativas longas: G0188 (2023).",
+        "Em 2025 a questão pedia “a partir da leitura do texto e da mobilização de conhecimentos prévios”: G0273."
+      ],
+      "mapa": {
+        "centro": "Compreensão de texto",
+        "ramos": [
+          { "t": "Níveis", "f": ["Tema", "Ideia central", "Objetivo"] },
+          { "t": "Leitura", "f": ["Explícito", "Implícito", "Inferência"] },
+          { "t": "Gênero", "f": ["Reportagem", "Canção", "Texto pessoal"] },
+          { "t": "Cuidados", "f": ["Absolutos", "Extremos", "Troca de pessoa"] }
+        ]
+      }
+    },
+    {
+      "id": "coord-subord",
+      "titulo": "Coordenação e subordinação; valor dos conectivos",
+      "nivel": 3,
+      "topicosBanco": ["lp.coord_subord"],
+      "qtdQuestoes": 5,
+      "intro": "5 questões únicas em 2 edições, concentradas nos dois PSPS de 2019 e 2021 (2019: 2; 2021P: 3), nenhuma anulada. Alta incidência por ter 5 questões únicas. O edital pede “processos de coordenação e subordinação (valores semânticos)”. A banca pergunta qual ideia o conectivo introduz (condição, oposição, concessão…) e qual é a classificação da oração.",
+      "pontos": [
+        { "ref": "Coordenação × subordinação", "conceito": true, "texto": "Coordenação liga orações independentes entre si (cada uma tem sentido completo): “Estudei, mas não passei”. Subordinação liga uma oração que depende da outra: “Estudei para que passasse”. Em G0095, “Quando você age com sinceridade… é comum ser tachado…”, a resposta foi subordinação. Justaposição é ligar orações sem conectivo (vírgula), correlação são pares como “não só… mas também”." },
+        { "ref": "Conjunções coordenativas e valor", "conceito": true, "texto": "Aditiva: e, nem. Adversativa (oposição): mas, porém, contudo, todavia, entretanto, no entanto. Alternativa: ou, ora… ora. Conclusiva: logo, portanto, por isso, pois (depois do verbo). Explicativa: pois (antes do verbo), porque, que. Em G0002 e G0003, “no entanto” foi cobrado como oposição, e a substituição certa era “entretanto”." },
+        { "ref": "Subordinadas adverbiais: os valores", "conceito": true, "texto": "Condição: se, caso, desde que, contanto que. Concessão (ideia contrária que não impede): embora, ainda que, mesmo que, conquanto. Causa: porque, já que, visto que. Consequência: tão… que. Finalidade: para que, a fim de que. Tempo: quando, enquanto, assim que. Comparação: como. Conformidade: conforme, segundo. Proporção: à medida que, à proporção que. Em G0102, “Mas SE você quer ser grande perante sua consciência, seja honesto” a ideia do “se” é condição." },
+        { "ref": "“Se” como condição e “caso” como troca", "conceito": true, "texto": "Em G0002 e G0003 a oração começava por “Se o critério… fosse adotado agora…”. As palavras “se” e “no entanto” expressam condição e oposição. Para trocar sem mudar o sentido, usa-se “caso” (condição) e “entretanto” (oposição). “Quando” é tempo e “mas” sozinho não substitui “se”, por isso a alternativa “Quando – Mas” estava errada." },
+        { "ref": "Orações subordinadas substantivas", "conceito": true, "texto": "Funcionam como substantivo e são introduzidas por “que”, “se”: subjetiva (sujeito), objetiva direta (objeto direto, sem preposição), objetiva indireta (com preposição, completa verbo), completiva nominal (com preposição, completa nome abstrato) e apositiva. Em G0099, “tenha a certeza DE QUE todos aqueles que tentaram desviá-lo… não merecerão…”, a oração completa o substantivo “certeza” com a preposição “de”: oração subordinada substantiva completiva nominal." },
+        { "ref": "Objetiva indireta × completiva nominal", "conceito": true, "texto": "Ambas vêm com preposição. A diferença é quem é completado: verbo (“Lembrei-me de que era tarde”; “Necessito de que me ajudem”: objetiva indireta) ou nome (“Tenho certeza de que ele vem”: completiva nominal; “certeza” é substantivo). Em G0099 as alternativas misturavam objetiva direta, objetiva indireta, adjetiva explicativa e coordenada explicativa para confundir." },
+        { "ref": "Orações adjetivas: restritiva × explicativa", "conceito": true, "texto": "Adjetiva funciona como adjetivo e começa com pronome relativo (que, o qual, cujo, onde). Restritiva delimita o termo e não tem vírgula: “Os pacientes que faltam perdem a vaga” (só os que faltam). Explicativa é só um comentário, com vírgulas: “Os pacientes, que faltam, perdem a vaga” (todos)." }
+      ],
+      "tabela": {
+        "titulo": "Conectivos e o valor que expressam",
+        "cab": ["Valor", "Conectivos", "Exemplo"],
+        "linhas": [
+          ["Condição", "se, caso, desde que", "Caso o critério fosse adotado..."],
+          ["Oposição (adversativa)", "mas, porém, contudo, entretanto, no entanto", "No entanto, a proposta prevê um tempo..."],
+          ["Concessão", "embora, ainda que, mesmo que", "Embora estudasse, errou."],
+          ["Causa", "porque, já que, visto que", "Faltou porque estava doente."],
+          ["Finalidade", "para que, a fim de que", "Estudou para que passasse."],
+          ["Conclusão", "logo, portanto, por isso", "Estudou; portanto, passou."],
+          ["Explicação", "porque, que, pois (antes do verbo)", "Venha, que já é tarde."]
+        ]
+      },
+      "macete": "Troque o conectivo por outro de valor conhecido: se der “caso”, é condição; “embora”, concessão; “porque”, causa; “mas”, oposição. Para orações subordinadas, primeiro ache o verbo principal; depois pergunte à oração subordinada o que ela é para o verbo ou para o nome.",
+      "pegadinhas": [
+        "G0002: trocar condição por causa, concessão ou exclusão. “Se” indica condição, não causa; “no entanto” é oposição, nunca explicação ou conclusão.",
+        "G0003: trocar “se” por “quando” ou “que”, e “no entanto” por “portanto” (que é conclusão, ideia contrária à oposição).",
+        "G0095: confundir subordinação com coordenação, correlação ou justaposição.",
+        "G0099: marcar objetiva direta ou indireta onde o termo completado é um substantivo (“certeza”).",
+        "G0102: marcar “concessão” para o “se”: concessão é “embora”, “ainda que”; o “se” é condição."
+      ],
+      "cobra": [
+        "Valor semântico de dois conectivos de um mesmo parágrafo (“SE” e “NO ENTANTO”): G0002 (2019).",
+        "Substituição de conectivos sem mudar o sentido: G0003 (2019).",
+        "Processo que relaciona as orações (coordenação, subordinação…): G0095 (2021P).",
+        "Classificação sintática de uma oração destacada: G0099 (2021P).",
+        "Ideia expressa por uma palavra destacada: G0102 (2021P)."
+      ],
+      "mapa": {
+        "centro": "Coordenação e subordinação",
+        "ramos": [
+          { "t": "Coordenadas", "f": ["Aditiva: e, nem", "Adversativa: mas, no entanto", "Alternativa: ou", "Conclusiva: logo", "Explicativa: pois, que"] },
+          { "t": "Adverbiais", "f": ["Condição: se, caso", "Concessão: embora", "Causa: porque", "Finalidade: para que"] },
+          { "t": "Substantivas", "f": ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Completiva nominal"] },
+          { "t": "Adjetivas", "f": ["Restritiva: sem vírgula", "Explicativa: com vírgula"] }
+        ]
+      }
+    },
+    {
+      "id": "acentuacao",
+      "titulo": "Acentuação gráfica",
+      "nivel": 3,
+      "topicosBanco": ["lp.acentuacao"],
+      "qtdQuestoes": 2,
+      "intro": "4 questões únicas em 4 edições (2019: 1; 2021P: 1; 2025: 1; 2021C: 1). Duas foram anuladas (G0278, de 2025, e G0325, de 2021C), e sobram 2 para treino. Está em alta incidência pela presença em 4 edições, mesmo com poucas questões. A banca pergunta qual regra justifica o acento de uma palavra do texto, ou dá afirmativas V ou F sobre acentuação.",
+      "pontos": [
+        { "ref": "Primeiro: a sílaba tônica", "conceito": true, "texto": "Separe a palavra em sílabas e ache a mais forte. Oxítona: última sílaba (café, país). Paroxítona: penúltima (útil, órgão). Proparoxítona: antepenúltima (época, íntimo, médico). Monossílabo: uma só sílaba (já, pé, só). A regra de acento depende dessa classificação." },
+        { "ref": "Proparoxítonas", "conceito": true, "texto": "Todas são acentuadas, sem exceção. Em G0096 a palavra era “íntimo”, e a regra certa era “acentuam-se todas as proparoxítonas”. Uma pegadinha comum é marcar “todas as paroxítonas” ou “paroxítonas terminadas em O”: “íntimo” é proparoxítona (ÍN-ti-mo)." },
+        { "ref": "Oxítonas e monossílabos", "conceito": true, "texto": "Oxítonas terminadas em a, e, o, em, ens (seguidos ou não de s) recebem acento: sofá, café, avô, também, parabéns. Monossílabos tônicos terminados em a, e, o (seguidos ou não de s) também: já, pé, nós. Em G0004 a única resposta certa foi “possuíam – hiato I tônico”, e “já – oxítona terminada em A” não foi aceita: na prova da FURB, chame “já” de monossílabo tônico. Curiosidade: o texto do Acordo de 1990 (Base VIII) lista “já” e “só” entre os exemplos de oxítonas, por isso não decore que essa classificação é “errada”; decore que a banca quis a regra dos monossílabos." },
+        { "ref": "Paroxítonas", "conceito": true, "texto": "Acentuam-se as paroxítonas terminadas em l, n, r, x, ps, ã(s), ão(s), i(s), um, uns, us e em ditongo oral (útil, tórax, bíceps, órfão, táxi, lápis, álbum, vírus, história, série). Paroxítonas terminadas em a, e, o simples não se acentuam (casa, fome, livro). “Própria” e “critério” são acentuadas porque terminam em ditongo (-ia, -io); G0004 usou essas palavras como armadilha ao dizer que se acentuam “paroxítonas terminadas em A” ou “em O”. Atenção à nomenclatura: a gramática escolar chama “própria”, “critério”, “história” e “série” de paroxítonas terminadas em ditongo; o texto do Acordo de 1990 (Base XI) as chama de “proparoxítonas aparentes”. As duas explicações levam ao mesmo acento. A questão de 2025 que usou essa classificação (G0278) foi anulada; o motivo não é conhecido." },
+        { "ref": "Hiato: i e u tônicos", "conceito": true, "texto": "O i e o u tônicos de um hiato levam acento quando sozinhos na sílaba ou seguidos só de s: saída, país, baú, saúde, possuíam. Em G0004 o acento de “possuíam” (pos-su-í-am) era justificado como “acentua-se o hiato I tônico”, e esta foi a resposta certa. Não se acentuam quando seguidos de outra consoante (ruim, juiz) ou de “nh” (rainha, moinho)." },
+        { "ref": "O que o Acordo de 1990 tirou", "conceito": true, "texto": "Perdeu o acento o ditongo aberto éi e ói nas paroxítonas (ideia, assembleia, heroico, jiboia). Continua nas oxítonas (herói, papéis, chapéu). Perdeu o acento o hiato oo e ee (voo, enjoo, leem, veem, creem). Perdeu o acento de “pára” (verbo), “pêlo”, “pólo” (substantivo) e outros diferenciais. Continuam: “pôr” (verbo) e “por” (preposição), “pôde” (passado) e “pode” (presente), e “têm” e “vêm” no plural. Também perderam o acento o i e o u tônicos depois de ditongo nas paroxítonas: baiuca (exemplo do próprio Acordo, Base X) e feiura (grafia do VOLP). Nas oxítonas o acento continua: Piauí, tuiuiú." },
+        { "ref": "Têm/vêm e derivados", "conceito": true, "texto": "Singular sem acento (ele tem, ele vem, ele contém, ele mantém). Plural com circunflexo (eles têm, eles vêm, eles contêm, eles mantêm). Pegadinha frequente: trocar o singular pelo plural." }
+      ],
+      "tabela": {
+        "titulo": "Regras de acento em uma olhada",
+        "cab": ["Grupo", "Quando acentua", "Exemplos"],
+        "linhas": [
+          ["Proparoxítonas", "Sempre", "época, íntimo, médico"],
+          ["Oxítonas", "Terminadas em a, e, o, em, ens", "sofá, café, avô, também"],
+          ["Monossílabos tônicos", "Terminados em a, e, o", "já, pé, nós"],
+          ["Paroxítonas", "Terminadas em l, n, r, x, ps, ã, ão, i, um, us, ditongo", "útil, órgão, táxi, álbum, série"],
+          ["Hiatos", "i, u tônicos sozinhos ou com s", "saída, país, baú"],
+          ["Acordo 1990: perdem o acento", "éi, ói em paroxítonas; oo; ee", "ideia, heroico, voo, leem"]
+        ]
+      },
+      "macete": "Sempre responda em duas etapas: 1) onde está a sílaba tônica (oxítona, paroxítona, proparoxítona ou monossílabo); 2) qual é a terminação. Proparoxítona é acento garantido; é nela que a pergunta “qual regra justifica o acento?” costuma ser mais fácil.",
+      "pegadinhas": [
+        "G0004: dizer que “já” é oxítona terminada em A (para a banca, é monossílabo tônico) e que “época” prova “todas as oxítonas” (é proparoxítona).",
+        "G0004: dizer que “própria” e “critério” se acentuam por serem paroxítonas terminadas em A e em O. Elas terminam em ditongo (-ia, -io).",
+        "G0096: trocar “proparoxítonas” por “paroxítonas terminadas em O” ou “oxítonas terminadas em ditongo crescente”. “Íntimo” é proparoxítona.",
+        "Acento perdido no Acordo: acentuar “ideia”, “heroico”, “voo”, “enjoo” ou “leem”.",
+        "As duas questões anuladas (G0278 e G0325) eram sobre paroxítonas terminadas em ditongo e sobre hiatos tônicos: estude as regras, não o gabarito delas."
+      ],
+      "cobra": [
+        "Pergunta “qual a justificativa correta para o acento das palavras do texto?”, com cinco alternativas de regras: G0004 (2019).",
+        "Pergunta “qual regra justifica a acentuação da palavra destacada?”: G0096 (2021P).",
+        "V ou F em sequência sobre palavras do texto (invisível, difícil, urgência, próprio): G0278, anulada (2025).",
+        "Palavras que deveriam ser acentuadas pela regra dos hiatos tônicos: G0325, anulada (2021C)."
+      ],
+      "mapa": {
+        "centro": "Acentuação",
+        "ramos": [
+          { "t": "Proparoxítonas", "f": ["Todas acentuadas", "época, íntimo"] },
+          { "t": "Oxítonas", "f": ["a, e, o, em, ens", "sofá, café, também"] },
+          { "t": "Paroxítonas", "f": ["l, n, r, x, ps", "ã, ão, i, um, us", "ditongo: própria, série"] },
+          { "t": "Hiato", "f": ["i e u tônicos", "saída, baú, possuíam"] },
+          { "t": "Acordo 1990", "f": ["Sem trema", "Ideia, heroico", "Voo, leem"] }
+        ]
+      }
+    },
+    {
+      "id": "semantica",
+      "titulo": "Significação das palavras",
+      "nivel": 2,
+      "topicosBanco": ["lp.semantica"],
+      "qtdQuestoes": 4,
+      "intro": "4 questões únicas em 3 edições (2019: 1; 2021P: 2; 2025: 1), nenhuma anulada. Incidência média. O edital pede “sentido dos vocábulos no texto”, “significação das palavras” e “sinônimos, antônimos, hipônimos e hiperônimos”. Em nenhuma das 4 questões entraram hipônimos ou hiperônimos, mas o edital os cita, então eles aparecem aqui como revisão.",
+      "pontos": [
+        { "ref": "Sinônimos e antônimos pelo contexto", "conceito": true, "texto": "Sinônimo é palavra de sentido próximo; antônimo é de sentido oposto. Como diz o próprio enunciado de G0276, os sinônimos “nunca são absolutos”: o sentido depende do contexto. “Exacerbada” pode ser trocada por “intensa” ou “agravada”, e “exaurida” por “esgotada”, “consumida” ou “exausta”." },
+        { "ref": "Questão de intruso: “só NÃO podemos substituir”", "conceito": true, "texto": "Em G0101, a palavra “balizar” (“se procura balizar seus atos na justiça”) só NÃO podia ser trocada por “transpor”. “Limitar”, “delimitar”, “fixar” e “demarcar” guardam a ideia de pôr limites; “transpor” é atravessar um limite. Leia o comando com cuidado: “NÃO” inverte a lógica." },
+        { "ref": "Questão de antônimo", "conceito": true, "texto": "Em G0009, a pergunta era um antônimo de “incrementar”. As alternativas “fomentar”, “ampliar”, “aumentar” e “desenvolver” eram sinônimos ou aproximadas de “incrementar”; a resposta oficial foi “agravar”. Não decore “agravar” como antônimo de “incrementar”: foi a única alternativa que não era sinônimo. Técnica: elimine primeiro as alternativas que significam o mesmo que a palavra e fique com a que destoa." },
+        { "ref": "Parônimos: palavras parecidas", "conceito": true, "texto": "Parônimos têm grafia e som parecidos e sentidos diferentes. Em G0094, a resposta foi “vaso de rosas FRAGRANTES” (perfumadas). As erradas misturavam: “comprimentos da lei” (o certo seria “cumprimentos”: respeitar a lei é “cumprir”; comprimento é medida), “festa beneficiente” (a forma correta é “beneficente”), “a SESSÃO de terras” (cessão é o ato de ceder; sessão é reunião) e “INFRIGIU pena” (aplicar pena é “infligir”; “infringir” é violar a lei). Também: “ratificar” (confirmar) × “retificar” (corrigir); “emigrar” (sair do país) × “imigrar” (entrar)." },
+        { "ref": "Hiperônimo e hipônimo (itens do edital)", "conceito": true, "texto": "Hiperônimo é a palavra de sentido mais geral; hipônimo é a mais específica. “Flor” é hiperônimo de “rosa”; “rosa” é hipônimo de “flor”. A relação serve para a coesão: o autor evita repetir a palavra trocando “dentista” por “profissional”. Nenhuma questão do banco foi classificada nesse assunto." },
+        { "ref": "Polissemia e sentido figurado", "conceito": true, "texto": "Polissemia: uma palavra com vários sentidos (“banco” de escola, “banco” de dados). Sempre leia a frase inteira: o sentido muda com o contexto." }
+      ],
+      "tabela": {
+        "titulo": "Parônimos que a banca já usou ou pode usar",
+        "cab": ["Palavra", "Sentido", "Palavra parecida", "Sentido"],
+        "linhas": [
+          ["cumprir (cumprimento)", "obedecer; saudar", "comprimento", "medida de extensão"],
+          ["cessão", "ato de ceder", "sessão", "reunião; período"],
+          ["infringir", "violar a lei", "infligir", "aplicar pena"],
+          ["ratificar", "confirmar", "retificar", "corrigir"],
+          ["emigrar", "sair do país", "imigrar", "entrar no país"],
+          ["fragrante", "perfumado", "flagrante", "ato visto no momento"]
+        ]
+      },
+      "macete": "Em questão de substituição, troque a palavra na frase e leia de novo: se a frase continuar fazendo sentido, serve. Em questão de “NÃO podemos”, procure a alternativa que muda o sentido. Em parônimos, desconfie quando a palavra tem versões quase iguais.",
+      "pegadinhas": [
+        "G0009: marcar um sinônimo (“aumentar”, “ampliar”) quando se pede o antônimo de “incrementar”.",
+        "G0101: o comando dizia “só NÃO podemos substituir”: a resposta é a que muda o sentido (“transpor”), e não a que mantém.",
+        "G0094: “comprimentos” × “cumprimentos”, “sessão” × “cessão” e “infrigiu” com sentido de “infligiu” são erros de parônimos disfarçados.",
+        "G0276: afirmar que “exacerbada” significa só “violenta”. Em outro contexto é possível, mas aqui compromete o sentido do texto, e a afirmativa de que compromete estava correta."
+      ],
+      "cobra": [
+        "“Assinale a alternativa que contenha um antônimo da palavra…”: G0009 (2019).",
+        "“Assinale o item em que a palavra destacada está corretamente aplicada”, com parônimos: G0094 (2021P).",
+        "“Sem prejuízo de sentido… só NÃO podemos substituir por…”: G0101 (2021P).",
+        "Afirmativas I a III sobre o sentido de dois adjetivos no contexto: G0276 (2025)."
+      ],
+      "mapa": {
+        "centro": "Significação das palavras",
+        "ramos": [
+          { "t": "Relações", "f": ["Sinônimos", "Antônimos", "Hiperônimo × hipônimo"] },
+          { "t": "Contexto", "f": ["Sentido depende do texto", "Polissemia"] },
+          { "t": "Parônimos", "f": ["cumprir × comprimento", "cessão × sessão", "infringir × infligir"] },
+          { "t": "Dica", "f": ["Troque e releia", "“NÃO” inverte o comando"] }
+        ]
+      }
+    },
+    {
+      "id": "crase",
+      "titulo": "Crase (acento grave) — EMPATE com pontuação",
+      "nivel": 2,
+      "topicosBanco": ["lp.crase"],
+      "qtdQuestoes": 1,
+      "intro": "3 questões únicas em 3 edições (2019: 1; 2025: 1; 2021C: 1). Uma foi anulada (G0327, 2021C) e outra (G0001, 2019) ficou fora do treino por suspeita de erro na transcrição das alternativas (PENDENTE: conferir no PDF da prova), então sobra 1 para treino. EMPATE com pontuação no ranking (3 questões, 3 edições): a ordem entre as duas é alfabética do código. Crase é a fusão da preposição “a” com o artigo “a(s)” ou com o “a” inicial de “aquele”, “aquela”, “aquilo”. Sem preposição ou sem artigo, não há crase.",
+      "pontos": [
+        { "ref": "A conta da crase", "conceito": true, "texto": "Crase = a (preposição, pedida pelo verbo ou nome) + a (artigo, que acompanha palavra feminina). “Cheguei à reunião”: chegar pede a, reunião é feminina e aceita artigo. “Fui a Blumenau”: sem artigo, sem crase." },
+        { "ref": "Dois testes", "conceito": true, "texto": "Teste 1, a palavra masculina: troque por um masculino. Se aparecer “ao”, há crase no feminino (“Fui ao cinema” → “Fui à escola”). Teste 2, o verbo “voltar”: se der “volto da”, há crase (“Vou à Bahia”, volto da Bahia); se der “volto de”, não há (“Vou a Blumenau”, volto de Blumenau)." },
+        { "ref": "Crase obrigatória", "conceito": true, "texto": "Locuções adverbiais, prepositivas e conjuntivas femininas: à época, às vezes, à direita, às claras, à custa de, à procura de, à medida que. Indicação de hora: “às 8 horas”. Antes de “aquele, aquela, aquilo” quando o termo pede a: “Refiro-me àquela decisão”. Em G0280, “à medida que envelhecemos” (que o enunciado chama de locução adverbial) e “às claras” estavam corretas." },
+        { "ref": "Crase proibida", "conceito": true, "texto": "Antes de palavra masculina (“a pé”, “a prazo”), de verbo (“começou a chover”), de pronome pessoal (“falei a ela”), de “uma” (“assisti a uma peça”) (exceção: na hora, “à uma hora”, porque aí “uma” é numeral), de expressões com palavra repetida (“cara a cara”) e de cidades sem modificador (“vou a Blumenau”). Com complemento, a cidade pode levar: “Vou à Blumenau do século XIX”." },
+        { "ref": "Crase facultativa", "conceito": true, "texto": "Antes de pronome possessivo feminino singular (“entreguei à minha chefe” ou “a minha chefe”) e antes de nome próprio feminino de pessoa (“falei à Ana” ou “a Ana”). PENDENTE: não conferida em fonte oficial aberta." },
+        { "ref": "Quando não há preposição, não há crase", "conceito": true, "texto": "Verbo transitivo direto não pede preposição: “manter a estrutura”, “incrementar a receita”, “desejar a incorporação”. Por isso, nessas frases, o “a” é só artigo. Também não há crase no início de frase quando a palavra é sujeito: em G0280, “À proporção da minha força para lutar por isso é a mesma…” foi dada como incorreta (motivo: “a proporção” é o sujeito do verbo “é”, e sujeito não leva preposição; o gabarito A, “II e IV”, confirma que a afirmativa I estava errada. Não confunda com a locução conjuntiva “à proporção que” (CNJ, Dicas de Português: Sintaxe, p. 17), que significa “à medida que” e tem crase: “À proporção que estudava, aprendia”)." },
+        { "ref": "“A prazo” e “às claras”", "conceito": true, "texto": "Em G0280, “tudo à prazo” foi dado como errado (“a prazo” é masculino: sem crase) e “tudo às claras” como certo (locução adverbial feminina plural). Em G0332, a afirmativa de que há crase obrigatória em “comuns às encontradas em determinadas regiões” foi dada como correta: o a da preposição se junta ao “as” demonstrativo (= àquelas) que vem antes de “encontradas”." }
+      ],
+      "tabela": {
+        "titulo": "Crase: com ou sem?",
+        "cab": ["Situação", "Crase?", "Exemplo"],
+        "linhas": [
+          ["Locução adverbial feminina", "Sim", "à época, às claras, às vezes"],
+          ["Hora determinada", "Sim", "às 8 horas"],
+          ["Palavra masculina", "Não", "a pé, a prazo"],
+          ["Antes de verbo", "Não", "começou a chover"],
+          ["Cidade sem modificador", "Não", "vou a Blumenau"],
+          ["Possessivo feminino singular", "Facultativa", "à minha / a minha chefe"],
+          ["Verbo transitivo direto + feminino", "Não", "incrementar a receita"]
+        ]
+      },
+      "macete": "Duas perguntas: 1) o verbo ou nome pede a preposição “a”? 2) a palavra que vem depois é feminina e aceita o artigo “a”? Se as duas forem sim, há crase. Teste final: trocar por masculino (ao) ou usar “voltar da”.",
+      "pegadinhas": [
+        "G0001 (formato “onde falta a crase”, 2019): a banca mostrou verbos como “manter”, “desejar” e “incrementar”, que são transitivos diretos e não pedem “a”. A resposta correta foi “à época”, locução adverbial feminina. Nos outros trechos (“manter a estrutura”, “a proposta”, “desejem a incorporação”, “incrementar a receita”) NÃO há crase. ATENÇÃO: a transcrição desta questão no banco mostra “à” em todas as alternativas, o que parece erro de cópia; não decore essas grafias. PENDENTE: conferir G0001 no PDF da prova.",
+        "G0280: “à prazo” (palavra masculina) e a frase iniciada por “À proporção…” sem preposição são as alternativas que a banca deu como erradas.",
+        "G0280: considerar errada a locução “à custa de”: ela é obrigatória.",
+        "A anulada G0327 também trazia o formato “onde deve ser empregada a crase”: estude a regra, não use o gabarito dela."
+      ],
+      "cobra": [
+        "“Propositadamente, foi retirado o acento indicativo de crase… assinale o trecho em que deve ser colocada”: G0001 (2019) e G0327, anulada (2021C).",
+        "Afirmativas I a IV sobre o uso da crase, com “está correto o uso da crase em”: G0280 (2025).",
+        "Item de análise de trecho dentro de questão de interpretação: G0332 (2021C)."
+      ],
+      "mapa": {
+        "centro": "Crase",
+        "ramos": [
+          { "t": "Conta", "f": ["Preposição a + artigo a", "a + aquele = àquele"] },
+          { "t": "Testes", "f": ["Trocar por masculino: ao", "Voltar da / voltar de"] },
+          { "t": "Obrigatória", "f": ["Locuções femininas", "Hora: às 8 horas"] },
+          { "t": "Proibida", "f": ["Masculino", "Verbo", "Pronome pessoal", "Cidade sozinha"] },
+          { "t": "Facultativa", "f": ["Possessivo feminino", "Nome próprio feminino"] }
+        ]
+      }
+    },
+    {
+      "id": "pontuacao",
+      "titulo": "Pontuação — EMPATE com crase",
+      "nivel": 2,
+      "topicosBanco": ["lp.pontuacao"],
+      "qtdQuestoes": 3,
+      "intro": "3 questões únicas em 3 edições (2021P: 1; 2023: 1; 2025: 1), nenhuma anulada. EMPATE com crase (3 questões, 3 edições); a ordem entre elas é alfabética do código. A banca pergunta por que a vírgula foi usada, quais pontuações estão corretas e quais afirmativas descrevem corretamente o uso de dois-pontos e vírgulas.",
+      "pontos": [
+        { "ref": "A vírgula nunca separa sujeito de verbo", "conceito": true, "texto": "Errado: “Os pacientes, esperaram.” Certo: “Os pacientes esperaram.” Também não se separa verbo do complemento. Só se usa vírgula entre sujeito e verbo quando há um termo intercalado (aposto, oração): “Os pacientes, cansados, esperaram.”" },
+        { "ref": "Adjunto adverbial deslocado", "conceito": true, "texto": "Adjunto adverbial no início da frase é isolado por vírgula quando longo ou deslocado: “Nas primeiras décadas da Colônia Blumenau, as construções eram de madeira.” Em G0332 a afirmativa I dizia que a vírgula marcava um adjunto adverbial “de lugar” deslocado e foi dada como errada: o trecho indica tempo (“Nas primeiras décadas”), o que mostra que a vírgula de adjunto deslocado vale para qualquer tipo de adjunto adverbial." },
+        { "ref": "Conjunção adversativa intercalada ou deslocada", "conceito": true, "texto": "“No entanto, seja justo mesmo assim”: em G0093 a resposta foi que a vírgula separa uma conjunção adversativa que expressa oposição. Conectivos como “porém”, “contudo”, “todavia”, “no entanto” e “entretanto” levam vírgula quando intercalados ou no início da oração." },
+        { "ref": "Aposto, vocativo e orações intercaladas", "conceito": true, "texto": "Aposto explica o termo anterior e vem entre vírgulas: “A chia, considerada a rainha do ômega 3, é boa para o coração.” Vocativo chama alguém: “Doutor, vamos começar.” Oração subordinada intercalada fica entre vírgulas: “Será que, à medida que envelhecemos, o tempo passa mais rápido?” (G0277, item II, dado como correto)." },
+        { "ref": "Vírgula antes de “e”", "conceito": true, "texto": "Em regra, não há vírgula antes de “e” quando os sujeitos são os mesmos. Pode haver quando os sujeitos são diferentes: “A chia é boa para o coração, e o gergelim é ótimo para os ossos” (G0194). A afirmativa de que a vírgula antes do “e” estava equivocada nesse trecho foi dada como errada." },
+        { "ref": "Dois-pontos, ponto e vírgula e enumeração", "conceito": true, "texto": "Dois-pontos introduzem fala, explicação ou enumeração: em G0277, “comentei com a minha mãe: seu aniversário está chegando de novo!” traz uma fala em discurso direto, e a afirmativa I foi dada como correta. A vírgula separa termos coordenados sem conectivo (“com os pés mais firmes no chão, com o senso de urgência mais apurado…”), e a banca disse que ali não caberia ponto e vírgula (item III, dado como correto)." },
+        { "ref": "Travessão e parênteses", "conceito": true, "texto": "Os travessões duplos (ou os parênteses) isolam um trecho explicativo, no lugar das vírgulas. “O consumo de leite – pouco mais de meio litro – foi recomendado.” Atenção ao tamanho do isolamento: abrir e fechar com o mesmo sinal." }
+      ],
+      "tabela": {
+        "titulo": "Vírgula: quando usar",
+        "cab": ["Uso", "Exemplo", "Observação"],
+        "linhas": [
+          ["Adjunto adverbial deslocado", "Nas primeiras décadas, as casas eram de madeira.", "G0332"],
+          ["Conjunção adversativa", "No entanto, seja justo.", "G0093"],
+          ["Aposto", "A chia, rainha do ômega 3, é boa.", "G0194"],
+          ["Oração intercalada", "Será que, à medida que envelhecemos, o tempo passa?", "G0277"],
+          ["Antes de “e” (sujeitos diferentes)", "A chia é boa, e o gergelim é ótimo.", "G0194"],
+          ["Sujeito e verbo", "Não usar vírgula", "Erro frequente"]
+        ]
+      },
+      "macete": "Pergunte: o que está entre vírgulas pode ser retirado sem destruir a frase? Se pode, as vírgulas estão certas (aposto, intercalada). E nunca separe sujeito do verbo nem verbo do complemento.",
+      "pegadinhas": [
+        "G0194: alternativa que afirma que a pontuação ou a concordância está errada quando está certa (“vírgula antes de e”), e as que trazem erro real de concordância (“tem osteoporose” em vez de “têm”, “passaram a serem” em vez de “passaram a ser”).",
+        "G0194: afirmar que o uso do “porque” está equivocado quando “porque os colegas todos consomem” era causa e estava correto.",
+        "G0093: trocar “conjunção adversativa” por aposto, vocativo ou adjunto adverbial deslocado.",
+        "G0277: duvidar de uma afirmativa verdadeira. As três afirmativas eram corretas (alternativa “I, II e III”)."
+      ],
+      "cobra": [
+        "“A vírgula foi empregada para…”, com cinco funções: G0093 (2021P).",
+        "Cinco extratos de texto, cada um com uma afirmação sobre pontuação ou concordância; “assinale a única correta”: G0194 (2023).",
+        "Afirmativas I, II e III sobre dois-pontos, vírgulas intercaladas e vírgula entre termos coordenados: G0277 (2025)."
+      ],
+      "mapa": {
+        "centro": "Pontuação",
+        "ramos": [
+          { "t": "Vírgula usa", "f": ["Adjunto deslocado", "Aposto", "Vocativo", "Intercalada", "Conectivo adversativo"] },
+          { "t": "Vírgula não usa", "f": ["Sujeito + verbo", "Verbo + complemento"] },
+          { "t": "Dois-pontos", "f": ["Fala", "Explicação", "Enumeração"] },
+          { "t": "Outros", "f": ["Ponto e vírgula", "Travessão", "Parênteses"] }
+        ]
+      }
+    },
+    {
+      "id": "coesao",
+      "titulo": "Coesão referencial e sequencial — EMPATE de 3 assuntos",
+      "nivel": 1,
+      "topicosBanco": ["lp.coesao"],
+      "qtdQuestoes": 1,
+      "intro": "2 questões únicas em 2 edições (2023: 1; 2025: 1). Uma foi anulada (G0189, de 2023): sobra G0275 para treino. EMPATE de 3 assuntos com 2 questões e 2 edições (coesão, gêneros e funções, regência); a ordem entre eles é alfabética do código. Coesão é o modo como as partes do texto se ligam: retomar o que já foi dito (referencial) e encadear as ideias (sequencial).",
+      "pontos": [
+        { "ref": "Coesão referencial", "conceito": true, "texto": "Retoma ou antecipa um termo por pronomes (ele, esse, este, que), por sinônimos e hiperônimos ou por elipse. Em G0275, “essa sensação” (2º parágrafo) retoma a ideia do 1º: a afirmativa que dizia isso estava correta." },
+        { "ref": "Este × esse", "conceito": true, "texto": "Este e seus derivados indicam o que está perto, o tempo presente e o que vem em seguida. Esse indica o que já foi dito. Em G0275, o uso de “este” para o tempo atual, concomitante entre quem escreve e quem lê (o dezembro de 2025), foi dado como correto." },
+        { "ref": "Coesão sequencial", "conceito": true, "texto": "Conectivos e advérbios ligam as ideias na ordem do texto: adição (além disso), oposição (no entanto), conclusão (portanto), tempo (depois), causa (porque). É o mesmo valor dos conectivos da lição de coordenação e subordinação." },
+        { "ref": "Antes de apontar “problema de coesão”", "conceito": true, "texto": "Leia os parágrafos anteriores para achar o referente. Em G0275, a afirmativa de que “nessa época” teria um problema de coesão por falta de referente explícito foi dada como falsa. A questão anulada G0189 era sobre pronomes que retomam termos, e não deve ser usada como gabarito." }
+      ],
+      "macete": "Para cada pronome (ele, essa, nesse, este), pergunte: a quem ele se refere? Volte no texto até achar. Se achar, a coesão está boa; se não achar, aí sim há problema.",
+      "pegadinhas": [
+        "G0275: afirmar que “nessa época” não tem referente. A banca deu essa afirmativa como falsa.",
+        "G0275: confundir este e esse (este para o presente; esse para o que já foi mencionado).",
+        "G0189 (anulada): afirmativas sobre a que termo um pronome se refere; não use como gabarito."
+      ],
+      "cobra": [
+        "V ou F em sequência sobre progressão referencial e sequencial: G0275 (2025).",
+        "Afirmativas I, II e III sobre pronomes como recurso coesivo: G0189, anulada (2023)."
+      ],
+      "mapa": {
+        "centro": "Coesão",
+        "ramos": [
+          { "t": "Referencial", "f": ["Pronomes", "Sinônimos", "Elipse"] },
+          { "t": "Sequencial", "f": ["Conectivos", "Advérbios"] },
+          { "t": "Este × esse", "f": ["Este: presente", "Esse: já dito"] }
+        ]
+      }
+    },
+    {
+      "id": "generos-funcoes",
+      "titulo": "Gêneros do discurso e funções da linguagem — EMPATE de 3 assuntos",
+      "nivel": 1,
+      "topicosBanco": ["lp.generos_funcoes"],
+      "qtdQuestoes": 2,
+      "intro": "2 questões únicas em 2 edições (2023: 1; 2025: 1), nenhuma anulada. EMPATE de 3 assuntos (coesão, gêneros e funções, regência); a ordem entre eles é alfabética do código. O edital pede textos dos campos artístico-literário, das práticas de estudo e pesquisa, de atuação na vida pública e jornalístico-midiático. As provas cobraram a função da linguagem de uma canção (2023) e as escolhas de estrutura e linguagem de um texto pessoal (2025).",
+      "pontos": [
+        { "ref": "Funções da linguagem (Jakobson)", "conceito": true, "texto": "Emotiva (centrada no emissor, 1ª pessoa, emoção), referencial (o assunto, informação, 3ª pessoa), apelativa (o receptor, ordem, pedido), fática (o canal, testa a comunicação: “alô?”), metalinguística (o código, a língua fala da língua) e poética (a mensagem em si, a forma, o ritmo, a repetição)." },
+        { "ref": "Canção: função poética", "conceito": true, "texto": "Em G0192, a canção sobre a amizade (“Amigo é coisa pra se guardar…”) tem como função predominante a poética: o trabalho com a forma, as imagens, a repetição e o jogo de versos. As alternativas emotiva, referencial, fática e metalinguística eram as erradas. Não escolha emotiva só porque o tema é afeto." },
+        { "ref": "Os campos de atuação e seus gêneros", "conceito": true, "texto": "Artístico-literário: poema, canção, conto, crônica. Estudo e pesquisa: resumo, artigo científico. Vida pública: texto de lei, requerimento. Jornalístico-midiático: notícia, reportagem, editorial, coluna de opinião. Os exemplos servem de orientação; o gênero é definido pela finalidade e pela circulação do texto." },
+        { "ref": "Texto pessoal × narrativo", "conceito": true, "texto": "Em G0279, a banca deu como corretas duas afirmativas: o texto tem público-alvo de leitoras (marcas: adjetivos no feminino ao se dirigir ao leitor), sem excluir outros leitores; e é um texto pessoal, com impressões e pontos de vista de quem o escreveu, em 1ª pessoa. Foi dada como errada a de que é “predominantemente narrativo”, com o objetivo central de narrar fatos vividos." }
+      ],
+      "macete": "Para a função da linguagem, pergunte: o foco está em quem fala (emotiva), no assunto (referencial), em quem ouve (apelativa), no canal (fática), na própria língua (metalinguística) ou na forma da mensagem (poética)? Texto artístico costuma ser poético.",
+      "pegadinhas": [
+        "G0192: marcar “emotiva” para canção de tema afetivo. A resposta oficial foi “poética”.",
+        "G0279: classificar como “predominantemente narrativo” um texto que expõe opiniões e impressões do autor.",
+        "G0279: excluir os outros leitores. A afirmativa dizia que o público-alvo é feminino, mas o texto pode ter outros leitores."
+      ],
+      "cobra": [
+        "Pergunta direta: “em sua composição, predomina a função…”, com cinco funções: G0192 (2023).",
+        "Afirmativas I, II e III sobre as escolhas de estrutura e linguagem da autora: G0279 (2025)."
+      ],
+      "mapa": {
+        "centro": "Gêneros e funções",
+        "ramos": [
+          { "t": "Funções", "f": ["Emotiva", "Referencial", "Apelativa", "Fática", "Metalinguística", "Poética"] },
+          { "t": "Campos", "f": ["Artístico-literário", "Estudo e pesquisa", "Vida pública", "Jornalístico-midiático"] },
+          { "t": "Cuidado", "f": ["Canção: poética", "Texto pessoal ≠ narrativo"] }
+        ]
+      }
+    },
+    {
+      "id": "regencia",
+      "titulo": "Regência nominal e verbal — EMPATE de 3 assuntos",
+      "nivel": 1,
+      "topicosBanco": ["lp.regencia"],
+      "qtdQuestoes": 2,
+      "intro": "2 questões únicas em 2 edições (2021P: 1; 2025: 1), nenhuma anulada. EMPATE de 3 assuntos (coesão, gêneros e funções, regência); a ordem entre eles é alfabética do código. Regência é a relação entre um verbo ou nome (termo regente) e seu complemento, com ou sem preposição. Veja também a lição de crase, que depende da regência.",
+      "pontos": [
+        { "ref": "Regência verbal: transitividade", "conceito": true, "texto": "Em G0098, a forma “age” em “Quando você age com sinceridade” foi classificada como intransitiva (o gabarito preliminar era “transitiva indireta”; depois dos recursos ficou “intransitiva”): o verbo não pede complemento, e “com sinceridade” é adjunto adverbial. A regência verbal diz se o verbo é intransitivo, transitivo direto, transitivo indireto, transitivo direto e indireto ou de ligação." },
+        { "ref": "Regência nominal: a preposição que cada nome pede", "conceito": true, "texto": "Em G0281 a resposta foi “linguagem acessível ao leigo” (acessível a). As erradas eram “imunidade para a covid” e “imune para incidentes” (imunidade e imune pedem “a” ou “contra”), “avessas com a ciência” (avesso a) e “essencial da população” (essencial a ou para). Memorize: acessível a, avesso a, imune a, essencial a/para, favorável a, contrário a." },
+        { "ref": "Verbos clássicos", "conceito": true, "texto": "Preferir uma coisa a outra (não “do que”). Obedecer a (“obedecer à lei”). Assistir ao filme (ver) é transitivo indireto; assistir o paciente ou ao paciente (ajudar) aceita as duas formas (Manual de Redação da Presidência, 11.8.1). Aspirar a (desejar) é indireto; aspirar o ar (inalar) é direto. Chegar e ir pedem a (“chegar a Blumenau”). Esquecer algo é direto; esquecer-se de algo é indireto. PENDENTE: não conferida em fonte oficial aberta (vale para “chegar e ir pedem a” e “esquecer/esquecer-se de”)." },
+        { "ref": "Regência e crase", "conceito": true, "texto": "A crase só existe se o termo regente pedir a preposição “a”. Verbo transitivo direto não pede, e por isso não há crase (“incrementar a receita”). Liga com a lição de crase." }
+      ],
+      "macete": "Para cada verbo ou nome, pense na frase completa e pergunte: “algo” ou “a algo”? Se a pergunta natural usa preposição, é indireto. Decore a lista de preposições dos nomes (acessível a, imune a).",
+      "pegadinhas": [
+        "G0281: trocar “a” por “para”, “com” ou “de” depois de nomes como imunidade, imune, avesso, essencial.",
+        "G0098: classificar como transitivo indireto ou de ligação um verbo seguido só de adjunto adverbial (“age com sinceridade”).",
+        "Confundir “assistir a” (ver) com “assistir” (ajudar), e “aspirar a” (desejar) com “aspirar” (inalar)."
+      ],
+      "cobra": [
+        "Classificar a transitividade de uma forma verbal destacada: G0098 (2021P).",
+        "“Assinale a alternativa em que a regência da palavra destacada está corretamente feita”: G0281 (2025)."
+      ],
+      "mapa": {
+        "centro": "Regência",
+        "ramos": [
+          { "t": "Verbal", "f": ["Intransitivo", "Transitivo direto", "Transitivo indireto", "De ligação"] },
+          { "t": "Nominal", "f": ["acessível a", "imune a", "avesso a", "essencial a/para"] },
+          { "t": "Verbos", "f": ["preferir a", "obedecer a", "assistir a (ver)", "chegar a"] },
+          { "t": "Liga com", "f": ["Crase"] }
+        ]
+      }
+    },
+    {
+      "id": "ortografia",
+      "titulo": "Ortografia (inclui hífen)",
+      "nivel": 1,
+      "topicosBanco": ["lp.ortografia"],
+      "qtdQuestoes": 2,
+      "intro": "2 questões únicas em 2 edições (2019: 1; 2021C: 1), nenhuma anulada. Foi cobrada a ortografia depois do Acordo de 1990 (grafia e hífen) e o uso de X ou CH.",
+      "pontos": [
+        { "ref": "Hífen com prefixo (Acordo de 1990)", "conceito": true, "texto": "Em G0010 a resposta foi “coautor – autoexame”. Usa-se hífen se o segundo elemento começa com h (anti-higiênico) ou se o prefixo termina com a mesma vogal com que o segundo elemento começa (anti-inflamatório, micro-ondas). Com prefixo terminado em vogal e palavra com outra vogal, junta-se (autoexame, extraoficial). Prefixo terminado em vogal + palavra com r ou s: junta e dobra a consoante (contrassenso, antirrábico, ultrassom). Mas hiper-, inter- e super- + r levam hífen (super-revista, inter-resistente). O prefixo co- junta até antes de o (coautor, cooperar, coordenar)." },
+        { "ref": "As erradas de G0010", "conceito": true, "texto": "“Antiinflamatório” (certo: anti-inflamatório), “microondas” (micro-ondas), “assembléia” (assembleia), “enjôo” (enjoo), “vêem” (veem), “contrasenso” (contrassenso), “contra-indicação” (contraindicação) e “extra-oficial” (extraoficial). A banca mistura dois erros numa só alternativa; basta achar um para eliminar." },
+        { "ref": "X ou CH depois de “en-”", "conceito": true, "texto": "Em G0334 a resposta foi “enxergar, enxoval, enxugar”. Depois de “en-”, em geral usa-se X (enxada, enxurrada, enxame, enxaqueca), com exceção das palavras formadas a partir de outra que já tem CH: encher, preencher, enchente, enchimento e preenchimento (de cheio), encharcar (de charco), enchumaçar (de chumaço), enchiqueirar (de chiqueiro); e também enchova (o peixe; já enxova, com X, significa “prisão”). Por isso as alternativas com “preencher”, “enchente” e “encharcar” foram erradas. A regra é prática: o Acordo de 1990 (Base III) diz que X e CH se distinguem pela história de cada palavra; na dúvida, consulte o VOLP." }
+      ],
+      "macete": "Para hífen, três perguntas: o segundo elemento começa por h? A vogal final do prefixo é igual à inicial da palavra? É ex-, vice- ou pós-, pré-, pró- tônicos (pós-graduação, mas prever)? Para X ou CH, lembre das exceções (encher e derivados).",
+      "pegadinhas": [
+        "G0010: grafias antigas (antiinflamatório, microondas, assembléia, enjôo, vêem) misturadas com palavras corretas (coautor, autoexame).",
+        "G0334: alternativas que mesclam palavras com X e palavras com CH (preencher, enchente) para o aluno marcar “tudo com X”."
+      ],
+      "cobra": [
+        "“De acordo com as regras ortográficas vigentes, assinale a opção em que ambas as palavras estejam corretas”: G0010 (2019).",
+        "Lacunas “en___” para completar com X ou CH: G0334 (2021C)."
+      ],
+      "mapa": {
+        "centro": "Ortografia",
+        "ramos": [
+          { "t": "Hífen", "f": ["Prefixo + h", "Mesma vogal", "ex-, vice-, pós-, pré-, pró-"] },
+          { "t": "Junta", "f": ["Vogal diferente: autoexame", "co-, re-: coautor"] },
+          { "t": "R e S", "f": ["Dobra a consoante", "antirrábico, ultrassom"] },
+          { "t": "X × CH", "f": ["en- + X", "Exceção: palavra-base com CH (cheio, charco)"] }
+        ]
+      }
+    },
+    {
+      "id": "colocacao",
+      "titulo": "Colocação pronominal",
+      "nivel": 1,
+      "topicosBanco": ["lp.colocacao"],
+      "qtdQuestoes": 1,
+      "intro": "1 questão única, em 2025 (G0282), nenhuma anulada. Colocação pronominal é a posição do pronome oblíquo átono (me, te, se, o, a, lhe, nos…) em relação ao verbo.",
+      "pontos": [
+        { "ref": "Próclise, ênclise e mesóclise", "conceito": true, "texto": "Próclise: pronome antes do verbo (“Eu as convido”). Ênclise: depois (“Denomino-as”). Mesóclise: no meio do verbo, só com futuro do presente ou do pretérito (“convidá-las-ei”). No português do Brasil, a próclise é a posição mais comum." },
+        { "ref": "Quando a próclise é obrigatória", "conceito": true, "texto": "Palavra atrativa antes do verbo: negação (não, nunca), advérbio sem pausa (só, já, sempre, assim), pronome relativo (que), pronome indefinido, conjunção subordinativa (que, se, quando), pronome interrogativo. Em G0282, “Só assim se evitará que percam as passagens” traz o advérbio “só” e o “assim”, que atraem o pronome." },
+        { "ref": "Quando a ênclise é obrigatória", "conceito": true, "texto": "Verbo no início da oração, sem palavra atrativa: “Denomino-as de diretrizes…” (G0282). Nunca se começa frase com pronome oblíquo átono na norma-padrão." },
+        { "ref": "Sujeito antes do verbo", "conceito": true, "texto": "Com sujeito explícito antes do verbo, a próclise é permitida: “Eu as convido para fazer parte do grupo” (G0282, item dado como correto). Em G0282 a banca considerou corretas as três frases (I, II e III), de modo que o gabarito foi “I, II e III”." }
+      ],
+      "macete": "Olhe a palavra que vem antes do verbo: se for negação, advérbio, que ou conjunção, o pronome vai antes; se o verbo abre a frase, o pronome vai depois, com hífen.",
+      "pegadinhas": [
+        "G0282: duvidar de uma frase correta por ter “eu” antes do verbo. Sujeito explícito não obriga ênclise.",
+        "Começar frase com pronome átono (“Me disseram…”) na prova de norma-padrão."
+      ],
+      "cobra": [
+        "Afirmativas I, II e III sobre a colocação de pronomes destacados: G0282 (2025)."
+      ],
+      "mapa": {
+        "centro": "Colocação pronominal",
+        "ramos": [
+          { "t": "Próclise", "f": ["Negação", "Advérbio", "Que", "Conjunção subordinativa"] },
+          { "t": "Ênclise", "f": ["Verbo no início", "Hífen"] },
+          { "t": "Mesóclise", "f": ["Futuro do presente", "Futuro do pretérito"] }
+        ]
+      }
+    },
+    {
+      "id": "figuras",
+      "titulo": "Figuras de linguagem; denotação e conotação — EMPATE com formação de palavras",
+      "nivel": 1,
+      "topicosBanco": ["lp.figuras_sentido"],
+      "qtdQuestoes": 1,
+      "intro": "1 questão única, em 2021P (G0097), nenhuma anulada. EMPATE com “formação de palavras” (1 questão, 1 edição); a ordem entre elas é alfabética do código. Denotação é o sentido literal; conotação é o figurado.",
+      "pontos": [
+        { "ref": "Denotação × conotação", "conceito": true, "texto": "Em G0097, “remando contra a maré” foi classificada como sentido conotativo (figurado): ninguém está de fato num barco; a expressão significa “ir contra a corrente das pessoas”. As alternativas erradas diziam “sentido real”, “denotativo”, “resolução de conflitos” e “situação de facilidade”." },
+        { "ref": "Figuras mais comuns", "conceito": true, "texto": "Metáfora: comparação sem “como” (“o tempo é um rio”). Comparação: com “como” (“forte como um touro”). Metonímia: troca por relação (“li Machado de Assis”: a obra). Ironia: dizer o contrário do que se pensa. Hipérbole: exagero. Eufemismo: suavizar (“partiu” por morreu). Antítese: palavras opostas. Personificação: dar ação humana a coisas. Sinestesia: misturar sentidos (“voz doce”)." }
+      ],
+      "macete": "Se a frase, tomada ao pé da letra, não faz sentido, o sentido é figurado (conotativo).",
+      "pegadinhas": [
+        "G0097: marcar “sentido real” ou “denotativo” para uma expressão figurada como “remar contra a maré”."
+      ],
+      "cobra": [
+        "“Pode-se afirmar que a expressão destacada está no sentido…”: G0097 (2021P)."
+      ],
+      "mapa": {
+        "centro": "Figuras e sentido",
+        "ramos": [
+          { "t": "Sentido", "f": ["Denotativo: literal", "Conotativo: figurado"] },
+          { "t": "Figuras", "f": ["Metáfora", "Metonímia", "Ironia", "Hipérbole", "Eufemismo"] }
+        ]
+      }
+    },
+    {
+      "id": "formacao",
+      "titulo": "Estrutura e formação de palavras — EMPATE com figuras de linguagem",
+      "nivel": 1,
+      "topicosBanco": ["lp.formacao"],
+      "qtdQuestoes": 1,
+      "intro": "1 questão única, em 2023 (G0186), nenhuma anulada. EMPATE com “figuras de linguagem”; a ordem entre elas é alfabética do código. O edital cita estrutura de palavras, derivação e composição.",
+      "pontos": [
+        { "ref": "Derivação", "conceito": true, "texto": "Prefixal (prefixo + radical: infeliz, irreversível). Sufixal (radical + sufixo: felizmente, brasileiro, pescetariano). Parassintética (prefixo e sufixo ao mesmo tempo: entardecer). Regressiva (reduz o verbo: compra de comprar). Imprópria (muda de classe sem mudar a forma: o jantar)." },
+        { "ref": "Composição", "conceito": true, "texto": "Justaposição: palavras juntas sem mudar (guarda-chuva, passatempo). Aglutinação: palavras se fundem e perdem som (planalto, de plano + alto)." },
+        { "ref": "Como a banca cobrou", "conceito": true, "texto": "Em G0186, pedia-se a alternativa só com palavras formadas por derivação prefixal ou sufixal: metropolitana, brasileiro, irreversível, pescetariano. As outras misturavam palavras primitivas (mel, saúde) e outras sem afixo (risco, falta, conceito)." }
+      ],
+      "macete": "Procure o radical e veja o que sobra: se sobra um pedaço no começo, é prefixo; se sobra no fim, é sufixo. Se não sobra nada, a palavra é primitiva.",
+      "pegadinhas": [
+        "G0186: alternativas com palavras primitivas ou sem afixo (mel, saúde, risco, falta) misturadas com derivadas."
+      ],
+      "cobra": [
+        "“Assinale a alternativa em que só constam palavras do texto formadas por derivação prefixal ou sufixal”: G0186 (2023)."
+      ],
+      "mapa": {
+        "centro": "Formação de palavras",
+        "ramos": [
+          { "t": "Derivação", "f": ["Prefixal", "Sufixal", "Parassintética", "Regressiva", "Imprópria"] },
+          { "t": "Composição", "f": ["Justaposição", "Aglutinação"] }
+        ]
+      }
+    },
+    {
+      "id": "sem-questao",
+      "titulo": "Itens do edital sem questão na amostra",
+      "nivel": 0,
+      "intro": "Nenhuma questão do banco foi classificada nestes itens do programa do edital: concordância nominal e verbal, fonética, modalização em textos diversos e produção de texto de diferentes gêneros. Isso não significa que não possam cair: a amostra é pequena (5 editais). Lembre apenas que a concordância verbal apareceu como alternativa dentro de uma questão de pontuação (G0194, “tem osteoporose” no lugar de “têm”).",
+      "pontos": [
+        { "ref": "Concordância nominal e verbal", "conceito": true, "texto": "Item do edital, sem questão própria na amostra. Fonte: Manual de Redação da Presidência da República, 3ª ed. (2018), item 11.7. Regra geral: “o verbo concorda com seu sujeito em pessoa e número” (“Os servidores do Ministério concordaram com a proposta”). Casos que mais confundem: (1) “haver” no sentido de existir e “fazer” indicando tempo ficam no singular e passam isso ao auxiliar: “Se houver dúvidas”, “Faz cinco anos”, “Deve haver soluções” (e não “devem haver”). (2) Com “se” apassivador o verbo concorda com o sujeito (“Vendem-se apartamentos”); com verbo transitivo indireto fica no singular (“Precisa-se de homens”, “Trata-se de questões”). (3) “A maioria de”, “grande parte de” + plural: singular ou plural (“A maioria dos condenados acabou (ou acabaram)…”). (4) O infinitivo não se flexiona quando forma locução com outro verbo do mesmo sujeito (“Queremos destacar”). Concordância nominal: o adjetivo concorda em gênero e número com o substantivo; “anexo” e “incluso” também (“Vão anexos os pareceres”). Na prova: em G0194 (2023), a banca deu como erradas as frases “Dez milhões de brasileiros […] tem osteoporose” (o certo é “têm”) e “só passaram a serem capazes” (o certo é “a ser”)." },
+        { "ref": "Fonética", "conceito": true, "texto": "Item do edital, sem questão na amostra. O que o Acordo de 1990 confirma (Base XX, divisão silábica): os ditongos decrescentes nunca se separam (“cadei-ra”, “ora-ção”); vogais em hiato se separam (“do-er”, “vo-os”, “ala-úde”); há também ditongos crescentes em fim de palavra (Base VII: “calúnia”, “espécie”, “mágoa”). Grupos de letras que se separam: rr e ss (“cor-roer”, “as-segurar”), sc (“nas-cer”, “des-cer”), xc (“ex-citar”). Ficam juntos: ch, lh, nh (“ca-cho”, “ma-lha”, “ma-nha”) e gu, qu antes da vogal (“ne-gue”, “pe-que”, “á-gua”). Isso ajuda também em acentuação (hiato × ditongo). Definições de fonema e letra: estude na gramática (não conferidas em fonte oficial aberta)." },
+        { "ref": "Modalização em textos diversos", "conceito": true, "texto": "Item do edital, sem questão na amostra. Modalizar é marcar no texto o grau de certeza, obrigação ou possibilidade de quem escreve; um recurso são os verbos modais (explicação do autor). Pelo CNJ (Dicas de Português: Sintaxe, p. 50): “deve”, “precisar”, “ter de” indicam obrigação; “poder” indica “capacidade, permissão ou simples possibilidade”; “deveria” ameniza a obrigação. Compare: “Você deve trazer o material” (obrigação) × “Você pode trazer o material?” (pedido, possibilidade). Advérbios modalizadores (como “talvez” e “certamente”) não foram conferidos em fonte oficial aberta." },
+        { "ref": "Produção de texto de diferentes gêneros do discurso", "conceito": true, "texto": "Item do edital. Não apareceu na amostra. Como a prova é objetiva (40 questões de múltipla escolha; edital p. 9, item 7.1, registrado em curso/edital.md, seção 1.4), não há redação registrada: a produção de texto pode aparecer apenas em questões sobre gênero, estrutura e linguagem, como G0279." }
+      ],
+      "macete": "Se sobrar tempo depois das lições anteriores, estude estes itens por último: a amostra não mostra cobrança direta.",
+      "pegadinhas": [],
+      "cobra": [
+        "Nenhuma questão da amostra foi classificada nestes itens, então não é possível descrever o formato com base em prova real."
+      ],
+      "mapa": {
+        "centro": "Sem questão na amostra",
+        "ramos": [
+          { "t": "Gramática", "f": ["Concordância", "Fonética"] },
+          { "t": "Texto", "f": ["Modalização", "Produção de texto"] }
+        ]
+      }
+    }
+  ]
+}
