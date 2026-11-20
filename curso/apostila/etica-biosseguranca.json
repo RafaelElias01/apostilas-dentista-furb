@@ -1,0 +1,495 @@
+{
+  "_comentario": "Apostila 04 (Etica, Relacoes Humanas, Biosseguranca e Prontuario), banca FURB, Cirurgiao-Dentista de Blumenau. 7 licoes, uma por codigo do radar (curso/roteiro-apostilas.md, Apostila 04): bio.biosseguranca 7, etica.relacoes 5, etica.servico_publico 4, etica.codigo_cfo 4, etica.responsabilidade 3, bio.residuos 2, bio.prontuario 1 = 26 questoes unicas (nenhuma anulada, nenhuma com dependeDeFigura ou transcricaoSuspeita). Trechos literais so da RDC 15/2012 e da Lei 4.324/1964 (arquivos .html de fontes/leis). Codigo de Etica Odontologica (CFO-118/2012 + CFO-271/2025) e RDC 222/2018 so existem em PDF aqui: pontos com conceito:true, artigo 'a conferir'. Exemplos, pegadinhas e formatos saem de questoes reais do banco (alvo:true).",
+  "id": "etica-biosseguranca",
+  "numero": 4,
+  "arquivoPdf": "apostila-04-etica-biosseguranca.pdf",
+  "titulo": "Ética, Relações Humanas, Biossegurança e Prontuário",
+  "subtitulo": "Cirurgião-Dentista · Prefeitura de Blumenau (SC) · banca FURB · com ênfase no que mais cai",
+  "fontes": [
+    "rdc-anvisa-15-2012-bvsms.html",
+    "lei-4324-1964-camara-normaatualizada.html"
+  ],
+  "rotuloPontos": "O conceito, passo a passo (com o que a banca já cobrou)",
+  "limiteFonte": "O QUE ESTÁ CONFERIDO LITERALMENTE: os trechos entre aspas desta apostila vêm de dois arquivos HTML de fontes/leis, conferidos pelo gerador como dispositivo completo e literal: (1) RDC Anvisa 15/2012, texto do site bvsms.saude.gov.br, sem anotações de alteração (https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2012/rdc0015_15_03_2012.html); (2) Lei 4.324/1964, texto atualizado da Câmara dos Deputados (www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4324-14-abril-1964-376610-normaatualizada-pl.html). O gerador confere se o texto é literal, não se está em vigor. Sobre a RDC 15/2012: ela mesma exclui do seu alcance os consultórios odontológicos (art. 3º, parágrafo único); a RDC Anvisa 1.002/2025 manda seguir a RDC 15/2012 só para esterilizador acima de 60 litros (art. 93); não se provou que não existe norma posterior que altere a RDC 15/2012. O QUE NÃO É TRECHO LITERAL (explicação do autor, selo padrão do gerador): (a) Código de Ética Odontológica. O CFO não publica o Código consolidado. O texto vigente é a Resolução CFO-118/2012 (PDF em fontes/leis, lido por inteiro) mais a Resolução CFO-271/2025 (PDF, lida por inteiro), que altera os incisos VIII e X do art. 20, revoga o inciso XIII do art. 32 e altera o inciso XIV do art. 44; nenhum desses artigos foi cobrado até agora. Não se provou que não exista outra resolução alteradora. Como o gerador só aceita trecho de arquivo HTML, todos os pontos do Código saem como conceito, com os artigos conferidos à mão no PDF e marcados ‘a conferir’ na versão vigente. (b) RDC Anvisa 222/2018 (resíduos): só existe em PDF aqui (bvsms), lido por inteiro; a norma não menciona a palavra ‘tubete’. (c) Anvisa RDC 1.002/2025, ‘Boas Práticas de Funcionamento para os serviços que prestam assistência odontológica’, publicada no DOU de 16/12/2025 (edição 239, seção 1, p. 191); lida em 20/11/2026 numa cópia do DOU hospedada pela vigilância sanitária da Prefeitura do Rio (https://vigilanciasanitaria.prefeitura.rio/wp-content/uploads/sites/84/2026/01/RDC-Anvisa-No-1.002-DE-15-DE-dezEMBRO-DE-2025-DOU-Imprensa-Nacional.pdf), não no site do DOU; entra em vigor na publicação (art. 186) e dá 360 dias para adequação (art. 182). PENDENTE: conferir no site da Anvisa se há retificação ou revogação, e se a RDC 1.002/2025 revogou algum manual ou resolução anterior (a 1.002 não foi lida inteira em busca de cláusula de revogação além dos artigos citados). Foi publicada depois das provas de 2019 a 2025: o que a banca cobrou antes dela pode divergir dela. (d) Manual do Prontuário do Paciente em Odontologia, 1ª ed., CFO, 2026 (https://website.cfo.org.br/wp-content/uploads/2026/03/CFO_Manual_do_Prontuario_Ebook.pdf), lido em 20/11/2026. (e) Código Penal, art. 18, II, e Código Civil, arts. 186 e 951, lidos no texto atualizado da Câmara dos Deputados (www2.camara.leg.br), citados como conceito porque não estão em fontes/leis. Biossegurança com número (periodicidade do monitoramento biológico, tempo, pressão) só aparece com o artigo da fonte oficial citado, e é para estudo: não use esta apostila para tratar paciente; no consultório vale a norma vigente e o manual do fabricante do equipamento. PENDENTE (nada disto foi confirmado em fonte aberta e por isso não foi ensinado como fato): glossário oficial da Anvisa para degermação e antissepsia (a banca definiu os dois, ver lição 1; a definição oficial não foi achada); sequência oficial da higiene das mãos (a ordem da banca, G0174, não foi comparada com a técnica oficial da Anvisa/OMS); fonte doutrinária para negligência, imprudência e imperícia; fonte para a teoria das inteligências múltiplas; se o Decreto 1.171/1994 (Código de Ética do Servidor Público Federal, que não está no edital nem em fontes/leis) inspirou a questão G0345; livro-texto de relações humanas e de ética (G5, não definido pelo dono). O texto das questões foi transcrito das provas e ainda não foi conferido contra os PDFs originais (G6). Programa: edital PSPS 003/2025 de Blumenau (curso/edital.md, seção 1.5: ‘Relações humanas no trabalho e ética profissional no serviço público’ no bloco comum; biossegurança e prontuário nas partes próprias).",
+  "comoUsar": [
+    "Esta apostila reúne as questões de ética, relações humanas, biossegurança e prontuário das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 26 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025). Nenhuma foi anulada. Por edição: 2019: 11; 2021P: 6; 2025: 4; 2021C: 3; 2023: 2.",
+    "Atenção ao seu cargo: dessas 26 questões, 15 caíram na prova do Clínico Geral. As de ética no Código do CFO (3 de 4), as de responsabilidade profissional (3 de 3) e a de prontuário vieram de provas de especialidade. Se você faz Clínico Geral, estude primeiro biossegurança, relações humanas e ética no serviço público (13 das 16 questões desses três temas caíram na prova do CG) e deixe o Código de Ética para depois.",
+    "A amostra é pequena: 5 editais de um só município, de 2019 a 2025. A frequência indica tendência, não garantia. Um assunto que não apareceu pode cair, e um que caiu pode não cair de novo.",
+    "Siglas das edições: 2019 = PSPS 002/2019; 2021P = PSPS 002/2021; 2021C = Concurso Público 002/2021 (50 questões); 2023 = PSPS 003/2023; 2025 = PSPS 003/2025. PSPS quer dizer Processo Seletivo Público Simplificado. Outras siglas: CFO = Conselho Federal de Odontologia; CRO = Conselho Regional de Odontologia; RDC = Resolução da Diretoria Colegiada da Anvisa (Agência Nacional de Vigilância Sanitária); PGRSS = Plano de Gerenciamento de Resíduos de Serviços de Saúde; EPI = equipamento de proteção individual; CG = Clínico Geral.",
+    "Ordem das lições (do que mais caiu): 1) biossegurança (7 questões); 2) relações humanas (5); 3) ética no serviço público (4); 4) Código de Ética Odontológica (4); 5) responsabilidade profissional (3); 6) resíduos, PGRSS (2); 7) prontuário (1). Regra de incidência: Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0. Ética no serviço público tem 4 questões mas aparece em 4 edições, por isso é Alta.",
+    "Como as lições mostram as questões: cada lição traz todas as questões reais do seu tema (26 no total). Como sobram menos de 5 questões para um simulado, esta apostila não tem simulado final.",
+    "Como estudar: leia cada ponto, veja o quadro, leia as pegadinhas (elas saem das alternativas erradas das provas reais), leia como a banca cobra e só então faça as questões, marcando antes de olhar a resposta em verde. O código G0xxx que aparece nos textos identifica a questão no banco do projeto.",
+    "Gabarito da banca manda. Em três pontos esta apostila avisa que a norma atual diz algo diferente do gabarito histórico (lição 1, classificação dos artigos e antissepsia; lição 7, profissão do paciente no prontuário): na prova, siga o gabarito histórico, mas saiba por que a norma diverge.",
+    "Atenção ao formato: a FURB usa muito afirmativas numeradas (I a V) com ‘é correto o que se afirma em’, V ou F em sequência, ‘associe as colunas’ e perguntas com NÃO. Teste cada afirmativa separadamente.",
+    "Este material é independente e não tem vínculo com a FURB (Fundação Universidade Regional de Blumenau) nem com a Prefeitura de Blumenau. Confira sempre o edital vigente."
+  ],
+  "ranking": [
+    { "rotulo": "Biossegurança: antissepsia, esterilização e monitoramento, classificação dos artigos, lavagem das mãos, EPI (7 questões únicas; 2019, 2021P, 2021C, 2025)", "nivel": 3 },
+    { "rotulo": "Relações humanas no trabalho: conflito, liderança, diversidade, inteligências (5 questões únicas; uma em cada uma das 5 edições)", "nivel": 3 },
+    { "rotulo": "Ética profissional no serviço público (4 questões únicas; 2019, 2021P, 2021C, 2023)", "nivel": 3 },
+    { "rotulo": "Código de Ética Odontológica (4 questões únicas; 2019 e 2025)", "nivel": 2 },
+    { "rotulo": "Responsabilidade profissional: negligência, imprudência, imperícia (3 questões únicas; 2019)", "nivel": 2 },
+    { "rotulo": "Gerenciamento de resíduos, PGRSS (2 questões únicas; 2019)", "nivel": 1 },
+    { "rotulo": "Prontuário odontológico (1 questão única; 2021P)", "nivel": 1 }
+  ],
+  "licoes": [
+    {
+      "id": "biosseguranca",
+      "titulo": "Biossegurança: antissepsia, esterilização e monitoramento, EPI e risco de transmissão",
+      "nivel": 3,
+      "topicosBanco": ["bio.biosseguranca"],
+      "qtdQuestoes": 8,
+      "intro": "7 questões únicas em 4 edições (2019: 1; 2021P: 3; 2021C: 1; 2025: 2); 4 delas caíram na prova do Clínico Geral. Nenhuma foi anulada. O que caiu: nome do procedimento que reduz microrganismos da pele (G0028), definição de antissepsia (G0136), sequência da lavagem das mãos (G0174), o que não é medida de biossegurança (G0179), EPI na pandemia (G0372), classificação dos artigos em críticos, semicríticos e não críticos (G0301, 2025) e tipos de monitoramento da esterilização (G0304, 2025). Em 2025 a banca subiu o nível: afirmativas numeradas e ‘associe as colunas’. Os números desta lição vêm de artigo de norma citado no ponto, com a marca ‘para estudo; não use para tratar paciente’.",
+      "pontos": [
+        {
+          "ref": "Degermação, antissepsia, desinfecção e esterilização · o que a banca cobrou",
+          "conceito": true,
+          "texto": "Duas questões pedem que você ligue o nome ao conceito. G0028 (2019): ‘ato de redução ou remoção parcial de microrganismos da pele, ou outros tecidos vivos, por métodos quimiomecânicos’ é a DEGERMAÇÃO (alternativa E). As alternativas erradas eram descontaminação, desinfecção, assepsia e esterilização. G0136 (2021P): a ANTISSEPSIA é a ‘eliminação das formas vegetativas de bactérias patogênicas de um tecido vivo’ (alternativa D). As erradas eram as definições de outros termos: A = esterilização (elimina todos os microrganismos, inclusive esporos); B = limpeza (remoção de sujidades, antes da desinfecção ou da esterilização); C = desinfecção (elimina patogênicos de objetos inanimados, sem atingir necessariamente os esporos); E = assepsia (medida para impedir que um local seja contaminado). Regra para decorar a lógica da banca: tecido VIVO (pele, mucosa) = degermação e antissepsia; objeto INANIMADO = desinfecção e esterilização. AVISO: estas duas definições são as da banca; o glossário oficial da Anvisa para ‘degermação’ e ‘antissepsia’ não foi encontrado (PENDENTE). Na prova, siga o gabarito."
+        },
+        {
+          "ref": "Esterilização × desinfecção · definições oficiais mais recentes",
+          "conceito": true,
+          "texto": "A RDC Anvisa 1.002/2025 (DOU de 16/12/2025, art. 3º, XXX) define esterilização como o ‘processo de destruição de todas as formas de vida microbiana, bactérias nas formas vegetativa e esporulada, fungos e vírus, mediante a aplicação de agentes físicos e químicos, para um nível de segurança aceitável’. No mesmo artigo, desinfecção de alto nível é o ‘processo físico ou químico que destrói a maioria dos microrganismos de produtos semicríticos, inclusive micobactérias e fungos, exceto um número elevado de esporos bacterianos’ (inciso XVII), e a de nível intermediário destrói microrganismos patogênicos na forma vegetativa, micobactérias e a maioria dos vírus e dos fungos, de objetos inanimados e superfícies (inciso XVIII). A palavra-chave é ‘esporos’: só a esterilização os destrói."
+        },
+        {
+          "ref": "Art. 4º, inciso XV · artigo crítico (RDC 15/2012)",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "XV - produtos para saúde críticos: são produtos para a saúde utilizados em procedimentos invasivos com penetração de pele e mucosas adjacentes, tecidos subepteliais, e sistema vascular, incluindo também todos os produtos para saúde que estejam diretamente conectados com esses sistemas;",
+          "texto": "Em português claro: o artigo CRÍTICO é o que fura ou corta (pele, mucosa, tecido por baixo do epitélio, vaso). Na prova de 2025 (G0301), a banca disse que os instrumentos para raspagem de cálculo se enquadram nessa categoria e que devem estar esterilizados ao serem usados. Essa é a afirmativa I, que o gabarito aceitou. Esta definição está no art. 4º, inciso XV, da RDC 15/2012."
+        },
+        {
+          "ref": "Art. 4º, inciso XVI · semicrítico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "XVI - produtos para saúde semi-críticos: produtos que entram em contato com pele não íntegra ou mucosas íntegras colonizadas;",
+          "texto": "Semicrítico = encosta em mucosa INTEGRA ou em pele NÃO íntegra, sem penetrar. Guarde esta frase: ela é o que separa o semicrítico do não crítico, e a G0301 (2025) explora justamente essa fronteira."
+        },
+        {
+          "ref": "Art. 4º, inciso XVII · não crítico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "XVII - produtos para saúde não-críticos: produtos que entram em contato com pele íntegra ou não entram em contato com o paciente;",
+          "texto": "Não crítico = toca só a pele íntegra, ou nem toca o paciente. Repare na diferença: o não crítico NÃO tem contato com mucosa. Na G0301 a afirmativa III dizia que artigos não críticos ‘entram em contato apenas com a mucosa íntegra’ e o gabarito (alternativa E, ‘I e II, apenas’) não a aceitou. O provável motivo, deduzido das definições acima, é que ‘mucosa íntegra’ descreve o semicrítico, e não o não crítico; a banca não publicou a justificativa."
+        },
+        {
+          "ref": "Art. 11 · o que fazer com o artigo crítico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "Art. 11 Produtos para saúde classificados como críticos devem ser submetidos ao processo de esterilização, após a limpeza e demais etapas do processo.",
+          "texto": "Crítico = esterilização, sempre depois da limpeza. Esterilizar um artigo sujo não funciona: a limpeza vem primeiro."
+        },
+        {
+          "ref": "Art. 12, caput · o que fazer com o artigo semicrítico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "Art. 12 Produtos para saúde classificados como semicríticos devem ser submetidos, no mínimo, ao processo de desinfecção de alto nível, após a limpeza.",
+          "texto": "Semicrítico = NO MÍNIMO desinfecção de alto nível (esterilizar também serve, porque é mais forte). Por isso a afirmativa II da G0301 (‘artigos semicríticos... devem ser esterilizados’, com pinça clínica, espelho bucal e cânulas de sucção como exemplos) foi aceita pelo gabarito. AVISO didático: a letra da RDC 15 exige só o mínimo; a banca aceitou ‘esterilizados’. Na prova, siga o gabarito."
+        },
+        {
+          "ref": "Art. 14 · o que fazer com o artigo não crítico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "Art. 14 Produtos para saúde classificados como não-críticos devem ser submetidos, no mínimo, ao processo de limpeza.",
+          "texto": "Não crítico = no mínimo limpeza. A G0301 dizia que o não crítico ‘deve ser desinfetado’; a afirmativa III foi considerada incorreta pelo gabarito, e você já viu um motivo provável no ponto do inciso XVII."
+        },
+        {
+          "ref": "Art. 3º, parágrafo único · a RDC 15 não vale para consultório odontológico",
+          "fonte": "rdc-anvisa-15-2012-bvsms.html",
+          "trecho": "Parágrafo único. Excluem-se do escopo desse regulamento o processamento de produtos para saúde realizados em consultórios odontológicos, consultórios individualizados e não vinculados a serviços de saúde, unidades de processamento de endoscópios, serviços de terapia renal substitutiva, serviços de assistência veterinária.",
+          "texto": "Atenção: as definições de crítico, semicrítico e não crítico da RDC 15 servem de referência, mas a própria RDC 15 diz que ela não regula o processamento feito em consultório odontológico. Para odontologia, a norma específica hoje é a RDC Anvisa 1.002/2025 (DOU de 16/12/2025, publicada depois de todas as provas analisadas). Ela repete as três classes no art. 3º, incisos XXIII a XXV, e dá exemplos: crítico = brocas, pontas diamantadas, pontas para ultrassom, instrumentais cirúrgicos e grampos de isolamento; semicrítico = posicionadores radiográficos, arcos de isolamento, afastadores e abridores bucais, moldeiras e fotopolimerizador; não crítico = equipo, cuspideira, refletor e base de equipamentos periféricos. Esses exemplos podem divergir dos que a banca usou na G0301 (que citou pinça clínica, espelho e cânulas de sucção como semicríticos): na prova, siga o gabarito da questão."
+        },
+        {
+          "ref": "Monitoramento da esterilização · físico, químico e biológico (G0304)",
+          "conceito": true,
+          "texto": "G0304 (2025) pediu para associar o tipo de monitoramento ao teste: FÍSICO = leitura da temperatura, da pressão e do tempo; QUÍMICO = fitas dentro do pacote; BIOLÓGICO = tiras de papel com esporos bacterianos. Gabarito: 3 – 1 – 2 (alternativa C). A pegadinha era trocar químico e biológico: tira com ESPOROS é sempre biológico. Para estudo (não use para tratar paciente), o que a RDC Anvisa 1.002/2025 diz sobre o assunto: art. 91, §1º, parâmetros físicos do vapor saturado = tempo, temperatura e pressão (é a leitura do equipamento); art. 78, indicador tipo 1 obrigatório na embalagem de todo pacote; art. 89, monitoramento SEMANAL com pacote teste que contém um indicador biológico e um integrador químico tipo 5 ou 6, no primeiro ciclo do dia; art. 90, nos demais ciclos, integrador químico tipo 5 ou 6. Nenhuma questão de Blumenau cobrou esses números até agora."
+        },
+        {
+          "ref": "Esterilização · o que a norma atual proíbe (RDC 1.002/2025, art. 84)",
+          "conceito": true,
+          "texto": "Para estudo; não use para tratar paciente. O art. 84 da RDC Anvisa 1.002/2025 diz que não é permitido usar estufas na esterilização de dispositivos usados na assistência odontológica (§1º) nem caixas de luz ultravioleta para esterilizar esses dispositivos (§2º). O art. 88 manda fazer o teste Bowie & Dick no primeiro ciclo do dia na autoclave com bomba de vácuo. Nenhuma questão pediu isso ainda; entra aqui porque o tema ‘esterilização e monitoramento’ é do edital."
+        },
+        {
+          "ref": "Lavagem das mãos · a sequência que a banca marcou (G0174)",
+          "conceito": true,
+          "texto": "G0174 (2021P) pediu a sequência CORRETA da lavagem das mãos. A banca marcou (alternativa C): palma, dorso da mão, espaço entre os dedos, polegar, articulação, unhas e extremidades dos dedos, punhos. Fixe a regra: as quatro primeiras etapas são palma, dorso, espaço entre os dedos e polegar, nessa ordem; os punhos ficam por ÚLTIMO. As alternativas erradas mexiam na ordem: A inverte as duas últimas (punhos antes de unhas e extremidades); B e D põem o polegar antes do espaço entre os dedos; E começa pelo dorso e termina na palma. AVISO: esta ordem é a da banca; a sequência oficial da Anvisa/OMS não foi comparada nesta apostila (PENDENTE). Na prova, siga o gabarito."
+        },
+        {
+          "ref": "Medidas de biossegurança · o que NÃO é (G0179)",
+          "conceito": true,
+          "texto": "G0179 (2021P): ‘assinale a alternativa que NÃO contém uma medida de biossegurança’. Eram medidas aceitas: higiene de mãos, uso de insumos descartáveis, esterilização de instrumentos e uso de luvas e máscara. A resposta (que NÃO é medida) foi a aplicação de UV (luz ultravioleta) na sala de procedimento (alternativa E). Relação com a norma atual, sem ir além dela: a RDC 1.002/2025 proíbe caixa de luz UV para ESTERILIZAR instrumentos (art. 84, §2º); isso não é o mesmo que luz UV na sala, e a RDC não foi lida nesta apostila quanto à sala."
+        },
+        {
+          "ref": "EPI na pandemia · o que foi incorporado (G0372)",
+          "conceito": true,
+          "texto": "G0372 (2021C): ‘quais EPIs foram incorporados à rotina do cirurgião-dentista frente ao COVID-19?’ Gabarito: face shield (protetor facial) e jaleco descartável (alternativa B). As erradas: A máscara e óculos de proteção; C biombo e diques de borracha; D luvas estéreis e propés; E gorro e máscara. Raciocínio provável da banca (não publicado): máscara, óculos, luvas e gorro já eram rotina antes da pandemia; o ‘novo’ foram o protetor facial e o jaleco descartável. Pegadinha: a alternativa A parece a mais óbvia, mas fala de itens que já se usavam."
+        }
+      ],
+      "tabela": {
+        "titulo": "Classes dos artigos: o que é, o que fazer e o que a banca cobrou",
+        "cab": ["Classe", "Contato (RDC 15/2012, art. 4º)", "Processamento mínimo (RDC 15/2012)", "Exemplos que a banca citou (G0301, 2025)", "Exemplos na RDC 1.002/2025, art. 3º"],
+        "linhas": [
+          ["Crítico", "Penetra pele, mucosa adjacente, tecido subepitelial ou vaso (inciso XV)", "Esterilização, depois da limpeza (art. 11)", "Instrumentos para raspagem de cálculo (afirmativa I, aceita)", "Brocas, pontas diamantadas, pontas de ultrassom, instrumentais cirúrgicos, grampos de isolamento"],
+          ["Semicrítico", "Pele não íntegra ou mucosa íntegra colonizada (inciso XVI)", "No mínimo desinfecção de alto nível, depois da limpeza (art. 12)", "Pinça clínica, espelho bucal, cânulas de sucção (afirmativa II, aceita; a banca escreveu que devem ser esterilizados)", "Posicionadores radiográficos, arcos de isolamento, afastadores, abridores bucais, moldeiras, fotopolimerizador"],
+          ["Não crítico", "Pele íntegra ou nenhum contato com o paciente (inciso XVII)", "No mínimo limpeza (art. 14)", "Placa de vidro, pote Dappen, espátula para resina (afirmativa III, que o gabarito não aceitou)", "Equipo, cuspideira, refletor, base de equipamentos periféricos"]
+        ]
+      },
+      "macete": "Crítico fura, semicrítico encosta na mucosa íntegra, não crítico só toca a pele íntegra. Esterilização para o que fura; desinfecção de alto nível para a mucosa; limpeza para a pele. E para o monitoramento: tempo, temperatura e pressão = FÍSICO; fita ou integrador = QUÍMICO; esporo = BIOLÓGICO.",
+      "pegadinhas": [
+        "G0028 e G0136: trocar o termo do tecido vivo (degermação, antissepsia) pelo do objeto inanimado (desinfecção, esterilização). Na G0136 a esterilização apareceu como alternativa A, a limpeza como B, a desinfecção como C e a assepsia como E.",
+        "G0301: a afirmativa III dizia que o não crítico ‘entra em contato apenas com a mucosa íntegra’; essa é a descrição do semicrítico. O gabarito foi ‘I e II, apenas’ (E). As outras alternativas eram ‘III, apenas’, ‘I, II e III’, ‘I, apenas’ e ‘II e III, apenas’.",
+        "G0304: trocar o químico pelo biológico. A alternativa A (3 – 2 – 1) punha as tiras de papel com esporos no monitoramento químico e as fitas no biológico.",
+        "G0174: mudar a ordem das etapas. Nas alternativas erradas aparecem punhos antes de unhas, polegar antes do espaço entre os dedos, ou a palma por último.",
+        "G0179: marcar uma medida comum (higiene de mãos, descartáveis, esterilização, luvas e máscara) quando a pergunta pede a que NÃO é de biossegurança.",
+        "G0372: escolher ‘máscara e óculos’ ou ‘gorro e máscara’, que parecem lógicos mas não foram os itens incorporados na pandemia segundo o gabarito."
+      ],
+      "cobra": [
+        "Pergunta ‘qual o nome do procedimento que...’ com cinco termos candidatos: G0028 (2019).",
+        "Definição de um termo, com as cinco alternativas sendo definições de termos vizinhos: G0136 (2021P).",
+        "Sequência de etapas com cinco ordens parecidas: G0174 (2021P).",
+        "Pergunta com NÃO: G0179 (2021P).",
+        "Pergunta direta de conhecimento da rotina: G0372 (2021C).",
+        "Afirmativas I a III com exemplos de instrumentos dentro de cada classe, e ‘é correto o que se afirma em’: G0301 (2025).",
+        "‘Associe a segunda coluna de acordo com a primeira’, com três itens: G0304 (2025)."
+      ],
+      "mapa": {
+        "centro": "Biossegurança",
+        "ramos": [
+          { "t": "Termos", "f": ["Degermação e antissepsia: pele e tecido vivo", "Desinfecção: objeto, sem esporos", "Esterilização: tudo, inclusive esporos", "Assepsia: impedir a contaminação"] },
+          { "t": "Classes dos artigos", "f": ["Crítico: fura, esteriliza", "Semicrítico: mucosa íntegra, desinfecção de alto nível", "Não crítico: pele íntegra, limpeza"] },
+          { "t": "Monitoramento", "f": ["Físico: tempo, temperatura, pressão", "Químico: fita, integrador", "Biológico: esporos"] },
+          { "t": "Mãos e EPI", "f": ["Palma, dorso, entre os dedos, polegar", "Articulação, unhas, punhos por último", "Pandemia: face shield e jaleco descartável"] }
+        ]
+      }
+    },
+    {
+      "id": "relacoes-humanas",
+      "titulo": "Relações humanas no trabalho",
+      "nivel": 3,
+      "topicosBanco": ["etica.relacoes"],
+      "qtdQuestoes": 8,
+      "intro": "5 questões únicas, uma em CADA uma das 5 edições (2019, 2021P, 2021C, 2023 e 2025); todas caíram na prova do Clínico Geral. Nenhuma foi anulada. O assunto é estável e as respostas seguem um padrão: a banca premia a solução dialogada, inclusiva e construtiva, e pune a que evita, esconde, separa ou impõe. O que caiu: conflito (G0021), chefe autoritário (G0114), equipe diversa (G0223), inteligências intrapessoal e interpessoal (G0312) e o que faz uma equipe funcionar (G0346).",
+      "pontos": [
+        {
+          "ref": "Conflito · transformar a diferença em solução (G0021)",
+          "conceito": true,
+          "texto": "G0021 (2019): a forma mais adequada e construtiva de gerenciar conflito é ‘transformar as diferenças em resolução de problemas’ (alternativa B). As erradas eram ignorar, aguçar as diferenças, reprimir e evitar o conflito. Ideia: o conflito não some quando é ignorado, reprimido ou evitado; ele se resolve quando as partes trabalham a diferença como um problema a ser solucionado juntos. Em prova, desconfie de qualquer alternativa com verbos de fuga (ignorar, evitar, reprimir) ou de agravamento (aguçar)."
+        },
+        {
+          "ref": "Liderança · a chefia que impõe prejudica a relação (G0114)",
+          "conceito": true,
+          "texto": "G0114 (2021P): um chefe define sozinho as tarefas, sem deixar o funcionário escolher algo com o qual se identifique. Gabarito: a atitude prejudica as relações humanas no trabalho, porque é arbitrária (alternativa C). As erradas elogiavam a autoridade (‘mostrar autoridade’, ‘funcionários se sentem acolhidos quando o chefe impõe’, ‘seguros por ter um chefe que sabe mandar’) ou previam rebeldia (B). Regra: relação saudável combina participação com responsabilidade; imposição sem escuta é arbitrariedade."
+        },
+        {
+          "ref": "Diversidade na equipe · sensibilizar e incluir (G0223)",
+          "conceito": true,
+          "texto": "G0223 (2023): equipe com idades, culturas e origens diferentes, com conflitos e mal-entendidos; você é o líder. A abordagem eficaz é promover treinamento de sensibilização sobre diversidade e inclusão, incentivando empatia e compreensão das diferenças (alternativa E). As erradas: A transferir os envolvidos de setor; B separar em subgrupos por afinidade; C ignorar e esperar o tempo resolver; D criar competição interna. Padrão: a resposta certa enfrenta a causa (falta de compreensão) com educação e diálogo; as erradas fogem, separam ou competem."
+        },
+        {
+          "ref": "Inteligências intrapessoal e interpessoal (G0312)",
+          "conceito": true,
+          "texto": "G0312 (2025): a questão pede a afirmativa correta sobre inteligências múltiplas no serviço público. Gabarito C: a inteligência INTRApessoal permite compreender a si mesmo e seus sentimentos; a INTERpessoal permite perceber as motivações e as intenções das outras pessoas. Macete de prefixo: INTRA = dentro (eu); INTER = entre (os outros). As erradas trocavam os conceitos (A: interpessoal como autoconhecimento; B: intrapessoal como liderar e mediar conflitos) ou exageravam: D ‘interpessoal restringe-se às relações hierárquicas’ e E ‘inatas e estáveis, não passíveis de desenvolvimento’. A teoria das inteligências múltiplas costuma ser associada a Howard Gardner (PENDENTE: fonte citada; a questão não nomeia o autor)."
+        },
+        {
+          "ref": "Equipe alinhada · respeitar divergências e diversidades (G0346)",
+          "conceito": true,
+          "texto": "G0346 (2021C): o que garante o bom desenvolvimento da equipe? Gabarito A: a equipe deve respeitar as divergências e diversidades. As erradas: B críticas devem ser evitadas; C responsabilidades devem ser delegadas; D o líder deve ser arbitrário; E opiniões deverão ser ignoradas. AVISO didático: a alternativa C (delegar responsabilidades) parece boa na vida real, mas a banca marcou A; na prova, siga o gabarito e escolha o valor mais ligado a respeito e convivência."
+        }
+      ],
+      "tabela": {
+        "titulo": "Relações humanas: o que a banca premiou e o que ela puniu",
+        "cab": ["Situação", "Premiado (gabarito)", "Punido (alternativas erradas)", "Questão"],
+        "linhas": [
+          ["Conflito entre colegas", "Transformar as diferenças em resolução de problemas", "Ignorar, aguçar, reprimir, evitar", "G0021"],
+          ["Chefe define tudo sozinho", "Reconhecer que é arbitrário e prejudica a relação", "Elogiar a autoridade, a ordem ou o ‘chefe que sabe mandar’", "G0114"],
+          ["Equipe diversa em atrito", "Treinamento de diversidade e inclusão, empatia", "Transferir, separar em subgrupos, ignorar, competição interna", "G0223"],
+          ["Intra e interpessoal", "Intra = a si mesmo; inter = os outros", "Trocar os dois; dizer que são inatas ou só hierárquicas", "G0312"],
+          ["O que sustenta a equipe", "Respeitar divergências e diversidades", "Evitar críticas, ser arbitrário, ignorar opiniões", "G0346"]
+        ]
+      },
+      "macete": "Nas questões de relações humanas, a resposta certa dialoga, inclui e resolve a causa; a errada ignora, evita, separa, impõe ou compete. INTRA = dentro (eu); INTER = entre (os outros).",
+      "pegadinhas": [
+        "G0021: ‘evitar’ e ‘ignorar’ o conflito parecem pacíficos, mas são respostas erradas; ‘aguçar as diferenças’ piora.",
+        "G0114: a alternativa que elogia a autoridade do chefe (‘mostrar autoridade’, ‘saber mandar’) é a armadilha mais atraente.",
+        "G0223: a alternativa D (competição saudável para aproximar) soa positiva, mas a banca a deu como errada.",
+        "G0312: duas alternativas trocam os conceitos de intra e interpessoal; leia o prefixo antes de ler a definição.",
+        "G0346: ‘as responsabilidades devem ser delegadas’ (C) é plausível, mas o gabarito foi ‘respeitar divergências e diversidades’ (A)."
+      ],
+      "cobra": [
+        "Situação-problema curta, com a pergunta ‘qual a forma mais adequada’: G0021 (2019).",
+        "Caso com personagem (‘Leonardo fez uma reunião...’) e ‘podemos afirmar que’: G0114 (2021P).",
+        "Caso com o candidato no papel de líder e pedido de ‘abordagem eficaz’: G0223 (2023).",
+        "Pergunta teórica com cinco afirmativas longas sobre conceitos (inteligências múltiplas): G0312 (2025).",
+        "Pergunta ‘assinale a alternativa CORRETA’ com cinco frases curtas de valores: G0346 (2021C)."
+      ],
+      "mapa": {
+        "centro": "Relações humanas no trabalho",
+        "ramos": [
+          { "t": "Conflito", "f": ["Transformar diferença em solução", "Não ignorar, reprimir ou evitar"] },
+          { "t": "Liderança", "f": ["Arbitrariedade prejudica", "Participação e escuta"] },
+          { "t": "Diversidade", "f": ["Sensibilização, inclusão, empatia", "Não separar nem competir"] },
+          { "t": "Inteligências", "f": ["Intrapessoal: a si mesmo", "Interpessoal: os outros", "Podem ser desenvolvidas"] }
+        ]
+      }
+    },
+    {
+      "id": "etica-servico-publico",
+      "titulo": "Ética profissional no serviço público",
+      "nivel": 3,
+      "topicosBanco": ["etica.servico_publico"],
+      "qtdQuestoes": 8,
+      "intro": "4 questões únicas em 4 edições (2019, 2021P, 2021C e 2023); todas caíram na prova do Clínico Geral. Nenhuma foi anulada. Por isso o nível é Alto, mesmo com só 4 questões: o assunto aparece em quase toda edição. O que caiu: conceito de ética (G0022), por que a ética pesa mais no servidor público (G0113), dilema ético diante da corrupção de um colega (G0224) e função pública e vida particular (G0345). O edital não nomeia código de ética de servidor; por isso esta lição não traz trecho de lei e pede raciocínio de princípios.",
+      "pontos": [
+        {
+          "ref": "Conceito de ética · ligada ao tempo e à história (G0022)",
+          "conceito": true,
+          "texto": "G0022 (2019): ‘em relação à ética, é correto afirmar’. Gabarito D: a ética está associada ao tempo e à história; somos seres históricos e culturais e nossa ação se desenrola no tempo. As erradas: A ‘a ética normatiza e direciona a prática das pessoas’; B ‘a ética é particularizada’; C ‘tem origem no latim e significa costumes’; E ‘é um conjunto de normas que regulam o comportamento do homem no trabalho’. Na leitura da banca, a ética é reflexão sobre a ação humana no tempo, não é uma lista de normas do trabalho. Observação: a palavra ‘ética’ costuma ser ligada ao grego ethos e a ‘moral’ ao latim mores; a alternativa C troca isso. PENDENTE: fonte citada para a origem das palavras."
+        },
+        {
+          "ref": "Por que a ética pesa mais no servidor público (G0113)",
+          "conceito": true,
+          "texto": "G0113 (2021P): ‘o comportamento ético no exercício de sua função tem um peso diferenciado pois...’ Gabarito A: trata-se de um serviço em que o fim almejado é sempre o bem comum. As erradas desqualificavam o serviço público (B ‘não existe regramento’, C ‘possui vícios e permissividades que não se encontra nas instituições privadas’, D ‘descomprometidas com a sociedade’, E ‘mais vulnerável a desvios’). Regra: a banca justifica o peso da ética no serviço público pela FINALIDADE (bem comum), nunca por ofensa ao serviço público ou aos servidores."
+        },
+        {
+          "ref": "Dilema ético · corrupção de um colega (G0224)",
+          "conceito": true,
+          "texto": "G0224 (2023): você descobre que um colega desvia fundos públicos e teme represálias. Gabarito E: apresentar denúncia anônima aos órgãos de controle e corregedoria, para preservar a integridade do serviço público e responsabilizar o infrator. As erradas: A conversar com um superior ‘para avaliar se vale a pena fazer uma denúncia’; B ignorar e focar nas próprias tarefas; C e D conversar com o colega e aconselhá-lo a parar. Padrão: a resposta certa leva o fato à instância competente; as erradas ignoram ou resolvem ‘no particular’. AVISO: nenhuma norma foi citada na questão e o edital não nomeia código de ética de servidor; a regra acima é a leitura da banca (PENDENTE: norma que a sustente)."
+        },
+        {
+          "ref": "Função pública e vida particular (G0345)",
+          "conceito": true,
+          "texto": "G0345 (Concurso 2021): V ou F. Gabarito A: V, F, V. (1) V: a função pública é exercício profissional e se integra à vida particular do servidor; atos da vida privada podem acrescer ou diminuir o seu bom conceito na vida funcional. (2) F: toda pessoa tem direito à verdade, e o servidor NÃO pode omiti-la ou falseá-la, mesmo contra interesse da Administração. (3) V: o servidor deve dar atenção às ordens legais de seus superiores, evitando a conduta negligente; repetidos erros, descaso e acúmulo de desvios podem caracterizar até imprudência no desempenho da função. Hipótese (PENDENTE de conferência): a redação lembra o Código de Ética do Servidor Público Federal (Decreto 1.171/1994), que não está no edital nem em fontes/leis; não se conferiu o texto."
+        }
+      ],
+      "macete": "Ética no serviço público: a finalidade é o bem comum, a verdade não se omite, o fato grave é levado à instância competente, e a vida privada também pesa no conceito do servidor.",
+      "pegadinhas": [
+        "G0022: ‘a ética é um conjunto de normas que regulam o comportamento do homem no trabalho’ (E) parece uma definição boa, mas o gabarito foi a ligação com tempo e história (D).",
+        "G0113: as alternativas B, C, D e E falam mal do serviço público ou do servidor; a certa fala da finalidade, o bem comum.",
+        "G0224: ‘conversar com um superior para avaliar se vale a pena denunciar’ (A) e ‘conversar com o colega’ (C e D) parecem prudentes, mas o gabarito foi a denúncia aos órgãos de controle.",
+        "G0345: a afirmativa 2 (‘o servidor pode omitir ou falsear a verdade’) é falsa."
+      ],
+      "cobra": [
+        "Pergunta de conceito com cinco afirmações (‘é correto afirmar’): G0022 (2019).",
+        "Pergunta de justificativa (‘tem um peso diferenciado pois...’): G0113 (2021P).",
+        "Caso hipotético com dilema e pedido da ‘ação mais ética e justificável’: G0224 (2023).",
+        "Três afirmativas para V ou F, com sequência de resposta: G0345 (Concurso 2021)."
+      ],
+      "mapa": {
+        "centro": "Ética no serviço público",
+        "ramos": [
+          { "t": "Conceito", "f": ["Ligada a tempo e história", "Reflexão sobre a ação humana"] },
+          { "t": "Finalidade", "f": ["Bem comum", "Peso diferenciado do servidor"] },
+          { "t": "Dilema", "f": ["Corrupção do colega", "Denúncia aos órgãos de controle"] },
+          { "t": "Conduta", "f": ["Verdade não se omite", "Vida privada pesa na vida funcional", "Cumprir ordens legais"] }
+        ]
+      }
+    },
+    {
+      "id": "codigo-etica-cfo",
+      "titulo": "Código de Ética Odontológica (CFO)",
+      "nivel": 2,
+      "topicosBanco": ["etica.codigo_cfo"],
+      "qtdQuestoes": 8,
+      "intro": "4 questões únicas em 2 edições (2019: 3; 2025: 1); só 1 delas caiu na prova do Clínico Geral (as outras 3 vieram de provas de especialidade). Nenhuma foi anulada. As 3 de 2019 (G0031, G0066, G0087) cobram infrações éticas nos relacionamentos com o paciente (art. 11) e entre os colegas (arts. 12 e 13); a de 2025 (G0311) cobra a função dos códigos de ética no serviço público. Os artigos abaixo foram lidos por inteiro no PDF da Resolução CFO-118/2012; como o gerador só aceita trecho de arquivo HTML, os pontos são explicações do autor e o artigo fica ‘a conferir’ na versão vigente (ver Limites). Os trechos entre aspas desta lição são da Lei 4.324/1964.",
+      "pontos": [
+        {
+          "ref": "Quem faz e muda o Código · Lei 4.324/1964, art. 4º, alínea d",
+          "fonte": "lei-4324-1964-camara-normaatualizada.html",
+          "trecho": "d) votar e alterar o Código de Deontologia Odontológica, ouvidos os Conselhos Regionais;",
+          "texto": "É o Conselho FEDERAL de Odontologia (CFO) que vota e altera o Código de Ética, ouvidos os Conselhos Regionais (CROs). O Código de Ética em vigor foi aprovado pela Resolução CFO-118/2012 e alterado pela Resolução CFO-271/2025 (arts. 20, 32 e 44). O próprio Código diz (art. 59, a conferir) que as alterações são da competência exclusiva do Conselho Federal, ouvidos os Conselhos Regionais."
+        },
+        {
+          "ref": "Quem julga e quais as penas · Lei 4.324/1964, art. 17",
+          "fonte": "lei-4324-1964-camara-normaatualizada.html",
+          "trecho": "Art. 17. O poder disciplinar de aplicar penalidades aos cirurgiões-dentistas compete ao Conselho Regional em que estavam inscritos ao tempo do fato punível.",
+          "texto": "Quem pune é o CRO em que o dentista estava inscrito quando o fato aconteceu. Nenhuma questão pediu isso ainda; entra porque dá contexto às questões de infração."
+        },
+        {
+          "ref": "Penas disciplinares · Lei 4.324/1964, art. 18, caput",
+          "fonte": "lei-4324-1964-camara-normaatualizada.html",
+          "trecho": "Art. 18. As penas disciplinares aplicáveis pelos Conselhos Regionais aos cirurgiões-dentistas inscritos são as seguintes:",
+          "texto": "As cinco penas, na ordem de gravidade da lei (art. 18, alíneas a a e): advertência confidencial, em aviso reservado; censura confidencial, em aviso reservado; censura pública, em publicação oficial; suspensão do exercício profissional até 30 dias; cassação do exercício profissional, ad referendum do Conselho Federal. O Código de Ética repete essa lista no seu art. 51 (a conferir). Nenhuma questão cobrou as penas até agora."
+        },
+        {
+          "ref": "Código de Ética · art. 11 (a conferir) · o que é infração no relacionamento com o paciente",
+          "conceito": true,
+          "texto": "O art. 11 do Código (CFO-118/2012, texto de 2012, lido no PDF) lista 14 infrações no relacionamento com o paciente, entre elas: aproveitar-se da relação para obter vantagem física, emocional, financeira ou política (II); exagerar em diagnóstico, prognóstico ou terapêutica (III); deixar de esclarecer propósitos, riscos, custos e alternativas (IV); executar ou propor tratamento DESNECESSÁRIO ou para o qual não esteja capacitado (V); abandonar paciente sem motivo justificável (VI); deixar de atender paciente em urgência quando não haja outro dentista em condições (VII); adotar novas técnicas ou materiais sem efetiva comprovação científica (IX); iniciar procedimento SEM o consentimento prévio do paciente ou responsável legal, exceto urgência ou emergência (X); opor-se a prestar esclarecimentos ou fornecer relatórios sobre diagnósticos e terapêuticas, quando solicitados (XII). A técnica de prova é esta: a banca copia o inciso e inverte um detalhe (por exemplo, troca ‘sem consentimento’ por ‘com consentimento’, ou ‘desnecessário’ por ‘necessário’)."
+        },
+        {
+          "ref": "Art. 11 (a conferir) · G0031 e G0087, V ou F e afirmativas",
+          "conceito": true,
+          "texto": "G0031 (2019), V ou F sobre infrações ligadas ao paciente: (1) ‘realizar diagnóstico, prognóstico ou tratamento suportado por evidências científicas’ = F (não é infração); (2) ‘iniciar procedimento COM o consentimento prévio’ = F (infração é iniciar SEM); (3) ‘adotar novas técnicas ou materiais sem comprovação científica’ = V (art. 11, IX); (4) ‘opor-se a prestar esclarecimentos’ = V (art. 11, XII); (5) ‘aproveitar-se da relação para obter vantagem’ = V (art. 11, II). Gabarito A: F – F – V – V – V. G0087 (2019), afirmativas I a V sobre infrações: I abandonar paciente salvo motivo justificável (art. 11, VI) = infração; II ‘realizar tratamento suportado por evidências’ = não é infração; III ‘executar ou propor tratamento NECESSÁRIO’ = não é infração (o inciso V fala de tratamento desnecessário); IV deixar de atender urgência sem outro dentista (art. 11, VII) = infração; V iniciar sem consentimento, exceto urgência (art. 11, X) = infração. Gabarito D: apenas I, IV e V. Cada questão trazia dois ou três itens ‘inventados’ ao inverter o inciso."
+        },
+        {
+          "ref": "Arts. 12 e 13 (a conferir) · G0066, relacionamento entre colegas",
+          "conceito": true,
+          "texto": "O art. 12 diz que, no relacionamento entre os inscritos, pessoas físicas ou jurídicas, serão mantidos o respeito, a lealdade e a colaboração técnico-científica. As infrações estão no art. 13: agenciar, aliciar ou desviar paciente de colega (I); assumir emprego ou função sucedendo profissional demitido ou afastado em represália por defender movimento legítimo da categoria ou a aplicação do Código (II); praticar ou permitir concorrência DESLEAL (III); negar, INJUSTIFICADAMENTE, colaboração técnica de emergência ou serviços a colega (V); explorar colega nas relações de emprego ou ao compartilhar honorários (VII), entre outras. G0066 (2019): afirmativas I a V; gabarito E, apenas I, IV e V. Os itens errados eram versões invertidas: II ‘praticar ou permitir que se pratique concorrência LEAL’ (o certo é desleal) e III ‘negar, APRESENTANDO JUSTIFICATIVA PLAUSÍVEL, colaboração de emergência a colega’ (o certo é negar injustificadamente)."
+        },
+        {
+          "ref": "Função dos códigos de ética e responsabilidade no serviço público (G0311)",
+          "conceito": true,
+          "texto": "G0311 (2025), afirmativas I a IV; gabarito A, ‘I e III, apenas’. I (verdadeira): a elaboração participativa de códigos de ética potencializa sua eficácia, porque a legitimidade construída coletivamente favorece a internalização das normas. II (falsa): os códigos de ética NÃO são ‘autossuficientes’ nem dispensam a articulação com o ordenamento jurídico geral. III (verdadeira): a responsabilidade ética das lideranças no serviço público tem dimensões institucional, pessoal e educacional, do cumprimento dos deveres ao diálogo formativo com os servidores. IV (falsa): dizer que a força vinculante vem ‘primariamente’ da natureza jurídico-normativa, sendo ‘secundária’ a adesão voluntária, inverte a ideia central. Pegadinha de palavras: ‘autossuficientes’, ‘dispensando’, ‘primariamente’ e ‘secundária’ sinalizam afirmativa falsa."
+        },
+        {
+          "ref": "Alterações de 2025 · Resolução CFO-271/2025 (a conferir)",
+          "conceito": true,
+          "texto": "A Resolução CFO-SEC-271, de 18 de junho de 2025, alterou o Código de Ética em quatro pontos: nova redação do inciso VIII do art. 20 (permitir o oferecimento, ainda que indireto, de serviços como brinde, premiação e sorteios); nova redação do inciso X do art. 20 (participação em ‘vale presente’ e similares e demais atividades mercantilistas que contrariem o bom conceito da odontologia); revogação do inciso XIII do art. 32; nova redação do inciso XIV do art. 44 (divulgação com finalidade de aliciamento de pacientes por telemarketing ativo, caixas de som portáteis, veículos, plaqueteiros e outros meios que caracterizem concorrência desleal). A própria resolução cita a decisão do CADE de 2023 sobre cartões de desconto. Nenhuma questão cobrou esses incisos. O CFO não publica o Código consolidado; não se provou que não exista outra alteração."
+        }
+      ],
+      "macete": "Na infração, desconfie de verbo que INVERTE o inciso: ‘com consentimento’ (o certo é sem), ‘tratamento necessário’ (o certo é desnecessário), ‘concorrência leal’ (o certo é desleal), ‘justificativa plausível’ (o certo é injustificadamente). A banca copia o artigo e muda uma palavra.",
+      "pegadinhas": [
+        "G0031: ‘iniciar procedimento com o consentimento prévio’ e ‘realizar diagnóstico suportado por evidências científicas’ foram dadas como falsas; elas descrevem a conduta CORRETA, não a infração.",
+        "G0087: ‘executar ou propor tratamento necessário’ (III) não é infração; a infração é o tratamento desnecessário. A afirmativa II (‘tratamento suportado por evidências’) também não.",
+        "G0066: ‘concorrência leal’ (II) e ‘justificativa plausível’ (III) são versões invertidas do que o Código proíbe.",
+        "G0311: afirmar que o código é ‘autossuficiente’ (II) ou que a força vem ‘primariamente’ da natureza jurídica (IV) foi dado como falso."
+      ],
+      "cobra": [
+        "V ou F em sequência, com cinco infrações descritas, algumas invertidas: G0031 (2019).",
+        "Afirmativas I a V ‘sobre as infrações cometidas’, com cinco alternativas de combinações: G0087 (2019).",
+        "Enunciado que cita o artigo e o assunto (‘Artigo 12, relacionamento entre inscritos’) e pede ‘as alternativas que contêm infrações’: G0066 (2019).",
+        "Afirmativas I a IV com palavras de peso (‘autossuficientes’, ‘primariamente’) e ‘é correto o que se afirma em’: G0311 (2025)."
+      ],
+      "mapa": {
+        "centro": "Código de Ética Odontológica",
+        "ramos": [
+          { "t": "Quem faz e pune", "f": ["CFO vota e altera o Código", "CRO aplica as penas", "5 penas, de advertência a cassação"] },
+          { "t": "Paciente (art. 11)", "f": ["Sem consentimento = infração (salvo urgência)", "Tratamento desnecessário = infração", "Abandonar sem justificativa", "Novas técnicas sem prova científica"] },
+          { "t": "Colegas (arts. 12 e 13)", "f": ["Respeito, lealdade, colaboração", "Aliciar paciente de colega", "Concorrência desleal", "Negar ajuda de emergência sem justificativa"] },
+          { "t": "Função dos códigos", "f": ["Elaboração participativa", "Não dispensam o ordenamento jurídico", "Liderança: dimensões institucional, pessoal e educacional"] }
+        ]
+      }
+    },
+    {
+      "id": "responsabilidade-profissional",
+      "titulo": "Responsabilidade profissional: negligência, imprudência e imperícia",
+      "nivel": 2,
+      "topicosBanco": ["etica.responsabilidade"],
+      "qtdQuestoes": 8,
+      "intro": "3 questões únicas, todas em 2019 (G0039, G0059, G0072), nenhuma na prova do Clínico Geral (vieram de provas de especialidade). Nenhuma foi anulada. As três têm o mesmo formato e a MESMA resposta: um dentista (cirurgião, endodontista, odontopediatra) é ‘desatento, omisso’, não averigua ou falta com a diligência, e a pergunta é como a conduta se configura. A resposta é sempre negligência. Mesmo com amostra de 1 edição, o padrão é tão regular que vale dominar o trio.",
+      "pontos": [
+        {
+          "ref": "Negligência · a omissão, o descuido (G0039, G0059, G0072)",
+          "conceito": true,
+          "texto": "Nas três questões a banca marcou NEGLIGÊNCIA (G0039 alternativa A; G0059 alternativa C; G0072 alternativa E). As palavras-chave do enunciado foram ‘desatento’, ‘omisso’, ‘não averiguou se era necessário’ e ‘desatenção, omissão, falta de diligência’. Regra: negligência = deixar de fazer o que devia, falta de cuidado, omissão. G0059 ainda lembra a ideia-base: ‘a responsabilidade profissional será apurada mediante a verificação de culpa’. Fonte para o conceito: doutrina (PENDENTE: livro citado); a lei apenas lista as três formas de culpa, ver pontos seguintes."
+        },
+        {
+          "ref": "Imprudência e imperícia · o que elas NÃO são nestas questões",
+          "conceito": true,
+          "texto": "As alternativas erradas das três questões foram: imprudência, imperícia, iatrogenia e curandeirismo (os quatro termos apareceram nas três questões). Como a doutrina costuma distinguir (PENDENTE: livro citado): IMPRUDÊNCIA = agir com precipitação, sem a cautela devida (é um FAZER; ex.: ir além do que a segurança permitia); IMPERÍCIA = falta de aptidão técnica para o ato; NEGLIGÊNCIA = deixar de fazer o que devia (é um NÃO FAZER). Nas questões, ‘desatento’ e ‘omisso’ apontam o não fazer, por isso negligência. Iatrogenia e curandeirismo apareceram só como alternativas erradas; a banca não cobrou o conceito delas."
+        },
+        {
+          "ref": "Base legal da culpa · Código Penal, art. 18, II (conceito; fora de fontes/leis)",
+          "conceito": true,
+          "texto": "Segundo o texto atualizado do Código Penal na Câmara dos Deputados, o art. 18, inciso II, diz que o crime é culposo ‘quando o agente deu causa ao resultado por imprudência, negligência ou imperícia’. Repare: a lei penal só lista as três formas; não as define. O art. 186 do Código Civil fala em ‘ação ou omissão voluntária, negligência ou imprudência’ que viole direito e cause dano. O art. 951 do Código Civil estende as regras de indenização aos profissionais que, por negligência, imprudência ou imperícia, causem dano ao paciente (resumo lido; o texto integral do art. 951 não foi copiado). Estes artigos não estão em fontes/leis: são citados como contexto, e a banca não perguntou por eles."
+        }
+      ],
+      "macete": "Não fez o que devia (desatento, omisso, não averiguou) = NEGLIGÊNCIA. Fez sem cautela = imprudência. Não sabia fazer = imperícia. Nas três questões da banca, a resposta foi negligência.",
+      "pegadinhas": [
+        "G0039, G0059 e G0072: iatrogenia e curandeirismo aparecem em todas como distratores; não são a resposta.",
+        "G0039, G0059 e G0072: a imprudência e a imperícia aparecem como distratores; ‘desatento, omisso’ não é imprudência.",
+        "G0059: a grafia ‘Latrogenia’ no banco é transcrição da prova (provável erro de digitação); a resposta continua sendo negligência."
+      ],
+      "cobra": [
+        "Caso curto de procedimento (exodontia de terceiro molar incluso) com dor pós-operatória e pergunta ‘configura-se’: G0039 (2019).",
+        "Frase de definição (‘responsabilidade profissional apurada mediante verificação de culpa’) e um profissional de especialidade (endodontista): G0059 (2019).",
+        "Caso de criança com exodontia de dente supranumerário e odontopediatra: G0072 (2019)."
+      ],
+      "mapa": {
+        "centro": "Responsabilidade profissional",
+        "ramos": [
+          { "t": "Negligência", "f": ["Omissão, descuido", "Desatento, não averiguou", "Resposta nas 3 questões de 2019"] },
+          { "t": "Imprudência", "f": ["Ação sem cautela", "É um fazer"] },
+          { "t": "Imperícia", "f": ["Falta de aptidão técnica"] },
+          { "t": "Base legal", "f": ["Código Penal, art. 18, II: crime culposo", "Código Civil, arts. 186 e 951"] }
+        ]
+      }
+    },
+    {
+      "id": "residuos-pgrss",
+      "titulo": "Gerenciamento de resíduos (PGRSS)",
+      "nivel": 1,
+      "topicosBanco": ["bio.residuos"],
+      "qtdQuestoes": 8,
+      "intro": "2 questões únicas, ambas em 2019 (G0036 e G0051); 1 delas caiu na prova do Clínico Geral. Nenhuma foi anulada. G0036 pergunta o que deve constar no PGRSS e G0051 em que tipo de resíduo se classifica o remanescente de tubetes de anestésico. A norma é a RDC Anvisa 222/2018, que só existe em PDF aqui; os pontos citam o artigo lido no PDF e são explicação do autor. PGRSS = Plano de Gerenciamento de Resíduos de Serviços de Saúde.",
+      "pontos": [
+        {
+          "ref": "O que o PGRSS deve conter · RDC 222/2018, art. 6º (a conferir) · G0036",
+          "conceito": true,
+          "texto": "G0036 (2019): gabarito E: no PGRSS devem aparecer as etapas de manejo, descrevendo como serão a segregação, o acondicionamento, o transporte interno e externo, o armazenamento temporário, entre outras. Na RDC 222/2018 isso está no art. 6º, II: descrever os procedimentos de gerenciamento quanto à geração, segregação, acondicionamento, identificação, coleta, armazenamento, transporte, tratamento e disposição final ambientalmente adequada. As erradas ficavam abaixo do que a norma exige: A ‘apenas a razão social e o telefone’; B ‘não devem estar previstas ações de saúde do trabalhador’ (o art. 6º, III, pede conformidade com as ações de proteção à saúde pública, do trabalhador e do meio ambiente); C ‘só descrever ações em situações emergenciais’ (as emergências são só uma parte, art. 6º, VII); D ‘só controle de insetos’ (controle de vetores e pragas é só uma parte, art. 6º, VIII). Padrão: afirmativas com ‘apenas’ e ‘só’ são erradas."
+        },
+        {
+          "ref": "Grupos de resíduos · RDC 222/2018, art. 3º e Anexo I (a conferir)",
+          "conceito": true,
+          "texto": "A RDC 222 divide os resíduos de serviços de saúde em cinco grupos: A = possível presença de agentes biológicos, com risco de infecção; B = produtos químicos com periculosidade; C = rejeitos radioativos; D = sem risco biológico, químico ou radiológico, equiparáveis a resíduo domiciliar; E = perfurocortantes ou escarificantes. No Anexo I, o Grupo B inclui ‘produtos farmacêuticos’ e resíduos de saneantes e desinfetantes; o Grupo E cita agulhas, lâminas de bisturi, brocas, limas endodônticas, pontas diamantadas e ampolas de vidro."
+        },
+        {
+          "ref": "Remanescente de tubete de anestésico · G0051",
+          "conceito": true,
+          "texto": "G0051 (2019): ‘o remanescente de tubetes de anestésicos deve ser manejado como resíduo de que tipo?’ Gabarito E: resíduo QUÍMICO. As erradas: A biológico; B comum; C escarificante; D perfurocortante. AVISO didático: a RDC 222 não usa a palavra ‘tubete’. O que a norma permite concluir (leitura da apostila, não da banca): o anestésico que sobra no tubete é um produto farmacêutico, e produto farmacêutico está no Grupo B (químico); o vidro do tubete quebrado, porém, poderia se enquadrar no Grupo E (ampolas de vidro e perfurocortantes). Como a pergunta fala do REMANESCENTE (o líquido), o gabarito químico é coerente. PENDENTE: guia ou manual da Anvisa que trate de tubete anestésico. Na prova, siga o gabarito."
+        },
+        {
+          "ref": "Números que a norma traz (RDC 222/2018, arts. 14 e 87; para estudo)",
+          "conceito": true,
+          "texto": "Para estudo (não use para tratar paciente). Os sacos de resíduo do grupo A devem ser trocados ao atingirem 2/3 da capacidade ou a cada 48 horas, o que ocorrer primeiro (art. 14); os de fácil putrefação, no máximo a cada 24 horas (art. 14, parágrafo único). Os recipientes do grupo E devem ser substituídos de acordo com a demanda ou ao atingirem 3/4 da capacidade, ou conforme o fabricante, sendo proibidos o esvaziamento manual e o reaproveitamento (art. 87). Nenhuma questão de Blumenau pediu esses números. A RDC Anvisa 1.002/2025 (art. 122) manda os serviços odontológicos elaborar o PGRSS conforme a RDC 222/2018 ‘ou a que vier substituí-la’, o que indica que a 222 continuava vigente em dezembro de 2025."
+        }
+      ],
+      "macete": "O PGRSS descreve TODAS as etapas, da geração à disposição final (e também ações de emergência, trabalhador e controle de vetores). Se a alternativa diz ‘só’ ou ‘apenas’, está errada. Produto farmacêutico = Grupo B, químico.",
+      "pegadinhas": [
+        "G0036: as quatro erradas usam ‘apenas’ ou ‘só’ (‘apenas a razão social e o telefone’, ‘só deve descrever situações emergenciais’, ‘só deve se preocupar com controle de insetos’) ou negam um item que o plano deve ter (‘não devem estar previstas ações de saúde do trabalhador’).",
+        "G0051: ‘perfurocortante’ (D) e ‘escarificante’ (C) tentam pelo formato do tubete de vidro; o gabarito foi químico."
+      ],
+      "cobra": [
+        "‘Em relação ao PGRSS, é possível afirmar’, com cinco afirmações, uma completa e quatro restritivas: G0036 (2019).",
+        "‘O remanescente de tubetes de anestésicos deve ser manejado como resíduo de que tipo’, com cinco tipos: G0051 (2019)."
+      ],
+      "mapa": {
+        "centro": "Resíduos de serviços de saúde (PGRSS)",
+        "ramos": [
+          { "t": "PGRSS", "f": ["Etapas de manejo, da geração à disposição final", "Emergências, trabalhador, vetores", "Só ‘apenas’ ou ‘só’ = errada"] },
+          { "t": "Grupos", "f": ["A biológico", "B químico", "C radioativo", "D comum", "E perfurocortante"] },
+          { "t": "Tubete", "f": ["Remanescente do anestésico = químico (gabarito)", "Produto farmacêutico = Grupo B"] }
+        ]
+      }
+    },
+    {
+      "id": "prontuario",
+      "titulo": "Prontuário odontológico",
+      "nivel": 1,
+      "topicosBanco": ["bio.prontuario"],
+      "qtdQuestoes": 8,
+      "intro": "1 questão única, em 2021P (G0175); ela não caiu na prova do Clínico Geral. Nenhuma foi anulada. A questão pediu o que NÃO é obrigatório num prontuário ‘segundo o CFO’. A resposta marcada (profissão do paciente) diverge de um documento mais novo do próprio CFO; esta lição mostra os dois lados para você não ser surpreendido. Prontuário também aparece no edital do Clínico Geral, do Odontopediatra e do Buco-Maxilo-Facial.",
+      "pontos": [
+        {
+          "ref": "O que o Código de Ética exige · art. 17 (a conferir)",
+          "conceito": true,
+          "texto": "O art. 17 do Código (CFO-118/2012, lido no PDF) diz que é obrigatória a elaboração e a manutenção, de forma legível e atualizada, de prontuário, e a sua conservação em arquivo próprio, físico ou digital. O parágrafo único manda manter no prontuário os dados clínicos necessários para a boa condução do caso, preenchido em cada avaliação, em ordem cronológica, com data, hora, nome, assinatura e número de registro do cirurgião-dentista no CRO. O art. 9º, X, inclui entre os deveres fundamentais elaborar e manter atualizados os prontuários na forma das normas em vigor, inclusive os digitais; e o art. 18, I, torna infração negar ao paciente o acesso ao prontuário ou deixar de lhe fornecer cópia, salvo quando houver risco ao paciente ou a terceiros. Repare: o art. 17 não lista ‘anamnese’, ‘plano de tratamento’ nem ‘profissão do paciente’."
+        },
+        {
+          "ref": "Partes do prontuário · Manual do CFO, 2026 (documento orientador, não é norma)",
+          "conceito": true,
+          "texto": "O Manual do Prontuário do Paciente em Odontologia (CFO, 1ª ed., 2026) organiza o prontuário em partes, entre elas: ficha clínica (identificação, anamnese, exame físico), plano de tratamento, evolução e intercorrências, contrato de prestação de serviços, termo de consentimento livre e esclarecido, exames complementares e registros de imagens. As alternativas A (anamnese), C (plano de tratamento), D (registro do profissional) e E (evolução e intercorrências) da G0175 correspondem a itens que o manual e o Código tratam como parte do prontuário."
+        },
+        {
+          "ref": "A questão G0175 · onde a banca e o manual divergem",
+          "conceito": true,
+          "texto": "G0175 (2021P): ‘segundo o CFO, NÃO é obrigatório para a confecção de um prontuário odontológico’. Gabarito B: profissão do paciente. AVISO IMPORTANTE: o Manual do CFO de 2026 (posterior à prova) diz que a qualificação do paciente deve conter nome completo, nacionalidade, naturalidade, data de nascimento, estado civil, profissão/ocupação, endereço completo, endereço eletrônico e contato telefônico. Ou seja, o manual atual inclui a profissão. O que se sabe: o art. 17 do Código não exige profissão; o manual de 2026 recomenda registrá-la. Na prova, siga o gabarito histórico (a profissão é o item ‘não obrigatório’), mas não decore ‘profissão não importa’ como regra do CFO. PENDENTE: o texto exato da questão no PDF da prova (G6) e a norma do CFO a que a banca se referia."
+        },
+        {
+          "ref": "Guarda do prontuário (para estudo)",
+          "conceito": true,
+          "texto": "O Manual do CFO de 2026 diz que, decorrido o prazo mínimo de 20 anos a partir do último registro, os prontuários em papel e os digitalizados poderão, em regra, ser eliminados, conforme a Lei Federal 13.787/2018, e acrescenta que existem outras normas com prazos diferentes, de modo que o mais seguro é guardar o prontuário por tempo indeterminado. PENDENTE: conferir o texto da Lei 13.787/2018 (não está em fontes/leis). Nenhuma questão de Blumenau cobrou prazo de guarda até agora."
+        }
+      ],
+      "macete": "O Código de Ética exige prontuário legível e atualizado, em ordem cronológica, com data, hora, nome, assinatura e registro no CRO do dentista. Na G0175 a banca marcou ‘profissão do paciente’ como o item não obrigatório; ao estudar, lembre que o manual de 2026 do CFO recomenda registrá-la.",
+      "pegadinhas": [
+        "G0175: ‘anamnese’, ‘plano de tratamento’, ‘registro do profissional’ e ‘evolução e intercorrências’ eram itens que o gabarito tratou como obrigatórios; a palavra ‘NÃO’ no enunciado inverte a pergunta.",
+        "Confundir o que o Código exige (art. 17) com o que o manual do CFO recomenda: o manual é orientação, e o art. 17 pede ‘dados clínicos necessários’."
+      ],
+      "cobra": [
+        "Pergunta com NÃO e cinco itens de conteúdo do prontuário, ‘segundo o Conselho Federal de Odontologia’: G0175 (2021P)."
+      ],
+      "mapa": {
+        "centro": "Prontuário odontológico",
+        "ramos": [
+          { "t": "Código de Ética", "f": ["Art. 17: obrigatório, legível e atualizado", "Ordem cronológica, data, hora, nome, assinatura, registro no CRO", "Art. 18, I: negar acesso é infração"] },
+          { "t": "Partes (manual CFO 2026)", "f": ["Ficha clínica", "Plano de tratamento", "Evolução e intercorrências", "Consentimento, exames, imagens"] },
+          { "t": "G0175", "f": ["Gabarito: profissão não obrigatória", "Manual de 2026 inclui profissão/ocupação"] }
+        ]
+      }
+    }
+  ]
+}

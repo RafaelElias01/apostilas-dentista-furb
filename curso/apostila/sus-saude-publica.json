@@ -1,0 +1,419 @@
+{
+  "_comentario": "Apostila 03 (SUS, Politicas de Saude e Epidemiologia), banca FURB, Cirurgiao-Dentista de Blumenau. 8 licoes do roteiro (curso/roteiro-apostilas.md, Apostila 03), na ordem do que mais caiu; a licao 3 junta sus.controle_social + sus.lei8142 (proposta do roteiro). Contagens: radar/roteiro (30 unicas, 3 anuladas: G0221, G0300, G0351; 27 usaveis). Trechos de lei literais de fontes/leis/*.html; epidemiologia, PNH e sindemia sao conceito (sem trecho de lei).",
+  "id": "sus-saude-publica",
+  "numero": 3,
+  "arquivoPdf": "apostila-03-sus-saude-publica.pdf",
+  "titulo": "SUS, Políticas de Saúde e Epidemiologia",
+  "subtitulo": "Cirurgião-Dentista · Prefeitura de Blumenau (SC) · banca FURB · com ênfase no que mais cai",
+  "fontes": [
+    "lei-8080-1990-camara-normaatualizada.html",
+    "lei-8142-1990-camara-publicacaooriginal.html",
+    "decreto-7508-2011-camara-normaatualizada.html",
+    "lc-141-2012-camara-normaatualizada.html",
+    "lei-15126-2025-camara-publicacaooriginal.html",
+    "lei-14572-2023-camara-publicacaooriginal.html",
+    "portaria-2436-2017-pnab-bvsms.html",
+    "portaria-consolidacao-2-2017-ms-bvsms.html",
+    "constituicao-federal-1988-camara-normaatualizada.html"
+  ],
+  "rotuloPontos": "O que a lei diz (e o que isso significa), com o que a banca já cobrou",
+  "limiteFonte": "Conferido em 20/11/2026 contra os arquivos de fontes/leis (origem, data e status de cada um em fontes/leis/ORIGEM.md). Leis federais vieram da Câmara dos Deputados (o Planalto não abre desta rede): Lei 8.080/1990 e Decreto 7.508/2011 e LC 141/2012 e CF/88 em texto ATUALIZADO (a 8.080 do arquivo traz alterações até a Lei 15.471 de 20/7/2026); Lei 8.142/1990, Lei 14.572/2023 e Lei 15.126/2025 em texto da PUBLICAÇÃO ORIGINAL (a Câmara não oferece versão atualizada da 8.142; as outras duas já foram incorporadas ao texto atualizado da 8.080, que é o que vale para o art. 6º, 7º e 16 a 18). Portaria 2.436/2017 (PNAB): texto original do bvsms; o texto atual da PNAB está no Anexo XXII da Portaria de Consolidação 2/2017 (bvsms, atualizado até a PRT GM/MS 12.236 de 25/09/2026, alterações posteriores podem faltar) e NÃO foi comparado artigo por artigo: PENDENTE. Os trechos da Portaria 2.436 cuja referência não cita artigo (itens 4.1 e 4.2.2 do Anexo) foram conferidos como texto literal, mas a referência do item não foi verificada pelo gerador. Epidemiologia: a taxa de mortalidade infantil vem da ficha de qualificação do DATASUS/RIPSA (http://tabnet.datasus.gov.br/cgi/idb2000/fqc01.htm, lida em 20/11/2026: “Número de óbitos de menores de um ano de idade, por mil nascidos vivos, em determinado espaço geográfico, no ano considerado.”; método direto: óbitos de residentes com menos de um ano ÷ nascidos vivos de mães residentes × 1.000; ficha antiga, conferir a edição atual). Sindemia: só confirmada em resultados de busca (artigos acadêmicos que citam Merrill Singer e Horton/Lancet 2020), sem abrir o texto; PENDENTE fonte oficial do Ministério da Saúde. PENDENTE: definições oficiais de endemia, epidemia, surto e pandemia; texto oficial de responsabilização macro e microssanitária (G0300 foi anulada); PNH documento base (só PDF, não conferido); Resolução CNS 453/2012 (não baixada, não está no edital); fórmulas de outros indicadores (mortalidade geral, materna, expectativa de vida; G0221 foi anulada); sistemas de informação além de SIM e SINASC; recursos humanos do SUS. Livro de epidemiologia de referência: não definido (G5); sugestão de fontes abertas e oficiais: bvsms.saude.gov.br, tabnet.datasus.gov.br (RIPSA), aps.saude.gov.br. PENDENTE: o texto de cada questão foi transcrito das provas e não foi conferido contra o PDF original (os PDFs não estão nesta máquina). Programa: edital PSPS 003/2025, bloco comum de Conhecimentos Específicos (p. 47 a 49, conforme curso/edital.md); o edital NÃO nomeia estas leis, elas entram porque sustentam os tópicos do programa ou já caíram em prova.",
+  "comoUsar": [
+    "Esta apostila reúne as questões do bloco de SUS das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 30 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025), das quais 3 foram anuladas (G0221, G0300 e G0351) e ficam fora do treino. Sobram 27 questões usáveis, todas dentro das lições.",
+    "Este bloco é comum às cinco especialidades e as 30 questões caíram em provas do Clínico Geral. Se você faz Clínico Geral, estude tudo; é a parte mais segura de CE para pontuar.",
+    "A amostra é pequena: 5 editais de um só município, de 2019 a 2025. A frequência indica tendência, não garantia. Um assunto que não apareceu pode cair, e um que caiu muito pode não cair de novo.",
+    "Siglas das edições: 2019 = PSPS 002/2019; 2021P = PSPS 002/2021; 2021C = Concurso Público 002/2021 (50 questões); 2023 = PSPS 003/2023; 2025 = PSPS 003/2025. PSPS quer dizer Processo Seletivo Público Simplificado. Outras siglas: SUS = Sistema Único de Saúde; PNAB = Política Nacional de Atenção Básica; ESF = Estratégia Saúde da Família; UBS = Unidade Básica de Saúde; RAS = Rede de Atenção à Saúde; PNH = Política Nacional de Humanização; FNS = Fundo Nacional de Saúde; CIT, CIB e CIR = Comissões Intergestores Tripartite, Bipartite e Regional.",
+    "Regra de incidência: Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0. Quantas questões por lição (únicas no radar, entre parênteses as anuladas): 1) Lei 8.080: 8 (1); 2) atenção básica: 6; 3) controle social e Lei 8.142: 5 (3 + 2); 4) epidemiologia: 4 (1); 5) gestão: 2 (1) e 6) humanização: 2, EMPATE; 7) financiamento: 2; 8) saúde do trabalhador: 1. Total 30, das quais 27 usáveis.",
+    "Esta apostila junta, na lição 3, os códigos de controle social e Lei 8.142, porque os dois tratam de Conselhos e Conferências de Saúde (junção proposta pelo roteiro do projeto).",
+    "Itens do edital sem questão própria na amostra: recursos humanos do SUS, escopo da assistência (promoção, prevenção, terapêutica e reabilitação) e sistemas de informação em saúde. Não apareceu não quer dizer que não cai; estude pelo texto da lei e das portarias citadas.",
+    "Duas normas de atenção básica: a banca já cobrou a Portaria 2.488/2011 (2019), que foi revogada pela Portaria 2.436/2017. A apostila ensina a vigente e avisa onde a prova usou a antiga. Na prova, quando houver conflito entre a norma vigente e o gabarito histórico, siga o gabarito e entenda a diferença.",
+    "Atenção ao formato: a FURB usa muito V ou F em sequência, afirmativas numeradas (I a IV) com “é correto o que se afirma em” e perguntas com EXCETO ou INCORRETA. Teste cada afirmativa separadamente. O código G0xxx identifica a questão no banco do projeto.",
+    "Como estudar: leia o trecho de lei (azul), leia a explicação, veja o quadro, leia as pegadinhas (elas saem das alternativas erradas das provas reais) e só então faça as questões.",
+    "Este material é independente e não tem vínculo com a FURB (Fundação Universidade Regional de Blumenau) nem com a Prefeitura de Blumenau. Confira sempre o edital vigente."
+  ],
+  "ranking": [
+    { "rotulo": "Lei 8.080/1990: princípios, objetivos, competências e organização (8 questões únicas; 2019, 2021C, 2023, 2025)", "nivel": 3 },
+    { "rotulo": "Atenção básica: níveis de atenção, PNAB, ESF, NASF, rede (6 questões únicas; 2019, 2021P, 2023, 2025)", "nivel": 3 },
+    { "rotulo": "Controle social e Lei 8.142/1990: Conselhos e Conferências (5 questões únicas; 2019, 2021P, 2021C, 2025)", "nivel": 3 },
+    { "rotulo": "Epidemiologia: conceitos, indicadores, sistemas de informação (4 questões únicas, 1 anulada; 2021P, 2023, 2025)", "nivel": 2 },
+    { "rotulo": "Gestão colegiada e responsabilidade sanitária (2 questões únicas, 1 anulada; EMPATE com humanização e financiamento)", "nivel": 1 },
+    { "rotulo": "Humanização (PNH, Lei 15.126/2025) e políticas (2 questões únicas; EMPATE)", "nivel": 1 },
+    { "rotulo": "Planejamento, orçamento e financiamento, FNS (2 questões únicas; só 2025; EMPATE)", "nivel": 1 },
+    { "rotulo": "Saúde do trabalhador no SUS (1 questão única; 2019)", "nivel": 1 },
+    { "rotulo": "Itens do edital sem questão própria na amostra: recursos humanos, escopo da assistência, sistemas de informação", "nivel": 0 }
+  ],
+  "licoes": [
+    {
+      "id": "lei8080",
+      "titulo": "Lei 8.080/1990: princípios, objetivos, competências e organização do SUS",
+      "nivel": 3,
+      "topicosBanco": ["sus.lei8080"],
+      "qtdQuestoes": 7,
+      "intro": "8 questões únicas em 4 edições (2019: 1; 2023: 1; 2025: 1; 2021C: 5). Uma foi anulada (G0351, de 2021C, sobre competências das esferas): não estude a “resposta” dela. Sobram 7 usáveis, todas aqui. O Concurso de 2021 (2021C) cobrou a Lei 8.080 cinco vezes, em formato de afirmativas com EXCETO ou CORRETA sobre objetivos, princípios, comissões e consórcios. Regra de ouro: quase toda alternativa errada vem com palavra absoluta (somente, exclusivamente, unicamente, não pode, não é).",
+      "pontos": [
+        { "ref": "CF/88, Art. 196 · saúde é direito", "fonte": "constituicao-federal-1988-camara-normaatualizada.html", "trecho": "Art. 196. A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação.", "texto": "É a base de tudo: saúde é direito de todos (universalidade) e dever do Estado, com ações de promoção, proteção e recuperação. Guarde as três palavras: promoção, proteção, recuperação." },
+        { "ref": "CF/88, Art. 198 · rede regionalizada e hierarquizada", "fonte": "constituicao-federal-1988-camara-normaatualizada.html", "trecho": "Art. 198. As ações e serviços públicos de saúde integram uma rede regionalizada e hierarquizada e constituem um sistema único, organizado de acordo com as seguintes diretrizes:", "texto": "O SUS é uma rede regionalizada e hierarquizada e um sistema único. As diretrizes constitucionais são três (os incisos seguintes): descentralização com direção única em cada esfera, atendimento integral e participação da comunidade." },
+        { "ref": "CF/88, Art. 198, inciso II · atendimento integral", "fonte": "constituicao-federal-1988-camara-normaatualizada.html", "trecho": "II - atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais;", "texto": "Integralidade com prioridade para a prevenção, mas sem abandonar a assistência. Cuidado: “prioridade” não é “exclusividade”." },
+        { "ref": "Lei 8.080, Art. 5º · objetivos do SUS", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 5º São objetivos do Sistema Único de Saúde SUS:", "texto": "São três os objetivos (incisos I a III): identificar e divulgar os fatores condicionantes e determinantes da saúde; formular política de saúde; e prestar assistência por ações de promoção, proteção e recuperação, integrando assistência e prevenção. Em G0348 a banca cobrou o inciso I numa alternativa falsa (“não é um objetivo do SUS a identificação e divulgação dos fatores condicionantes e determinantes”)." },
+        { "ref": "Lei 8.080, Art. 5º, inciso I · fatores condicionantes", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "I - a identificação e divulgação dos fatores condicionantes e determinantes da saúde;", "texto": "É objetivo do SUS, sim. A alternativa D de G0348 dizia o contrário e estava errada." },
+        { "ref": "Lei 8.080, Art. 6º, inciso I, alínea d · assistência terapêutica integral", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "d) de assistência terapêutica integral, inclusive farmacêutica;", "texto": "A execução de ações de assistência terapêutica integral, inclusive farmacêutica, está no campo de atuação do SUS (G0348: a alternativa B dizia que NÃO era atribuição do SUS e estava errada)." },
+        { "ref": "Lei 8.080, Art. 6º, inciso XI · sangue e derivados", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "XI - a formulação e execução da política de sangue e seus derivados.", "texto": "Compete ao SUS a política de sangue e derivados (G0348, alternativa C errada: “não compete ao SUS”)." },
+        { "ref": "Lei 8.080, Art. 7º, caput · princípios e diretrizes", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 7º As ações e serviços públicos de saúde e os serviços privados contratados ou conveniados que integram o Sistema Único de Saúde - SUS, são desenvolvidos de acordo com as diretrizes previstas no art. 198 da Constituição Federal, obedecendo ainda aos seguintes princípios:", "texto": "A lista dos princípios está nos incisos do art. 7º. É a mais cobrada: G0347 e G0355 (2021C) saíram dela, e a equidade foi tema de G0295 (2025)." },
+        { "ref": "Lei 8.080, Art. 7º, inciso I · universalidade", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "I - universalidade de acesso aos serviços de saúde em todos os níveis de assistência;", "texto": "Universalidade vale para TODOS os níveis de assistência. A alternativa E de G0347 dizia “somente no nível primário” e era a errada (a resposta do EXCETO)." },
+        { "ref": "Lei 8.080, Art. 7º, inciso II · integralidade", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "II - integralidade de assistência, entendida como conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema;", "texto": "Foi a resposta certa de G0355 (alternativa B, copiada quase palavra por palavra). Se a prova trouxer a definição inteira, é esta." },
+        { "ref": "Lei 8.080, Art. 7º, inciso IV · igualdade da assistência", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "IV - igualdade da assistência à saúde, sem preconceitos ou privilégios de qualquer espécie;", "texto": "“Sem privilégios” é o princípio. A alternativa C de G0355 (“com privilégios para as necessidades exigidas em cada caso”) é uma troca maliciosa e estava errada. A palavra “equidade” aparece nas diretrizes da PNAB (lição 2), e G0295 (2025) cobrou equidade como princípio do SUS: gabarito V, V, F (a equidade NÃO é atendimento idêntico para todos)." },
+        { "ref": "Lei 8.080, Art. 7º, inciso V · direito à informação", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "V - direito à informação, às pessoas assistidas, sobre sua saúde;", "texto": "Apareceu como alternativa correta em G0347 (D)." },
+        { "ref": "Lei 8.080, Art. 7º, inciso X · integração com meio ambiente e saneamento", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "X - integração em nível executivo das ações de saúde, meio ambiente e saneamento básico;", "texto": "INTEGRAÇÃO, não “desintegração” (G0355, alternativa E errada)." },
+        { "ref": "Lei 8.080, Art. 7º, inciso XII · capacidade de resolução", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "XII - capacidade de resolução dos serviços em todos os níveis de assistência; e", "texto": "Em TODOS os níveis (G0347, alternativa C certa). A alternativa D de G0355 (“no nível de assistência primária”) restringia e estava errada." },
+        { "ref": "Lei 8.080, Art. 7º, inciso XIII · evitar duplicidade", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "XIII - organização dos serviços públicos de modo a evitar duplicidade de meios para fins idênticos;", "texto": "Apareceu como alternativa correta em G0347 (B)." },
+        { "ref": "Lei 8.080, Art. 9º · direção única", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 9º A direção do Sistema Único de Saúde - SUS é única, de acordo com o inciso I do art. 198 da Constituição Federal, sendo exercida em cada esfera de governo pelos seguintes órgãos:", "texto": "A direção é única em CADA esfera: Ministério da Saúde (União), Secretaria de Saúde (Estados e DF) e Secretaria de Saúde (Municípios). G0350, alternativa C, dizia que era exercida “unicamente pelo Ministério da Saúde” e estava errada." },
+        { "ref": "Lei 8.080, Art. 10, caput · consórcios", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 10. Os municípios poderão constituir consórcios para desenvolver em conjunto as ações e os serviços de saúde que lhes correspondam.", "texto": "Municípios PODEM formar consórcios. G0350, alternativa E (“não podem”), era a errada." },
+        { "ref": "Lei 8.080, Art. 10, § 2º · distritos", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "§ 2º No nível municipal, o Sistema Único de Saúde - SUS, poderá organizar-se em distritos de forma a integrar e articular recursos, técnicas e práticas voltadas para a cobertura total das ações de saúde.", "texto": "O SUS municipal PODE organizar-se em distritos para ARTICULAR recursos. G0350, alternativa D (“não pode, para que os recursos não sejam articulados”), era a errada." },
+        { "ref": "Lei 8.080, Art. 12, caput · comissões intersetoriais", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 12. Serão criadas comissões intersetoriais de âmbito nacional, subordinadas ao Conselho Nacional de Saúde, integradas pelos Ministérios e órgãos competentes e por entidades representativas da sociedade civil.", "texto": "As comissões intersetoriais SÃO subordinadas ao Conselho Nacional de Saúde (G0350, alternativa A, dizia o contrário e estava errada)." },
+        { "ref": "Lei 8.080, Art. 12, parágrafo único · finalidade", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Parágrafo único. As comissões intersetoriais terão a finalidade de articular políticas e programas de interesse para a saúde, cuja execução envolva áreas não compreendidas no âmbito do Sistema Único de Saúde - SUS.", "texto": "Finalidade: ARTICULAR políticas e programas. Foi a resposta certa de G0350 (B)." },
+        { "ref": "Lei 8.080, Art. 15, caput · atribuições comuns", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 15. A União, os Estados, o Distrito Federal e os Municípios exercerão, em seu âmbito administrativo, as seguintes atribuições:", "texto": "As atribuições comuns são das TRÊS esferas. Em G0218 (2023) três alternativas erradas trocavam “comum” por “exclusiva”." },
+        { "ref": "Lei 8.080, Art. 15, inciso IV · sistema de informação", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "IV - organização e coordenação do sistema de informação de saúde;", "texto": "Atribuição COMUM às três esferas. G0218, alternativa A (“compete exclusivamente à União”), era errada." },
+        { "ref": "Lei 8.080, Art. 15, inciso V · normas técnicas e padrões de qualidade", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "V - elaboração de normas técnicas e estabelecimento de padrões de qualidade e parâmetros de custos que caracterizam a assistência à saúde;", "texto": "Também é atribuição comum, inclusive dos municípios. G0218, alternativa C (“não é uma atribuição dos municípios”), era errada." },
+        { "ref": "Lei 8.080, Art. 15, inciso X · proposta orçamentária", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "X - elaboração da proposta orçamentária do Sistema Único de Saúde - SUS, de conformidade com o plano de saúde;", "texto": "Atribuição comum, não “exclusiva dos estados” (G0218, alternativa B errada)." },
+        { "ref": "Lei 8.080, Art. 16, inciso I · alimentação e nutrição", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "I - formular, avaliar e apoiar políticas de alimentação e nutrição;", "texto": "É competência da direção NACIONAL do SUS. G0218, alternativa D, atribuía isso à direção estadual e estava errada. Em G0351 (anulada) a mesma ideia aparecia atribuída à direção municipal." },
+        { "ref": "Lei 8.080, Art. 18, inciso I · direção municipal", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "I - planejar, organizar, controlar e avaliar as ações e os serviços de saúde e gerir e executar os serviços públicos de saúde;", "texto": "Competência da direção MUNICIPAL, a mais próxima do cidadão." },
+        { "ref": "Lei 8.080, Art. 18, inciso IV, alínea a · vigilância epidemiológica", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "a) de vigilância epidemiológica;", "texto": "Executar serviços de vigilância epidemiológica é competência da direção municipal: resposta certa de G0218 (E). A direção estadual coordena e executa em caráter complementar; a nacional define e coordena os sistemas." },
+        { "ref": "Lei 8.080, Art. 35, caput · critérios de repasse", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 35. Para o estabelecimento de valores a serem transferidos a Estados, Distrito Federal e Municípios, será utilizada a combinação dos seguintes critérios, segundo análise técnica de programas e projetos:", "texto": "G0027 (2019) pediu um critério usado; a banca marcou “perfil demográfico da região” (inciso I da lista: perfil demográfico, perfil epidemiológico, características quantitativas e qualitativas da rede, desempenho técnico, econômico e financeiro no período anterior, níveis de participação do setor saúde nos orçamentos, plano quinquenal de investimentos e ressarcimento de serviços a outras esferas). Aviso didático: as alternativas A, B, D e E eram versões parciais de outros incisos (por exemplo, o inciso IV fala em desempenho técnico, econômico E financeiro). Na prova, siga o gabarito histórico: a resposta era a que trazia o critério sem recorte." }
+      ],
+      "tabela": {
+        "titulo": "Quem faz o quê (Lei 8.080, arts. 16 a 18) e o que a banca já cobrou",
+        "cab": ["Esfera", "Exemplos de competência (lei)", "Onde a banca pegou"],
+        "linhas": [
+          ["União (direção nacional, Art. 16)", "Formular, avaliar e apoiar políticas de alimentação e nutrição; definir e coordenar os sistemas de vigilância epidemiológica e sanitária", "G0218 D: atribuiu a alimentação e nutrição à direção estadual"],
+          ["Estados e DF (direção estadual, Art. 17)", "Promover a descentralização para os Municípios dos serviços e ações; coordenar e, em caráter complementar, executar vigilância epidemiológica e sanitária", "G0351 (anulada) trocava essas competências"],
+          ["Municípios (direção municipal, Art. 18)", "Planejar, organizar, controlar e avaliar as ações e serviços e gerir e executar os serviços públicos de saúde; executar vigilância epidemiológica", "G0218 E (certa) e G0351 (anulada)"],
+          ["As três esferas (Art. 15)", "Sistema de informação; normas técnicas e padrões de qualidade; proposta orçamentária", "G0218 A, B e C: trocaram “comum” por “exclusiva”"]
+        ]
+      },
+      "macete": "Palavra absoluta é sinal de alternativa errada na Lei 8.080: exclusivamente, unicamente, somente, não pode, não compete. Na dúvida sobre quem faz o quê: o MUNICÍPIO executa (serviços, vigilância), o ESTADO apoia e coordena, a UNIÃO formula e define normas. As atribuições do art. 15 são COMUNS às três esferas.",
+      "pegadinhas": [
+        "G0347: “universalidade de acesso somente no nível primário de assistência”. É em todos os níveis (art. 7º, I).",
+        "G0355: trocar integralidade por “centralização político-administrativa” ou “desintegração” do meio ambiente e saneamento. O correto é descentralização e integração.",
+        "G0348: “ações de promoção da saúde não se enquadram nos objetivos do SUS”, “assistência terapêutica integral não é atribuição” e “não compete ao SUS a política de sangue”. As três são falsas.",
+        "G0350: “direção única exercida unicamente pelo Ministério da Saúde”; “comissões intersetoriais não subordinadas ao Conselho Nacional de Saúde”; “município não pode organizar-se em distritos” e “não pode constituir consórcios”. Todas erradas.",
+        "G0218: “compete exclusivamente à União” (sistema de informação); “exclusiva dos estados” (proposta orçamentária); “não é atribuição dos municípios” (normas técnicas); alimentação e nutrição na direção estadual. Quatro erradas; a certa era vigilância epidemiológica na direção municipal.",
+        "G0027: marcar “desempenho financeiro” ou “desempenho técnico” isolados, ou só “características quantitativas” da rede. A resposta marcada pela banca foi “perfil demográfico da região”."
+      ],
+      "cobra": [
+        "EXCETO ou CORRETA com cinco frases sobre princípios e objetivos, em geral uma só trocada por palavra absoluta: G0347, G0348 e G0355 (2021C).",
+        "CORRETA sobre organização, direção e gestão (comissões, consórcios, distritos, direção única): G0350 (2021C).",
+        "CORRETA sobre competências e atribuições das esferas: G0218 (2023).",
+        "Pergunta direta sobre um critério ou lista da lei: G0027 (2019, critérios de repasse do art. 35).",
+        "Atenção: G0351 (2021C, competências das esferas) foi anulada. Não é gabarito de estudo."
+      ],
+      "mapa": {
+        "centro": "Lei 8.080/1990",
+        "ramos": [
+          { "t": "Constituição", "f": ["Art. 196: direito de todos", "Art. 198: rede regionalizada e hierarquizada", "Diretrizes: descentralização, integralidade, comunidade"] },
+          { "t": "Objetivos (art. 5º)", "f": ["Fatores condicionantes", "Política de saúde", "Assistência e prevenção integradas"] },
+          { "t": "Princípios (art. 7º)", "f": ["Universalidade em todos os níveis", "Integralidade", "Igualdade, sem privilégios", "Direito à informação", "Resolutividade em todos os níveis"] },
+          { "t": "Organização (arts. 9º a 14)", "f": ["Direção única em cada esfera", "Consórcios e distritos podem", "Comissões ligadas ao CNS"] },
+          { "t": "Competências (arts. 15 a 18)", "f": ["Art. 15: comuns às três esferas", "União formula e coordena", "Estado apoia", "Município executa"] },
+          { "t": "Repasse (art. 35)", "f": ["Combinação de critérios", "Perfil demográfico e epidemiológico"] }
+        ]
+      }
+    },
+    {
+      "id": "atencao-basica",
+      "titulo": "Atenção básica: níveis de atenção, PNAB, Saúde da Família, NASF/eMulti e rede",
+      "nivel": 3,
+      "topicosBanco": ["sus.atencao_basica"],
+      "qtdQuestoes": 6,
+      "intro": "6 questões únicas em 4 edições (2019: 2; 2021P: 2; 2023: 1; 2025: 1), nenhuma anulada. Os assuntos: responsabilidades comuns na PNAB (G0024), NASF (G0025), modelo Saúde da Família (G0115), atribuições da equipe de Saúde da Família (G0116), níveis de atenção (G0222 em 2023 e G0294 em 2025). Atenção: em 2019 a banca citou a Portaria 2.488/2011 (PNAB antiga), já revogada pela Portaria 2.436/2017, e perguntou do NASF, que também mudou. A apostila ensina a norma vigente e avisa onde a prova usou a antiga.",
+      "pontos": [
+        { "ref": "Portaria 2.436/2017, Art. 12 · revogação da PNAB antiga", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "Art. 12 Fica revogada a Portaria nº 2.488/GM/MS, de 21 de outubro de 2011.", "texto": "A PNAB que vale é a de 2017. A prova de 2019 (G0024 e G0025) citou a de 2011. Os conceitos que a banca cobrou (responsabilidades comuns, NASF) continuam úteis, mas confira sempre a versão vigente e lembre que o gabarito histórico segue o texto que a prova citou." },
+        { "ref": "Portaria 2.436/2017, Art. 3º · princípios e diretrizes", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "Art. 3º São Princípios e Diretrizes do SUS e da RAS a serem operacionalizados na Atenção Básica:", "texto": "Princípios: universalidade, equidade e integralidade. Diretrizes: regionalização e hierarquização, territorialização, população adscrita, cuidado centrado na pessoa, resolutividade, longitudinalidade, coordenação do cuidado, ordenação da rede e participação da comunidade. A equidade da G0295 (2025) está aqui: equidade é tratar de acordo com as necessidades, não atendimento idêntico." },
+        { "ref": "Portaria 2.436/2017, Art. 4º · Saúde da Família é prioridade", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "Art. 4º A PNAB tem na Saúde da Família sua estratégia prioritária para expansão e consolidação da Atenção Básica.", "texto": "A Estratégia Saúde da Família (ESF) é a estratégia prioritária. Outras estratégias são aceitas com caráter transitório e devem ser convertidas em ESF." },
+        { "ref": "Portaria 2.436/2017, Art. 6º · UBS", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "Art. 6º Todos os estabelecimentos de saúde que prestem ações e serviços de Atenção Básica, no âmbito do SUS, de acordo com esta portaria serão denominados Unidade Básica de Saúde - UBS. Parágrafo único. Todas as UBS são consideradas potenciais espaços de educação, formação de recursos humanos, pesquisa, ensino em serviço, inovação e avaliação tecnológica para a RAS.", "texto": "UBS é o nome de todo estabelecimento que presta ações e serviços de atenção básica. G0222 (2023, alternativa A, certa): as UBS (postos de saúde) realizam ações de prevenção e promoção da saúde." },
+        { "ref": "Portaria 2.436/2017, Art. 7º, caput · responsabilidades comuns", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "Art. 7º São responsabilidades comuns a todas as esferas de governo:", "texto": "A lista de responsabilidades comuns às três esferas (União, Estados/DF e Municípios) está nos incisos. G0024 (2019) cobrou o tema com a PNAB de 2011; as ideias abaixo são as mesmas na de 2017." },
+        { "ref": "Portaria 2.436/2017, Art. 7º, inciso XIV · estudos e pesquisas", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "XIV - promover o intercâmbio de experiências entre gestores e entre trabalhadores, por meio de cooperação horizontal, e estimular o desenvolvimento de estudos e pesquisas que busquem o aperfeiçoamento e a disseminação de tecnologias e conhecimentos voltados à Atenção Básica;", "texto": "É responsabilidade comum estimular estudos e pesquisas. Foi a resposta certa de G0024 (alternativa A). As erradas diziam “somente com parcerias com ONGs”, “restringir a participação popular”, “somente pelos municípios” e “financiamento somente do governo federal”." },
+        { "ref": "Portaria 2.436/2017, Art. 7º, inciso XV · participação popular", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "XV - estimular a participação popular e o controle social;", "texto": "O dever é ESTIMULAR a participação popular, não restringi-la (G0024, alternativa C errada)." },
+        { "ref": "Portaria 2.436/2017, Art. 7º, inciso IV · financiamento tripartite", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "IV - contribuir com o financiamento tripartite para fortalecimento da Atenção Básica;", "texto": "O financiamento é TRIPARTITE (União, Estados e Municípios), não “somente federal” (G0024, alternativa E errada)." },
+        { "ref": "Portaria 2.436/2017, Anexo, item 4.1, inciso V · atribuição de toda equipe", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "V. Garantir a atenção à saúde da população adscrita, buscando a integralidade por meio da realização de ações de promoção, proteção e recuperação da saúde, prevenção de doenças e agravos e da garantia de atendimento da demanda espontânea, da realização das ações programáticas, coletivas e de vigilância em saúde, e incorporando diversas racionalidades em saúde, inclusive Práticas Integrativas e Complementares;", "texto": "A equipe de atenção básica cuida da população inteira e faz promoção, proteção, recuperação e prevenção, não só de doentes. Em G0116 (2021, INCORRETA, atribuições da equipe de Saúde da Família) a errada era “contatos somente com indivíduos doentes”. Essa questão cita atribuições da PNAB antiga (2011); a ideia de integralidade vale também na de 2017." },
+        { "ref": "Portaria 2.436/2017, Anexo, item 4.2.2, inciso II · cirurgião-dentista", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "II - Realizar diagnóstico com a finalidade de obter o perfil epidemiológico para o planejamento e a programação em saúde bucal no território;", "texto": "Atribuição específica do cirurgião-dentista na atenção básica: diagnóstico do perfil epidemiológico bucal do território (liga com epidemiologia). Ainda no item 4.2.2: o dentista faz atenção em saúde bucal individual e coletiva, procedimentos clínicos e cirúrgicos da atenção básica, supervisiona o TSB e o ASB e acompanha as ações dos ACS e ACE. Não caiu em questão própria nas provas analisadas." },
+        { "ref": "Portaria 2.436/2017, Anexo, item 4.2.2, inciso IV · cirurgião-dentista", "fonte": "portaria-2436-2017-pnab-bvsms.html", "trecho": "IV - Coordenar e participar de ações coletivas voltadas à promoção da saúde e à prevenção de doenças bucais;", "texto": "Outra atribuição do dentista: coordenar e participar de ações coletivas de promoção e prevenção em saúde bucal." },
+        { "ref": "Decreto 7.508/2011, Art. 8º · portas de entrada", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "Art. 8º O acesso universal, igualitário e ordenado às ações e serviços de saúde se inicia pelas Portas de Entrada do SUS e se completa na rede regionalizada e hierarquizada, de acordo com a complexidade do serviço.", "texto": "O acesso começa pelas portas de entrada e se completa na rede regionalizada e hierarquizada." },
+        { "ref": "Decreto 7.508/2011, Art. 9º · quais são as portas de entrada", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "Art. 9º São Portas de Entrada às ações e aos serviços de saúde nas Redes de Atenção à Saúde os serviços:", "texto": "São quatro: atenção primária; urgência e emergência; atenção psicossocial; e serviços especiais de acesso aberto." },
+        { "ref": "Decreto 7.508/2011, Art. 11 · atenção primária ordena o acesso", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "Art. 11. O acesso universal e igualitário às ações e aos serviços de saúde será ordenado pela atenção primária e deve ser fundado na avaliação da gravidade do risco individual e coletivo e no critério cronológico, observadas as especificidades previstas para pessoas com proteção especial, conforme legislação vigente.", "texto": "A atenção primária ORDENA o acesso, com base na gravidade do risco e no critério cronológico." },
+        { "ref": "Decreto 7.508/2011, Art. 2º, inciso VI · Rede de Atenção à Saúde", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "VI - Rede de Atenção à Saúde - conjunto de ações e serviços de saúde articulados em níveis de complexidade crescente, com a finalidade de garantir a integralidade da assistência à saúde;", "texto": "Rede de Atenção à Saúde: ações e serviços articulados em níveis de complexidade CRESCENTE. Níveis: primário (baixa complexidade, UBS), secundário (média complexidade, ambulatório especializado, UPA) e terciário (alta complexidade, hospitais de grande porte, UTI, transplantes). Foi o tema de G0222 (2023) e G0294 (2025)." },
+        { "ref": "Portaria de Consolidação 2/2017, Anexo XXII, Art. 40-A · eMulti (substitui o NASF)", "fonte": "portaria-consolidacao-2-2017-ms-bvsms.html", "trecho": "Art. 40-A. As equipes Multiprofissionais - eMulti na Atenção Primária à Saúde - APS são compostas por profissionais de saúde, de diferentes áreas de conhecimento, que atuam de maneira complementar e integrada às demais equipes da APS, corresponsável pela população e pelo território, em articulação intersetorial e com a Rede de Atenção à Saúde - RAS.", "texto": "Aviso de vigência: na PRC 2/2017 do bvsms, a seção “Dos NASF” aparece como revogada pela PRT GM/MS nº 2.979 de 12/11/2019 e há uma seção de equipes multiprofissionais (eMulti). A prova de 2019 (G0025) cobrou o NASF: gabarito E (“os NASF devem buscar instituir a plena integralidade do cuidado físico e mental aos usuários do SUS por intermédio da qualificação e complementaridade do trabalho das ESF”). As erradas: composição definida pelos gestores ESTADUAIS (A), horário diferente da ESF (B), mesma área de conhecimento (C), ampliar a atenção TERCIÁRIA (D). A ideia do NASF (apoio matricial às equipes de saúde da família) segue nas eMulti. PENDENTE: confirmar a norma de criação das eMulti (data e número) na fonte oficial." }
+      ],
+      "tabela": {
+        "titulo": "Níveis de atenção no SUS (como a banca cobrou em 2023 e 2025)",
+        "cab": ["Nível", "Exemplos", "Questão"],
+        "linhas": [
+          ["Atenção primária (básica)", "Unidades Básicas de Saúde; prevenção, promoção da saúde e atendimento por equipes multiprofissionais", "G0222 A (certa); G0294 (1)"],
+          ["Média complexidade (secundária)", "Unidades de Pronto Atendimento (UPA 24h) e serviços especializados (cardiologia, ortopedia, neurologia)", "G0294 (2)"],
+          ["Alta complexidade (terciária)", "Hospitais gerais de grande porte, hospitais universitários, leitos de UTI, transplantes e partos de alto risco", "G0294 (3)"]
+        ]
+      },
+      "macete": "Atenção básica = porta de entrada, perto de casa, preventiva e com equipe (ESF). Quem diz que ela atende “somente doentes”, “somente nas unidades” ou “somente o município faz” errou. Média complexidade: UPA e especialidades. Alta: hospital grande, UTI, transplante. A ordem do G0294 é: alta, primária, média (3, 1, 2).",
+      "pegadinhas": [
+        "G0024: “fortalecimento da atenção básica somente com ONGs”; “restringir a participação popular”; “somente planejada e apoiada pelos municípios”; “financiamento somente do governo federal”.",
+        "G0025: NASF com composição definida por gestores estaduais; que funcione em horário diferente da ESF; que tenha “ampliar a atenção terciária” como objetivo.",
+        "G0115: modelo Saúde da Família descrito com dificuldade de integralidade, trabalho fragmentado, pouco uso do planejamento ou foco na assistência individual. O modelo valoriza vínculo, acolhimento e corresponsabilidade.",
+        "G0116: “contatos somente com indivíduos doentes”. A equipe promove saúde para toda a população.",
+        "G0222: “profissionais da atenção primária podem atuar apenas nas unidades de saúde” (também atuam no domicílio e na comunidade); UPA 24h como “exemplo mais claro de alta complexidade”; SAMU 192 como “terciário”. Todas erradas; a certa era sobre as UBS.",
+        "G0294: trocar a ordem na associação (a banca colocou alta complexidade na primeira linha da segunda coluna)."
+      ],
+      "cobra": [
+        "CORRETA com cinco frases longas sobre o tema: G0024 (responsabilidades comuns), G0025 (NASF), G0222 (níveis).",
+        "CORRETA sobre uma característica do modelo Saúde da Família: G0115 (2021P).",
+        "INCORRETA sobre atribuições da equipe de Saúde da Família: G0116 (2021P).",
+        "Associação de colunas (níveis de atenção com características): G0294 (2025)."
+      ],
+      "mapa": {
+        "centro": "Atenção básica",
+        "ramos": [
+          { "t": "Níveis de atenção", "f": ["Primária: UBS, prevenção", "Média: UPA, especialidades", "Alta: hospital grande, UTI, transplante"] },
+          { "t": "PNAB 2017", "f": ["Revogou a de 2011", "Princípios: universalidade, equidade, integralidade", "ESF é a prioritária", "Financiamento tripartite"] },
+          { "t": "Equipe e NASF/eMulti", "f": ["Equipe cuida de todos, não só doentes", "NASF: apoio, integralidade", "NASF revogado em 2019, hoje eMulti"] },
+          { "t": "Dentista na AB", "f": ["Diagnóstico epidemiológico bucal", "Ações coletivas", "Supervisão de TSB e ASB"] },
+          { "t": "Rede (Decreto 7.508)", "f": ["Portas de entrada: 4", "Atenção primária ordena", "Região de saúde"] }
+        ]
+      }
+    },
+    {
+      "id": "controle-social",
+      "titulo": "Controle social e Lei 8.142/1990: Conselhos e Conferências de Saúde",
+      "nivel": 3,
+      "topicosBanco": ["sus.controle_social", "sus.lei8142"],
+      "qtdQuestoes": 5,
+      "intro": "5 questões únicas em 4 edições: controle social, 3 questões (2021P: 2; 2025: 1) e Lei 8.142, 2 questões (2019: 1; 2021C: 1); nenhuma anulada. Os dois códigos tratam dos mesmos assuntos (Conselho de Saúde, Conferência, paridade, Fundo de Saúde) e foram juntados nesta lição. Atenção ao arquivo: a Lei 8.142 está aqui no texto da PUBLICAÇÃO ORIGINAL (a Câmara não oferece versão atualizada); confira se houve alteração posterior antes de apostar em detalhe de redação.",
+      "pontos": [
+        { "ref": "Lei 8.142, Art. 1º · instâncias colegiadas", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "Art. 1º O Sistema Único de Saúde (SUS), de que trata a Lei nº 8.080, de 19 de setembro de 1990, contará, em cada esfera de governo, sem prejuízo das funções do Poder Legislativo, com as seguintes instâncias colegiadas:", "texto": "São DUAS instâncias colegiadas: a Conferência de Saúde e o Conselho de Saúde, em cada esfera de governo." },
+        { "ref": "Lei 8.142, Art. 1º, § 1º · Conferência de Saúde", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 1º A Conferência de Saúde reunir-se-á a cada quatro anos com a representação dos vários segmentos sociais, para avaliar a situação de saúde e propor as diretrizes para a formulação da política de saúde nos níveis correspondentes, convocada pelo Poder Executivo ou, extraordinariamente, por esta ou pelo Conselho de Saúde.", "texto": "A Conferência se reúne a cada QUATRO anos (G0219, 2023: a afirmativa “a cada dois anos” era falsa). Avalia a situação de saúde e propõe diretrizes. Quem convoca: o Poder Executivo, ou extraordinariamente a própria Conferência ou o Conselho." },
+        { "ref": "Lei 8.142, Art. 1º, § 2º · Conselho de Saúde", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 2º O Conselho de Saúde, em caráter permanente e deliberativo, órgão colegiado composto por representantes do governo, prestadores de serviço, profissionais de saúde e usuários, atua na formulação de estratégias e no controle da execução da política de saúde na instância correspondente, inclusive nos aspectos econômicos e financeiros, cujas decisões serão homologadas pelo chefe do poder legalmente constituído em cada esfera do governo.", "texto": "O Conselho é PERMANENTE e DELIBERATIVO (não só consultivo). Composição: governo, prestadores, profissionais e usuários. Acompanha inclusive os aspectos econômicos e financeiros. G0298 (2025) cobrou os canais de participação: as Conferências e Conselhos são canais institucionalizados (V), ouvidorias e consultas públicas também (V) e usuário “recebedor passivo” é falso (F)." },
+        { "ref": "Lei 8.142, Art. 1º, § 3º · CONASS e CONASEMS", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 3º O Conselho Nacional de Secretários de Saúde - CONASS e o Conselho Nacional de Secretários Municipais de Saúde - CONASEMS terão representação no Conselho Nacional de Saúde.", "texto": "CONASS (secretários estaduais) e CONASEMS (secretários municipais) têm representação no Conselho Nacional de Saúde: verdadeiro em G0219." },
+        { "ref": "Lei 8.142, Art. 1º, § 4º · paridade", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 4º A representação dos usuários nos Conselhos de Saúde e Conferências será paritária em relação ao conjunto dos demais segmentos.", "texto": "Os usuários têm metade das vagas: paritária em relação ao conjunto dos demais. Caiu em G0117 (afirmativa II, certa), G0219 e G0349 (a afirmativa “os usuários não devem fazer parte do Conselho” era falsa)." },
+        { "ref": "Lei 8.142, Art. 1º, § 5º · regimento próprio", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 5º As Conferências de Saúde e os Conselhos de Saúde terão sua organização e normas de funcionamento definidas em regimento próprio, aprovadas pelo respectivo Conselho.", "texto": "Regimento próprio, aprovado pelo respectivo Conselho. Foi a afirmativa I de G0117, considerada certa." },
+        { "ref": "Lei 8.142, Art. 2º · destino dos recursos do FNS", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "Art. 2º Os recursos do Fundo Nacional de Saúde - FNS serão alocados como:", "texto": "Os incisos listam: custeio e capital do Ministério da Saúde; investimentos previstos em lei orçamentária de iniciativa do Poder Legislativo; investimentos do PLANO QÜINQÜENAL do Ministério da Saúde; e cobertura de ações de Municípios, Estados e DF." },
+        { "ref": "Lei 8.142, Art. 2º, inciso III · plano qüinqüenal", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "III - investimentos previstos no Plano Qüinqüenal do Ministério da Saúde;", "texto": "É plano de CINCO anos. Em G0117 a afirmativa IV falava em “plano que dura três anos” e era falsa. Em G0349 a afirmativa II (“nunca devem ser alocados como investimentos previstos no Plano Quinquenal”) também era falsa." },
+        { "ref": "Lei 8.142, Art. 3º, § 3º · consórcios de Municípios", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 3º Os Municípios poderão estabelecer consórcio para execução de ações e serviços de saúde, remanejando, entre si, parcelas de recursos previstos no inciso IV do art. 2º desta Lei.", "texto": "Municípios PODEM fazer consórcio e remanejar recursos entre si. Foi a afirmativa III de G0117, considerada certa." },
+        { "ref": "Lei 8.142, Art. 4º, caput · condições para receber recursos", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "Art. 4º Para receberem os recursos, de que trata o art. 3º desta lei, os Municípios, os Estados e o Distrito Federal deverão contar com:", "texto": "Os incisos listam seis requisitos: Fundo de Saúde; Conselho de Saúde paritário; plano de saúde; relatórios de gestão; contrapartida de recursos no orçamento; comissão para o plano de carreira (PCCS). G0026 (2019) pediu “pelo menos” dois deles." },
+        { "ref": "Lei 8.142, Art. 4º, inciso II · Conselho de Saúde paritário", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "II - Conselho de Saúde, com composição paritária de acordo com o Decreto nº 99.438, de 7 de agosto de 1990;", "texto": "Resposta de G0026: “Conselho de Saúde, com composição paritária – contrapartida de recursos para a saúde no respectivo orçamento” (B), os incisos II e V. Em G0349, a afirmativa III (“contar com o Fundo de Saúde e Conselho de Saúde”) era a única correta." },
+        { "ref": "Lei 8.142, Art. 4º, inciso V · contrapartida", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "V - contrapartida de recursos para a saúde no respectivo orçamento;", "texto": "A contrapartida de recursos no orçamento próprio é requisito. As outras alternativas de G0026 trocavam por serviços (assistência farmacêutica, ao idoso, vigilância) que não são requisitos do art. 4º." },
+        { "ref": "Lei 8.142, Art. 4º, parágrafo único · quem recebe se não cumprir", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "Parágrafo único. O não atendimento pelos Municípios, ou pelos Estados, ou pelo Distrito Federal, dos requisitos estabelecidos neste artigo, implicará em que os recursos concernentes sejam administrados, respectivamente, pelos Estados ou pela União.", "texto": "Quem não cumpre os requisitos perde a gestão dos recursos: Município para o Estado, Estado e DF para a União." },
+        { "ref": "Controle social · conceito (G0118)", "conceito": true, "texto": "G0118 (2021P, V ou F): os Conselhos e as Conferências de Saúde são espaços vitais para o controle social (V); a população, por meio dos Conselhos, participa do planejamento, fiscaliza as ações do governo e analisa as aplicações financeiras (V); o controle social é complemento ao controle institucional exercido pelos órgãos que fiscalizam os recursos PÚBLICOS (a afirmativa dizia “privados”, F); a educação permanente para o controle social com abrangência só na “comunidade hospitalar” era falsa (F). Sequência do gabarito: F, V, V, F. A Resolução CNS 453/2012, que trata dos Conselhos, não está nas fontes desta apostila nem no edital: PENDENTE." }
+      ],
+      "tabela": {
+        "titulo": "Conferência x Conselho (Lei 8.142, art. 1º)",
+        "cab": ["Característica", "Conferência de Saúde", "Conselho de Saúde"],
+        "linhas": [
+          ["Periodicidade", "A cada 4 anos (a banca trocou por “dois anos”)", "Caráter permanente"],
+          ["Função", "Avaliar a situação de saúde e propor diretrizes", "Formular estratégias e controlar a execução da política, inclusive aspectos econômicos e financeiros"],
+          ["Natureza", "Reunião com vários segmentos sociais", "Deliberativo (decisões homologadas pelo chefe do Poder)"],
+          ["Usuários", "Paritários em relação ao conjunto dos demais", "Paritários em relação ao conjunto dos demais"],
+          ["Regimento", "Próprio, aprovado pelo Conselho", "Próprio, aprovado pelo Conselho"]
+        ]
+      },
+      "macete": "Conferência = a cada QUATRO anos, propõe diretrizes. Conselho = permanente e DELIBERATIVO. Usuários = metade (paridade). Para receber recursos o município precisa de Fundo, Conselho paritário, plano de saúde, relatórios de gestão, contrapartida e comissão do PCCS. Plano do Ministério da Saúde = quinquenal (cinco anos).",
+      "pegadinhas": [
+        "G0219: “a Conferência reunir-se-á a cada dois anos”. São quatro.",
+        "G0349: “os usuários não devem fazer parte do Conselho”; “recursos do FNS nunca devem ser alocados em investimentos do Plano Quinquenal”. As duas falsas; a certa foi a que pedia Fundo e Conselho de Saúde.",
+        "G0117: “plano que dura três anos” (é qüinqüenal) como investimentos do FNS.",
+        "G0026: alternativas com serviços (assistência farmacêutica, ao idoso, vigilância epidemiológica, saúde do trabalhador) no lugar dos requisitos do art. 4º.",
+        "G0118: controle social como complemento aos órgãos que fiscalizam recursos “privados”; abrangência só “hospitalar”.",
+        "G0298: usuário como “recebedor passivo de benefícios do Estado, sem interferência na gestão” (falso)."
+      ],
+      "cobra": [
+        "Afirmativas numeradas (I a IV) com “qual(is) afirmativa(s) está(ão) correta(s)”: G0117 (2021P) e G0349 (2021C).",
+        "V ou F em sequência: G0118 (2021P) e G0298 (2025).",
+        "Pergunta direta com pares de requisitos: G0026 (2019).",
+        "G0219 (2023, V ou F sobre Conferência, CONASS/CONASEMS e paridade) está classificada como gestão; veja a lição 5, ela repete esta lei."
+      ],
+      "mapa": {
+        "centro": "Controle social e Lei 8.142",
+        "ramos": [
+          { "t": "Conferência", "f": ["A cada 4 anos", "Avalia e propõe diretrizes", "Convocada pelo Executivo"] },
+          { "t": "Conselho", "f": ["Permanente e deliberativo", "Governo, prestadores, profissionais, usuários", "Controla inclusive aspectos financeiros"] },
+          { "t": "Paridade", "f": ["Usuários = metade", "CONASS e CONASEMS no CNS"] },
+          { "t": "Recursos do FNS", "f": ["Custeio e capital do MS", "Plano qüinqüenal", "Municípios e Estados"] },
+          { "t": "Requisitos (art. 4º)", "f": ["Fundo de Saúde", "Conselho paritário", "Plano de saúde", "Relatórios de gestão", "Contrapartida", "Comissão do PCCS"] }
+        ]
+      }
+    },
+    {
+      "id": "epidemiologia",
+      "titulo": "Epidemiologia: conceitos, indicadores de saúde e sistemas de informação",
+      "nivel": 2,
+      "topicosBanco": ["sus.epidemiologia"],
+      "qtdQuestoes": 3,
+      "intro": "4 questões únicas em 3 edições (2021P: 1; 2023: 2; 2025: 1). Uma foi anulada (G0221, de 2023, sobre indicadores de saúde): não estude a “resposta” dela. Sobram 3 usáveis: sindemia (G0119), bases conceituais (G0220) e incidência x prevalência (G0299). Esta lição não depende de lei; o texto vem das próprias questões e de uma fonte oficial para a mortalidade infantil (ver Limites desta análise).",
+      "pontos": [
+        { "ref": "Bases conceituais · distribuição dos eventos de saúde", "conceito": true, "texto": "G0220 (2023): a epidemiologia parte do entendimento de que os eventos de saúde e seus determinantes NÃO se distribuem ao acaso entre as pessoas (a afirmativa I dizia “ao acaso” e era falsa). Por isso é possível estudar padrões e agir. Gabarito: apenas II e III verdadeiras (B)." },
+        { "ref": "Bases conceituais · risco", "conceito": true, "texto": "Em G0220 a banca considerou verdadeira a definição de risco como “o grau de probabilidade da ocorrência de um determinado evento”. Risco = probabilidade." },
+        { "ref": "Bases conceituais · processo saúde-doença", "conceito": true, "texto": "Em G0220 a banca considerou verdadeira a descrição do processo saúde-doença como as etapas pelas quais passa o indivíduo ou a população durante o adoecimento, considerando todas as variáveis que influenciam a saúde e as doenças e seus desfechos: a cura ou a morte." },
+        { "ref": "Medidas de frequência · incidência e prevalência", "conceito": true, "texto": "G0299 (2025, V ou F; gabarito V, V, F). Incidência: frequência de casos NOVOS em determinado período, indica o risco de ocorrer o evento na população exposta (V). Prevalência: proporção de indivíduos acometidos por alguma doença em dado momento, uma “fotografia” do momento (V). Dizer que incidência e prevalência são equivalentes e podem ser usadas indistintamente era falso (F). Memorize: incidência = casos novos no tempo; prevalência = casos existentes no momento." },
+        { "ref": "Termos de ocorrência · sindemia", "conceito": true, "texto": "G0119 (2021P): quando duas ou mais doenças interagem e causam danos maiores do que a soma das duas, o termo é SINDEMIA (C). As alternativas erradas eram endemia, pandemia, surto e epidemia. O conceito vem da antropologia médica (Merrill Singer) e foi muito usado na covid-19. Fonte oficial do Ministério da Saúde para o conceito: PENDENTE (só confirmado em resultados de busca). Definições oficiais de endemia, epidemia, surto e pandemia: PENDENTE." },
+        { "ref": "Indicadores · mortalidade infantil", "conceito": true, "texto": "Pela ficha de qualificação do DATASUS (RIPSA): a taxa de mortalidade infantil é o número de óbitos de menores de UM ano de idade, por mil nascidos vivos, em determinado espaço geográfico e ano. Método direto: óbitos de residentes com menos de um ano ÷ nascidos vivos de mães residentes × 1.000. A questão G0221 (anulada) trazia a versão errada “menores de 2 anos”: ela foi anulada pela banca, então use esta fórmula só como estudo, não como gabarito. Mortalidade geral, materna e expectativa de vida: fórmulas PENDENTES de fonte." },
+        { "ref": "Sistemas de informação em saúde · SIM e SINASC", "conceito": true, "texto": "Segundo resultados de busca (página do DATASUS e roteiro de uma secretaria estadual de saúde; não abri o texto completo), o numerador da mortalidade infantil vem do Sistema de Informação sobre Mortalidade (SIM) e o denominador do Sistema de Informação sobre Nascidos Vivos (SINASC): conferir na fonte oficial. O edital pede “sistema de informação em saúde”, que não teve questão própria na amostra; outros sistemas: PENDENTE." }
+      ],
+      "tabela": {
+        "titulo": "Incidência x prevalência (G0299)",
+        "cab": ["", "Incidência", "Prevalência"],
+        "linhas": [
+          ["O que conta", "Casos NOVOS em um período", "Todos os casos existentes em um momento"],
+          ["Ideia", "Mede o risco de adoecer na população exposta", "Uma “fotografia” do momento"],
+          ["Podem ser trocadas?", "Não: não são equivalentes", "Não: não são equivalentes"]
+        ]
+      },
+      "macete": "Incidência é filme (casos novos ao longo do tempo); prevalência é foto (quem tem a doença agora). Os eventos de saúde NÃO se distribuem ao acaso. Duas doenças que se potencializam = sindemia.",
+      "pegadinhas": [
+        "G0220: “os eventos de saúde se distribuem ao acaso entre as pessoas”. É o oposto: há padrões.",
+        "G0299: “incidência e prevalência são equivalentes e podem ser usadas indistintamente”.",
+        "G0119: confundir sindemia com epidemia, pandemia, endemia ou surto, que não falam em interação de doenças.",
+        "G0221 (anulada): mortalidade infantil com “menores de 2 anos”, mortalidade geral dividida pela “metade da população” e “indicadores positivos e negativos”. A banca anulou; não use."
+      ],
+      "cobra": [
+        "Afirmativas numeradas (I a III) com “é correto o que se afirma em”: G0220 (2023).",
+        "V ou F em sequência: G0299 (2025).",
+        "Pergunta direta de um termo: G0119 (2021P).",
+        "Anulada: G0221 (2023, indicadores de saúde)."
+      ],
+      "mapa": {
+        "centro": "Epidemiologia",
+        "ramos": [
+          { "t": "Bases", "f": ["Eventos não são ao acaso", "Risco = probabilidade", "Processo saúde-doença"] },
+          { "t": "Frequência", "f": ["Incidência: casos novos", "Prevalência: casos no momento"] },
+          { "t": "Termos", "f": ["Sindemia: doenças que se potencializam", "Endemia, epidemia, surto, pandemia (PENDENTE)"] },
+          { "t": "Indicadores", "f": ["Mortalidade infantil: menores de 1 ano por mil nascidos vivos", "SIM e SINASC"] }
+        ]
+      }
+    },
+    {
+      "id": "gestao",
+      "titulo": "Gestão colegiada, comissões intergestores e responsabilidade sanitária",
+      "nivel": 1,
+      "topicosBanco": ["sus.gestao"],
+      "qtdQuestoes": 1,
+      "intro": "2 questões únicas em 2 edições (2023: 1; 2025: 1). Uma foi anulada (G0300, de 2025, sobre responsabilização macro e microssanitária): não estude a “resposta” dela. Sobra 1 usável: G0219 (2023), V ou F sobre Conferência, CONASS/CONASEMS e paridade, cujo conteúdo é a Lei 8.142 (lição 3). Esta lição acrescenta as Comissões Intergestores, que são o ponto de gestão colegiada do SUS.",
+      "pontos": [
+        { "ref": "Lei 8.080, Art. 14-A · Comissões Intergestores", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 14-A. As Comissões Intergestores Bipartite e Tripartite são reconhecidas como foros de negociação e pactuação entre gestores, quanto aos aspectos operacionais do Sistema Único de Saúde (SUS).", "texto": "A Tripartite (União, Estados e Municípios) e a Bipartite (Estado e Municípios) são foros de negociação e pactuação entre GESTORES, sobre aspectos operacionais. Não são conselhos de controle social." },
+        { "ref": "Decreto 7.508/2011, Art. 30 · CIT, CIB e CIR", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "Art. 30. As Comissões Intergestores pactuarão a organização e o funcionamento das ações e serviços de saúde integrados em redes de atenção à saúde, sendo:", "texto": "Três comissões: CIT no âmbito da União (vinculada ao Ministério da Saúde); CIB no âmbito do Estado (vinculada à Secretaria Estadual); CIR no âmbito regional (vinculada à Secretaria Estadual, observando as diretrizes da CIB)." },
+        { "ref": "Decreto 7.508/2011, Art. 31 · representação dos gestores", "fonte": "decreto-7508-2011-camara-normaatualizada.html", "trecho": "Art. 31. Nas Comissões Intergestores, os gestores públicos de saúde poderão ser representados pelo Conselho Nacional de Secretários de Saúde - CONASS, pelo Conselho Nacional de Secretarias Municipais de Saúde - CONASEMS e pelo Conselho Estadual de Secretarias Municipais de Saúde - COSEMS.", "texto": "Os gestores podem ser representados por CONASS, CONASEMS e COSEMS." },
+        { "ref": "Gestão colegiada · G0219 (2023)", "conceito": true, "texto": "G0219: Conferência a cada dois anos (F, o correto é quatro); CONASS e CONASEMS com representação no Conselho Nacional de Saúde (V); representação dos usuários paritária (V). Gabarito: F, V, V. O fundamento está na Lei 8.142, art. 1º, §§ 1º, 3º e 4º (lição 3)." },
+        { "ref": "Responsabilidade sanitária · macro e microssanitária", "conceito": true, "texto": "A questão G0300 (2025) tratou das duas dimensões da responsabilização sanitária e foi ANULADA. O texto oficial sobre o tema não foi localizado nas fontes desta apostila: PENDENTE. Não decore afirmativas dessa questão." }
+      ],
+      "macete": "Comissão Intergestores = gestores pactuam (CIT nacional, CIB estadual, CIR regional). Conselho de Saúde = controle social, com usuários. Não misture os dois.",
+      "pegadinhas": [
+        "G0219: trocar “a cada quatro anos” por “a cada dois anos” (Conferência).",
+        "Misturar Comissão Intergestores (pactuação entre gestores) com Conselho de Saúde (controle social)."
+      ],
+      "cobra": [
+        "V ou F em sequência sobre gestão colegiada (Conferência, CONASS/CONASEMS, paridade): G0219 (2023).",
+        "Afirmativas sobre responsabilização sanitária: G0300 (2025), anulada."
+      ],
+      "mapa": {
+        "centro": "Gestão colegiada",
+        "ramos": [
+          { "t": "Comissões Intergestores", "f": ["CIT: União", "CIB: Estado", "CIR: região", "Pactuam entre gestores"] },
+          { "t": "Representação", "f": ["CONASS", "CONASEMS", "COSEMS"] },
+          { "t": "Controle social", "f": ["Conferência a cada 4 anos", "Conselho paritário"] }
+        ]
+      }
+    },
+    {
+      "id": "humanizacao",
+      "titulo": "Humanização (PNH, Lei 15.126/2025) e políticas do SUS",
+      "nivel": 1,
+      "topicosBanco": ["sus.humanizacao_politicas"],
+      "qtdQuestoes": 2,
+      "intro": "2 questões únicas em 2 edições (2023: 1; 2025: 1), nenhuma anulada: G0217 (2023, PNH, afirmativas I a III) e G0293 (2025, Lei 15.126/2025). A Lei 15.126 é curta e caiu em 2025, logo depois de publicada; leia o texto abaixo. O documento base da PNH está só em PDF e não foi usado como trecho.",
+      "pontos": [
+        { "ref": "Lei 15.126/2025, Art. 1º · objetivo da lei", "fonte": "lei-15126-2025-camara-publicacaooriginal.html", "trecho": "Art. 1º Esta Lei altera a Lei nº 8.080, de 19 de setembro de 1990 (Lei Orgânica da Saúde), para estabelecer a atenção humanizada como princípio no âmbito do Sistema Único de Saúde (SUS).", "texto": "A lei altera a Lei 8.080 e estabelece a atenção humanizada como PRINCÍPIO do SUS. Foi publicada em 28/04/2025." },
+        { "ref": "Lei 8.080, Art. 7º, inciso XVI · atenção humanizada", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "XVI - atenção humanizada. (Inciso acrescido pela Lei nº 15.126, de 28/4/2025)", "texto": "O novo inciso XVI do art. 7º da Lei 8.080: atenção humanizada, ao lado de universalidade, integralidade e demais princípios. G0293 (2025, gabarito C): a atenção humanizada passa a ser reconhecida como diretriz legal do SUS, ao lado de princípios como integralidade, universalidade e equidade. Aviso didático: o texto da lei diz “princípio” e o enunciado diz “diretriz”; na prova, siga o gabarito. As erradas: restrita a grupos prioritários, só UBS, substitui a integralidade, só alta complexidade (palavras absolutas)." },
+        { "ref": "PNH · conceito (G0217, 2023)", "conceito": true, "texto": "G0217 (gabarito C, I e II verdadeiras): (I) a PNH afirma que incluir os trabalhadores na gestão é fundamental para reinventarem seus processos de trabalho e serem agentes ativos das mudanças; (II) um SUS humanizado reconhece cada pessoa como cidadã de direitos e valoriza e incentiva sua atuação na produção de saúde. Era FALSO que se deva “nunca” incluir os trabalhadores na tomada de decisão (III). O documento base da PNH (PDF do bvsms) não foi conferido nesta apostila: PENDENTE." },
+        { "ref": "Lei 14.572/2023, Art. 1º · Política Nacional de Saúde Bucal", "fonte": "lei-14572-2023-camara-publicacaooriginal.html", "trecho": "Art. 1º Fica instituída a Política Nacional de Saúde Bucal, conjunto de diretrizes que configura modelo de organização e atuação direcionado à atenção à saúde bucal no País e que se constitui em instrumento para orientar as ações direcionadas à produção social da saúde bucal e, especificamente, as ações odontológicas em todos os níveis de atenção à saúde no âmbito do Sistema Único de Saúde (SUS).", "texto": "Política do SUS de interesse direto do dentista. Não caiu em questão própria nas provas analisadas (o edital fala em “Políticas do SUS”). Texto da publicação original; a ficha da Câmara indica vigência condicionada: confira antes de apostar em detalhe." },
+        { "ref": "Lei 14.572/2023, Art. 2º, inciso X · fluoretação das águas", "fonte": "lei-14572-2023-camara-publicacaooriginal.html", "trecho": "X - implantar e manter ações de vigilância sanitária de fluoretação das águas de abastecimento público, obrigatória nos termos da Lei nº 6.050, de 24 de maio de 1974, bem como ações complementares nos locais em que se fizerem necessárias, e assegurar ao poder público controle sobre essas ações.", "texto": "Uma das diretrizes da Política Nacional de Saúde Bucal: vigilância sanitária da fluoretação das águas de abastecimento. Outras diretrizes do art. 2º: gestão participativa, acesso universal, equânime e contínuo, integralidade, vínculo, educação permanente, vigilância epidemiológica em saúde bucal e pesquisas nacionais periódicas." }
+      ],
+      "macete": "Lei 15.126/2025: atenção humanizada entra no art. 7º da Lei 8.080 (inciso XVI) ao lado de universalidade, integralidade e equidade; NUNCA substitui nem restringe. Na PNH, trabalhador participa da gestão.",
+      "pegadinhas": [
+        "G0293: humanização restrita a grupos prioritários, só às UBS, substituindo a integralidade ou só na alta complexidade.",
+        "G0217: “dar visibilidade à experiência dos trabalhadores, mas NUNCA incluí-los na tomada de decisão”."
+      ],
+      "cobra": [
+        "Afirmativas numeradas (I a III) com “é correto o que se afirma em”: G0217 (2023, PNH).",
+        "CORRETA sobre a mudança na Lei Orgânica da Saúde: G0293 (2025, Lei 15.126)."
+      ],
+      "mapa": {
+        "centro": "Humanização e políticas",
+        "ramos": [
+          { "t": "Lei 15.126/2025", "f": ["Altera a Lei 8.080", "Inciso XVI do art. 7º", "Atenção humanizada"] },
+          { "t": "PNH", "f": ["Trabalhador na gestão", "Cidadão de direitos"] },
+          { "t": "Saúde bucal (Lei 14.572/2023)", "f": ["Política Nacional de Saúde Bucal", "Fluoretação das águas"] }
+        ]
+      }
+    },
+    {
+      "id": "financiamento",
+      "titulo": "Planejamento, orçamento e financiamento do SUS (FNS)",
+      "nivel": 1,
+      "topicosBanco": ["sus.financiamento_planejamento"],
+      "qtdQuestoes": 2,
+      "intro": "2 questões únicas, as duas em 2025 (G0296, planejamento e orçamento; G0297, Fundo Nacional de Saúde), nenhuma anulada. As duas são V ou F ou CORRETA sobre o planejamento ascendente e o papel do FNS. A base está na Lei 8.080 (art. 36), no Decreto 7.508 e na LC 141/2012.",
+      "pontos": [
+        { "ref": "Lei 8.080, Art. 36 · planejamento ascendente", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 36. O processo de planejamento e orçamento do Sistema Único de Saúde - SUS será ascendente, do nível local até o federal, ouvidos seus órgãos deliberativos, compatibilizando-se as necessidades da política de saúde com a disponibilidade de recursos em planos de saúde dos Municípios, dos Estados, do Distrito Federal e da União.", "texto": "Planejamento ASCENDENTE (do local para o federal), ouvidos os órgãos deliberativos (Conselhos). Foi a resposta certa de G0296 (C). As erradas: Conselho só consultivo (A); recursos livres para ações fora do plano (B); planos “descendentes” (D); plano independente do PPA e da LOA (E)." },
+        { "ref": "Lei 8.080, Art. 36, § 2º · transferência só para ações previstas no plano", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "§ 2º É vedada a transferência de recursos para o financiamento de ações não previstas nos planos de saúde, exceto em situações emergenciais ou de calamidade pública, na área de saúde.", "texto": "É VEDADA, salvo emergência ou calamidade. G0296, alternativa B (“permitida livremente, desde que autorizada pelo gestor local”) era errada." },
+        { "ref": "LC 141/2012, Art. 30, § 1º · planejamento ascendente", "fonte": "lc-141-2012-camara-normaatualizada.html", "trecho": "§ 1º O processo de planejamento e orçamento será ascendente e deverá partir das necessidades de saúde da população em cada região, com base no perfil epidemiológico, demográfico e socioeconômico, para definir as metas anuais de atenção integral à saúde e estimar os respectivos custos.", "texto": "Reforça: ascendente, a partir das necessidades da região, com base no perfil epidemiológico, demográfico e socioeconômico." },
+        { "ref": "LC 141/2012, Art. 30, § 4º · papel do Conselho", "fonte": "lc-141-2012-camara-normaatualizada.html", "trecho": "§ 4º Caberá aos Conselhos de Saúde deliberar sobre as diretrizes para o estabelecimento de prioridades.", "texto": "O Conselho DELIBERA sobre as diretrizes e prioridades (não é só consultivo). Derruba a alternativa A de G0296." },
+        { "ref": "LC 141/2012, Art. 14 · Fundo de Saúde", "fonte": "lc-141-2012-camara-normaatualizada.html", "trecho": "Art. 14. O Fundo de Saúde, instituído por lei e mantido em funcionamento pela administração direta da União, dos Estados, do Distrito Federal e dos Municípios, constituir-se-á em unidade orçamentária e gestora dos recursos destinados a ações e serviços públicos de saúde, ressalvados os recursos repassados diretamente às unidades vinculadas ao Ministério da Saúde.", "texto": "O Fundo de Saúde é unidade orçamentária e gestora dos recursos de saúde em cada esfera." },
+        { "ref": "Lei 8.080, Art. 33, § 1º · Fundo Nacional de Saúde", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "§ 1º Na esfera federal, os recursos financeiros, originários do Orçamento da Seguridade Social, de outros Orçamentos da União, além de outras fontes, serão administrados pelo Ministério da Saúde, através do Fundo Nacional de Saúde.", "texto": "Na esfera federal, o Ministério da Saúde administra os recursos por meio do FNS. G0297 (2025, V ou F; gabarito V, V, F): o FNS atua na execução orçamentária, financeira e contábil e disponibiliza informações à sociedade (V); o financiamento federal tem etapas de planejamento, execução e monitoramento (V); dizer que o FNS apenas transfere recursos, sem orientar estados e municípios, era falso (F). Esses detalhes vêm do enunciado, que cita o FNS como gestor financeiro; não localizei a norma de funcionamento do FNS nas fontes desta apostila: PENDENTE." },
+        { "ref": "Lei 8.142, Art. 3º, § 2º · divisão dos repasses", "fonte": "lei-8142-1990-camara-publicacaooriginal.html", "trecho": "§ 2º Os recursos referidos neste artigo serão destinados, pelo menos setenta por cento, aos Municípios, afetando-se o restante aos Estados.", "texto": "Texto original da Lei 8.142: pelo menos 70% aos Municípios. Cuidado: o texto atualizado da Lei 8.080 mostra que o § 1º do art. 35 foi revogado pela LC 141/2012, e o art. 3º, § 1º, da 8.142 remetia a ele; confira a regra de repasse atual antes de usar este número em prova." },
+        { "ref": "LC 141/2012, Art. 7º · mínimo municipal (conceito)", "conceito": true, "texto": "Pelo texto atualizado da LC 141/2012 (Câmara), os Municípios e o DF aplicam anualmente em ações e serviços públicos de saúde, no mínimo, 15% da arrecadação dos impostos a que se refere o art. 156 e dos recursos dos arts. 158 e 159 (partes) da Constituição; Estados e DF, no mínimo 12% (art. 6º). Não caiu em questão própria nas provas analisadas." }
+      ],
+      "macete": "Planejamento do SUS sobe: do município para a União, ouvido o Conselho (que DELIBERA) e compatível com PPA e LOA. Dinheiro só vai para ação prevista no plano (exceto emergência).",
+      "pegadinhas": [
+        "G0296: Conselho “consultivo”; transferência “livre” para ações fora do plano; planos “descendentes”; plano de saúde “independente” do PPA e da LOA.",
+        "G0297: FNS “limita-se a transferir recursos, sem orientar estados e municípios”."
+      ],
+      "cobra": [
+        "CORRETA sobre planejamento e orçamento, citando Lei 8.080 e LC 141: G0296 (2025).",
+        "V ou F em sequência sobre o FNS: G0297 (2025)."
+      ],
+      "mapa": {
+        "centro": "Planejamento e financiamento",
+        "ramos": [
+          { "t": "Planejamento", "f": ["Ascendente: local ao federal", "Planos de saúde são a base", "Conselho delibera sobre diretrizes"] },
+          { "t": "Recursos", "f": ["Só para ações previstas no plano", "Exceção: emergência e calamidade"] },
+          { "t": "FNS", "f": ["Executa orçamento e finanças", "Informa a sociedade", "Orienta estados e municípios (enunciado)"] },
+          { "t": "Mínimos (LC 141)", "f": ["Municípios: 15%", "Estados e DF: 12%"] }
+        ]
+      }
+    },
+    {
+      "id": "saude-trabalhador",
+      "titulo": "Saúde do trabalhador no SUS",
+      "nivel": 1,
+      "topicosBanco": ["sus.saude_trabalhador"],
+      "qtdQuestoes": 1,
+      "intro": "1 questão única, de 2019 (G0023), nenhuma anulada. A questão copiou a definição de saúde do trabalhador da Lei 8.080 (art. 6º, § 3º) com o formato de afirmativas numeradas (I a IV). Uma delas foi trocada de propósito.",
+      "pontos": [
+        { "ref": "Lei 8.080, Art. 6º, § 3º · definição", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "§ 3º Entende-se por saúde do trabalhador, para fins desta lei, um conjunto de atividades que se destina, através das ações de vigilância epidemiológica e vigilância sanitária, à promoção e proteção da saúde dos trabalhadores, assim como visa à recuperação e reabilitação da saúde dos trabalhadores submetidos aos riscos e agravos advindos das condições de trabalho, abrangendo:", "texto": "Conjunto de atividades por vigilância epidemiológica e sanitária: promoção, proteção, recuperação e reabilitação da saúde de quem sofre riscos do trabalho." },
+        { "ref": "Lei 8.080, Art. 6º, § 3º, inciso I · assistência", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "I - assistência ao trabalhador vítima de acidentes de trabalho ou portador de doença profissional e do trabalho;", "texto": "Faz parte (afirmativa I de G0023, correta)." },
+        { "ref": "Lei 8.080, Art. 6º, § 3º, inciso II · estudos e pesquisas", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "II - participação, no âmbito de competência do Sistema Único de Saúde - SUS, em estudos, pesquisas, avaliação e controle dos riscos e agravos potenciais à saúde existentes no processo de trabalho;", "texto": "É o SUS que PARTICIPA dos estudos, no âmbito da sua competência. A afirmativa II de G0023 dizia “determinação para que o Ministério do Trabalho realize pesquisas e controle”: era a trocada e estava errada." },
+        { "ref": "Lei 8.080, Art. 6º, § 3º, inciso IV · impacto das tecnologias", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "IV - avaliação do impacto que as tecnologias provocam à saúde;", "texto": "Faz parte (afirmativa III de G0023, correta)." },
+        { "ref": "Lei 8.080, Art. 6º, § 3º, inciso VII · lista de doenças do trabalho", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "VII - revisão periódica da listagem oficial de doenças originadas no processo de trabalho, tendo na sua elaboração a colaboração das entidades sindicais; e", "texto": "Faz parte (afirmativa IV de G0023, correta). Gabarito: I, III e IV (D)." }
+      ],
+      "macete": "Saúde do trabalhador no SUS: assistência a acidentados, PARTICIPAÇÃO em estudos (não “determinar” ao Ministério do Trabalho), impacto das tecnologias e revisão da lista de doenças do trabalho com os sindicatos.",
+      "pegadinhas": [
+        "G0023: “determinação para que o Ministério do Trabalho realize pesquisas e controle os riscos”. A lei fala em participação do SUS nos estudos, no âmbito da sua competência."
+      ],
+      "cobra": [
+        "Afirmativas numeradas (I a IV) copiando os incisos da lei, com uma trocada: G0023 (2019)."
+      ],
+      "mapa": {
+        "centro": "Saúde do trabalhador",
+        "ramos": [
+          { "t": "O que é", "f": ["Vigilância epidemiológica e sanitária", "Promoção, proteção, recuperação, reabilitação"] },
+          { "t": "Abrange", "f": ["Assistência a acidentados", "Participação em estudos", "Impacto das tecnologias", "Lista de doenças do trabalho"] }
+        ]
+      }
+    }
+  ]
+}
