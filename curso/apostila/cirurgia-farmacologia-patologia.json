@@ -1,0 +1,378 @@
+{
+  "_comentario": "Apostila 08 (Cirurgia, Anestesia, Farmacologia, Emergencias e Patologia Bucal), banca FURB, Cirurgiao-Dentista de Blumenau. Ordem das licoes = roteiro (curso/roteiro-apostilas.md, Apostila 08): mais questoes unicas, depois mais edicoes, depois mais questoes em 2025. Contagens vem do radar; exemplos, pegadinhas e formatos vem de questoes reais do banco (alvo:true, sem anuladas como resposta certa). Conteudo clinico: explicacao do autor sem livro citado, todos os pontos com conceito:true. Nenhuma dose, concentracao ou valor entra sem aparecer em questao real do banco (grupo G0xxx citado) ou sem marcar PENDENTE.",
+  "id": "cirurgia-farmacologia-patologia",
+  "numero": 8,
+  "arquivoPdf": "apostila-08-cirurgia-farmacologia-patologia.pdf",
+  "titulo": "Cirurgia, Anestesia, Farmacologia, Emergências e Patologia Bucal",
+  "subtitulo": "Cirurgião-Dentista · Prefeitura de Blumenau (SC) · banca FURB · com ênfase no que mais cai",
+  "fontes": [],
+  "rotuloPontos": "O conceito, passo a passo (com o que a banca já perguntou)",
+  "limiteFonte": "Conteúdo clínico escrito como explicação do autor, sem trecho de lei. PENDENTE: livro-texto ou diretriz de referência a definir (o dono ainda não escolheu o que citar). Pistas de bibliografia que a própria banca citou em enunciados: Reher, Peter. Anatomia Aplicada à Odontologia, 3ª ed., GEN, 2020, cap. 25 (anatomia aplicada à anestesia local; questões G0228 e G0236). Isso mostra de onde a banca tirou aquelas questões, não prova que a banca siga só esse livro. Os poucos números que aparecem vêm do enunciado ou das alternativas de uma questão real (o grupo G0xxx vem citado); só os que trazem fonte citada no texto foram conferidos (profilaxia de endocardite, AHA 2021; pKa da mepivacaína e da bupivacaína, Becker e Reed 2012; limites de pressão, diretrizes brasileiras de hipertensão 2020 e 2025; incubação do sarampo, Ministério da Saúde 2024; porcentagem de carcinoma epidermoide e faixa de idade do câncer de boca, INCA; 5 minutos de crise, ILAE 2015; clorexidina e alveolite, Cochrane 2022; definição de leucoplasia de 2007, por fonte secundária, isto é, confirmada em 3 revisões abertas e não no artigo original). PENDENTE: nenhuma outra dose, concentração, esquema de antibiótico, tempo ou valor numérico desta apostila foi conferido em livro ou diretriz; para estudar, confirme-os em fonte clínica. Diretriz usada para endocardite: American Heart Association (AHA), declaração científica “Prevention of Viridans Group Streptococcal Infective Endocarditis”, Circulation 2021;143:e963-e978, lida em cópia do texto. Ressalva das fontes: a AHA 2021 e outras (consenso de 2017, Cochrane, ILAE) foram lidas em cópias hospedadas por terceiros ou só no resumo, não no site da editora. Em particular: da ILAE 2015 e da Cochrane 2022 só o resumo foi lido; a AHA 2021 foi lida em cópia com rodapé da editora, renderizada em imagem (o site da editora não abriu); as páginas do PMC foram baixadas por curl; da diretriz brasileira de valvopatias nada foi lido (PENDENTE). PENDENTE: o texto de cada questão foi transcrito das provas e ainda não foi conferido contra o PDF original; algumas questões dependem de figura que não está no banco. O programa desta apostila vem do edital PSPS 003/2025 de Blumenau (partes próprias do Clínico Geral, p. 49, e do Buco-Maxilo-Facial, p. 48-49, conforme registrado em curso/edital.md).",
+  "comoUsar": [
+    "Esta apostila reúne as questões de Cirurgia, Anestesia local, Farmacologia, Emergências médicas, Patologia bucal e Anatomia de cabeça e pescoço das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 63 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025), das quais 1 foi anulada (G0360) e fica de fora do treino. Sobram 62 questões usáveis. Na prova do cargo de Clínico Geral, só 20 dessas 63 caíram; boa parte das de Cirurgia é própria do cargo de Buco-Maxilo-Facial.",
+    "A amostra é pequena: 5 editais de um só município, de 2019 a 2025. A frequência indica tendência, não garantia. Um assunto que não apareceu (por exemplo, tumores benignos e malignos, que estão no edital) pode cair, e um que caiu muito pode não cair de novo.",
+    "Siglas das edições: 2019 = PSPS 002/2019; 2021P = PSPS 002/2021; 2021C = Concurso Público 002/2021 (50 questões); 2023 = PSPS 003/2023; 2025 = PSPS 003/2025. PSPS quer dizer Processo Seletivo Público Simplificado. CG = Clínico Geral.",
+    "Ordem das lições: do assunto com mais questões únicas para o com menos. Em caso de empate, vale quem apareceu em mais edições; depois, quem teve mais questões em 2025; se ainda empatar, a apostila avisa EMPATE e usa a ordem alfabética do código só para ter uma sequência. A etiqueta de incidência segue esta régua: Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0.",
+    "CUIDADO COM A PARTE CLÍNICA. Esta apostila ensina como a banca cobra; não é protocolo de atendimento. Doses, esquemas de antibiótico, tempos e valores de pressão que aparecem aqui vêm do gabarito de uma questão da prova; os que já foram conferidos em diretriz trazem a fonte, os outros seguem marcados PENDENTE. Nunca use esta apostila para decidir conduta com paciente.",
+    "Como estudar cada lição: leia os pontos, veja as pegadinhas (elas saem das alternativas erradas das provas reais), leia como a banca cobra e só então faça as questões, marcando antes de olhar a resposta em verde. O código G0xxx que aparece nas lições identifica a questão no banco do projeto. Quando o gabarito oficial parece estranho, a lição avisa como dúvida de gabarito: na prova, vale o gabarito oficial.",
+    "Atenção ao formato: as provas da FURB trazem muitas questões com afirmativas I a IV e a pergunta “é correto o que se afirma em”, questões de V ou F em sequência, “marque a INCORRETA” e “EXCETO”. Teste cada afirmativa separadamente e leia a pergunta duas vezes antes de marcar. Em várias questões desta disciplina todas as afirmativas estavam corretas.",
+    "Este material é independente e não tem vínculo com a FURB (Fundação Universidade Regional de Blumenau) nem com a Prefeitura de Blumenau. Confira sempre o edital vigente."
+  ],
+  "ranking": [
+    { "rotulo": "Cirurgia oral e bucomaxilofacial (28 questões únicas; 4 edições; só 4 em prova de CG)", "nivel": 3 },
+    { "rotulo": "Patologia e estomatologia (12 questões únicas; 4 edições; 7 em prova de CG)", "nivel": 3 },
+    { "rotulo": "Anestesia local (9 questões únicas; 4 edições; 3 em prova de CG)", "nivel": 3 },
+    { "rotulo": "Farmacologia e terapêutica (6 questões únicas, 1 anulada; 4 edições; 4 em prova de CG)", "nivel": 3 },
+    { "rotulo": "Anatomia de cabeça e pescoço (5 questões únicas; 3 edições; 2 em prova de CG)", "nivel": 3 },
+    { "rotulo": "Emergências médicas no consultório (3 questões únicas; só em 2019)", "nivel": 2 },
+    { "rotulo": "Item do edital sem questão na amostra: tumores benignos e malignos da cavidade bucal", "nivel": 0 }
+  ],
+  "licoes": [
+    {
+      "id": "cirurgia",
+      "titulo": "Cirurgia oral e bucomaxilofacial",
+      "nivel": 3,
+      "topicosBanco": ["cir"],
+      "qtdQuestoes": 27,
+      "intro": "É o assunto desta apostila que mais caiu: 28 questões únicas em 4 edições (2019: 5; 2021P: 8; 2023: 12; 2025: 3). Nenhuma foi anulada, então as 28 estão no treino. Atenção ao peso para o Clínico Geral: só 4 das 28 caíram em prova de CG, porque a maioria é própria do Buco-Maxilo-Facial. Como é um código só no banco, a lição está organizada em subassuntos, na ordem do que mais caiu: fraturas faciais (7), exodontia (5), técnica cirúrgica (4), terceiros molares e acessos (4), pré e pós-operatório (3) e cinco temas de 1 questão cada (EMPATE). Os pontos explicam o conceito de forma geral e cada um cita o grupo da questão real que o cobrou. PENDENTE: livro-texto de cirurgia a definir.",
+      "pontos": [
+        { "ref": "Fraturas faciais · fraturas de mandíbula: como classificar", "conceito": true, "texto": "Em G0128 a banca citou um sistema que distingue as fraturas mandibulares em galho verde, simples, cominutiva e composta, de acordo com a extensão da lesão. Em G0040 a descrição foi “vários traços de fratura em uma mesma região anatômica”, e o nome oficial é fratura cominuta (letra D). As outras alternativas eram termos que a banca usa para confundir: fechada, composta, patológica e com deslocamento. Atenção: G0128 pergunta o tipo mostrado “nas figuras B e D” e a figura não está no banco do projeto. O gabarito oficial é “Simples e Composta”, mas não dá para treinar essa questão sem a imagem." },
+        { "ref": "Fraturas faciais · terço médio da face, pilares e projeção facial", "conceito": true, "texto": "Em G0125 (marque a INCORRETA) a banca considerou corretas estas ideias: existem três pilares bilaterais que formam o suporte vertical primário da face (nasomaxilar, zigomático e pterigomaxilar); certas estruturas ósseas dão o suporte primário nos sentidos vertical e anteroposterior; a oclusão original deve ser restaurada e a infecção na fratura erradicada ou prevenida; a projeção facial anteroposterior é sustentada pela barra frontal, pelo arco e complexo zigomático, pelos alvéolos maxilares e palato e pelo segmento basal da mandíbula. A alternativa marcada como INCORRETA foi a que dizia que o reparo ósseo deve sempre suceder o reparo do tecido mole e que, independentemente do tipo de fratura, o primeiro passo é a redução óssea e só depois o posicionamento dos dentes na oclusão. Não decore essa afirmação: ela foi o item errado. PENDENTE: o item mistura duas afirmações; conferir no livro de cirurgia qual está invertida (provavelmente a ordem: em geral, primeiro se restabelece a oclusão e depois se reduzem as fraturas)." },
+        { "ref": "Fraturas faciais · osteossíntese direta × suspensão esquelética", "conceito": true, "texto": "Em G0130 (marque a INCORRETA) o objetivo é estabilizar a fratura depois da fixação intermaxilar (FIM). Osteossíntese direta, com fio de aço ou miniplacas (fixação rígida), estabiliza diretamente cada fratura. Suspensão esquelética com fio de aço usa pontos como a abertura piriforme, o rebordo infraorbitário, o arco zigomático ou o osso frontal. Considerado correto pela banca: o fio de aço tem rigidez limitada, pode não resistir às forças dos músculos durante a cicatrização e dificulta reconstruir contornos nas áreas côncavas e convexas; a fixação rígida com placas eliminou a necessidade dos fios de suspensão. O item INCORRETO dizia que a suspensão esquelética “jamais” seria usada junto com osteossíntese. Palavras absolutas como “jamais” e “sempre” são o sinal clássico de afirmativa errada." },
+        { "ref": "Fraturas faciais · odontossíntese × osteossíntese", "conceito": true, "texto": "Em G0208 o paciente era dentado, superior e inferior, com fratura no corpo da mandíbula. A resposta oficial foi odontossíntese a fio metálico (letra B), isto é, a fixação que usa os dentes como apoio para o fio. Era pegadinha trocar por osteossíntese a fio metálico (fixação feita diretamente no osso). Também estavam entre as alternativas erradas o uso de fio de Kirschner, o uso de fio de Steinmann e apenas anti-inflamatórios. Regra de estudo: nesta questão, para o paciente dentado com fratura de corpo, a banca marcou odontossíntese. Não generalize: o tratamento depende do tipo de fratura (PENDENTE: livro de cirurgia)." },
+        { "ref": "Fraturas faciais · fratura do malar e nervo infraorbitário", "conceito": true, "texto": "Em G0209 o paciente fez cirurgia de redução cruenta do malar e ficou com parestesia do lábio superior, da asa do nariz e da pálpebra inferior. O nervo lesado, segundo o gabarito, é o infraorbitário (letra A). As outras alternativas eram zigomático, facial, alveolar superior anterior e bucal. Dica: parestesia em lábio superior, asa do nariz e pálpebra inferior forma o “mapa” da região do infraorbitário." },
+        { "ref": "Fraturas faciais · fraturas nasais: redução fechada", "conceito": true, "texto": "Em G0310 (2025) as três afirmativas estavam corretas, e a resposta foi “I, II e III”. As técnicas descritas foram: manipulação manual (a pressão dos dedos tem direção oposta ao vetor do ferimento e ao deslocamento nasal), elevação do osso nasal com elevador de Boer ou instrumento rombo passado pelo lado interno da narina e redução com pinças nasais (as pinças de Ash, com uma ponta reta introduzida no nariz até o sítio da fratura). Em 2025 a banca gosta de questões em que todas as afirmativas são verdadeiras: não parta do princípio de que existe uma errada." },
+        { "ref": "Exodontia · indicações e contraindicações", "conceito": true, "texto": "Em G0049 (2019) a pergunta falava em “contraindicações”, mas o gabarito oficial foi a alternativa E (“dentes associados com lesões patológicas que dificultam o tratamento por estarem relacionados a essas patologias devem ser removidos”). Esse enunciado é estranho e fica como dúvida de gabarito: na prova, siga o gabarito oficial. O que dá para tirar dela: as alternativas A a D traziam dentes que podem ser tratados (mal posicionado com possibilidade de tratamento ortodôntico, necrose pulpar com periodonto de inserção intacto, grande destruição coronária por cárie, pouca mobilidade com possibilidade de tratamento conservador) e diziam que “devem ser removidos”: eram afirmativas erradas. Em G0214 (2023) a contraindicação LOCAL foi a estomatite infecciosa (letra E). Discrasias sanguíneas e cardiopatias estavam entre as alternativas erradas porque são condições sistêmicas, e a pergunta pedia a local." },
+        { "ref": "Exodontia · alveolectomia e comunicação bucossinusal", "conceito": true, "texto": "G0210: a alveolectomia é uma cirurgia do processo alveolar cujo procedimento é de excisão (letra D); as alternativas erradas eram debridamento, plastia, fenestração e dissecação. G0215: a manobra usada para saber se houve comunicação entre a cavidade cirúrgica e o seio maxilar, em intervenção periapical de pré-molares superiores, é a manobra de Valsalva (a prova escreveu “Valsava”). Os nomes Buonocore, Weine, Abou-Rass e Frank, das outras alternativas, são de outras áreas da Odontologia e entram como distratores." },
+        { "ref": "Exodontia · prevenção e tratamento das complicações", "conceito": true, "texto": "Em G0308 (2025) a resposta foi “I e II, apenas”. A banca considerou verdadeiro que tecido de granulação residual é razão de pequenos sangramentos pós-operatórios e que curetagem e irrigação da cavidade eliminam essa complicação; e que, ao concluir a exodontia, é preciso limpar detritos, pedaços soltos ou afiados de osso, tecido de granulação ou outra patologia. A afirmativa III, que dizia que o enxágue com clorexidina aumenta a incidência de alveolite seca e por isso deve ser evitado, foi considerada falsa. A revisão Cochrane (Daly e cols., 2022) confirma o gabarito: enxágues de clorexidina (0,12% e 0,2%) antes e 24 horas depois da extração REDUZIRAM bastante o risco de alveolite seca, com certeza moderada. Esquema de uso não é ensinado aqui. Para estudo; não use para tratar paciente." },
+        { "ref": "Princípios de técnica cirúrgica · diérese e divulsão", "conceito": true, "texto": "Diérese é o tempo cirúrgico de separar os tecidos. Em G0038, a diérese que afasta os tecidos sem seccioná-los, com tesoura ou pinça romba, é a divulsão (letra C). As alternativas erradas eram descolamento, punção, curetagem e dilatação. Para completar a trinca que o edital cita (“diérese, hemostasia, síntese”): hemostasia é controlar o sangramento e síntese é aproximar os tecidos separados." },
+        { "ref": "Princípios de técnica cirúrgica · síntese e sutura", "conceito": true, "texto": "Em G0033 a banca definiu síntese como o conjunto de manobras para aproximar os tecidos que foram separados, e sutura como o recurso usado em tecidos moles. A afirmativa correta (letra C): as extremidades do fio devem ser puxadas juntas e amarradas o suficiente para aproximar as bordas sem comprometer a vascularização. Estavam erradas, entre outras: “quanto mais pontos melhor”, “fios não agulhados são menos traumáticos”, “iniciar sempre pela superfície fixa” e “o máximo de força possível”. Regra: sutura firme o bastante para aproximar, nunca a ponto de isquemiar a borda." },
+        { "ref": "Princípios de técnica cirúrgica · reparação tecidual", "conceito": true, "texto": "G0032 cobrou os tipos de célula quanto à capacidade de se dividir. Conceito geral de patologia: células lábeis estão em divisão contínua durante a vida; células estáveis (quiescentes) têm baixo nível de replicação mas podem se dividir em resposta a estímulos; células permanentes saíram do ciclo e não se dividem na vida pós-natal. As alternativas erradas da prova trocaram essas definições entre si (por exemplo, chamar de “lábeis” as que saíram do ciclo, ou de “quiescentes” as que estão em divisão contínua) e também diziam que células indiferenciadas têm função e morfologia específicas. A alternativa correta falava das células endoteliais, achatadas, que revestem o interior dos vasos. PENDENTE: livro de patologia ou cirurgia a citar." },
+        { "ref": "Princípios de técnica cirúrgica · hemorragia", "conceito": true, "texto": "Em G0206 (2023) o controle da hemorragia dentoalveolar, primária ou secundária, é sutura e tamponamento (letra C). As alternativas erradas eram medidas fracas ou inadequadas: lavar a boca com água quente, medicação sistêmica, saco de gelo e bochechos. O manejo do paciente com sangramento não é ensinado aqui." },
+        { "ref": "Terceiros molares e acessos · pericoronarite", "conceito": true, "texto": "Em G0216 a pergunta era qual condição, que fica ao redor do terceiro molar impactado, é indicação de remoção cirúrgica em situação mais grave. A resposta oficial: pericoronarite (letra D). Eram distratores: necrose asséptica, abscesso agudo, pericementite e osteomielite. Pista de leitura: “perifericamente ao terceiro molar” aponta para a coroa (pericoronário)." },
+        { "ref": "Terceiros molares e acessos · acesso ao terceiro molar superior e retalhos", "conceito": true, "texto": "G0225: no acesso ao terceiro molar superior com incisão de alívio, o descolamento do retalho não deve se estender superiormente em demasia, levando em conta a entrada dos vasos e nervos alveolares superiores posteriores na face posterior da maxila (letra C). Estavam erradas as alternativas que misturavam estruturas da mandíbula (papila distal do terceiro molar inferior, ramo da mandíbula) numa técnica da maxila. G0233: os acessos com descolamento papilar são muito usados (exodontias múltiplas e de restos radiculares, cirurgias periodontais e periapicais, fraturas dentoalveolares, implantes, patologias ósseas) e têm indicação ampla (letra A). Eram erradas as que diziam “obrigatoriamente apenas uma” incisão de alívio e as que apresentavam como desvantagem a “pequena exposição” e o “péssimo resultado estético”." },
+        { "ref": "Terceiros molares e acessos · acesso intrabucal ao mento", "conceito": true, "texto": "G0226: o acesso intrabucal para o mento pode ser usado no tratamento de fraturas de sínfise e parassínfise mandibulares, preferencialmente não infectadas, na osteotomia basilar do mento e em patologias ósseas da região (letra A). Estavam erradas, entre outras: “promove cicatrizes na face” (a via intrabucal evita cicatriz facial), “permite pequena e limitada exposição” e “inexistência do nervo mentual” (o nervo mentual existe e pode ser lesado, alterando a sensibilidade dos tecidos moles da região)." },
+        { "ref": "Pré e pós-operatório · instruções, equipe e atelectasia", "conceito": true, "texto": "G0120 (EXCETO): são componentes das instruções pós-operatórias dieta, medicamentos, cuidados com feridas, condição, atividade e posicionamento, alergias e instruções para monitorar sinais vitais, instruções especiais (gelo, proteção dos lábios, higiene). O item de fora, marcado como resposta, foi “descrição de todos os tratamentos prestados”. G0122: todas as quatro afirmativas sobre o preparo da equipe cirúrgica estavam corretas (resposta “I, II, III e IV”): trocar de roupa antes de entrar no centro cirúrgico, cobrir cabelo e barba, retirar joias, usar máscara que cubra nariz e boca, checar registros e radiografias antes da escovação, fazer a escovação cirúrgica para diminuir a chance de contaminar a ferida, luvas cobrindo mãos e pulsos e sobrepondo a braçadeira do avental. G0127: a atelectasia após cirurgia dentoalveolar sob anestesia geral pode resultar de inatividade, de analgésicos narcóticos que deprimem o reflexo de suspiro e de intubação seletiva (resposta “I, II e III”)." },
+        { "ref": "Outros temas (EMPATE, 1 questão cada) · cistos e enucleação", "conceito": true, "texto": "G0207: a técnica cirúrgica de remoção total de uma lesão cística, com a cápsula e o conteúdo, é a enucleação (letra B). Eram distratores: aspiração, cauterização, marsupialização e curetagem com sutura. A marsupialização, ao contrário, mantém uma abertura para a cavidade bucal em vez de remover tudo de uma vez." },
+        { "ref": "Outros temas (EMPATE, 1 questão cada) · ATM: discectomia", "conceito": true, "texto": "G0131 (V ou F, todas verdadeiras): na discectomia da ATM, os restos do disco danificado são removidos; os resultados clínicos variam muito; enxertos autógenos podem usar derme (de abdome ou coxa), cartilagem auricular ou fáscia temporal; uma alternativa é girar um retalho de músculo temporal para a articulação, com suprimento de sangue mantido pelo pedículo. A resposta foi “V, V, V, V, V”. Em questão longa assim, não procure uma falsa à força." },
+        { "ref": "Outros temas (EMPATE, 1 questão cada) · neuralgia do trigêmeo", "conceito": true, "texto": "G0124 (EXCETO): são características citadas pela banca da neuralgia do trigêmeo: anestesia local da zona de gatilho suprime temporariamente a dor; dermátomos V2 e V3 mais afetados; frequentemente não há dor entre os ataques; localização unilateral, mais à direita. O item que NÃO é característica, e foi a resposta, é “causa dentoalveolar encontrada”: na neuralgia do trigêmeo típica não se acha causa dentária. Os percentuais que aparecem na alternativa E vêm do enunciado da prova; PENDENTE conferi-los em fonte clínica." },
+        { "ref": "Outros temas (EMPATE, 1 questão cada) · infecções fúngicas maxilofaciais", "conceito": true, "texto": "G0309 (2025, V ou F): candidose pseudomembranosa, com placas esbranquiçadas cremosas removíveis por raspagem, deixando fundo eritematoso: verdadeira. Candidose eritematosa, mancha plana vermelha, comum no palato e no dorso da língua, com despapilação, associada ao uso de próteses totais: verdadeira. Candidose hiperplásica descrita como “facilmente removida por raspagem”: falsa na prova. Resposta oficial “V, V, F”. Veja também a Lição de Patologia." },
+        { "ref": "Outros temas (EMPATE, 1 questão cada) · fratura do terço apical", "conceito": true, "texto": "G0213: paciente chega com fratura do terço apical do elemento 21 (incisivo central superior esquerdo), com vitalidade. A conduta correta da prova foi a contenção (letra D). Eram erradas: tração ortodôntica, tratamento endodôntico, bandagem de Barton e exodontia. Lembre que o dente tem vitalidade: não houve indicação de endodontia nem de extração." }
+      ],
+      "tabela": {
+        "titulo": "Termos de cirurgia que a banca já perguntou",
+        "cab": ["Termo", "O que a banca definiu", "Questão"],
+        "linhas": [
+          ["Divulsão", "Afastar tecidos sem seccioná-los, com tesoura ou pinça romba", "G0038"],
+          ["Síntese", "Manobras para aproximar os tecidos que foram separados (sutura em tecido mole)", "G0033"],
+          ["Enucleação", "Remoção total de lesão cística, em cápsula e com conteúdo", "G0207"],
+          ["Alveolectomia", "Cirurgia do processo alveolar; o procedimento é excisão", "G0210"],
+          ["Odontossíntese", "Fixação a fio metálico apoiada nos dentes; foi a resposta da G0208 (paciente dentado, fratura de corpo mandibular)", "G0208"],
+          ["Manobra de Valsalva", "Testa comunicação da cavidade cirúrgica com o seio maxilar", "G0215"],
+          ["Fratura cominuta", "Vários traços de fratura numa região anatômica", "G0040"],
+          ["Pericoronarite", "Condição ao redor do terceiro molar impactado, com indicação de remoção em quadro mais grave", "G0216"],
+          ["Nervo infraorbitário", "Parestesia de lábio superior, asa do nariz e pálpebra inferior após redução do malar", "G0209"]
+        ]
+      },
+      "macete": "Três perguntas antes de marcar: (1) a pergunta pede a certa, a INCORRETA ou o EXCETO? (2) tem palavra absoluta (“jamais”, “sempre”, “obrigatoriamente”)? Quase sempre é a errada. (3) o enunciado fala de maxila ou mandíbula? A banca mistura estruturas dos dois ossos para enganar. Em questão de V ou F longa e em afirmativas I a III, teste uma por uma; em 2025 várias tinham todas verdadeiras.",
+      "pegadinhas": [
+        "G0040: trocar fratura cominuta por fechada, composta, patológica ou “com deslocamento”. Cominuta é a de vários traços na mesma região.",
+        "G0208: marcar osteossíntese a fio metálico, fio de Kirschner ou fio de Steinmann em vez de odontossíntese para o paciente dentado.",
+        "G0130 e G0125 (marque a INCORRETA): a errada vinha com palavra absoluta (“jamais”) ou invertia a ordem do tratamento; as demais eram afirmativas verdadeiras longas.",
+        "G0214: marcar discrasias sanguíneas, cardiopatias ou dentes desvitalizados como contraindicação LOCAL. A prova pedia a local (estomatite infecciosa); as outras são condições sistêmicas ou não contraindicam.",
+        "G0215: trocar a manobra de Valsalva por nomes de técnicas de outras áreas (Buonocore, Weine, Abou-Rass, Frank).",
+        "G0225 e G0226: alternativas que misturam estruturas da mandíbula (ramo, papila distal do terceiro molar inferior) com o acesso do terceiro molar superior, e alternativas que dizem que o acesso intrabucal deixa cicatriz facial.",
+        "G0308: dar como verdadeiro que clorexidina aumenta alveolite seca e deve ser evitada; a banca marcou essa afirmativa como falsa.",
+        "G0206: escolher gelo, água quente ou bochechos para controlar hemorragia dentoalveolar; a banca pediu sutura e tamponamento.",
+        "G0120 (EXCETO): o item de fora das instruções pós-operatórias era “descrição de todos os tratamentos prestados”.",
+        "G0213: indicar endodontia ou exodontia para fratura do terço apical com o dente vital; a resposta foi contenção."
+      ],
+      "cobra": [
+        "Pergunta direta de uma resposta só, com nome de técnica, nervo ou manobra: G0038 (divulsão), G0040 (fratura cominuta), G0207 (enucleação), G0209 (nervo infraorbitário), G0210 (alveolectomia), G0215 (Valsalva), G0216 (pericoronarite).",
+        "Qual a conduta ou o tratamento indicado em um caso clínico curto: G0208 (fratura de corpo mandibular em paciente dentado), G0213 (fratura apical do 21 com vitalidade), G0206 (hemorragia).",
+        "“Marque a INCORRETA” com enunciado longo copiado de livro de cirurgia: G0125 e G0130.",
+        "“EXCETO”: G0120 (instruções pós-operatórias) e G0124 (neuralgia do trigêmeo).",
+        "Afirmativas I a III ou I a IV, pedindo “é correto o que se afirma em” ou “está(ão) correta(s)”: G0122, G0127, G0308, G0310.",
+        "Verdadeiro ou falso em sequência: G0131 (todas V) e G0309 (V, V, F).",
+        "Alternativa verdadeira entre cinco longas sobre acessos cirúrgicos: G0225, G0226 e G0233.",
+        "Definição de células, síntese e sutura em texto de livro: G0032 e G0033."
+      ],
+      "mapa": {
+        "centro": "Cirurgia oral",
+        "ramos": [
+          { "t": "Fraturas faciais (7)", "f": ["Mandíbula: cominuta, simples, composta", "Odontossíntese × osteossíntese", "Terço médio e três pilares", "Malar: nervo infraorbitário", "Nariz: Boer e pinça de Ash"] },
+          { "t": "Exodontia (5)", "f": ["Contraindicação local: estomatite infecciosa", "Alveolectomia = excisão", "Valsalva: seio maxilar", "Complicações: limpar a cavidade"] },
+          { "t": "Técnica (4)", "f": ["Diérese: divulsão", "Síntese: sutura sem isquemiar", "Reparação: tipos de célula", "Hemorragia: sutura e tamponamento"] },
+          { "t": "Terceiros molares e acessos (4)", "f": ["Pericoronarite", "Retalho: vasos alveolares superiores posteriores", "Descolamento papilar", "Acesso intrabucal ao mento"] },
+          { "t": "Pré e pós-operatório (3)", "f": ["Instruções pós-operatórias", "Preparo da equipe", "Atelectasia"] },
+          { "t": "1 questão cada", "f": ["Enucleação de cisto", "Discectomia da ATM", "Neuralgia do trigêmeo", "Candidose", "Fratura apical: contenção"] }
+        ]
+      }
+    },
+    {
+      "id": "patologia",
+      "titulo": "Patologia e estomatologia",
+      "nivel": 3,
+      "topicosBanco": ["pato"],
+      "qtdQuestoes": 12,
+      "intro": "12 questões únicas em 4 edições (2019: 5; 2021P: 4; 2023: 1; 2025: 2), nenhuma anulada. É o assunto desta apostila mais importante para o Clínico Geral: 7 das 12 caíram em prova de CG. Metade são infecções virais de infância com manifestação oral (varicela, sarampo, herpes-zóster, herpes simples e gengivoestomatite herpética, caxumba) e a outra metade se divide em temas de 1 questão cada (EMPATE): escarlatina, candidíase, tipos de infecção, mucocele e rânula, leucoplasia e fibromatose gengival. O edital também pede tumores benignos e malignos da cavidade bucal, lesões císticas e patologia das glândulas salivares; tumores não tiveram nenhuma questão na amostra. PENDENTE: livro de patologia bucal a definir.",
+      "pontos": [
+        { "ref": "Infecções virais · sarampo", "conceito": true, "texto": "G0067 (2019): doença causada por paramixovírus de RNA, adquirida por perdigotos que entram pelo trato respiratório, com período de incubação de 8 a 12 dias (número do enunciado; o Ministério da Saúde dá de 7 a 21 dias), na pele e na boca de crianças: sarampo (letra A). Os distratores foram varicela, mononucleose infecciosa, caxumba e escarlatina. Note que o paramixovírus de RNA também aparece como alternativa errada na questão da varicela (G0053): são doenças diferentes. Fonte oficial: Guia de Vigilância em Saúde (Ministério da Saúde, 2024): o agente é um “RNA vírus pertencente ao gênero Morbillivirus, família Paramyxoviridae”; incubação de 7 a 21 dias, da exposição ao exantema; na boca, as manchas de Koplik (pontos brancos na mucosa bucal, na altura do terceiro molar) aparecem antes do exantema. Aviso: a prova deu 8 a 12 dias; na prova, o gabarito vale. Cuidado: a caxumba, que era distrator, também é um paramixovírus (mesmo Guia); o que decide é a lesão na pele e na boca de criança." },
+        { "ref": "Infecções virais · varicela e herpes-zóster", "conceito": true, "texto": "G0053 (2019): varicela é doença eruptiva benigna, altamente contagiosa, comum em crianças. A afirmativa correta foi que febre e dor de cabeça prodrômicas anunciam a instalação da doença. Estavam erradas: lesões de boca só na língua, lesões só no pescoço, incubação de 2 a 6 dias e causa por paramixovírus de RNA. G0133 (2021P): na herpes-zóster (vesículas ou bolhas em pele e mucosa oral, em paciente com baixa resposta imunológica ou leucemia) o microrganismo relacionado é o da varicela (letra B; o agente é o vírus da varicela-zóster). Candida, Streptococcus, HPV e VHS (vírus do herpes simples) foram distratores. Varicela e zóster: mesmo vírus." },
+        { "ref": "Infecções virais · herpes simples e gengivoestomatite herpética", "conceito": true, "texto": "G0159 (2021P): criança com prurido, ardor e dormência no lábio, seguidos de vesículas que se romperam, hipótese de lesão virótica: o diagnóstico foi herpes simples e a terapia foi medicamentosa tópica ou sistêmica com aciclovir (letra E). Eram erradas as alternativas que propunham candidíase com corticoide, queilite angular, GEHA (gengivoestomatite herpética aguda) com corticoide e antibiótico, e herpangina com nistatina. G0314 (2025): na gengivoestomatite herpética aguda a banca considerou corretas as afirmativas I (inflamação gengival com edema, eritema e dor antes das vesículas, que começam na gengiva e se estendem para língua, palato, mucosa jugal e orofaringe) e II (outras mucosas, como a nasal e a conjuntival, podem ser comprometidas e as lesões podem se infectar secundariamente). Eram falsas a III (que a chamava de “terciária” e dizia que é causada pela bactéria herpes hominis: herpes é infecção viral) e a IV (que dava a regressão em “7 a 14 semanas”). Tempo de evolução: PENDENTE de fonte; conduta não é ensinada aqui." },
+        { "ref": "Infecções virais · caxumba (parotidite epidêmica)", "conceito": true, "texto": "G0249 (2023): infecção viral comum na infância, de transmissão respiratória, que ataca preferencialmente a glândula parótida: parotidite epidêmica, a caxumba (letra D). A alternativa “parotidite supurativa aguda”, que é bacteriana, era o distrator. Dúvida de gabarito: o enunciado cita “supuração drenando pelo ducto”, característica mais ligada à forma supurativa; na prova, o gabarito oficial vale e a pista decisiva é “infecção viral muito comum na infância” (o Guia de Vigilância em Saúde do Ministério da Saúde, 2024, descreve a caxumba como doença viral com febre, dor e aumento das glândulas salivares, com predileção pelas parótidas, e diz que ela é a única causa conhecida de parotidite epidêmica; o Guia não fala em pus no ducto. Que “pus no ducto” aponta para a forma bacteriana continua PENDENTE de fonte forte)." },
+        { "ref": "Outras infecções · escarlatina", "conceito": true, "texto": "G0044 (2019): criança de 2 anos com lesões na pele e na boca causadas por estreptococos beta-hemolíticos do grupo A, que produzem toxina eritrogênica, com febre, calafrios, dor de cabeça, mal-estar, náusea, vômito, faringite e linfadenopatia submandibular: escarlatina (letra D). Distratores: actinomicose, tuberculose, sífilis e sarampo. Pista: toxina eritrogênica e estreptococo do grupo A." },
+        { "ref": "Outras infecções · candidíase", "conceito": true, "texto": "G0076 (2019): a candidíase é infecção oportunista comum em crianças infectadas pelo HIV. Corretas segundo a banca: o agente mais frequente é a Candida albicans; as lesões podem ser localizadas ou disseminadas; após raspagem as lesões geralmente saem, deixando superfície vermelha (resposta “I, IV e V”). Erradas: que se localiza somente na mucosa jugal e lábios, e que o diagnóstico diferencial é feito somente com o sarampo. A palavra “somente” denunciou as duas erradas. Em G0309 (2025, Lição de Cirurgia) a candidose pseudomembranosa e a eritematosa foram verdadeiras e a hiperplásica descrita como “facilmente removida por raspagem” foi falsa." },
+        { "ref": "Outras infecções · tipos de infecção (associe as colunas)", "conceito": true, "texto": "G0184 (2021P) pediu associar tipos de infecção à descrição. Pela resposta oficial: infecção aguda é a de sintomas graves, que aparecem logo após a infecção inicial e duram pouco; infecção crônica é a em que o microrganismo patógeno fica presente por longo período, às vezes a vida toda; infecção latente é a persistente em que os sintomas “vêm e vão”; infecção oportunista é a causada por microrganismos normalmente não patogênicos em indivíduos de imunidade diminuída. Sequência da resposta: 1-b, 2-d, 3-a, 4-c. Dúvida de gabarito possível: a descrição de “vêm e vão” também lembra infecção recorrente; para a prova, decore a associação oficial." },
+        { "ref": "Lesões das glândulas salivares · mucocele e rânula", "conceito": true, "texto": "G0045 (2019): lesão comum da mucosa bucal causada pela ruptura de um ducto de glândula salivar, com derramamento de mucina para os tecidos moles ao redor; quando localizada no soalho da boca, chama-se rânula (letra D). Mucocele é o nome geral da lesão em outras localizações; cisto do ducto salivar, sialolitíase e sialoadenite eram distratores. A palavra “soalho” é a pista." },
+        { "ref": "Lesões cancerizáveis · leucoplasia", "conceito": true, "texto": "G0135 (2021P): lesão potencialmente cancerizável definida pela OMS (Organização Mundial da Saúde) como “placa branca na mucosa bucal que não pode ser removida por raspagem e não pode ser classificada como nenhuma outra doença”: leucoplasia (letra C). Candidíase foi distrator justamente porque na candidíase pseudomembranosa a placa sai à raspagem. Também apareceram quelite actínica, hiperqueratose e penfigoide. Diagnóstico por exclusão: leucoplasia é definida pelo que não é. É a definição clássica, usada pela banca; Em 2005 (publicado em 2007), o grupo de trabalho do Centro Colaborador da OMS para Câncer Bucal redefiniu a leucoplasia como “placa branca de risco questionável, excluídas (outras) doenças ou distúrbios conhecidos que não trazem risco aumentado de câncer” (Warnakulasuriya, Johnson e van der Waal, 2007). Houve nova revisão em 2020 (publicada em Oral Diseases, 2021); a redação exata dessa versão está PENDENTE de leitura no original. A ideia não muda: diagnóstico por exclusão." },
+        { "ref": "Lesões gengivais · fibromatose gengival", "conceito": true, "texto": "G0315 (2025): fibromatoses gengivais são aumentos do tecido gengival por proliferação de fibroblastos, de causas hereditárias, químicas e irritantes crônicos. Todas as três afirmativas estavam corretas (resposta “I, II e III”): a hereditária acomete várias pessoas da mesma família, com espessamento firme do rebordo, assintomático; a química está ligada à ação farmacológica de medicamentos de uso contínuo, com crescimento gengival a partir da papila interdental, que aos poucos cobre a coroa clínica; a irritativa vem de fator irritativo crônico, com aumentos gengivais múltiplos de cor avermelhada ou rósea. Mais uma questão de 2025 em que todas as afirmativas eram verdadeiras." },
+        { "ref": "Item do edital sem questão na amostra · tumores benignos e malignos", "conceito": true, "texto": "O edital (parte do Clínico Geral, p. 49) pede “tumores benignos e malignos da cavidade bucal, suas incidências, características clínicas, tratamento e prognóstico”, “lesões císticas” e “patologia das glândulas salivares”. Nenhuma questão de tumor caiu na amostra de 5 editais. Não significa que não cai: é um ponto de nível 0. Resumo do INCA (câncer de boca, versão para profissionais de saúde; a página informa publicação em 06/2022 e atualização em 05/07/2023; consultada em 20/11/2026): a maior parte dos tumores malignos da boca é carcinoma epidermoide (cerca de 95% dos casos). Principais fatores de risco: tabagismo e etilismo, que somam efeito; também HPV tipo 16, radiação solar (no lábio), excesso de gordura corporal, imunossupressão e exposições no trabalho; é mais frequente em homens brancos acima de 40 anos. Sinais: dor, nódulo, manchas (eritroplasia ou leucoplasia), dificuldade para engolir, fixação da língua, trismo, gânglio aumentado e sangramento. A confirmação é pela biópsia; o tratamento é cirúrgico na grande maioria dos casos; não há recomendação de rastreamento populacional. Os números (95%, 40 anos) são do INCA, fonte oficial; não são contagem de prova. Tumores benignos, lesões císticas e glândulas salivares continuam PENDENTES de fonte." }
+      ],
+      "tabela": {
+        "titulo": "Doença × pista que a banca usou",
+        "cab": ["Doença", "Pista do enunciado", "Questão"],
+        "linhas": [
+          ["Escarlatina", "Estreptococo beta-hemolítico do grupo A, toxina eritrogênica, criança de 2 anos", "G0044"],
+          ["Sarampo", "Paramixovírus de RNA, perdigotos, pele e boca de crianças", "G0067"],
+          ["Varicela", "Doença eruptiva benigna, febre e dor de cabeça prodrômicas", "G0053"],
+          ["Herpes-zóster", "Vesículas em pele e mucosa em imunodeprimido; agente: vírus da varicela", "G0133"],
+          ["Herpes simples", "Prurido, ardor e dormência no lábio, depois vesículas; aciclovir", "G0159"],
+          ["Gengivoestomatite herpética aguda", "Gengiva inflamada, depois vesículas que se estendem; é viral", "G0314"],
+          ["Caxumba (parotidite epidêmica)", "Viral, de infância, transmissão respiratória, ataca a parótida", "G0249"],
+          ["Rânula", "Extravasamento de mucina por ruptura de ducto, no soalho da boca", "G0045"],
+          ["Leucoplasia", "Placa branca que não sai à raspagem e não é outra doença", "G0135"],
+          ["Candidíase", "Candida albicans; sai à raspagem e deixa área vermelha", "G0076"]
+        ]
+      },
+      "macete": "Associe a doença ao agente e ao lugar: o enunciado quase sempre entrega uma pista (toxina eritrogênica = escarlatina; paramixovírus com lesões na pele e na boca de crianças = sarampo, lembrando que a caxumba também é paramixovírus, mas ataca a parótida; soalho da boca = rânula; placa branca que não sai à raspagem = leucoplasia). Desconfie de “somente”, “apenas” e “terciária”: viram afirmativa errada.",
+      "pegadinhas": [
+        "G0314: dizer que o herpes é causado por bactéria (“bactéria herpes hominis”). Herpes é infecção viral. Também era falsa a regressão em “7 a 14 semanas”.",
+        "G0053: atribuir a varicela a paramixovírus de RNA (paramixovírus causa sarampo e caxumba, não varicela) e dar incubação de 2 a 6 dias ou lesões “somente na língua” ou “somente no pescoço”.",
+        "G0133: marcar Candida, Streptococcus, HPV ou VHS para o herpes-zóster. O agente da prova foi o da varicela.",
+        "G0159: propor corticoide, antibiótico ou nistatina para lesão herpética; a resposta foi aciclovir, tópico ou sistêmico.",
+        "G0076: afirmativas com “somente” (“localiza-se somente na mucosa jugal e lábios”; “diagnóstico diferencial somente com o sarampo”) eram as erradas.",
+        "G0135: confundir leucoplasia com candidíase (a candidíase pseudomembranosa sai à raspagem), com hiperqueratose ou com quelite actínica.",
+        "G0045: marcar mucocele ou cisto do ducto salivar quando a localização é o soalho da boca, que dá o nome de rânula.",
+        "G0249: marcar parotidite supurativa aguda por causa do trecho “supuração”; a pista do enunciado era infecção viral muito comum na infância (dúvida de gabarito, ver o ponto da caxumba).",
+        "G0067: confundir sarampo com varicela, caxumba, escarlatina ou mononucleose; a banca usa várias doenças infantis eruptivas como distratores uma da outra."
+      ],
+      "cobra": [
+        "Descrição clínica ou etiológica e a pergunta “qual o nome da doença”: G0044, G0045, G0067, G0135 e G0249.",
+        "Pergunta sobre agente causador: G0133 (herpes-zóster).",
+        "Caso clínico curto com pedido de diagnóstico e plano de tratamento: G0159 (criança com lesão labial).",
+        "Afirmativas I a V ou I a IV, pedindo quais estão corretas: G0076 (candidíase), G0314 (gengivoestomatite herpética).",
+        "Afirmativa verdadeira sobre uma doença, entre cinco alternativas: G0053 (varicela).",
+        "Associe as colunas: G0184 (tipos de infecção).",
+        "Afirmativas I a III com todas corretas: G0315 (fibromatose gengival, 2025)."
+      ],
+      "mapa": {
+        "centro": "Patologia bucal",
+        "ramos": [
+          { "t": "Infecções virais (6)", "f": ["Sarampo", "Varicela e zóster", "Herpes simples e GEHA", "Caxumba"] },
+          { "t": "Bacterianas e fúngicas", "f": ["Escarlatina: estreptococo grupo A", "Candidíase: Candida albicans"] },
+          { "t": "Conceitos", "f": ["Aguda × crônica × latente × oportunista"] },
+          { "t": "Lesões de mucosa e glândulas", "f": ["Rânula: soalho da boca", "Mucocele"] },
+          { "t": "Cancerizáveis", "f": ["Leucoplasia: placa branca que não sai à raspagem"] },
+          { "t": "Gengiva", "f": ["Fibromatose: hereditária, química, irritativa"] },
+          { "t": "Edital sem questão", "f": ["Tumores benignos e malignos"] }
+        ]
+      }
+    },
+    {
+      "id": "anestesia",
+      "titulo": "Anestesia local",
+      "nivel": 3,
+      "topicosBanco": ["anest"],
+      "qtdQuestoes": 9,
+      "intro": "9 questões únicas em 4 edições (2019: 1; 2021P: 3; 2023: 4; 2021C: 1), nenhuma anulada; 3 delas caíram em prova de CG. A banca cobrou propriedades do anestésico ideal, pKa, escolha do anestésico para quem é alérgico ao bissulfito, causas de falha do bloqueio do nervo alveolar inferior (BNAI), diferenças anatômicas na criança, complicações e referências ósseas da maxila e da mandíbula. Uma questão desta lição (G0236) traz a fonte no enunciado: Reher, Peter. Anatomia Aplicada à Odontologia, 3ª ed., GEN, 2020, cap. 25, p. 375; a G0228, da Lição de Anatomia, cita a p. 377. PENDENTE: livro de anestesiologia odontológica a definir. Nenhuma dose máxima de anestésico entra nesta lição: não caiu na amostra e exige fonte clínica.",
+      "pontos": [
+        { "ref": "Propriedades do anestésico local ideal", "conceito": true, "texto": "G0034 (2019): a resposta oficial foi “não deve ser ácido e deve sofrer biotransformação rápida no organismo” (letra E). Eram afirmativas erradas: deve ser ácido e de biotransformação lenta; deve ser instável e de elevada toxicidade sistêmica; deve ser estável mas de ação irreversível; ação reversível mas produzindo reações idiossincrásicas. Ideia geral: ação reversível, baixa toxicidade sistêmica, sem reações idiossincrásicas. PENDENTE: lista completa de propriedades em livro de anestesiologia." },
+        { "ref": "pKa e início de ação", "conceito": true, "texto": "G0211 (2023): entre os anestésicos locais, o de menor pKa, 7,6 (valor do enunciado), é a mepivacaína (letra B). As outras alternativas eram lidocaína, “prosaica” (grafia da prova, provavelmente procaína), prilocaína e bupivacaína. Conceito geral: pKa menor significa maior fração do anestésico na forma não ionizada no pH do tecido e, em geral, início de ação mais rápido. Fonte: Becker e Reed (Anesth Prog 2012): mepivacaína pKa 7,6 e bupivacaína pKa 8,1. Todo anestésico local tem pKa acima de 7,4 (o pH do corpo); quanto maior o pKa, menos moléculas ficam na forma que atravessa a membrana do nervo e mais demora o início do efeito; em tecido inflamado (mais ácido) a anestesia fica mais difícil. pKa da lidocaína, prilocaína e procaína: PENDENTE de fonte." },
+        { "ref": "Alergia ao bissulfito de sódio", "conceito": true, "texto": "G0365 (2021C): paciente alérgico ao bissulfito de sódio, procedimento de curta duração: a solução indicada foi a mepivacaína 3% sem vasoconstritor (letra B). As outras quatro alternativas tinham vasoconstritor (norepinefrina ou epinefrina). O bissulfito de sódio é o antioxidante (conservante) do vasoconstritor; a solução sem vasoconstritor não o contém. Becker e Reed (2012) confirmam que os bissulfitos entram como antioxidantes nas soluções COM vasoconstritor; evitar o vasoconstritor evita o bissulfito. Por isso, para quem tem alergia a bissulfito, uma solução sem vasoconstritor (como a mepivacaína da prova) é a lógica. A concentração (3%) vem da alternativa da prova e não foi conferida." },
+        { "ref": "Bloqueio do nervo alveolar inferior · por que falha", "conceito": true, "texto": "G0154 (2021P): o BNAI é a segunda técnica de injeção mais frequentemente usada, depois da infiltração, e é a que tem maior porcentagem de insucesso clínico. As causas de BNAI ausente ou incompleto, na resposta oficial: depósito do anestésico demasiado anteriormente (lateralmente) no ramo, depósito baixo demais (abaixo do forame mandibular) e inervação acessória aos dentes mandibulares (resposta “I, II e IV”). “Tumefação dos tecidos do lado medial do ramo” foi a afirmativa considerada errada." },
+        { "ref": "Bloqueio do nervo alveolar inferior · criança × adulto", "conceito": true, "texto": "G0162 (2021P, EXCETO): a técnica é praticamente a mesma em adultos e crianças, com adaptações pela anatomia. Características da criança, segundo a banca: ramo ascendente mais curto em relação ao ramo horizontal; linha oblíqua interna raramente presente; desenvolvimento neurológico ainda influenciando a morfologia do tronco; ângulo goníaco mais aberto quanto mais jovem a criança. O que NÃO é característica, e foi a resposta: “o diâmetro anteroposterior do ramo é maior na criança” (letra D)." },
+        { "ref": "Complicações · tecidos moles, infecção e hipersensibilidade", "conceito": true, "texto": "G0171 (2021P, EXCETO): em odontopediatria as complicações pós-anestésicas são raras quando a anestesia é bem conduzida. Foram consideradas possíveis: úlcera traumática de lábio inferior ou bochecha por mordida da região anestesiada; infecção por contaminação da agulha ao tocar língua e lábios; ferimentos na pele por coçar; reação de hipersensibilidade imediata ou tardia. Foi o item de fora, e a resposta: “dor devido à injeção no músculo, pela rápida absorção da solução anestésica pelo tecido muscular”." },
+        { "ref": "Complicações · anestésico na parótida", "conceito": true, "texto": "G0205 (2023): complicação local quando o anestésico é introduzido acidentalmente na glândula parótida: paralisia do nervo facial (letra C). Eram distratores: edema, necrose de tecidos moles, trismo e hematoma. Raciocínio: o nervo facial passa dentro da parótida. Conduta e duração não são ensinadas aqui." },
+        { "ref": "Referências ósseas · mandíbula", "conceito": true, "texto": "G0234 (2023; o enunciado não cita fonte; a questão irmã G0236 cita Reher, 2020, cap. 25, p. 375): acidentes ósseos da mandíbula usados como referência na anestesia: canal e forame mandibular, canal e forame mentual, fossa retromolar, linha oblíqua, trígono retromolar, margem anterior do ramo da mandíbula e linha milo-hióidea (letra C). Nas alternativas erradas apareciam estruturas da maxila (hâmulo pterigóideo, canal e forame incisal, canal e forame infraorbital) misturadas com as da mandíbula." },
+        { "ref": "Referências ósseas · maxila", "conceito": true, "texto": "G0236 (2023, fonte no enunciado: Reher, 2020, cap. 25, p. 375): acidentes ósseos da maxila: canal e forame infraorbital, canais e foraminas alveolares, canal e forame incisivo, canal e forame palatino maior, canal e forame palatino menor, crista infrazigomática, face posterior da maxila (túber da maxila) e hâmulo pterigóideo (letra C). Estavam erradas as listas com estruturas mandibulares (linha oblíqua, forame mentual, forame mandibular, fossa retromolar, linha milo-hióidea)." }
+      ],
+      "tabela": {
+        "titulo": "Anestesia: o que a banca perguntou, em uma linha",
+        "cab": ["Tema", "Resposta oficial", "Questão"],
+        "linhas": [
+          ["Anestésico ideal", "Não deve ser ácido e deve ter biotransformação rápida", "G0034"],
+          ["Menor pKa (7,6, valor do enunciado)", "Mepivacaína", "G0211"],
+          ["Alergia ao bissulfito, procedimento curto", "Mepivacaína 3% sem vasoconstritor", "G0365"],
+          ["Falha do BNAI", "Depósito anterior (lateral), depósito baixo, inervação acessória", "G0154"],
+          ["Criança (EXCETO)", "Diâmetro anteroposterior do ramo NÃO é maior na criança", "G0162"],
+          ["Complicação (EXCETO)", "Dor por injeção no músculo por rápida absorção NÃO está na lista", "G0171"],
+          ["Anestésico na parótida", "Paralisia do nervo facial", "G0205"],
+          ["Ossos da mandíbula", "Forame mandibular, forame mentual, fossa retromolar, linha oblíqua, trígono retromolar, linha milo-hióidea", "G0234"],
+          ["Ossos da maxila", "Forame infraorbital, canal incisivo, canais palatinos, crista infrazigomática, túber, hâmulo pterigóideo", "G0236"]
+        ]
+      },
+      "macete": "Nas questões de referência óssea, ache primeiro uma estrutura só da maxila (por exemplo, forame infraorbital, túber) ou só da mandíbula (forame mentual, linha milo-hióidea) e elimine toda lista que a misture. Em questões de “causa de falha” e de “complicações”, leia o EXCETO: a banca esconde uma afirmativa fisiologicamente invertida (por exemplo, o ramo “maior” na criança).",
+      "pegadinhas": [
+        "G0034: marcar “deve ser ácido”, “biotransformação lenta”, “instável”, “elevada toxicidade” ou “ação irreversível” como propriedade desejável.",
+        "G0211: trocar a mepivacaína por lidocaína, prilocaína ou bupivacaína no menor pKa.",
+        "G0365: marcar anestésico com vasoconstritor (epinefrina ou norepinefrina) para quem é alérgico ao bissulfito de sódio.",
+        "G0154: incluir “tumefação dos tecidos do lado medial do ramo” como causa de falha do BNAI (a resposta oficial não a incluiu).",
+        "G0162: marcar “o diâmetro anteroposterior do ramo é maior na criança” como se fosse característica; era a exceção. Também havia afirmativas verdadeiras com “raramente” e “mais aberto”.",
+        "G0171: tratar a dor por injeção no músculo (rápida absorção) como complicação; era a exceção da lista.",
+        "G0205: escolher edema, necrose, trismo ou hematoma para anestésico na parótida; a resposta é paralisia do nervo facial.",
+        "G0234 e G0236: listas que misturam estruturas da maxila e da mandíbula, como o hâmulo pterigóideo ou o forame incisal na lista da mandíbula."
+      ],
+      "cobra": [
+        "Duas propriedades corretas de anestésico, entre cinco pares de afirmativas: G0034.",
+        "Escolha do menor valor numérico entre cinco anestésicos: G0211.",
+        "Caso clínico curto, pedindo a solução anestésica indicada: G0365.",
+        "Afirmativas I a IV sobre causas de falha, pedindo a combinação correta: G0154.",
+        "“EXCETO” sobre anatomia ou complicações em criança: G0162 e G0171.",
+        "Pergunta de complicação local com uma resposta só: G0205.",
+        "Alternativa formada por lista de acidentes ósseos, com fonte citada no enunciado: G0234 e G0236."
+      ],
+      "mapa": {
+        "centro": "Anestesia local",
+        "ramos": [
+          { "t": "Anestésico", "f": ["Propriedades do ideal", "pKa: mepivacaína 7,6 (fonte)", "Bissulfito: sem vasoconstritor"] },
+          { "t": "BNAI", "f": ["Depósito anterior ou baixo", "Inervação acessória"] },
+          { "t": "Criança", "f": ["Ramo mais curto", "Linha oblíqua interna rara", "Ângulo goníaco mais aberto"] },
+          { "t": "Complicações", "f": ["Mordida no lábio", "Infecção por agulha", "Hipersensibilidade", "Parótida: nervo facial"] },
+          { "t": "Referências ósseas", "f": ["Mandíbula: forame mandibular e mentual", "Maxila: infraorbital e túber"] }
+        ]
+      }
+    },
+    {
+      "id": "farmacologia",
+      "titulo": "Farmacologia e terapêutica",
+      "nivel": 3,
+      "topicosBanco": ["farm"],
+      "qtdQuestoes": 5,
+      "intro": "6 questões únicas em 4 edições (2019: 1; 2021P: 1; 2023: 1; 2021C: 3); uma foi anulada (G0360, analgésicos em criança), então o treino tem 5. 4 das 6 caíram em prova de CG. É a lição de MAIOR RISCO desta apostila: o que a banca pediu envolve dose, esquema e tempo. Por isso, aqui nenhuma dose é ensinada como regra: os poucos números abaixo são os do gabarito oficial de uma questão; os que já foram conferidos em diretriz trazem a fonte e os outros estão marcados PENDENTE. PENDENTE: livro de farmacologia aplicada à Odontologia a definir; confirmar tudo em fonte clínica antes de usar fora da prova.",
+      "pontos": [
+        { "ref": "Efeitos adversos de antimicrobianos", "conceito": true, "texto": "G0052 (2019, associe as colunas): pela resposta oficial, metronidazol se associa a intolerância gastrointestinal e gosto metálico desagradável; tetraciclinas, a dor epigástrica e hipoplasia dentária em crianças; clindamicina, a náusea e diarreia; penicilinas, a reações de hipersensibilidade e náusea. A sequência oficial foi C – B – D – A. (A AHA 2021 confirma o risco de diarreia por Clostridioides difficile com a clindamicina.) Isso é o que a banca marcou; PENDENTE: confirmar a lista de efeitos adversos em livro de farmacologia." },
+        { "ref": "Antibiótico e álcool: dúvida de gabarito", "conceito": true, "texto": "G0368 (2021C): “por qual motivo o uso de antibióticos concomitantemente com ingestão de álcool não é recomendado?”. O gabarito oficial foi a letra A: “o álcool interfere negativamente na absorção do antibiótico, implicando em menores concentrações na corrente sanguínea”. As outras diziam que o álcool anula o efeito, que não há relatos, que potencializa o efeito ou que aumenta a concentração no sangue. Aviso: a banca marcou que o álcool diminui a absorção do antibiótico. A revisão sistemática de Mergenhagen e cols. (Antimicrob Agents Chemother, 2020) mostra que depende do antibiótico: penicilinas orais, azitromicina, tetraciclina e outros podem ser usados com consumo de álcool; a eritromicina pode ter eficácia menor; a doxiciclina pode ter eficácia menor no alcoolismo crônico; o metronidazol é o exemplo clássico de reação tipo dissulfiram (frequência incerta). Na prova, siga o gabarito histórico (A), mas saiba que não há regra única." },
+        { "ref": "Profilaxia de endocardite: tempo antes do procedimento", "conceito": true, "texto": "G0212 (2023): a pergunta falava em paciente com febre reumática e em “prevenção a endocardite bacteriana”, pedindo quanto tempo antes do ato cirúrgico deve começar a antibioticoterapia; o gabarito foi 1 hora (letra B). Outras alternativas: 7, 10, 21 e 5 dias. A AHA (Wilson e cols., Circulation 2021) indica, quando a profilaxia é sugerida, dose única de 30 a 60 minutos antes do procedimento: o “1 hora” do gabarito cabe nesse intervalo. Mas a AHA só sugere profilaxia para 4 grupos de maior risco (prótese ou material de reparo de válvula, endocardite anterior, certas cardiopatias congênitas e transplantado cardíaco com doença de válvula) e discutiu se devia incluir a cardiopatia reumática: decidiu não incluir. Aviso: a banca tratou “febre reumática” como indicação; a AHA não a inclui sozinha. Na prova, siga o gabarito histórico (1 hora), mas entenda isso. A diretriz brasileira de valvopatias pode ter outra posição para a valvopatia reumática: PENDENTE (não consegui ler o texto). Para estudo; não use para tratar paciente." },
+        { "ref": "Profilaxia de endocardite em criança: dose de amoxicilina", "conceito": true, "texto": "G0356 (2021C): “qual a dose de ataque de amoxicilina recomendada” para profilaxia de endocardite infecciosa em criança. Gabarito oficial: 50 mg/kg, 1 hora antes do procedimento (letra A). As alternativas erradas traziam 15, 25, 7,5 e 100 mg/kg. O valor coincide com a AHA 2021 (Tabela 5): amoxicilina por via oral, criança 50 mg/kg, dose única de 30 a 60 minutos antes do procedimento. Para estudo; não use para tratar paciente. Para a prova, saiba que a banca já pediu a dose “por kg, 1 hora antes” e que o gabarito oficial foi 50 mg/kg." },
+        { "ref": "Farmacologia na disfunção temporomandibular (DTM)", "conceito": true, "texto": "G0132 (2021P, marque a INCORRETA): a terapia farmacológica é parte do tratamento não cirúrgico da DTM. Foram consideradas corretas: medicamentos injetáveis podem ser úteis no controle de inflamação e dores musculares e articulares, e a toxina botulínica A mostrou-se promissora na hiperatividade muscular mastigatória; relaxantes musculares podem ser considerados por curtos períodos (a alternativa cita 10 dias a duas semanas, número da prova), na menor dose eficaz; analgésicos variam de acetaminofeno a narcóticos potentes; AINEs reduzem a inflamação e têm excelente ação analgésica. A INCORRETA, e a resposta, dizia que a dosagem dos AINEs é mais eficaz em esquema dor-dependente do que regulado por horário. PENDENTE: confirmar em fonte clínica." },
+        { "ref": "Analgésicos em criança (questão anulada: só para conhecer o formato)", "conceito": true, "texto": "G0360 (2021C) foi ANULADA pela banca e não aparece no treino. Ela pedia a dosagem de analgésicos (ibuprofeno, paracetamol, dipirona) calculada pelo peso corporal da criança. Nenhuma das alternativas dela serve como resposta correta e nenhum valor dela foi usado. Lição que fica: dose de medicamento pediátrico é por kg, e a banca pode voltar a perguntar. Doses de analgésicos não são ensinadas aqui." }
+      ],
+      "tabela": {
+        "titulo": "Efeitos adversos pela resposta oficial de G0052 (PENDENTE: conferir em livro)",
+        "cab": ["Antimicrobiano", "Efeito adverso associado na prova"],
+        "linhas": [
+          ["Penicilinas", "Reações de hipersensibilidade e náusea"],
+          ["Tetraciclinas", "Dor epigástrica e hipoplasia dentária em crianças"],
+          ["Metronidazol", "Intolerância gastrointestinal e gosto metálico desagradável"],
+          ["Clindamicina", "Náusea e diarreia"]
+        ]
+      },
+      "macete": "Farmacologia é a lição em que o número vem sem explicação: não decore dose solta. Em associação de colunas, comece pela linha que você tem certeza (por exemplo, hipoplasia dentária em criança é a tetraciclina na prova) e elimine as alternativas por exclusão. Em questão de dose e tempo, confirme na diretriz que o seu curso adota antes da prova.",
+      "pegadinhas": [
+        "G0052: trocar as duas primeiras (tetraciclina e metronidazol). A sequência errada “B – C – A – D” e outras tentavam inverter pares.",
+        "G0368: marcar “o álcool anula”, “potencializa” ou “aumenta a concentração”; o gabarito oficial foi que o álcool interfere na absorção. Dúvida de gabarito: confira em fonte clínica.",
+        "G0212: marcar 7, 10, 21 ou 5 dias; o gabarito oficial foi 1 hora. Dúvida de gabarito sobre quem tem indicação.",
+        "G0356: escolher 100 mg/kg, 25, 15 ou 7,5 mg/kg; o gabarito foi 50 mg/kg 1 hora antes. Número coincide com a AHA 2021 (30 a 60 minutos antes). Para estudo; não use para tratar paciente.",
+        "G0132: aceitar “AINEs são mais eficazes em esquema dor-dependente” (a resposta marcada como INCORRETA) ou esquecer que relaxante muscular é por curtos períodos."
+      ],
+      "cobra": [
+        "Associe as colunas, com antimicrobianos e efeitos adversos: G0052.",
+        "Pergunta de “por qual motivo”, com cinco explicações: G0368.",
+        "Pergunta de tempo (“quanto tempo antes”), com cinco números: G0212.",
+        "Pergunta de dose por quilo, com cinco números em mg/kg: G0356.",
+        "“Marque a INCORRETA”, com texto longo de livro sobre DTM: G0132.",
+        "Dose pediátrica por peso corporal (questão de 2021C, anulada): G0360."
+      ],
+      "mapa": {
+        "centro": "Farmacologia",
+        "ramos": [
+          { "t": "Efeitos adversos", "f": ["Penicilina: hipersensibilidade", "Tetraciclina: hipoplasia dentária", "Metronidazol: gosto metálico", "Clindamicina: náusea e diarreia"] },
+          { "t": "Endocardite", "f": ["30–60 min antes (AHA 2021)", "50 mg/kg criança (AHA 2021)", "Só 4 grupos de alto risco"] },
+          { "t": "Álcool e antibiótico", "f": ["Gabarito: absorção", "Depende do antibiótico (metronidazol)"] },
+          { "t": "DTM", "f": ["AINE por horário", "Relaxante por curto período", "Toxina botulínica A"] }
+        ]
+      }
+    },
+    {
+      "id": "anatomia",
+      "titulo": "Anatomia de cabeça e pescoço",
+      "nivel": 3,
+      "topicosBanco": ["anat"],
+      "qtdQuestoes": 5,
+      "intro": "5 questões únicas em 3 edições (2019: 1; 2021P: 2; 2023: 2), nenhuma anulada; 2 delas caíram em prova de CG. A banca cobrou limites dos lábios, origem da vascularização do viscerocrânio, fontículos e a inervação da mandíbula e da maxila. As duas questões de inervação (2023) trazem no enunciado ou nas questões irmãs a fonte Reher, Peter. Anatomia Aplicada à Odontologia, 3ª ed., GEN, 2020, cap. 25 (G0228 cita a página 377; veja também G0236 na Lição de Anestesia). PENDENTE: livro de anatomia de cabeça e pescoço a definir.",
+      "pontos": [
+        { "ref": "Limites dos lábios", "conceito": true, "texto": "G0074 (2019): o limite interno dos lábios de uma criança, em que se vê uma prega mucosa sagital mediana, é o fórnice do vestíbulo (letra D, segundo o gabarito oficial). Eram distratores: sulco labiomentoniano, sulco nasolabial, tubérculo do lábio e comissura labial. Sulcos e comissura são limites externos ou laterais; fórnice do vestíbulo é a região interna onde a mucosa dobra." },
+        { "ref": "Vascularização da face", "conceito": true, "texto": "G0149 (2021P): a origem da vascularização da região do viscerocrânio provém da artéria carótida externa (letra B). Eram distratores: dizer que a carótida comum é a terceira ramificação, que a origem é a artéria subclávia, que a segunda ramificação é a carótida interna e que compõe a artéria vertebral. Regra de estudo: face = carótida externa." },
+        { "ref": "Fontículos", "conceito": true, "texto": "G0158 (2021P, EXCETO): fontículos são membranas de tecido fibroso que separam os ossos da calvária. A banca listou como fontículos o anterior, o posterior, os ânteros-laterais e os póstero-laterais. A alternativa que não é fontículo, e foi a resposta, é “fontículos viscerocranial”. Pista: fontículo é da calvária; viscerocrânio é a face." },
+        { "ref": "Inervação da mandíbula", "conceito": true, "texto": "G0228 (2023, Reher, 2020, cap. 25, p. 377): são nervos que abrangem a mandíbula o nervo bucal, o nervo lingual e o nervo mentual (letra C). As alternativas erradas misturavam nervos da maxila (nasopalatino, alveolar superior, palatino maior) com nervos da mandíbula." },
+        { "ref": "Inervação da maxila", "conceito": true, "texto": "G0232 (2023): nervos que inervam a maxila: nervo nasopalatino, nervo palatino maior e nervo palatino menor (letra D). Eram erradas as combinações com nervos da mandíbula (alveolar inferior, lingual, mentual, bucal) ou com o glossofaríngeo." }
+      ],
+      "tabela": {
+        "titulo": "Inervação: o que a banca já pediu",
+        "cab": ["Região", "Nervos da resposta oficial", "Questão"],
+        "linhas": [
+          ["Mandíbula", "Bucal, lingual e mentual", "G0228"],
+          ["Maxila", "Nasopalatino, palatino maior e palatino menor", "G0232"],
+          ["Vascularização da face", "Artéria carótida externa", "G0149"]
+        ]
+      },
+      "macete": "Em questão de nervos, sempre separe duas colunas na cabeça: MAXILA (nasopalatino, palatino maior e menor, alveolares superiores, infraorbital) e MANDÍBULA (alveolar inferior, mentual, lingual, bucal). A banca monta as alternativas erradas trocando um nervo de uma coluna pela outra.",
+      "pegadinhas": [
+        "G0228: incluir nasopalatino ou palatino maior numa lista de nervos da mandíbula.",
+        "G0232: incluir alveolar inferior, lingual ou mentual numa lista de nervos da maxila.",
+        "G0149: marcar artéria carótida comum, subclávia ou vertebral como origem da vascularização da face.",
+        "G0158: tratar “fontículo viscerocranial” como se fosse um fontículo; os da calvária são anterior, posterior e os pares laterais.",
+        "G0074: marcar sulco nasolabial, sulco labiomentoniano, tubérculo ou comissura para o limite interno do lábio."
+      ],
+      "cobra": [
+        "Limite anatômico de uma região, com descrição de prega ou sulco: G0074.",
+        "Origem de artéria ou ramificação vascular: G0149.",
+        "“EXCETO”, listando estruturas de uma região: G0158.",
+        "Lista de nervos que inervam uma região, com fonte citada no enunciado: G0228 e G0232."
+      ],
+      "mapa": {
+        "centro": "Anatomia de cabeça e pescoço",
+        "ramos": [
+          { "t": "Nervos da mandíbula", "f": ["Bucal", "Lingual", "Mentual"] },
+          { "t": "Nervos da maxila", "f": ["Nasopalatino", "Palatino maior", "Palatino menor"] },
+          { "t": "Vascularização", "f": ["Face: carótida externa"] },
+          { "t": "Calvária e lábios", "f": ["Fontículos: anterior, posterior, laterais", "Lábio: limite interno = fórnice"] }
+        ]
+      }
+    },
+    {
+      "id": "emergencias",
+      "titulo": "Emergências médicas no consultório",
+      "nivel": 2,
+      "topicosBanco": ["emerg"],
+      "qtdQuestoes": 3,
+      "intro": "3 questões únicas, todas em uma edição só (2019: 3). Nenhuma foi anulada e nenhuma caiu em prova de CG. Eram: crise hipertensiva (G0029), hipotensão ortostática (G0030) e crise convulsiva (G0068). Atenção: esta lição NÃO ensina conduta de emergência. Conduta (posição do paciente, medicação, quando chamar socorro) não caiu na amostra e exige protocolo citado. Protocolo de conduta não é ensinado aqui; se a banca passar a cobrar, entra com fonte citada.",
+      "pontos": [
+        { "ref": "Crise hipertensiva (valores do gabarito)", "conceito": true, "texto": "G0029 (2019): a pergunta falava em aumento súbito de pressão arterial. A resposta oficial foi a letra A: “pressão arterial diastólica maior que 130 mmHg e pressão sistólica podendo atingir 250 mmHg ou mais”. As outras alternativas traziam valores de pressão normal, elevada ou baixa (por exemplo, diastólica menor que 85 com sistólica maior que 130; diastólica entre 85 e 89 com sistólica entre 130 e 139; sistólica 60 com diastólica 90; sistólica 90 com diastólica 60). Para comparar: a Diretriz Brasileira de Hipertensão Arterial 2020 (cap. 13) chama de urgência e de emergência hipertensiva a elevação acentuada da PA “definida arbitrariamente como PAS ≥ 180 e/ou PAD ≥ 120 mm Hg”; a diferença é a lesão aguda de órgão-alvo, que só existe na emergência. A Diretriz de 2025 (cap. 11) define crise hipertensiva como “elevação aguda e importante da PA, acompanhada ou não por LOAs agudas”, usa PAS ≥ 180 e/ou PAD ≥ 110 mmHg (ou até menos, conforme a situação) para a emergência e discute o termo “urgência hipertensiva” e recomenda a nomenclatura “elevação importante da PA sem lesão progressiva de órgãos-alvo”. Aviso: a banca marcou diastólica acima de 130 e sistólica de 250 ou mais; as diretrizes atuais usam números menores. Na prova, siga o gabarito histórico (era a única alternativa com valores de crise: pressão muito alta nos dois números), mas saiba os números das diretrizes. Esta lição não ensina conduta." },
+        { "ref": "Hipotensão ortostática", "conceito": true, "texto": "G0030 (2019): situação emergencial por acúmulo de sangue na periferia, que não é mobilizado rápido o bastante para prevenir a isquemia cerebral quando o paciente assume de forma abrupta a postura vertical: hipotensão ortostática (letra D). Os distratores foram convulsão, lipotimia, síncope e distúrbios do sistema nervoso. A pista é “postura vertical de forma abrupta”. Conduta não é ensinada aqui; diferença entre lipotimia e síncope: PENDENTE de fonte." },
+        { "ref": "Crise convulsiva", "conceito": true, "texto": "G0068 (2019): em consultório odontopediátrico, quadro resultante de diversas perturbações neuronais, com descarga súbita, excessiva e rápida da substância cinzenta, que causa um “desligamento” momentâneo das sinapses e dura em geral de 2 a 5 minutos (número do enunciado), originando a convulsão: epilepsia (letra E). Eram distratores síncope, lipotimia, fibrilação ventricular (a prova escreveu “fibralação”) e crise hipertensiva. Para entender o número: a Liga Internacional contra a Epilepsia (ILAE, 2015) considera que, na crise tônico-clônica, a partir de 5 minutos já se trata de estado de mal epiléptico; isso combina com a faixa “de 2 a 5 minutos” do enunciado. Conduta não é ensinada nesta apostila (não caiu na amostra)." }
+      ],
+      "macete": "Em emergência, a banca descreve o mecanismo e pede o nome. Procure a palavra-chave: “postura vertical abrupta” = hipotensão ortostática; “descarga súbita e excessiva de neurônios” = epilepsia; “aumento súbito de pressão arterial” = crise hipertensiva.",
+      "pegadinhas": [
+        "G0029: marcar valores de pressão normal-alta ou de hipotensão como se fossem crise hipertensiva. A resposta oficial tinha diastólica acima de 130 mmHg.",
+        "G0030: confundir hipotensão ortostática com síncope, lipotimia ou convulsão; a pista é a mudança brusca de posição.",
+        "G0068: confundir convulsão com síncope ou lipotimia; a descrição fala em descarga neuronal súbita e excessiva."
+      ],
+      "cobra": [
+        "Descrição do mecanismo e pergunta “qual o nome desta situação emergencial”: G0030 e G0068.",
+        "Pergunta sobre valores de pressão que definem a situação: G0029.",
+        "Todas as três questões vieram de 2019; não caíram nas edições seguintes da amostra."
+      ],
+      "mapa": {
+        "centro": "Emergências",
+        "ramos": [
+          { "t": "Crise hipertensiva", "f": ["Pressão muito alta", "Diretriz: ≥180 e/ou ≥120 (2020); ≥110 (2025)"] },
+          { "t": "Hipotensão ortostática", "f": ["Postura vertical abrupta"] },
+          { "t": "Crise convulsiva", "f": ["Descarga neuronal súbita", "Epilepsia"] },
+          { "t": "Conduta", "f": ["Conduta: fora desta apostila"] }
+        ]
+      }
+    }
+  ]
+}

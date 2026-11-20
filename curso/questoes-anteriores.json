@@ -29,6 +29,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
    "grupo": "G0001",
+   "transcricaoSuspeita": true,
+   "motivoTranscricao": "As 5 alternativas trazem a letra 'a' com acento (crase) em todos os trechos, mas o enunciado diz que o acento foi retirado de um deles e pede qual deve recebe-lo; a transcricao do PDF parece ter acentuado todas.",
    "repeticoesNoMesmoEdital": 5,
    "topico": "lp.crase",
    "metodoClassificacao": "manual"
@@ -61,6 +63,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
    "grupo": "G0001",
+   "transcricaoSuspeita": true,
+   "motivoTranscricao": "As 5 alternativas trazem a letra 'a' com acento (crase) em todos os trechos, mas o enunciado diz que o acento foi retirado de um deles e pede qual deve recebe-lo; a transcricao do PDF parece ter acentuado todas.",
    "repeticoesNoMesmoEdital": 5,
    "topico": "lp.crase",
    "metodoClassificacao": "manual"
@@ -93,6 +97,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
    "grupo": "G0001",
+   "transcricaoSuspeita": true,
+   "motivoTranscricao": "As 5 alternativas trazem a letra 'a' com acento (crase) em todos os trechos, mas o enunciado diz que o acento foi retirado de um deles e pede qual deve recebe-lo; a transcricao do PDF parece ter acentuado todas.",
    "repeticoesNoMesmoEdital": 5,
    "topico": "lp.crase",
    "metodoClassificacao": "manual"
@@ -125,6 +131,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
    "grupo": "G0001",
+   "transcricaoSuspeita": true,
+   "motivoTranscricao": "As 5 alternativas trazem a letra 'a' com acento (crase) em todos os trechos, mas o enunciado diz que o acento foi retirado de um deles e pede qual deve recebe-lo; a transcricao do PDF parece ter acentuado todas.",
    "repeticoesNoMesmoEdital": 5,
    "topico": "lp.crase",
    "metodoClassificacao": "manual"
@@ -157,6 +165,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2019-psps-002/gabarito-oficial.pdf",
    "grupo": "G0001",
+   "transcricaoSuspeita": true,
+   "motivoTranscricao": "As 5 alternativas trazem a letra 'a' com acento (crase) em todos os trechos, mas o enunciado diz que o acento foi retirado de um deles e pede qual deve recebe-lo; a transcricao do PDF parece ter acentuado todas.",
    "repeticoesNoMesmoEdital": 5,
    "topico": "lp.crase",
    "metodoClassificacao": "manual"
@@ -11005,6 +11015,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
    "grupo": "G0128",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado pergunta o tipo de fratura 'apresentado nas figuras B e D', e as figuras nao estao no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "cir",
    "metodoClassificacao": "manual"
@@ -12029,6 +12041,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
    "grupo": "G0160",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'os aspectos radiograficos podem ser visualizados na imagem a seguir' e a conduta depende da imagem radiografica, que nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "ped",
    "metodoClassificacao": "manual"
@@ -12317,6 +12331,8 @@
    },
    "fonteGabarito": "fontes/blumenau-2021-psps-002/gabarito-oficial.pdf",
    "grupo": "G0169",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'a imagem radiografica pode ser observada na imagem a seguir' e a conduta depende da radiografia, que nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "ped",
    "metodoClassificacao": "manual"
@@ -27933,6 +27949,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/florianopolis-2024-concurso-001/gabarito-oficial.pdf",
    "grupo": "G0397",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado abre com 'a imagem a seguir ilustra a situacao do trabalho infantil' e termina em dois pontos sem o dado; as afirmacoes dependem da imagem, que nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "cgl.?",
    "metodoClassificacao": "secao"
@@ -28221,6 +28239,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/florianopolis-2024-concurso-001/gabarito-oficial.pdf",
    "grupo": "G0406",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o quadro a seguir apresenta o numero de pacientes atendidos' e o quadro nao esta no banco; sem ele o calculo da media e impossivel.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -29597,6 +29617,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/florianopolis-2024-concurso-001/gabarito-oficial.pdf",
    "grupo": "G0449",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado manda 'analise o grafico a seguir' (acidentes ofidicos por mes) e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "sus.epidemiologia",
    "metodoClassificacao": "auto-palavra-chave"
@@ -30045,6 +30067,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/251-ODONTOLOGO-ESPECIALISTA-I-ENDODONTIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0459",
+   "dependeDeFigura": true,
+   "motivoFigura": "A questao pergunta sobre a fala do personagem da tirinha do Armandinho; a tirinha (imagem) nao esta no banco, so a legenda.",
    "repeticoesNoMesmoEdital": 2,
    "topico": "lp.?",
    "metodoClassificacao": "secao"
@@ -30077,6 +30101,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/255-ODONTOLOGO-ESPECIALISTA-VI-PROTESES-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0459",
+   "dependeDeFigura": true,
+   "motivoFigura": "A questao pergunta sobre a fala do personagem da tirinha do Armandinho; a tirinha (imagem) nao esta no banco, so a legenda.",
    "repeticoesNoMesmoEdital": 2,
    "topico": "lp.?",
    "metodoClassificacao": "secao"
@@ -30749,6 +30775,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/251-ODONTOLOGO-ESPECIALISTA-I-ENDODONTIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0467",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 4,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -30781,6 +30809,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/253-ODONTOLOGO-ESPECIALISTA-III-CIRURGICO-BUCO-MAXILAR-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0467",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 4,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -30813,6 +30843,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/255-ODONTOLOGO-ESPECIALISTA-VI-PROTESES-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0467",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 4,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -30845,6 +30877,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/256-ODONTOLOGO-I-E-II-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0467",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 4,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -36701,6 +36735,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/252-ODONTOLOGO-ESPECIALISTA-II-ODONTOPEDIATRIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0516",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "rl",
    "metodoClassificacao": "secao"
@@ -37757,6 +37793,8 @@
    },
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/254-ODONTOLOGO-ESPECIALISTA-V-PERIODONTIA-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0549",
+   "dependeDeFigura": true,
+   "motivoFigura": "O enunciado diz 'o grafico a seguir mostra a quantidade de carros vendidos' e o grafico nao esta no banco.",
    "repeticoesNoMesmoEdital": 1,
    "topico": "rl",
    "metodoClassificacao": "secao"

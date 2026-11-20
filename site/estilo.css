@@ -33,7 +33,10 @@
   }
 }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 7rem; } /* o cabeçalho fixo não cobre o que for rolado até a vista */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
 body {
   margin: 0;
   background: var(--bg);
@@ -41,7 +44,7 @@ body {
   font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   overflow-wrap: anywhere;
 }
-.miolo { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
+.miolo { max-width: 52rem; margin: 0 auto; padding: 0 16px; padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
 a { color: var(--acento); }
 :focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
 main:focus { outline: none; }
@@ -51,10 +54,16 @@ main:focus { outline: none; }
 .topo { background: var(--card); border-bottom: 1px solid var(--borda); position: sticky; top: 0; z-index: 5; }
 .topo-in { padding-top: 8px; padding-bottom: 8px; }
 .marca { display: block; font-size: 1.05rem; }
-.menu { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+/* celular: menu em uma linha que rola dentro do próprio bloco (o cabeçalho fixo não come a tela); a partir de 768px quebra em linhas */
+.menu { list-style: none; margin: 2px -6px 0; padding: 6px; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; position: relative; scrollbar-width: thin; }
+.menu li { flex: none; }
 .menu a {
-  display: block; padding: 8px 12px; border-radius: 8px; text-decoration: none;
-  color: var(--texto); border: 1px solid var(--borda); min-height: 40px;
+  display: flex; align-items: center; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+  color: var(--texto); border: 1px solid var(--borda); min-height: 44px; white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .menu { flex-wrap: wrap; overflow: visible; }
+  .menu a { min-height: 40px; }
 }
 .menu a[aria-current="page"] { background: var(--acento); color: var(--acento-texto); border-color: var(--acento); font-weight: 600; }
 
@@ -77,19 +86,22 @@ h3 { font-size: 1rem; margin: 16px 0 6px; }
 @media (min-width: 560px) { .filtros { grid-template-columns: 1fr 1fr; } }
 label { display: block; font-size: 0.9rem; color: var(--suave); }
 select, input[type="number"] {
-  display: block; width: 100%; margin-top: 2px; padding: 8px; min-height: 42px;
-  font: inherit; color: var(--texto); background: var(--bg); border: 1px solid var(--borda); border-radius: 8px;
+  display: block; width: 100%; margin-top: 2px; padding: 8px; min-height: 44px;
+  font: inherit; font-size: 1rem; color: var(--texto); background: var(--bg); border: 1px solid var(--borda); border-radius: 8px;
 }
-.check { display: flex; gap: 8px; align-items: center; color: var(--texto); min-height: 42px; }
+.check { display: flex; gap: 8px; align-items: center; color: var(--texto); min-height: 44px; }
 .check input { width: 20px; height: 20px; flex: none; }
 
 button, .btn {
-  font: inherit; cursor: pointer; padding: 9px 16px; min-height: 42px; border-radius: 8px;
+  font: inherit; cursor: pointer; padding: 9px 16px; min-height: 44px; border-radius: 8px; touch-action: manipulation;
   border: 1px solid var(--acento); background: var(--acento); color: var(--acento-texto); text-decoration: none;
   display: inline-block;
 }
 button.sec, .btn.sec { background: transparent; color: var(--acento); }
 button:disabled { opacity: 0.5; cursor: not-allowed; }
+/* alternativas travadas depois de responder: mantêm cor cheia (o gabarito precisa continuar legível) */
+.alt:disabled { opacity: 1; cursor: default; }
+summary { min-height: 44px; padding: 10px 0; cursor: pointer; }
 .linha { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
 
 .enunciado { white-space: pre-wrap; margin: 8px 0 12px; }
@@ -110,6 +122,9 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .barra-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 3rem; gap: 8px; align-items: center; margin: 6px 0; }
 .barra-rot { grid-column: 1 / -1; font-size: 0.95rem; }
+@media (max-width: 767px) {
+  .barra-rot a { display: inline-flex; align-items: center; min-height: 44px; } /* link do tópico com alvo de toque */
+}
 .barra { height: 12px; background: var(--bg); border: 1px solid var(--borda); border-radius: 6px; overflow: hidden; }
 .barra > span { display: block; height: 100%; background: var(--acento); }
 .num { text-align: right; font-weight: 700; }

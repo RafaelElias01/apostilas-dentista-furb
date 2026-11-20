@@ -3,12 +3,16 @@
   "avisoTopo": "Dados de editais anteriores. Confirme sempre no site oficial da FURB (concursos.furb.br) antes de se inscrever.",
   "situacao": [
     {
+      "titulo": "Navegantes (FURB): inscrições abertas",
+      "texto": "Atenção: este é o único certame da FURB com Odontólogo com inscrições abertas na última conferência (19/11/2026), e só vale para quem aceita trabalhar em Navegantes (SC), não em Blumenau. É o Processo Seletivo 0172/2026 da Prefeitura de Navegantes, banca FURB, contratação temporária, com 5 cargos de Odontólogo em cadastro de reserva (ESF 40h: R$ 9.748,86; Bucomaxilofacial, Endodontista, Pacientes com Necessidades Especiais e Periodontista, 20h: R$ 4.874,43). Inscrições até 25/11/2026, às 23h59; taxa de R$ 130,00 até 26/11/2026; prova em 13/12/2026, de manhã. A prova é diferente da de Blumenau: tem Raciocínio Lógico e nota mínima 5,00. Confira o edital em concursos.furb.br."
+    },
+    {
       "titulo": "Balneário Camboriú",
-      "texto": "Ainda não há edital publicado. A prefeitura formalizou a contratação da FURB por dispensa de licitação (Termo 114/2026; a justificativa no documento é datada de 10/10/2026; as datas de divulgação divergem entre as fontes, confirme no site da prefeitura) para um concurso de cadastro de reserva, mas o documento não lista cargos, vagas nem datas, e não confirma que haverá Cirurgião-Dentista. Inscrições e datas: a divulgar."
+      "texto": "Ainda não há edital publicado. A Prefeitura contratou a FURB por dispensa de licitação (Termo 114/2026, publicado no Diário Oficial dos Municípios de SC em 10/11/2026) para um concurso de cadastro de reserva para cargos efetivos. O documento não lista cargos, vagas nem datas e não confirma que haverá Cirurgião-Dentista. Inscrições e datas: a divulgar."
     },
     {
       "titulo": "Blumenau",
-      "texto": "Na última conferência (18/11/2026), não havia edital aberto com o cargo. Os dois editais de 2026 (SEMED 001/2026 e Pró-Família 002/2026) não têm Cirurgião-Dentista."
+      "texto": "Na última conferência (19/11/2026), não havia edital aberto ou em andamento com o cargo. Os editais de 2026 (SEMED 001/2026, Pró-Família 002/2026, SEMED PSPS 001/2026 e Residência Jurídica 003/2026) não têm Cirurgião-Dentista."
     },
     {
       "titulo": "Referência para estudar",
@@ -159,7 +163,7 @@
         "13/03/2022",
         "50",
         "LP 10, CGL 10, CE 30, 0,20 cada",
-        "Efetivo, cargo único Cirurgião Dentista, cadastro de reserva"
+        "Efetivo, cargo único Cirurgião Dentista, cadastro de reserva; vencimento R$ 2.987,25 + adicional de função R$ 4.182,11 (20h)"
       ],
       [
         "PSPS 003/2023",
@@ -172,11 +176,11 @@
         "PSPS 003/2025",
         "14/12/2025",
         "40",
-        "",
+        "LP 10, CGL 10, CE 20, 0,25 cada",
         ""
       ]
     ],
     "legenda": "LP: Língua Portuguesa. CGL: Conhecimentos Gerais e Legislação. CE: Conhecimentos Específicos."
   },
-  "fonte": "Fonte: editais publicados em concursos.furb.br e documento da Prefeitura de Balneário Camboriú, conferidos em 19/11/2026."
+  "fonte": "Fonte: editais e páginas publicados em concursos.furb.br e ato 8903198 do DOM/SC (Balneário Camboriú), conferidos em 19/11/2026."
 }

@@ -7,7 +7,7 @@ O que não está confirmado em documento oficial está marcado **PENDENTE**.
 
 | Município | Situação em 2026-11-18 | Fonte |
 |---|---|---|
-| **Balneário Camboriú** | **Edital NÃO publicado (PENDENTE).** Há só a contratação da FURB por dispensa de licitação (Termo 114/2026-DL-PMBC; a razão de escolha no documento é datada de 10/10/2026, e matérias da imprensa informam divulgação/autorização em 10/11/2026 (data da divulgação NÃO verificada em fonte oficial)): "Concurso Público destinado à formação de cadastro de reserva para provimento de cargos efetivos", preço global R$ 693.493,38. Esse documento não lista cargos, vagas, datas nem conteúdo, e **não confirma** que haverá o cargo de Cirurgião-Dentista. Na página inicial de concursos.furb.br, consultada em 2026-11-18, não aparece nenhum concurso de Balneário Camboriú. A FURB não aplicou prova de dentista para Balneário Camboriú antes: o PSPS 009/2022 de lá não tem o cargo (0 menções a "dentista" ou "odont" no edital). | [fontes/balneario-camboriu-2026-concurso-furb/dispensa-licitacao-contratacao-furb-2026-COPIA-TERCEIRO.pdf, p. 1-2] (cópia obtida de terceiro, assinatura verificável em bc.1doc.com.br, código 18C8-ABD0-0BB9-41D7; não conferi a assinatura) |
+| **Balneário Camboriú** | **Edital NÃO publicado (PENDENTE).** Há só a contratação da FURB por dispensa de licitação (Termo 114/2026-DL-PMBC; CORREÇÃO 2026-11-19: o ato foi publicado no DOM/SC em 10/11/2026, às 14h44, e o documento oficial é datado de "10 de novembro de 2026", e não de 10/10/2026 [DOM/SC, ato 8903198, https://diariomunicipal.sc.gov.br/atos/8903198, p. 1-2; mesmo código de assinatura 18C8-ABD0-0BB9-41D7]): "Concurso Público destinado à formação de cadastro de reserva para provimento de cargos efetivos", preço global R$ 693.493,38. Esse documento não lista cargos, vagas, datas nem conteúdo, e **não confirma** que haverá o cargo de Cirurgião-Dentista. Na página inicial de concursos.furb.br, consultada em 2026-11-18, não aparece nenhum concurso de Balneário Camboriú. A FURB não aplicou prova de dentista para Balneário Camboriú antes: o PSPS 009/2022 de lá não tem o cargo (0 menções a "dentista" ou "odont" no edital). | [fontes/balneario-camboriu-2026-concurso-furb/dispensa-licitacao-contratacao-furb-2026-COPIA-TERCEIRO.pdf, p. 1-2] (cópia obtida de terceiro, assinatura verificável em bc.1doc.com.br, código 18C8-ABD0-0BB9-41D7; não conferi a assinatura) |
 | **Blumenau** | O edital mais recente com o cargo é o **PSPS n.º 003/2025**, um processo seletivo simplificado para contratação temporária, já concluído (resultado final em 05/02/2026). Em 2026-11-18 a página inicial da FURB mostra o "Concurso Público SEMED 001/2026" de Blumenau com inscrições abertas. No portal também está o "PSPS Pró-Família 002/2026" (concurso 554), com edital de 25/08/2026 e resultado final em 13/11/2026. Baixei os dois editais (com errata) para uma pasta temporária, extraí o texto e procurei "dentist" e "odont": **0 ocorrências nos dois**. Nenhum deles tem o cargo. A busca foi feita no texto extraído de 31 páginas (554) e de 42 páginas (583). | [fontes/blumenau-2025-psps-003/edital-003-2025.pdf, p. 1] |
 
 **Consequência para as apostilas:** a base é o programa do PSPS 003/2025 de Blumenau, o edital mais recente da FURB para o cargo. Quando sair o edital de Balneário Camboriú, conferir disciplina por disciplina, principalmente a legislação municipal (em Blumenau cai a Lei Orgânica e a lei local de contratação temporária; em Balneário Camboriú serão outras leis).
@@ -113,10 +113,28 @@ O conteúdo de CGL mudou entre as edições. No concurso de 2021 caíam a Lei Or
 
 **Outros municípios (FURB), só como referência complementar:** Biguaçu 2025, Florianópolis 2024 e Itapema 2025, em `fontes/outros-municipios-furb/`. Não foram transcritos aqui.
 
+## 2.1 Navegantes 0172/2026 (outro município, inscrições abertas em 2026-11-19)
+Fonte: `curso/concursos-completo.md`, seção C.1 (edital com Erratas 01 e 02, conferido na imagem em 2026-11-19; página do certame: https://concursos.furb.br/concurso/579). Não é Blumenau nem Balneário Camboriú: serve só para quem aceita trabalhar em Navegantes (SC). As apostilas continuam baseadas em Blumenau.
+
+| Item | Dado | Página do edital |
+|---|---|---|
+| Tipo | Processo Seletivo 0172/2026, contratação temporária (Lei Municipal 3.985/2025; art. 37, IX, da CF), cadastro de reserva, validade de 12 meses prorrogável | |
+| Cargos | 5 de Odontólogo: Cirurgião e Traumatologista Bucomaxilofacial (20h), Endodontista, Paciente com Necessidades Especiais, Periodontista e ESF | p. 30-31 |
+| Vencimento | Especialidades R$ 4.874,43 (20h); ESF R$ 9.748,86 (40h) | p. 30-31 |
+| Inscrições | 27/10/2026 (14h, errata 01) a 25/11/2026, 23h59. Taxa R$ 130,00, paga até 26/11/2026. Isenção: 27/10/2026 a 31/10/2026 (já encerrada) | p. 1, 3, 4, 7 |
+| Prova | 13/12/2026, nível superior de manhã: portões das 7h15 às 8h00, prova das 8h15 às 11h15 | p. 11 |
+| Composição | 40 questões de 5 alternativas: Língua Portuguesa 10 x 0,20; Raciocínio Lógico e Matemático 5 x 0,20; Conhecimentos Gerais 5 x 0,20; Conhecimentos Específicos 20 x 0,30. Total 10,00. **Nota mínima 5,00** (Blumenau não tem Raciocínio Lógico nem nota mínima, e lá CE vale 0,25) | p. 11 |
+| Conhecimentos Gerais | História, geografia e atualidades do Brasil, de SC e de Navegantes; Lei Orgânica de Navegantes; administração pública municipal | p. 58 |
+| Conhecimentos Específicos | Bloco do SUS igual ao de Blumenau; depois a parte própria de cada cargo, com Código de Ética Odontológica em todos; Pacientes com Necessidades Especiais cita a Resolução CFO 63/2005 | p. 72-75 |
+| Desempate | Idoso; depois CE, LP, Raciocínio Lógico e Conhecimentos Gerais; depois jurado; por fim, idade | p. 17 |
+| Cota PcD | 10% (LC Municipal 7/2003) | p. 6 |
+| Inscrições por candidato | Até 2: 1 de nível superior + 1 de fundamental ou médio | p. 3 |
+| Cronograma | Gabarito preliminar 14/12/2026; recurso 15 a 16/12/2026; resultado da prova 15/01/2027; resultado final 12/02/2027 (datas previstas, podem mudar por errata) | p. 1 |
+
 ## 3. Pendências deste arquivo
 1. **Balneário Camboriú:** edital não publicado. Quando sair, transcrever cargos, vagas, datas, composição da prova e programa, com a fonte de cada um.
 2. Ficar de olho em novos editais da FURB para Blumenau. Os dois de 2026 (SEMED 001/2026 e Pró-Família 002/2026) não têm o cargo.
 3. Lei Orgânica de Blumenau: falta o texto consolidado vigente.
-4. Lei 7.564/2010: faltam as leis alteradoras (8.649/2018 e 8.820/2019).
+4. Lei 7.564/2010: as 12 leis alteradoras já foram baixadas (tabela 1.6). Resta só conferir alterações publicadas depois de 01/10/2026.
 5. Normas federais: foram baixadas da Câmara dos Deputados. Conferir com o Planalto quando houver acesso.
 6. Código de Ética do CFO: verificar se houve alterações posteriores à Resolução CFO-118/2012.
