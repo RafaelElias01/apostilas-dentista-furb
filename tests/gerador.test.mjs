@@ -35,10 +35,13 @@ test('(1) gera o HTML do modelo com --teste e --saida', () => {
 });
 
 test('(2) --pdf com o modelo e sem --saida e recusado', () => {
+  const destino = path.join(RAIZ, 'material-premium', PDF_NOME);
+  const antes = fs.existsSync(destino) ? fs.readFileSync(destino) : null;
   const r = rodar(GERADOR, [MODELO, '--json-externo', '--pdf']);
   assert.notStrictEqual(r.status, 0);
   assert.match(r.stderr, /use --saida/);
-  assert.ok(!fs.existsSync(path.join(RAIZ, 'material-premium', PDF_NOME)), 'nao pode gravar em material-premium');
+  const depois = fs.existsSync(destino) ? fs.readFileSync(destino) : null;
+  assert.deepStrictEqual(depois, antes, 'modelo nao pode alterar o PDF final');
 });
 
 test('(2b) --teste sem --saida e recusado', () => {

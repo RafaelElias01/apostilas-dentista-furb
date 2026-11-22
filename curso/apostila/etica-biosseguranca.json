@@ -38,7 +38,7 @@
       "titulo": "Biossegurança: antissepsia, esterilização e monitoramento, EPI e risco de transmissão",
       "nivel": 3,
       "topicosBanco": ["bio.biosseguranca"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 7,
       "intro": "7 questões únicas em 4 edições (2019: 1; 2021P: 3; 2021C: 1; 2025: 2); 4 delas caíram na prova do Clínico Geral. Nenhuma foi anulada. O que caiu: nome do procedimento que reduz microrganismos da pele (G0028), definição de antissepsia (G0136), sequência da lavagem das mãos (G0174), o que não é medida de biossegurança (G0179), EPI na pandemia (G0372), classificação dos artigos em críticos, semicríticos e não críticos (G0301, 2025) e tipos de monitoramento da esterilização (G0304, 2025). Em 2025 a banca subiu o nível: afirmativas numeradas e ‘associe as colunas’. Os números desta lição vêm de artigo de norma citado no ponto, com a marca ‘para estudo; não use para tratar paciente’.",
       "pontos": [
         {
@@ -161,7 +161,7 @@
       "titulo": "Relações humanas no trabalho",
       "nivel": 3,
       "topicosBanco": ["etica.relacoes"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 5,
       "intro": "5 questões únicas, uma em CADA uma das 5 edições (2019, 2021P, 2021C, 2023 e 2025); todas caíram na prova do Clínico Geral. Nenhuma foi anulada. O assunto é estável e as respostas seguem um padrão: a banca premia a solução dialogada, inclusiva e construtiva, e pune a que evita, esconde, separa ou impõe. O que caiu: conflito (G0021), chefe autoritário (G0114), equipe diversa (G0223), inteligências intrapessoal e interpessoal (G0312) e o que faz uma equipe funcionar (G0346).",
       "pontos": [
         {
@@ -231,7 +231,7 @@
       "titulo": "Ética profissional no serviço público",
       "nivel": 3,
       "topicosBanco": ["etica.servico_publico"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 4,
       "intro": "4 questões únicas em 4 edições (2019, 2021P, 2021C e 2023); todas caíram na prova do Clínico Geral. Nenhuma foi anulada. Por isso o nível é Alto, mesmo com só 4 questões: o assunto aparece em quase toda edição. O que caiu: conceito de ética (G0022), por que a ética pesa mais no servidor público (G0113), dilema ético diante da corrupção de um colega (G0224) e função pública e vida particular (G0345). O edital não nomeia código de ética de servidor; por isso esta lição não traz trecho de lei e pede raciocínio de princípios.",
       "pontos": [
         {
@@ -283,7 +283,7 @@
       "titulo": "Código de Ética Odontológica (CFO)",
       "nivel": 2,
       "topicosBanco": ["etica.codigo_cfo"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 4,
       "intro": "4 questões únicas em 2 edições (2019: 3; 2025: 1); só 1 delas caiu na prova do Clínico Geral (as outras 3 vieram de provas de especialidade). Nenhuma foi anulada. As 3 de 2019 (G0031, G0066, G0087) cobram infrações éticas nos relacionamentos com o paciente (art. 11) e entre os colegas (arts. 12 e 13); a de 2025 (G0311) cobra a função dos códigos de ética no serviço público. Os artigos abaixo foram lidos por inteiro no PDF da Resolução CFO-118/2012; como o gerador só aceita trecho de arquivo HTML, os pontos são explicações do autor e o artigo fica ‘a conferir’ na versão vigente (ver Limites). Os trechos entre aspas desta lição são da Lei 4.324/1964.",
       "pontos": [
         {
@@ -358,7 +358,7 @@
       "titulo": "Responsabilidade profissional: negligência, imprudência e imperícia",
       "nivel": 2,
       "topicosBanco": ["etica.responsabilidade"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 3,
       "intro": "3 questões únicas, todas em 2019 (G0039, G0059, G0072), nenhuma na prova do Clínico Geral (vieram de provas de especialidade). Nenhuma foi anulada. As três têm o mesmo formato e a MESMA resposta: um dentista (cirurgião, endodontista, odontopediatra) é ‘desatento, omisso’, não averigua ou falta com a diligência, e a pergunta é como a conduta se configura. A resposta é sempre negligência. Mesmo com amostra de 1 edição, o padrão é tão regular que vale dominar o trio.",
       "pontos": [
         {
@@ -403,7 +403,7 @@
       "titulo": "Gerenciamento de resíduos (PGRSS)",
       "nivel": 1,
       "topicosBanco": ["bio.residuos"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 2,
       "intro": "2 questões únicas, ambas em 2019 (G0036 e G0051); 1 delas caiu na prova do Clínico Geral. Nenhuma foi anulada. G0036 pergunta o que deve constar no PGRSS e G0051 em que tipo de resíduo se classifica o remanescente de tubetes de anestésico. A norma é a RDC Anvisa 222/2018, que só existe em PDF aqui; os pontos citam o artigo lido no PDF e são explicação do autor. PGRSS = Plano de Gerenciamento de Resíduos de Serviços de Saúde.",
       "pontos": [
         {
@@ -450,7 +450,7 @@
       "titulo": "Prontuário odontológico",
       "nivel": 1,
       "topicosBanco": ["bio.prontuario"],
-      "qtdQuestoes": 8,
+      "qtdQuestoes": 1,
       "intro": "1 questão única, em 2021P (G0175); ela não caiu na prova do Clínico Geral. Nenhuma foi anulada. A questão pediu o que NÃO é obrigatório num prontuário ‘segundo o CFO’. A resposta marcada (profissão do paciente) diverge de um documento mais novo do próprio CFO; esta lição mostra os dois lados para você não ser surpreendido. Prontuário também aparece no edital do Clínico Geral, do Odontopediatra e do Buco-Maxilo-Facial.",
       "pontos": [
         {

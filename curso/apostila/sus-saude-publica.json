@@ -48,7 +48,7 @@
       "titulo": "Lei 8.080/1990: princípios, objetivos, competências e organização do SUS",
       "nivel": 3,
       "topicosBanco": ["sus.lei8080"],
-      "qtdQuestoes": 7,
+      "qtdQuestoes": 8,
       "intro": "8 questões únicas em 4 edições (2019: 1; 2023: 1; 2025: 1; 2021C: 5). Uma foi anulada (G0351, de 2021C, sobre competências das esferas): não estude a “resposta” dela. Sobram 7 usáveis, todas aqui. O Concurso de 2021 (2021C) cobrou a Lei 8.080 cinco vezes, em formato de afirmativas com EXCETO ou CORRETA sobre objetivos, princípios, comissões e consórcios. Regra de ouro: quase toda alternativa errada vem com palavra absoluta (somente, exclusivamente, unicamente, não pode, não é).",
       "pontos": [
         { "ref": "CF/88, Art. 196 · saúde é direito", "fonte": "constituicao-federal-1988-camara-normaatualizada.html", "trecho": "Art. 196. A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação.", "texto": "É a base de tudo: saúde é direito de todos (universalidade) e dever do Estado, com ações de promoção, proteção e recuperação. Guarde as três palavras: promoção, proteção, recuperação." },
@@ -243,7 +243,7 @@
       "titulo": "Epidemiologia: conceitos, indicadores de saúde e sistemas de informação",
       "nivel": 2,
       "topicosBanco": ["sus.epidemiologia"],
-      "qtdQuestoes": 3,
+      "qtdQuestoes": 4,
       "intro": "4 questões únicas em 3 edições (2021P: 1; 2023: 2; 2025: 1). Uma foi anulada (G0221, de 2023, sobre indicadores de saúde): não estude a “resposta” dela. Sobram 3 usáveis: sindemia (G0119), bases conceituais (G0220) e incidência x prevalência (G0299). Esta lição não depende de lei; o texto vem das próprias questões e de uma fonte oficial para a mortalidade infantil (ver Limites desta análise).",
       "pontos": [
         { "ref": "Bases conceituais · distribuição dos eventos de saúde", "conceito": true, "texto": "G0220 (2023): a epidemiologia parte do entendimento de que os eventos de saúde e seus determinantes NÃO se distribuem ao acaso entre as pessoas (a afirmativa I dizia “ao acaso” e era falsa). Por isso é possível estudar padrões e agir. Gabarito: apenas II e III verdadeiras (B)." },
@@ -291,7 +291,7 @@
       "titulo": "Gestão colegiada, comissões intergestores e responsabilidade sanitária",
       "nivel": 1,
       "topicosBanco": ["sus.gestao"],
-      "qtdQuestoes": 1,
+      "qtdQuestoes": 2,
       "intro": "2 questões únicas em 2 edições (2023: 1; 2025: 1). Uma foi anulada (G0300, de 2025, sobre responsabilização macro e microssanitária): não estude a “resposta” dela. Sobra 1 usável: G0219 (2023), V ou F sobre Conferência, CONASS/CONASEMS e paridade, cujo conteúdo é a Lei 8.142 (lição 3). Esta lição acrescenta as Comissões Intergestores, que são o ponto de gestão colegiada do SUS.",
       "pontos": [
         { "ref": "Lei 8.080, Art. 14-A · Comissões Intergestores", "fonte": "lei-8080-1990-camara-normaatualizada.html", "trecho": "Art. 14-A. As Comissões Intergestores Bipartite e Tripartite são reconhecidas como foros de negociação e pactuação entre gestores, quanto aos aspectos operacionais do Sistema Único de Saúde (SUS).", "texto": "A Tripartite (União, Estados e Municípios) e a Bipartite (Estado e Municípios) são foros de negociação e pactuação entre GESTORES, sobre aspectos operacionais. Não são conselhos de controle social." },

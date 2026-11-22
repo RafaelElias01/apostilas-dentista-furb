@@ -107,7 +107,7 @@
       "titulo": "Atualidades: Brasil e mundo",
       "nivel": 3,
       "topicosBanco": ["cgl.brasil_mundo"],
-      "qtdQuestoes": 9,
+      "qtdQuestoes": 10,
       "intro": "10 questões únicas em 5 edições (2019: 2; 2021P: 1; 2023: 3; 2025: 2; 2021C: 2). Uma foi anulada (G0200, 2023, sobre a Petrobras) e não é usada: sobram 9. Atualidades vencem com o tempo e não podem ser deduzidas das provas antigas: esta lição ensina o JEITO das questões e os fatos que as provas já cobraram, todos tirados do enunciado e do gabarito (a conferir se ainda valem). Não há aqui fato novo de fonte externa.",
       "pontos": [
         { "ref": "Constituição Cidadã · G0198 (2023)", "conceito": true, "texto": "Enunciado: Ulysses Guimarães, presidente da Assembleia Nacional Constituinte, declarou promulgado o \"documento da liberdade, da dignidade, da democracia, da justiça social do Brasil\" em 5 de outubro de 1988. Gabarito B: 1988 e Constituição Cidadã. A banca trocou a data (1995, 1999, 1990, 1980) e o apelido (Transparente, Magna, Maior, Democrática)." },
@@ -154,7 +154,7 @@
       "titulo": "História, cultura e economia de SC e de Blumenau",
       "nivel": 3,
       "topicosBanco": ["cgl.historia_cultura_sc"],
-      "qtdQuestoes": 7,
+      "qtdQuestoes": 8,
       "intro": "8 questões únicas em 3 edições (2019: 3; 2021P: 2; 2021C: 3). Uma foi anulada (G0343, sobre as origens de Blumenau, 2021C) e não é usada: sobram 7. Os fatos vêm dos enunciados e do gabarito; os enunciados citam como fonte páginas do governo de SC e de turismo de Blumenau. Único fato conferido por mim em fonte oficial aberta: a chegada dos primeiros colonos a Blumenau (Prefeitura de Blumenau, acesso em 20/11/2026).",
       "pontos": [
         { "ref": "Colonização de Blumenau · G0106 (2021P)", "conceito": true, "texto": "Conferido na página História da Prefeitura de Blumenau (https://www.blumenau.sc.gov.br/secao/historia, 20/11/2026): \"Em 2 de setembro de 1850, dezessete colonos chegaram ao local onde hoje se ergue a cidade de Blumenau.\" O enunciado de G0106 diz o mesmo (1850, 2 de setembro, 17 colonos alemães; depois chegaram imigrantes da Itália e da Polônia). AVISO: a profissão do fundador varia por fonte: o enunciado diz \"médico farmacêutico e filósofo\"; a página da Prefeitura diz \"químico e farmacêutico alemão Dr. Hermann Bruno Otto Blumenau\". Não decore a profissão; decore o nome (Dr. Hermann Blumenau), o ano (1850) e a origem alemã. Setores da economia de Blumenau no gabarito (E): mercado têxtil e tecnologia da informação." },
@@ -210,7 +210,7 @@
       "titulo": "Descobertas e inovações científicas",
       "nivel": 3,
       "topicosBanco": ["cgl.ciencia_inovacao"],
-      "qtdQuestoes": 4,
+      "qtdQuestoes": 5,
       "intro": "5 questões únicas em 2 edições (2021P: 2; 2025: 3). Uma foi anulada (G0288, de 2025, sobre transplante de útero) e não é usada: sobram 4. O edital pede \"descobertas e inovações científicas na atualidade e seus respectivos impactos na sociedade contemporânea\". Como atualidade vence rápido, esta lição ensina o formato e o que as provas já cobraram, tudo tirado do enunciado e do gabarito.",
       "pontos": [
         { "ref": "Inteligência artificial · G0103 (2021P)", "conceito": true, "texto": "O enunciado descreve sistemas que simulam inteligência similar à humana, tomam decisões de forma autônoma com base em padrões de grandes bancos de dados, e fala da quarta revolução industrial, marcada pela convergência de tecnologias digitais, físicas e biológicas. Gabarito A: inteligência artificial." },
