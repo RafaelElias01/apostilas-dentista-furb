@@ -589,19 +589,37 @@ function viewApostilas(raiz) {
   const erroApos = [D.apostilasErro, ...(problemasNum.length ? [`dados/apostilas.json: ${[...new Set(problemasNum)].join('; ')}`] : [])].filter(Boolean).join(' | ');
   raiz.append(
     h('h1', null, 'Apostilas'),
-    h('p', null, 'Uma apostila em PDF por área, numeradas. As que ainda não estão prontas aparecem como "em preparação".'),
+    h('p', { class: 'apostilas-intro' }, 'Materiais completos em PDF, organizados por disciplina e com questões da banca FURB.'),
   );
   if (erroApos) raiz.append(h('p', { class: 'aviso', role: 'alert' }, `Problema na lista de apostilas publicadas (${erroApos}). Os links de PDF podem estar faltando.`));
-  const ul = h('ul', { class: 'lista' });
+  const grid = h('div', { class: 'apostilas-grid' });
   for (const a of D.radar.apostilas || []) {
     const nn = String(a.numero).padStart(2, '0');
     const p = pub.get(Number(a.numero));
-    const li = h('li', null, h('strong', null, `Apostila ${nn} · ${a.titulo}`), ' ');
-    if (p && p.arquivo) li.append(h('a', { class: 'btn', href: `apostilas/${encodeURIComponent(p.arquivo)}`, download: '' }, 'Baixar PDF'));
-    else li.append(h('span', { class: 'tag anulada' }, 'em preparação'));
-    ul.append(li);
+    const pronta = !!(p && p.arquivo);
+    const card = h('article', { class: `apostila-card${pronta ? '' : ' apos-em-preparacao'}` },
+      h('div', { class: 'apostila-card-topo' },
+        h('span', { class: 'apostila-numero' }, nn),
+        h('span', { class: `apostila-status${pronta ? ' pronto' : ''}` }, pronta ? 'Disponível' : 'Em preparação'),
+      ),
+      h('h2', null, a.titulo),
+      a.questoesUnicasBlumenau != null
+        ? h('p', { class: 'apostila-meta' }, `${a.questoesUnicasBlumenau} questões únicas de Blumenau`)
+        : h('p', { class: 'apostila-meta' }, 'Conteúdo em preparação'),
+    );
+    if (pronta) {
+      card.append(h('a', {
+        class: 'btn apos-download',
+        href: `apostilas/${encodeURIComponent(p.arquivo)}`,
+        download: '',
+        'aria-label': `Baixar PDF da Apostila ${nn}: ${a.titulo}`,
+      }, 'Baixar PDF'));
+    } else {
+      card.append(h('span', { class: 'apos-indisponivel', 'aria-label': `Apostila ${nn} ainda em preparação` }, 'Em breve'));
+    }
+    grid.append(card);
   }
-  raiz.append(h('div', { class: 'card' }, ul));
+  raiz.append(grid);
 }
 
 /* ---------- CONCURSO ---------- */

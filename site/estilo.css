@@ -135,3 +135,107 @@ th, td { border: 1px solid var(--borda); padding: 6px 8px; text-align: left; }
 .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .timer { font-variant-numeric: tabular-nums; font-size: 1.3rem; font-weight: 700; }
 ul.lista { padding-left: 1.2rem; }
+
+.apostilas-intro {
+  max-width: 44rem;
+  color: var(--suave);
+  margin: 0 0 18px;
+}
+.apostilas-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+.apostila-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 196px;
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgb(27 31 36 / 6%);
+}
+.apostila-card-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  margin-bottom: 12px;
+}
+.apostila-numero {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1;
+  flex: none;
+}
+.apostila-status {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  color: var(--suave);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.apostila-status.pronto {
+  border-color: var(--ok);
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.apostila-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+.apostila-meta {
+  margin: 0 0 16px;
+  color: var(--suave);
+  font-size: 0.9rem;
+}
+.apos-download {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+}
+.apos-em-preparacao {
+  background: color-mix(in srgb, var(--card) 92%, var(--bg));
+}
+.apos-indisponivel {
+  width: 100%;
+  min-height: 44px;
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--borda);
+  border-radius: 8px;
+  color: var(--suave);
+  font-weight: 700;
+}
+@media (max-width: 559px) {
+  .apostila-status { display: none; }
+  .apostila-card h2 { max-width: 100%; min-width: 0; overflow-wrap: break-word; }
+}
+@media (min-width: 560px) {
+  .apostilas-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 960px) {
+  .apostilas-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .apostila-card { min-height: 210px; }
+}
