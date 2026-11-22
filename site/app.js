@@ -589,14 +589,39 @@ function viewApostilas(raiz) {
   const erroApos = [D.apostilasErro, ...(problemasNum.length ? [`dados/apostilas.json: ${[...new Set(problemasNum)].join('; ')}`] : [])].filter(Boolean).join(' | ');
   raiz.append(
     h('h1', null, 'Apostilas'),
-    h('p', { class: 'apostilas-intro' }, 'Materiais completos em PDF, organizados por disciplina e com questões da banca FURB.'),
+    h('p', { class: 'apostilas-intro' }, 'Escolha o concurso para separar o conteúdo direto, complementar e a legislação municipal que exige conferência.'),
   );
   if (erroApos) raiz.append(h('p', { class: 'aviso', role: 'alert' }, `Problema na lista de apostilas publicadas (${erroApos}). Os links de PDF podem estar faltando.`));
+
+  const filtros = h('div', { class: 'apos-filtros', role: 'group', 'aria-label': 'Filtrar apostilas por concurso' });
+  const opcoes = [
+    ['todos', 'Todos'],
+    ['blumenau', 'Blumenau 2025'],
+    ['navegantes', 'Navegantes 2026'],
+    ['maravilha', 'Maravilha 2026'],
+    ['geral', 'Conteúdo geral FURB'],
+  ];
+  for (const [valor, texto] of opcoes) {
+    filtros.append(h('button', { type: 'button', class: `apos-filtro${valor === 'todos' ? ' ativo' : ''}`, 'data-filtro': valor, 'aria-pressed': valor === 'todos' ? 'true' : 'false' }, texto));
+  }
+
   const grid = h('div', { class: 'apostilas-grid' });
-  for (const a of D.radar.apostilas || []) {
+  const notas = {
+    direta: 'Uso direto',
+    complementar: 'Conteúdo complementar',
+    verificar: 'Conferir edital municipal',
+    'nao-usar': 'Não usar neste concurso',
+  };
+
+  function desenharApos(filtro) {
+    grid.replaceChildren();
+    for (const a of D.radar.apostilas || []) {
     const nn = String(a.numero).padStart(2, '0');
     const p = pub.get(Number(a.numero));
     const pronta = !!(p && p.arquivo);
+    const aplicacao = p && p.concurso ? p.concurso[filtro] : undefined;
+    const excluida = filtro !== 'todos' && aplicacao === 'nao-usar';
+    if (excluida) continue;
     const card = h('article', { class: `apostila-card${pronta ? '' : ' apos-em-preparacao'}` },
       h('div', { class: 'apostila-card-topo' },
         h('span', { class: 'apostila-numero' }, nn),
@@ -607,6 +632,9 @@ function viewApostilas(raiz) {
         ? h('p', { class: 'apostila-meta' }, `${a.questoesUnicasBlumenau} questões únicas de Blumenau`)
         : h('p', { class: 'apostila-meta' }, 'Conteúdo em preparação'),
     );
+    if (filtro !== 'todos' && aplicacao) {
+      card.append(h('p', { class: `apos-aplicacao aps-${aplicacao}` }, notas[aplicacao]));
+    }
     if (pronta) {
       card.append(h('a', {
         class: 'btn apos-download',
@@ -618,8 +646,20 @@ function viewApostilas(raiz) {
       card.append(h('span', { class: 'apos-indisponivel', 'aria-label': `Apostila ${nn} ainda em preparação` }, 'Em breve'));
     }
     grid.append(card);
+    }
   }
-  raiz.append(grid);
+  filtros.addEventListener('click', (e) => {
+    const botao = e.target.closest('[data-filtro]');
+    if (!botao) return;
+    for (const item of filtros.querySelectorAll('[data-filtro]')) {
+      const ativo = item === botao;
+      item.classList.toggle('ativo', ativo);
+      item.setAttribute('aria-pressed', ativo ? 'true' : 'false');
+    }
+    desenharApos(botao.dataset.filtro);
+  });
+  desenharApos('todos');
+  raiz.append(filtros, grid);
 }
 
 /* ---------- CONCURSO ---------- */

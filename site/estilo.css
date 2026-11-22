@@ -141,6 +141,53 @@ ul.lista { padding-left: 1.2rem; }
   color: var(--suave);
   margin: 0 0 18px;
 }
+.apos-filtros {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0 16px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+.apos-filtro {
+  flex: none;
+  min-height: 44px;
+  border: 1px solid var(--borda);
+  background: var(--card);
+  color: var(--texto);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.apos-filtro.ativo {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: var(--acento-texto);
+}
+.apos-aplicacao {
+  align-self: flex-start;
+  margin: 0 0 10px;
+  padding: 4px 8px;
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  color: var(--suave);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.aps-direta {
+  border-color: var(--ok);
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.aps-complementar {
+  border-color: var(--acento);
+  background: var(--acento-suave);
+  color: var(--acento);
+}
+.aps-verificar {
+  border-color: var(--aviso);
+  background: var(--aviso-bg);
+  color: var(--aviso);
+}
 .apostilas-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
