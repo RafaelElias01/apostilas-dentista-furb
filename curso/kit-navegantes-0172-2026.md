@@ -43,6 +43,7 @@ Total: 40 questões e 10,00 pontos. Nota mínima: 5,00.
 - Art. 69: a Odontologia para Pacientes com Necessidades Especiais tem como objetivo prevenir, diagnosticar, tratar e controlar problemas de saúde bucal de pacientes com alteração no sistema biopsicossocial, com atenção à funcionalidade e atuação inter/multi/transdisciplinar.
 - Art. 70: incluem-se como áreas de competência atenção a distúrbios psíquicos, comportamentais e emocionais; condições físicas ou sistêmicas temporárias ou definitivas em níveis ambulatorial, hospitalar ou domiciliar; problemas especiais de saúde com repercussão bucal ou sistêmica; e participação em equipe multidisciplinar.
 - Lei 3985/2025 e Lei Orgânica de Navegantes: falta incorporar texto oficial municipal consolidado no projeto. Uma cópia da Lei Orgânica usada pela FURB foi obtida, mas não é tratada como consolidação oficial.
+- A existência da Lei 3985/2025 foi identificada no sistema da Câmara Municipal de Navegantes. A possível alteração pela Lei 4022/2026 é apenas uma informação ainda não confirmada em texto assinado; não foi incorporada como vigência.
 
 ## Arquivos existentes que continuam válidos
 
