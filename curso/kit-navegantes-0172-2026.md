@@ -17,6 +17,7 @@ Fonte-base: edital com errata publicado pela FURB no certame 579.
 | Cirurgia, anestesia, farmacologia e patologia | Apostila 08 | Conforme o cargo |
 | Conhecimentos Gerais e legislação municipal de Blumenau | Apostila 02 | Não usar como legislação de Navegantes; atualidades precisam ser comparadas ao programa de Navegantes |
 | Raciocínio lógico e matemático | Apostila 09 | Complemento direto para o bloco da prova de Navegantes |
+| Odontologia para Pacientes com Necessidades Especiais | Apostila 10 | Conteúdo normativo confirmado; protocolos clínicos permanecem pendentes |
 
 ## Estrutura da prova confirmada no edital
 
@@ -55,5 +56,6 @@ Total: 40 questões e 10,00 pontos. Nota mínima: 5,00.
 - `site/apostilas/apostila-07-periodontia.pdf`
 - `site/apostilas/apostila-08-cirurgia-farmacologia-patologia.pdf`
 - `site/apostilas/apostila-09-raciocinio-logico-navegantes.pdf`
+- `site/apostilas/apostila-10-odontologia-pacientes-especiais-navegantes.pdf`
 
 O arquivo da Apostila 02 não deve ser usado para legislação municipal de Navegantes. Ele pode ser consultado apenas para separar conteúdo histórico geral e conferir a estrutura do projeto.

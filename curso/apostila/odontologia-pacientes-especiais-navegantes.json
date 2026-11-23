@@ -1,0 +1,105 @@
+{
+  "id": "odontologia-pacientes-especiais-navegantes",
+  "numero": 10,
+  "arquivoPdf": "apostila-10-odontologia-pacientes-especiais-navegantes.pdf",
+  "titulo": "Odontologia para Pacientes com Necessidades Especiais",
+  "subtitulo": "Apostila 10 · Processo Seletivo 0172/2026 · Navegantes (SC) · cargo PNE",
+  "fontes": [],
+  "rotuloPontos": "Definição, áreas de atuação e limites",
+  "limiteFonte": "Conteúdo normativo confirmado na consolidação das normas do CFO atualizada em setembro de 2023. Outros temas clínicos só podem ser completados com fonte oficial ou bibliografia verificável.",
+  "comoUsar": [
+    "Esta apostila complementa as Apostilas 03 a 08 para o cargo Odontólogo Paciente com Necessidades Especiais de Navegantes.",
+    "O núcleo normativo confirma a definição da especialidade e suas áreas de competência.",
+    "Não substitui protocolo clínico, avaliação médica, anamnese, consentimento informado ou diretrizes atualizadas de atendimento.",
+    "A Resolução CFO 63/2005 é citada no edital de Navegantes; a consolidação do CFO confirma a definição e as áreas de atuação da especialidade.",
+    "Caso surjam questões oficiais do certame, os temas deverão ser conferidos contra o enunciado e o gabarito antes de afirmar qualquer prioridade."
+  ],
+  "ranking": [
+    { "rotulo": "Definição da especialidade", "nivel": 3 },
+    { "rotulo": "Distúrbios psíquicos, comportamentais e emocionais", "nivel": 2 },
+    { "rotulo": "Condicionantes físicas e sistêmicas", "nivel": 2 },
+    { "rotulo": "Repercussões bucais e sistêmicas", "nivel": 2 },
+    { "rotulo": "Equipe inter, multi e transdisciplinar", "nivel": 2 }
+  ],
+  "licoes": [
+    {
+      "id": "definicao",
+      "titulo": "Definição da especialidade",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "O Art. 69 da consolidação das normas do CFO define o foco biopsicossocial e a atuação integral da especialidade.",
+      "pontos": [
+        { "ref": "Art. 69 - definição", "conceito": true, "texto": "Odontologia para Pacientes com Necessidades Especiais é a especialidade voltada à prevenção, ao diagnóstico, ao tratamento e ao controle dos problemas de saúde bucal de pacientes que apresentam alteração no sistema biopsicossocial." },
+        { "ref": "Funcionalidade", "conceito": true, "texto": "A definição exige considerar o processo de adoecimento e adequar o tratamento às necessidades do paciente, levando em conta a classificação de funcionalidade." },
+        { "ref": "Atuação integral", "conceito": true, "texto": "A especialidade atua dentro de estrutura de referência inter, multi e transdisciplinar, com profissionais de saúde e áreas correlatas." }
+      ],
+      "tabela": {
+        "titulo": "Objetivos da especialidade",
+        "cab": ["Objetivo", "Aplicação"],
+        "linhas": [["Prevenção", "Reduzir riscos e problemas de saúde bucal"], ["Diagnóstico", "Identificar alterações e necessidades"], ["Tratamento", "Adequar condutas ao sistema biopsicossocial"], ["Controle", "Manter acompanhamento e prevenção"]]
+      },
+      "macete": "Decore a sequência: prevenção, diagnóstico, tratamento e controle.",
+      "pegadinhas": ["Limitar PNE a deficiência física", "Separar saúde bucal da dimensão social", "Ignorar funcionalidade e equipe multidisciplinar"],
+      "cobra": ["Definição da especialidade", "Sistema biopsicossocial", "Atuação interprofissional"],
+      "mapa": { "centro": "PNE", "ramos": [
+        { "t": "Prevenção", "f": ["Risco", "Promoção"] },
+        { "t": "Diagnóstico", "f": ["Biológico", "Psicossocial"] },
+        { "t": "Tratamento", "f": ["Funcionalidade"] },
+        { "t": "Controle", "f": ["Acompanhamento"] }
+      ] }
+    },
+    {
+      "id": "areas-competencia",
+      "titulo": "Áreas de competência",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O Art. 70 apresenta quatro áreas de competência que podem aparecer em questões de definição e reconhecimento da especialidade.",
+      "pontos": [
+        { "ref": "Distúrbios psíquicos e comportamentais", "conceito": true, "texto": "Inclui prestar atenção odontológica a pacientes com distúrbios psíquicos, comportamentais e emocionais." },
+        { "ref": "Condicionantes físicas e sistêmicas", "conceito": true, "texto": "Inclui condições físicas ou sistêmicas incapacitantes temporárias ou definitivas no nível ambulatorial, hospitalar ou domiciliar." },
+        { "ref": "Problemas especiais de saúde", "conceito": true, "texto": "Inclui aprofundar estudos e prestar atenção a problemas especiais de saúde com repercussão na boca e estruturas anexas ou manifestações sistêmicas." },
+        { "ref": "Equipe multidisciplinar", "conceito": true, "texto": "Inclui interrelacionamento e participação da equipe multidisciplinar em instituições de saúde, ensino e pesquisa." }
+      ],
+      "tabela": {
+        "titulo": "Art. 70 em quatro áreas",
+        "cab": ["Área", "Palavras-chave"],
+        "linhas": [["Psíquico/comportamental", "Distúrbios psíquicos, comportamentais e emocionais"], ["Físico/sistêmico", "Temporário ou definitivo; ambulatorial, hospitalar ou domiciliar"], ["Bucal/sistêmica", "Problemas especiais com repercussão em boca, anexos ou sistema"], ["Interdisciplinar", "Equipe em saúde, ensino e pesquisa"]]
+      },
+      "macete": "Quatro palavras-chave: psíquico-comportamental, físico-sistêmico, bucal-sistêmico e equipe.",
+      "pegadinhas": ["Excluir atendimento domiciliar", "Excluir pacientes com condição temporária", "Separar a especialidade da equipe multidisciplinar"],
+      "cobra": ["Níveis ambulatorial, hospitalar e domiciliar", "Repercussão sistêmica", "Atuação em equipe"],
+      "mapa": { "centro": "Competências", "ramos": [
+        { "t": "Psíquico", "f": ["Comportamento", "Emoção"] },
+        { "t": "Físico", "f": ["Temporário", "Definitivo"] },
+        { "t": "Sistema", "f": ["Bucal", "Sistêmico"] },
+        { "t": "Equipe", "f": ["Saúde", "Ensino", "Pesquisa"] }
+      ] }
+    },
+    {
+      "id": "navegantes",
+      "titulo": "Aplicação no concurso de Navegantes",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O edital cita a Resolução CFO 63/2005 no programa próprio do cargo PNE. A comprovação utilizada neste complemento é a consolidação posterior das normas do CFO.",
+      "pontos": [
+        { "ref": "Cargo PNE", "conceito": true, "texto": "Navegantes possui cadastro de reserva para Odontólogo Paciente com Necessidades Especiais, cargo próprio do processo seletivo 0172/2026." },
+        { "ref": "Fonte normativa", "conceito": true, "texto": "A consolidação atualizada em setembro de 2023 confirma os Arts. 69 e 70. A apostila não apresenta conteúdo não localizado ou não confirmado." },
+        { "ref": "Limite clínico", "conceito": true, "texto": "O estudo desta disciplina exige atenção a protocolos, condições médicas, manejo comportamental e equipe multiprofissional. Esses tópicos dependem de livro ou diretriz oficial acessível antes de serem ensinados como regra." }
+      ],
+      "tabela": {
+        "titulo": "Cobertura desta apostila",
+        "cab": ["Tema", "Status"],
+        "linhas": [["Definição PNE", "Confirmada"], ["Áreas de competência", "Confirmadas"], ["Protocolos clínicos", "PENDENTE"], ["Manejo específico por condição", "PENDENTE"]]
+      },
+      "macete": "No edital, use os Arts. 69 e 70 como núcleo de conceitos; não extrapole para condutas clínicas sem fonte.",
+      "pegadinhas": ["Apresentar protocolo clínico como normativa CFO sem fonte", "Reduzir PNE a deficiência física", "Usar texto municipal não confirmado"],
+      "cobra": ["Definição", "Competências", "Limites da fonte"],
+      "mapa": { "centro": "PNE em Navegantes", "ramos": [
+        { "t": "Art. 69", "f": ["Definição"] },
+        { "t": "Art. 70", "f": ["Quatro áreas"] },
+        { "t": "Edital", "f": ["Cargo próprio"] },
+        { "t": "PENDENTE", "f": ["Protocolos"] }
+      ] }
+    }
+  ]
+}

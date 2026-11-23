@@ -7,5 +7,6 @@
   { "numero": 6, "arquivo": "apostila-06-dentistica-endodontia-trauma.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 7, "arquivo": "apostila-07-periodontia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
-  { "numero": 9, "arquivo": "apostila-09-raciocinio-logico-navegantes.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } }
+  { "numero": 9, "arquivo": "apostila-09-raciocinio-logico-navegantes.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } },
+  { "numero": 10, "arquivo": "apostila-10-odontologia-pacientes-especiais-navegantes.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } }
 ]
