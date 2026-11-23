@@ -16,6 +16,7 @@ Fonte-base: edital com errata publicado pela FURB no certame 579.
 | Periodontia | Apostila 07 | Conforme o cargo |
 | Cirurgia, anestesia, farmacologia e patologia | Apostila 08 | Conforme o cargo |
 | Conhecimentos Gerais e legislação municipal de Blumenau | Apostila 02 | Não usar como legislação de Navegantes; atualidades precisam ser comparadas ao programa de Navegantes |
+| Raciocínio lógico e matemático | Apostila 09 | Complemento direto para o bloco da prova de Navegantes |
 
 ## Estrutura da prova confirmada no edital
 
@@ -30,10 +31,10 @@ Total: 40 questões e 10,00 pontos. Nota mínima: 5,00.
 
 ## Cobertura que falta
 
-1. Raciocínio lógico e matemático não está coberto pelas oito apostilas.
+1. Raciocínio lógico e matemático está coberto pela Apostila 09, sem questões reais de Navegantes ainda disponíveis.
 2. Conhecimentos Gerais deve cobrir Brasil, Santa Catarina e Navegantes, além da Lei Orgânica de Navegantes e administração pública municipal.
 3. Legislação municipal de Navegantes não pode ser substituída pela legislação de Blumenau.
-4. O cargo Pacientes com Necessidades Especiais deve revisar a Resolução CFO 63/2005.
+4. O cargo Pacientes com Necessidades Especiais deve revisar a Resolução CFO 63/2005. A Apostila 05 cobre conceitos gerais de pacientes especiais; não substitui a análise integral do ato normativo.
 5. O simulado precisa de 40 questões, com peso 0,20 para LP, raciocínio lógico e gerais, e 0,30 para CE.
 
 ## Arquivos existentes que continuam válidos
@@ -45,5 +46,6 @@ Total: 40 questões e 10,00 pontos. Nota mínima: 5,00.
 - `site/apostilas/apostila-06-dentistica-endodontia-trauma.pdf`
 - `site/apostilas/apostila-07-periodontia.pdf`
 - `site/apostilas/apostila-08-cirurgia-farmacologia-patologia.pdf`
+- `site/apostilas/apostila-09-raciocinio-logico-navegantes.pdf`
 
 O arquivo da Apostila 02 não deve ser usado para legislação municipal de Navegantes. Ele pode ser consultado apenas para separar conteúdo histórico geral e conferir a estrutura do projeto.
