@@ -84,6 +84,55 @@ h3 { font-size: 1rem; margin: 16px 0 6px; }
 }
 .destaque-prazo h3,
 .destaque-prazo p { color: #fff; }
+.destaque-prazo {
+  box-shadow: 0 8px 20px rgb(127 29 29 / 18%);
+}
+.concurso-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 0;
+}
+.concurso-links .btn {
+  flex: 1 1 180px;
+  min-width: 0;
+  min-height: 46px;
+  padding: 11px 14px;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.destaque-prazo .concurso-links .btn {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #7f1d1d;
+  box-shadow: 0 2px 8px rgb(69 10 10 / 20%);
+}
+.destaque-prazo .concurso-links .btn:hover {
+  border-color: #fee2e2;
+  background: #fee2e2;
+  color: #7f1d1d;
+  box-shadow: 0 5px 14px rgb(69 10 10 / 28%);
+  transform: translateY(-1px);
+}
+.destaque-prazo .concurso-links .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgb(69 10 10 / 24%);
+}
+.destaque-prazo .concurso-links .btn:focus-visible {
+  outline: 3px solid #fde047;
+  outline-offset: 3px;
+}
+@media (max-width: 479px) {
+  .concurso-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .concurso-links .btn {
+    width: 100%;
+  }
+}
 .aviso { background: var(--aviso-bg); color: var(--aviso); border: 1px solid var(--aviso); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
 .aviso p { margin: 4px 0; }
 .suave { color: var(--suave); font-size: 0.9rem; }

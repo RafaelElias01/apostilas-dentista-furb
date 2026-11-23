@@ -1,5 +1,14 @@
 # ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-23)
 
+## Code-review pós-correção (verificado em 2026-11-23)
+- O kit agora contém **10 apostilas**.
+- Correções conferidas no commit **7c55fbc** (`Review: corrige catalogo, contagens e gerador das apostilas`).
+- O **run 16 do GitHub Pages terminou com sucesso**.
+- Contagens verificadas: **Apostila 05 = 20** questões e **Apostila 08 = 28** questões.
+- Os bugs identificados nas apostilas **09 e 10 foram corrigidos**.
+- **12 testes passaram**.
+- Permanecem pendências clínicas nas apostilas **06–08 e 10**; elas não foram declaradas resolvidas.
+
 ## O que existe (verificado)
 - **fontes/** (fora do git, pelo .gitignore): editais, cadernos, gabaritos e recursos de Blumenau (PSPS 002/2019, PSPS 002/2021, Concurso 002/2021, PSPS 003/2023, PSPS 003/2025). Também provas de outros municípios FURB (Biguaçu 2025, Florianópolis 2024, Itapema 2025) e a dispensa de licitação de Balneário Camboriú 2026 (cópia de terceiro; o ato oficial do DOM/SC é o 8903198).
   - Em 2026-11-19, segundo o coordenador da sessão, foi feito backup da pasta `fontes/` no Google Drive (não verificado por mim).
@@ -19,7 +28,7 @@
   - Amostra pequena: 5 editais de um só município, 2019 a 2025.
   - Os tópicos de outros municípios foram classificados automaticamente e servem só de complemento.
 - **curso/roteiro-apostilas.md**: roteiro das 8 apostilas (o que cada uma terá, ordem e fontes).
-- **curso/apostila/**: 8 apostilas montadas em JSON, todas com auditoria de fatos, conferência cruzada e reauditoria de incertezas concluídas:
+- **curso/apostila/**: 10 apostilas montadas em JSON, todas com auditoria de fatos, conferência cruzada e reauditoria de incertezas concluídas:
   - 01 Língua Portuguesa (`portugues.json`)
   - 02 Conhecimentos Gerais e Legislação Municipal (`conhecimentos-gerais-legislacao.json`)
   - 03 SUS, Políticas de Saúde e Epidemiologia (`sus-saude-publica.json`)
@@ -29,7 +38,7 @@
   - 07 Periodontia (`periodontia.json`)
   - 08 Cirurgia, Anestesia, Farmacologia, Emergências e Patologia Bucal (`cirurgia-farmacologia-patologia.json`)
   - Etapas feitas em 2026-11-19/20 e concluídas em 2026-11-23: auditoria de fatos (`curso/auditoria/apostila-0N.md`), resolução dos itens PENDENTE por fonte oficial, conferência cruzada (`curso/auditoria/conferencia-cruzada-0N.md`), reauditoria de precisão das apostilas 02–04 ajustando as contagens de questões usáveis por lição e removendo asserções de vigência de normas não consolidadas (LOM/Lei 7.564), e code-review do código e do site.
-  - **PDFs numerados** das 8 apostilas (01 a 08) gerados em `material-premium/` e publicados em `site/apostilas/`: 01 (74 páginas), 02 (47 páginas), 03 (49 páginas), 04 (25 páginas), 05 (44 páginas), 06 (56 páginas), 07 (28 páginas) e 08 (57 páginas). O gerador confere o rodapé "Apostila 0N · título · Página X de N" em todas as páginas via Chrome >= 131 e pdftotext.
+  - **PDFs numerados** das 10 apostilas (01 a 10) gerados em `material-premium/` e publicados em `site/apostilas/`. As páginas anteriormente verificadas das 01 a 08 são: 01 (74), 02 (47), 03 (49), 04 (25), 05 (44), 06 (56), 07 (28) e 08 (57). O gerador confere o rodapé "Apostila 0N · título · Página X de Y" em todas as páginas via Chrome >= 131 e pdftotext.
   - O que continua PENDENTE dentro das apostilas está marcado no próprio texto ("PENDENTE: ...") e vem de fonte que não abriu (livros pagos, PDFs das provas ausentes, Leonard, valvopatias etc.). Ler a seção "AINDA PENDENTE" dos relatórios `resolucao-pendencias-*.md` e `conferencia-cruzada-*.md`.
 - **Atualização em 23/11/2026 às 13:07:** as oito cópias premium foram recompletadas em `material-premium/`. Os cinco PDFs antes ausentes (01 e 05–08) foram copiados de `site/apostilas/`; os oito pares têm SHA256 idêntico entre `material-premium/` e `site/apostilas/`. Commit publicado: `a85caad` ("Site: confirma inscricoes abertas em Navegantes"). A alteração de hoje confirmou o prazo oficial de Navegantes no portal da FURB.
 - **Atualização em 23/11/2026 às 13:53:** o kit de Navegantes ganhou a Apostila 09 de Raciocínio Lógico e Matemático, publicada em `material-premium/` e `site/apostilas/`. Ela foi baseada em regras neutras compatíveis com o programa do edital, sem importar a metodologia ou o ranking da banca FAURGS. Resta incorporar questões reais de Navegantes ao banco e ainda falta obter o texto municipal oficial consolidado para completar a legislação e a administração pública de Navegantes.
@@ -73,9 +82,9 @@ Scripts de conferência na pasta scratchpad da sessão, fora do repo.
 - **Classificação ambígua, não alterada:** G0287, de 2025, trata de COP30, envelhecimento e cidades resilientes e está em `cgl.urbano`. Também caberia em `cgl.brasil_mundo`.
 
 ## O que falta (PENDENTE)
-1. **Apostilas 01 a 08 (CONCLUÍDAS E REAUDITADAS):** Todas as 8 apostilas estão com JSONs finalizados, conferidos contra as fontes, validados pelo gerador sem avisos de falta de questões, e com os PDFs numerados oficiais gerados em `material-premium/` e publicados em `site/apostilas/`. Os pontos factuais históricos das provas foram rigorosamente dissociados de afirmações indevidas de vigência para leis não consolidadas (LOM de Blumenau e Lei 7.564/2010).
-2. **Itens PENDENTE que sobraram nas apostilas** (01, 05, 06, 07 e 08): dependem de fonte fechada ou ausente (PDFs das provas, livros-texto, edição do Newman & Carranza, técnica de Leonard, diretriz de valvopatias, pKa de outros anestésicos, leucoplasia 2020/2021, tumores benignos e cistos). Resolver quando houver acesso e regerar os PDFs.
-3. **PDFs numerados**: as 8 apostilas estão prontas e publicadas em `site/apostilas/`. Ao mudar um JSON de apostila: regerar com `node scripts/gerar-apostila-materia.mjs <id> --pdf` e copiar o PDF de `material-premium/` para `site/apostilas/`.
+1. **Apostilas 01 a 10 (CONCLUÍDAS E REAUDITADAS):** As 10 apostilas estão com JSONs finalizados, conferidos contra as fontes, validados pelo gerador sem avisos de falta de questões, e com os PDFs numerados oficiais gerados em `material-premium/` e publicados em `site/apostilas/`. Os pontos factuais históricos das provas foram rigorosamente dissociados de afirmações indevidas de vigência para leis não consolidadas (LOM de Blumenau e Lei 7.564/2010).
+2. **Itens PENDENTE que sobraram nas apostilas** (06–08 e 10, sobretudo clínicos): dependem de fonte fechada ou ausente. Não foram declarados resolvidos pelo code-review pós-correção; resolver quando houver acesso e regerar os PDFs.
+3. **PDFs numerados**: as 10 apostilas estão prontas e publicadas em `site/apostilas/`. Ao mudar um JSON de apostila: regerar com `node scripts/gerar-apostila-materia.mjs <id> --pdf` e copiar o PDF de `material-premium/` para `site/apostilas/`.
 4. **Balneário Camboriú:** edital não publicado. Quando sair, atualizar `curso/edital.md`, `site/dados/concurso.json` e rever a legislação municipal das apostilas (principalmente a 02).
 5. **Lei Orgânica de Blumenau:** falta o texto consolidado vigente (anexo de 2021 + emendas 52/2022, 53/2025 e 54/2026, sem consolidação oficial).
 6. **Lei 7.564/2010:** conferir alterações publicadas depois de 01/10/2026.
