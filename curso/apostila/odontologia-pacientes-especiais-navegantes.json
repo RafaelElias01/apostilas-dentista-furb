@@ -6,12 +6,15 @@
   "subtitulo": "Apostila 10 · Processo Seletivo 0172/2026 · Navegantes (SC) · cargo PNE",
   "fontes": [],
   "rotuloPontos": "Definição, áreas de atuação e limites",
-  "limiteFonte": "Conteúdo normativo confirmado na consolidação das normas do CFO atualizada em setembro de 2023. Outros temas clínicos só podem ser completados com fonte oficial ou bibliografia verificável.",
+  "limiteFonte": "Fontes oficiais verificadas: consolidação das normas do CFO atualizada em setembro de 2023, arquivo local fontes/leis/cfo-pne/cfo-consolidacao-2023.pdf (https://website.cfo.org.br/normas-cfo-cros/); Resolução CFO-63/2005 (https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2005/63); Guia de atenção à saúde bucal da pessoa com deficiência do Ministério da Saúde (https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/livros/guia-de-atencao-a-saude-bucal-da-pessoa-com-deficiencia); Brasil Sorridente (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente); Centro de Especialidades Odontológicas (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/ceo); Rede de Cuidados à Pessoa com Deficiência (https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd); Portaria MS 1.032/2010 (https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt1032_05_05_2010_comp.html). Protocolos para condições médicas específicas, manejo farmacológico e dosagens seguem PENDENTES até fonte oficial ou bibliografia verificável. A consolidação municipal de Navegantes e o texto assinado da Lei 3.985/2025 também seguem PENDENTES.",
   "comoUsar": [
     "Esta apostila complementa as Apostilas 03 a 08 para o cargo Odontólogo Paciente com Necessidades Especiais de Navegantes.",
     "O núcleo normativo confirma a definição da especialidade e suas áreas de competência.",
     "Não substitui protocolo clínico, avaliação médica, anamnese, consentimento informado ou diretrizes atualizadas de atendimento.",
     "A Resolução CFO 63/2005 é citada no edital de Navegantes; a consolidação do CFO confirma a definição e as áreas de atuação da especialidade.",
+    "As diretrizes oficiais do Ministério da Saúde abaixo são orientações da rede SUS; não substituem avaliação clínica, avaliação de risco anestésico ou decisões individualizadas.",
+    "A atenção deve respeitar comunicação acessível, consentimento informado, participação do acompanhante ou cuidador quando necessário e elaboração compartilhada do cuidado.",
+    "Os procedimentos em ambiente hospitalar sob anestesia geral ou sedação têm indicação restrita a situações em que o cuidado convencional não é possível; não são recomendação geral.",
     "Caso surjam questões oficiais do certame, os temas deverão ser conferidos contra o enunciado e o gabarito antes de afirmar qualquer prioridade."
   ],
   "ranking": [
@@ -80,16 +83,16 @@
       "titulo": "Aplicação no concurso de Navegantes",
       "nivel": 2,
       "qtdQuestoes": 0,
-      "intro": "O edital cita a Resolução CFO 63/2005 no programa próprio do cargo PNE. A comprovação utilizada neste complemento é a consolidação posterior das normas do CFO.",
+      "intro": "O edital cita a Resolução CFO 63/2005 no programa próprio do cargo PNE. A comprovação utilizada neste complemento é a consolidação posterior das normas do CFO e diretrizes oficiais do SUS.",
       "pontos": [
         { "ref": "Cargo PNE", "conceito": true, "texto": "Navegantes possui cadastro de reserva para Odontólogo Paciente com Necessidades Especiais, cargo próprio do processo seletivo 0172/2026." },
         { "ref": "Fonte normativa", "conceito": true, "texto": "A consolidação atualizada em setembro de 2023 confirma os Arts. 69 e 70. A apostila não apresenta conteúdo não localizado ou não confirmado." },
-        { "ref": "Limite clínico", "conceito": true, "texto": "O estudo desta disciplina exige atenção a protocolos, condições médicas, manejo comportamental e equipe multiprofissional. Esses tópicos dependem de livro ou diretriz oficial acessível antes de serem ensinados como regra." }
+        { "ref": "Limite clínico", "conceito": true, "texto": "Protocolos para condições médicas específicas, manejo farmacológico e dosagens permanecem PENDENTES. Nesta apostila, somente diretrizes gerais verificáveis do SUS foram incorporadas." }
       ],
       "tabela": {
         "titulo": "Cobertura desta apostila",
         "cab": ["Tema", "Status"],
-        "linhas": [["Definição PNE", "Confirmada"], ["Áreas de competência", "Confirmadas"], ["Protocolos clínicos", "PENDENTE"], ["Manejo específico por condição", "PENDENTE"]]
+        "linhas": [["Definição PNE", "Confirmada"], ["Áreas de competência", "Confirmadas"], ["Fluxo geral da rede SUS", "Confirmado"], ["Diretrizes gerais de abordagem", "Confirmadas"], ["Protocolos por condição médica", "PENDENTE"], ["Manejo farmacológico e dosagens", "PENDENTE"]]
       },
       "macete": "No edital, use os Arts. 69 e 70 como núcleo de conceitos; não extrapole para condutas clínicas sem fonte.",
       "pegadinhas": ["Apresentar protocolo clínico como normativa CFO sem fonte", "Reduzir PNE a deficiência física", "Usar texto municipal não confirmado"],
@@ -99,6 +102,62 @@
         { "t": "Art. 70", "f": ["Quatro áreas"] },
         { "t": "Edital", "f": ["Cargo próprio"] },
         { "t": "PENDENTE", "f": ["Protocolos"] }
+      ] }
+    },
+    {
+      "id": "rede-cuidado-sus",
+      "titulo": "Organização do cuidado na rede SUS",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "Para pessoas com deficiência, o Ministério da Saúde orienta uma entrada na Atenção Primária e progressão conforme a complexidade: atenção primária, atenção especializada ambulatorial e hospitalar.",
+      "pontos": [
+        { "ref": "Primeiro nível", "conceito": true, "texto": "O atendimento odontológico pode começar na Atenção Primária à Saúde, pelas equipes de saúde bucal das UBS e pelas demais estratégias previstas na rede." },
+        { "ref": "Encaminhamento", "conceito": true, "texto": "Quando o cuidado exige procedimentos mais complexos, a equipe encaminha o usuário ao Centro de Especialidades Odontológicas (CEO) ou serviço especializado equivalente." },
+        { "ref": "Referência hospitalar", "conceito": true, "texto": "Se a necessidade não é resolvida na atenção especializada ambulatorial ou quando há dificuldades complexas de manejo, o cuidado pode ser organizado em âmbito hospitalar." },
+        { "ref": "Rede articulada", "conceito": true, "texto": "Na Rede de Cuidados à Pessoa com Deficiência, o cuidado deve ser integrado à atenção primária, especializada ambulatorial, especializada hospitalar e de urgência, com Projeto Terapêutico Singular quando couber." },
+        { "ref": "Apoio matricial", "conceito": true, "texto": "A continuidade do cuidado envolve equipe multiprofissional, usuário, família, cuidadores e outros profissionais da rede, conforme a necessidade." }
+      ],
+      "tabela": {
+        "titulo": "Fluxo geral de atenção odontológica",
+        "cab": ["Ponto da rede", "Função"],
+        "linhas": [["Atenção Primária", "Primeiro atendimento, promoção, prevenção e encaminhamento"], ["CEO/Sesb", "Atendimento especializado e apoio à Atenção Primária"], ["Hospital", "Quando a complexidade exige ambiente hospitalar"], ["Urgência", "Acesso integrado nos riscos agudos"], ["RCPD", "Articulação integral da rede à pessoa com deficiência"]]
+      },
+      "macete": "Fluxo: avaliação na APS; referência ao CEO/Sesb; hospital somente pela complexidade assistencial.",
+      "pegadinhas": ["Mandar todo paciente PNE diretamente ao hospital", "Considerar o CEO o primeiro atendimento obrigatório", "Separar a saúde bucal da Rede de Cuidados à Pessoa com Deficiência"],
+      "cobra": ["Porta de entrada pela APS", "CEO como referência", "Hospital para maior complexidade"],
+      "mapa": { "centro": "Rede SUS", "ramos": [
+        { "t": "APS", "f": ["UBS", "Equipe de saúde bucal"] },
+        { "t": "CEO/Sesb", "f": ["Especializado"] },
+        { "t": "Hospital", "f": ["Maior complexidade"] },
+        { "t": "RCPD", "f": ["PTS", "Equipe"] }
+      ] }
+    },
+    {
+      "id": "abordagem-diretrizes-gerais",
+      "titulo": "Abordagem geral e limites assistenciais",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "O Guia do Ministério da Saúde define PNE odontológico de modo amplo e orienta planejar a intervenção conforme o usuário, o cuidador e a capacidade de manejo.",
+      "pontos": [
+        { "ref": "Avaliação precoce", "conceito": true, "texto": "A avaliação deve considerar a condição neurológica e as necessidades do usuário desde o início do cuidado; o guia recomenda avaliação bucal preferencialmente precoce." },
+        { "ref": "Ambiente convencional", "conceito": true, "texto": "O atendimento em consultório pode ser considerado quando há aceitação e cooperação do usuário e estratégias individuais de planejamento são viáveis." },
+        { "ref": "Manejo comportamental", "conceito": true, "texto": "Converse com o usuário, familiares e cuidadores, use comunicação adequada e planeje medidas compatíveis com a capacidade funcional. Não há conduta única aplicável a toda condição." },
+        { "ref": "Limites da abordagem", "conceito": true, "texto": "Impossibilidade de tratamento convencional não autoriza automaticamente sedação ou anestesia geral. O Ministério da Saúde descreve que casos complexos podem exigir assistência em ambiente hospitalar." },
+        { "ref": "Anestesia/sedação", "conceito": true, "texto": "A cirurgia odontológica em ambiente hospitalar sob anestesia geral ou sedação é descrita para usuários com limitações temporárias ou permanentes que impedem o atendimento convencional. Isso exige avaliação multiprofissional e não consta nesta apostila como protocolo." }
+      ],
+      "tabela": {
+        "titulo": "Decisões gerais — sem protocolar dose ou conduta",
+        "cab": ["Situação", "Direção verificada"],
+        "linhas": [["Usuário coopera", "Considerar consultório e planejamento individual"], ["Dificuldade de manejo na APS/CEO", "Acesso hospitalar deve ser avaliado pela rede"], ["Consentimento/capacidade", "Comunicação, acompanhante e avaliação individual"], ["Anestesia geral/sedação", "Ambiente hospitalar apenas após indicação individual; protocolo PENDENTE"]]
+      },
+      "macete": "PNE não significa hospital obrigatório: avalie funcionalidade, cooperação, complexidade e necessidade da rede.",
+      "pegadinhas": ["Afirmação de que toda pessoa com deficiência precisa de anestesia geral", "Uso de dose ou medicamento sem fonte clínica individual", "Assumir que o cuidador substitui a avaliação do usuário"],
+      "cobra": ["Avaliação individual", "Consultório quando viável", "Hospitais para casos complexos"],
+      "mapa": { "centro": "Abordagem PNE", "ramos": [
+        { "t": "Avaliação", "f": ["Funcionalidade", "Cooperação"] },
+        { "t": "Comunicação", "f": ["Usuário", "Cuidador"] },
+        { "t": "Planejamento", "f": ["Individual"] },
+        { "t": "PENDENTE", "f": ["Protocolos", "Doses"] }
       ] }
     }
   ]
