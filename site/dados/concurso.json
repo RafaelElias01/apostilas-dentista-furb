@@ -1,108 +1,209 @@
 {
   "atualizadoEm": "23/11/2026",
-  "avisoTopo": "Foco exclusivo nos certames com inscrições abertas. Destaque principal para Navegantes (SC), certame ativo da banca FURB com inscrições terminando nesta quarta-feira (25/11/2026).",
-  "destaquePrincipal": {
-    "titulo": "Navegantes (SC) — Processo Seletivo 0172/2026",
-    "banca": "FURB (Banca Organizadora deste projeto)",
-    "status": "Inscrições Abertas — Reta Final",
-    "prazoInscricao": "Até 25/11/2026 às 23h59",
-    "prazoPagamento": "Taxa de R$ 130,00 até 26/11/2026",
-    "dataProva": "13/12/2026 (período matutino: 8h15 às 11h15)",
-    "localizacao": "Navegantes — Santa Catarina",
-    "cargos": [
-      {
-        "nome": "Odontólogo ESF",
-        "regime": "40 horas semanais",
-        "remuneracao": "R$ 9.748,86",
-        "vagas": "Cadastro de Reserva"
-      },
-      {
-        "nome": "Cirurgião e Traumatologista Bucomaxilofacial",
-        "regime": "20 horas semanais",
-        "remuneracao": "R$ 4.874,43",
-        "vagas": "Cadastro de Reserva"
-      },
-      {
-        "nome": "Endodontista",
-        "regime": "20 horas semanais",
-        "remuneracao": "R$ 4.874,43",
-        "vagas": "Cadastro de Reserva"
-      },
-      {
-        "nome": "Odontólogo para Pacientes com Necessidades Especiais (PNE)",
-        "regime": "20 horas semanais",
-        "remuneracao": "R$ 4.874,43",
-        "vagas": "Cadastro de Reserva"
-      },
-      {
-        "nome": "Periodontista",
-        "regime": "20 horas semanais",
-        "remuneracao": "R$ 4.874,43",
-        "vagas": "Cadastro de Reserva"
-      }
-    ],
-    "estruturaProva": {
-      "totalQuestoes": 40,
-      "pontuacaoTotal": "10,00 pontos",
-      "notaMinima": "5,00 pontos para aprovação (caráter eliminatório)",
-      "disciplinas": [
-        ["Língua Portuguesa", "10 questões", "0,20 cada (2,00 pts)", "Apostila 01"],
-        ["Raciocínio Lógico e Matemático", "5 questões", "0,20 cada (1,00 pt)", "Estudo complementar"],
-        ["Conhecimentos Gerais (Brasil, SC e Navegantes)", "5 questões", "0,20 cada (1,00 pt)", "Apostila 02 (Atualidades e SC) + LOM Navegantes"],
-        ["Conhecimentos Específicos (SUS + Odontologia)", "20 questões", "0,30 cada (6,00 pts = 60% da prova!)", "Apostilas 03 a 08"]
-      ]
-    },
-    "comoEstudarComApostilas": [
-      "Apostila 01 (Língua Portuguesa): Cobre exatamente o perfil das 10 questões de Português da FURB.",
-      "Apostila 03 (SUS e Políticas de Saúde): Cobre o bloco obrigatório de SUS cobrado em Conhecimentos Específicos.",
-      "Apostila 04 (Ética e Biossegurança): Cobre o Código de Ética Odontológica e as normas de biossegurança exigidas para todos os cargos.",
-      "Apostilas 05 a 08: Cobrem as matérias clínicas específicas do seu cargo (Cariologia, Dentística, Endodontia, Periodontia, Cirurgia e Farmacologia).",
-      "Atenção aos 60% da nota: Conhecimentos Específicos tem peso 0,30 por acerto. Acertar essa parte garante a nota mínima e pontuação de topo."
-    ],
-    "linkInscricao": {
-      "url": "https://concursos.furb.br/concurso/579",
-      "texto": "Acessar Página Oficial do Processo Seletivo na FURB (concursos.furb.br) ↗"
-    }
-  },
-  "outrasOportunidadesAbertas": [
+  "avisoTopo": "Levantamento de concursos de Odontologia atualizado em 23/11/2026. Os dados do edital de Blumenau abaixo são apenas referência do PSPS 003/2025. Prazos podem mudar: confirme o edital e o portal oficial da banca antes de se inscrever. Cargos auxiliares de saúde bucal estão identificados como auxiliares.",
+  "situacao": [
     {
-      "titulo": "IFFar (RS) — Instituto Federal Farroupilha (Edital 406/2026)",
-      "banca": "Fundatec",
-      "prazo": "Inscrições abertas de 19/11 a 21/12/2026",
-      "cargos": "Odontólogo (4 vagas, 40h semanais)",
-      "link": "https://www.iffarroupilha.edu.br"
+      "titulo": "Navegantes (FURB): inscrições abertas",
+      "destaque": "prazo-inscricao",
+      "texto": "Atenção: este é o único certame da FURB com Odontólogo com inscrições abertas na última conferência (19/11/2026), e só vale para quem aceita trabalhar em Navegantes (SC), não em Blumenau. É o Processo Seletivo 0172/2026 da Prefeitura de Navegantes, banca FURB, contratação temporária, com 5 cargos de Odontólogo em cadastro de reserva (ESF 40h: R$ 9.748,86; Bucomaxilofacial, Endodontista, Pacientes com Necessidades Especiais e Periodontista, 20h: R$ 4.874,43). Inscrições até 25/11/2026, às 23h59; taxa de R$ 130,00 até 26/11/2026; prova em 13/12/2026, de manhã. A prova é diferente da de Blumenau: tem Raciocínio Lógico e nota mínima 5,00. Confira o edital em concursos.furb.br."
     },
     {
-      "titulo": "São José do Inhacorá (RS) — Concurso Público 01/2026",
-      "banca": "Premier Concursos",
-      "prazo": "Inscrições prorrogadas até 30/11/2026",
-      "cargos": "Dentista",
-      "link": "https://premierconcursos.com.br/concursos_andamento_sji2026cp.html"
+      "titulo": "RS — IFFar (Edital 406/2026)",
+      "texto": "Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026, pela Fundatec. Edital oficial: iffarroupilha.edu.br, Edital 406/2026."
     },
     {
-      "titulo": "Piratini (RS) — Concurso Público 01/2026",
-      "banca": "Objetiva Concursos",
-      "prazo": "Inscrições até 25/11/2026 às 13h00",
-      "cargos": "Odontólogo e Auxiliar de Saúde Bucal",
-      "link": "https://concursos.objetivas.com.br/informacoes/2638/"
+      "titulo": "RS — Piratini (Concurso 01/2026)",
+      "texto": "Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2638/."
+    },
+    {
+      "titulo": "RS — Ipê (Concurso Público 01/2026): prazo hoje",
+      "destaque": "prazo-inscricao",
+      "texto": "Odontólogo do PSF e Atendente de Consultório Dentário do PSF. Inscrições até 23/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2629/."
+    },
+    {
+      "titulo": "RS — São José do Inhacorá (Concurso 01/2026)",
+      "texto": "Cargo Dentista. Inscrições prorrogadas até 30/11/2026. Portal oficial: premierconcursos.com.br/concursos_andamento_sji2026cp.html."
+    },
+    {
+      "titulo": "PR — Ivaí (PSS 002/2026): prazo hoje",
+      "destaque": "prazo-inscricao",
+      "texto": "Auxiliar de Cirurgião Dentista — cargo auxiliar, não Odontólogo. Inscrições até 23/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2624/."
+    },
+    {
+      "titulo": "Balneário Camboriú",
+      "texto": "Ainda não há edital publicado. A Prefeitura contratou a FURB por dispensa de licitação (Termo 114/2026, publicado no Diário Oficial dos Municípios de SC em 10/11/2026) para um concurso de cadastro de reserva para cargos efetivos. O documento não lista cargos, vagas nem datas e não confirma que haverá Cirurgião-Dentista. Inscrições e datas: a divulgar."
+    },
+    {
+      "titulo": "Blumenau",
+      "texto": "Na última conferência (19/11/2026), não havia edital aberto ou em andamento com o cargo. Os editais de 2026 (SEMED 001/2026, Pró-Família 002/2026, SEMED PSPS 001/2026 e Residência Jurídica 003/2026) não têm Cirurgião-Dentista."
+    },
+    {
+      "titulo": "Referência para estudar",
+      "texto": "O edital mais recente com o cargo, o Processo Seletivo 003/2025 de Blumenau. Os dados abaixo são dele e valem como referência, não como regra do próximo edital."
     }
   ],
-  "previsto": {
-    "titulo": "Balneário Camboriú (SC) — Concurso Efetivo FURB",
-    "status": "Dispensa de Licitação contratada em 10/11/2026 (Ato 8903198 no DOM/SC)",
-    "texto": "A Prefeitura de Balneário Camboriú formalizou a contratação da FURB para realização de concurso público para provimento efetivo. O edital com vagas, cronograma e confirmação das áreas de Odontologia será publicado pela banca."
+  "referencia": {
+    "titulo": "Edital de referência: Blumenau PSPS 003/2025",
+    "itens": [
+      {
+        "titulo": "Tipo",
+        "texto": "Processo seletivo simplificado, contratação por tempo determinado. A banca é a FURB."
+      },
+      {
+        "titulo": "Vagas",
+        "texto": "Cadastro de reserva, sem número de vagas."
+      },
+      {
+        "titulo": "Cargos e vencimento",
+        "texto": "Endodontista, Periodontista, Odontopediatra e Buco-Maxilo-Facial: R$ 10.296,01, 20h. Clínico Geral: R$ 10.094,13, 20h ou 40h. Todos exigem Odontologia e CRO. As especialidades exigem também a especialização na área."
+      },
+      {
+        "titulo": "Inscrição",
+        "texto": "Taxa de R$ 150,00. Reserva de 20% das vagas para pessoas com deficiência."
+      }
+    ],
+    "cronograma": {
+      "titulo": "Cronograma",
+      "linhas": [
+        [
+          "Edital",
+          "30/10/2025"
+        ],
+        [
+          "Inscrições",
+          "14/11 a 01/12/2025"
+        ],
+        [
+          "Prova",
+          "14/12/2025, 15h15 às 18h15"
+        ],
+        [
+          "Gabarito preliminar",
+          "15/12/2025"
+        ],
+        [
+          "Gabarito oficial",
+          "26/01/2026"
+        ],
+        [
+          "Resultado final",
+          "05/02/2026"
+        ]
+      ]
+    },
+    "prova": {
+      "titulo": "Prova",
+      "texto": "40 questões de 5 alternativas, cada uma valendo 0,25 (nota de 0 a 10).",
+      "linhas": [
+        [
+          "Língua Portuguesa",
+          "10"
+        ],
+        [
+          "Conhecimentos Gerais e Legislação",
+          "10"
+        ],
+        [
+          "Conhecimentos Específicos",
+          "20"
+        ]
+      ]
+    },
+    "desempate": {
+      "titulo": "Desempate",
+      "texto": "Idoso; depois mais acertos em Específicos, depois em Gerais e Legislação, depois em Português; depois quem foi jurado; por fim, maior idade."
+    },
+    "naoConfirmado": "Nota mínima: este edital não fixa nota mínima para aprovação (veja a seção Inscrição)."
   },
-  "historicoProvasBanca": {
-    "titulo": "Histórico de Provas da Banca FURB (Fonte das Questões das Apostilas)",
-    "descricao": "As 1.440 questões do nosso banco e das apostilas foram extraídas das seguintes provas oficiais aplicadas pela banca FURB para Cirurgião-Dentista:",
-    "colunas": ["Ano / Edital", "Município", "Cargo / Especialidades", "Questões", "Formato"],
+  "inscricao": [
+    {
+      "titulo": "Como se inscrever",
+      "texto": "A inscrição é só online, em concursos.furb.br: escolha o certame, clique em \"Inscrição online\", cadastre CPF e senha, preencha os dados, escolha o cargo, anexe os documentos exigidos (quando for o caso), confira e finalize. Depois, pague a taxa por boleto ou PIX ou peça isenção. Dá para fazer até 2 cargos, mas, como todos os de dentista são de nível Superior, na prática só se inscreve em 1 cargo de dentista.",
+      "fonte": "itens 3.3 e 3.3.2, p. 3 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Taxa de inscrição e pagamento",
+      "texto": "A taxa para cargos de nível Superior (os de dentista) foi de R$ 150,00 por cargo, paga por boleto ou PIX (Copia e Cola ou QR Code) até 02/12/2025, dentro do horário do banco nesse dia. Outras formas, como transferência, depósito ou ordem de pagamento, não valeram. Depois de pago, o valor não é devolvido em hipótese alguma.",
+      "fonte": "itens 3.4, 3.5, 3.5.1, 3.5.4 e 3.6, p. 3-4 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Isenção da taxa",
+      "texto": "O pedido foi feito depois da inscrição, na Área do Candidato (\"Solicitar Isenção\"), de 14/11/2025 a 18/11/2025. Podiam pedir: doador de sangue, quem não possui renda, doadora de leite materno, quem prestou serviço à Justiça Eleitoral e doador de medula óssea, cada um com seu comprovante em um único PDF de até 20MB. A resposta saiu em 24/11/2025; se negada, ainda dava para pagar a taxa até 02/12/2025.",
+      "fonte": "itens 5.1, 5.2, 5.2.6, 5.7 e 5.8, p. 6-8 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Vaga reservada para pessoa com deficiência",
+      "texto": "O edital reservou 20% das vagas para pessoa com deficiência (desde que compatível com o cargo). Na inscrição, escolhe-se a modalidade \"PcD\" e anexa-se o laudo médico em um único arquivo PDF de até 20MB, com identificação, assinatura, carimbo e CRM do médico, e a espécie e o grau da deficiência com o código CID. Não houve outra data ou forma de entregar o laudo; quem não cumpriu isso concorreu na ampla concorrência.",
+      "fonte": "itens 4.2, 4.4, 4.4.1, 4.4.2, 4.4.4 e 4.5, p. 5-6 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Condições especiais na prova",
+      "texto": "O pedido era feito durante o período de inscrição, na Área do Candidato, com a condição requerida, o motivo e um documento que comprove a necessidade. O edital previu, por exemplo, tempo adicional de até 60 minutos para pessoa com deficiência, prova ampliada, prova em Libras, atendimento a lactante e acompanhante. Necessidade que surgisse depois: e-mail para concursopublico@furb.br, com laudo, até 72 horas antes do início da prova.",
+      "fonte": "itens 6.1, 6.1.1, 6.2 a 6.7 e 6.11, p. 8-9 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Dia da prova",
+      "texto": "A prova foi em 14/12/2025, com 3 horas de duração; no período vespertino (nível Superior), o local abria às 14h10, fechava às 15h00 e a prova começava às 15h15 e terminava às 18h15. Recomenda-se chegar com 30 minutos de antecedência: quem chega depois do fechamento é eliminado e não há segunda chamada. Leve caneta esferográfica azul ou preta de material transparente e um documento aceito (como identidade, CNH, passaporte ou CTPS física); cópias, Título Eleitoral e Certidão de Nascimento não valem.",
+      "fonte": "itens 7.5, 7.5.2, 7.5.6, 7.5.8, 8.2, 9.1 e 9.2, p. 9-12 do edital PSPS 003/2025"
+    },
+    {
+      "titulo": "Atenção: não há nota mínima",
+      "texto": "Este edital não fixa nota mínima para aprovação: a prova vale de 0,00 a 10,00 e é preciso fazê-la para ser considerado aprovado. A menção a \"nota mínima\" no item das pessoas com deficiência apenas diz que elas seguem as mesmas regras dos demais candidatos. Nos resultados publicados, toda inscrição com nota entrou na classificação final; as vagas eram de cadastro de reserva, então a chance de ser chamado depende da posição.",
+      "fonte": "itens 7.3, 4.3, 2.2 e 17.1, p. 2, 5, 9 e 16 do edital PSPS 003/2025 (e resultados oficiais publicados pela FURB)"
+    },
+    {
+      "titulo": "Edital de 2025, já encerrado",
+      "texto": "Este é o edital PSPS 003/2025 (Prefeitura de Blumenau, execução FURB), cujo calendário já terminou: inscrições de 14/11/2025 a 01/12/2025 e resultado final em 05/02/2026. Serve como modelo do que a FURB costuma exigir, não como regra do próximo edital. Confira sempre o edital novo em concursos.furb.br.",
+      "fonte": "preâmbulo e cronograma, p. 1, e item 1.4, p. 2 do edital PSPS 003/2025"
+    }
+  ],
+  "anteriores": {
+    "titulo": "Edições anteriores",
+    "colunas": [
+      "Edital",
+      "Prova",
+      "Questões",
+      "Composição",
+      "Observação"
+    ],
     "linhas": [
-      ["PSPS 002/2019", "Blumenau (SC)", "Clínico Geral e Especialidades", "40 questões", "LP 10, CGL 10, CE 20"],
-      ["PSPS 002/2021", "Blumenau (SC)", "Clínico Geral e Especialidades", "40 questões", "LP 10, CGL 10, CE 20"],
-      ["Concurso 002/2021", "Blumenau (SC)", "Cirurgião-Dentista Efetivo", "50 questões", "LP 10, CGL 10, CE 30"],
-      ["PSPS 003/2023", "Blumenau (SC)", "Clínico Geral e Especialidades", "40 questões", "LP 10, CGL 10, CE 20"],
-      ["PSPS 003/2025", "Blumenau (SC)", "Clínico Geral e Especialidades", "40 questões", "LP 10, CGL 10, CE 20"],
-      ["Concursos Complementares", "Florianópolis, Biguaçu e Itapema", "Odontólogo e Clínico Geral", "590 questões", "Referência complementar FURB"]
-    ]
-  }
+      [
+        "PSPS 002/2019",
+        "17/11/2019",
+        "40",
+        "LP 10, CGL 10, CE 20, 0,25 cada",
+        ""
+      ],
+      [
+        "PSPS 002/2021",
+        "07/11/2021",
+        "40",
+        "LP 10, CGL 10, CE 20, 0,25 cada (mesma composição)",
+        ""
+      ],
+      [
+        "Concurso Público 002/2021",
+        "13/03/2022",
+        "50",
+        "LP 10, CGL 10, CE 30, 0,20 cada",
+        "Efetivo, cargo único Cirurgião Dentista, cadastro de reserva; vencimento R$ 2.987,25 + adicional de função R$ 4.182,11 (20h)"
+      ],
+      [
+        "PSPS 003/2023",
+        "12/11/2023",
+        "40",
+        "LP 10, CGL 10, CE 20, 0,25 cada",
+        ""
+      ],
+      [
+        "PSPS 003/2025",
+        "14/12/2025",
+        "40",
+        "LP 10, CGL 10, CE 20, 0,25 cada",
+        ""
+      ]
+    ],
+    "legenda": "LP: Língua Portuguesa. CGL: Conhecimentos Gerais e Legislação. CE: Conhecimentos Específicos."
+  },
+  "fonte": "Fonte: editais e páginas publicados em concursos.furb.br e ato 8903198 do DOM/SC (Balneário Camboriú), conferidos em 19/11/2026."
 }

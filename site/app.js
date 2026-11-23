@@ -595,19 +595,22 @@ function viewApostilas(raiz) {
 
   const filtros = h('div', { class: 'apos-filtros', role: 'group', 'aria-label': 'Filtrar apostilas por concurso' });
   const opcoes = [
-    ['navegantes', '🎯 Navegantes 2026 (Inscrições Abertas)'],
-    ['todos', 'Todas as 8 Apostilas (Geral FURB)'],
+    ['todos', 'Todos'],
+    ['blumenau', 'Blumenau 2025'],
+    ['navegantes', 'Navegantes 2026'],
+    ['maravilha', 'Maravilha 2026'],
+    ['geral', 'Conteúdo geral FURB'],
   ];
   for (const [valor, texto] of opcoes) {
-    filtros.append(h('button', { type: 'button', class: `apos-filtro${valor === 'navegantes' ? ' ativo' : ''}`, 'data-filtro': valor, 'aria-pressed': valor === 'navegantes' ? 'true' : 'false' }, texto));
+    filtros.append(h('button', { type: 'button', class: `apos-filtro${valor === 'todos' ? ' ativo' : ''}`, 'data-filtro': valor, 'aria-pressed': valor === 'todos' ? 'true' : 'false' }, texto));
   }
 
   const grid = h('div', { class: 'apostilas-grid' });
   const notas = {
-    direta: 'Uso direto para a prova',
+    direta: 'Uso direto',
     complementar: 'Conteúdo complementar',
-    verificar: 'Atualidades e SC úteis; LOM é de Navegantes',
-    'nao-usar': 'Não exigido neste concurso',
+    verificar: 'Conferir edital municipal',
+    'nao-usar': 'Não usar neste concurso',
   };
 
   function desenharApos(filtro) {
@@ -626,11 +629,11 @@ function viewApostilas(raiz) {
       ),
       h('h2', null, a.titulo),
       a.questoesUnicasBlumenau != null
-        ? h('p', { class: 'apostila-meta' }, `${a.questoesUnicasBlumenau} questões da banca FURB analisadas`)
+        ? h('p', { class: 'apostila-meta' }, `${a.questoesUnicasBlumenau} questões únicas de Blumenau`)
         : h('p', { class: 'apostila-meta' }, 'Conteúdo em preparação'),
     );
     if (filtro !== 'todos' && aplicacao) {
-      card.append(h('p', { class: `apos-aplicacao aps-${aplicacao}` }, notas[aplicacao] || aplicacao));
+      card.append(h('p', { class: `apos-aplicacao aps-${aplicacao}` }, notas[aplicacao]));
     }
     if (pronta) {
       card.append(h('a', {
@@ -655,7 +658,7 @@ function viewApostilas(raiz) {
     }
     desenharApos(botao.dataset.filtro);
   });
-  desenharApos('navegantes');
+  desenharApos('todos');
   raiz.append(filtros, grid);
 }
 
@@ -675,110 +678,38 @@ function tabela(legenda, colunas, linhas) {
     }))));
 }
 function desenharConcurso(raiz, C) {
+  const ref = ehObj(C.referencia) ? C.referencia : {};
+  const ant = ehObj(C.anteriores) ? C.anteriores : null;
+  const bloco = (it) => h('div', null, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
   if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
   if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
-
-  // 1. Destaque Principal: Concurso com Inscrições Abertas da Banca FURB (Navegantes)
-  const dest = ehObj(C.destaquePrincipal) ? C.destaquePrincipal : null;
-  if (dest) {
-    raiz.append(h('h2', null, '🔥 Inscrições Abertas Agora (Banca FURB)'));
-    const card = h('article', { class: 'card-concurso urgente' });
-    card.append(
-      h('div', { class: 'concurso-cabecalho' },
-        h('h3', null, txt(dest.titulo)),
-        h('span', { class: 'badge-status badge-urgente' }, txt(dest.status || 'Inscrições Abertas'))
-      ),
-      h('div', { class: 'concurso-detalhes' },
-        h('div', null, h('strong', null, 'Banca: '), txt(dest.banca)),
-        h('div', null, h('strong', null, 'Prazo de Inscrição: '), txt(dest.prazoInscricao)),
-        h('div', null, h('strong', null, 'Taxa de Inscrição: '), txt(dest.prazoPagamento)),
-        h('div', null, h('strong', null, 'Data da Prova: '), txt(dest.dataProva)),
-        h('div', null, h('strong', null, 'Município: '), txt(dest.localizacao)),
-      )
-    );
-
-    // Cargos e Vencimentos
-    if (lista_(dest.cargos).length) {
-      card.append(h('h4', null, 'Cargos de Odontologia e Remunerações:'));
-      const ulCargos = h('ul', { class: 'lista' });
-      for (const c of dest.cargos) {
-        ulCargos.append(h('li', null, h('strong', null, txt(c.nome)), ` — ${txt(c.regime)} | Vencimento: ${txt(c.remuneracao)} (${txt(c.vagas)})`));
-      }
-      card.append(ulCargos);
-    }
-
-    // Estrutura da Prova
-    if (ehObj(dest.estruturaProva)) {
-      const ep = dest.estruturaProva;
-      card.append(
-        h('h4', null, `Estrutura da Prova Objetiva (${txt(ep.totalQuestoes)} questões · Nota Mínima: ${txt(ep.notaMinima)}):`),
-        tabela('Disciplinas e Apostilas Recomendadas', ['Disciplina', 'Qtd', 'Pontuação', 'Apostila do Projeto'], ep.disciplinas)
-      );
-    }
-
-    // Como estudar com as apostilas
-    if (lista_(dest.comoEstudarComApostilas).length) {
-      card.append(h('h4', null, 'Como cobrir este edital com as apostilas deste estudo:'));
-      const ulDicas = h('ul', { class: 'lista' });
-      for (const d of dest.comoEstudarComApostilas) ulDicas.append(h('li', null, txt(d)));
-      card.append(ulDicas);
-    }
-
-    // Link oficial de inscrição
-    if (ehObj(dest.linkInscricao) && txt(dest.linkInscricao.url)) {
-      card.append(h('p', null,
-        h('a', {
-          href: dest.linkInscricao.url,
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          class: 'btn'
-        }, txt(dest.linkInscricao.texto || 'Inscrever-se no site oficial da FURB ↗'))
+  if (objs_(C.situacao).length) {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map((it) =>
+      h('div', {
+        class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
+      }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto))))));
+  }
+  if (objs_(C.inscricao).length) {
+    raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,
+      h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)),
+      txt(it.fonte) ? h('p', { class: 'suave' }, `Fonte: ${txt(it.fonte)}`) : null))));
+  }
+  if (txt(ref.titulo)) {
+    const cron = ehObj(ref.cronograma) ? ref.cronograma : null, prova = ehObj(ref.prova) ? ref.prova : null, des = ehObj(ref.desempate) ? ref.desempate : null;
+    raiz.append(h('h2', null, txt(ref.titulo)),
+      h('div', { class: 'card' },
+        objs_(ref.itens).map(bloco),
+        cron ? [h('h3', null, txt(cron.titulo)), tabela(txt(cron.titulo), ['Etapa', 'Data'], cron.linhas)] : null,
+        prova ? [h('h3', null, txt(prova.titulo)), h('p', null, txt(prova.texto)), tabela('Questões por disciplina', ['Disciplina', 'Questões'], prova.linhas)] : null,
+        des ? bloco(des) : null,
+        txt(ref.naoConfirmado) ? h('p', { class: 'aviso', role: 'note' }, txt(ref.naoConfirmado)) : null,
       ));
-    }
-    raiz.append(card);
   }
-
-  // 2. Outras Inscrições Abertas em Odontologia (RS / PR)
-  if (lista_(C.outrasOportunidadesAbertas).length) {
-    raiz.append(h('h2', null, '🟢 Outras Oportunidades com Inscrições Abertas (Odontologia)'));
-    const container = h('div', { class: 'card' });
-    for (const o of C.outrasOportunidadesAbertas) {
-      const item = h('div', { style: 'margin-bottom: 14px; border-bottom: 1px solid var(--borda); padding-bottom: 10px;' },
-        h('h3', { style: 'margin: 4px 0;' }, txt(o.titulo)),
-        h('p', { style: 'margin: 4px 0;' },
-          h('strong', null, 'Banca: '), `${txt(o.banca)} | `,
-          h('strong', null, 'Prazo: '), `${txt(o.prazo)} | `,
-          h('strong', null, 'Cargos: '), txt(o.cargos)
-        ),
-        txt(o.link) ? h('a', { href: o.link, target: '_blank', rel: 'noopener noreferrer', class: 'btn sec', style: 'padding: 4px 10px; min-height: 32px; font-size: 0.85rem;' }, 'Página oficial ↗') : null
-      );
-      container.append(item);
-    }
-    raiz.append(container);
+  if (ant && lista_(ant.colunas).length) {
+    raiz.append(h('h2', null, txt(ant.titulo)), tabela(txt(ant.titulo), ant.colunas.map(txt), ant.linhas),
+      txt(ant.legenda) ? h('p', { class: 'suave' }, txt(ant.legenda)) : null);
   }
-
-  // 3. Concurso Previsto (FURB)
-  const prev = ehObj(C.previsto) ? C.previsto : null;
-  if (prev) {
-    raiz.append(h('h2', null, '⏳ Próximo Edital Previsto da Banca FURB'));
-    raiz.append(h('div', { class: 'card-concurso previsto' },
-      h('div', { class: 'concurso-cabecalho' },
-        h('h3', null, txt(prev.titulo)),
-        h('span', { class: 'badge-status badge-previsto' }, txt(prev.status || 'Previsto'))
-      ),
-      h('p', null, txt(prev.texto))
-    ));
-  }
-
-  // 4. Histórico da Banca FURB (Fonte das Questões das Apostilas)
-  const hist = ehObj(C.historicoProvasBanca) ? C.historicoProvasBanca : null;
-  if (hist && lista_(hist.colunas).length) {
-    raiz.append(
-      h('h2', null, txt(hist.titulo || 'Histórico de Provas Anteriores da Banca FURB')),
-      txt(hist.descricao) ? h('p', { class: 'suave' }, txt(hist.descricao)) : null,
-      tabela(txt(hist.titulo), hist.colunas.map(txt), hist.linhas)
-    );
-  }
+  if (txt(C.fonte)) raiz.append(h('p', { class: 'suave' }, txt(C.fonte)));
 }
 function viewConcurso(raiz) {
   raiz.append(h('h1', null, 'Concurso'));
