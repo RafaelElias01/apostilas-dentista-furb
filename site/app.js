@@ -613,9 +613,17 @@ function viewApostilas(raiz) {
 
   function desenharApos(filtro) {
     grid.replaceChildren();
-    for (const a of D.radar.apostilas || []) {
-    const nn = String(a.numero).padStart(2, '0');
-    const p = pub.get(Number(a.numero));
+    const radarPorNumero = new Map((D.radar?.apostilas || []).map((a) => [Number(a.numero), a]));
+    const titulosAjudantes = {
+      9: 'Raciocínio Lógico e Matemático',
+      10: 'Odontologia para Pacientes com Necessidades Especiais',
+    };
+    const numeros = [...pub.keys()].sort((a, b) => a - b);
+    for (const numero of numeros) {
+    const a = radarPorNumero.get(numero);
+    const nn = String(numero).padStart(2, '0');
+    const p = pub.get(numero);
+    const titulo = a?.titulo || titulosAjudantes[numero] || `Apostila ${nn}`;
     const pronta = !!(p && p.arquivo);
     const aplicacao = p && p.concurso ? p.concurso[filtro] : undefined;
     const excluida = filtro !== 'todos' && aplicacao === 'nao-usar';
@@ -625,8 +633,8 @@ function viewApostilas(raiz) {
         h('span', { class: 'apostila-numero' }, nn),
         h('span', { class: `apostila-status${pronta ? ' pronto' : ''}` }, pronta ? 'Disponível' : 'Em preparação'),
       ),
-      h('h2', null, a.titulo),
-      a.questoesUnicasBlumenau != null
+      h('h2', null, titulo),
+      a?.questoesUnicasBlumenau != null
         ? h('p', { class: 'apostila-meta' }, `${a.questoesUnicasBlumenau} questões únicas de Blumenau`)
         : h('p', { class: 'apostila-meta' }, 'Conteúdo em preparação'),
     );
@@ -638,7 +646,7 @@ function viewApostilas(raiz) {
         class: 'btn apos-download',
         href: `apostilas/${encodeURIComponent(p.arquivo)}`,
         download: '',
-        'aria-label': `Baixar PDF da Apostila ${nn}: ${a.titulo}`,
+        'aria-label': `Baixar PDF da Apostila ${nn}: ${titulo}`,
       }, 'Baixar PDF'));
     } else {
       card.append(h('span', { class: 'apos-indisponivel', 'aria-label': `Apostila ${nn} ainda em preparação` }, 'Em breve'));

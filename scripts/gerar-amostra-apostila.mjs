@@ -70,11 +70,14 @@ const mStats = new RegExp('<!--stats:' + idxLicao + ':(\\{[^>]*?\\})-->').exec(h
 if (!mStats) { console.error('HTML sem os numeros da licao (stats): rode de novo gerar-apostila-materia.mjs'); process.exit(2); }
 const st = JSON.parse(mStats[1]);
 const bancoJson = lerJsonObrigatorio(arqQuestoes || 'curso/questoes-anteriores.json', 'banco de questoes');
+const RADAR_AMOSTRA = lerJsonObrigatorio('curso/radar-banca.json', 'radar da banca');
+const TEM_RANKING_FURB = (RADAR_AMOSTRA.apostilas || []).some(a => a.id === A.id);
 const limites = secaoLimites({
   limiteFonte: A.limiteFonte,
   trechos: { n: st.n, refOk: st.refOk, refArtSo: st.refArtSo, refSem: st.refSem, semMarcador: st.semMarcador, arquivos: st.arquivos },
   conceitos: st.conceitos,
   radar: !!aula && aula.includes('No radar da banca'),
+  rankingFurb: TEM_RANKING_FURB,
   questoes: { n: st.q, teste: TESTE, bancoAviso: bancoJson.aviso, excl: null },
   amostra: true,
 }, esc);

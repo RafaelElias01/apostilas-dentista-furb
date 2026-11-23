@@ -33,7 +33,7 @@
       "titulo": "Cirurgia oral e bucomaxilofacial",
       "nivel": 3,
       "topicosBanco": ["cir"],
-      "qtdQuestoes": 27,
+      "qtdQuestoes": 28,
       "intro": "É o assunto desta apostila que mais caiu: 28 questões únicas em 4 edições (2019: 5; 2021P: 8; 2023: 12; 2025: 3). Nenhuma foi anulada, então as 28 estão no treino. Atenção ao peso para o Clínico Geral: só 4 das 28 caíram em prova de CG, porque a maioria é própria do Buco-Maxilo-Facial. Como é um código só no banco, a lição está organizada em subassuntos, na ordem do que mais caiu: fraturas faciais (7), exodontia (5), técnica cirúrgica (4), terceiros molares e acessos (4), pré e pós-operatório (3) e cinco temas de 1 questão cada (EMPATE). Os pontos explicam o conceito de forma geral e cada um cita o grupo da questão real que o cobrou. PENDENTE: livro-texto de cirurgia a definir.",
       "pontos": [
         { "ref": "Fraturas faciais · fraturas de mandíbula: como classificar", "conceito": true, "texto": "Em G0128 a banca citou um sistema que distingue as fraturas mandibulares em galho verde, simples, cominutiva e composta, de acordo com a extensão da lesão. Em G0040 a descrição foi “vários traços de fratura em uma mesma região anatômica”, e o nome oficial é fratura cominuta (letra D). As outras alternativas eram termos que a banca usa para confundir: fechada, composta, patológica e com deslocamento. Atenção: G0128 pergunta o tipo mostrado “nas figuras B e D” e a figura não está no banco do projeto. O gabarito oficial é “Simples e Composta”, mas não dá para treinar essa questão sem a imagem." },

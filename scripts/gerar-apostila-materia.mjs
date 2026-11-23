@@ -247,7 +247,7 @@ function htmlQuestao(q, num, comGabarito) {
 const ROT = { 3: 'Alta incidência', 2: 'Média', 1: 'Baixa', 0: 'Não apareceu na amostra' };
 const htmlTabela = (t) => t ? `<div class="tw"><table><caption>${esc(t.titulo)}</caption><thead><tr>${t.cab.map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.linhas.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
 const htmlMapa = (m) => `<figure class="mapa"><div class="centro">${esc(m.centro)}</div><div class="ramos">${m.ramos.map((r, i) => `<div class="ramo c${(i % 5) + 1}"><div class="rt">${esc(r.t)}</div><ul>${r.f.map(f => `<li>${esc(f)}</li>`).join('')}</ul></div>`).join('')}</div><figcaption>Mapa mental: ${esc(m.centro)}</figcaption></figure>`;
-const ranking = `<div class="tw"><table><caption>Ranking dos assuntos</caption><thead><tr><th>Assunto</th><th>Incidência</th></tr></thead><tbody>${[...A.ranking].sort((a, b) => b.nivel - a.nivel).map(r => `<tr><td>${esc(r.rotulo)}</td><td class="n"><span class="bar n${r.nivel}" style="width:${r.nivel * 34 + 8}px"></span>${r.nivel === 3 ? '<b class="alta">Alta incidência</b>' : esc(ROT[r.nivel])}</td></tr>`).join('')}</tbody></table></div>`;
+const ranking = `<div class="tw"><table><caption>${radarAp ? 'Ranking dos assuntos' : 'Conteúdo prioritário'}</caption><thead><tr><th>Assunto</th><th>${radarAp ? 'Incidência' : 'Prioridade editorial'}</th></tr></thead><tbody>${[...A.ranking].sort((a, b) => b.nivel - a.nivel).map(r => `<tr><td>${esc(r.rotulo)}</td><td class="n">${radarAp ? `<span class="bar n${r.nivel}" style="width:${r.nivel * 34 + 8}px"></span>${r.nivel === 3 ? '<b class="alta">Alta incidência</b>' : esc(ROT[r.nivel])}` : (r.nivel === 3 ? '<b class="alta">Prioridade alta</b>' : r.nivel === 2 ? 'Prioridade média' : r.nivel === 1 ? 'Prioridade baixa' : 'Não definido')}</td></tr>`).join('')}</tbody></table></div>`;
 // Radar da licao: tudo vem de curso/radar-banca.json (rotulo, questoesUnicas, porEdicao); cada topico e contado UMA vez no documento (repetido em outra licao so remete a primeira).
 const radarVisto = new Map();
 function htmlRadar(l, k) {
@@ -266,7 +266,7 @@ function htmlRadar(l, k) {
 
 const statsJson = (l) => { const st = statsLicao[l.id]; return JSON.stringify({ n: st.n, refOk: st.refOk, refArtSo: st.refArtSo, refSem: st.refSem, semMarcador: st.semMarcador, conceitos: st.conceitos, arquivos: [...st.arquivos], q: treinoPorLicao[l.id].length }).replace(/-/g, '\\u002d').replace(/>/g, '\\u003e'); };
 const licoes = A.licoes.map((l, k) => `<!--licao:${k}--><!--stats:${k}:${statsJson(l)}--><section id="l-${esc(l.id)}"><h2>Lição ${k + 1}: ${esc(l.titulo)}</h2>
-<p><span class="nivel n${l.nivel}">${l.nivel === 3 ? 'Alta incidência' : l.nivel === 0 ? ROT[0] : 'Incidência ' + ROT[l.nivel].toLowerCase()}</span></p>
+<p><span class="nivel n${l.nivel}">${radarAp ? (l.nivel === 3 ? 'Alta incidência' : l.nivel === 0 ? ROT[0] : 'Incidência ' + ROT[l.nivel].toLowerCase()) : (l.nivel === 3 ? 'Prioridade alta' : l.nivel === 2 ? 'Prioridade média' : l.nivel === 1 ? 'Prioridade baixa' : 'Prioridade não definida')}</span></p>
 ${htmlRadar(l, k)}
 <div class="box">${esc(l.intro)}</div>
 <h3>📖 ${esc(A.rotuloPontos || 'O que a lei diz (e o que isso significa)')}</h3>
@@ -289,12 +289,13 @@ const limitesHtml = secaoLimites({
   trechos: { n: conferidos.n, refOk: conferidos.refOk, refArtSo: conferidos.refArtSo, refSem: conferidos.refSem.length, semMarcador: conferidos.semMarcador.length, arquivos: [...conferidos.arquivos] },
   conceitos: conferidos.conceitos.length,
   radar: !!radarAp,
-  questoes: { n: nQuestoes + simulado.length, teste: TESTE, bancoAviso: BANCO_JSON.aviso, excl: { anuladas, semGabarito, divergentes } },
+  rankingFurb: !!(radarAp && !MODELO && !EXTERNO),
+  questoes: { n: nQuestoes + simulado.length, teste: TESTE, bancoAviso: BANCO_JSON.aviso, excl: { anuladas, semGabarito, divergentes, figura: foraPorFigura.length, transcricao: foraPorTranscricao.length } },
   amostra: false,
 }, esc);
 const bannerTeste = ROTULO_TESTE ? `<div class="box atencao"><b>${esc(ROTULO_TESTE.replace(/^ · /, ''))}.</b> Esta versão ${TESTE ? 'foi gerada com um banco de questões alternativo' : 'foi gerada a partir de um modelo ou JSON externo'}, só para teste. Não é material final.</div>` : '';
 const hashIn = hashEntradas(arqJson, arqQuestoes, fontesLei);
-const avisoRadar = RADAR.aviso ? `<div class="box cai"><b>⚠️ Amostra pequena.</b> ${esc(RADAR.aviso)}</div>` : '';
+const avisoRadar = RADAR.aviso && radarAp && !MODELO && !EXTERNO ? `<div class="box cai"><b>⚠️ Amostra pequena.</b> ${esc(RADAR.aviso)}</div>` : '';
 
 const CSS = CSS_BASE + cssPaginas(`${NUM.rotulo} · ${A.titulo}${ROTULO_TESTE}`) + `
 .capa{border:3px solid var(--azul);border-radius:12px;padding:22px;margin:8px 0 22px;background:var(--azul-f)}.capa h1{border:0;font-size:32px;margin:0}.capa .sub1{margin:6px 0 0}
@@ -311,7 +312,7 @@ const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><met
 <!--avisoradar-->${avisoRadar}<!--/avisoradar-->
 <div class="leg"><b>Cores:</b> <span class="cz">azul = conceito</span><span class="cv">verde = resposta para gravar</span><span class="cl">laranja = alta incidência</span><span class="cr">vermelho = pegadinha</span><span class="cx">roxo = artigo ou número</span></div>
 <nav class="sum" aria-label="Sumário"><b>Sumário</b><ol>${sumario}${temSim ? '<li><a href="#simulado">Simulado</a></li>' : ''}<li><a href="#revisao">Revisão de véspera</a></li><li><a href="#limites">Limites desta análise</a></li></ol></nav>
-<section id="ranking"><h2>O que mais apareceu em ${esc(A.titulo)} na análise da banca</h2>${ranking}</section>
+<section id="ranking"><h2>${radarAp ? `O que mais apareceu em ${esc(A.titulo)} na análise da banca` : `Conteúdo prioritário de ${esc(A.titulo)}`}</h2>${ranking}</section>
 ${licoes}
 ${temSim ? `<section id="simulado"><h2>Simulado de ${esc(A.titulo)}</h2><p class="sub">${simulado.length} ${TESTE ? 'questões de teste' : 'questões reais das provas anteriores'} (as que não entraram nas lições). Faça sem consultar e confira o gabarito logo abaixo.</p><ol class="ql">${simHtml}</ol>
 <h3>${GAB}</h3><div class="tw"><table><thead><tr><th>Nº</th><th>Resposta</th><th>Alternativa correta</th></tr></thead><tbody>${simGab}</tbody></table></div></section>` : ''}
@@ -323,8 +324,13 @@ const base = path.basename(A.arquivoPdf, '.pdf');
 const dirHtml = saidaOpt || path.join(RAIZ, 'rascunho', 'apostila');
 fs.mkdirSync(dirHtml, { recursive: true });
 const arqHtml = path.join(dirHtml, `${base}.html`);
-fs.writeFileSync(arqHtml, html);
-console.log('HTML:', arqHtml, `(${Math.round(html.length / 1024)} KB, ${A.licoes.length} lições, ${Object.values(treinoPorLicao).reduce((s, x) => s + x.length, 0)} questões nas lições, ${simulado.length} no simulado)`);
+const arqHtmlTemp = arqHtml + '.tmp.html';
+if (!process.argv.includes('--pdf')) {
+  fs.writeFileSync(arqHtml, html);
+  console.log('HTML:', arqHtml, `(${Math.round(html.length / 1024)} KB, ${A.licoes.length} lições, ${Object.values(treinoPorLicao).reduce((s, x) => s + x.length, 0)} questões nas lições, ${simulado.length} no simulado)`);
+} else {
+  fs.writeFileSync(arqHtmlTemp, html);
+}
 if (anuladas || semGabarito || divergentes) console.log(`(questões únicas dos tópicos usados que ficaram de fora: ${anuladas} anulada(s); ${semGabarito} sem gabarito em letra válida; ${divergentes} descartada(s) por divergência de gabarito entre as cópias)`);
 if (foraPorFigura.length) console.warn(`AVISO: ${foraPorFigura.length} questão(ões) fora por depender de figura: ${foraPorFigura.map(f => `${f.grupo} (${f.licoes.join(', ') || 'sem lição'})`).join('; ')}`);
 if (foraPorTranscricao.length) console.warn(`AVISO: ${foraPorTranscricao.length} questão(ões) fora por transcrição suspeita: ${foraPorTranscricao.map(f => `${f.grupo} (${f.licoes.join(', ') || 'sem lição'})`).join('; ')}`);
@@ -336,8 +342,24 @@ if (process.argv.includes('--pdf')) {
   const nomePdf = SEM_RODAPE ? A.arquivoPdf.replace(/\.pdf$/i, '-SEM-NUMERACAO.pdf') : A.arquivoPdf;
   const dirPdf = saidaOpt || (SEM_RODAPE ? path.join(RAIZ, 'rascunho', 'apostila') : path.join(RAIZ, 'material-premium'));
   const pdf = path.join(dirPdf, nomePdf);
-  const r = htmlParaPdf(arqHtml, pdf, { semRodape: SEM_RODAPE, semConferir: SEM_CONFERIR, rotulo: `${NUM.rotulo} · ${A.titulo}${ROTULO_TESTE}` });
-  if (!r) process.exit(1);
+  const stagedPdf = path.join(dirPdf, `.${base}.staged.pdf`);
+  const r = htmlParaPdf(arqHtmlTemp, stagedPdf, { semRodape: SEM_RODAPE, semConferir: SEM_CONFERIR, rotulo: `${NUM.rotulo} · ${A.titulo}${ROTULO_TESTE}` });
+  if (!r) {
+    if (fs.existsSync(arqHtmlTemp)) fs.rmSync(arqHtmlTemp, { force: true });
+    process.exit(1);
+  }
+  try {
+    fs.writeFileSync(arqHtml, html);
+    fs.renameSync(stagedPdf, pdf);
+  } catch (e) {
+    if (fs.existsSync(stagedPdf)) fs.rmSync(stagedPdf, { force: true });
+    if (fs.existsSync(arqHtmlTemp)) fs.rmSync(arqHtmlTemp, { force: true });
+    console.error('ERRO: não foi possível publicar HTML/PDF como um par consistente:', e.message);
+    process.exit(1);
+  } finally {
+    if (fs.existsSync(arqHtmlTemp)) fs.rmSync(arqHtmlTemp, { force: true });
+  }
+  console.log('HTML:', arqHtml, `(${Math.round(html.length / 1024)} KB, ${A.licoes.length} lições, ${Object.values(treinoPorLicao).reduce((s, x) => s + x.length, 0)} questões nas lições, ${simulado.length} no simulado)`);
   const shaOk = r.comRodape && r.conferido && !SEM_RODAPE && !TESTE && !MODELO && !EXTERNO;
   if (process.argv.includes('--sha') && !shaOk) console.warn('AVISO: --sha ignorado (so apostila normal, com rodape conferido no PDF, sem --teste/--sem-rodape/_modelo/JSON externo).');
   if (shaOk && (!saidaOpt || process.argv.includes('--sha'))) fs.writeFileSync(path.join(dirPdf, `${base}.pdf-origem.sha256`), crypto.createHash('sha256').update(html).digest('hex') + '\n');

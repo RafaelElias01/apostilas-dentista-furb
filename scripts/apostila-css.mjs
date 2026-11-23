@@ -159,7 +159,10 @@ export function infoNumeroApostila(A, origem = 'apostila') {
 }
 // O nome do PDF/HTML gerado precisa comecar com o prefixo numerado (apostila-0N-...).
 export function validarNomeArquivo(nome, info, origem = 'apostila') {
-  if (typeof nome !== 'string' || !nome.startsWith(info.prefixo)) throw new Error(`${origem}: "arquivoPdf" (${JSON.stringify(nome)}) precisa comecar com "${info.prefixo}" (numero da apostila no nome do arquivo)`);
+  if (typeof nome !== 'string') throw new Error(`${origem}: "arquivoPdf" precisa ser uma string`);
+  if (nome.includes('/') || nome.includes('\\') || nome.includes('..') || path.isAbsolute(nome)) throw new Error(`${origem}: "arquivoPdf" (${JSON.stringify(nome)}) deve ser um único nome de arquivo seguro, sem separadores ou ".."`);
+  if (!nome.toLowerCase().endsWith('.pdf')) throw new Error(`${origem}: "arquivoPdf" (${JSON.stringify(nome)}) precisa terminar em ".pdf"`);
+  if (!nome.startsWith(info.prefixo)) throw new Error(`${origem}: "arquivoPdf" (${JSON.stringify(nome)}) precisa comecar com "${info.prefixo}" (numero da apostila no nome do arquivo)`);
   return nome;
 }
 // Versao para scripts: imprime a mensagem e sai com codigo 1.
@@ -204,7 +207,10 @@ export function saidaSegura(dir) {
 export function hashEntradas(arqJson, arqQuestoes, fontes = []) {
   const h = crypto.createHash('sha256');
   const arqs = [arqJson, path.join(RAIZ, 'curso', 'radar-banca.json'), arqQuestoes || path.join(RAIZ, 'curso', 'questoes-anteriores.json'),
-    ...[...fontes].sort().map(f => path.join(DIR_LEIS, f)), path.join(RAIZ, 'scripts', 'gerar-apostila-materia.mjs'), path.join(RAIZ, 'scripts', 'apostila-css.mjs')];
+    ...[...fontes].sort().map(f => path.join(DIR_LEIS, f)),
+    path.join(RAIZ, 'scripts', 'gerar-apostila-materia.mjs'),
+    path.join(RAIZ, 'scripts', 'apostila-css.mjs'),
+    path.join(RAIZ, 'scripts', 'gerar-amostra-apostila.mjs')];
   for (const f of arqs) { h.update(f === arqJson ? 'json' : path.basename(f)).update('|'); h.update(fs.existsSync(f) ? fs.readFileSync(f) : 'AUSENTE').update('|'); }
   return h.digest('hex');
 }
@@ -213,8 +219,12 @@ export function hashEntradas(arqJson, arqQuestoes, fontes = []) {
 export function secaoLimites(d, esc) {
   const t = d.trechos;
   const li = [];
-  li.push('O ranking vem da análise das provas anteriores da banca (FURB). É uma amostra pequena, não uma previsão: ele não diz o que vai cair na sua prova.');
-  li.push('"Alta incidência" quer dizer que o assunto apareceu mais vezes do que os outros nessa amostra.');
+  if (d.rankingFurb !== false) {
+    li.push('O ranking vem da análise das provas anteriores da banca (FURB). É uma amostra pequena, não uma previsão: ele não diz o que vai cair na sua prova.');
+    li.push('"Alta incidência" quer dizer que o assunto apareceu mais vezes do que os outros nessa amostra.');
+  } else {
+    li.push('Esta apostila complementar não usa contagens do radar da FURB. A ordem dos tópicos vem do programa do concurso e da estrutura deste material.');
+  }
   if (d.amostra) li.push('Este é um RECORTE (uma lição) da apostila: os números abaixo valem só para a lição incluída.');
   if (d.limiteFonte) li.push(esc(d.limiteFonte));
   if (t.n) li.push(`${t.n} trecho(s) entre aspas conferido(s) contra ${t.arquivos.map(esc).join('; ')}: cada um é um dispositivo completo, literal, do texto em fontes/leis (nada resumido). Referência de artigo verificada em ${t.refOk}${t.refArtSo ? '; artigo conferido, mas dispositivo (caput/§/inciso) NÃO conferido em ' + t.refArtSo : ''}${t.refSem ? '; NÃO verificada em ' + t.refSem + ' (a referência não cita artigo)' : ''}. A lei pode mudar: confira a versão vigente antes da prova.`);
@@ -223,7 +233,7 @@ export function secaoLimites(d, esc) {
   if (d.radar) li.push('As contagens do radar vêm de curso/radar-banca.json; as das questões listadas vêm do banco filtrado (só o cargo-alvo, sem anuladas nem divergentes) e podem diferir.');
   const q = d.questoes;
   if (q.n) li.push(q.teste ? '<b>BANCO DE TESTE:</b> as questões desta versão vêm de um banco alternativo de teste e NÃO são das provas oficiais.'
-    : (q.excl ? `${q.n} questão(ões) marcadas FURB vêm de curso/questoes-anteriores.json, com o gabarito oficial. Ficaram de fora, entre os tópicos usados: ${q.excl.anuladas} anulada(s), ${q.excl.semGabarito} sem gabarito válido e ${q.excl.divergentes} com gabarito divergente entre as cópias.`
+    : (q.excl ? `${q.n} questão(ões) marcadas FURB vêm de curso/questoes-anteriores.json, com o gabarito oficial. Ficaram de fora, entre os tópicos usados: ${q.excl.anuladas} anulada(s), ${q.excl.semGabarito} sem gabarito válido, ${q.excl.divergentes} com gabarito divergente entre as cópias, ${q.excl.figura || 0} dependente(s) de figura e ${q.excl.transcricao || 0} com transcrição suspeita.`
       : `${q.n} questão(ões) marcadas FURB vêm de curso/questoes-anteriores.json, com o gabarito oficial; anuladas, sem gabarito válido e divergentes ficam de fora.`) + (q.bancoAviso ? ' ' + esc(q.bancoAviso) : ''));
   li.push(esc(SEM_VINCULO));
   return `<section id="limites"><h2>Limites desta análise</h2><ul>${li.map(x => '<li>' + x + '</li>').join('')}</ul></section>`;

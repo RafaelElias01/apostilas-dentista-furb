@@ -23,15 +23,26 @@
     },
     {
       "titulo": "IFFar (RS): inscrições abertas",
-      "texto": "Concurso Público do Instituto Federal Farroupilha, Edital 406/2026, banca Fundatec. Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026. Confira em iffarroupilha.edu.br."
+      "texto": "Concurso Público do Instituto Federal Farroupilha, Edital 406/2026, banca Fundatec. Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026.",
+      "links": [
+        { "texto": "Edital oficial", "url": "https://www.iffarroupilha.edu.br/editais-reitoria/item/48859-edital-n%C2%BA-406-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar" },
+        { "texto": "Anexo do edital", "url": "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5" }
+      ]
     },
     {
       "titulo": "Piratini (RS): inscrições abertas",
-      "texto": "Concurso Público 01/2026. Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026 às 13h, pela Objetiva. Portal oficial: concursos.objetivas.com.br/informacoes/2638/"
+      "texto": "Concurso Público 01/2026. Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026 às 13h, pela Objetiva.",
+      "links": [
+        { "texto": "Página oficial da banca", "url": "https://concursos.objetivas.com.br/informacoes/2638/" }
+      ]
     },
     {
       "titulo": "São José do Inhacorá (RS): inscrições abertas",
-      "texto": "Concurso Público 01/2026. Cargo Dentista. Inscrições prorrogadas até 30/11/2026, pela Premier. Portal oficial: premierconcursos.com.br/concursos_andamento_sji2026cp.html"
+      "texto": "Concurso Público 01/2026. Cargo Dentista. Inscrições prorrogadas até 30/11/2026, pela Premier.",
+      "links": [
+        { "texto": "Página oficial da banca", "url": "https://www.premierconcursos.com.br/concursos_andamento_sji2026cp.html" },
+        { "texto": "Retificação oficial", "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1992026-PSP-GlOrJwPr-Retifica.pdf" }
+      ]
     }
   ],
   "fonte": "Páginas oficiais das bancas e dos órgãos, conferidas em 23/11/2026 às 13:22."

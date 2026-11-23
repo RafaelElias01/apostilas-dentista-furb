@@ -65,6 +65,31 @@ test('(4a2) escolherNavegador respeita NAVEGADOR_PDF inexistente (sem cair em ou
   finally { if (antes === undefined) delete process.env.NAVEGADOR_PDF; else process.env.NAVEGADOR_PDF = antes; }
 });
 
+test('(4a3) arquivoPdf rejeita nomes absolutos, separadores e traversal', () => {
+  const info = css.infoNumeroApostila({ numero: 1 }, 'teste');
+  for (const nome of [
+    'apostila-01-../../scripts/x.pdf',
+    'apostila-01-C:/temp/x.pdf',
+    'apostila-01-dir/x.pdf',
+    'apostila-01-..\\temp\\x.pdf',
+  ]) assert.throws(() => css.validarNomeArquivo(nome, info, 'teste'));
+  assert.strictEqual(css.validarNomeArquivo('apostila-01-lingua-portuguesa.pdf', info, 'teste'), 'apostila-01-lingua-portuguesa.pdf');
+});
+
+test('(4a4) apostila externa nao usa ranking FURB', () => {
+  const limites = css.secaoLimites({
+    limiteFonte: 'conteúdo complementar',
+    trechos: { n: 0, refOk: 0, refArtSo: 0, refSem: 0, semMarcador: 0, arquivos: [] },
+    conceitos: 0,
+    radar: false,
+    rankingFurb: false,
+    questoes: { n: 0, teste: false, excl: null },
+    amostra: false,
+  }, (s) => s);
+  assert.match(limites, /não usa contagens do radar da FURB/);
+  assert.doesNotMatch(limites, /O ranking vem da análise das provas anteriores da banca/);
+});
+
 // Erro de origem (19/11/2026): a amostra nao repassava refArtSo (trechos com artigo conferido mas dispositivo nao conferido) para a secao "Limites".
 test('(4b) a amostra repassa refArtSo para a secao Limites', () => {
   const fonte = fs.readFileSync(AMOSTRA, 'utf8');
