@@ -19,14 +19,17 @@
   - Amostra pequena: 5 editais de um só município, 2019 a 2025.
   - Os tópicos de outros municípios foram classificados automaticamente e servem só de complemento.
 - **curso/roteiro-apostilas.md**: roteiro das 8 apostilas (o que cada uma terá, ordem e fontes).
-- **curso/apostila/**: 5 apostilas montadas em JSON, cada uma com auditoria de fatos (Opus, 2026-11-19) em `curso/auditoria/`:
+- **curso/apostila/**: 8 apostilas montadas em JSON, todas com auditoria de fatos, conferência cruzada e reauditoria de incertezas concluídas:
   - 01 Língua Portuguesa (`portugues.json`)
+  - 02 Conhecimentos Gerais e Legislação Municipal (`conhecimentos-gerais-legislacao.json`)
+  - 03 SUS, Políticas de Saúde e Epidemiologia (`sus-saude-publica.json`)
+  - 04 Ética, Relações Humanas, Biossegurança e Prontuário (`etica-biosseguranca.json`)
   - 05 Cariologia, Prevenção, Saúde Bucal Coletiva e Odontopediatria (`cariologia-prevencao-odontopediatria.json`)
   - 06 Dentística, Materiais, Oclusão, Endodontia e Traumatismo (`dentistica-endodontia-trauma.json`)
   - 07 Periodontia (`periodontia.json`)
   - 08 Cirurgia, Anestesia, Farmacologia, Emergências e Patologia Bucal (`cirurgia-farmacologia-patologia.json`)
-  - Etapas feitas em 2026-11-19/20 (subagentes Sonnet e Opus): auditoria de fatos (`curso/auditoria/apostila-0N.md`), aplicação dos achados (inclusive o C1 da 08, macete sarampo/caxumba), resolução dos itens PENDENTE por fonte oficial na web (`curso/auditoria/resolucao-pendencias-*.md`), conferência cruzada por um segundo Sonnet relendo as fontes (`curso/auditoria/conferencia-cruzada-0N.md`) e aplicação das divergências, e code-review do código e do site (`curso/auditoria/code-review.md`: sem achado crítico nem médio).
-  - **PDFs finais numerados** gerados em `material-premium/` (fora do git) e copiados para `site/apostilas/` (publicados no site): 01 (74 páginas), 05 (44), 06 (56), 07 (28) e 08 (57); o gerador confere o rodapé "Apostila 0N · título · Página X de N" em todas as páginas.
+  - Etapas feitas em 2026-11-19/20 e concluídas em 2026-11-23: auditoria de fatos (`curso/auditoria/apostila-0N.md`), resolução dos itens PENDENTE por fonte oficial, conferência cruzada (`curso/auditoria/conferencia-cruzada-0N.md`), reauditoria de precisão das apostilas 02–04 ajustando as contagens de questões usáveis por lição e removendo asserções de vigência de normas não consolidadas (LOM/Lei 7.564), e code-review do código e do site.
+  - **PDFs numerados** das 8 apostilas (01 a 08) gerados em `material-premium/` e publicados em `site/apostilas/`: 01 (74 páginas), 02 (47 páginas), 03 (49 páginas), 04 (25 páginas), 05 (44 páginas), 06 (56 páginas), 07 (28 páginas) e 08 (57 páginas). O gerador confere o rodapé "Apostila 0N · título · Página X de N" em todas as páginas via Chrome >= 131 e pdftotext.
   - O que continua PENDENTE dentro das apostilas está marcado no próprio texto ("PENDENTE: ...") e vem de fonte que não abriu (livros pagos, PDFs das provas ausentes, Leonard, valvopatias etc.). Ler a seção "AINDA PENDENTE" dos relatórios `resolucao-pendencias-*.md` e `conferencia-cruzada-*.md`.
 - **site/dados/concurso.json**: aba "Concurso" do site, mantida à mão (o gerador `scripts/gerar-dados-site.mjs` não o gera). Atualizada em 2026-11-19: Navegantes em destaque, data da dispensa de Balneário Camboriú corrigida.
 - **scripts/**: `gerar-dados-site.mjs`, `gerar-apostila-materia.mjs`, `gerar-amostra-apostila.mjs` e `apostila-css.mjs`. Não conferi nesta atualização se o gerador de apostilas já está totalmente adaptado a este layout.
@@ -65,11 +68,9 @@ Scripts de conferência na pasta scratchpad da sessão, fora do repo.
 - **Classificação ambígua, não alterada:** G0287, de 2025, trata de COP30, envelhecimento e cidades resilientes e está em `cgl.urbano`. Também caberia em `cgl.brasil_mundo`.
 
 ## O que falta (PENDENTE)
-1. **Apostilas 02, 03 e 04: MONTADAS, mas NÃO conferidas nem publicadas.** Os JSON estão na branch `wip/apostilas-02-03-04` (NÃO mergeada, de propósito): 02 Conhecimentos Gerais e Legislação Municipal (`conhecimentos-gerais-legislacao`, 7 lições, 39 questões, 16 trechos de lei, PDF de teste de 49 páginas), 03 SUS, Políticas de Saúde e Epidemiologia (`sus-saude-publica`, 8 lições, 27 questões, 76 trechos de lei, 50 páginas), 04 Ética, Relações Humanas, Biossegurança e Prontuário (`etica-biosseguranca`, 7 lições, 26 questões, 10 trechos de lei, 41 páginas). Geram HTML e PDF numerado sem erro. Roteiro em `curso/roteiro-apostilas.md`.
-   - **Como retomar (esteira que as outras 5 seguiram):** (a) `git checkout wip/apostilas-02-03-04` (ou criar branch a partir dela); (b) conferência cruzada de cada uma por um Sonnet relendo as fontes, relatório em `curso/auditoria/conferencia-cruzada-0N.md` (briefings dos conferidores: ver o padrão em `curso/auditoria/conferencia-cruzada-01.md` e os pontos delicados abaixo); (c) um Sonnet por arquivo aplica as divergências, ajustando também `qtdQuestoes` da 04 (7 lições com aviso "pedido 8, só N"; valores exatos virão da conferência); (d) `node scripts/gerar-apostila-materia.mjs <id> --pdf`, copiar o PDF de `material-premium/` para `site/apostilas/` e listar o número em `site/dados/apostilas.json`; (e) `node --test tests/gerador.test.mjs`, code-review, PR, merge e conferir a página no ar.
-   - **Pontos delicados:** 02 (texto de 2010 da Lei 7.564 desatualizado, Lei Orgânica sem consolidação oficial, a banca marcou a Emenda 52/2022 como verdadeira mas ela exige lei complementar, Blumenau chamado de "químico e farmacêutico" pela Prefeitura contra "médico farmacêutico e filósofo" na questão G0106); 03 (vigência da PNAB e do NASF revogado pela PRT 2.979/2019, Lei 8.142 só no texto original, SIM/SINASC só por busca); 04 (Código de Ética do CFO só em PDF, RDC 222 só em PDF, RDC 1.002/2025 lida em cópia de terceiro, G0301/G0175/G0346 com divergência entre banca e norma).
+1. **Apostilas 01 a 08 (CONCLUÍDAS E REAUDITADAS):** Todas as 8 apostilas estão com JSONs finalizados, conferidos contra as fontes, validados pelo gerador sem avisos de falta de questões, e com os PDFs numerados oficiais gerados em `material-premium/` e publicados em `site/apostilas/`. Os pontos factuais históricos das provas foram rigorosamente dissociados de afirmações indevidas de vigência para leis não consolidadas (LOM de Blumenau e Lei 7.564/2010).
 2. **Itens PENDENTE que sobraram nas apostilas** (01, 05, 06, 07 e 08): dependem de fonte fechada ou ausente (PDFs das provas, livros-texto, edição do Newman & Carranza, técnica de Leonard, diretriz de valvopatias, pKa de outros anestésicos, leucoplasia 2020/2021, tumores benignos e cistos). Resolver quando houver acesso e regerar os PDFs.
-3. **PDFs numerados**: as apostilas 01, 05, 06, 07 e 08 estão prontas e publicadas em `site/apostilas/`. Ao mudar um JSON de apostila: regerar com `node scripts/gerar-apostila-materia.mjs <id> --pdf` e copiar o PDF de `material-premium/` para `site/apostilas/`.
+3. **PDFs numerados**: as 8 apostilas estão prontas e publicadas em `site/apostilas/`. Ao mudar um JSON de apostila: regerar com `node scripts/gerar-apostila-materia.mjs <id> --pdf` e copiar o PDF de `material-premium/` para `site/apostilas/`.
 4. **Balneário Camboriú:** edital não publicado. Quando sair, atualizar `curso/edital.md`, `site/dados/concurso.json` e rever a legislação municipal das apostilas (principalmente a 02).
 5. **Lei Orgânica de Blumenau:** falta o texto consolidado vigente (anexo de 2021 + emendas 52/2022, 53/2025 e 54/2026, sem consolidação oficial).
 6. **Lei 7.564/2010:** conferir alterações publicadas depois de 01/10/2026.
@@ -81,6 +82,6 @@ Scripts de conferência na pasta scratchpad da sessão, fora do repo.
 12. **Capa e e-mails:** este projeto não tem capa de login nem e-mails de marketing em `curso/emails/` (conferido em 2026-11-19: a pasta `curso/emails/` não existe). A novidade de Navegantes entrou só na aba "Concurso" do site.
 
 ## Próximos passos
-1. Fechar as apostilas 02, 03 e 04 (já montadas na branch `wip/apostilas-02-03-04`): conferência cruzada, correções, PDFs, site, PR (ver "O que falta", item 1).
-2. Regra de trabalho do dono (20/11/2026): subagentes só Sonnet, até 5 em paralelo, um arquivo cada.
-3. Reconferir Navegantes na véspera do fim das inscrições (25/11/2026) e acompanhar o portal da FURB por edital de Blumenau ou Balneário Camboriú.
+1. Reconferir Navegantes na véspera do fim das inscrições (25/11/2026, 23h59) e pagamento da taxa (26/11/2026).
+2. Acompanhar o portal da FURB por edital de Blumenau ou Balneário Camboriú.
+3. Se novos editais forem abertos ou se as fontes fechadas forem disponibilizadas, incorporar aos JSONs e regerar os PDFs correspondentes.
