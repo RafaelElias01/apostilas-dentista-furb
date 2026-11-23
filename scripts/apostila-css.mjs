@@ -51,12 +51,7 @@ export function lerJsonObrigatorio(rel, dica) {
   try { return JSON.parse(lerObrigatorio(rel, dica)); }
   catch (e) { if (e instanceof SyntaxError) { console.error(`JSON invalido em ${rel}: ${e.message}`); process.exit(1); } throw e; }
 }
-export const NAVEGADORES = [
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
-  'C:/Program Files/Microsoft/Edge/Application/msedge.exe',
-  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-  'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'
-];
+export const NAVEGADORES = ['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', 'C:/Program Files/Microsoft/Edge/Application/msedge.exe', 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'];
 
 // ---------- navegador e PDF ----------
 // O rodape "Pagina X de Y" (margin box @bottom-center + counter(pages)) so existe no Chrome/Edge >= 131.
@@ -84,8 +79,7 @@ export function versaoNavegador(nav) {
   return null;
 }
 // pdftotext (poppler): do PATH ou da variavel PDFTOTEXT. Nesta maquina: C:/Users/rafael-ioppi/AppData/Local/Programs/Git/mingw64/bin/pdftotext.exe (so esta no PATH do Git Bash).
-const PDFTOTEXT_FALLBACK = 'C:/Users/rafael-ioppi/AppData/Local/Programs/Git/mingw64/bin/pdftotext.exe';
-export const PDFTOTEXT = process.env.PDFTOTEXT || (fs.existsSync(PDFTOTEXT_FALLBACK) ? PDFTOTEXT_FALLBACK : 'pdftotext');
+export const PDFTOTEXT = process.env.PDFTOTEXT || 'pdftotext';
 export function pdftotextDisponivel() { const r = spawnSync(PDFTOTEXT, ['-v'], { encoding: 'utf8' }); return !r.error; }
 // Confere no TEXTO do PDF (pdftotext), pagina a pagina, que o rodape numerado saiu: cada pagina i de N traz "Pagina i de N" (tolerante a quebra de linha da
 // margin box e a variacao do acento) e o prefixo do rotulo (ex.: "Apostila 01"). { verificado, ok, motivo }.
