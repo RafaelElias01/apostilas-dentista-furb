@@ -37,6 +37,13 @@ Total: 40 questões e 10,00 pontos. Nota mínima: 5,00.
 4. O cargo Pacientes com Necessidades Especiais deve revisar a Resolução CFO 63/2005. A Apostila 05 cobre conceitos gerais de pacientes especiais; não substitui a análise integral do ato normativo.
 5. O simulado precisa de 40 questões, com peso 0,20 para LP, raciocínio lógico e gerais, e 0,30 para CE.
 
+## Atualização normativa confirmada
+
+- Fonte oficial obtida: consolidação das normas do CFO atualizada em setembro de 2023.
+- Art. 69: a Odontologia para Pacientes com Necessidades Especiais tem como objetivo prevenir, diagnosticar, tratar e controlar problemas de saúde bucal de pacientes com alteração no sistema biopsicossocial, com atenção à funcionalidade e atuação inter/multi/transdisciplinar.
+- Art. 70: incluem-se como áreas de competência atenção a distúrbios psíquicos, comportamentais e emocionais; condições físicas ou sistêmicas temporárias ou definitivas em níveis ambulatorial, hospitalar ou domiciliar; problemas especiais de saúde com repercussão bucal ou sistêmica; e participação em equipe multidisciplinar.
+- Lei 3985/2025 e Lei Orgânica de Navegantes: falta incorporar texto oficial municipal consolidado no projeto. Uma cópia da Lei Orgânica usada pela FURB foi obtida, mas não é tratada como consolidação oficial.
+
 ## Arquivos existentes que continuam válidos
 
 - `site/apostilas/apostila-01-lingua-portuguesa.pdf`
