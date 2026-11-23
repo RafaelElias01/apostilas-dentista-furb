@@ -1,10 +1,10 @@
 [
-  { "numero": 1, "arquivo": "apostila-01-lingua-portuguesa.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "complementar" } },
-  { "numero": 2, "arquivo": "apostila-02-conhecimentos-gerais-legislacao.pdf", "concurso": { "blumenau": "direta", "navegantes": "nao-usar", "maravilha": "verificar", "geral": "nao-usar" } },
-  { "numero": 3, "arquivo": "apostila-03-sus-saude-publica.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } },
-  { "numero": 4, "arquivo": "apostila-04-etica-biosseguranca.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } },
-  { "numero": 5, "arquivo": "apostila-05-cariologia-prevencao-odontopediatria.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } },
-  { "numero": 6, "arquivo": "apostila-06-dentistica-endodontia-trauma.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } },
-  { "numero": 7, "arquivo": "apostila-07-periodontia.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } },
-  { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf", "concurso": { "blumenau": "direta", "navegantes": "direta", "maravilha": "complementar", "geral": "direta" } }
+  { "numero": 1, "arquivo": "apostila-01-lingua-portuguesa.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } },
+  { "numero": 2, "arquivo": "apostila-02-conhecimentos-gerais-legislacao.pdf", "concurso": { "navegantes": "nao-usar", "geral": "nao-usar" } },
+  { "numero": 3, "arquivo": "apostila-03-sus-saude-publica.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 4, "arquivo": "apostila-04-etica-biosseguranca.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 5, "arquivo": "apostila-05-cariologia-prevencao-odontopediatria.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 6, "arquivo": "apostila-06-dentistica-endodontia-trauma.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 7, "arquivo": "apostila-07-periodontia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } }
 ]

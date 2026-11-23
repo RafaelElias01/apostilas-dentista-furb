@@ -596,9 +596,7 @@ function viewApostilas(raiz) {
   const filtros = h('div', { class: 'apos-filtros', role: 'group', 'aria-label': 'Filtrar apostilas por concurso' });
   const opcoes = [
     ['todos', 'Todos'],
-    ['blumenau', 'Blumenau 2025'],
     ['navegantes', 'Navegantes 2026'],
-    ['maravilha', 'Maravilha 2026'],
     ['geral', 'Conteúdo geral FURB'],
   ];
   for (const [valor, texto] of opcoes) {
