@@ -74,6 +74,16 @@ h3 { font-size: 1rem; margin: 16px 0 6px; }
 .rodape { color: var(--suave); font-size: 0.85rem; padding-bottom: 32px; }
 
 .card { background: var(--card); border: 1px solid var(--borda); border-radius: 10px; padding: 14px; margin: 12px 0; }
+.destaque-prazo {
+  background: #b91c1c;
+  color: #fff;
+  border: 2px solid #7f1d1d;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px 0;
+}
+.destaque-prazo h3,
+.destaque-prazo p { color: #fff; }
 .aviso { background: var(--aviso-bg); color: var(--aviso); border: 1px solid var(--aviso); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
 .aviso p { margin: 4px 0; }
 .suave { color: var(--suave); font-size: 0.9rem; }
