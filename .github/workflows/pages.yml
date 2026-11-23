@@ -29,3 +29,10 @@ jobs:
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Aguardar metadado do artifact
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 20
+      - name: Repetir deploy do Pages
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
