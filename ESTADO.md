@@ -1,4 +1,4 @@
-# ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-20)
+# ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-23)
 
 ## O que existe (verificado)
 - **fontes/** (fora do git, pelo .gitignore): editais, cadernos, gabaritos e recursos de Blumenau (PSPS 002/2019, PSPS 002/2021, Concurso 002/2021, PSPS 003/2023, PSPS 003/2025). Também provas de outros municípios FURB (Biguaçu 2025, Florianópolis 2024, Itapema 2025) e a dispensa de licitação de Balneário Camboriú 2026 (cópia de terceiro; o ato oficial do DOM/SC é o 8903198).
@@ -37,6 +37,16 @@
 - **Blumenau:** nenhum certame aberto ou em andamento tem o cargo. O mais recente com o cargo é o PSPS 003/2025 (resultado final em 05/02/2026).
 - **Balneário Camboriú:** dispensa de licitação (Termo 114/2026) publicada no DOM/SC em 10/11/2026 (ato 8903198), documento datado de 10 de novembro de 2026. Ainda não há edital, cargos nem datas; não se sabe se haverá dentista.
 - **Maravilha SC:** Concurso 001/2026 com Odontólogo, prova em 29/11/2026 (inscrições encerradas); PSS 007/2026 com resultado final em 26/11/2026.
+
+### Oportunidades de Odontologia RS/PR adicionadas ao site (23/11/2026)
+- `site/dados/concurso.json` agora lista IFFar, Piratini, Ipê, São José do Inhacorá e Ivaí, além de Navegantes. Ipê e Ivaí são destaques vermelhos por encerrarem hoje às 13h; Ivaí é cargo auxiliar.
+- Ipê: título correto no portal Objetiva é Concurso Público 01/2026; Odontólogo do PSF e Atendente de Consultório Dentário do PSF; inscrições até 23/11 às 13h.
+- Piratini: Odontólogo e Auxiliar de Saúde Bucal; prazo até 25/11 às 13h, portal Objetiva.
+- São José do Inhacorá: Dentista; prazo prorrogado até 30/11, portal Premier.
+- Ivaí: Auxiliar de Cirurgião Dentista, não Odontólogo; prazo até 23/11 às 13h, portal Objetiva.
+- IFFar: Edital 406/2026, Odontólogo, 4 vagas, 40h; inscrições indicadas de 19/11 a 21/12. A página oficial hospeda o edital; os detalhes de vagas e datas foram conferidos no resumo do PCI Concursos.
+- Ijuí, Sede Nova e Quedas do Iguaçu não foram publicados: há detalhes em agregador, mas não houve confirmação direta suficiente nos portais/editais oficiais. Palmital/PR ainda não abriu inscrições (início indicado para 25/11).
+- Pedido para etapa futura: incluir em cada concurso novo um controle de intenção de inscrição e interesse no material; a informação deve continuar disponível quando o dono abrir o VS Code novamente. Definir uma forma de coleta persistente/centralizada antes de implementar: o site é estático, e localStorage no navegador não fica visível no VS Code.
 
 ## Prazos futuros confirmados (datas previstas em cronograma oficial; podem mudar por errata)
 - 25/11/2026: fim das inscrições de Navegantes. 26/11/2026: último dia para pagar a taxa de Navegantes; resultado final do Maravilha PSS 007/2026.

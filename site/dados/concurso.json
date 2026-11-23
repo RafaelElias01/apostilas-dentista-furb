@@ -1,11 +1,33 @@
 {
-  "atualizadoEm": "19/11/2026",
-  "avisoTopo": "Dados de editais anteriores. Confirme sempre no site oficial da FURB (concursos.furb.br) antes de se inscrever.",
+  "atualizadoEm": "23/11/2026",
+  "avisoTopo": "Levantamento de concursos de Odontologia atualizado em 23/11/2026. Os dados do edital de Blumenau abaixo são apenas referência do PSPS 003/2025. Prazos podem mudar: confirme o edital e o portal oficial da banca antes de se inscrever. Cargos auxiliares de saúde bucal estão identificados como auxiliares.",
   "situacao": [
     {
       "titulo": "Navegantes (FURB): inscrições abertas",
       "destaque": "prazo-inscricao",
       "texto": "Atenção: este é o único certame da FURB com Odontólogo com inscrições abertas na última conferência (19/11/2026), e só vale para quem aceita trabalhar em Navegantes (SC), não em Blumenau. É o Processo Seletivo 0172/2026 da Prefeitura de Navegantes, banca FURB, contratação temporária, com 5 cargos de Odontólogo em cadastro de reserva (ESF 40h: R$ 9.748,86; Bucomaxilofacial, Endodontista, Pacientes com Necessidades Especiais e Periodontista, 20h: R$ 4.874,43). Inscrições até 25/11/2026, às 23h59; taxa de R$ 130,00 até 26/11/2026; prova em 13/12/2026, de manhã. A prova é diferente da de Blumenau: tem Raciocínio Lógico e nota mínima 5,00. Confira o edital em concursos.furb.br."
+    },
+    {
+      "titulo": "RS — IFFar (Edital 406/2026)",
+      "texto": "Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026, pela Fundatec. Edital oficial: iffarroupilha.edu.br, Edital 406/2026."
+    },
+    {
+      "titulo": "RS — Piratini (Concurso 01/2026)",
+      "texto": "Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2638/."
+    },
+    {
+      "titulo": "RS — Ipê (Concurso Público 01/2026): prazo hoje",
+      "destaque": "prazo-inscricao",
+      "texto": "Odontólogo do PSF e Atendente de Consultório Dentário do PSF. Inscrições até 23/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2629/."
+    },
+    {
+      "titulo": "RS — São José do Inhacorá (Concurso 01/2026)",
+      "texto": "Cargo Dentista. Inscrições prorrogadas até 30/11/2026. Portal oficial: premierconcursos.com.br/concursos_andamento_sji2026cp.html."
+    },
+    {
+      "titulo": "PR — Ivaí (PSS 002/2026): prazo hoje",
+      "destaque": "prazo-inscricao",
+      "texto": "Auxiliar de Cirurgião Dentista — cargo auxiliar, não Odontólogo. Inscrições até 23/11/2026, às 13h. Portal oficial: concursos.objetivas.com.br/informacoes/2624/."
     },
     {
       "titulo": "Balneário Camboriú",
