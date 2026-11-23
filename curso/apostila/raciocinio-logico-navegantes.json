@@ -1,0 +1,224 @@
+{
+  "id": "raciocinio-logico-navegantes",
+  "numero": 9,
+  "arquivoPdf": "apostila-09-raciocinio-logico-navegantes.pdf",
+  "titulo": "Raciocínio Lógico e Matemático",
+  "subtitulo": "Apostila 09 · Processo Seletivo 0172/2026 · Navegantes (SC) · banca FURB",
+  "fontes": [],
+  "rotuloPontos": "A regra, passo a passo",
+  "limiteFonte": "Conteúdo complementar baseado no programa público do edital de Navegantes e em regras neutras de matemática. Não há questões reais de Raciocínio Lógico ainda disponíveis para este certame neste banco.",
+  "comoUsar": [
+    "Esta apostila cobre o bloco de Raciocínio Lógico e Matemático do Processo Seletivo 0172/2026 de Navegantes: 5 questões de 40.",
+    "O edital do certame não especifica pesos por assunto dentro desse bloco. Por isso não existe ranking de temas garantido.",
+    "Resolva sempre primeiro lógica proposicional, porcentagem, proporção e aritmética básica, que são os núcleos explícitos do programa.",
+    "Use as questões oficiais da FURB quando forem divulgadas; este material não substitui as questões reais do certame.",
+    "Regra de prova: confira o edital, a estrutura, o tempo e as condições antes da aplicação."
+  ],
+  "ranking": [
+    { "rotulo": "Aritmética básica e porcentagem", "nivel": 3 },
+    { "rotulo": "Razão, proporção e regra de três", "nivel": 3 },
+    { "rotulo": "Lógica proposicional e tabelas-verdade", "nivel": 2 },
+    { "rotulo": "Equivalências, negações e quantificadores", "nivel": 2 },
+    { "rotulo": "Argumentos e diagramas", "nivel": 2 },
+    { "rotulo": "Sequências e padrões", "nivel": 1 },
+    { "rotulo": "Associação lógica e orientação", "nivel": 1 },
+    { "rotulo": "Tabelas e gráficos", "nivel": 1 }
+  ],
+  "licoes": [
+    {
+      "id": "aritmetica",
+      "titulo": "Aritmética básica",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "O programa de Navegantes inclui operações com números inteiros, racionais e decimais. Dominar contas básicas reduz erros de sinal, prioridade e unidade.",
+      "pontos": [
+        { "ref": "Ordem das operações", "conceito": true, "texto": "Na expressão, resolva potência e raiz, depois multiplicação e divisão na ordem em que aparecem, e por último adição e subtração." },
+        { "ref": "Frações", "conceito": true, "texto": "Para somar ou subtrair frações, reduza a um denominador comum. Para multiplicar, multiplique numerador por numerador e denominador por denominador. Para dividir, multiplique pela fração inversa." },
+        { "ref": "Decimal e porcentagem", "conceito": true, "texto": "Para converter decimal em porcentagem, multiplique por 100. Para converter porcentagem em fator, divida por 100. Exemplo: 7% = 0,07; base multiplicada por 0,07 representa 7% da base." },
+        { "ref": "Paridade", "conceito": true, "texto": "Par com par permanece par; ímpar com ímpar na soma resulta par; par com ímpar na soma resulta ímpar. O produto é par quando pelo menos um fator é par." },
+        { "ref": "Potências", "conceito": true, "texto": "Expoente negativo indica o inverso da base elevada ao módulo do expoente: 10⁻² = 1/100 = 0,01." }
+      ],
+      "tabela": {
+        "titulo": "Conversões frequentes",
+        "cab": ["Valor", "Decimal", "Porcentagem"],
+        "linhas": [["1/2", "0,5", "50%"], ["1/4", "0,25", "25%"], ["1/5", "0,20", "20%"], ["1/10", "0,10", "10%"], ["3/4", "0,75", "75%"]]
+      },
+      "macete": "Antes de calcular, coloque todas as quantidades na mesma unidade e transforme frações próximas em decimais.",
+      "pegadinhas": ["Trocar 0,8 hora por 80 minutos", "Somar porcentagens em vez de multiplicar fatores", "Confundir 10⁻² com -100"],
+      "cobra": ["Ordens numéricas", "Operações com frações e decimais", "Unidades e paridade"],
+      "mapa": { "centro": "Aritmética", "ramos": [
+        { "t": "Frações", "f": ["Soma", "Multiplicação", "Inversa"] },
+        { "t": "Decimais", "f": ["Mesma unidade", "Separar casas"] },
+        { "t": "Potências", "f": ["Expoente negativo", "Paridade"] },
+        { "t": "Porcentagem", "f": ["Percentual da base", "Fator"] }
+      ] }
+    },
+    {
+      "id": "razao-proporcao",
+      "titulo": "Razão, proporção e regra de três",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "Razão compara duas grandezas. Proporção é a igualdade de duas razões. Regra de três organiza grandezas diretamente ou inversamente proporcionais.",
+      "pontos": [
+        { "ref": "Razão", "conceito": true, "texto": "A razão de A para B é A/B. Numa razão, a ordem importa." },
+        { "ref": "Proporção", "conceito": true, "texto": "Em A/B = C/D, vale AD = BC. Esse produto dos extremos pelos meios é útil para conferir ou encontrar uma medida." },
+        { "ref": "Grandezas diretas", "conceito": true, "texto": "Quando uma grandeza aumenta e a outra aumenta na mesma proporção, multiplique em linha." },
+        { "ref": "Grandezas inversas", "conceito": true, "texto": "Quando uma grandeza aumenta e a outra diminui proporcionalmente, multiplicação de termos correspondentes pode indicar a relação inversa." },
+        { "ref": "Porcentagem e razão", "conceito": true, "texto": "Porcentagem é uma razão com denominador 100. Para achar p% de X, calcule p/100 × X." }
+      ],
+      "tabela": {
+        "titulo": "Exemplos",
+        "cab": ["Situação", "Conta", "Resultado"],
+        "linhas": [["20% de 250", "0,20 × 250", "50"], ["3 para 8", "3/8", "0,375"], ["4 operários em 6 horas", "Regra direta/inversa conforme o problema", "Conferir unidades"]]
+      },
+      "macete": "Escreva uma tabela com as grandezas, confirme se são diretas ou inversas e só então monte a equação.",
+      "pegadinhas": ["Usar a mesma unidade em grandezas diferentes", "Inverter uma relação direta", "Dividir pela base final em variação percentual"],
+      "cobra": ["Porcentagem", "Escala", "Regra de três", "Unidades"],
+      "mapa": { "centro": "Razões", "ramos": [
+        { "t": "Razão", "f": ["A/B", "Ordem"] },
+        { "t": "Proporção", "f": ["AD = BC"] },
+        { "t": "Direta", "f": ["Mesma direção"] },
+        { "t": "Inversa", "f": ["Direções opostas"] }
+      ] }
+    },
+    {
+      "id": "porcentagem",
+      "titulo": "Porcentagem e fatores",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "Porcentagem deve ser aplicada sobre a base correta. Aumentos e descontos sucessivos multiplicam fatores.",
+      "pontos": [
+        { "ref": "Parte e total", "conceito": true, "texto": "A porcentagem de A em relação a B é (A/B) × 100." },
+        { "ref": "Aumento", "conceito": true, "texto": "Aumento de p% usa o fator 1 + p/100." },
+        { "ref": "Desconto", "conceito": true, "texto": "Desconto de p% usa o fator 1 - p/100." },
+        { "ref": "Variação percentual", "conceito": true, "texto": "Variação percentual = (valor final - valor inicial)/valor inicial × 100." },
+        { "ref": "Aumentos sucessivos", "conceito": true, "texto": "Aumentos sucessivos não somam porcentagens: multiplicam fatores. +20% e +10% correspondem a 1,20 × 1,10 = 1,32." }
+      ],
+      "tabela": {
+        "titulo": "Fatores",
+        "cab": ["Operação", "Fator", "Exemplo sobre 100"],
+        "linhas": [["Aumento de 10%", "1,10", "110"], ["Desconto de 10%", "0,90", "90"], ["Aumento de 20%, depois desconto de 10%", "1,20 × 0,90 = 1,08", "108"]]
+      },
+      "macete": "Sempre pergunte: sobre qual base está sendo calculada esta porcentagem?",
+      "pegadinhas": ["Somar aumentos sucessivos", "Usar o valor final como base da variação", "Confundir pontos percentuais com percentual"],
+      "cobra": ["Variação percentual", "Aumentos", "Descontos", "Parte do total"],
+      "mapa": { "centro": "Porcentagem", "ramos": [
+        { "t": "Base", "f": ["Inicial", "Final"] },
+        { "t": "Aumento", "f": ["1 + p/100"] },
+        { "t": "Desconto", "f": ["1 - p/100"] },
+        { "t": "Sucessivos", "f": ["Multiplicar fatores"] }
+      ] }
+    },
+    {
+      "id": "logica-proposicional",
+      "titulo": "Lógica proposicional",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Proposição é uma frase declarativa com valor verdadeiro ou falso. Conectivos combinam proposições; a tabela-verdade determina o valor composto.",
+      "pontos": [
+        { "ref": "Negação", "conceito": true, "texto": "A negação ~p troca o valor lógico de p." },
+        { "ref": "Conjunção", "conceito": true, "texto": "p ∧ q só é verdadeira quando p e q são verdadeiras." },
+        { "ref": "Disjunção inclusiva", "conceito": true, "texto": "p ∨ q só é falsa quando p e q são falsas." },
+        { "ref": "Condicional", "conceito": true, "texto": "p → q só é falsa em verdadeiro e falso nessa ordem: V → F." },
+        { "ref": "Bicondicional", "conceito": true, "texto": "p ↔ q é verdadeira quando p e q têm o mesmo valor lógico." }
+      ],
+      "tabela": {
+        "titulo": "Resumo dos conectivos",
+        "cab": ["Conectivo", "Só verdadeiro quando", "Só falso quando"],
+        "linhas": [["∧", "As duas verdadeiras", "Uma ou mais falsa"], ["∨", "Uma ou mais verdadeira", "As duas falsas"], ["→", "Não ocorrer V → F", "V antecedente e F consequente"], ["↔", "Valores iguais", "Valores diferentes"]]
+      },
+      "macete": "Para o condicional, procure o único caso falso: antecedente verdadeiro e consequente falso.",
+      "pegadinhas": ["Confundir disjunção inclusiva com exclusivo", "Trocar antecedente e consequente", "Chamar frase imperativa de proposição"],
+      "cobra": ["Conectivos", "Tabela-verdade", "Tautologia", "Contingência"],
+      "mapa": { "centro": "Lógica", "ramos": [
+        { "t": "Negação", "f": ["Troca V/F"] },
+        { "t": "E", "f": ["Todas verdadeiras"] },
+        { "t": "Ou", "f": ["Basta uma verdadeira"] },
+        { "t": "Se...então", "f": ["V→F é falso"] }
+      ] }
+    },
+    {
+      "id": "equivalencias",
+      "titulo": "Equivalências e negações",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Equivalências permitem reescrever uma proposição sem alterar o resultado lógico.",
+      "pontos": [
+        { "ref": "Contrapositiva", "conceito": true, "texto": "p → q equivale a ~q → ~p." },
+        { "ref": "Condicional como disjunção", "conceito": true, "texto": "p → q equivale a ~p ∨ q." },
+        { "ref": "De Morgan", "conceito": true, "texto": "A negação de p ∧ q é ~p ∨ ~q. A negação de p ∨ q é ~p ∧ ~q." },
+        { "ref": "Negação do condicional", "conceito": true, "texto": "A negação de p → q é p ∧ ~q." },
+        { "ref": "Quantificadores", "conceito": true, "texto": "A negação de todo é existe algum que não. A negação de algum é nenhum; a de nenhum é existe algum." }
+      ],
+      "tabela": {
+        "titulo": "Transformações",
+        "cab": ["Origem", "Equivalente", "Cuidado"],
+        "linhas": [["p → q", "~q → ~p", "Não confundir com recíproca"], ["p → q", "~p ∨ q", "Mantém o mesmo sentido"], ["~(p ∧ q)", "~p ∨ ~q", "Troca e por ou"], ["~(p → q)", "p ∧ ~q", "Mantém o antecedente"]]
+      },
+      "macete": "Condicional: negar a segunda e manter a primeira é a negação; inverter e negar as duas é a contrapositiva.",
+      "pegadinhas": ["Confundir contrapositiva com recíproca", "Negar “todo” apenas trocando o sujeito", "Manter o valor lógico do condicional ao negá-lo"],
+      "cobra": ["Contrapositiva", "De Morgan", "Quantificadores"],
+      "mapa": { "centro": "Equivalências", "ramos": [
+        { "t": "Condicional", "f": ["Contrapositiva", "OU com antecedente negado"] },
+        { "t": "De Morgan", "f": ["Negar E vira OU", "Negar OU vira E"] },
+        { "t": "Quantificadores", "f": ["Todo ↔ existe não", "Algum ↔ nenhum"] }
+      ] }
+    },
+    {
+      "id": "sequencias",
+      "titulo": "Sequências e padrões",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "Uma sequência exige identificar a relação entre termos consecutivos ou a posição do termo.",
+      "pontos": [
+        { "ref": "Diferenças", "conceito": true, "texto": "Primeiro compare diferenças consecutivas. Elas podem ser constantes, alternadas ou crescer em padrão." },
+        { "ref": "Razões", "conceito": true, "texto": "Se os termos são obtidos multiplicando ou dividindo por um valor, compare a razão entre termos consecutivos." },
+        { "ref": "Fibonacci", "conceito": true, "texto": "Em uma sequência Fibonacci, cada termo é a soma dos dois anteriores." },
+        { "ref": "Padrões geométricos", "conceito": true, "texto": "Conte cada elemento separado por posição, lado, linha ou camada. Não suponha que o crescimento visual é linear sem verificar." },
+        { "ref": "Alternância", "conceito": true, "texto": "Em alguns padrões, posições pares seguem uma regra e posições ímpares seguem outra." }
+      ],
+      "tabela": {
+        "titulo": "Como testar",
+        "cab": ["Teste", "Pergunta", "Exemplo"],
+        "linhas": [["Diferença", "A diferença é constante?", "2, 5, 8, 11"], ["Razão", "A razão é constante?", "3, 6, 12, 24"], ["Soma anterior", "Termo = dois anteriores?", "2, 3, 5, 8"], ["Posição", "Há uma regra por índice?", "Impares: 1, 3, 5"]]
+      },
+      "macete": "Teste diferença, razão, soma dos anteriores e alternância de posições nesta ordem.",
+      "pegadinhas": ["Pressupor progressão aritmética sem conferir", "Trocar termos pares e ímpares", "Confundir área dobrada com lado dobrado"],
+      "cobra": ["Sequências numéricas", "Sequências alfabéticas", "Padrões geométricos"],
+      "mapa": { "centro": "Sequências", "ramos": [
+        { "t": "Aritmética", "f": ["Diferença constante"] },
+        { "t": "Geométrica", "f": ["Razão constante"] },
+        { "t": "Recorrência", "f": ["Fibonacci"] },
+        { "t": "Posição", "f": ["Pares", "Ímpares"] }
+      ] }
+    },
+    {
+      "id": "tabelas-graficos",
+      "titulo": "Tabelas, gráficos e interpretação",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "Tabelas e gráficos exigem identificar linha, coluna, unidade e base antes de calcular.",
+      "pontos": [
+        { "ref": "Localização", "conceito": true, "texto": "Leia título, legenda, unidade e período antes de usar os números." },
+        { "ref": "Somatório", "conceito": true, "texto": "Conferira se a pergunta pede um total, subtototal ou uma categoria isolada." },
+        { "ref": "Comparação", "conceito": true, "texto": "Na comparação, use a mesma unidade e a base indicada pela questão." },
+        { "ref": "Maior ou menor", "conceito": true, "texto": "Antes de comparar percentuais, confira se as bases são iguais." },
+        { "ref": "Valor faltante", "conceito": true, "texto": "Use soma, diferença ou regra de três para obter o valor ausente." }
+      ],
+      "tabela": {
+        "titulo": "Antes de calcular",
+        "cab": ["Pergunta", "O que conferir"],
+        "linhas": [["Quanto aumentou?", "Base inicial e base final"], ["Qual grupo é maior?", "Mesma unidade"], ["Qual porcentagem?", "Numerador e denominador"], ["Qual total?", "Linhas e categorias incluídas"]]
+      },
+      "macete": "Cubra o gráfico e leia primeiro título, legenda e unidade.",
+      "pegadinhas": ["Ler a linha errada", "Usar base final como inicial", "Misturar porcentagem e ponto percentual"],
+      "cobra": ["Tabelas", "Gráficos", "Variação", "Totais"],
+      "mapa": { "centro": "Informação", "ramos": [
+        { "t": "Título", "f": ["Tema"] },
+        { "t": "Eixos", "f": ["Unidades"] },
+        { "t": "Legenda", "f": ["Categorias"] },
+        { "t": "Conta", "f": ["Base certa"] }
+      ] }
+    }
+  ]
+}

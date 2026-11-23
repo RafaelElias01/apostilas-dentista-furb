@@ -5,7 +5,21 @@
     {
       "titulo": "Navegantes (FURB): inscrições abertas",
       "destaque": "prazo-inscricao",
-      "texto": "Processo Seletivo 0172/2026 da Prefeitura de Navegantes. Inscrições até 25/11/2026 às 23h59; taxa de R$ 130,00 até 26/11/2026. Prova em 13/12/2026 pela manhã. Cargos temporários de Odontologia em cadastro de reserva, banca FURB. Confira em concursos.furb.br."
+      "texto": "Processo Seletivo 0172/2026 da Prefeitura de Navegantes. Inscrições até 25/11/2026 às 23h59; taxa de R$ 130,00 até 26/11/2026. Prova em 13/12/2026 pela manhã. Cargos temporários de Odontologia em cadastro de reserva, banca FURB.",
+      "links": [
+        {
+          "texto": "Página oficial do certame",
+          "url": "https://concursos.furb.br/concurso/579-prefeitura-municipal-de-navegantes-processo-seletivo-edital"
+        },
+        {
+          "texto": "Edital com erratas",
+          "url": "https://anexos-r2.selecao.net.br/uploads/342/concursos/579/anexos/5e21661c-60c2-4607-8628-787d9bffc7c5.pdf"
+        },
+        {
+          "texto": "Inscrição online",
+          "url": "https://concursos.furb.br/area-candidato/concurso/579/inscricao"
+        }
+      ]
     },
     {
       "titulo": "IFFar (RS): inscrições abertas",

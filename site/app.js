@@ -682,10 +682,26 @@ function desenharConcurso(raiz, C) {
   if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
   if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
   if (objs_(C.situacao).length) {
-    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map((it) =>
-      h('div', {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map((it) => {
+      const item = h('div', {
         class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
-      }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto))))));
+      }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
+      const links = objs_(it.links);
+      if (links.length) {
+        const nav = h('p', { class: 'concurso-links' });
+        for (const link of links) {
+          if (!txt(link.url)) continue;
+          nav.append(h('a', {
+            href: txt(link.url),
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            class: 'btn sec'
+          }, txt(link.texto || 'Abrir fonte oficial')));
+        }
+        item.append(nav);
+      }
+      return item;
+    })));
   }
   if (objs_(C.inscricao).length) {
     raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,

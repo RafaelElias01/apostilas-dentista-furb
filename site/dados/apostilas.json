@@ -6,5 +6,6 @@
   { "numero": 5, "arquivo": "apostila-05-cariologia-prevencao-odontopediatria.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 6, "arquivo": "apostila-06-dentistica-endodontia-trauma.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 7, "arquivo": "apostila-07-periodontia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
-  { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } }
+  { "numero": 8, "arquivo": "apostila-08-cirurgia-farmacologia-patologia.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
+  { "numero": 9, "arquivo": "apostila-09-raciocinio-logico-navegantes.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } }
 ]
