@@ -46,7 +46,6 @@
 - Ivaí: Auxiliar de Cirurgião Dentista, não Odontólogo; prazo até 23/11 às 13h, portal Objetiva.
 - IFFar: Edital 406/2026, Odontólogo, 4 vagas, 40h; inscrições indicadas de 19/11 a 21/12. A página oficial hospeda o edital; os detalhes de vagas e datas foram conferidos no resumo do PCI Concursos.
 - Ijuí, Sede Nova e Quedas do Iguaçu não foram publicados: há detalhes em agregador, mas não houve confirmação direta suficiente nos portais/editais oficiais. Palmital/PR ainda não abriu inscrições (início indicado para 25/11).
-- Pedido para etapa futura: incluir em cada concurso novo um controle de intenção de inscrição e interesse no material; a informação deve continuar disponível quando o dono abrir o VS Code novamente. Definir uma forma de coleta persistente/centralizada antes de implementar: o site é estático, e localStorage no navegador não fica visível no VS Code.
 
 ## Prazos futuros confirmados (datas previstas em cronograma oficial; podem mudar por errata)
 - 25/11/2026: fim das inscrições de Navegantes. 26/11/2026: último dia para pagar a taxa de Navegantes; resultado final do Maravilha PSS 007/2026.
