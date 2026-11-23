@@ -677,34 +677,92 @@ function tabela(legenda, colunas, linhas) {
       return h('tr', null, colunas.map((_, i) => h('td', null, txt(l[i]) || '—')));
     }))));
 }
+function desenharCardConcurso(item, tipo) {
+  const statusCls = txt(item.statusClasse) || (tipo === 'aberto' ? (item.urgente ? 'urgente' : 'aberto') : (tipo || 'aberto'));
+  const badgeCls = txt(item.badgeClasse) || (tipo === 'aberto' ? (item.urgente ? 'badge-urgente' : 'badge-aberta') : tipo === 'previsto' ? 'badge-previsto' : 'badge-encerrado');
+  const card = h('article', { class: `card-concurso ${statusCls}` });
+  const cab = h('div', { class: 'concurso-cabecalho' },
+    h('h3', null, txt(item.titulo)),
+    h('span', { class: `badge-status ${badgeCls}` }, txt(item.statusBadge || (tipo === 'aberto' ? 'Inscrições Abertas' : tipo === 'previsto' ? 'Previsto' : 'Encerrado')))
+  );
+  card.append(cab);
+
+  if (ehObj(item.detalhes)) {
+    const grid = h('div', { class: 'concurso-detalhes' });
+    for (const [rotulo, valor] of Object.entries(item.detalhes)) {
+      if (txt(valor)) grid.append(h('div', null, h('strong', null, `${rotulo}: `), txt(valor)));
+    }
+    card.append(grid);
+  }
+
+  if (txt(item.texto)) card.append(h('p', null, txt(item.texto)));
+
+  if (ehObj(item.link) && txt(item.link.url)) {
+    card.append(h('a', {
+      href: item.link.url,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      class: 'concurso-link btn sec'
+    }, txt(item.link.texto || 'Acessar página oficial ↗')));
+  }
+  return card;
+}
 function desenharConcurso(raiz, C) {
   const ref = ehObj(C.referencia) ? C.referencia : {};
   const ant = ehObj(C.anteriores) ? C.anteriores : null;
   const bloco = (it) => h('div', null, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
   if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
   if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
-  if (objs_(C.situacao).length) {
+
+  // 1. Inscrições Abertas (novo formato estruturado)
+  if (objs_(C.abertos).length) {
+    raiz.append(h('h2', null, '🟢 Inscrições Abertas (Oportunidades em Andamento)'),
+      h('div', null, objs_(C.abertos).map((it) => desenharCardConcurso(it, 'aberto'))));
+  } else if (objs_(C.situacao).length) {
+    // Fallback retrocompatível para formato anterior
     raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map((it) =>
       h('div', {
         class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
       }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto))))));
   }
+
+  // 2. Previsões e Próximos Concursos
+  if (objs_(C.previstos).length) {
+    raiz.append(h('h2', null, '⏳ Previsões e Próximos Editais (FURB)'),
+      h('div', null, objs_(C.previstos).map((it) => desenharCardConcurso(it, 'previsto'))));
+  }
+
+  // 3. Encerrados recentemente
+  if (objs_(C.encerrados).length) {
+    raiz.append(h('h2', null, '📁 Concursos Encerrados Recentemente'),
+      h('div', null, objs_(C.encerrados).map((it) => desenharCardConcurso(it, 'encerrado'))));
+  }
+
+  // 4. Edital de Referência de Estudo (Blumenau 2025 - Encerrado)
+  if (txt(ref.titulo)) {
+    const cron = ehObj(ref.cronograma) ? ref.cronograma : null, prova = ehObj(ref.prova) ? ref.prova : null, des = ehObj(ref.desempate) ? ref.desempate : null;
+    raiz.append(h('h2', null, txt(ref.titulo)));
+    if (txt(ref.avisoEncerrado)) {
+      raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(ref.avisoEncerrado)));
+    }
+    raiz.append(h('div', { class: 'card' },
+      objs_(ref.itens).map(bloco),
+      cron ? [h('h3', null, txt(cron.titulo)), tabela(txt(cron.titulo), ['Etapa', 'Data'], cron.linhas)] : null,
+      prova ? [h('h3', null, txt(prova.titulo)), h('p', null, txt(prova.texto)), tabela('Questões por disciplina', ['Disciplina', 'Questões'], prova.linhas)] : null,
+      des ? bloco(des) : null,
+      txt(ref.naoConfirmado) ? h('p', { class: 'aviso', role: 'note' }, txt(ref.naoConfirmado)) : null,
+    ));
+  }
+
+  // 5. Histórico de Inscrição da Referência
   if (objs_(C.inscricao).length) {
-    raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,
+    const tituloSecaoInscricao = txt(C.tituloInscricao) || 'Histórico de Inscrição (Modelo FURB / Edital 2025 Encerrado)';
+    raiz.append(h('h2', null, tituloSecaoInscricao), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,
       h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)),
       txt(it.fonte) ? h('p', { class: 'suave' }, `Fonte: ${txt(it.fonte)}`) : null))));
   }
-  if (txt(ref.titulo)) {
-    const cron = ehObj(ref.cronograma) ? ref.cronograma : null, prova = ehObj(ref.prova) ? ref.prova : null, des = ehObj(ref.desempate) ? ref.desempate : null;
-    raiz.append(h('h2', null, txt(ref.titulo)),
-      h('div', { class: 'card' },
-        objs_(ref.itens).map(bloco),
-        cron ? [h('h3', null, txt(cron.titulo)), tabela(txt(cron.titulo), ['Etapa', 'Data'], cron.linhas)] : null,
-        prova ? [h('h3', null, txt(prova.titulo)), h('p', null, txt(prova.texto)), tabela('Questões por disciplina', ['Disciplina', 'Questões'], prova.linhas)] : null,
-        des ? bloco(des) : null,
-        txt(ref.naoConfirmado) ? h('p', { class: 'aviso', role: 'note' }, txt(ref.naoConfirmado)) : null,
-      ));
-  }
+
+  // 6. Tabela de edições anteriores
   if (ant && lista_(ant.colunas).length) {
     raiz.append(h('h2', null, txt(ant.titulo)), tabela(txt(ant.titulo), ant.colunas.map(txt), ant.linhas),
       txt(ant.legenda) ? h('p', { class: 'suave' }, txt(ant.legenda)) : null);

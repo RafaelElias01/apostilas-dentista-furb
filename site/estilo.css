@@ -75,15 +75,83 @@ h3 { font-size: 1rem; margin: 16px 0 6px; }
 
 .card { background: var(--card); border: 1px solid var(--borda); border-radius: 10px; padding: 14px; margin: 12px 0; }
 .destaque-prazo {
-  background: #b91c1c;
-  color: #fff;
-  border: 2px solid #7f1d1d;
+  background: color-mix(in srgb, var(--erro) 8%, var(--card));
+  border: 1px solid var(--erro);
+  border-left: 5px solid var(--erro);
   border-radius: 10px;
   padding: 14px;
   margin: 10px 0;
 }
-.destaque-prazo h3,
-.destaque-prazo p { color: #fff; }
+.destaque-prazo h3 { color: var(--erro); margin-top: 0; }
+
+/* Badges e Cards de Concursos */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+.badge-aberta { background: var(--ok-bg); color: var(--ok); border: 1px solid var(--ok); }
+.badge-urgente { background: var(--aviso-bg); color: var(--aviso); border: 1px solid var(--aviso); }
+.badge-previsto { background: color-mix(in srgb, var(--acento) 12%, var(--card)); color: var(--acento); border: 1px solid var(--acento); }
+.badge-encerrado { background: var(--bg); color: var(--suave); border: 1px solid var(--borda); }
+
+.card-concurso {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card-concurso:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.card-concurso.aberto { border-left: 5px solid var(--ok); }
+.card-concurso.urgente { border-left: 5px solid var(--foco); }
+.card-concurso.previsto { border-left: 5px solid var(--acento); }
+.card-concurso.encerrado { border-left: 5px solid var(--borda); opacity: 0.85; }
+
+.concurso-cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.concurso-cabecalho h3 { margin: 0; font-size: 1.05rem; }
+
+.concurso-detalhes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  background: var(--bg);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+@media (min-width: 560px) {
+  .concurso-detalhes { grid-template-columns: 1fr 1fr; }
+}
+.concurso-detalhes span { display: block; }
+.concurso-detalhes strong { color: var(--texto); }
+
+.concurso-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
 .aviso { background: var(--aviso-bg); color: var(--aviso); border: 1px solid var(--aviso); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
 .aviso p { margin: 4px 0; }
 .suave { color: var(--suave); font-size: 0.9rem; }
