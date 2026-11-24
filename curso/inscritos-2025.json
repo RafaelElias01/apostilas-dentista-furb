@@ -1,0 +1,43 @@
+{
+  "concurso": "PSPS Edital n.º 003/2025 - Prefeitura de Blumenau (execução FURB)",
+  "documento": "Relação candidato-vaga (publicada em 08/12/2025)",
+  "fonte_arquivo": "fontes/blumenau-2025-psps-003/relacao-candidato-vaga.pdf",
+  "fonte_sha256": "1682441c5b6575d94e65b46d3d8f490162a6712d587ad72aea76b5d5ef031968",
+  "fonte_url": "https://concursos.furb.br/concurso/489",
+  "data_documento": "2025-12-08",
+  "data_conferencia": "2026-11-24",
+  "conferencia": "Lido com pdftotext -layout na coluna 'TOTAL DE INSCRITOS' do PDF oficial; confere com a auditoria local de 2026-11-18. O documento traz '-' em vagas e candidato/vaga (cadastro de reserva, sem número fixo de vagas). Total geral do certame: 4492 inscrições.",
+  "total_geral_certame": {
+    "valor": 4492,
+    "status": "confirmado"
+  },
+  "inscritos": [
+    {
+      "cargo": "Cirurgião Dentista Clínico Geral",
+      "inscritos": 305,
+      "status": "confirmado"
+    },
+    {
+      "cargo": "Cirurgião Dentista Endodontista",
+      "inscritos": 29,
+      "status": "confirmado"
+    },
+    {
+      "cargo": "Cirurgião Dentista Buco-Maxilo-Facial",
+      "inscritos": 27,
+      "status": "confirmado"
+    },
+    {
+      "cargo": "Cirurgião Dentista Odontopediatra",
+      "inscritos": 18,
+      "status": "confirmado"
+    },
+    {
+      "cargo": "Cirurgião Dentista Periodontista",
+      "inscritos": 10,
+      "status": "confirmado"
+    }
+  ],
+  "observacao": "Inscritos = inscrições no cargo (não é número de presentes na prova; 635 inscrições do certame aparecem sem nota no resultado da prova objetiva, motivo PENDENTE).",
+  "nota_reproducao": "fontes/ e rascunho/ estão no .gitignore (repositório público): o PDF de origem existe só na máquina do autor; o SHA-256 acima permite conferir uma cópia baixada de concursos.furb.br/concurso/489."
+}
