@@ -17,8 +17,9 @@ Projeto enxuto, criado em 2026-11-18 a partir do curso-template (Brigada Academy
 - **Checklist de aprendizados ao fim de cada lote** (melhoria recursiva):
   (a) houve algum gatilho de regra nova, correção ou bug? -> `node scripts/aprendizados.mjs add --arquivo <json>`;
   (b) rodar `node scripts/aprendizados.mjs verificar`;
-  (c) rodar `node scripts/aprendizados.mjs consolidar --copiar-memoria`;
+  (c) rodar `node scripts/aprendizados.mjs consolidar` (`--copiar-memoria` só no PC de origem);
   (d) colar a saída de `pendentes` na resposta final e rodar `marcar-mostrado` com os ids colados.
+  Desde 24/11/2026 o registro é GLOBAL (vale em todos os projetos e PCs): `scripts/aprendizados.mjs` delega para `~/.claude/memoria-global/aprendizados/aprendizados.mjs` quando ele existe; o registro fica em `G:\Meu Drive\Claude-aprendizados\apostilas-dentista-furb\` e as regras de escopo global em `...\_global\`. `node scripts/aprendizados.mjs onde` mostra o caminho. O registro antigo (A001–A012) está só no PC de origem: lá, copie o `aprendizados.jsonl` para o Drive e rode `importar` (passo a passo no LEIAME do script global).
 
 ## Layout
 - `fontes/` — editais, provas anteriores, gabaritos, leis baixadas (originais, intocados).

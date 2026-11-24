@@ -1231,3 +1231,20 @@ test('42. acharSegredo: IPv4 de verdade é acusado; versões e números parecido
     assert.ok(temSegredo(achar(s)), `deveria acusar: ${s}`);
   }
 });
+
+test('global. delega ao script global só sem APRENDIZADOS_DIR, sem a pasta antiga e com o global presente', () => {
+  const home = fs.mkdtempSync(path.join(os.tmpdir(), 'apr-home-'));
+  try {
+    const global = path.join(home, '.claude', 'memoria-global', 'aprendizados', 'aprendizados.mjs');
+    const antigo = path.join(home, '.claude', 'projects', 'c--Users-rafael-ioppi-apostilas-dentista-furb', 'memory');
+    assert.equal(M.scriptGlobalParaDelegar({}, home), null, 'sem global: não delega');
+    fs.mkdirSync(path.dirname(global), { recursive: true });
+    fs.writeFileSync(global, '');
+    assert.equal(M.scriptGlobalParaDelegar({}, home), global, 'com global e sem pasta antiga: delega');
+    assert.equal(M.scriptGlobalParaDelegar({ APRENDIZADOS_DIR: home }, home), null, 'APRENDIZADOS_DIR definida: não delega');
+    fs.mkdirSync(antigo, { recursive: true });
+    assert.equal(M.scriptGlobalParaDelegar({}, home), null, 'PC de origem (pasta antiga existe): não delega');
+  } finally {
+    fs.rmSync(home, { recursive: true, force: true });
+  }
+});
