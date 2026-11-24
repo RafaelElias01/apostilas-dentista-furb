@@ -7,7 +7,7 @@ Projeto enxuto, criado em 2026-11-18 a partir do curso-template (Brigada Academy
 - **Apostilas numeradas, sempre**: `numero` no JSON, "Apostila 0N" no título, arquivo `apostila-0N-<nome>.pdf`, páginas "Apostila 0N · título · Página X de Y" (Chrome/Edge >= 131; `NAVEGADOR_PDF`).
 - **Estilo Praça Academy, com ênfase no que mais cai** nas provas anteriores (radar da banca; amostra pequena, dizer sempre).
 - **Conteúdo perfeito**: nunca inventar número, artigo, data ou resultado. Texto de lei só literal e de fonte oficial. O que não puder ser confirmado fica marcado PENDENTE e é avisado. Opus audita fatos; Sonnet monta.
-- **Divisão de papéis entre modelos** (ordem do dono, 22/11/2026 + 24/11/2026): o agente principal não escreve código de funcionalidade. Opus (um por vez) planeja, relata e audita; Sonnet (no máximo 2 ao mesmo tempo, um arquivo cada) implementa e faz code review; o principal coordena, roda testes, verifica, atualiza memória/documentação e faz commit.
+- **Divisão de papéis entre modelos** (ordem do dono, 22/11/2026 + 24/11/2026): o agente principal não escreve código de funcionalidade. Opus (um por vez) planeja, relata e audita; Sonnet (no máximo 5 ao mesmo tempo, liberado pelo dono em 24/11/2026; um arquivo cada) implementa e faz code review; o principal coordena, roda testes, verifica, atualiza memória/documentação e faz commit.
 - Erros: admitir na hora; nunca dizer "feito" sem verificar. Memórias: atualizar sempre ao fim de cada lote; regra nova dada pelo usuário é salva na hora; não salvar segredos.
 - Code review (`/code-review`) em todo código/script antes de push; mostrar os achados; só doc/memória é isento.
 - Texto que o leitor vê: mostrar antes/depois e esperar "aprovado" antes de mudar em massa.
