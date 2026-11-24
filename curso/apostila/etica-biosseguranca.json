@@ -1,5 +1,5 @@
 {
-  "_comentario": "Apostila 04 (Ética, Relações Humanas, Biossegurança e Prontuário), banca FURB, Cirurgião-Dentista de Blumenau. Sete lições e 26 grupos de questões únicas: biossegurança 7, relações humanas 5, ética no serviço público 4, Código CFO 4, responsabilidade profissional 3, resíduos 2 e prontuário 1. Gabaritos e alternativas são históricos; não os trate como regras vigentes.",
+  "_comentario": "Apostila 04 (Ética, Relações Humanas, Biossegurança e Prontuário), banca FURB, Cirurgião-Dentista de Blumenau. Dez lições (sete com 26 grupos de questões únicas e três de Código de Ética sem questão no banco, acrescentadas em 24/11/2026 pelo conteúdo programático do Navegantes): biossegurança 7, relações humanas 5, ética no serviço público 4, Código CFO 4, responsabilidade profissional 3, resíduos 2 e prontuário 1. Gabaritos e alternativas são históricos; não os trate como regras vigentes.",
   "id": "etica-biosseguranca",
   "numero": 4,
   "arquivoPdf": "apostila-04-etica-biosseguranca.pdf",
@@ -10,14 +10,15 @@
     "lei-4324-1964-camara.html"
   ],
   "rotuloPontos": "O conceito, passo a passo (com o que a banca já cobrou)",
-  "limiteFonte": "Fontes consultadas: Lei 4.324/1964 (Câmara: https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4324-14-abril-1964-376610-normaatualizada-pl.html); RDC Anvisa 15/2012 (BVS: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2012/rdc0015_15_03_2012.html); RDC Anvisa 222/2018 (BVS: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2018/rdc0222_28_03_2018.pdf); RDC Anvisa 1.002/2025 (Anvisa Legis: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00001002&seqAto=000&valorAno=2025&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=293&cod_menu=8499; ficha consultada indicava o ato como vigente); Resolução CFO-118/2012 (https://website.cfo.org.br/wp-content/uploads/2018/03/codigo_etica.pdf) e Resolução CFO-271/2025 (https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2025/271); Manual do Prontuário do CFO, 2026 (https://website.cfo.org.br/wp-content/uploads/2026/03/CFO_Manual_do_Prontuario_Ebook.pdf). A RDC 1.002/2025 entrou em vigor na publicação e prevê prazo de adequação no art. 182; a busca de alterações posteriores não foi exaustiva. A RDC 15/2012 exclui de seu escopo o processamento em consultórios odontológicos, e sua remissão na RDC 1.002/2025 é limitada, conforme art. 93. Questões e gabaritos são registros históricos do banco do projeto. O Manual do Prontuário do CFO (2026) é material orientador, não norma jurídica. Não se afirma que o texto do Código CFO foi consolidado integralmente.",
+  "limiteFonte": "Fontes consultadas: Lei 4.324/1964 (Câmara: https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-4324-14-abril-1964-376610-normaatualizada-pl.html); RDC Anvisa 15/2012 (BVS: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2012/rdc0015_15_03_2012.html); RDC Anvisa 222/2018 (BVS: https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2018/rdc0222_28_03_2018.pdf); RDC Anvisa 1.002/2025 (Anvisa Legis: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00001002&seqAto=000&valorAno=2025&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=293&cod_menu=8499; ficha consultada indicava o ato como vigente); Resolução CFO-118/2012 (Código de Ética; os artigos citados nesta apostila foram conferidos na cópia do site do CFO de 2018, http://website.cfo.org.br/wp-content/uploads/2018/03/codigo_etica.pdf, arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf; o PDF da CFO-118 em fontes/codigo-etica-odontologica-cfo-118-2012.pdf quase não tem texto extraível e não serviu para conferir) e Resolução CFO-271/2025 (https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2025/271); Manual do Prontuário do CFO, 2026 (https://website.cfo.org.br/wp-content/uploads/2026/03/CFO_Manual_do_Prontuario_Ebook.pdf). A RDC 1.002/2025 entrou em vigor na publicação e prevê prazo de adequação no art. 182; a busca de alterações posteriores não foi exaustiva. A RDC 15/2012 exclui de seu escopo o processamento em consultórios odontológicos, e sua remissão na RDC 1.002/2025 é limitada, conforme art. 93. Questões e gabaritos são registros históricos do banco do projeto. O Manual do Prontuário do CFO (2026) é material orientador, não norma jurídica. Não se afirma que o texto do Código CFO foi consolidado integralmente. Resolução CFO 63/2005, art. 4º, §1º, III e IV: texto da consolidação das normas do CFO de setembro de 2023 (arquivo fontes/leis/cfo-pne/cfo-consolidacao-2023.pdf). Os trechos do Código de Ética e da Resolução CFO 63 vêm de PDF (o gerador só confere trechos de HTML), por isso entram como “explicação do autor” com a citação literal dentro do texto. PENDENTE: o texto literal da Lei 11.889/2008, citada nos arts. 7º, I do Código e na Resolução CFO 63, não está em fontes/ e não é reproduzido aqui.",
   "comoUsar": [
     "Esta apostila reúne as questões de ética, relações humanas, biossegurança e prontuário das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 26 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025). Nenhuma foi anulada. Por edição: 2019: 11; 2021P: 6; 2025: 4; 2021C: 3; 2023: 2.",
     "Atenção ao seu cargo: dessas 26 questões, 15 caíram na prova do Clínico Geral. As de ética no Código do CFO (3 de 4), as de responsabilidade profissional (3 de 3) e a de prontuário vieram de provas de especialidade. Se você faz Clínico Geral, estude primeiro biossegurança, relações humanas e ética no serviço público (13 das 16 questões desses três temas caíram na prova do CG) e deixe o Código de Ética para depois.",
     "A amostra é pequena: 5 editais de um só município, de 2019 a 2025. A frequência indica tendência, não garantia. Um assunto que não apareceu pode cair, e um que caiu pode não cair de novo.",
     "Siglas das edições: 2019 = PSPS 002/2019; 2021P = PSPS 002/2021; 2021C = Concurso Público 002/2021 (50 questões); 2023 = PSPS 003/2023; 2025 = PSPS 003/2025. PSPS quer dizer Processo Seletivo Público Simplificado. Outras siglas: CFO = Conselho Federal de Odontologia; CRO = Conselho Regional de Odontologia; RDC = Resolução da Diretoria Colegiada da Anvisa (Agência Nacional de Vigilância Sanitária); PGRSS = Plano de Gerenciamento de Resíduos de Serviços de Saúde; EPI = equipamento de proteção individual; CG = Clínico Geral.",
-    "Ordem das lições (do que mais caiu): 1) biossegurança (7 questões); 2) relações humanas (5); 3) ética no serviço público (4); 4) Código de Ética Odontológica (4); 5) responsabilidade profissional (3); 6) resíduos, PGRSS (2); 7) prontuário (1). Regra de incidência: Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0. Ética no serviço público tem 4 questões mas aparece em 4 edições, por isso é Alta.",
-    "Como as lições mostram as questões: cada lição traz todas as questões reais do seu tema (26 no total). Como sobram menos de 5 questões para um simulado, esta apostila não tem simulado final.",
+    "Ordem das lições (do que mais caiu): 1) biossegurança (7 questões); 2) relações humanas (5); 3) ética no serviço público (4); 4) Código de Ética Odontológica (4); 5) responsabilidade profissional (3); 6) resíduos, PGRSS (2); 7) prontuário (1); 8) sigilo profissional, 9) documentos e atestados e 10) direitos e deveres fundamentais (0 questões cada; ficam no fim por não terem aparecido nas provas analisadas). Regra de incidência (as lições 1 a 7): Alta = 5 ou mais questões únicas ou presença em 4 ou mais edições; Média = 3 a 4; Baixa = 1 a 2; Não apareceu = 0. Ética no serviço público tem 4 questões mas aparece em 4 edições, por isso é Alta.",
+    "Como as lições mostram as questões: cada lição das sete primeiras traz todas as questões reais do seu tema (26 no total); as lições 8 a 10 não têm questão do banco, e seus pontos citam o texto do Código de Ética e da Resolução CFO 63/2005 (cópia do site do CFO de 2018 e consolidação do CFO de 2023), sem previsão de que caiam. Como sobram menos de 5 questões para um simulado, esta apostila não tem simulado final.",
+    "Lições 8 a 10 (acréscimo de 24/11/2026): sigilo profissional (arts. 14 a 16), documentos e atestados (art. 18, II a VII; art. 10, V; Res. CFO 63, art. 4º, §1º, III e IV) e direitos e deveres (arts. 5º a 9º) do Código de Ética. Servem ao conteúdo programático de Código de Ética Odontológica do Navegantes (edital 0172/2026). Não entram honorários, publicidade, bioética nem ergonomia. Os artigos foram conferidos na cópia do site do CFO de 2018, que não traz alterações posteriores; a CFO-271/2025 não mexeu nestes artigos, mas não se provou que não exista outra alteração.",
     "Como estudar: leia cada ponto, veja o quadro, leia as pegadinhas (elas saem das alternativas erradas das provas reais), leia como a banca cobra e só então faça as questões, marcando antes de olhar a resposta em verde. O código G0xxx que aparece nos textos identifica a questão no banco do projeto.",
     "Gabarito da banca manda. Em três pontos esta apostila avisa que a norma atual diz algo diferente do gabarito histórico (lição 1, classificação dos artigos e antissepsia; lição 7, profissão do paciente no prontuário): na prova, siga o gabarito histórico, mas saiba por que a norma diverge.",
     "As alternativas e gabaritos reproduzem respostas históricas da banca, não regras atuais. Para processamento de artigos em serviços odontológicos, use a RDC Anvisa 1.002/2025 e observe o escopo específico de cada dispositivo; o Manual do CFO de 2026 é orientador.",
@@ -52,6 +53,18 @@
     {
       "rotulo": "Prontuário odontológico (1 questão única; 2021P)",
       "nivel": 1
+    },
+    {
+      "rotulo": "Sigilo profissional, Código de Ética arts. 14 a 16 (0 questões únicas; não apareceu na amostra; lição pelo conteúdo programático do Navegantes)",
+      "nivel": 0
+    },
+    {
+      "rotulo": "Documentos odontológicos e atestados, Código de Ética art. 18 e Res. CFO 63/2005 (0 questões únicas; não apareceu na amostra; lição pelo conteúdo programático do Navegantes)",
+      "nivel": 0
+    },
+    {
+      "rotulo": "Direitos e deveres fundamentais, Código de Ética arts. 5º a 9º (0 questões únicas; não apareceu na amostra; lição pelo conteúdo programático do Navegantes)",
+      "nivel": 0
     }
   ],
   "licoes": [
@@ -460,9 +473,9 @@
           "texto": "A Lei 4.324/1964, art. 18, lista cinco penas disciplinares: advertência confidencial, censura confidencial, censura pública, suspensão do exercício profissional até 30 dias e cassação, ad referendum do Conselho Federal. Nenhuma questão deste material cobrou essa lista."
         },
         {
-          "ref": "Código de Ética · texto da Resolução CFO-118/2012 · infrações no relacionamento com o paciente",
+          "ref": "Código de Ética · texto da Resolução CFO-118/2012 (cópia do site do CFO, 2018) · infrações no relacionamento com o paciente",
           "conceito": true,
-          "texto": "O art. 11 do Código (CFO-118/2012, texto de 2012, lido no PDF) lista 14 infrações no relacionamento com o paciente, entre elas: aproveitar-se da relação para obter vantagem física, emocional, financeira ou política (II); exagerar em diagnóstico, prognóstico ou terapêutica (III); deixar de esclarecer propósitos, riscos, custos e alternativas (IV); executar ou propor tratamento DESNECESSÁRIO ou para o qual não esteja capacitado (V); abandonar paciente sem motivo justificável (VI); deixar de atender paciente em urgência quando não haja outro dentista em condições (VII); adotar novas técnicas ou materiais sem efetiva comprovação científica (IX); iniciar procedimento SEM o consentimento prévio do paciente ou responsável legal, exceto urgência ou emergência (X); opor-se a prestar esclarecimentos ou fornecer relatórios sobre diagnósticos e terapêuticas, quando solicitados (XII). A técnica de prova é esta: a banca copia o inciso e inverte um detalhe (por exemplo, troca ‘sem consentimento’ por ‘com consentimento’, ou ‘desnecessário’ por ‘necessário’)."
+          "texto": "O art. 11 do Código (Resolução CFO-118/2012; texto conferido em 24/11/2026 na cópia do site do CFO de 2018, arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf; o PDF oficial da própria CFO-118 em fontes/ quase não tem texto extraível e não foi usado para conferir) lista 14 infrações no relacionamento com o paciente, entre elas: aproveitar-se da relação para obter vantagem física, emocional, financeira ou política (II); exagerar em diagnóstico, prognóstico ou terapêutica (III); deixar de esclarecer propósitos, riscos, custos e alternativas (IV); executar ou propor tratamento DESNECESSÁRIO ou para o qual não esteja capacitado (V); abandonar paciente sem motivo justificável (VI); deixar de atender paciente em urgência quando não haja outro dentista em condições (VII); adotar novas técnicas ou materiais sem efetiva comprovação científica (IX); iniciar procedimento SEM o consentimento prévio do paciente ou responsável legal, exceto urgência ou emergência (X); opor-se a prestar esclarecimentos ou fornecer relatórios sobre diagnósticos e terapêuticas, quando solicitados (XII). A técnica de prova é esta: a banca copia o inciso e inverte um detalhe (por exemplo, troca ‘sem consentimento’ por ‘com consentimento’, ou ‘desnecessário’ por ‘necessário’)."
         },
         {
           "ref": "G0031 e G0087 · respostas históricas sobre relacionamento com o paciente",
@@ -661,9 +674,9 @@
       "intro": "1 questão única, em 2021P (G0175); ela não caiu na prova do Clínico Geral. Nenhuma foi anulada. A questão pediu o que NÃO era obrigatório para confeccionar prontuário “segundo o CFO”. A resposta da banca é registrada como histórica. O Manual do CFO de 2026 é posterior à prova e tem caráter orientador, não normativo.",
       "pontos": [
         {
-          "ref": "Prontuário no Código de Ética · texto consultado da Resolução CFO-118/2012",
+          "ref": "Prontuário no Código de Ética · texto da Resolução CFO-118/2012 (cópia do site do CFO, 2018)",
           "conceito": true,
-          "texto": "O art. 17 do Código (CFO-118/2012, lido no PDF) diz que é obrigatória a elaboração e a manutenção, de forma legível e atualizada, de prontuário, e a sua conservação em arquivo próprio, físico ou digital. O parágrafo único manda manter no prontuário os dados clínicos necessários para a boa condução do caso, preenchido em cada avaliação, em ordem cronológica, com data, hora, nome, assinatura e número de registro do cirurgião-dentista no CRO. O art. 9º, X, inclui entre os deveres fundamentais elaborar e manter atualizados os prontuários na forma das normas em vigor, inclusive os digitais; e o art. 18, I, torna infração negar ao paciente o acesso ao prontuário ou deixar de lhe fornecer cópia, salvo quando houver risco ao paciente ou a terceiros. Repare: o art. 17 não lista ‘anamnese’, ‘plano de tratamento’ nem ‘profissão do paciente’."
+          "texto": "O art. 17 do Código (Resolução CFO-118/2012; texto conferido em 24/11/2026 na cópia do site do CFO de 2018, arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf) diz que é obrigatória a elaboração e a manutenção, de forma legível e atualizada, de prontuário, e a sua conservação em arquivo próprio, físico ou digital. O parágrafo único manda manter no prontuário os dados clínicos necessários para a boa condução do caso, preenchido em cada avaliação, em ordem cronológica, com data, hora, nome, assinatura e número de registro do cirurgião-dentista no CRO. O art. 9º, X, inclui entre os deveres fundamentais elaborar e manter atualizados os prontuários na forma das normas em vigor, inclusive os digitais; e o art. 18, I, torna infração negar ao paciente o acesso ao prontuário ou deixar de lhe fornecer cópia, salvo quando houver risco ao paciente ou a terceiros. Repare: o art. 17 não lista ‘anamnese’, ‘plano de tratamento’ nem ‘profissão do paciente’."
         },
         {
           "ref": "Partes do prontuário · Manual do CFO, 2026 (documento orientador, não é norma)",
@@ -709,6 +722,221 @@
             "f": [
               "Gabarito histórico: profissão do paciente",
               "Manual CFO 2026 orienta registrar profissão/ocupação"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sigilo-profissional",
+      "titulo": "Sigilo profissional (Código de Ética, arts. 14 a 16)",
+      "nivel": 0,
+      "qtdQuestoes": 0,
+      "intro": "Nenhuma questão das provas anteriores analisadas (5 edições de Blumenau, 2019 a 2025) tratou de sigilo profissional; a lição entra por ser pilar do Código de Ética e por constar do conteúdo programático de Código de Ética Odontológica do Navegantes (edital 0172/2026). Amostra pequena: tema que não caiu pode cair. Todos os artigos abaixo são citados literalmente da cópia do site do CFO (2018); A Resolução CFO-271/2025 não alterou este artigo (ela mexeu só nos arts. 20, 32 e 44), mas a cópia de 2018 não traz alterações posteriores; não se provou que não exista outra.",
+      "pontos": [
+        {
+          "ref": "Art. 14, caput e incisos I a III · infrações",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 14. Constitui infração ética: I - revelar, sem justa causa, fato sigiloso de que tenha conhecimento em razão do exercício de sua profissão; II - negligenciar na orientação de seus colaboradores quanto ao sigilo profissional; e, III - fazer referência a casos clínicos identificáveis, exibir paciente, sua imagem ou qualquer outro elemento que o identifique, em qualquer meio de comunicação ou sob qualquer pretexto, salvo se o cirurgião-dentista estiver no exercício da docência ou em publicações científicas, nos quais, a autorização do paciente ou seu responsável legal, lhe permite a exibição da imagem ou prontuários com finalidade didático-acadêmicas.” Em resumo: a infração do inciso I é revelar SEM justa causa; o inciso II pune quem não orienta a equipe sobre o sigilo; o inciso III trata de caso clínico ou imagem identificável."
+        },
+        {
+          "ref": "Art. 14, parágrafo único · o que é justa causa",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Parágrafo Único. Compreende-se como justa causa, principalmente: I - notificação compulsória de doença; II - colaboração com a justiça nos casos previstos em lei; III - perícia odontológica nos seus exatos limites; IV - estrita defesa de interesse legítimo dos profissionais inscritos; e, V - revelação de fato sigiloso ao responsável pelo incapaz.” A palavra “principalmente” indica que a lista é exemplificativa, não fechada."
+        },
+        {
+          "ref": "Art. 15 · cobrança judicial de honorários",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 15. Não constitui quebra de sigilo profissional a declinação do tratamento empreendido, na cobrança judicial de honorários profissionais.”"
+        },
+        {
+          "ref": "Art. 16 · condições de trabalho indignas",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 16. Não constitui, também, quebra do sigilo profissional a comunicação ao Conselho Regional e às autoridades sanitárias as condições de trabalho indignas, inseguras e insalubres.”"
+        },
+        {
+          "ref": "Onde mais o Código fala de sigilo",
+          "conceito": true,
+          "texto": "O sigilo também aparece como direito (art. 5º, II: guardar sigilo a respeito das informações adquiridas no desempenho de suas funções; art. 7º, II, dos técnicos e auxiliares em saúde bucal: resguardar o segredo profissional) e como dever (art. 9º, VIII: resguardar o sigilo profissional; XV: resguardar sempre a privacidade do paciente). Veja a lição 10."
+        }
+      ],
+      "macete": "Padrão de prova da banca nesta apostila (visto nas questões do Código de Ética, lição 4): copiar o artigo e trocar uma palavra. Aqui, os pontos de troca prováveis são “sem justa causa” (a infração) contra “com justa causa” (não é infração) e “cobrança judicial” de honorários. Isto é um padrão observado em outros artigos do Código, não um gabarito: não há questão de sigilo no banco.",
+      "pegadinhas": [
+        "A infração é revelar fato sigiloso SEM justa causa; revelar COM justa causa (por exemplo, notificação compulsória de doença) não é infração.",
+        "O art. 15 só libera a declinação do tratamento na COBRANÇA JUDICIAL de honorários; não é liberação geral para falar do caso do paciente.",
+        "O art. 14, III permite exibir imagem ou prontuário na docência e em publicações científicas, mas depende da autorização do paciente ou do responsável legal.",
+        "Aviso: estas pegadinhas foram montadas a partir do texto do artigo, não de alternativas de provas anteriores (não há questão de sigilo no banco)."
+      ],
+      "cobra": [
+        "Nenhuma questão de sigilo nas 5 edições de Blumenau analisadas (2019, 2021P, 2021C, 2023, 2025): não há formato observado.",
+        "Nos artigos vizinhos do Código (arts. 11 e 13, lição 4), a banca usou afirmativas I a V ou V ou F com o inciso copiado e uma palavra invertida; é razoável treinar o sigilo do mesmo modo."
+      ],
+      "mapa": {
+        "centro": "Sigilo profissional",
+        "ramos": [
+          {
+            "t": "Infrações (art. 14)",
+            "f": [
+              "Revelar sem justa causa",
+              "Não orientar a equipe sobre o sigilo",
+              "Caso clínico ou imagem identificável"
+            ]
+          },
+          {
+            "t": "Justa causa",
+            "f": [
+              "Notificação compulsória de doença",
+              "Colaboração com a justiça (previsto em lei)",
+              "Perícia nos exatos limites",
+              "Defesa de interesse legítimo",
+              "Responsável pelo incapaz"
+            ]
+          },
+          {
+            "t": "Não é quebra",
+            "f": [
+              "Art. 15: cobrança judicial de honorários",
+              "Art. 16: comunicar ao CRO e à vigilância sanitária condições indignas"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "documentos-atestados",
+      "titulo": "Documentos odontológicos e atestados (Código, art. 18; Res. CFO 63/2005, art. 4º)",
+      "nivel": 0,
+      "qtdQuestoes": 0,
+      "intro": "Nenhuma questão das provas anteriores analisadas tratou dos incisos II a VII do art. 18 nem de atestados; a única questão do capítulo de documentos é a de prontuário (G0175, lição 7, que usa o art. 18, I). A lição entra porque o conteúdo programático do Navegantes (edital 0172/2026) traz Código de Ética Odontológica e porque o tema liga ao ESF (atestados, laudos e pareceres). Amostra pequena. A Resolução CFO-271/2025 não alterou este artigo (ela mexeu só nos arts. 20, 32 e 44), mas a cópia de 2018 não traz alterações posteriores; não se provou que não exista outra.",
+      "pontos": [
+        {
+          "ref": "Código de Ética, art. 18, II a VII · infrações com documentos",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 18. Constitui infração ética: [...] II - deixar de atestar atos executados no exercício profissional, quando solicitado pelo paciente ou por seu representante legal; III - expedir documentos odontológicos: atestados, declarações, relatórios, pareceres técnicos, laudos periciais, auditorias ou de verificação odontolegal, sem ter praticado ato profissional que o justifique, que seja tendencioso ou que não corresponda à verdade; IV - comercializar atestados odontológicos, recibos, notas fiscais, ou prescrições de especialidades farmacêuticas; V - usar formulários de instituições públicas para prescrever, encaminhar ou atestar fatos verificados na clínica privada; VI - deixar de emitir laudo dos exames por imagens realizados em clínicas de radiologia; e, VII - receitar, atestar, declarar ou emitir laudos, relatórios e pareceres técnicos de forma secreta ou ilegível, sem a devida identificação, inclusive com o número de registro no Conselho Regional de Odontologia na sua jurisdição, bem como assinar em branco, folhas de receituários, atestados, laudos ou quaisquer outros documentos odontológicos.” O inciso I (acesso ao prontuário) está na lição 7."
+        },
+        {
+          "ref": "Código de Ética, art. 10, V · profissional assistente e benefícios",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 10. Constitui infração ética: [...] V - negar, na qualidade de profissional assistente, informações odontológicas consideradas necessárias ao pleito da concessão de benefícios previdenciários ou outras concessões facultadas na forma da Lei, sobre seu paciente, seja por meio de atestados, declarações, relatórios, exames, pareceres ou quaisquer outros documentos probatórios, desde que autorizado pelo paciente ou responsável legal interessado;”"
+        },
+        {
+          "ref": "Resolução CFO 63/2005, art. 4º, §1º, III e IV · o que o cirurgião-dentista pode atestar e periciar",
+          "conceito": true,
+          "texto": "Texto literal da consolidação das normas do CFO de setembro de 2023 (arquivo fontes/leis/cfo-pne/cfo-consolidacao-2023.pdf, conferido em 24/11/2026): “§ 1º. Compete ao cirurgião-dentista: [...] III - atestar, no setor de sua atividade profissional, estados mórbidos e outros, inclusive para justificação de falta ao emprego; IV - proceder à perícia odontolegal em foro civil, criminal, trabalhista e em sede administrativa;”. Atenção ao limite: o atestado vale “no setor de sua atividade profissional”; não se afirma nada além disso."
+        }
+      ],
+      "macete": "Atestado e documento: o dentista atesta o que FEZ e o que está no seu setor (art. 18, II e III; Res. 63, art. 4º, §1º, III). O documento falso, tendencioso ou sem ato profissional é infração. Padrão de troca da banca, observado em outros artigos do Código (não é gabarito): “deixar de atestar” contra “atestar”, e “sem ter praticado ato profissional” contra “tendo praticado”.",
+      "pegadinhas": [
+        "Art. 18, II: é infração DEIXAR de atestar atos executados quando solicitado pelo paciente ou pelo representante legal; atestar o que realizou não é infração.",
+        "Art. 18, III: a infração é expedir documento SEM ter praticado ato profissional que o justifique, tendencioso ou que não corresponda à verdade.",
+        "Art. 18, V: formulário de instituição PÚBLICA não pode servir para fatos da clínica PRIVADA.",
+        "Art. 18, VII: o documento deve ser legível e identificado, com o número de registro no CRO; assinar em branco é infração.",
+        "Aviso: pegadinhas montadas a partir do texto dos artigos, não de alternativas de provas anteriores (não há questão sobre estes incisos no banco)."
+      ],
+      "cobra": [
+        "Nenhuma questão sobre os incisos II a VII do art. 18 nas 5 edições analisadas; a questão de documento do banco é a de prontuário (G0175, 2021P, lição 7).",
+        "No Código de Ética a banca cobrou V ou F e afirmativas I a V com o inciso copiado e uma palavra trocada (lição 4); treine este tema do mesmo modo."
+      ],
+      "mapa": {
+        "centro": "Documentos odontológicos",
+        "ramos": [
+          {
+            "t": "Art. 18 (infrações)",
+            "f": [
+              "II: deixar de atestar o que fez",
+              "III: documento sem ato profissional, tendencioso ou falso",
+              "IV: comercializar atestados e recibos",
+              "V: formulário público na clínica privada",
+              "VI: deixar de emitir laudo de imagem",
+              "VII: secreto, ilegível, sem registro, em branco"
+            ]
+          },
+          {
+            "t": "Art. 10, V",
+            "f": [
+              "Negar informações ao pleito de benefício previdenciário",
+              "Só com autorização do paciente"
+            ]
+          },
+          {
+            "t": "Res. CFO 63, art. 4º, §1º",
+            "f": [
+              "III: atestar no seu setor, inclusive falta ao emprego",
+              "IV: perícia odontolegal (cível, criminal, trabalhista, administrativa)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "direitos-deveres",
+      "titulo": "Direitos e deveres fundamentais; técnicos e auxiliares em saúde bucal no Código (arts. 5º a 9º)",
+      "nivel": 0,
+      "qtdQuestoes": 0,
+      "intro": "Nenhuma questão das provas anteriores analisadas tratou dos direitos e deveres fundamentais dos arts. 5º a 9º (a lição 7 usa só o art. 9º, X, e a lição 4 o art. 11). A lição é curta e entra pelo conteúdo programático do Navegantes (edital 0172/2026), e liga ao ESF (equipe com TSB e ASB). Amostra pequena. Do art. 9º entram só os incisos de maior chance de troca de palavra; os 19 incisos completos não são reproduzidos. A Resolução CFO-271/2025 não alterou este artigo (ela mexeu só nos arts. 20, 32 e 44), mas a cópia de 2018 não traz alterações posteriores; não se provou que não exista outra.",
+      "pontos": [
+        {
+          "ref": "Art. 5º · direitos fundamentais dos profissionais inscritos",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 5º. Constituem direitos fundamentais dos profissionais inscritos, segundo suas atribuições específicas: I - diagnosticar, planejar e executar tratamentos, com liberdade de convicção, nos limites de suas atribuições, observados o estado atual da Ciência e sua dignidade profissional; II - guardar sigilo a respeito das informações adquiridas no desempenho de suas funções; III - contratar serviços de outros profissionais da Odontologia, por escrito, de acordo com os preceitos deste Código e demais legislações em vigor; IV - recusar-se a exercer a profissão em âmbito público ou privado onde as condições de trabalho não sejam dignas, seguras e salubres; V - renunciar ao atendimento do paciente, durante o tratamento, quando da constatação de fatos que, a critério do profissional, prejudiquem o bom relacionamento com o paciente ou o pleno desempenho profissional. Nestes casos tem o profissional o dever de comunicar previamente, por escrito, ao paciente ou seu responsável legal, fornecendo ao cirurgião-dentista que lhe suceder todas as informações necessárias para a continuidade do tratamento; VI - recusar qualquer disposição estatutária, regimental, de instituição pública ou privada, que limite a escolha dos meios a serem postos em prática para o estabelecimento do diagnóstico e para a execução do tratamento, bem como recusar-se a executar atividades que não sejam de sua competência legal; e, VII - decidir, em qualquer circunstância, levando em consideração sua experiência e capacidade profissional, o tempo a ser dedicado ao paciente ou periciado, evitando que o acúmulo de encargos, consultas, perícias ou outras avaliações venham prejudicar o exercício pleno da Odontologia.”"
+        },
+        {
+          "ref": "Art. 6º · direito das categorias técnicas e auxiliares",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 6º. Constitui direito fundamental das categorias técnicas e auxiliares recusarem-se a executar atividades que não sejam de sua competência técnica, ética e legal, ainda que sob supervisão do cirurgião-dentista.”"
+        },
+        {
+          "ref": "Art. 7º · direitos dos técnicos e auxiliares em saúde bucal",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 7º. Constituem direitos fundamentais dos técnicos em saúde bucal e auxiliares em saúde bucal: I - executar, sob a supervisão do cirurgião-dentista, os procedimentos constantes na Lei nº 11.889/2008 e nas Resoluções do Conselho Federal; II - resguardar o segredo profissional; e, III - recusar-se a exercer a profissão em âmbito público ou privado onde as condições de trabalho não sejam dignas, seguras e salubres.” PENDENTE: o texto literal da Lei 11.889/2008 não está em fontes/; não é reproduzido nem resumido aqui."
+        },
+        {
+          "ref": "Art. 9º, VII, VIII, IX, X, XIV e XV · deveres fundamentais (seleção)",
+          "conceito": true,
+          "texto": "Texto literal da cópia do site do CFO (2018, “Aprovado pela Resolução CFO-118/2012”; arquivo fontes/leis/cfo-ceo-alteracoes/codigo-etica-cfo-site-2018-03.pdf, conferido no arquivo em 24/11/2026): “Art. 9º. Constituem deveres fundamentais dos inscritos e sua violação caracteriza infração ética: [...] VII - zelar pela saúde e pela dignidade do paciente; VIII - resguardar o sigilo profissional; IX - promover a saúde coletiva no desempenho de suas funções, cargos e cidadania, independentemente de exercer a profissão no setor público ou privado; X - elaborar e manter atualizados os prontuários na forma das normas em vigor, incluindo os prontuários digitais; [...] XIV - assumir responsabilidade pelos atos praticados, ainda que estes tenham sido solicitados ou consentidos pelo paciente ou seu responsável; XV - resguardar sempre a privacidade do paciente;” Os incisos omitidos ([...]) existem no Código e não foram reproduzidos nesta apostila."
+        }
+      ],
+      "macete": "Direito é do profissional (art. 5º: liberdade de convicção, sigilo, recusar condições indignas); dever é obrigação cuja violação é infração (art. 9º). Técnicos e auxiliares podem recusar atividade fora da sua competência “ainda que sob supervisão” (art. 6º). Padrão de troca da banca, observado em outros artigos (não é gabarito): inverter “dignas, seguras e salubres” ou trocar “sigilo” por outra palavra.",
+      "pegadinhas": [
+        "Art. 6º: o técnico ou auxiliar pode recusar a atividade fora da sua competência mesmo sob supervisão do cirurgião-dentista.",
+        "Art. 7º, I: o TSB e o ASB executam os procedimentos da Lei 11.889/2008 e das resoluções do CFO SOB SUPERVISÃO do cirurgião-dentista.",
+        "Art. 5º, V: a renúncia ao atendimento exige comunicação PRÉVIA e POR ESCRITO e a entrega ao sucessor das informações para continuar o tratamento.",
+        "Art. 9º, XIV: o profissional responde pelos atos mesmo que o paciente ou o responsável os tenha solicitado ou consentido.",
+        "Aviso: pegadinhas montadas a partir do texto dos artigos, não de alternativas de provas anteriores (não há questão sobre estes artigos no banco)."
+      ],
+      "cobra": [
+        "Nenhuma questão sobre os arts. 5º a 9º nas 5 edições analisadas; só o art. 9º, X aparece no estudo do prontuário (lição 7).",
+        "No Código de Ética a banca cobrou V ou F e afirmativas I a V com o inciso copiado e uma palavra trocada (lição 4)."
+      ],
+      "mapa": {
+        "centro": "Direitos e deveres (arts. 5º a 9º)",
+        "ramos": [
+          {
+            "t": "Direitos (art. 5º)",
+            "f": [
+              "Liberdade de convicção nos limites das atribuições",
+              "Guardar sigilo",
+              "Recusar condições indignas, inseguras e insalubres",
+              "Renunciar com aviso prévio por escrito"
+            ]
+          },
+          {
+            "t": "Técnicos e auxiliares (arts. 6º e 7º)",
+            "f": [
+              "Recusar o que não é da sua competência, mesmo sob supervisão",
+              "Executar sob supervisão o que a Lei 11.889/2008 e as resoluções do CFO permitem",
+              "Resguardar o segredo profissional"
+            ]
+          },
+          {
+            "t": "Deveres (art. 9º, seleção)",
+            "f": [
+              "VII: saúde e dignidade do paciente",
+              "VIII: sigilo",
+              "IX: saúde coletiva",
+              "X: prontuários",
+              "XIV: responsabilidade pelos atos",
+              "XV: privacidade do paciente"
             ]
           }
         ]

@@ -6,33 +6,36 @@
   "subtitulo": "Apostila 09 · Processo Seletivo 0172/2026 · Navegantes (SC) · banca FURB",
   "fontes": [],
   "rotuloPontos": "A regra, passo a passo",
-  "limiteFonte": "Conteúdo complementar baseado no programa público do edital de Navegantes e em regras neutras de matemática. Não há questões reais de Raciocínio Lógico ainda disponíveis para este certame neste banco.",
+  "limiteFonte": "Conteúdo complementar baseado no programa público do edital de Navegantes (Anexo V) e em regras neutras de matemática; não cita livro-texto nem norma (as fórmulas são matemática padrão). Não há questões reais de Navegantes neste banco. O treino usa 18 questões reais da banca FURB de outros municípios (Florianópolis 2024, Biguaçu 2025 e Itapema 2025), que não são do certame de Navegantes; a amostra é pequena (20 enunciados distintos de matemática) e mostra a tendência da banca, não uma garantia. Exemplos marcados (didático) foram criados para ensinar o método e não são questões de prova. PENDENTE: os gabaritos das questões do treino foram conferidos por cálculo próprio; os PDFs oficiais e os gabaritos definitivos pós-recurso não foram reabertos.",
   "comoUsar": [
-    "Esta apostila cobre o bloco de Raciocínio Lógico e Matemático do Processo Seletivo 0172/2026 de Navegantes: 5 questões de 40.",
-    "O edital do certame não especifica pesos por assunto dentro desse bloco. Por isso não existe ranking de temas garantido.",
-    "Resolva sempre primeiro lógica proposicional, porcentagem, proporção e aritmética básica, que são os núcleos explícitos do programa.",
-    "Use as questões oficiais da FURB quando forem divulgadas; este material não substitui as questões reais do certame.",
+    "Esta apostila cobre o bloco de Raciocínio Lógico e Matemático do Processo Seletivo 0172/2026 de Navegantes: 5 questões de 40 (5 × 0,20 = 1,00 ponto).",
+    "O edital do certame não especifica pesos por assunto dentro desse bloco. O ranking desta apostila vem de uma amostra pequena: 20 enunciados distintos de matemática da FURB em outros municípios (Florianópolis 2024, Biguaçu 2025 e Itapema 2025). É um indício do gosto da banca, não uma estatística nem uma garantia.",
+    "Comece por porcentagem, proporção e aritmética básica: foram o que mais caiu nessas provas. Depois estude conjuntos, contagem e média. Lógica proposicional, sequências, geometria e probabilidade não apareceram nos 20 enunciados, mas constam do programa e por isso continuam na apostila em menor destaque.",
+    "A última lição reúne 18 questões reais da FURB de outros municípios, com gabarito e conta. Use-as como treino de estilo: não são do certame de Navegantes. Use também as questões oficiais da FURB quando forem divulgadas; este material não substitui as questões reais do certame.",
     "Regra de prova: confira o edital, a estrutura, o tempo e as condições antes da aplicação."
   ],
   "ranking": [
-    { "rotulo": "Aritmética básica e porcentagem", "nivel": 3 },
-    { "rotulo": "Razão, proporção e regra de três", "nivel": 3 },
-    { "rotulo": "Lógica proposicional e tabelas-verdade", "nivel": 2 },
-    { "rotulo": "Equivalências, negações e quantificadores", "nivel": 2 },
-    { "rotulo": "Argumentos e diagramas", "nivel": 2 },
+    { "rotulo": "Porcentagem e fatores", "nivel": 3 },
+    { "rotulo": "Razão, proporção e regra de três (simples e composta)", "nivel": 3 },
+    { "rotulo": "Aritmética básica", "nivel": 2 },
+    { "rotulo": "Conjuntos", "nivel": 2 },
+    { "rotulo": "Contagem e probabilidade", "nivel": 2 },
+    { "rotulo": "Média aritmética (simples e ponderada)", "nivel": 2 },
+    { "rotulo": "Divisão proporcional", "nivel": 1 },
+    { "rotulo": "Sistema métrico e geometria básica", "nivel": 1 },
+    { "rotulo": "Lógica proposicional e equivalências", "nivel": 1 },
     { "rotulo": "Sequências e padrões", "nivel": 1 },
-    { "rotulo": "Associação lógica e orientação", "nivel": 1 },
     { "rotulo": "Tabelas e gráficos", "nivel": 1 }
   ],
   "licoes": [
     {
       "id": "aritmetica",
       "titulo": "Aritmética básica",
-      "nivel": 3,
+      "nivel": 2,
       "qtdQuestoes": 0,
       "intro": "O programa de Navegantes inclui operações com números inteiros, racionais e decimais. Dominar contas básicas reduz erros de sinal, prioridade e unidade.",
       "pontos": [
-        { "ref": "Ordem das operações", "conceito": true, "texto": "Na expressão, resolva potência e raiz, depois multiplicação e divisão na ordem em que aparecem, e por último adição e subtração." },
+        { "ref": "Ordem das operações", "conceito": true, "texto": "Resolva primeiro o que está entre parênteses, colchetes e chaves, de dentro para fora. Depois potência e raiz, depois multiplicação e divisão na ordem em que aparecem, e por último adição e subtração." },
         { "ref": "Frações", "conceito": true, "texto": "Para somar ou subtrair frações, reduza a um denominador comum. Para multiplicar, multiplique numerador por numerador e denominador por denominador. Para dividir, multiplique pela fração inversa." },
         { "ref": "Decimal e porcentagem", "conceito": true, "texto": "Para converter decimal em porcentagem, multiplique por 100. Para converter porcentagem em fator, divida por 100. Exemplo: 7% = 0,07; base multiplicada por 0,07 representa 7% da base." },
         { "ref": "Paridade", "conceito": true, "texto": "Par com par permanece par; ímpar com ímpar na soma resulta par; par com ímpar na soma resulta ímpar. O produto é par quando pelo menos um fator é par." },
@@ -62,17 +65,20 @@
       "pontos": [
         { "ref": "Razão", "conceito": true, "texto": "A razão de A para B é A/B. Numa razão, a ordem importa." },
         { "ref": "Proporção", "conceito": true, "texto": "Em A/B = C/D, vale AD = BC. Esse produto dos extremos pelos meios é útil para conferir ou encontrar uma medida." },
-        { "ref": "Grandezas diretas", "conceito": true, "texto": "Quando uma grandeza aumenta e a outra aumenta na mesma proporção, multiplique em linha." },
-        { "ref": "Grandezas inversas", "conceito": true, "texto": "Quando uma grandeza aumenta e a outra diminui proporcionalmente, multiplicação de termos correspondentes pode indicar a relação inversa." },
-        { "ref": "Porcentagem e razão", "conceito": true, "texto": "Porcentagem é uma razão com denominador 100. Para achar p% de X, calcule p/100 × X." }
+        { "ref": "Grandezas diretas", "conceito": true, "texto": "Duas grandezas são diretamente proporcionais quando, ao multiplicar uma por um número, a outra fica multiplicada pelo mesmo número: a razão entre elas é constante. Monte a proporção com as razões na mesma ordem. Exemplo (didático): 3 kg custam R$ 12,00; 5 kg custam x, com 3/12 = 5/x, logo x = 20. Conta: 12 ÷ 3 = 4 por kg; 5 × 4 = 20; confere com 3 × 20 = 12 × 5 = 60." },
+        { "ref": "Grandezas inversas", "conceito": true, "texto": "Duas grandezas são inversamente proporcionais quando, ao multiplicar uma por um número, a outra fica dividida por esse mesmo número: o produto entre elas é constante. Na regra de três, inverte-se uma das razões. Exemplo (didático): 6 torneiras iguais enchem um tanque em 10 horas; 15 torneiras gastam t horas, com 6 × 10 = 15 × t, logo t = 60 ÷ 15 = 4 horas." },
+        { "ref": "Porcentagem e razão", "conceito": true, "texto": "Porcentagem é uma razão com denominador 100. Para achar p% de X, calcule p/100 × X." },
+        { "ref": "Exemplo real: razão (G0400, Florianópolis 2024)", "conceito": true, "texto": "Setor com 153 funcionários, sendo 102 homens e 51 mulheres. Dois terços dos homens testaram positivo: 2/3 × 102 = 68. Um terço das mulheres: 1/3 × 51 = 17. Positivos no total: 68 + 17 = 85. Razão com o total: 85/153 = 5/9 (divida os dois por 17). Alternativa C, gabarito do banco." },
+        { "ref": "Exemplo real: proporção (G0408, Florianópolis 2024)", "conceito": true, "texto": "R$ 3.000,00 de investimento geram 2% de 12.000 pessoas = 240 vendas, ou seja, R$ 3.000 ÷ 240 = R$ 12,50 por venda. Para 1.920 vendas: 1.920 × 12,50 = R$ 24.000,00. Alternativa E, gabarito do banco." },
+        { "ref": "Exemplo real: proporção entre máquinas (G0611, Itapema 2025)", "conceito": true, "texto": "Duas máquinas iguais produzem x cada; a terceira produz 50% a mais que as duas juntas: 1,5 × 2x = 3x. Total: x + x + 3x = 5x = 300, logo x = 60. A máquina de maior desempenho produz 3 × 60 = 180 por dia; 1.080 ÷ 180 = 6 dias. Alternativa B, gabarito do banco." }
       ],
       "tabela": {
         "titulo": "Exemplos",
         "cab": ["Situação", "Conta", "Resultado"],
-        "linhas": [["20% de 250", "0,20 × 250", "50"], ["3 para 8", "3/8", "0,375"], ["4 operários em 6 horas", "Regra direta/inversa conforme o problema", "Conferir unidades"]]
+        "linhas": [["20% de 250", "0,20 × 250", "50"], ["3 para 8", "3/8", "0,375"], ["4 operários fazem a obra em 6 h; 8 operários (inversa)", "4 × 6 = 8 × t", "3 horas"]]
       },
       "macete": "Escreva uma tabela com as grandezas, confirme se são diretas ou inversas e só então monte a equação.",
-      "pegadinhas": ["Usar a mesma unidade em grandezas diferentes", "Inverter uma relação direta", "Dividir pela base final em variação percentual"],
+      "pegadinhas": ["Misturar unidades diferentes (horas com minutos) na mesma conta", "Inverter uma relação direta", "Dividir pela base final em variação percentual"],
       "cobra": ["Porcentagem", "Escala", "Regra de três", "Unidades"],
       "mapa": { "centro": "Razões", "ramos": [
         { "t": "Razão", "f": ["A/B", "Ordem"] },
@@ -86,22 +92,26 @@
       "titulo": "Porcentagem e fatores",
       "nivel": 3,
       "qtdQuestoes": 0,
-      "intro": "Porcentagem deve ser aplicada sobre a base correta. Aumentos e descontos sucessivos multiplicam fatores.",
+      "intro": "Porcentagem deve ser aplicada sobre a base correta. Aumentos e descontos sucessivos multiplicam fatores. É o assunto que mais caiu nas provas da FURB analisadas (5 dos 18 enunciados usáveis).",
       "pontos": [
         { "ref": "Parte e total", "conceito": true, "texto": "A porcentagem de A em relação a B é (A/B) × 100." },
         { "ref": "Aumento", "conceito": true, "texto": "Aumento de p% usa o fator 1 + p/100." },
         { "ref": "Desconto", "conceito": true, "texto": "Desconto de p% usa o fator 1 - p/100." },
         { "ref": "Variação percentual", "conceito": true, "texto": "Variação percentual = (valor final - valor inicial)/valor inicial × 100." },
-        { "ref": "Aumentos sucessivos", "conceito": true, "texto": "Aumentos sucessivos não somam porcentagens: multiplicam fatores. +20% e +10% correspondem a 1,20 × 1,10 = 1,32." }
+        { "ref": "Aumentos sucessivos", "conceito": true, "texto": "Aumentos sucessivos não somam porcentagens: multiplicam fatores. +20% e +10% correspondem a 1,20 × 1,10 = 1,32." },
+        { "ref": "Exemplo real: desconto, achar o preço de tabela (G0403, Florianópolis 2024)", "conceito": true, "texto": "Tablet comprado por R$ 2.017,40 com 23% de desconto sobre o preço de tabela: pagou 77% do preço de tabela. Preço de tabela = 2.017,40 ÷ 0,77 = R$ 2.620,00. Valor a mais: 2.620,00 - 2.017,40 = R$ 602,60. Alternativa A, gabarito do banco." },
+        { "ref": "Exemplo real: porcentagem de porcentagem (G0613, Itapema 2025)", "conceito": true, "texto": "580 estudantes; 40% no Ensino Fundamental: 580 × 0,40 = 232. Desses, 25% fazem atividades extracurriculares: 232 × 0,25 = 58. Alternativa C, gabarito do banco." },
+        { "ref": "Exemplo real: desconto e troco (G0468, Biguaçu 2025)", "conceito": true, "texto": "Fabiana pagou com R$ 100,00 e recebeu troco de R$ 55,00, ou seja, pagou R$ 45,00 pelo boné com 25% de desconto: R$ 45,00 é 75% da etiqueta. Etiqueta = 45 ÷ 0,75 = R$ 60,00. Sem a promoção o troco seria 100 - 60 = R$ 40,00, ou seja, 2 notas de R$ 20,00. Alternativa D, gabarito do banco." },
+        { "ref": "Exemplo real: aumento e orçamento (G0401, Florianópolis 2024)", "conceito": true, "texto": "Orçamento anual de R$ 22.800.000,00; por mês, 22.800.000 ÷ 12 = R$ 1.900.000,00. Nível I: 40 médicos com aumento de 30%: 18.000 × 1,30 = 23.400 por médico, 40 × 23.400 = R$ 936.000,00. Sobram 1.900.000 - 936.000 = R$ 964.000,00 para os 32 médicos do nível II: 964.000 ÷ 32 = R$ 30.125,00 cada. Aumento sobre 25.000: 30.125 ÷ 25.000 = 1,205, isto é, 20,5%. Alternativa E, gabarito do banco." }
       ],
       "tabela": {
         "titulo": "Fatores",
         "cab": ["Operação", "Fator", "Exemplo sobre 100"],
         "linhas": [["Aumento de 10%", "1,10", "110"], ["Desconto de 10%", "0,90", "90"], ["Aumento de 20%, depois desconto de 10%", "1,20 × 0,90 = 1,08", "108"]]
       },
-      "macete": "Sempre pergunte: sobre qual base está sendo calculada esta porcentagem?",
-      "pegadinhas": ["Somar aumentos sucessivos", "Usar o valor final como base da variação", "Confundir pontos percentuais com percentual"],
-      "cobra": ["Variação percentual", "Aumentos", "Descontos", "Parte do total"],
+      "macete": "Sempre pergunte: sobre qual base está sendo calculada esta porcentagem? Se a questão dá o valor depois do desconto, divida pelo fator (G0403, G0468).",
+      "pegadinhas": ["Somar aumentos sucessivos", "Usar o valor final como base da variação", "Confundir pontos percentuais com percentual", "Multiplicar o valor pago pelo desconto em vez de dividir pelo fator (preço de tabela)"],
+      "cobra": ["Variação percentual", "Aumentos", "Descontos", "Parte do total", "Porcentagem de porcentagem"],
       "mapa": { "centro": "Porcentagem", "ramos": [
         { "t": "Base", "f": ["Inicial", "Final"] },
         { "t": "Aumento", "f": ["1 + p/100"] },
@@ -110,11 +120,181 @@
       ] }
     },
     {
-      "id": "logica-proposicional",
-      "titulo": "Lógica proposicional",
+      "id": "divisao-proporcional",
+      "titulo": "Divisão em partes proporcionais",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "Dividir um total em partes proporcionais é repartir um valor segundo números de referência (investimento, horas, idade). A parte maior vai para quem tem o número maior; as partes somam o total.",
+      "pontos": [
+        { "ref": "Diretamente proporcionais", "conceito": true, "texto": "Para dividir o total T em partes proporcionais a a, b e c: some os números (S = a + b + c), calcule a constante k = T ÷ S e multiplique: as partes são k·a, k·b e k·c. As partes somam T." },
+        { "ref": "Inversamente proporcionais", "conceito": true, "texto": "Dividir em partes inversamente proporcionais a a e b equivale a dividir em partes diretamente proporcionais a 1/a e 1/b. Quem tem o número maior recebe menos. Verificação: o produto (parte × número) é igual para todos." },
+        { "ref": "Partilha por fração", "conceito": true, "texto": "Se um recebe uma fração do total e o outro “o restante”, o restante é 1 menos a fração. Dois quintos para um e o restante para o outro equivale à razão 2 : 3." },
+        { "ref": "Conferir sempre", "conceito": true, "texto": "A soma das partes tem de dar o total." },
+        { "ref": "Exemplo (didático): direta", "conceito": true, "texto": "Dividir R$ 1.200,00 em partes diretamente proporcionais a 2 e 3. S = 2 + 3 = 5; k = 1.200 ÷ 5 = 240. Partes: 240 × 2 = 480 e 240 × 3 = 720. Conferência: 480 + 720 = 1.200." },
+        { "ref": "Exemplo (didático): inversa", "conceito": true, "texto": "Dividir R$ 780,00 em partes inversamente proporcionais a 2 e 3. Os inversos são 1/2 e 1/3, isto é, 3/6 e 2/6, razão 3 : 2. S = 5; k = 780 ÷ 5 = 156. Partes: 156 × 3 = 468 e 156 × 2 = 312. Conferência: 468 + 312 = 780; produtos 468 × 2 = 936 e 312 × 3 = 936 (iguais, como deve ser)." },
+        { "ref": "Exemplo real: partilha por fração (G0465, Biguaçu 2025)", "conceito": true, "texto": "Prêmio de R$ 20.000,00; Breno recebe dois quintos e Ricardo o restante. Ricardo: 1 - 2/5 = 3/5. 3/5 de 20.000 = 20.000 ÷ 5 × 3 = 4.000 × 3 = R$ 12.000,00. Alternativa A, gabarito do banco. Conferência: Breno 4.000 × 2 = 8.000; 8.000 + 12.000 = 20.000." }
+      ],
+      "macete": "Some as razões, ache o valor de uma parte, multiplique. Confirme com a soma.",
+      "pegadinhas": ["Dividir o total por 2 em vez da soma das razões", "Fazer “inversamente” com a razão direta", "Esquecer que “o restante” é 1 menos a fração do outro"],
+      "cobra": ["Partilha de um prêmio ou valor", "Fração do total e o restante"],
+      "mapa": { "centro": "Partes proporcionais", "ramos": [
+        { "t": "Direta", "f": ["Somar razões", "k = T ÷ S"] },
+        { "t": "Inversa", "f": ["Usar 1/a", "Produto igual"] },
+        { "t": "Fração", "f": ["Restante = 1 - fração"] },
+        { "t": "Conferência", "f": ["Soma = total"] }
+      ] }
+    },
+    {
+      "id": "regra-de-tres-composta",
+      "titulo": "Regra de três composta",
       "nivel": 2,
       "qtdQuestoes": 0,
-      "intro": "Proposição é uma frase declarativa com valor verdadeiro ou falso. Conectivos combinam proposições; a tabela-verdade determina o valor composto.",
+      "intro": "A regra de três composta envolve três ou mais grandezas. Em cada uma, compare apenas com a grandeza da incógnita, sem olhar as outras, e decida se é direta ou inversa.",
+      "pontos": [
+        { "ref": "Direta ou inversa", "conceito": true, "texto": "Direta: dobrando uma, a outra dobra (mais máquinas, mais peças). Inversa: dobrando uma, a outra cai pela metade (mais operários, menos dias)." },
+        { "ref": "Método do produto", "conceito": true, "texto": "Valor da incógnita = valor conhecido × (razão de cada grandeza). A razão fica “novo ÷ antigo” para as diretas e “antigo ÷ novo” para as inversas." },
+        { "ref": "Método do trabalho total", "conceito": true, "texto": "Em obras, calcule o “total de trabalho” = operários × dias × horas por dia. Esse total não muda; use-o para achar o que falta." },
+        { "ref": "Mesmas unidades", "conceito": true, "texto": "Use as mesmas unidades em todas as grandezas (horas com horas, dias com dias)." },
+        { "ref": "Exemplo (didático): grandezas diretas", "conceito": true, "texto": "5 máquinas produzem 600 peças em 6 dias. Quantas peças 8 máquinas produzem em 9 dias? Peças são diretas com máquinas e com dias: 600 × (8/5) × (9/6) = 600 × 1,6 × 1,5 = 1.440 peças." },
+        { "ref": "Exemplo (didático): grandezas inversas", "conceito": true, "texto": "6 pedreiros levantam um muro em 10 dias, trabalhando 8 h por dia. Em quantos dias 4 pedreiros, trabalhando 6 h por dia, fazem o mesmo muro? Dias são inversos a pedreiros e inversos a horas por dia: 10 × (6/4) × (8/6) = 10 × 1,5 × 1,333... = 20 dias. Conferência pelo trabalho total: 6 × 10 × 8 = 480 homens-hora; 4 × 6 = 24 homens-hora por dia; 480 ÷ 24 = 20." },
+        { "ref": "Exemplo real: obra atrasada (G0407, Florianópolis 2024)", "conceito": true, "texto": "Obra prevista em 10 dias, com 6 homens, 8 h por dia. Depois de 4 dias só 32% estavam prontos. Para terminar no prazo, em quanto aumentar a jornada diária? Em 4 dias × 8 h = 32 h de trabalho do grupo, 32% da obra: 1% por hora de trabalho do grupo. Faltam 68%, logo 68 horas de trabalho do grupo. Restam 6 dias (10 - 4): 68 ÷ 6 = 11,333... h por dia. 0,333... h × 60 = 20 min, então 11 h 20 min por dia. Aumento: 11 h 20 min - 8 h = 3 h 20 min. Alternativa A, gabarito do banco." }
+      ],
+      "macete": "Isole a incógnita, compare uma grandeza de cada vez e confira pelo total de trabalho.",
+      "pegadinhas": ["Tratar como direta uma grandeza inversa", "Esquecer que o enunciado dá o ritmo observado e não o previsto (G0407)", "Converter 0,333 h em 33 min (o certo é 20 min)", "Calcular a jornada total quando a pergunta pede o aumento"],
+      "cobra": ["Obra com homens, dias e horas por dia", "Ritmo observado e prazo previsto", "Conversão de horas decimais em minutos"],
+      "mapa": { "centro": "Regra de três composta", "ramos": [
+        { "t": "Direta", "f": ["novo ÷ antigo"] },
+        { "t": "Inversa", "f": ["antigo ÷ novo"] },
+        { "t": "Trabalho total", "f": ["operários × dias × horas"] },
+        { "t": "Unidades", "f": ["Horas com horas"] }
+      ] }
+    },
+    {
+      "id": "conjuntos",
+      "titulo": "Conjuntos",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Conjuntos aparecem como “pesquisa com pessoas”: quem gosta de A, quem gosta de B, quem gosta dos dois e quem não gosta de nenhum.",
+      "pontos": [
+        { "ref": "Notação", "conceito": true, "texto": "União A ∪ B: está em A ou em B, ou nos dois. Interseção A ∩ B: está em A e em B. n(A) é o número de elementos de A." },
+        { "ref": "Dois conjuntos", "conceito": true, "texto": "n(A ∪ B) = n(A) + n(B) - n(A ∩ B). A interseção é subtraída porque foi contada duas vezes." },
+        { "ref": "Só de um conjunto", "conceito": true, "texto": "“Apenas A” = n(A) - n(A ∩ B)." },
+        { "ref": "Fora dos dois", "conceito": true, "texto": "Nenhum = total - n(A ∪ B)." },
+        { "ref": "Três conjuntos", "conceito": true, "texto": "n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A ∩ B) - n(A ∩ C) - n(B ∩ C) + n(A ∩ B ∩ C)." },
+        { "ref": "Método do diagrama", "conceito": true, "texto": "Comece pelo centro (a interseção) e vá para fora, subtraindo." },
+        { "ref": "Exemplo real: dois conjuntos (G0469, Biguaçu 2025)", "conceito": true, "texto": "28 funcionários; 16 gostam de café sem leite, 14 de café com leite, 4 gostam de ambos. n(união) = 16 + 14 - 4 = 26. Nenhum dos dois: 28 - 26 = 2. Alternativa B, gabarito do banco." },
+        { "ref": "Exemplo real: com “apenas outros” (G0612, Itapema 2025)", "conceito": true, "texto": "40 estudantes; 18 futebol, 22 vôlei; 4 não praticam nenhum esporte; 8 praticam apenas outros esportes (nem futebol nem vôlei). Quem pratica futebol ou vôlei: 40 - 4 - 8 = 28. Então 18 + 22 - x = 28, logo x = 12. São 12 estudantes. Alternativa C, gabarito do banco. Conferência: só futebol 18 - 12 = 6; só vôlei 22 - 12 = 10; ambos 12; 6 + 10 + 12 = 28; 28 + 4 + 8 = 40." },
+        { "ref": "Exemplo (didático): três conjuntos", "conceito": true, "texto": "Em um grupo de 100 pessoas: 40 em A, 30 em B, 20 em C; 10 em A e B, 8 em A e C, 5 em B e C; 3 nos três. n(união) = 40 + 30 + 20 - 10 - 8 - 5 + 3 = 70. Em nenhum: 100 - 70 = 30." }
+      ],
+      "macete": "Leia o enunciado procurando a palavra “ambos” ou “e também”: é o centro do diagrama.",
+      "pegadinhas": ["Tratar “16 gostam de A” como “só A” (16 inclui os que gostam dos dois)", "Esquecer o grupo “nenhum”", "Em G0612, confundir “não praticam nenhum esporte” (4) com “apenas outros esportes” (8): os dois grupos ficam fora de futebol e vôlei"],
+      "cobra": ["Pesquisa com dois grupos e a interseção", "Quantos não pertencem a nenhum grupo"],
+      "mapa": { "centro": "Conjuntos", "ramos": [
+        { "t": "União", "f": ["n(A) + n(B) - n(A ∩ B)"] },
+        { "t": "Interseção", "f": ["“ambos”", "Centro do diagrama"] },
+        { "t": "Nenhum", "f": ["Total - união"] },
+        { "t": "Apenas A", "f": ["n(A) - n(A ∩ B)"] }
+      ] }
+    },
+    {
+      "id": "contagem-probabilidade",
+      "titulo": "Contagem, análise combinatória básica e probabilidade",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Contar sem listar. Primeiro decida se a ordem importa e se pode repetir. A probabilidade entra só no mínimo: nenhuma questão de probabilidade apareceu nos 20 enunciados analisados.",
+      "pontos": [
+        { "ref": "Princípio multiplicativo", "conceito": true, "texto": "Se uma escolha tem m modos e a seguinte tem n modos, juntas têm m × n modos." },
+        { "ref": "Com repetição", "conceito": true, "texto": "n opções em cada uma de p posições dão n elevado a p." },
+        { "ref": "Sem repetição (arranjo, a ordem importa)", "conceito": true, "texto": "A(n, p) = n × (n-1) × ... (p fatores) = n! ÷ (n-p)!." },
+        { "ref": "Permutação", "conceito": true, "texto": "n objetos distintos em fila: n!. Com elementos repetidos (a vezes um, b vezes outro): n! ÷ (a! × b! ...)." },
+        { "ref": "Combinação (a ordem não importa)", "conceito": true, "texto": "C(n, p) = n! ÷ (p! × (n-p)!)." },
+        { "ref": "Probabilidade (mínimo)", "conceito": true, "texto": "P = casos favoráveis ÷ casos possíveis, quando todos são igualmente possíveis; o valor fica entre 0 e 1. Complementar: P(não A) = 1 - P(A)." },
+        { "ref": "Exemplo real: com repetição (G0614, Itapema 2025)", "conceito": true, "texto": "Senha de 4 algarismos, podendo repetir, usando 1, 2, 3, 4 e 5: 5 × 5 × 5 × 5 = 5⁴ = 625. Alternativa E, gabarito do banco. Atenção: sem repetição seriam 5 × 4 × 3 × 2 = 120, que é justamente uma das alternativas (A)." },
+        { "ref": "Exemplo real: anagramas (G0402, Florianópolis 2024)", "conceito": true, "texto": "Anagramas de AMANDA (6 letras, com a letra A três vezes): 6! ÷ 3! = 720 ÷ 6 = 120. Excluindo a própria palavra “amanda”: 120 - 1 = 119. Alternativa D, gabarito do banco." },
+        { "ref": "Exemplo (didático): anagramas de MAMA", "conceito": true, "texto": "4! ÷ (2! × 2!) = 24 ÷ 4 = 6. Lista para conferir: MMAA, MAMA, MAAM, AMMA, AMAM, AAMM." },
+        { "ref": "Exemplo (didático): combinação e arranjo", "conceito": true, "texto": "Escolher 2 pessoas de 5 para uma comissão (a ordem não importa): C(5, 2) = 5! ÷ (2! × 3!) = 10. Se fossem presidente e vice (a ordem importa): A(5, 2) = 5 × 4 = 20 = 2 × 10." },
+        { "ref": "Exemplo (didático): probabilidade com dois dados", "conceito": true, "texto": "Probabilidade de a soma ser 7. Casos possíveis: 6 × 6 = 36. Favoráveis: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6. P = 6/36 = 1/6." },
+        { "ref": "Exemplo (didático): probabilidade pelo complementar", "conceito": true, "texto": "Pelo menos uma cara em 2 lançamentos de moeda: 1 - P(nenhuma cara) = 1 - 1/4 = 3/4." }
+      ],
+      "macete": "Pergunte “importa a ordem?” e “pode repetir?” antes de escolher a fórmula. Se a questão diz “diferentes” com elementos iguais, pense em anagrama.",
+      "pegadinhas": ["Esquecer de excluir o caso pedido (G0402)", "Usar fatorial total quando há letras repetidas", "Confundir arranjo (a ordem importa) com combinação", "Somar em vez de multiplicar etapas", "Calcular “pelo menos um” somando casos, em vez de usar o complementar"],
+      "cobra": ["Senha com ou sem repetição", "Anagramas com letras repetidas"],
+      "mapa": { "centro": "Contagem", "ramos": [
+        { "t": "Multiplicativo", "f": ["m × n"] },
+        { "t": "Anagrama", "f": ["n! ÷ repetidos"] },
+        { "t": "Combinação", "f": ["Ordem não importa"] },
+        { "t": "Probabilidade", "f": ["Favoráveis ÷ possíveis", "1 - P(A)"] }
+      ] }
+    },
+    {
+      "id": "media",
+      "titulo": "Média aritmética simples e ponderada",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Média é um valor que representa o conjunto. Na FURB, as questões de média aparecem em enunciados de texto (G0409, G0610) e também a partir de quadro ou gráfico; as que dependem de figura não entram nesta apostila.",
+      "pontos": [
+        { "ref": "Média simples", "conceito": true, "texto": "Soma dos valores dividida pela quantidade de valores." },
+        { "ref": "Soma a partir da média", "conceito": true, "texto": "Soma = média × quantidade. É a chave para achar um valor faltante." },
+        { "ref": "Média ponderada", "conceito": true, "texto": "Soma dos (valor × peso) dividida pela soma dos pesos. Quando os grupos têm tamanhos diferentes, o tamanho é o peso." },
+        { "ref": "Média das médias", "conceito": true, "texto": "Não faça média das médias quando os grupos têm quantidades diferentes." },
+        { "ref": "Contagem de pessoas", "conceito": true, "texto": "“Irmãos de Carlos” não inclui Carlos; “todos os irmãos, incluindo Carlos” inclui." },
+        { "ref": "Exemplo real: média ponderada (G0409, Florianópolis 2024)", "conceito": true, "texto": "Clínica pediátrica: média de 30 min, 15 pacientes. Clínica de plantão: média de 22 min, 25 pacientes. Média geral = (15 × 30 + 25 × 22) ÷ (15 + 25) = (450 + 550) ÷ 40 = 1.000 ÷ 40 = 25 min. Alternativa C, gabarito do banco. A “média das médias” (30 + 22) ÷ 2 = 26 está errada, e 26 é justamente uma das alternativas (E)." },
+        { "ref": "Exemplo real: valor faltante (G0610, Itapema 2025)", "conceito": true, "texto": "Carlos tem 5 irmãos; a soma das idades dos irmãos é 90; a média de todos, incluindo Carlos, é 19. São 6 pessoas: soma total = 19 × 6 = 114. Idade de Carlos = 114 - 90 = 24 anos. Alternativa D, gabarito do banco." },
+        { "ref": "Exemplo (didático): ponderada", "conceito": true, "texto": "Notas 6,0 (peso 2) e 9,0 (peso 3). Média = (6 × 2 + 9 × 3) ÷ (2 + 3) = (12 + 27) ÷ 5 = 39 ÷ 5 = 7,8." },
+        { "ref": "Exemplo (didático): nota que falta", "conceito": true, "texto": "Média 7 exigida em 4 provas; já há 6, 8 e 5. Soma necessária = 7 × 4 = 28; já somam 6 + 8 + 5 = 19; falta 9." }
+      ],
+      "macete": "“Média × quantidade = soma”. Ao incluir ou excluir alguém, refaça a soma.",
+      "pegadinhas": ["A média das médias", "Contar 5 em vez de 6 pessoas (G0610)", "Usar o valor errado como divisor", "Esquecer o peso"],
+      "cobra": ["Média de dois grupos de tamanhos diferentes", "Valor que falta a partir da média"],
+      "mapa": { "centro": "Média", "ramos": [
+        { "t": "Simples", "f": ["Soma ÷ quantidade"] },
+        { "t": "Ponderada", "f": ["Σ(valor × peso) ÷ Σ pesos"] },
+        { "t": "Faltante", "f": ["Soma = média × n"] },
+        { "t": "Cuidado", "f": ["Não é média das médias"] }
+      ] }
+    },
+    {
+      "id": "metrico-geometria",
+      "titulo": "Sistema métrico e geometria básica",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "Em toda conta, converta tudo para a mesma unidade antes. Depois aplique a fórmula da figura. Estes itens constam do programa, mas não apareceram nos 20 enunciados analisados: estude o mínimo. Todos os exemplos desta lição são didáticos.",
+      "pontos": [
+        { "ref": "Tempo", "conceito": true, "texto": "1 h = 60 min; 1 min = 60 s; 1 h = 3.600 s; 1 dia = 24 h." },
+        { "ref": "Comprimento", "conceito": true, "texto": "1 km = 1.000 m; 1 m = 100 cm; 1 cm = 10 mm." },
+        { "ref": "Área", "conceito": true, "texto": "Cada degrau multiplica por 100: 1 m² = 10.000 cm²; 1 km² = 1.000.000 m²; 1 hectare = 10.000 m²." },
+        { "ref": "Volume", "conceito": true, "texto": "Cada degrau multiplica por 1.000: 1 m³ = 1.000 L; 1 L = 1.000 mL; 1 mL = 1 cm³." },
+        { "ref": "Retângulo, quadrado e perímetro", "conceito": true, "texto": "Perímetro é a soma dos lados. Retângulo: área = base × altura; perímetro = 2 × (base + altura). Quadrado: área = lado × lado." },
+        { "ref": "Triângulo", "conceito": true, "texto": "Área = base × altura ÷ 2; a soma dos ângulos internos é 180°." },
+        { "ref": "Círculo", "conceito": true, "texto": "Área = π × r²; comprimento = 2 × π × r. Use o valor de π que a questão fornecer." },
+        { "ref": "Bloco retangular (caixa)", "conceito": true, "texto": "Volume = comprimento × largura × altura." },
+        { "ref": "Teorema de Pitágoras", "conceito": true, "texto": "No triângulo retângulo: hipotenusa² = cateto² + cateto²." },
+        { "ref": "Exemplo (didático): conversões", "conceito": true, "texto": "3,5 km = 3,5 × 1.000 = 3.500 m. 2,4 m² = 2,4 × 10.000 = 24.000 cm². 0,75 m³ = 0,75 × 1.000 = 750 L." },
+        { "ref": "Exemplo (didático): tempo", "conceito": true, "texto": "2 h 45 min = 2 × 60 + 45 = 165 min. 1,25 h = 1 h + 0,25 × 60 min = 1 h 15 min. 5.400 s ÷ 3.600 = 1,5 h = 1 h 30 min." },
+        { "ref": "Exemplo (didático): retângulo e piso", "conceito": true, "texto": "Retângulo de 8 m por 5 m: área = 8 × 5 = 40 m²; perímetro = 2 × (8 + 5) = 26 m. Sala de 6 m por 4 m com cerâmica quadrada de 0,5 m de lado: área da sala = 24 m²; área de cada peça = 0,25 m²; 24 ÷ 0,25 = 96 peças." },
+        { "ref": "Exemplo (didático): triângulo, círculo, caixa e Pitágoras", "conceito": true, "texto": "Triângulo de base 10 e altura 6: 10 × 6 ÷ 2 = 30. Círculo de raio 3 com π = 3,14: 3,14 × 9 = 28,26. Caixa de 2 m × 1,5 m × 1 m: volume = 3 m³ = 3.000 L. Catetos 6 e 8: hipotenusa² = 36 + 64 = 100, logo hipotenusa = 10." }
+      ],
+      "tabela": {
+        "titulo": "Conversões de unidades",
+        "cab": ["Grandeza", "Relação"],
+        "linhas": [["Tempo", "1 h = 60 min; 1 min = 60 s; 1 dia = 24 h"], ["Comprimento", "1 km = 1.000 m; 1 m = 100 cm; 1 cm = 10 mm"], ["Área (degrau × 100)", "1 m² = 10.000 cm²; 1 hectare = 10.000 m²"], ["Volume (degrau × 1.000)", "1 m³ = 1.000 L; 1 L = 1.000 mL; 1 mL = 1 cm³"]]
+      },
+      "macete": "O fator da área é o fator do comprimento ao quadrado (100 = 10²); o do volume é ao cubo (1.000 = 10³).",
+      "pegadinhas": ["Trocar 0,8 h por 80 min (o certo é 0,8 × 60 = 48 min)", "Converter área com fator 10 em vez de 100", "Misturar m e cm na mesma conta", "Esquecer a divisão por 2 no triângulo"],
+      "cobra": ["Conversão de unidades dentro de um problema", "Área e perímetro simples", "Horas decimais em horas e minutos"],
+      "mapa": { "centro": "Medidas", "ramos": [
+        { "t": "Tempo", "f": ["60 min", "3.600 s"] },
+        { "t": "Área", "f": ["Fator 100"] },
+        { "t": "Volume", "f": ["Fator 1.000", "1 m³ = 1.000 L"] },
+        { "t": "Figuras", "f": ["Retângulo", "Triângulo", "Pitágoras"] }
+      ] }
+    },
+    {
+      "id": "logica-proposicional",
+      "titulo": "Lógica proposicional",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "Proposição é uma frase declarativa com valor verdadeiro ou falso. Conectivos combinam proposições; a tabela-verdade determina o valor composto. Consta do programa, mas não apareceu nos 20 enunciados da FURB analisados.",
       "pontos": [
         { "ref": "Negação", "conceito": true, "texto": "A negação ~p troca o valor lógico de p." },
         { "ref": "Conjunção", "conceito": true, "texto": "p ∧ q só é verdadeira quando p e q são verdadeiras." },
@@ -140,7 +320,7 @@
     {
       "id": "equivalencias",
       "titulo": "Equivalências e negações",
-      "nivel": 2,
+      "nivel": 1,
       "qtdQuestoes": 0,
       "intro": "Equivalências permitem reescrever uma proposição sem alterar o resultado lógico.",
       "pontos": [
@@ -169,7 +349,7 @@
       "titulo": "Sequências e padrões",
       "nivel": 1,
       "qtdQuestoes": 0,
-      "intro": "Uma sequência exige identificar a relação entre termos consecutivos ou a posição do termo.",
+      "intro": "Uma sequência exige identificar a relação entre termos consecutivos ou a posição do termo. Consta do programa, mas não apareceu nos 20 enunciados da FURB analisados.",
       "pontos": [
         { "ref": "Diferenças", "conceito": true, "texto": "Primeiro compare diferenças consecutivas. Elas podem ser constantes, alternadas ou crescer em padrão." },
         { "ref": "Razões", "conceito": true, "texto": "Se os termos são obtidos multiplicando ou dividindo por um valor, compare a razão entre termos consecutivos." },
@@ -180,7 +360,7 @@
       "tabela": {
         "titulo": "Como testar",
         "cab": ["Teste", "Pergunta", "Exemplo"],
-        "linhas": [["Diferença", "A diferença é constante?", "2, 5, 8, 11"], ["Razão", "A razão é constante?", "3, 6, 12, 24"], ["Soma anterior", "Termo = dois anteriores?", "2, 3, 5, 8"], ["Posição", "Há uma regra por índice?", "Impares: 1, 3, 5"]]
+        "linhas": [["Diferença", "A diferença é constante?", "2, 5, 8, 11"], ["Razão", "A razão é constante?", "3, 6, 12, 24"], ["Soma anterior", "Termo = dois anteriores?", "2, 3, 5, 8"], ["Posição", "Há uma regra por índice?", "Ímpares: 1, 3, 5"]]
       },
       "macete": "Teste diferença, razão, soma dos anteriores e alternância de posições nesta ordem.",
       "pegadinhas": ["Pressupor progressão aritmética sem conferir", "Trocar termos pares e ímpares", "Confundir área dobrada com lado dobrado"],
@@ -197,10 +377,10 @@
       "titulo": "Tabelas, gráficos e interpretação",
       "nivel": 1,
       "qtdQuestoes": 0,
-      "intro": "Tabelas e gráficos exigem identificar linha, coluna, unidade e base antes de calcular.",
+      "intro": "Tabelas e gráficos exigem identificar linha, coluna, unidade e base antes de calcular. Na FURB, as questões com quadro ou gráfico pedem média ou soma (ver a lição de média).",
       "pontos": [
         { "ref": "Localização", "conceito": true, "texto": "Leia título, legenda, unidade e período antes de usar os números." },
-        { "ref": "Somatório", "conceito": true, "texto": "Conferira se a pergunta pede um total, subtototal ou uma categoria isolada." },
+        { "ref": "Somatório", "conceito": true, "texto": "Confira se a pergunta pede um total, um subtotal ou uma categoria isolada." },
         { "ref": "Comparação", "conceito": true, "texto": "Na comparação, use a mesma unidade e a base indicada pela questão." },
         { "ref": "Maior ou menor", "conceito": true, "texto": "Antes de comparar percentuais, confira se as bases são iguais." },
         { "ref": "Valor faltante", "conceito": true, "texto": "Use soma, diferença ou regra de três para obter o valor ausente." }
@@ -218,6 +398,42 @@
         { "t": "Eixos", "f": ["Unidades"] },
         { "t": "Legenda", "f": ["Categorias"] },
         { "t": "Conta", "f": ["Base certa"] }
+      ] }
+    },
+    {
+      "id": "treino-furb",
+      "titulo": "Situações-problema: treino com questões reais da FURB",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "Treino com questões reais da banca FURB de outros municípios (Florianópolis 2024, Biguaçu 2025 e Itapema 2025). Elas não são do certame de Navegantes: servem para treinar o estilo. Tente resolver antes de ler a conta. Cada item traz o código no banco, o gabarito do banco e a conta refeita. Ficam de fora as que dependem de figura (G0406 e G0467), as repetidas (G0515, G0566, G0583, G0516 e G0549 são cópias de questões já listadas) e as de informática. PENDENTE: os gabaritos foram conferidos por cálculo, não nos PDFs oficiais.",
+      "pontos": [
+        { "ref": "G0400 · Florianópolis 2024 · razão (Lição 2)", "conceito": true, "texto": "153 funcionários, 102 homens; 2/3 dos homens e 1/3 das mulheres testaram positivo. Qual a razão entre os positivos e o total? Gabarito C: 5/9. Conta: mulheres 153 - 102 = 51; 2/3 × 102 = 68; 1/3 × 51 = 17; 68 + 17 = 85; 85/153 = 5/9." },
+        { "ref": "G0401 · Florianópolis 2024 · porcentagem (Lição 3)", "conceito": true, "texto": "Orçamento anual de R$ 22.800.000,00; 40 médicos do nível I (R$ 18.000,00) com aumento de 30%; 32 médicos do nível II (R$ 25.000,00). Qual o aumento do nível II? Gabarito E: 20,5%. Conta: 22.800.000 ÷ 12 = 1.900.000; nível I: 40 × 23.400 = 936.000; sobram 964.000; 964.000 ÷ 32 = 30.125; 30.125 ÷ 25.000 = 1,205, ou seja, 20,5%." },
+        { "ref": "G0402 · Florianópolis 2024 · contagem (Lição 7)", "conceito": true, "texto": "Senhas de 6 letras formadas por anagramas de AMANDA, excluindo a própria palavra. Gabarito D: 119. Conta: 6! ÷ 3! = 720 ÷ 6 = 120; 120 - 1 = 119." },
+        { "ref": "G0403 · Florianópolis 2024 · porcentagem (Lição 3)", "conceito": true, "texto": "Tablet comprado por R$ 2.017,40 com 23% de desconto; quanto a mais pagaria pelo preço de tabela? Gabarito A: R$ 602,60. Conta: 2.017,40 ÷ 0,77 = 2.620,00; 2.620,00 - 2.017,40 = 602,60." },
+        { "ref": "G0404 · Florianópolis 2024 · frações (Lição 1)", "conceito": true, "texto": "Medicamento com 5/8 do princípio ativo A (R$ 40,00 por mg) e 1/4 do B (R$ 60,00 por mg). A sobe para R$ 46,00 por mg; qual o desconto necessário no B para manter o custo? Gabarito B: R$ 15,00. Conta: custo atual por mg de mistura = 5/8 × 40 + 1/4 × 60 = 25 + 15 = 40. Com A a 46: 5/8 × 46 = 28,75; o B deve entrar com 40 - 28,75 = 11,25 por mg de mistura; 11,25 ÷ (1/4) = 45 por mg de B; desconto = 60 - 45 = 15,00." },
+        { "ref": "G0405 · Florianópolis 2024 · porcentagem (Lição 3) · PENDENTE", "conceito": true, "texto": "PENDENTE: texto ambíguo, não usado como exemplo. O enunciado pede “uma redução de, pelo menos, um percentual acima de” e o gabarito do banco é A (20); não resolvi a ambiguidade entre “a partir de” e “acima de” 20%. Só a conta de custo por km: gasolina 5,76 ÷ 18 = 0,32 por km; o álcool, a 10 km por litro, igualaria esse custo a R$ 3,20 por litro (4,00 reduzido em 0,80, isto é, 20%)." },
+        { "ref": "G0407 · Florianópolis 2024 · regra de três composta (Lição 5)", "conceito": true, "texto": "Obra de 10 dias, 6 homens, 8 h por dia; após 4 dias só 32% prontos. Em quanto ampliar a jornada diária? Gabarito A: 3 h 20 min. Conta: 4 × 8 = 32 h do grupo fazem 32%, isto é, 1% por hora; faltam 68 h do grupo em 6 dias: 68 ÷ 6 = 11,333... h = 11 h 20 min por dia; 11 h 20 min - 8 h = 3 h 20 min." },
+        { "ref": "G0408 · Florianópolis 2024 · proporção (Lição 2)", "conceito": true, "texto": "R$ 3.000,00 de investimento geram vendas a 2% de 12.000 pessoas; qual o investimento para vender 1.920? Gabarito E: R$ 24.000,00. Conta: 2% de 12.000 = 240 vendas; 3.000 ÷ 240 = 12,50 por venda; 1.920 × 12,50 = 24.000." },
+        { "ref": "G0409 · Florianópolis 2024 · média (Lição 8)", "conceito": true, "texto": "Média de 30 min com 15 pacientes e de 22 min com 25 pacientes; qual a média geral? Gabarito C: 25 min. Conta: (15 × 30 + 25 × 22) ÷ 40 = (450 + 550) ÷ 40 = 25." },
+        { "ref": "G0465 · Biguaçu 2025 · divisão proporcional (Lição 4)", "conceito": true, "texto": "Prêmio de R$ 20.000,00; Breno recebe 2/5 e Ricardo o restante. Gabarito A: R$ 12.000,00. Conta: 1 - 2/5 = 3/5; 20.000 ÷ 5 × 3 = 12.000." },
+        { "ref": "G0466 · Biguaçu 2025 · aritmética (Lição 1)", "conceito": true, "texto": "Geladeira de R$ 3.200,00, entrada de R$ 280,00 e o resto em 8 parcelas iguais. Gabarito A: R$ 365,00. Conta: (3.200 - 280) ÷ 8 = 2.920 ÷ 8 = 365." },
+        { "ref": "G0468 · Biguaçu 2025 · porcentagem (Lição 3)", "conceito": true, "texto": "Pagou com R$ 100,00, recebeu R$ 55,00 de troco, com 25% de desconto; qual seria o troco sem a promoção? Gabarito D: 2 notas de R$ 20,00. Conta: pagou 100 - 55 = 45, que é 75% da etiqueta; 45 ÷ 0,75 = 60; troco = 100 - 60 = 40." },
+        { "ref": "G0469 · Biguaçu 2025 · conjuntos (Lição 6)", "conceito": true, "texto": "28 funcionários; 16 gostam de café sem leite, 14 de café com leite, 4 de ambos; quantos não gostam de nenhum? Gabarito B: 2. Conta: 16 + 14 - 4 = 26; 28 - 26 = 2." },
+        { "ref": "G0610 · Itapema 2025 · média (Lição 8)", "conceito": true, "texto": "Carlos tem 5 irmãos, a soma das idades deles é 90 e a média de todos, incluindo Carlos, é 19. Gabarito D: 24 anos. Conta: 6 pessoas; 19 × 6 = 114; 114 - 90 = 24." },
+        { "ref": "G0611 · Itapema 2025 · proporção (Lição 2)", "conceito": true, "texto": "Duas máquinas iguais e uma terceira que produz 50% a mais que as duas juntas; juntas produzem 300 peças por dia; quantos dias a de maior desempenho leva para 1.080 peças? Gabarito B: 6 dias. Conta: x + x + 3x = 300, x = 60; a maior produz 180 por dia; 1.080 ÷ 180 = 6." },
+        { "ref": "G0612 · Itapema 2025 · conjuntos (Lição 6)", "conceito": true, "texto": "40 estudantes; 18 futebol, 22 vôlei, 4 nenhum esporte, 8 apenas outros esportes; quantos praticam futebol e vôlei? Gabarito C: 12. Conta: 40 - 4 - 8 = 28 em futebol ou vôlei; 18 + 22 - 28 = 12." },
+        { "ref": "G0613 · Itapema 2025 · porcentagem (Lição 3)", "conceito": true, "texto": "580 estudantes; 40% no Ensino Fundamental e, desses, 25% em atividades extracurriculares. Gabarito C: 58 estudantes. Conta: 580 × 0,40 = 232; 232 × 0,25 = 58." },
+        { "ref": "G0614 · Itapema 2025 · contagem (Lição 7)", "conceito": true, "texto": "Senha de 4 algarismos, com repetição, usando 1, 2, 3, 4 e 5. Gabarito E: 625 senhas. Conta: 5 × 5 × 5 × 5 = 625." }
+      ],
+      "macete": "Leia o que a pergunta pede (o aumento, o troco, o restante, a diferença) antes de calcular, e confira a resposta na própria alternativa.",
+      "pegadinhas": ["Responder o que a conta intermediária pede e não o que a pergunta pede (por exemplo, a jornada total em vez do aumento)", "Alternativas que repetem um erro comum (120 em G0614, 26 em G0409)", "Usar a base errada em porcentagem (G0403, G0468)"],
+      "cobra": ["Situações-problema curtas com contas de uma a quatro etapas", "Porcentagem, proporção e conjuntos como os temas mais frequentes na amostra"],
+      "mapa": { "centro": "Treino FURB", "ramos": [
+        { "t": "Porcentagem", "f": ["G0401", "G0403", "G0468", "G0613"] },
+        { "t": "Proporção", "f": ["G0400", "G0408", "G0611", "G0407"] },
+        { "t": "Conjuntos e contagem", "f": ["G0469", "G0612", "G0402", "G0614"] },
+        { "t": "Média e partilha", "f": ["G0409", "G0610", "G0465"] }
       ] }
     }
   ]

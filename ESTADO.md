@@ -1,4 +1,13 @@
-# ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-23)
+# ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-24)
+
+## Estado geral em 2026-11-24 (fim do dia)
+- Projeto **pessoal, sem fins comerciais**. Foco: concurso **Navegantes SC** (Proc. Seletivo 0172/2026, FURB; prova 13/12/2026; inscrições até 25/11 23h59). Cargos: ESF, PNE, Endodontista, Periodontista, BMF.
+- **Regra de agentes (ordem final do dono):** somente Sonnets, **um por vez**; nada de Opus.
+- **Propostas de Navegantes aplicadas nos JSONs** (só conteúdo confirmável; resto PENDENTE no texto): 01 Português, 02 Conhecimentos Gerais, 03 SUS/ESF (PNAB + Res. CFO 63), 04 Ética (sigilo, documentos, direitos e deveres), 06 Endodontia (AAE 2019, RCS England 2020), 07 Periodontia (Sanz 2020 conferida no original), 08 Cirurgia/BMF (HIV, Caderno 17 MS 2006), 09 Raciocínio Lógico, 10 PNE (Guia MS 2019; ver status no fim do dia).
+- **Concluído em 24/11/2026:** ajustes dos JSONs aplicados (removidos `topicosBanco` fictícios de Ética 8–10 e Conhecimentos Gerais 8–11; marcado PENDENTE em G0279 de Português; mapa mental de Endodontia atualizado com AAE 2019 e RCS 2020). Todos os 10 PDFs gerados via Chrome 159 numerados, validados com pdftotext, copiados para `material-premium/` e `site/apostilas/`. Testes 100% aprovados (gerador, leis com 117 trechos conferidos sem divergência e aprendizados).
+- **PENDENTE (sem fonte oficial aberta):** Lei 11.889/2008 literal; LAI (Lei 12.527) e LC 101 literais; Lei Orgânica de Navegantes oficial; história/geografia de Navegantes; Leis 3.985/2025 e 4.022/2026 (só cópia não oficial); lesão endoperiodontal (Herrera 2018); cirurgia pré-protética, infecções odontogênicas, raízes residuais; furca classe I–III; atualidades 2026; Emenda LOM Blumenau 55/2026 (CAPTCHA).
+- **Infra:** registro de aprendizados A001–A006 (`scripts/aprendizados.mjs`, memória fora do repo, 6 ativas e consolidadas); método de leis (`scripts/leis-compilar-e-conferir.mjs`, 117/117 trechos conferidos sem divergências). PDFs numerados gerados via Chrome 159 (NAVEGADOR_PDF).
+- **Próximos passos:** Acompanhar encerramento das inscrições de Navegantes (25/11 às 23h59) e foco nas revisões para a prova em 13/12/2026.
 
 ## Code-review pós-correção (verificado em 2026-11-23)
 - O kit agora contém **10 apostilas**.

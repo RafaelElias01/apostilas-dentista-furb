@@ -5,24 +5,30 @@
   "titulo": "Odontologia para Pacientes com Necessidades Especiais",
   "subtitulo": "Apostila 10 · Processo Seletivo 0172/2026 · Navegantes (SC) · cargo PNE",
   "fontes": [],
-  "rotuloPontos": "Definição, áreas de atuação e limites",
-  "limiteFonte": "Fontes oficiais verificadas: consolidação das normas do CFO atualizada em setembro de 2023, arquivo local fontes/leis/cfo-pne/cfo-consolidacao-2023.pdf (https://website.cfo.org.br/normas-cfo-cros/); Resolução CFO-63/2005 (https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2005/63); Guia de atenção à saúde bucal da pessoa com deficiência do Ministério da Saúde (https://www.gov.br/saude/pt-br/composicao/saps/publicacoes/livros/guia-de-atencao-a-saude-bucal-da-pessoa-com-deficiencia); Brasil Sorridente (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente); Centro de Especialidades Odontológicas (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/ceo); Rede de Cuidados à Pessoa com Deficiência (https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd); Portaria MS 1.032/2010 (https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt1032_05_05_2010_comp.html). Protocolos para condições médicas específicas, manejo farmacológico e dosagens seguem PENDENTES até fonte oficial ou bibliografia verificável. A consolidação municipal de Navegantes e o texto assinado da Lei 3.985/2025 também seguem PENDENTES.",
+  "rotuloPontos": "Definição, áreas de atuação, grupos de pacientes e limites",
+  "limiteFonte": "Fontes oficiais verificadas: consolidação das normas do CFO atualizada em setembro de 2023, arquivo local fontes/leis/cfo-pne/cfo-consolidacao-2023.pdf (https://website.cfo.org.br/normas-cfo-cros/), que reproduz a Resolução CFO-63/2005 (https://sistemas.cfo.org.br/visualizar/atos/RESOLU%C3%87%C3%83O/SEC/2005/63); Guia de Atenção à Saúde Bucal da Pessoa com Deficiência, Ministério da Saúde, Brasília, 2019, 120 p., arquivo local fontes/guia-ms-saude-bucal-deficiencia-2019/guia.txt (origem em ORIGEM.txt: https://bvsms.saude.gov.br/bvs/publicacoes/guia_atencao_saude_bucal_pessoa_deficiencia.pdf, baixado em 24/11/2026); Portaria de Consolidação MS 2/2017, Anexo XXV (Política Nacional de Práticas Integrativas e Complementares), arquivo local fontes/leis/portaria-consolidacao-2-2017-ms-bvsms.html; Brasil Sorridente (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente); Centro de Especialidades Odontológicas (https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/ceo); Rede de Cuidados à Pessoa com Deficiência (https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-pessoa-com-deficiencia/rcpd); Portaria MS 1.032/2010 (https://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/prt1032_05_05_2010_comp.html). As páginas citadas do Guia são as páginas impressas do próprio Guia. Os trechos entre aspas são literais dessas fontes. Seguem PENDENTES, por falta de fonte oficial lida: transtornos psiquiátricos como grupo, distúrbios sensoriais (visual e auditivo), doenças sistêmicas crônicas, doenças infectocontagiosas e HIV, pacientes irradiados, transplantados, oncológicos, gestantes e imunocomprometidos, laser em Odontologia, classificação das necessidades especiais, norma do CFO sobre sedação consciente, princípios ergonômicos (o Guia não traz protocolo para esses itens) e fármacos e doses para sedação. A consolidação municipal de Navegantes e o texto assinado da Lei 3.985/2025 também seguem PENDENTES.",
   "comoUsar": [
     "Esta apostila complementa as Apostilas 03 a 08 para o cargo Odontólogo Paciente com Necessidades Especiais de Navegantes.",
     "O núcleo normativo confirma a definição da especialidade e suas áreas de competência.",
     "Não substitui protocolo clínico, avaliação médica, anamnese, consentimento informado ou diretrizes atualizadas de atendimento.",
     "A Resolução CFO 63/2005 é citada no edital de Navegantes; a consolidação do CFO confirma a definição e as áreas de atuação da especialidade.",
     "As diretrizes oficiais do Ministério da Saúde abaixo são orientações da rede SUS; não substituem avaliação clínica, avaliação de risco anestésico ou decisões individualizadas.",
+    "As lições sobre grupos de pacientes (deficiência intelectual, síndrome de Down, demência e Alzheimer, Parkinson, paralisia cerebral e autismo) seguem o Guia do Ministério da Saúde de 2019, com a página impressa do Guia em cada ponto; os grupos que o Guia não trata ficam PENDENTES.",
     "A atenção deve respeitar comunicação acessível, consentimento informado, participação do acompanhante ou cuidador quando necessário e elaboração compartilhada do cuidado.",
     "Os procedimentos em ambiente hospitalar sob anestesia geral ou sedação têm indicação restrita a situações em que o cuidado convencional não é possível; não são recomendação geral.",
+    "Nas provas anteriores da banca FURB que o projeto analisou (amostra pequena), não apareceu questão de atendimento por grupo de paciente: o cargo PNE de Itapema 2025 teve questões de saúde pública, biossegurança e clínica geral. Por isso as lições de grupos têm nível médio, não alto.",
     "Caso surjam questões oficiais do certame, os temas deverão ser conferidos contra o enunciado e o gabarito antes de afirmar qualquer prioridade."
   ],
   "ranking": [
     { "rotulo": "Definição da especialidade", "nivel": 3 },
+    { "rotulo": "Conceito de PNE e técnicas de manejo (Guia MS)", "nivel": 3 },
     { "rotulo": "Distúrbios psíquicos, comportamentais e emocionais", "nivel": 2 },
     { "rotulo": "Condicionantes físicas e sistêmicas", "nivel": 2 },
     { "rotulo": "Repercussões bucais e sistêmicas", "nivel": 2 },
-    { "rotulo": "Equipe inter, multi e transdisciplinar", "nivel": 2 }
+    { "rotulo": "Equipe inter, multi e transdisciplinar", "nivel": 2 },
+    { "rotulo": "Grupos de pacientes do Guia (deficiência intelectual, Down, demência, Parkinson, paralisia cerebral, autismo)", "nivel": 2 },
+    { "rotulo": "Sedação e anestesia geral", "nivel": 2 },
+    { "rotulo": "Práticas integrativas e complementares", "nivel": 1 }
   ],
   "licoes": [
     {
@@ -83,16 +89,17 @@
       "titulo": "Aplicação no concurso de Navegantes",
       "nivel": 2,
       "qtdQuestoes": 0,
-      "intro": "O edital cita a Resolução CFO 63/2005 no programa próprio do cargo PNE. A comprovação utilizada neste complemento é a consolidação posterior das normas do CFO e diretrizes oficiais do SUS.",
+      "intro": "O edital cita a Resolução CFO 63/2005 no programa próprio do cargo PNE. A comprovação utilizada neste complemento é a consolidação posterior das normas do CFO, o Guia do Ministério da Saúde de 2019 e a Política Nacional de Práticas Integrativas e Complementares.",
       "pontos": [
         { "ref": "Cargo PNE", "conceito": true, "texto": "Navegantes possui cadastro de reserva para Odontólogo Paciente com Necessidades Especiais, cargo próprio do processo seletivo 0172/2026." },
         { "ref": "Fonte normativa", "conceito": true, "texto": "A consolidação atualizada em setembro de 2023 confirma os Arts. 69 e 70. A apostila não apresenta conteúdo não localizado ou não confirmado." },
-        { "ref": "Limite clínico", "conceito": true, "texto": "Protocolos para condições médicas específicas, manejo farmacológico e dosagens permanecem PENDENTES. Nesta apostila, somente diretrizes gerais verificáveis do SUS foram incorporadas." }
+        { "ref": "Fonte clínica", "conceito": true, "texto": "O conteúdo clínico por grupo de pacientes vem do Guia de Atenção à Saúde Bucal da Pessoa com Deficiência (Ministério da Saúde, 2019), que trata de deficiência intelectual, demência e Alzheimer, Parkinson, paralisia cerebral, síndrome de Down e transtorno do espectro do autismo, além de técnicas de manejo e de sedação e anestesia geral." },
+        { "ref": "Limite clínico", "conceito": true, "texto": "Os grupos que o programa do edital lista e que o Guia não trata (transtornos psiquiátricos, distúrbios sensoriais, doenças sistêmicas crônicas, infectocontagiosas, irradiados, transplantados, oncológicos, gestantes e imunocomprometidos), HIV, laser, ergonomia e fármacos e doses permanecem PENDENTES: sem fonte oficial lida, nada foi escrito sobre eles." }
       ],
       "tabela": {
         "titulo": "Cobertura desta apostila",
         "cab": ["Tema", "Status"],
-        "linhas": [["Definição PNE", "Confirmada"], ["Áreas de competência", "Confirmadas"], ["Fluxo geral da rede SUS", "Confirmado"], ["Diretrizes gerais de abordagem", "Confirmadas"], ["Protocolos por condição médica", "PENDENTE"], ["Manejo farmacológico e dosagens", "PENDENTE"]]
+        "linhas": [["Definição PNE", "Confirmada"], ["Áreas de competência", "Confirmadas"], ["Fluxo geral da rede SUS", "Confirmado"], ["Conceito de PNE e técnicas de manejo", "Confirmados (Guia MS 2019)"], ["Deficiência intelectual, síndrome de Down, demência e Alzheimer, Parkinson, paralisia cerebral e autismo", "Confirmados (Guia MS 2019)"], ["Sedação e anestesia geral: indicações e limites normativos", "Confirmados (Guia MS 2019; Res. CFO 63/2005)"], ["Práticas integrativas e complementares", "Confirmadas só nos textos oficiais citados"], ["Psiquiátricos, sensoriais, sistêmicos crônicos, infectocontagiosos/HIV, irradiados, transplantados, oncológicos, gestantes, imunocomprometidos", "PENDENTE"], ["Laser; ergonomia; classificação das necessidades especiais; sedação consciente (norma do CFO)", "PENDENTE"], ["Fármacos e doses para sedação", "PENDENTE"]]
       },
       "macete": "No edital, use os Arts. 69 e 70 como núcleo de conceitos; não extrapole para condutas clínicas sem fonte.",
       "pegadinhas": ["Apresentar protocolo clínico como normativa CFO sem fonte", "Reduzir PNE a deficiência física", "Usar texto municipal não confirmado"],
@@ -100,8 +107,8 @@
       "mapa": { "centro": "PNE em Navegantes", "ramos": [
         { "t": "Art. 69", "f": ["Definição"] },
         { "t": "Art. 70", "f": ["Quatro áreas"] },
-        { "t": "Edital", "f": ["Cargo próprio"] },
-        { "t": "PENDENTE", "f": ["Protocolos"] }
+        { "t": "Guia MS 2019", "f": ["Seis grupos", "Manejo", "Sedação"] },
+        { "t": "PENDENTE", "f": ["Outros grupos", "Doses"] }
       ] }
     },
     {
@@ -143,12 +150,12 @@
         { "ref": "Ambiente convencional", "conceito": true, "texto": "O atendimento em consultório pode ser considerado quando há aceitação e cooperação do usuário e estratégias individuais de planejamento são viáveis." },
         { "ref": "Manejo comportamental", "conceito": true, "texto": "Converse com o usuário, familiares e cuidadores, use comunicação adequada e planeje medidas compatíveis com a capacidade funcional. Não há conduta única aplicável a toda condição." },
         { "ref": "Limites da abordagem", "conceito": true, "texto": "Impossibilidade de tratamento convencional não autoriza automaticamente sedação ou anestesia geral. O Ministério da Saúde descreve que casos complexos podem exigir assistência em ambiente hospitalar." },
-        { "ref": "Anestesia/sedação", "conceito": true, "texto": "A cirurgia odontológica em ambiente hospitalar sob anestesia geral ou sedação é descrita para usuários com limitações temporárias ou permanentes que impedem o atendimento convencional. Isso exige avaliação multiprofissional e não consta nesta apostila como protocolo." }
+        { "ref": "Anestesia/sedação", "conceito": true, "texto": "A cirurgia odontológica em ambiente hospitalar sob anestesia geral ou sedação é descrita para usuários com limitações temporárias ou permanentes que impedem o atendimento convencional. Isso exige avaliação multiprofissional; as indicações e os limites normativos estão nas lições “Sedação” e “Anestesia geral” desta apostila, sem doses nem fármacos (PENDENTE)." }
       ],
       "tabela": {
         "titulo": "Decisões gerais — sem protocolar dose ou conduta",
         "cab": ["Situação", "Direção verificada"],
-        "linhas": [["Usuário coopera", "Considerar consultório e planejamento individual"], ["Dificuldade de manejo na APS/CEO", "Acesso hospitalar deve ser avaliado pela rede"], ["Consentimento/capacidade", "Comunicação, acompanhante e avaliação individual"], ["Anestesia geral/sedação", "Ambiente hospitalar apenas após indicação individual; protocolo PENDENTE"]]
+        "linhas": [["Usuário coopera", "Considerar consultório e planejamento individual"], ["Dificuldade de manejo na APS/CEO", "Acesso hospitalar deve ser avaliado pela rede"], ["Consentimento/capacidade", "Comunicação, acompanhante e avaliação individual"], ["Anestesia geral/sedação", "Ambiente hospitalar apenas após indicação individual; doses e fármacos PENDENTES"]]
       },
       "macete": "PNE não significa hospital obrigatório: avalie funcionalidade, cooperação, complexidade e necessidade da rede.",
       "pegadinhas": ["Afirmação de que toda pessoa com deficiência precisa de anestesia geral", "Uso de dose ou medicamento sem fonte clínica individual", "Assumir que o cuidador substitui a avaliação do usuário"],
@@ -158,6 +165,314 @@
         { "t": "Comunicação", "f": ["Usuário", "Cuidador"] },
         { "t": "Planejamento", "f": ["Individual"] },
         { "t": "PENDENTE", "f": ["Protocolos", "Doses"] }
+      ] }
+    },
+    {
+      "id": "conceito-manejo-guia",
+      "titulo": "Conceito de PNE e técnicas de manejo (Guia do Ministério da Saúde)",
+      "nivel": 3,
+      "qtdQuestoes": 0,
+      "intro": "O Guia de Atenção à Saúde Bucal da Pessoa com Deficiência (Ministério da Saúde, 2019) define o paciente com necessidades especiais na Odontologia e separa as técnicas de manejo não farmacológicas das mais avançadas (estabilização protetora, sedação e anestesia geral).",
+      "pontos": [
+        { "ref": "Conceito (Guia, p. 15)", "conceito": true, "texto": "“O conceito de paciente com necessidades especiais na odontologia compreende todo usuário que apresente uma ou mais limitações, temporárias ou permanentes, de ordem mental, física, sensorial, emocional, de crescimento ou médica, que o impeça de ser submetido a uma situação odontológica convencional.”" },
+        { "ref": "Causas (Guia, p. 15)", "conceito": true, "texto": "“As razões das necessidades especiais são inúmeras, incluindo as doenças hereditárias, as alterações congênitas, as alterações que ocorrem durante a vida, como as condições sistêmicas, as alterações comportamentais, o envelhecimento, entre outras.”" },
+        { "ref": "Nem toda pessoa com deficiência exige especialista (Guia, p. 15)", "conceito": true, "texto": "“Embora algumas pessoas com deficiência possam estar incluídas no grupo de pacientes com necessidades especiais, essa condição não impõe, automaticamente, a necessidade de atendimento especializado em odontologia, devendo ser considerados o tipo e o grau de limitações vivenciadas pelo paciente.”" },
+        { "ref": "Pessoa com deficiência (Lei 13.146/2015, art. 2º, citado no Guia, p. 13)", "conceito": true, "texto": "O Guia cita o art. 2º da Lei Brasileira de Inclusão: “Considera-se pessoa com deficiência aquela que tem impedimento de longo prazo de natureza física, mental, intelectual ou sensorial, o qual, em interação com uma ou mais barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas.” (Texto transcrito como aparece no Guia; a Lei não está em fontes/ e fica a conferir no Planalto.)" },
+        { "ref": "Modelo social (Guia, p. 14)", "conceito": true, "texto": "Segundo o Guia, a Convenção Internacional sobre os Direitos das Pessoas com Deficiência representa uma mudança “de uma perspectiva médica e individual (modelo médico), na qual a deficiência estaria na pessoa, para uma perspectiva social e estrutural (modelo social), em que a deficiência está na sociedade que não consegue acolher as diferentes formas de deficiência.”" },
+        { "ref": "Técnicas não farmacológicas (Guia, p. 93-94)", "conceito": true, "texto": "O Guia descreve quatro grupos: verbal (“linguagem, técnica do ‘dizer-mostrar-fazer’; modelagem; reforço positivo; controle de voz; e distração”, usadas “quando o usuário apresentar um nível de cognição compatível com o entendimento sobre o processo”); não verbal (“toque, olhar, sorriso”); restrição física (“limitar movimentos corporais, evitando injúrias”, com as mãos de um auxiliar bem treinado e/ou cuidador ou responsável); e restrição mecânica (acessórios ou equipamentos apropriados, como lençol, faixa, fitas adesivas, macri e cadeiras adaptadas)." },
+        { "ref": "Estabilização protetora (Guia, p. 94)", "conceito": true, "texto": "“O uso de técnicas de estabilização protetora deve ocorrer após uma avaliação criteriosa e esgotadas as técnicas de dessensibilização, como sessões prévias de acolhimento e interação.” O Guia afirma que o uso da estabilização protetora “é objeto de debate e controvérsias e envolve a avaliação dos riscos, como danos físicos e psicológicos”." },
+        { "ref": "Consentimento (Guia, p. 95)", "conceito": true, "texto": "“A aprovação e a assinatura do termo de consentimento pelo usuário, quando possível, e dos pais ou responsáveis, quando for o caso, demonstra uma forma de elucidação da conduta e do amparo legal.”" },
+        { "ref": "Manejo para evitar sedação (Guia, p. 95)", "conceito": true, "texto": "As técnicas não farmacológicas “podem não apenas evitar a necessidade de sedação ou anestesia geral, mas também contribuir para que pessoas com deficiência desenvolvam habilidades de enfrentamento que podem capacitá-los a receber cuidados abrangentes nas USF e nos CEO”." }
+      ],
+      "tabela": {
+        "titulo": "Técnicas de manejo (Guia, cap. 8)",
+        "cab": ["Técnica", "Como o Guia descreve"],
+        "linhas": [["Verbal", "Dizer-mostrar-fazer, modelagem, reforço positivo, controle de voz, distração; exige cognição compatível"], ["Não verbal", "Toque, olhar, sorriso"], ["Restrição física", "Limitar movimentos com as mãos de auxiliar treinado e/ou cuidador"], ["Restrição mecânica", "Acessórios ou equipamentos apropriados (lençol, faixa, macri, estabilizadores)"], ["Estabilização protetora", "Só após avaliação criteriosa e dessensibilização esgotada"]]
+      },
+      "macete": "Ordem do Guia: primeiro as técnicas de comunicação e vínculo; contenção só depois de esgotada a dessensibilização; sedação e anestesia geral por último.",
+      "pegadinhas": ["Afirmar que toda pessoa com deficiência precisa de atendimento especializado", "Usar contenção antes de esgotar a dessensibilização", "Dispensar o termo de consentimento", "Trocar “físico” por “mecânico” na descrição da restrição"],
+      "cobra": ["Conceito de paciente com necessidades especiais", "Técnicas verbais e não verbais", "Estabilização protetora como último recurso não farmacológico"],
+      "mapa": { "centro": "Manejo (Guia MS)", "ramos": [
+        { "t": "Verbal", "f": ["Dizer-mostrar-fazer", "Reforço positivo", "Controle de voz"] },
+        { "t": "Não verbal", "f": ["Toque", "Olhar", "Sorriso"] },
+        { "t": "Restrição", "f": ["Física", "Mecânica"] },
+        { "t": "Consentimento", "f": ["Usuário", "Responsável"] }
+      ] }
+    },
+    {
+      "id": "deficiencia-intelectual",
+      "titulo": "Deficiência intelectual (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 2 do Guia trata das características bucais, dos cuidados com medicamentos, da higiene e do manejo na deficiência intelectual (DI).",
+      "pontos": [
+        { "ref": "Características bucais (Guia, p. 32)", "conceito": true, "texto": "“Cárie dentária, gengivite e periodontopatias são as doenças mais frequentes nesses indivíduos e estão intimamente relacionadas à higiene bucal dificultada.” O uso sistemático de medicamentos pode agravar o quadro pela redução do fluxo salivar (xerostomia); podem estar presentes maloclusões, e o trauma oclusal e o bruxismo decorrem da contração muscular constante." },
+        { "ref": "Medicamentos (Guia, p. 33)", "conceito": true, "texto": "O Guia manda verificar o uso de sedativos, ansiolíticos e anticonvulsivantes, que podem provocar xerostomia e hiperplasia gengival, “frequentes quando da utilização de medicamentos à base de fenitoína, ácido valpróico ou valproato de sódio, fenobarbital, carbamazepina, oxcarbazepina e vigabatrina, além de bloqueadores de canais de cálcio, como a nifedipina, felodipino, anlodipina e diltiazem, e imunossupressores, como a ciclosporina”." },
+        { "ref": "Prontuário (Guia, p. 33)", "conceito": true, "texto": "Os cuidados especiais dependem do nível da DI, dos comprometimentos sistêmicos associados e da relação com cuidadores ou responsáveis; essas observações “devem ser consideradas individualmente e registradas no prontuário do usuário”." },
+        { "ref": "Higiene e adaptações (Guia, p. 34-35)", "conceito": true, "texto": "Orientar o usuário e a família quanto à higiene bucal, principalmente após as refeições. Podem ser usados escovas com adaptadores no cabo, escovas elétricas, dedeiras de acrílico, abridores de boca adaptados (espátula de madeira e gaze), passa-fio e fio dental especial." },
+        { "ref": "Dieta, flúor e clorexidina (Guia, p. 35-36)", "conceito": true, "texto": "Instruir sobre dieta saudável, restringindo açúcares e alimentos pegajosos; medicamentos que contenham açúcar devem, preferencialmente, ser administrados nas refeições, salvo contraindicação médica. Orientar o uso diário de flúor tópico em dentifrícios, em pequenas quantidades e sob supervisão, para evitar a ingestão. Orientar o uso “sistemático e supervisionado de clorexidina a 0,12%” para controlar ou reduzir o biofilme, quando necessário." },
+        { "ref": "Manejo comportamental (Guia, p. 36-37)", "conceito": true, "texto": "Adotar o “dizer-mostrar-fazer” e o reforço positivo com os usuários que não ofereçam resistência e que possuam boa cognição. “Nas deficiências leves, a abordagem é semelhante à abordagem com o indivíduo sem deficiência. Já nas deficiências intelectuais moderada, grave e profunda poderão ser utilizadas as técnicas de estabilização protetora.” Avaliar restrição física, medicação sedativa e anestesia geral, mas “sempre preferir as técnicas de manejo do comportamento não-farmacológicas”." },
+        { "ref": "Endocardite e retornos (Guia, p. 36-37)", "conceito": true, "texto": "Atenção a usuários com condições cardíacas vulneráveis à endocardite infecciosa, principalmente em procedimentos que envolvam manipulação de tecido gengival, mucosa oral e região periapical (o Guia remete às diretrizes da American Heart Association). Retornos para exame clínico e reforço da higiene “em intervalos periódicos de 1 a 6 meses, dependendo do risco de desenvolvimento de doenças bucais”." }
+      ],
+      "tabela": {
+        "titulo": "Deficiência intelectual: o que o Guia destaca",
+        "cab": ["Tema", "Orientação do Guia"],
+        "linhas": [["Doenças mais frequentes", "Cárie, gengivite e periodontopatias (higiene dificultada)"], ["Medicamentos", "Verificar: xerostomia e hiperplasia gengival (fenitoína, nifedipina, ciclosporina, entre outros)"], ["Manejo", "Dizer-mostrar-fazer e reforço positivo se houver boa cognição; estabilização protetora só em DI moderada, grave e profunda"], ["Retorno", "1 a 6 meses, conforme o risco"], ["Registro", "Observações individuais no prontuário"]]
+      },
+      "macete": "DI: higiene dificultada gera cárie e doença periodontal; remédios geram boca seca e gengiva aumentada; manejo não farmacológico vem primeiro.",
+      "pegadinhas": ["Dizer que a abordagem é sempre a mesma em todos os níveis de DI", "Esquecer a hiperplasia gengival causada por medicamentos", "Preferir sedação ou anestesia geral antes das técnicas não farmacológicas"],
+      "cobra": ["Doenças bucais mais frequentes", "Efeito bucal dos medicamentos", "Manejo conforme o nível de compreensão"],
+      "mapa": { "centro": "Deficiência intelectual", "ramos": [
+        { "t": "Doenças", "f": ["Cárie", "Gengivite", "Periodontopatias"] },
+        { "t": "Medicamentos", "f": ["Xerostomia", "Hiperplasia gengival"] },
+        { "t": "Manejo", "f": ["Dizer-mostrar-fazer", "Estabilização protetora"] },
+        { "t": "Retorno", "f": ["1 a 6 meses"] }
+      ] }
+    },
+    {
+      "id": "sindrome-de-down",
+      "titulo": "Síndrome de Down (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 6 do Guia descreve as manifestações bucais da síndrome de Down e os cuidados especiais, incluindo o posicionamento na cadeira e o acompanhamento por faixa etária.",
+      "pontos": [
+        { "ref": "Definição (Guia, p. 71)", "conceito": true, "texto": "“A Síndrome de Down é uma anomalia congênita causada pela presença de um cromossomo a mais no par 21 e por isso é também denominada de Trissomia do 21.” É a alteração cromossômica mais comum em humanos e a principal causa de deficiência intelectual na população. Cerca de 40% das pessoas podem apresentar cardiopatia congênita (Guia, p. 71-72)." },
+        { "ref": "Manifestações bucais (Guia, p. 72)", "conceito": true, "texto": "Mandíbula e cavidade bucal com dimensões reduzidas, palato baixo e estreito, língua que pode ser fissurada; por causa da nasofaringe estreita e das tonsilas e adenoide hipertrofiadas podem ocorrer protrusão da língua e respiração bucal, com ressecamento e fissura dos lábios e queilite angular." },
+        { "ref": "Doença periodontal (Guia, p. 72)", "conceito": true, "texto": "A doença periodontal acomete grande parte dos indivíduos; “normalmente, caracteriza-se por uma evolução rápida, considerada semelhante à periodontite juvenil quanto ao desenvolvimento e à gravidade”, principalmente na adolescência, com mais frequência nos incisivos inferiores." },
+        { "ref": "Agenesia e erupção (Guia, p. 73)", "conceito": true, "texto": "Os dentes mais comumente ausentes na dentição permanente são “os terceiros molares, os incisivos laterais superiores e inferiores e os segundos pré-molares superiores”; na dentição decídua, os incisivos laterais. O atraso na erupção é muito comum; problemas de oclusão (mordida cruzada posterior, apinhamento, mordida aberta anterior) relacionam-se ao hipodesenvolvimento da maxila e do palato." },
+        { "ref": "Cuidados especiais (Guia, p. 75-76)", "conceito": true, "texto": "O tempo na cadeira deve ser o menor possível; fazer anamnese completa; atentar para alterações cardíacas e, se existirem, recomendar profilaxia antibiótica “uma hora antes da execução de procedimentos invasivos”; manter o usuário na linha mediana da cadeira, com os braços próximos ao corpo e as pernas estendidas; sempre que houver dúvida sobre as condições de saúde, contatar o médico responsável." },
+        { "ref": "Articulação atlantoaxial (Guia, p. 75)", "conceito": true, "texto": "Na estabilização da cabeça e do tronco, evitar movimentos bruscos e flexão ou extensão excessiva do pescoço, “devido à maior instabilidade da articulação atlantoaxial”; em usuários com instabilidade, evitar a hiperextensão do pescoço para que não haja trauma na medula e/ou nervos periféricos." },
+        { "ref": "Primeira avaliação do bebê (Guia, p. 76)", "conceito": true, "texto": "“A primeira avaliação bucal do bebê com Síndrome de Down deve acontecer nos primeiros meses de vida, preferencialmente antes dos três meses de idade.” Orientar os cuidadores sobre prevenção, dieta, higiene e hábitos; não adicionar açúcar, mel ou produtos açucarados à mamadeira; apoiar a cabeça da criança na escovação." },
+        { "ref": "Placa Palatina de Memória (Guia, p. 77-79)", "conceito": true, "texto": "Em alguns casos é indicada, junto ao tratamento fonoaudiológico, a Placa Palatina de Memória (PPM), que estimula o posicionamento adequado da língua e do lábio superior. “Nem todos os bebês com Síndrome de Down necessitam da PPM”, e a decisão deve ser tomada com equipe multidisciplinar, não como medida isolada de reabilitação." },
+        { "ref": "Dentição decídua e consultas (Guia, p. 80)", "conceito": true, "texto": "A dentição decídua completa-se por volta do 3º ou 4º ano de idade, e os cuidados nessa idade incluem consultas odontológicas frequentes, “no mínimo duas vezes ao ano”, para acompanhar a erupção." },
+        { "ref": "Adultos (Guia, p. 81)", "conceito": true, "texto": "Os adultos podem usar medicamentos como os bisfosfonatos para controlar a baixa densidade mineral óssea, o que se soma ao hipotireoidismo, à nutrição inadequada e à baixa prática de atividade física." }
+      ],
+      "tabela": {
+        "titulo": "Síndrome de Down: pontos do Guia",
+        "cab": ["Tema", "O que o Guia diz"],
+        "linhas": [["Genética", "Cromossomo extra no par 21 (trissomia do 21)"], ["Coração", "Cerca de 40% podem ter cardiopatia congênita; se houver, profilaxia antibiótica uma hora antes de procedimento invasivo"], ["Pescoço", "Instabilidade atlantoaxial: evitar flexão ou extensão excessiva"], ["Periodonto", "Doença periodontal de evolução rápida, mais nos incisivos inferiores"], ["Dentes", "Agenesia (3º molares, incisivos laterais, 2º pré-molares superiores); erupção tardia"], ["Bebê", "Primeira avaliação antes dos 3 meses; PPM só quando indicada, com equipe"]]
+      },
+      "macete": "Down: pescoço protegido (atlantoaxial), coração checado (antibiótico 1 h antes se houver cardiopatia), periodonto vigiado (evolução rápida).",
+      "pegadinhas": ["Indicar a PPM para todo bebê com síndrome de Down", "Esquecer a instabilidade atlantoaxial no posicionamento", "Dizer que a doença periodontal é lenta e rara"],
+      "cobra": ["Instabilidade atlantoaxial", "Cardiopatia e profilaxia antibiótica", "Doença periodontal e agenesias"],
+      "mapa": { "centro": "Síndrome de Down", "ramos": [
+        { "t": "Sistêmico", "f": ["Cardiopatia", "Hipotonia"] },
+        { "t": "Pescoço", "f": ["Atlantoaxial", "Sem hiperextensão"] },
+        { "t": "Boca", "f": ["Periodontite", "Agenesia", "Erupção tardia"] },
+        { "t": "Bebê", "f": ["Antes dos 3 meses", "PPM"] }
+      ] }
+    },
+    {
+      "id": "demencia-alzheimer",
+      "titulo": "Demência e doença de Alzheimer (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 3 do Guia organiza a conduta odontológica na demência pelas fases da doença de Alzheimer (leve, moderada e grave) e destaca a pneumonia aspirativa e o consentimento.",
+      "pontos": [
+        { "ref": "Tipos de demência (Guia, p. 39-40)", "conceito": true, "texto": "Os principais tipos são Doença de Alzheimer, Demência Vascular, Demência com Corpos de Lewy e Demência Fronto-Temporal; a Doença de Alzheimer é o tipo mais prevalente e é dividida, didaticamente, em três fases: leve, moderada e grave." },
+        { "ref": "Fase leve (Guia, p. 40; fig. 10, p. 46)", "conceito": true, "texto": "Na fase leve há maior participação e cooperação para as atividades clínicas planejadas. A fase inicial é o “momento mais adequado para a realização do tratamento odontológico em consultório”; orientação e treinamento devem ser executados nela, com higiene supervisionada por cuidadores e retornos periódicos." },
+        { "ref": "Fase moderada (Guia, p. 40-41; fig. 10, p. 46)", "conceito": true, "texto": "Há déficit cognitivo evidente e dependência dos cuidadores nas atividades diárias, incluindo a higiene bucal. O atendimento em consultório pode ser realizado desde que haja aceitação, cooperação do usuário, planejamento familiar e estratégias; em casos mais complexos pode-se usar modificação do manejo ou medicação ansiolítica (benzodiazepínicos), desde que não haja contraindicação, como doença respiratória obstrutiva crônica, e até sedação endovenosa sob monitoramento de médico anestesista em nível ambulatorial. Há ainda a assistência domiciliar." },
+        { "ref": "Fase grave (Guia, p. 41; fig. 10, p. 46)", "conceito": true, "texto": "Há total dependência do cuidador, possível disfagia e desnutrição grave. “Nessa fase, a assistência domiciliar é primordial para o acesso aos serviços odontológicos”, com condutas de mínima intervenção; ressalta-se também o atendimento em nível hospitalar e em UTI, a partir de planejamento interdisciplinar." },
+        { "ref": "Problemas bucais (Guia, p. 42)", "conceito": true, "texto": "Higiene bucal deficiente; hipossalivação de origem medicamentosa; aumento de gengivite, periodontite, cárie e lesões de mucosa e fúngicas, como a candidose; acúmulo de saburra no dorso lingual; uso contínuo de próteses sem interrupção durante o sono, que aumenta a candidose (estomatite protética); dificuldade mastigatória." },
+        { "ref": "Pneumonia por aspiração (Guia, p. 44-45)", "conceito": true, "texto": "O biofilme dentário e a saburra lingual são reservatórios de patógenos respiratórios gram-negativos que podem levar à pneumonia por aspiração; medidas de higiene bucal por meios mecânicos ou agentes químicos devem ser intensificadas na UTI na assistência à pessoa idosa frágil." },
+        { "ref": "Anamnese e dor (Guia, p. 45)", "conceito": true, "texto": "A anamnese minuciosa é primordial: identificar os problemas de saúde associados, os medicamentos em uso e o diagnóstico, o estadiamento e o prognóstico da demência. Com a evolução, o usuário tem dificuldade crescente de interpretar e verbalizar a dor; sinais de dor incluem recusa por alimentos duros ou frios, contorção do rosto, aumento do fluxo salivar, inquietação, perturbação do sono e não uso da prótese." },
+        { "ref": "Consentimento (Guia, p. 48)", "conceito": true, "texto": "“Se a pessoa idosa estiver interditada judicialmente, ou ainda, com dificuldade de participar do processo de tomada de decisão e dar o consentimento para a realização do tratamento, o seu responsável legal deverá assumir essa função, assinando todos os documentos necessários.”" },
+        { "ref": "Manejo comportamental (Guia, p. 48)", "conceito": true, "texto": "Consultas curtas e objetivas e instruções claras e curtas, repetidas sempre com as mesmas palavras; música e maior socialização ajudam; como o usuário faz as mesmas perguntas, “é inútil dizer ‘eu já lhe disse isso’”, pois aumenta a confusão; a distração é útil e o cuidador segurando as mãos do usuário diminui o estresse. Em casos que não permitem o manejo comportamental, os métodos farmacológicos, como a sedação oral, podem ser úteis." }
+      ],
+      "tabela": {
+        "titulo": "Alzheimer: conduta por fase (Guia, fig. 10)",
+        "cab": ["Fase", "Conduta odontológica"],
+        "linhas": [["Leve", "Melhor momento para tratar no consultório; orientar e treinar; higiene supervisionada; retornos periódicos"], ["Moderada", "Consultório se houver aceitação e cooperação; manejo adaptado, ansiolítico ou sedação sob anestesista; assistência domiciliar"], ["Grave", "Assistência domiciliar primordial; mínima intervenção; hospital e UTI em planejamento interdisciplinar; risco de pneumonia aspirativa"]]
+      },
+      "macete": "Alzheimer: quanto mais cedo, mais consultório; quanto mais grave, mais domicílio e mínima intervenção.",
+      "pegadinhas": ["Dizer que a fase grave é a melhor para tratar no consultório", "Ignorar saburra lingual e pneumonia aspirativa", "Aceitar o consentimento do próprio usuário quando há interdição judicial ou dificuldade de decidir"],
+      "cobra": ["Conduta por fase da doença", "Consentimento do responsável legal", "Manejo com instruções curtas e repetidas"],
+      "mapa": { "centro": "Demência e Alzheimer", "ramos": [
+        { "t": "Leve", "f": ["Consultório", "Treinar"] },
+        { "t": "Moderada", "f": ["Manejo adaptado", "Domiciliar"] },
+        { "t": "Grave", "f": ["Mínima intervenção", "UTI", "Aspiração"] },
+        { "t": "Decisão", "f": ["Responsável legal"] }
+      ] }
+    },
+    {
+      "id": "doenca-de-parkinson",
+      "titulo": "Doença de Parkinson (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 4 do Guia descreve a doença de Parkinson, as características bucais e os cuidados no consultório, com ênfase na deglutição e no risco de aspiração.",
+      "pontos": [
+        { "ref": "Definição (Guia, p. 51)", "conceito": true, "texto": "A doença de Parkinson “é uma doença neurodegenerativa progressiva e irreversível, caracterizada por tremor ao repouso, rigidez muscular, bradicinesia e distúrbios da marcha que levam à instabilidade postural”. O Guia afirma que as especificidades no tratamento de idosos com Parkinson são muito semelhantes às adotadas nos quadros demenciais (p. 52)." },
+        { "ref": "Características bucais (Guia, p. 52)", "conceito": true, "texto": "Tremores dos lábios, da língua e movimentos mandibulares involuntários; mastigação lenta e pouco eficiente e disfagia; dificuldade de abertura bucal por rigidez da musculatura orofacial; higiene precária; maior prevalência de cárie e doença periodontal; sialorreia, com queilite angular por Candida; síndrome da ardência bucal, que acomete cerca de 25% dos indivíduos com Parkinson, acompanhada de xerostomia e disgeusia." },
+        { "ref": "Posição da cadeira e isolamento (Guia, p. 53)", "conceito": true, "texto": "“Evitar inclinar a cadeira odontológica em ângulo maior do que 45° para facilitar a deglutição de saliva, evitando episódios de engasgo.” Utilizar isolamento absoluto em procedimentos restauradores sempre que possível, com sistema de sucção eficiente sob o lençol de borracha, porque há diminuição do reflexo da tosse; a equipe auxiliar deve aspirar a saliva." },
+        { "ref": "Materiais e abridores (Guia, p. 53)", "conceito": true, "texto": "Abridores de boca podem ser feitos com palitos de picolé, esparadrapo e gaze. O cimento de ionômero de vidro é indicado como material restaurador porque fornece flúor, desejável pelo alto risco de cárie." },
+        { "ref": "Antissépticos e retornos (Guia, p. 54)", "conceito": true, "texto": "“Bochechos com clorexidina ou outros antissépticos bucais não devem ser prescritos, pois o usuário perde a capacidade de expectoração”; o produto pode ser aplicado com gaze embebida, com ajuda de cuidador. Os retornos para controle preventivo devem ser agendados “no mínimo, a cada 3 meses”." },
+        { "ref": "Casos avançados (Guia, p. 53)", "conceito": true, "texto": "Nos casos avançados em que o usuário não consegue cooperar, podem ser requeridas a sedação oral, a sedação endovenosa e, “como última estratégia, a anestesia geral”." }
+      ],
+      "tabela": {
+        "titulo": "Parkinson: cuidados no consultório (Guia, cap. 4)",
+        "cab": ["Cuidado", "Motivo"],
+        "linhas": [["Cadeira com no máximo 45° de inclinação", "Facilitar a deglutição de saliva e evitar engasgo"], ["Isolamento absoluto com sucção eficiente", "Proteger a língua e as vias aéreas; reflexo da tosse diminuído"], ["Ionômero de vidro", "Libera flúor; alto risco de cárie"], ["Sem bochechos antissépticos", "Perda da capacidade de expectoração"], ["Retorno a cada 3 meses, no mínimo", "Controle preventivo"]]
+      },
+      "macete": "Parkinson: cadeira até 45°, borracha com sucção forte, ionômero de vidro e nada de bochecho.",
+      "pegadinhas": ["Recomendar bochecho com clorexidina", "Deitar a cadeira além de 45°", "Esquecer o risco de aspiração sob o lençol de borracha"],
+      "cobra": ["Ângulo máximo da cadeira", "Antissépticos por gaze em vez de bochecho", "Ionômero de vidro"],
+      "mapa": { "centro": "Parkinson", "ramos": [
+        { "t": "Boca", "f": ["Sialorreia", "Disfagia", "Ardência"] },
+        { "t": "Posição", "f": ["Até 45°", "Sucção eficiente"] },
+        { "t": "Material", "f": ["Ionômero de vidro", "Isolamento absoluto"] },
+        { "t": "Higiene", "f": ["Gaze com antisséptico", "Retorno de 3 meses"] }
+      ] }
+    },
+    {
+      "id": "paralisia-cerebral",
+      "titulo": "Paralisia cerebral (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 5 do Guia classifica a paralisia cerebral, descreve as alterações bucais e detalha o posicionamento e o manejo na cadeira odontológica.",
+      "pontos": [
+        { "ref": "Definição (Guia, p. 57)", "conceito": true, "texto": "A paralisia cerebral “abrange um grupo de desordens do desenvolvimento relativo ao movimento e à postura”, atribuídas a distúrbios não progressivos ocorridos durante o desenvolvimento fetal ou no cérebro imaturo; é a causa mais comum de incapacitação física na infância. O distúrbio motor é a alteração fundamental e sempre estará presente." },
+        { "ref": "Tipos (Guia, quadro 4, p. 58)", "conceito": true, "texto": "Espástica ou piramidal: a mais frequente, com aumento do tônus muscular. Discinética ou extrapiramidal (atetose ou coreoatetose): movimentos contínuos e incontrolados, com salivação excessiva e bruxismo acentuado. Atáxica: o tipo mais raro, afeta o cerebelo. Mista: combinação dos anteriores; tetraparesia (quatro membros), diparesia (membros inferiores mais comprometidos) e hemiparesia (um lado do corpo)." },
+        { "ref": "GMFCS (Guia, p. 58)", "conceito": true, "texto": "O Gross Motor Function Classification System (GMFCS) categoriza a mobilidade e a funcionalidade das crianças com paralisia cerebral; é uma escala ordinal com cinco níveis, do nível I (locomove-se sem restrições) ao nível V (restrição grave de movimentação)." },
+        { "ref": "Alterações bucais (Guia, p. 59-60)", "conceito": true, "texto": "A higiene é dificultada pelos movimentos involuntários e pela participação necessária do cuidador; reflexos orais (mordida tônica, vômito, espasticidade da musculatura mastigatória) impedem a abertura bucal; há bruxismo, mordida aberta, palato ogival, respiração bucal, disfagia e sialorreia; redução da distância interincisal. O Guia registra dados controversos sobre a prevalência de cárie e redução do fluxo salivar; medicações como fenitoína, nifedipina e ciclosporina predispõem ao crescimento gengival." },
+        { "ref": "Avaliação precoce (Guia, p. 61)", "conceito": true, "texto": "A avaliação bucal deve acontecer o mais precocemente, “de preferência durante o primeiro ano de vida, antes de qualquer manifestação de doença bucal, independente da complexidade neurológica”. As tecnologias assistivas (escovas adaptadas, elétricas, fio dental especial, dedeiras de resina acrílica e abridores de boca) podem auxiliar o cuidado." },
+        { "ref": "Posicionamento (Guia, p. 64-67)", "conceito": true, "texto": "Os reflexos cervicais tônicos se estendem à mandíbula e à face: a extensão do pescoço pode desencadear a abertura da mandíbula e a flexão associa-se ao fechamento. O cirurgião-dentista “não [deve] interpretá-las como falta de cooperação do usuário”. Estabilizar a cabeça e os membros na linha mediana; para quem tem risco de broncoaspiração, deixar o encosto o mais verticalizado possível, com sugador de alta potência, evitando a extensão da cabeça; usar material antiderrapante no assento." },
+        { "ref": "Contenção e movimentos bruscos (Guia, p. 66)", "conceito": true, "texto": "“O uso de contenção física deve ser realizado somente com o consentimento dos pais ou responsáveis, com a finalidade de controlar os movimentos involuntários.” Evitar movimentos bruscos e estimulação sonora e visual sem aviso prévio, que podem desencadear reflexos (tonicidade assimétrica do pescoço, tonicidade do labirinto e reflexo do susto)." },
+        { "ref": "Situações específicas (Guia, p. 67)", "conceito": true, "texto": "Na forma atetóide, a equipe de saúde bucal, com os cuidadores, pode usar técnicas de estabilização para que os movimentos involuntários não causem acidentes com os instrumentais; na luxação ou fixação do quadril, cuidar do posicionamento, pois a flexão do quadril (sentar) pode causar dor; na traqueostomia, evitar a obstrução da cânula e pedir ao cuidador que faça a aspiração quando necessário." },
+        { "ref": "Manejo e sedação (Guia, p. 69)", "conceito": true, "texto": "Podem ser usados o “dizer-mostrar-fazer”, o reforço positivo, o controle de voz e a dessensibilização; se não forem efetivos, pode-se recorrer à medicação via oral ou ao tratamento sob anestesia geral, conforme as condições clínica e sistêmica. “Independente da técnica de sedação que será utilizada recomenda-se que sejam supervisionadas por membro da equipe médica.” As consultas devem ser rápidas, na medida do possível, para evitar fadiga muscular." }
+      ],
+      "tabela": {
+        "titulo": "Paralisia cerebral: tipos (Guia, quadro 4)",
+        "cab": ["Tipo", "Característica"],
+        "linhas": [["Espástica ou piramidal", "A mais frequente; aumento do tônus muscular"], ["Discinética ou extrapiramidal", "Movimentos incontrolados; salivação excessiva e bruxismo acentuado"], ["Atáxica", "O tipo mais raro; afeta o cerebelo"], ["Mista", "Combinação dos tipos anteriores"]]
+      },
+      "macete": "Paralisia cerebral: espástica é a mais frequente, atáxica a mais rara; pescoço estendido abre a boca, pescoço flexionado fecha; a contenção só com consentimento.",
+      "pegadinhas": ["Inverter o tipo mais frequente e o mais raro", "Trocar extensão por flexão do pescoço na abertura da mandíbula", "Realizar contenção física sem consentimento de pais ou responsáveis", "Interpretar os reflexos como falta de cooperação"],
+      "cobra": ["Tipos de paralisia cerebral", "Posicionamento e risco de broncoaspiração", "Consentimento para contenção física"],
+      "mapa": { "centro": "Paralisia cerebral", "ramos": [
+        { "t": "Tipos", "f": ["Espástica", "Discinética", "Atáxica", "Mista"] },
+        { "t": "Boca", "f": ["Reflexos orais", "Bruxismo", "Sialorreia"] },
+        { "t": "Cadeira", "f": ["Linha mediana", "Encosto vertical"] },
+        { "t": "Manejo", "f": ["Contenção com consentimento", "Consultas rápidas"] }
+      ] }
+    },
+    {
+      "id": "transtorno-espectro-autista",
+      "titulo": "Transtorno do espectro do autismo (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 7 do Guia descreve o TEA, as alterações bucais e o manejo, que começa por técnicas não farmacológicas, rotina estruturada e participação da família.",
+      "pontos": [
+        { "ref": "Definição (Guia, p. 83)", "conceito": true, "texto": "O TEA, reconhecido assim desde o DSM-V, “é caracterizado por alterações significativas na comunicação, com prejuízo intrínseco no desenvolvimento da interação social recíproca, da linguagem e do comportamento da criança”, manifestando-se antes dos três anos de idade e persistindo até a idade adulta. O DSM-V designa como TEA as categorias antes separadas, e as avaliações priorizam a intensidade dos sintomas (leves, moderados ou severos)." },
+        { "ref": "Critérios (Guia, p. 84-85)", "conceito": true, "texto": "O indivíduo deve apresentar problemas de interação social ou emocional, graves problemas para manter relações e problemas de comunicação não verbal, além de pelo menos dois comportamentos: apego extremo a rotinas e padrões; fala ou movimentos repetitivos; interesses intensos e restritivos; dificuldade em integrar informação sensorial." },
+        { "ref": "Alterações bucais (Guia, p. 86-87)", "conceito": true, "texto": "O tratamento do TEA usa antipsicóticos, antidepressivos, anticonvulsivantes e psicoestimulantes, com efeitos na boca como hipossalivação, sangramento gengival, hiperplasias gengivais, ulcerações, plaquetopenia (hemorragias em cirurgias) e neutropenia (infecções e falhas de cicatrização). A sensibilidade tátil exacerbada leva a recusar o contato físico e a ajuda na escovação, com maior acúmulo de biofilme. Na dentição decídua o índice de cárie é maior em crianças autistas; na permanente, a incidência é semelhante nos dois grupos." },
+        { "ref": "Estímulos sensoriais (Guia, p. 88)", "conceito": true, "texto": "Indivíduos com TEA reagem exageradamente a estímulos sensoriais; ruídos dos equipamentos e sabores desagradáveis podem causar repulsa, medo ou desconfiança. Recomenda-se “manter silêncio no consultório e possuir pouca decoração e luzes reguláveis”; uma música de fundo suave pode ter efeito benéfico." },
+        { "ref": "Comunicação alternativa (Guia, p. 88-90)", "conceito": true, "texto": "Pessoas com restrição da comunicação verbal podem se beneficiar da comunicação alternativa, como o uso de figuras adaptadas à Odontologia, o que facilita a assistência em ambiente ambulatorial e minimiza a necessidade de restrição física." },
+        { "ref": "Abordagem do comportamento (Guia, p. 89-90)", "conceito": true, "texto": "A abordagem “deve iniciar-se por técnicas não-farmacológicas, seguindo uma programação estruturada, contando sempre com o apoio e a participação da família”; crianças podem precisar de diversas visitas para se acostumarem ao consultório. A repetição das ações é o ponto mais importante e todas as tentativas e resultados devem ser registrados. A presença da mãe ou do cuidador com maior afinidade deve ser incentivada em todas as consultas." },
+        { "ref": "Técnicas psicológicas (Guia, p. 90)", "conceito": true, "texto": "As mais citadas são o “dizer-mostrar-fazer”, o reforço positivo (elogios, premiação), evitar reforços negativos (punições ou ridicularização), a modelagem, a eliminação de estímulos sensoriais estressantes, comandos claros e objetivos, o controle de voz, uma rotina de atendimento (dia e horário das consultas) e sessões curtas." },
+        { "ref": "Níveis de atenção (Guia, p. 91)", "conceito": true, "texto": "“O tratamento odontológico da pessoa com TEA deve ser realizado, preferencialmente, nas USF com profissionais capacitados, utilizando a abordagem lúdica e as tentativas de condicionamento. Os casos de dificuldade intermediária podem ser encaminhados aos CEO [...]. Para casos mais graves, torna-se necessário o encaminhamento à atenção hospitalar para intervenção com anestesia geral.”" }
+      ],
+      "tabela": {
+        "titulo": "TEA no consultório (Guia, cap. 7)",
+        "cab": ["Aspecto", "Orientação do Guia"],
+        "linhas": [["Ambiente", "Silêncio, pouca decoração, luzes reguláveis, música suave"], ["Comunicação", "Comunicação alternativa e figuras adaptadas à Odontologia"], ["Rotina", "Dia e horário fixos; sessões curtas; repetição"], ["Comportamento", "Técnicas não farmacológicas primeiro, com a família"], ["Fluxo", "USF; dificuldade intermediária no CEO; casos graves no hospital"]]
+      },
+      "macete": "TEA: previsibilidade. Rotina fixa, sessões curtas, ambiente calmo, figuras para comunicar e a família junto.",
+      "pegadinhas": ["Começar pela sedação em vez de técnicas não farmacológicas", "Usar punição como reforço negativo", "Mudar horário e rotina entre as consultas", "Enviar todo caso de TEA direto ao hospital"],
+      "cobra": ["Estímulos sensoriais no consultório", "Comunicação alternativa", "Fluxo USF, CEO e hospital"],
+      "mapa": { "centro": "TEA", "ramos": [
+        { "t": "Ambiente", "f": ["Silêncio", "Luz regulável"] },
+        { "t": "Comunicação", "f": ["Figuras", "Comandos claros"] },
+        { "t": "Rotina", "f": ["Horário fixo", "Sessões curtas"] },
+        { "t": "Fluxo", "f": ["USF", "CEO", "Hospital"] }
+      ] }
+    },
+    {
+      "id": "sedacao-guia",
+      "titulo": "Sedação em Odontologia (Guia do Ministério da Saúde)",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O cap. 9 do Guia define a sedação, lista as indicações e as contraindicações e exige equipe habilitada e monitoramento. O Guia não traz fármacos nem doses nos trechos lidos para esta apostila, e nenhum é apresentado aqui.",
+      "pontos": [
+        { "ref": "Quando usar (Guia, p. 97)", "conceito": true, "texto": "“Quando todas as técnicas de manejo de comportamento não permitirem o atendimento odontológico seguro, outras estratégias poderão ser utilizadas.” A sedação é uma “abordagem farmacológica que objetiva minimizar o estresse fisiológico e psicológico do usuário, podendo ser realizada com medicações isoladas ou combinadas”." },
+        { "ref": "Definição de sedação (Guia, p. 97)", "conceito": true, "texto": "Na sedação ocorre “uma depressão mínima do nível de consciência, o que não afeta a habilidade de respirar de forma automática e independente, bem como de responder, de maneira apropriada, à estimulação física e ao comando verbal”." },
+        { "ref": "Indicações (Guia, p. 97)", "conceito": true, "texto": "Segundo Caldas Jr. e Machiavelli (2013), citados no Guia: deficiência intelectual com compreensão e cognição comprometidas; deficiência intelectual com grave deficiência física, porém com boa saúde geral; deficiência física ou motora com função mental preservada (por exemplo, paralisia cerebral); transtornos psiquiátricos (por exemplo, esquizofrenia) com difícil comunicação e/ou cooperação; transtornos do comportamento (por exemplo, autismo) em que não houve compreensão, impactando na não colaboração." },
+        { "ref": "Equipe e monitoramento (Guia, p. 98)", "conceito": true, "texto": "“A sedação e a constante supervisão do usuário devem ser realizadas por equipe habilitada, com o uso de ausculta periódica, a oximetria de pulso e o monitoramento dos sinais vitais.” O usuário deve ser avaliado de forma individual, pois as particularidades de pessoas com deficiência podem contraindicar o uso." },
+        { "ref": "Contraindicações e cautelas (Guia, p. 98)", "conceito": true, "texto": "“A depressão respiratória [é] a principal complicação da sedação em consultório odontológico.” Precaução de não realizá-la em pessoas com doença cardíaca cianótica, doenças pulmonares e alterações das funções hepática e renal; atenção especial aos obesos (dificuldade de manter a permeabilidade das vias aéreas e difícil punção venosa), para os quais “o mais indicado é o atendimento sob anestesia geral, em ambiente hospitalar”; cautela com quem usa barbitúricos, tranquilizantes e outras drogas depressoras do Sistema Nervoso Central." },
+        { "ref": "Sedação ou anestesia geral (Guia, p. 101)", "conceito": true, "texto": "Os profissionais devem fazer avaliação individualizada dos riscos e benefícios de cada abordagem, atentando para as doenças sistêmicas que contraindicam sedação ou anestesia geral. “As técnicas de manejo de comportamento nunca devem ser preteridas em casos em que os usuários podem ser tratados a nível ambulatorial.” A revisão Cochrane citada concluiu que seriam necessários estudos randomizados para quantificar as diferenças de morbidade e custo entre as duas abordagens." },
+        { "ref": "PENDENTE", "conceito": true, "texto": "Fármacos, doses, via de administração e a norma do CFO específica sobre sedação consciente (item do programa do edital) não foram confirmados em fonte oficial lida e, por isso, não constam desta apostila. A Resolução CFO 63/2005 não traz regra sobre sedação consciente." }
+      ],
+      "tabela": {
+        "titulo": "Sedação: resumo do Guia (cap. 9)",
+        "cab": ["Tema", "Orientação"],
+        "linhas": [["Quando", "Só quando as técnicas de manejo não permitirem atendimento seguro"], ["Nível de consciência", "Depressão mínima; respira sozinho e responde a estímulo e comando verbal"], ["Equipe", "Habilitada; ausculta periódica, oximetria de pulso e sinais vitais"], ["Principal complicação", "Depressão respiratória"], ["Evitar", "Cardiopatia cianótica, doenças pulmonares, alteração hepática ou renal; obesos vão a anestesia geral hospitalar"]]
+      },
+      "macete": "Sedação: só depois do manejo, com equipe habilitada e monitor; o risco número um é a depressão respiratória.",
+      "pegadinhas": ["Indicar sedação antes de esgotar o manejo de comportamento", "Dizer que a sedação anula a respiração espontânea", "Indicar sedação em consultório para obeso ou cardiopata cianótico", "Anotar dose ou fármaco sem fonte"],
+      "cobra": ["Indicações de sedação", "Monitoramento e equipe habilitada", "Depressão respiratória como principal complicação"],
+      "mapa": { "centro": "Sedação (Guia MS)", "ramos": [
+        { "t": "Quando", "f": ["Manejo insuficiente"] },
+        { "t": "Equipe", "f": ["Habilitada", "Oximetria", "Sinais vitais"] },
+        { "t": "Risco", "f": ["Depressão respiratória"] },
+        { "t": "Evitar", "f": ["Cardiopatia cianótica", "Pulmonar", "Hepática e renal"] }
+      ] }
+    },
+    {
+      "id": "anestesia-geral",
+      "titulo": "Anestesia geral: indicações e limites normativos",
+      "nivel": 2,
+      "qtdQuestoes": 0,
+      "intro": "O Guia do Ministério da Saúde (cap. 9.1) lista as indicações do tratamento sob anestesia geral e o fluxo pré-cirúrgico; a Resolução CFO 63/2005 fixa onde e com quem o cirurgião-dentista pode operar sob anestesia geral.",
+      "pontos": [
+        { "ref": "Critério de encaminhamento (Guia, p. 98)", "conceito": true, "texto": "“A necessidade de anestesia geral tem por critério de encaminhamento as condições sistêmica, bucal e comportamental do usuário”, que depois retorna à USF ou ao CEO para acompanhamento. “Procedimentos sob anestesia geral têm a função primordial de promover segurança para o usuário e os profissionais.”" },
+        { "ref": "Indicações (Guia, quadro 10, p. 99)", "conceito": true, "texto": "Pessoas com lesões neurológicas, síndromes e transtorno comportamental cujo gerenciamento do comportamento não obteve sucesso em ambulatório; pessoas com alterações sistêmicas de alto risco para atendimento ambulatorial; inviabilidade dos procedimentos por difícil gerenciamento do comportamento e muitas necessidades acumuladas, com deslocamento difícil e dispendioso; cirurgias complexas (exodontias complexas de dentes retidos, cirurgias ortognáticas); atendimentos cirúrgicos de urgência (drenagem de abscesso, trauma)." },
+        { "ref": "Fluxo pré-cirúrgico (Guia, p. 99-100)", "conceito": true, "texto": "O cirurgião-dentista deve encaminhar o usuário ao médico anestesiologista para exames e avaliação da condição sistêmica, solicitando o parecer sobre o procedimento. O anestesiologista faz anamnese, exame físico criterioso e exames complementares para determinar o risco anestésico. Antes da cirurgia, o dentista faz uma anotação no prontuário com a natureza da condição clínica, os problemas dentários e o curso esperado da cirurgia e da hospitalização." },
+        { "ref": "Planejamento e consentimento (Guia, p. 100)", "conceito": true, "texto": "Recomenda-se planejamento prévio dos procedimentos (tempo da cirurgia, dentes com necessidade de tratamento, grau de comprometimento dentário e periodontal). O usuário, ou o responsável quando necessário, “deve assinar a autorização para realização dos procedimentos no termo de consentimento informado”. Preferencialmente, os procedimentos não invasivos são os primeiros a serem realizados." },
+        { "ref": "Res. CFO 63/2005, art. 4º, § 2º", "conceito": true, "texto": "“O cirurgião-dentista poderá operar pacientes submetidos a qualquer um dos meios de anestesia geral, desde que sejam atendidas as exigências cautelares recomendadas para o seu emprego.”" },
+        { "ref": "Res. CFO 63/2005, art. 4º, § 3º", "conceito": true, "texto": "“O cirurgião-dentista somente poderá executar trabalhos profissionais em pacientes sob anestesia geral quando a mesma for executada por profissional médico especialista e em ambiente hospitalar que disponha das indispensáveis condições comuns a ambientes cirúrgicos.”" },
+        { "ref": "Res. CFO 63/2005, arts. 44 e 45", "conceito": true, "texto": "Art. 44: “Os cirurgiões-dentistas somente poderão realizar cirurgias sob anestesia geral, em ambiente hospitalar, cujo diretor técnico seja médico, e que disponha das indispensáveis condições de segurança comuns a ambientes cirúrgicos, considerando-se prática atentatória à ética a solicitação e/ou a realização de anestesia geral em consultório de cirurgião-dentista, de médico ou em ambulatório.” Art. 45: “Somente poderão ser realizadas, em consultórios ou ambulatórios, cirurgias passíveis de serem executadas sob anestesia local.” Ressalva: esses dois artigos estão na seção da especialidade Cirurgia e Traumatologia Buco-Maxilo-Faciais da Resolução; para o cargo PNE vale diretamente o § 3º do art. 4º (regra geral do cirurgião-dentista)." }
+      ],
+      "tabela": {
+        "titulo": "Anestesia geral: quem, onde e por quê",
+        "cab": ["Ponto", "Regra"],
+        "linhas": [["Quem aplica a anestesia geral", "Profissional médico especialista (art. 4º, § 3º)"], ["Onde", "Ambiente hospitalar com condições comuns a ambientes cirúrgicos (art. 4º, § 3º)"], ["Consultório ou ambulatório", "Só cirurgias sob anestesia local (art. 45); anestesia geral em consultório é prática atentatória à ética (art. 44)"], ["Antes", "Avaliação do anestesiologista, anotação no prontuário e consentimento informado (Guia)"], ["Indicação", "Falha do manejo, risco sistêmico alto, cirurgia complexa ou urgência cirúrgica (Guia, quadro 10)"]]
+      },
+      "macete": "Anestesia geral: médico especialista aplica, hospital recebe; consultório e ambulatório só comportam anestesia local.",
+      "pegadinhas": ["Dizer que o cirurgião-dentista pode aplicar a anestesia geral em consultório", "Dizer que a anestesia geral é a primeira escolha para toda pessoa com deficiência", "Dispensar a avaliação do anestesiologista e o consentimento informado", "Aplicar o art. 44 ao PNE sem a ressalva da seção da Resolução"],
+      "cobra": ["Ambiente hospitalar e médico especialista", "Anestesia local em consultório e ambulatório", "Fluxo pré-cirúrgico e consentimento"],
+      "mapa": { "centro": "Anestesia geral", "ramos": [
+        { "t": "Quem", "f": ["Médico especialista"] },
+        { "t": "Onde", "f": ["Hospital", "Condições cirúrgicas"] },
+        { "t": "Consultório", "f": ["Só anestesia local"] },
+        { "t": "Antes", "f": ["Anestesiologista", "Prontuário", "Consentimento"] }
+      ] }
+    },
+    {
+      "id": "praticas-integrativas",
+      "titulo": "Práticas integrativas e complementares",
+      "nivel": 1,
+      "qtdQuestoes": 0,
+      "intro": "O programa do cargo PNE cita as práticas integrativas e complementares. Esta lição traz só o que está nos textos oficiais locais: a PNPIC (Portaria de Consolidação MS 2/2017, Anexo XXV) e a Resolução CFO 63/2005. Protocolo, indicação, técnica e evidência clínica de cada prática em Odontologia estão PENDENTES.",
+      "pontos": [
+        { "ref": "PNPIC (PRC 2/2017, Anexo XXV, art. 1º)", "conceito": true, "texto": "“Fica aprovada, na forma do Anexo 1 do Anexo XXV, a Política Nacional de Práticas Integrativas e Complementares (PNPIC) no Sistema Único de Saúde.” O parágrafo único diz que a política, “de caráter nacional, recomenda a adoção pelas Secretarias de Saúde dos Estados, do Distrito Federal e dos Municípios, da implantação e implementação das ações e serviços relativos às Práticas Integrativas e Complementares”. A origem do Anexo é a Portaria MS/GM 971/2006." },
+        { "ref": "Acupuntura (PNPIC, Anexo 1 do Anexo XXV)", "conceito": true, "texto": "“A acupuntura é uma tecnologia de intervenção em saúde que aborda de modo integral e dinâmico o processo saúde-doença no ser humano, podendo ser usada isolada ou de forma integrada com outros recursos terapêuticos.”" },
+        { "ref": "Hipnoterapia (PNPIC, Anexo A do Anexo 4 do Anexo XXV)", "conceito": true, "texto": "A definição de hipnoterapia, incluída pela Portaria GM/MS 702, de 21/03/2018, diz: “Alguns setores de saúde adotam regularmente esta prática em seus protocolos de atendimento, como a odontologia, a psicologia, a fisioterapia, a enfermagem, dentre outras.”" },
+        { "ref": "Ozonioterapia (PNPIC, Anexo A do Anexo 4 do Anexo XXV)", "conceito": true, "texto": "A definição de ozonioterapia, incluída pela mesma Portaria 702/2018, diz que “alguns setores de saúde adotam regularmente esta prática em seus protocolos de atendimento, como a odontologia, a neurologia e a oncologia, dentre outras”." },
+        { "ref": "Res. CFO 63/2005, art. 4º, § 1º, VI", "conceito": true, "texto": "Compete ao cirurgião-dentista “empregar a analgesia e a hipnose, desde que comprovadamente habilitado, quando constituírem meios eficazes para o tratamento”." },
+        { "ref": "Res. CFO 63/2005, art. 39", "conceito": true, "texto": "Entre as especialidades em que o CFO admite registro e inscrição constam “a) Acupuntura;” e “g) Homeopatia;”, entre as 22 listadas." }
+      ],
+      "tabela": {
+        "titulo": "Práticas integrativas: o que os textos locais dizem",
+        "cab": ["Fonte", "Conteúdo"],
+        "linhas": [["PNPIC (Portaria 971/2006, hoje Anexo XXV da PRC 2/2017)", "Aprova a política no SUS e recomenda a implantação pelas Secretarias de Saúde"], ["Anexo 4 do Anexo XXV (Portaria 702/2018)", "Hipnoterapia e ozonioterapia: a definição cita a odontologia entre os setores que adotam a prática"], ["Res. CFO 63/2005, art. 4º, § 1º, VI", "Dentista pode empregar analgesia e hipnose se comprovadamente habilitado"], ["Res. CFO 63/2005, art. 39", "Acupuntura e homeopatia são especialidades registráveis"]]
+      },
+      "macete": "Hipnose na Odontologia: só com habilitação comprovada e quando for meio eficaz para o tratamento (art. 4º, § 1º, VI).",
+      "pegadinhas": ["Omitir a exigência de habilitação comprovada para a hipnose", "Afirmar protocolo ou indicação clínica de uma prática sem fonte", "Confundir a política do SUS (PNPIC) com norma do CFO"],
+      "cobra": ["PNPIC no SUS", "Hipnose e analgesia como competência do cirurgião-dentista", "Acupuntura e homeopatia como especialidades"],
+      "mapa": { "centro": "Práticas integrativas", "ramos": [
+        { "t": "PNPIC", "f": ["SUS", "Anexo XXV"] },
+        { "t": "CFO 63", "f": ["Art. 4º § 1º VI", "Art. 39"] },
+        { "t": "Anexo 4", "f": ["Hipnoterapia", "Ozonioterapia"] },
+        { "t": "PENDENTE", "f": ["Técnica clínica"] }
       ] }
     }
   ]

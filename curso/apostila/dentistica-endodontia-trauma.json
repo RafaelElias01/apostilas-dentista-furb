@@ -7,7 +7,7 @@
   "subtitulo": "Cirurgião-Dentista · Prefeitura de Blumenau (SC) · banca FURB · com ênfase no que mais cai",
   "fontes": [],
   "rotuloPontos": "O conteúdo, passo a passo (com exemplos)",
-  "limiteFonte": "Conteúdo clínico escrito como explicação do autor, sem trecho de lei. PENDENTE: livro/diretriz de referência a definir (G5: o dono ainda não escolheu os livros-texto). A própria banca citou, nas questões, estas obras: Hargreaves, Caminhos da polpa (G0244) e Machado et al. (2022) sobre reabsorções (G0318); isso é pista de bibliografia, não prova de que a banca segue só esses livros, e a edição de cada uma está PENDENTE. Diretrizes da IADT (International Association of Dental Traumatology) de 2020 conferidas em texto aberto em 19/11/2026: fraturas e luxações (Bourguignon et al., Dental Traumatology 2020;36(4):314-330) e avulsão de permanentes (Fouad et al., 2020;36:331-342); ambas lidas em manuscritos aceitos hospedados por terceiros (repositório White Rose eprints), não na versão final da revista. A diretriz da dentição decídua não foi aberta (PENDENTE). Outras fontes abertas lidas em 19/11/2026, com a ressalva de cada uma: Vishwanath e Rao, J Conserv Dent 2019 (guta-percha); Yen e Yeung, Dent J 2023 (técnicas radiográficas, só a introdução); Almashraqi et al., Eur Radiol 2024 (tomografia de feixe cônico, só a introdução); Khoury et al., World J Clin Cases 2024 (irrigantes); Wolf et al., Dent J 2025 (forame fisiológico, revisão); Bailey, Br Dent J 2025 (amálgama); Ghulman, Int J Dent 2011 (fator C, só os métodos); Feilzer, De Gee e Davidson, J Dent Res 1987 (fator C, só o resumo, por citação). As diretrizes mudam de versão e a apostila não afirma conduta de memória. Conduta de trauma aqui é só para estudo; não use para tratar paciente. Não foi conferido o PDF original de nenhuma prova. Valores numéricos clínicos (milímetros, concentrações, conicidade, fator C, profundidade da cavidade) aparecem aqui apenas quando estão numa questão real, com o código G0xxx e o gabarito oficial da banca; sem fonte de livro, tratam-se como PENDENTE de confirmação. PENDENTE: o texto de cada questão foi transcrito das provas e ainda não foi conferido contra o PDF original. O programa é o do edital PSPS 003/2025 de Blumenau (conforme registrado em curso/edital.md, seção 1.5, p. 47 a 49).",
+  "limiteFonte": "Conteúdo clínico escrito como explicação do autor, sem trecho de lei. PENDENTE: livro/diretriz de referência a definir (G5: o dono ainda não escolheu os livros-texto). A própria banca citou, nas questões, estas obras: Hargreaves, Caminhos da polpa (G0244) e Machado et al. (2022) sobre reabsorções (G0318); isso é pista de bibliografia, não prova de que a banca segue só esses livros, e a edição de cada uma está PENDENTE. Diretrizes da IADT (International Association of Dental Traumatology) de 2020 conferidas em texto aberto em 19/11/2026: fraturas e luxações (Bourguignon et al., Dental Traumatology 2020;36(4):314-330) e avulsão de permanentes (Fouad et al., 2020;36:331-342); ambas lidas em manuscritos aceitos hospedados por terceiros (repositório White Rose eprints), não na versão final da revista. A diretriz da dentição decídua não foi aberta (PENDENTE). Outras fontes abertas lidas em 19/11/2026, com a ressalva de cada uma: Vishwanath e Rao, J Conserv Dent 2019 (guta-percha); Yen e Yeung, Dent J 2023 (técnicas radiográficas, só a introdução); Almashraqi et al., Eur Radiol 2024 (tomografia de feixe cônico, só a introdução); Khoury et al., World J Clin Cases 2024 (irrigantes); Wolf et al., Dent J 2025 (forame fisiológico, revisão); Bailey, Br Dent J 2025 (amálgama); Ghulman, Int J Dent 2011 (fator C, só os métodos); Feilzer, De Gee e Davidson, J Dent Res 1987 (fator C, só o resumo, por citação). As diretrizes mudam de versão e a apostila não afirma conduta de memória. Conduta de trauma aqui é só para estudo; não use para tratar paciente. Não foi conferido o PDF original de nenhuma prova. Valores numéricos clínicos (milímetros, concentrações, conicidade, fator C, profundidade da cavidade) aparecem aqui apenas quando estão numa questão real, com o código G0xxx e o gabarito oficial da banca; sem fonte de livro, tratam-se como PENDENTE de confirmação. PENDENTE: o texto de cada questão foi transcrito das provas e ainda não foi conferido contra o PDF original. O programa é o do edital PSPS 003/2025 de Blumenau (conforme registrado em curso/edital.md, seção 1.5, p. 47 a 49). Acrescentado em 24/11/2026 (proposta aprovada de Navegantes): American Association of Endodontists, Treatment Standards, Executive Summary (2019), para odontometria e localizador foraminal; Royal College of Surgeons of England, Faculty of Dental Surgery, Guidelines for Periradicular Surgery (2020), para cirurgia perirradicular; ambos PDFs abertos e trechos literais conferidos nessa data. Lesão endoperiodontal e infecções odontogênicas gerais continuam PENDENTE.",
   "comoUsar": [
     "Esta apostila reúne as questões de Dentística, Materiais, Oclusão, Endodontia, Traumatismo e Radiologia das provas anteriores da banca FURB para Cirurgião-Dentista da Prefeitura de Blumenau (SC): 76 questões únicas em 5 editais (2019, 2021P, 2021C, 2023 e 2025), das quais 3 foram anuladas (todas em Dentística) e ficam de fora do treino. Sobram 73 questões usáveis. É a maior apostila de conhecimentos específicos da amostra.",
     "Atenção ao cargo: as 5 especialidades repetem as mesmas questões na prova. Endodontia tem 30 questões únicas, mas só 2 caíram na prova de Clínico Geral (CG); Dentística tem 21 únicas e 18 na prova de CG. Quem faz a prova de Clínico Geral deve estudar primeiro Dentística (lição 2), mesmo ela vindo depois de Endodontia na ordem desta apostila, que segue o total de questões únicas.",
@@ -20,68 +20,272 @@
     "Este material é independente e não tem vínculo com a FURB (Fundação Universidade Regional de Blumenau) nem com a Prefeitura de Blumenau. Confira sempre o edital vigente."
   ],
   "ranking": [
-    { "rotulo": "Endodontia (30 questões únicas; 4 edições; só 2 na prova de CG)", "nivel": 3 },
-    { "rotulo": "Dentística e materiais (21 questões únicas, 3 anuladas; 5 edições; 18 na prova de CG)", "nivel": 3 },
-    { "rotulo": "Traumatismo dentoalveolar (14 questões únicas; 5 edições; 5 na prova de CG)", "nivel": 3 },
-    { "rotulo": "Oclusão e DTM (6 questões únicas; 3 edições; 3 na prova de CG)", "nivel": 3 },
-    { "rotulo": "Radiologia e imagem (5 questões únicas; 3 edições; 1 na prova de CG)", "nivel": 3 }
+    {
+      "rotulo": "Endodontia (30 questões únicas; 4 edições; só 2 na prova de CG)",
+      "nivel": 3
+    },
+    {
+      "rotulo": "Dentística e materiais (21 questões únicas, 3 anuladas; 5 edições; 18 na prova de CG)",
+      "nivel": 3
+    },
+    {
+      "rotulo": "Traumatismo dentoalveolar (14 questões únicas; 5 edições; 5 na prova de CG)",
+      "nivel": 3
+    },
+    {
+      "rotulo": "Oclusão e DTM (6 questões únicas; 3 edições; 3 na prova de CG)",
+      "nivel": 3
+    },
+    {
+      "rotulo": "Radiologia e imagem (5 questões únicas; 3 edições; 1 na prova de CG)",
+      "nivel": 3
+    }
   ],
   "licoes": [
     {
       "id": "endodontia",
       "titulo": "Endodontia",
       "nivel": 3,
-      "topicosBanco": ["endo"],
+      "topicosBanco": [
+        "endo"
+      ],
       "qtdQuestoes": 30,
       "intro": "É o assunto específico com mais questões: 30 questões únicas em 4 edições (2019: 9; 2021P: 8; 2023: 9; 2025: 4), nenhuma anulada. Mas atenção: só 2 dessas 30 caíram na prova de Clínico Geral; o resto veio de provas de outras especialidades. Estude com peso conforme o seu cargo. Os subassuntos abaixo seguem a ordem do que mais caiu: diagnóstico e patologia pulpar e periapical (9 questões), anatomia, comprimento e acesso (6), obturação (4), instrumentos (2), irrigação (2), acidentes e retratamento (2), reabsorções (2) e, com 1 questão cada, medicação intracanal, urgências e radiologia aplicada. Os números clínicos que aparecem aqui são só os de questões reais; o resto está PENDENTE de livro.",
       "pontos": [
-        { "ref": "Diagnóstico · o exame clínico (G0058)", "conceito": true, "texto": "O exame do paciente endodôntico reúne inspeção, palpação, percussão, avaliação da mobilidade e sondagem periodontal. Na prova G0058 a alternativa certa disse que, na avaliação da mobilidade, usam-se dois instrumentos metálicos apoiados firmemente no dente, ou um instrumento metálico e um dedo do profissional. As erradas diziam coisas como “a sondagem periodontal não é necessária em dentes com problema endodôntico” e “a percussão horizontal deve ser feita só com toques abruptos e intensos”. Regra: o exame é gentil e completo, e a sondagem periodontal faz parte dele." },
-        { "ref": "Diagnóstico · a sequência do exame (G0240)", "conceito": true, "texto": "Na prova G0240 a sequência marcada como correta foi: inspeção, percussão, exame radiográfico e teste de vitalidade pulpar. A banca trocou a ordem nas alternativas erradas (por exemplo, começar pelo exame radiográfico ou pelo teste de vitalidade). Decore a ordem como a banca marcou: olhar primeiro, depois bater (percussão), depois imagem, por último testar a vitalidade." },
-        { "ref": "Diagnóstico · a polpa só sente dor (G0248)", "conceito": true, "texto": "Na prova G0248 perguntaram qual sensação resulta dos impulsos eferentes da polpa, qualquer que seja o estímulo: a resposta oficial foi dor. As alternativas erradas eram toque, calor, frio e propriocepção. Ideia central: a polpa responde a qualquer estímulo com dor, e não distingue calor, frio ou toque. (O enunciado diz “eferentes”; o termo correto para fibras sensitivas é “aferentes”, mas a resposta não muda.)" },
-        { "ref": "Diagnóstico · sensibilidade dentinária e teoria hidrodinâmica (G0246)", "conceito": true, "texto": "Na prova G0246 a sensibilidade dentinária se relaciona com a movimentação do fluido no interior dos túbulos dentinários (é a ideia da teoria hidrodinâmica). As erradas citavam substância irrigadora, protetor pulpar, técnica de instrumentação e medicação intracanal: nenhuma delas explica a sensibilidade. Pense: o estímulo (frio, ar, sonda) move o líquido dos túbulos, e isso gera a dor curta e localizada." },
-        { "ref": "Diagnóstico · pulpite aguda purulenta (G0147)", "conceito": true, "texto": "Caso da prova G0147: dor intensa, irradiada, contínua, pulsátil, que piora com calor e alivia com frio, e, depois de pulpectomia, a histologia mostrou abscessos na polpa. O diagnóstico oficial foi pulpite aguda purulenta. As erradas eram pulpite reversível, pulpite crônica ulcerativa, hiperemia pulpar e pulpite crônica esclerosante. Pistas: dor espontânea, pulsátil e aliviada pelo frio apontam inflamação grave; abscesso na polpa dá o nome “purulenta”." },
-        { "ref": "Diagnóstico · pulpite irreversível assintomática (G0302)", "conceito": true, "texto": "Caso da prova G0302 (2025): atleta de 22 anos, trauma no dente 21 há cerca de três meses, sem sintomas, com lesão de cárie ativa e cavitada na face mesial e resposta normal aos testes térmicos. O diagnóstico oficial foi pulpite irreversível assintomática. Lição: dente sem dor, com cárie profunda aberta e trauma antigo pode estar com a polpa inflamada de forma irreversível sem sintoma; as alternativas “necrose” e “pulpite reversível” são as tentações, mas a resposta normal ao teste térmico afasta a necrose." },
-        { "ref": "Diagnóstico · o que fazer em cada patologia pulpar (G0317)", "conceito": true, "texto": "A prova G0317 (2025) trouxe cinco pares “patologia + tratamento”, e só um estava certo: na necrose pulpar por liquefação, associada a infecção bacteriana com predomínio de neutrófilos, o tratamento é a necropulpectomia. Estavam errados, por exemplo: capeamento indireto para pulpite irreversível sintomática que regride; capeamento direto para pulpite irreversível assintomática; pulpectomia para pulpite reversível definida como “estágio final”; biopulpectomia para necrose. Regra: necrose pede necropulpectomia (canal infectado); biopulpectomia é para polpa viva." },
-        { "ref": "Diagnóstico · alterações periapicais agudas (G0237)", "conceito": true, "texto": "Na prova G0237 as alterações periapicais agudas foram classificadas em periodontite apical aguda e abscesso dentoalveolar agudo. As erradas misturavam cisto, granuloma e periodontite apical crônica, que são lesões crônicas. Guarde: agudo = periodontite apical aguda + abscesso dentoalveolar agudo." },
-        { "ref": "Diagnóstico · caso clínico de abscesso periapical agudo (G0238)", "conceito": true, "texto": "Caso da prova G0238: dor espontânea, localizada, intensa e pulsátil, tumefação da face, mobilidade do 26, extrema sensibilidade à percussão, grande lesão de cárie com curativo, sem fístula e com espessamento do ligamento periodontal na radiografia. Resposta oficial: abscesso periapical agudo, com tratamento endodôntico. Cuidado com as alternativas que trocavam o diagnóstico por “abscesso periodontal” ou o tratamento por “retirada do dente de oclusão” (desgaste oclusal)." },
-        { "ref": "Anatomia e acesso · forma de conveniência (G0054)", "conceito": true, "texto": "Na prova G0054, a etapa da abertura coronária que dá conformidade à cavidade pulpar para facilitar os demais procedimentos é a forma de conveniência. As alternativas erradas trocavam por forma de retenção, de resistência, de contorno inicial e de trepanação. Associe: conveniência = facilitar o acesso e o trabalho dentro do canal." },
-        { "ref": "Anatomia e acesso · incisivo central superior (G0056)", "conceito": true, "texto": "Na prova G0056 a alternativa oficial dizia que o incisivo central superior normalmente tem raiz única com canal reto e amplo (afirmativa I) e que, na maioria das vezes, o forame apical se localiza de 0,5 a 1 mm do ápice anatômico (afirmativa III); a resposta foi I e III. As erradas diziam que o canal é atrésico com dois canais (II) e que o forame fica exatamente no ápice anatômico (IV). A revisão de Wolf et al. (Dent J 2025;13:581, PMC12732147) confirmou a referência clássica de Chapman: o forame ficou de 0,5 a 1,0 mm aquém do ápice em 92,5% de 120 dentes. A revisão chama essa localização de forame fisiológico; a relação exata entre forame fisiológico e constrição apical continua variável entre autores. O enunciado fala em “forame apical”; guarde a faixa confirmada e o termo “forame fisiológico”." },
-        { "ref": "Anatomia e acesso · fatores intrínsecos e extrínsecos do acesso (G0151)", "conceito": true, "texto": "A prova G0151 pediu os fatores intrínsecos da cirurgia de acesso endodôntico entre quatro afirmativas (abrasão e amplitude de abertura; erosão e cárie; restaurações e posição do dente; idade do paciente, direção e curvatura radicular) e o gabarito oficial foi a afirmativa II (erosão, cárie). PENDENTE: dúvida de gabarito: a afirmativa IV (idade, direção e curvatura radicular) também parece intrínseca; conferir no PDF da prova e no livro antes de usar esta classificação." },
-        { "ref": "Anatomia e acesso · comprimento médio de um dente (G0152)", "conceito": true, "texto": "A prova G0152 perguntou o comprimento médio de um canino inferior, e o gabarito oficial foi 25 mm (as outras opções iam de 20 a 23 mm). É o tipo de questão de decoreba de tabela: o valor está aqui só porque está na questão real. PENDENTE: confirmar a tabela de comprimentos médios dos dentes no livro-texto; não use este valor para outros dentes." },
-        { "ref": "Anatomia e acesso · direção de trepanação e preparo (G0153)", "conceito": true, "texto": "Na prova G0153 a afirmativa correta foi que a direção de trepanação será para o canal mais volumoso. As erradas diziam que a forma de contorno independe do número de canais, que o ponto de eleição não ajuda nos problemas restauradores e que a forma de conveniência pouco influencia a obturação. Regra: o acesso é pensado para o canal e para a obturação e a restauração futuras. PENDENTE: a alternativa E (remover cárie, raspas e tecido necrótico da câmara antes do preparo radicular) também parece correta; conferir o texto no PDF da prova. Na prova, vale o gabarito oficial (A)." },
-        { "ref": "Anatomia e acesso · diâmetro anatômico apical (G0157)", "conceito": true, "texto": "Na prova G0157 o diâmetro anatômico apical é o diâmetro do canal radicular antes da instrumentação. As erradas diziam “após a instrumentação”, “em qualquer etapa” ou “dias após o tratamento”. Palavra-chave: anatômico = como o canal é naturalmente, antes de mexer nele." },
-        { "ref": "Instrumentos · propriedades mecânicas (G0061)", "conceito": true, "texto": "Na prova G0061, quando uma carga é aplicada a um material, a força de ligação dos seus átomos se opõe ao carregamento, e essa oposição é a resistência mecânica. As erradas eram deformação plástica, deformação elástica, tenacidade à fratura e limite de escoamento: termos parecidos, todos de mecânica dos materiais." },
-        { "ref": "Instrumentos · lima tipo K e conicidade (G0245)", "conceito": true, "texto": "Na prova G0245, a lima tipo K segundo a FDI (Federação Dentária Internacional) tem conicidade (taper) de 0,02, conforme a alternativa oficial (as outras eram 0,4, 0,04, 0,2 e 0,1). Note que a banca escreveu a unidade como mm; o importante é a ideia de conicidade padrão da lima K. Valor vindo da questão; PENDENTE confirmar em livro." },
-        { "ref": "Irrigação · soluções de hipoclorito de sódio (G0062)", "conceito": true, "texto": "Na prova G0062 a alternativa oficial foi: o licor de Labarraque contém solução de NaOCl a 2,5%. As erradas trocavam as concentrações e os estabilizantes: soda clorada a 10% com ácido bórico, líquido de Dausfrene (NaCl a 2%), líquido de Milton a 0,5% com cloreto de sódio e líquido de Dakin a 1,5% com ácido bórico. É questão de associar nome da solução e concentração. Tabela de uma revisão de 2024 (Khoury et al.): solução de Dakin = NaOCl 0,5% neutralizado com ácido bórico; solução de Dausfrene = NaOCl 0,5% neutralizado com bicarbonato de sódio; solução de Milton = NaOCl 1% estabilizado com cloreto de sódio a 16%; licor de Labarraque = NaOCl 2,5%; soda clorada = NaOCl 4% a 6%. Repare que as alternativas erradas de G0062 trocavam esses valores (Dausfrene com NaCl a 2%, Milton a 0,5%, Dakin a 1,5%, soda clorada a 10%)." },
-        { "ref": "Irrigação · substância dissecante (G0242)", "conceito": true, "texto": "Na prova G0242, a substância irrigadora considerada dissecante foi o álcool isopropílico a 70%. As erradas eram EDTA a 17%, hipoclorito de sódio a 5,25% com glicerina, hipoclorito de sódio a 2,6% e água de cal. Ideia: o álcool é usado para secar o canal, e as concentrações citadas vêm da questão (PENDENTE de livro)." },
-        { "ref": "Medicação intracanal (G0316)", "conceito": true, "texto": "A prova G0316 (2025) trouxe quatro afirmativas sobre medicação intracanal e o gabarito foi I e II. I: o paramonoclorofenol canforado é indicado para dentes com polpa necrosada, após o preparo biomecânico. II: o hidróxido de cálcio serve para várias finalidades (tampão apical, apicificação, apicigênese, exsudação persistente, reabsorções, perfurações, traumatismos e obturação provisória do canal). Estavam erradas: III (formocresol como medicação em polpa vital e biopulpectomias) e IV (Otosporin em necropulpectomia por infecção restrita à porção profunda da polpa)." },
-        { "ref": "Obturação · propriedades do material obturador (G0155)", "conceito": true, "texto": "A prova G0155 listou propriedades de um bom material obturador, “EXCETO”: não deve irritar o periápice, não deve contrair depois de inserido, deve ser impermeável à umidade, não deve manchar o dente. A única errada, marcada como resposta, foi “deve ser radiolúcido”: o material deve aparecer na radiografia (ser radiopaco), e não o contrário." },
-        { "ref": "Obturação · cones de guta-percha (G0148)", "conceito": true, "texto": "Na prova G0148 a banca perguntou uma desvantagem dos cones de guta-percha, e o gabarito oficial foi “mobilidade para ser utilizado em condutos estreitos”. As outras opções eram vantagens (boa adaptação, tolerância tecidual, facilidade de remoção) e a possibilidade de amolecimento e plastificação por calor ou solventes. O gabarito é coerente com a ideia de que a guta-percha é pouco rígida, o que dificulta usá-la em condutos estreitos. A revisão de Vishwanath e Rao (2019) lista como desvantagens da guta-percha “falta de rigidez” e “facilmente deslocada pela pressão”, e como vantagens “pode ser amolecida” e “facilmente removida”. Isso é coerente com o gabarito (a fonte lista “falta de rigidez”, mas não cita condutos estreitos). A palavra “mobilidade” pode ser erro de transcrição (conferir no PDF da prova)." },
-        { "ref": "Obturação · cimentos endodônticos (G0150)", "conceito": true, "texto": "Na prova G0150 pediam o cimento endodôntico que NÃO existe: o gabarito foi “à base de bromo”. Existem cimentos à base de ionômero de vidro, de hidróxido de cálcio, de resinas plásticas e de óxido de zinco e eugenol. Questões de “EXCETO” com um item absurdo: procure o que não é material dentário conhecido." },
-        { "ref": "Obturação · técnica de Schilder (G0241)", "conceito": true, "texto": "Na prova G0241 a condensação vertical da guta-percha aquecida (técnica de Schilder) exige uma série de condensadores graduados e um instrumento condutor de calor. As erradas diziam que não precisa de cone principal, que descarta o cimento, que não faz preparo com limas e que associa aparelhos eletroeletrônicos e rotatórios." },
-        { "ref": "Acidentes e retratamento · acidentes em Endodontia (G0055)", "conceito": true, "texto": "A prova G0055 trouxe cinco afirmativas de V ou F sobre degrau, sobreinstrumentação, subinstrumentação, falso canal e perfuração coronária; o gabarito oficial foi F – V – V – F – V. Os enunciados que ficaram verdadeiros foram: descuido na determinação e manutenção do comprimento de trabalho como causa de sobreinstrumentação; obstrução do segmento apical por detritos do preparo como causa de subinstrumentação; e perfuração coronária como comunicação acidental da câmara pulpar com o meio bucal e/ou os tecidos perirradiculares. Os itens sobre degrau e falso canal ficaram como falsos. Os nomes foram reproduzidos de acordo com o enunciado oficial da questão; não generalize essas definições para todos os protocolos clínicos." },
-        { "ref": "Acidentes e retratamento · quando retratar (G0063)", "conceito": true, "texto": "Na prova G0063, o retratamento endodôntico pode ser indicado quando o exame radiográfico revela espaço do ligamento periodontal aumentado, maior que 2 mm, ou evidência de progressão de uma reabsorção radicular. As erradas descreviam situações de sucesso (sem sintomas, obturação adequada, reparo ósseo). Lembre: retratamento é para insucesso evidente; o valor 2 mm vem da questão (PENDENTE de livro)." },
-        { "ref": "Urgências em Endodontia (G0046)", "conceito": true, "texto": "A prova G0046 (2019) foi uma questão de cinco afirmativas e a resposta foi I, IV e V. Certas: exame radiográfico sistemático, complementado por tomografia se necessário (I); pulpite reversível pode ser resolvida com remoção do tecido cariado e curativo com cimento de óxido de zinco e eugenol (IV); na hipersensibilidade dentinária, pode-se iniciar com aplicação profissional de nitrato de potássio e uso de dentifrícios dessensibilizantes (V). Erradas: tratar hipersensibilidade imediatamente com pulpectomia (III) e a afirmativa II (anamnese, exame clínico visual e testes de sensibilidade), que o gabarito não considerou correta." },
-        { "ref": "Radiologia aplicada à Endodontia (G0057)", "conceito": true, "texto": "Na prova G0057, a afirmativa oficial foi que, em alguns acessos complicados, a radiografia interproximal orienta o endodontista, mostrando a relação assoalho-teto da câmara pulpar com um mínimo de deformação. As erradas trocavam angulação horizontal e vertical, afirmavam que uma única tomada periapical ortorradial localiza reabsorções e descreviam a técnica da bissetriz com o raio central deslocando-se “longitudinalmente” à bissetriz (alternativa A, errada pelo gabarito). Correto: na técnica da bissetriz, o raio central incide PERPENDICULAR à linha imaginária que divide ao meio o ângulo entre o longo eixo do dente e o filme (e não “longitudinalmente”). Na técnica do paralelismo, o filme fica paralelo ao dente e o raio é perpendicular aos dois (Yen e Yeung, 2023)." },
-        { "ref": "Reabsorções · causas da reabsorção externa (G0243)", "conceito": true, "texto": "Na prova G0243, as causas prováveis associadas à reabsorção radicular externa foram trauma oclusal acentuado e forças ortodônticas excessivas. As erradas misturavam tratamento endodôntico e pulpotomias (com formocresol ou hidróxido de cálcio)." },
-        { "ref": "Reabsorções · classificação de Machado et al. (2022) (G0318)", "conceito": true, "texto": "A prova G0318 (2025) citou Machado et al. (2022) e deu três afirmativas, todas copiando descrições do texto do autor; o gabarito foi II e III. II: reabsorções externas apicais acometem ápices de dentes necrosados ou tratados endodonticamente, com lesões periapicais crônicas e, em geral, assintomáticas. III: reabsorções externas progressivas substitutivas ocorrem em geral após traumatismos severos e procedimentos radicais, como avulsão, intrusão e transplantes, e são irreversíveis. A afirmativa I (interna inflamatória com diminuição de volume em cavidade pulpar) foi marcada como errada. PENDENTE: ler o artigo citado, ainda não conferido." }
+        {
+          "ref": "Diagnóstico · o exame clínico (G0058)",
+          "conceito": true,
+          "texto": "O exame do paciente endodôntico reúne inspeção, palpação, percussão, avaliação da mobilidade e sondagem periodontal. Na prova G0058 a alternativa certa disse que, na avaliação da mobilidade, usam-se dois instrumentos metálicos apoiados firmemente no dente, ou um instrumento metálico e um dedo do profissional. As erradas diziam coisas como “a sondagem periodontal não é necessária em dentes com problema endodôntico” e “a percussão horizontal deve ser feita só com toques abruptos e intensos”. Regra: o exame é gentil e completo, e a sondagem periodontal faz parte dele."
+        },
+        {
+          "ref": "Diagnóstico · a sequência do exame (G0240)",
+          "conceito": true,
+          "texto": "Na prova G0240 a sequência marcada como correta foi: inspeção, percussão, exame radiográfico e teste de vitalidade pulpar. A banca trocou a ordem nas alternativas erradas (por exemplo, começar pelo exame radiográfico ou pelo teste de vitalidade). Decore a ordem como a banca marcou: olhar primeiro, depois bater (percussão), depois imagem, por último testar a vitalidade."
+        },
+        {
+          "ref": "Diagnóstico · a polpa só sente dor (G0248)",
+          "conceito": true,
+          "texto": "Na prova G0248 perguntaram qual sensação resulta dos impulsos eferentes da polpa, qualquer que seja o estímulo: a resposta oficial foi dor. As alternativas erradas eram toque, calor, frio e propriocepção. Ideia central: a polpa responde a qualquer estímulo com dor, e não distingue calor, frio ou toque. (O enunciado diz “eferentes”; o termo correto para fibras sensitivas é “aferentes”, mas a resposta não muda.)"
+        },
+        {
+          "ref": "Diagnóstico · sensibilidade dentinária e teoria hidrodinâmica (G0246)",
+          "conceito": true,
+          "texto": "Na prova G0246 a sensibilidade dentinária se relaciona com a movimentação do fluido no interior dos túbulos dentinários (é a ideia da teoria hidrodinâmica). As erradas citavam substância irrigadora, protetor pulpar, técnica de instrumentação e medicação intracanal: nenhuma delas explica a sensibilidade. Pense: o estímulo (frio, ar, sonda) move o líquido dos túbulos, e isso gera a dor curta e localizada."
+        },
+        {
+          "ref": "Diagnóstico · pulpite aguda purulenta (G0147)",
+          "conceito": true,
+          "texto": "Caso da prova G0147: dor intensa, irradiada, contínua, pulsátil, que piora com calor e alivia com frio, e, depois de pulpectomia, a histologia mostrou abscessos na polpa. O diagnóstico oficial foi pulpite aguda purulenta. As erradas eram pulpite reversível, pulpite crônica ulcerativa, hiperemia pulpar e pulpite crônica esclerosante. Pistas: dor espontânea, pulsátil e aliviada pelo frio apontam inflamação grave; abscesso na polpa dá o nome “purulenta”."
+        },
+        {
+          "ref": "Diagnóstico · pulpite irreversível assintomática (G0302)",
+          "conceito": true,
+          "texto": "Caso da prova G0302 (2025): atleta de 22 anos, trauma no dente 21 há cerca de três meses, sem sintomas, com lesão de cárie ativa e cavitada na face mesial e resposta normal aos testes térmicos. O diagnóstico oficial foi pulpite irreversível assintomática. Lição: dente sem dor, com cárie profunda aberta e trauma antigo pode estar com a polpa inflamada de forma irreversível sem sintoma; as alternativas “necrose” e “pulpite reversível” são as tentações, mas a resposta normal ao teste térmico afasta a necrose."
+        },
+        {
+          "ref": "Diagnóstico · o que fazer em cada patologia pulpar (G0317)",
+          "conceito": true,
+          "texto": "A prova G0317 (2025) trouxe cinco pares “patologia + tratamento”, e só um estava certo: na necrose pulpar por liquefação, associada a infecção bacteriana com predomínio de neutrófilos, o tratamento é a necropulpectomia. Estavam errados, por exemplo: capeamento indireto para pulpite irreversível sintomática que regride; capeamento direto para pulpite irreversível assintomática; pulpectomia para pulpite reversível definida como “estágio final”; biopulpectomia para necrose. Regra: necrose pede necropulpectomia (canal infectado); biopulpectomia é para polpa viva."
+        },
+        {
+          "ref": "Diagnóstico · alterações periapicais agudas (G0237)",
+          "conceito": true,
+          "texto": "Na prova G0237 as alterações periapicais agudas foram classificadas em periodontite apical aguda e abscesso dentoalveolar agudo. As erradas misturavam cisto, granuloma e periodontite apical crônica, que são lesões crônicas. Guarde: agudo = periodontite apical aguda + abscesso dentoalveolar agudo."
+        },
+        {
+          "ref": "Diagnóstico · caso clínico de abscesso periapical agudo (G0238)",
+          "conceito": true,
+          "texto": "Caso da prova G0238: dor espontânea, localizada, intensa e pulsátil, tumefação da face, mobilidade do 26, extrema sensibilidade à percussão, grande lesão de cárie com curativo, sem fístula e com espessamento do ligamento periodontal na radiografia. Resposta oficial: abscesso periapical agudo, com tratamento endodôntico. Cuidado com as alternativas que trocavam o diagnóstico por “abscesso periodontal” ou o tratamento por “retirada do dente de oclusão” (desgaste oclusal)."
+        },
+        {
+          "ref": "Anatomia e acesso · forma de conveniência (G0054)",
+          "conceito": true,
+          "texto": "Na prova G0054, a etapa da abertura coronária que dá conformidade à cavidade pulpar para facilitar os demais procedimentos é a forma de conveniência. As alternativas erradas trocavam por forma de retenção, de resistência, de contorno inicial e de trepanação. Associe: conveniência = facilitar o acesso e o trabalho dentro do canal."
+        },
+        {
+          "ref": "Anatomia e acesso · incisivo central superior (G0056)",
+          "conceito": true,
+          "texto": "Na prova G0056 a alternativa oficial dizia que o incisivo central superior normalmente tem raiz única com canal reto e amplo (afirmativa I) e que, na maioria das vezes, o forame apical se localiza de 0,5 a 1 mm do ápice anatômico (afirmativa III); a resposta foi I e III. As erradas diziam que o canal é atrésico com dois canais (II) e que o forame fica exatamente no ápice anatômico (IV). A revisão de Wolf et al. (Dent J 2025;13:581, PMC12732147) confirmou a referência clássica de Chapman: o forame ficou de 0,5 a 1,0 mm aquém do ápice em 92,5% de 120 dentes. A revisão chama essa localização de forame fisiológico; a relação exata entre forame fisiológico e constrição apical continua variável entre autores. O enunciado fala em “forame apical”; guarde a faixa confirmada e o termo “forame fisiológico”."
+        },
+        {
+          "ref": "Anatomia e acesso · fatores intrínsecos e extrínsecos do acesso (G0151)",
+          "conceito": true,
+          "texto": "A prova G0151 pediu os fatores intrínsecos da cirurgia de acesso endodôntico entre quatro afirmativas (abrasão e amplitude de abertura; erosão e cárie; restaurações e posição do dente; idade do paciente, direção e curvatura radicular) e o gabarito oficial foi a afirmativa II (erosão, cárie). PENDENTE: dúvida de gabarito: a afirmativa IV (idade, direção e curvatura radicular) também parece intrínseca; conferir no PDF da prova e no livro antes de usar esta classificação."
+        },
+        {
+          "ref": "Anatomia e acesso · comprimento médio de um dente (G0152)",
+          "conceito": true,
+          "texto": "A prova G0152 perguntou o comprimento médio de um canino inferior, e o gabarito oficial foi 25 mm (as outras opções iam de 20 a 23 mm). É o tipo de questão de decoreba de tabela: o valor está aqui só porque está na questão real. PENDENTE: confirmar a tabela de comprimentos médios dos dentes no livro-texto; não use este valor para outros dentes."
+        },
+        {
+          "ref": "Anatomia e acesso · direção de trepanação e preparo (G0153)",
+          "conceito": true,
+          "texto": "Na prova G0153 a afirmativa correta foi que a direção de trepanação será para o canal mais volumoso. As erradas diziam que a forma de contorno independe do número de canais, que o ponto de eleição não ajuda nos problemas restauradores e que a forma de conveniência pouco influencia a obturação. Regra: o acesso é pensado para o canal e para a obturação e a restauração futuras. PENDENTE: a alternativa E (remover cárie, raspas e tecido necrótico da câmara antes do preparo radicular) também parece correta; conferir o texto no PDF da prova. Na prova, vale o gabarito oficial (A)."
+        },
+        {
+          "ref": "Anatomia e acesso · diâmetro anatômico apical (G0157)",
+          "conceito": true,
+          "texto": "Na prova G0157 o diâmetro anatômico apical é o diâmetro do canal radicular antes da instrumentação. As erradas diziam “após a instrumentação”, “em qualquer etapa” ou “dias após o tratamento”. Palavra-chave: anatômico = como o canal é naturalmente, antes de mexer nele."
+        },
+        {
+          "ref": "Odontometria · localizador foraminal e radiografia (AAE 2019)",
+          "conceito": true,
+          "texto": "Odontometria é a determinação do comprimento de trabalho, que deve ser definido e mantido durante todo o preparo (na G0055, a sobreinstrumentação vem de descuido nisso). Nenhuma questão do banco trata do localizador foraminal; o tema entra por ser item do programa do cargo de Endodontista e pela vizinhança das questões G0152 e G0157. Fonte: American Association of Endodontists, Treatment Standards, Executive Summary (2019), seção Standards in Canal Preparation, p. 2 (https://www.aae.org/specialty/wp-content/uploads/sites/2/2019/11/TreatmentStandards_ExecutiveSummary_v1.pdf), texto conferido em 24/11/2026. Trechos literais (em inglês): “The ideal apical termination, (working length), has been established empirically to be 0.5 to 1.0mm from the anatomical apex. To determine working length, it is recommended that an electronic apex locator is used in conjunction with verifying radiographs.” E: “The decision of where to terminate the apical preparation should be based on apical anatomy, information from apex locators, and radiographic interpretation.” Tradução livre: o localizador eletrônico é usado junto com radiografias de verificação, e a decisão de onde terminar o preparo apical combina anatomia apical, localizador e radiografia. Pegadinha provável: “o localizador substitui a radiografia” (contraria a AAE). Ressalvas: documento norte-americano, não é o programa da banca; o 0,5 a 1,0 mm é dado só desse documento (não confirmado em outra fonte). PENDENTE (não escrito por falta de fonte aberta): princípio de funcionamento do aparelho (impedância, frequências) e suas limitações (marca-passo, canal com exsudato)."
+        },
+        {
+          "ref": "Instrumentos · propriedades mecânicas (G0061)",
+          "conceito": true,
+          "texto": "Na prova G0061, quando uma carga é aplicada a um material, a força de ligação dos seus átomos se opõe ao carregamento, e essa oposição é a resistência mecânica. As erradas eram deformação plástica, deformação elástica, tenacidade à fratura e limite de escoamento: termos parecidos, todos de mecânica dos materiais."
+        },
+        {
+          "ref": "Instrumentos · lima tipo K e conicidade (G0245)",
+          "conceito": true,
+          "texto": "Na prova G0245, a lima tipo K segundo a FDI (Federação Dentária Internacional) tem conicidade (taper) de 0,02, conforme a alternativa oficial (as outras eram 0,4, 0,04, 0,2 e 0,1). Note que a banca escreveu a unidade como mm; o importante é a ideia de conicidade padrão da lima K. Valor vindo da questão; PENDENTE confirmar em livro."
+        },
+        {
+          "ref": "Irrigação · soluções de hipoclorito de sódio (G0062)",
+          "conceito": true,
+          "texto": "Na prova G0062 a alternativa oficial foi: o licor de Labarraque contém solução de NaOCl a 2,5%. As erradas trocavam as concentrações e os estabilizantes: soda clorada a 10% com ácido bórico, líquido de Dausfrene (NaCl a 2%), líquido de Milton a 0,5% com cloreto de sódio e líquido de Dakin a 1,5% com ácido bórico. É questão de associar nome da solução e concentração. Tabela de uma revisão de 2024 (Khoury et al.): solução de Dakin = NaOCl 0,5% neutralizado com ácido bórico; solução de Dausfrene = NaOCl 0,5% neutralizado com bicarbonato de sódio; solução de Milton = NaOCl 1% estabilizado com cloreto de sódio a 16%; licor de Labarraque = NaOCl 2,5%; soda clorada = NaOCl 4% a 6%. Repare que as alternativas erradas de G0062 trocavam esses valores (Dausfrene com NaCl a 2%, Milton a 0,5%, Dakin a 1,5%, soda clorada a 10%)."
+        },
+        {
+          "ref": "Irrigação · substância dissecante (G0242)",
+          "conceito": true,
+          "texto": "Na prova G0242, a substância irrigadora considerada dissecante foi o álcool isopropílico a 70%. As erradas eram EDTA a 17%, hipoclorito de sódio a 5,25% com glicerina, hipoclorito de sódio a 2,6% e água de cal. Ideia: o álcool é usado para secar o canal, e as concentrações citadas vêm da questão (PENDENTE de livro)."
+        },
+        {
+          "ref": "Medicação intracanal (G0316)",
+          "conceito": true,
+          "texto": "A prova G0316 (2025) trouxe quatro afirmativas sobre medicação intracanal e o gabarito foi I e II. I: o paramonoclorofenol canforado é indicado para dentes com polpa necrosada, após o preparo biomecânico. II: o hidróxido de cálcio serve para várias finalidades (tampão apical, apicificação, apicigênese, exsudação persistente, reabsorções, perfurações, traumatismos e obturação provisória do canal). Estavam erradas: III (formocresol como medicação em polpa vital e biopulpectomias) e IV (Otosporin em necropulpectomia por infecção restrita à porção profunda da polpa)."
+        },
+        {
+          "ref": "Obturação · propriedades do material obturador (G0155)",
+          "conceito": true,
+          "texto": "A prova G0155 listou propriedades de um bom material obturador, “EXCETO”: não deve irritar o periápice, não deve contrair depois de inserido, deve ser impermeável à umidade, não deve manchar o dente. A única errada, marcada como resposta, foi “deve ser radiolúcido”: o material deve aparecer na radiografia (ser radiopaco), e não o contrário."
+        },
+        {
+          "ref": "Obturação · cones de guta-percha (G0148)",
+          "conceito": true,
+          "texto": "Na prova G0148 a banca perguntou uma desvantagem dos cones de guta-percha, e o gabarito oficial foi “mobilidade para ser utilizado em condutos estreitos”. As outras opções eram vantagens (boa adaptação, tolerância tecidual, facilidade de remoção) e a possibilidade de amolecimento e plastificação por calor ou solventes. O gabarito é coerente com a ideia de que a guta-percha é pouco rígida, o que dificulta usá-la em condutos estreitos. A revisão de Vishwanath e Rao (2019) lista como desvantagens da guta-percha “falta de rigidez” e “facilmente deslocada pela pressão”, e como vantagens “pode ser amolecida” e “facilmente removida”. Isso é coerente com o gabarito (a fonte lista “falta de rigidez”, mas não cita condutos estreitos). A palavra “mobilidade” pode ser erro de transcrição (conferir no PDF da prova)."
+        },
+        {
+          "ref": "Obturação · cimentos endodônticos (G0150)",
+          "conceito": true,
+          "texto": "Na prova G0150 pediam o cimento endodôntico que NÃO existe: o gabarito foi “à base de bromo”. Existem cimentos à base de ionômero de vidro, de hidróxido de cálcio, de resinas plásticas e de óxido de zinco e eugenol. Questões de “EXCETO” com um item absurdo: procure o que não é material dentário conhecido."
+        },
+        {
+          "ref": "Obturação · técnica de Schilder (G0241)",
+          "conceito": true,
+          "texto": "Na prova G0241 a condensação vertical da guta-percha aquecida (técnica de Schilder) exige uma série de condensadores graduados e um instrumento condutor de calor. As erradas diziam que não precisa de cone principal, que descarta o cimento, que não faz preparo com limas e que associa aparelhos eletroeletrônicos e rotatórios."
+        },
+        {
+          "ref": "Acidentes e retratamento · acidentes em Endodontia (G0055)",
+          "conceito": true,
+          "texto": "A prova G0055 trouxe cinco afirmativas de V ou F sobre degrau, sobreinstrumentação, subinstrumentação, falso canal e perfuração coronária; o gabarito oficial foi F – V – V – F – V. Os enunciados que ficaram verdadeiros foram: descuido na determinação e manutenção do comprimento de trabalho como causa de sobreinstrumentação; obstrução do segmento apical por detritos do preparo como causa de subinstrumentação; e perfuração coronária como comunicação acidental da câmara pulpar com o meio bucal e/ou os tecidos perirradiculares. Os itens sobre degrau e falso canal ficaram como falsos. Os nomes foram reproduzidos de acordo com o enunciado oficial da questão; não generalize essas definições para todos os protocolos clínicos."
+        },
+        {
+          "ref": "Acidentes e retratamento · quando retratar (G0063)",
+          "conceito": true,
+          "texto": "Na prova G0063, o retratamento endodôntico pode ser indicado quando o exame radiográfico revela espaço do ligamento periodontal aumentado, maior que 2 mm, ou evidência de progressão de uma reabsorção radicular. As erradas descreviam situações de sucesso (sem sintomas, obturação adequada, reparo ósseo). Lembre: retratamento é para insucesso evidente; o valor 2 mm vem da questão (PENDENTE de livro)."
+        },
+        {
+          "ref": "Acidentes e retratamento · cirurgia perirradicular (RCS England 2020)",
+          "conceito": true,
+          "texto": "Cirurgia perirradicular, no texto da diretriz, é a ressecção do ápice com obturação retrógrada (“Root-end resection and retrograde root-filling”), usada quando o tratamento pelo canal não resolve; na G0063 a banca a comparou com o retratamento. Fonte: Royal College of Surgeons of England, Faculty of Dental Surgery, Guidelines for Periradicular Surgery (2020, coord. Alison Qualtrough), https://www.gloshospitals.nhs.uk/documents/14548/FDS_RCS_Periradicular_Surgery_Guidelines_2020.pdf, texto conferido em 24/11/2026. O próprio texto diz que não é revisão sistemática, e sim consenso multidisciplinar baseado na melhor evidência disponível; é diretriz do Reino Unido. Indicações (resumo fiel): tratamento ortógrado que não pode ser concluído por exsudação persistente apesar de desbridamento químico-mecânico repetido; doença perirradicular sintomática ou progressiva em dente bem obturado em que o retratamento “has failed”, poderia comprometer a integridade estrutural do dente, destruir restauração ou prótese fixa, ou exigir remover um pino com alto risco de fratura radicular; anomalias iatrogênicas ou do desenvolvimento que impedem o tratamento ortógrado; necessidade de biópsia; visualização quando se suspeita de perfuração ou fratura radicular. Os resultados pioram (contraindicações) quando: “primary disease has not been stabilised”, “the coronal seal is poor”, “the tooth is unrestorable”, há suspeita de “a combined periodontal-endodontic lesion”, “there is a root fracture”, o suporte ósseo ou o comprimento da raiz ficam comprometidos, o acesso é difícil ou o risco supera a vantagem, há fatores relevantes na história médica, ou o operador não tem habilidade, experiência, equipamento ou materiais. Obturação retrógrada: “Amalgam has been widely used in the past but it is no longer recommended because of its poor biocompatibility and poor success rates.” e “Robust clinical evidence for determining the most superior root-end filling material does not yet exist.” Macete: cirurgia é a saída quando o canal não resolve e o retratamento não é bom caminho; lesão endoperiodontal, fratura radicular e dente sem restauração possível são freios. PENDENTE (não escrito): materiais bioativos preferidos, técnica de incisão, ultrassom e taxas de sucesso."
+        },
+        {
+          "ref": "Lesão endoperiodontal · esboço (PENDENTE)",
+          "conceito": true,
+          "texto": "Lesão endoperiodontal é aquela em que a infecção do sistema de canais e a do periodonto se juntam. Na G0091 (prova de Periodontia, 2019) a banca a pôs entre os critérios de dente não aconselhável para tratamento. Na cirurgia perirradicular ela é fator limitante: a diretriz do RCS England (2020) lista como contraindicação o caso em que o exame clínico e radiográfico ou a exploração cirúrgica sugerem “a combined periodontal-endodontic lesion”. PENDENTE: classificação, diagnóstico diferencial (dano radicular como fratura, perfuração, reabsorção) e sequência de tratamento, que dependem do artigo de Herrera et al. (J Periodontol 2018;89 Suppl 1:S85-S102), cujo texto completo não foi aberto; nada disso foi escrito. Infecções odontogênicas além do abscesso periapical agudo (celulite, espaços fasciais, conduta geral): também PENDENTE, sem fonte aberta lida."
+        },
+        {
+          "ref": "Urgências em Endodontia (G0046)",
+          "conceito": true,
+          "texto": "A prova G0046 (2019) foi uma questão de cinco afirmativas e a resposta foi I, IV e V. Certas: exame radiográfico sistemático, complementado por tomografia se necessário (I); pulpite reversível pode ser resolvida com remoção do tecido cariado e curativo com cimento de óxido de zinco e eugenol (IV); na hipersensibilidade dentinária, pode-se iniciar com aplicação profissional de nitrato de potássio e uso de dentifrícios dessensibilizantes (V). Erradas: tratar hipersensibilidade imediatamente com pulpectomia (III) e a afirmativa II (anamnese, exame clínico visual e testes de sensibilidade), que o gabarito não considerou correta."
+        },
+        {
+          "ref": "Radiologia aplicada à Endodontia (G0057)",
+          "conceito": true,
+          "texto": "Na prova G0057, a afirmativa oficial foi que, em alguns acessos complicados, a radiografia interproximal orienta o endodontista, mostrando a relação assoalho-teto da câmara pulpar com um mínimo de deformação. As erradas trocavam angulação horizontal e vertical, afirmavam que uma única tomada periapical ortorradial localiza reabsorções e descreviam a técnica da bissetriz com o raio central deslocando-se “longitudinalmente” à bissetriz (alternativa A, errada pelo gabarito). Correto: na técnica da bissetriz, o raio central incide PERPENDICULAR à linha imaginária que divide ao meio o ângulo entre o longo eixo do dente e o filme (e não “longitudinalmente”). Na técnica do paralelismo, o filme fica paralelo ao dente e o raio é perpendicular aos dois (Yen e Yeung, 2023)."
+        },
+        {
+          "ref": "Reabsorções · causas da reabsorção externa (G0243)",
+          "conceito": true,
+          "texto": "Na prova G0243, as causas prováveis associadas à reabsorção radicular externa foram trauma oclusal acentuado e forças ortodônticas excessivas. As erradas misturavam tratamento endodôntico e pulpotomias (com formocresol ou hidróxido de cálcio)."
+        },
+        {
+          "ref": "Reabsorções · classificação de Machado et al. (2022) (G0318)",
+          "conceito": true,
+          "texto": "A prova G0318 (2025) citou Machado et al. (2022) e deu três afirmativas, todas copiando descrições do texto do autor; o gabarito foi II e III. II: reabsorções externas apicais acometem ápices de dentes necrosados ou tratados endodonticamente, com lesões periapicais crônicas e, em geral, assintomáticas. III: reabsorções externas progressivas substitutivas ocorrem em geral após traumatismos severos e procedimentos radicais, como avulsão, intrusão e transplantes, e são irreversíveis. A afirmativa I (interna inflamatória com diminuição de volume em cavidade pulpar) foi marcada como errada. PENDENTE: ler o artigo citado, ainda não conferido."
+        }
       ],
       "tabela": {
         "titulo": "Endodontia: o que a banca já cobrou, em uma olhada",
-        "cab": ["Assunto", "O que a questão marcou como certo", "Código"],
+        "cab": [
+          "Assunto",
+          "O que a questão marcou como certo",
+          "Código"
+        ],
         "linhas": [
-          ["Sequência do exame", "Inspeção, percussão, exame radiográfico, teste de vitalidade", "G0240"],
-          ["Sensação da polpa", "Dor, qualquer que seja o estímulo", "G0248"],
-          ["Sensibilidade dentinária", "Movimentação do fluido nos túbulos dentinários", "G0246"],
-          ["Dor pulsátil, alívio com frio, abscesso na polpa", "Pulpite aguda purulenta", "G0147"],
-          ["Cárie profunda, sem sintoma, térmico normal, trauma antigo", "Pulpite irreversível assintomática", "G0302"],
-          ["Necrose por liquefação", "Necropulpectomia", "G0317"],
-          ["Alterações periapicais agudas", "Periodontite apical aguda e abscesso dentoalveolar agudo", "G0237"],
-          ["Etapa que dá conformidade à cavidade pulpar", "Forma de conveniência", "G0054"],
-          ["Irrigante dissecante", "Álcool isopropílico a 70%", "G0242"],
-          ["Cimento que não existe", "À base de bromo", "G0150"],
-          ["Condensação vertical aquecida (Schilder)", "Condensadores graduados e instrumento condutor de calor", "G0241"],
-          ["Causas de reabsorção externa", "Trauma oclusal acentuado e forças ortodônticas excessivas", "G0243"]
+          [
+            "Sequência do exame",
+            "Inspeção, percussão, exame radiográfico, teste de vitalidade",
+            "G0240"
+          ],
+          [
+            "Sensação da polpa",
+            "Dor, qualquer que seja o estímulo",
+            "G0248"
+          ],
+          [
+            "Sensibilidade dentinária",
+            "Movimentação do fluido nos túbulos dentinários",
+            "G0246"
+          ],
+          [
+            "Dor pulsátil, alívio com frio, abscesso na polpa",
+            "Pulpite aguda purulenta",
+            "G0147"
+          ],
+          [
+            "Cárie profunda, sem sintoma, térmico normal, trauma antigo",
+            "Pulpite irreversível assintomática",
+            "G0302"
+          ],
+          [
+            "Necrose por liquefação",
+            "Necropulpectomia",
+            "G0317"
+          ],
+          [
+            "Alterações periapicais agudas",
+            "Periodontite apical aguda e abscesso dentoalveolar agudo",
+            "G0237"
+          ],
+          [
+            "Etapa que dá conformidade à cavidade pulpar",
+            "Forma de conveniência",
+            "G0054"
+          ],
+          [
+            "Irrigante dissecante",
+            "Álcool isopropílico a 70%",
+            "G0242"
+          ],
+          [
+            "Cimento que não existe",
+            "À base de bromo",
+            "G0150"
+          ],
+          [
+            "Condensação vertical aquecida (Schilder)",
+            "Condensadores graduados e instrumento condutor de calor",
+            "G0241"
+          ],
+          [
+            "Causas de reabsorção externa",
+            "Trauma oclusal acentuado e forças ortodônticas excessivas",
+            "G0243"
+          ]
         ]
       },
       "macete": "Para qualquer caso clínico de endodontia, responda em ordem: (1) a polpa está viva ou morta? (2) dói sozinha ou só com estímulo? (3) o periápice está envolvido (percussão, inchaço, radiografia)? Depois escolha o tratamento: polpa viva = biopulpectomia ou conservação; polpa morta = necropulpectomia; dente já tratado com sinais de insucesso = retratamento (G0063).",
@@ -108,11 +312,52 @@
       "mapa": {
         "centro": "Endodontia",
         "ramos": [
-          { "t": "Diagnóstico", "f": ["Exame clínico completo", "Sequência: inspeção, percussão, radiografia, vitalidade", "Pulpites e periapicais", "Polpa só sente dor"] },
-          { "t": "Acesso e anatomia", "f": ["Forma de conveniência", "Direção de trepanação", "Comprimento dos dentes (PENDENTE)", "Diâmetro anatômico apical"] },
-          { "t": "Preparo", "f": ["Lima K e conicidade", "Irrigação: hipoclorito, EDTA, álcool", "Medicação intracanal"] },
-          { "t": "Obturação", "f": ["Guta-percha e cimentos", "Propriedades do material", "Condensação vertical de Schilder"] },
-          { "t": "Intercorrências", "f": ["Acidentes e perfurações", "Retratamento", "Urgências", "Reabsorções"] }
+          {
+            "t": "Diagnóstico",
+            "f": [
+              "Exame clínico completo",
+              "Sequência: inspeção, percussão, radiografia, vitalidade",
+              "Pulpites e periapicais",
+              "Polpa só sente dor"
+            ]
+          },
+          {
+            "t": "Acesso e anatomia",
+            "f": [
+              "Forma de conveniência",
+              "Direção de trepanação",
+              "Comprimento dos dentes (PENDENTE)",
+              "Diâmetro anatômico apical"
+            ]
+          },
+          {
+            "t": "Preparo",
+            "f": [
+              "Lima K e conicidade",
+              "Irrigação: hipoclorito, EDTA, álcool",
+              "Medicação intracanal",
+              "Odontometria e localizador (AAE 2019)"
+            ]
+          },
+          {
+            "t": "Obturação",
+            "f": [
+              "Guta-percha e cimentos",
+              "Propriedades do material",
+              "Condensação vertical de Schilder"
+            ]
+          },
+          {
+            "t": "Intercorrências",
+            "f": [
+              "Acidentes e perfurações",
+              "Retratamento",
+              "Urgências",
+              "Reabsorções",
+              "Cirurgia perirradicular (RCS 2020)",
+              "Lesão endoperiodontal (PENDENTE)"
+            ]
+          }
         ]
       }
     },
@@ -120,43 +365,161 @@
       "id": "dentistica",
       "titulo": "Dentística e materiais",
       "nivel": 3,
-      "topicosBanco": ["dent"],
+      "topicosBanco": [
+        "dent"
+      ],
       "qtdQuestoes": 18,
       "intro": "21 questões únicas em 5 edições (2019: 2; 2021P: 7; 2023: 6; 2025: 1; 2021C: 5). Três foram anuladas (G0142, G0227 e G0231) e ficam de fora do treino: não use o texto delas como resposta certa. Das 21 únicas, 18 caíram na prova de Clínico Geral (dado do roteiro): para quem faz CG, esta é a lição mais importante da apostila. Sobram 18 questões usáveis para o treino. Subassuntos: materiais restauradores (6 questões), preparo cavitário (4 usáveis, mais 2 anuladas), proteção do complexo dentinopulpar (3 usáveis, mais 1 anulada), sistemas adesivos (2) e, com 1 questão cada, restauração de dente anterior fraturado, dente tratado endodonticamente e clareamento.",
       "pontos": [
-        { "ref": "Materiais · cimento de ionômero de vidro (G0047)", "conceito": true, "texto": "A prova G0047 (2019) pediu associar propriedades do ionômero de vidro (adesividade, liberação de flúor, compatibilidade biológica, resistência à tração, coeficiente de expansão térmica) a descrições. O gabarito foi B – C – E – A – D, isto é: maior ação nas primeiras 24 a 48 horas = liberação de flúor; rápida precipitação do ácido poliacrílico pelos íons cálcio dos túbulos = compatibilidade biológica; maior vedamento marginal ao longo do tempo = coeficiente de expansão térmica; união dos grupos carboxílicos do cimento e do dente = adesividade; importante propriedade para indicar como base = resistência à tração. Coloque cada propriedade na sua frase e ligue." },
-        { "ref": "Materiais · amálgama (G0139)", "conceito": true, "texto": "Na prova G0139 pediram a alternativa que NÃO é indicação do amálgama, e o gabarito oficial, depois dos recursos, foi “quando há grande perda de estrutura dental”. Atenção: no gabarito preliminar a resposta era “realizar em caninos, por suportar grande carga”, e a banca a trocou depois dos recursos. Pela lógica do gabarito final, as outras alternativas (classe I e II, caninos, bruxismo, má higiene bucal) foram tratadas como indicações. Não leve isso como regra clínica. A literatura recente trata o amálgama como material de dentes POSTERIORES (a revisão Cochrane citada por Bailey, 2025, compara resina composta direta com amálgama em dentes permanentes posteriores) e relata maior sobrevida do amálgama em pacientes de alto risco de cárie (Bailey, 2025: a diferença foi estatisticamente significativa, mas com diferença clínica mínima, “minimal clinical difference”); a resina tem clara vantagem estética. Não achei fonte que indique amálgama em canino. Pela banca (gabarito final), “grande perda de estrutura” é o que NÃO é indicação; no preliminar era “caninos”. Na prova, siga o gabarito; para estudar, guarde que a pesquisa atual trata o amálgama como material de dentes posteriores; a lista de indicações (classes I e II) vem da questão e continua PENDENTE de livro de Dentística. PENDENTE: lista de indicações do amálgama em livro de Dentística." },
-        { "ref": "Materiais · resina composta (G0251)", "conceito": true, "texto": "Na prova G0251, uma característica importante da resina composta é a resistência ao desgaste. As erradas eram desvantagens: estética desfavorável, instabilidade de cor, dificuldade de polimento e manipulação complexa. Ao ver uma lista só de defeitos, a resposta é a única qualidade." },
-        { "ref": "Materiais · fator C (G0253)", "conceito": true, "texto": "Na prova G0253, o fator C (fator de configuração cavitária) expressa o quanto de tensão a resina transferirá às paredes durante a fotopolimerização; para uma cavidade classe I preenchida em um só incremento, o gabarito oficial foi 5 (as outras eram 1,5, 3, 1 e 2). Conceito: o fator C é a razão entre superfícies aderidas e superfícies livres da resina; quanto maior, maior a tensão. Fórmula (Feilzer, De Gee e Davidson, 1987): fator C = superfícies aderidas ÷ superfícies livres. Numa caixa de classe I preenchida de uma vez, 5 paredes estão aderidas e 1 face (a oclusal) fica livre: 5 ÷ 1 = 5. Num estudo de 2011 (Ghulman), a cavidade com todas as paredes aderidas foi descrita como “C-factor = 5/1”." },
-        { "ref": "Materiais · resina bulk fill (G0367)", "conceito": true, "texto": "Na prova G0367 (2021C), a vantagem da resina bulk fill em dentes posteriores é a redução da tensão na contração de polimerização. As erradas diziam aumento da resistência do dente, adaptação da cor, melhoria da estética e melhor polimento." },
-        { "ref": "Materiais · ensaio restaurador com bis-acryl (G0357)", "conceito": true, "texto": "Na prova G0357 (2021C), o ensaio restaurador intraoral em vários dentes anteriores, feito com uma resina para restaurações provisórias, usa a resina bis-acryl. As erradas eram resina bulk fill flow, nanoparticulada, Interlig e Ribbond." },
-        { "ref": "Preparo cavitário · número de faces (G0141)", "conceito": true, "texto": "Na prova G0141, uma lesão que acomete 3 faces é denominada cavidade complexa. As erradas eram concomitante, superficial, composta e circundante. Conceito geral da classificação por faces: cavidade simples envolve uma superfície; composta envolve duas superfícies; complexa envolve três ou mais superfícies (Oxford Reference, Black’s classification of cavities, https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095509657). A resposta oficial desta questão confirma complexa para três faces. (O gabarito preliminar era outro, “composta”; a banca mudou depois dos recursos.)" },
-        { "ref": "Preparo cavitário · ponta diamantada e lesão oculta (G0143)", "conceito": true, "texto": "A prova G0143 trouxe uma afirmação “I PORQUE II”: I diz que o preparo deve ser feito com ponta diamantada, e II diz que a lesão de cárie está oculta, com esmalte preservado. O gabarito oficial foi “I e II estão incorretas”. Em questões “PORQUE”, avalie cada frase separadamente e depois a relação entre elas. (O gabarito preliminar era outro, “I e II corretas e a II justifica a I”; a banca mudou depois dos recursos.)" },
-        { "ref": "Preparo cavitário · classe I de Black (G0144)", "conceito": true, "texto": "Na prova G0144, lesões em áreas de má coalescência de esmalte, como faces oclusais de posteriores, sulcos palatinos de molares superiores e região de cíngulo, são classe I. As outras alternativas eram as classes II, III, IV e V. Conceito geral verificado na classificação de Black: I = fóssulas e fissuras, incluindo superfícies oclusais de molares/pré-molares e fóssulas linguais de incisivos superiores; II = faces proximais de posteriores; III = faces proximais de anteriores sem o ângulo incisal; IV = faces proximais de anteriores com o ângulo incisal; V = terço cervical das faces vestibular, bucal, lingual ou palatina (Oxford Reference, Black’s classification of cavities, https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095509657)." },
-        { "ref": "Preparo cavitário · classe V para amálgama (G0235)", "conceito": true, "texto": "Na prova G0235, as características de uma cavidade classe V para amálgama no dente 35 eram: ângulo cavossuperficial nítido, livre de prismas fragilizados e sem bisel. As erradas falavam de ângulos internos de 90 graus, retenções obrigatórias na parede axial, parede axial côncava em todos os sentidos e paredes convergentes para oclusal." },
-        { "ref": "Proteção do complexo dentinopulpar · como definir a profundidade (G0137)", "conceito": true, "texto": "A prova G0137 perguntou como se define a profundidade da cavidade, e a resposta oficial foi pela dentina remanescente após a remoção da lesão. Não é pela classificação de Black, nem por radiografia antes de abrir, nem pelo contato oclusal. A profundidade é medida depois da remoção da cárie." },
-        { "ref": "Proteção do complexo dentinopulpar · remanescente de dentina (G0138)", "conceito": true, "texto": "Na prova G0138, uma cavidade com 1,8 mm de remanescente dentinário foi julgada como média (as outras alternativas eram muito profunda, rasa, profunda e muito rasa). O número vem da questão. PENDENTE: as faixas de cada categoria (rasa, média, profunda e muito profunda) em livro; não decore só o 1,8." },
-        { "ref": "Proteção do complexo dentinopulpar · exposição pulpar (G0244)", "conceito": true, "texto": "Na prova G0244, fonte Hargreaves, Caminhos da polpa: cárie profunda no 16, classe II, restauração em resina composta, exposição da polpa durante o corte de dentina sadia, com isolamento absoluto. A sequência oficial de proteção foi: hidróxido de cálcio P.A. + cimento de hidróxido de cálcio + cimento ionômero de vidro + sistema adesivo. As erradas omitiam camadas (por exemplo, sem o hidróxido de cálcio P.A.) ou usavam óxido de zinco e eugenol. Edição do livro PENDENTE." },
-        { "ref": "Sistemas adesivos · vantagens do uso (G0048)", "conceito": true, "texto": "Na prova G0048 (2019), a vantagem dos adesivos foi a melhor distribuição do estresse funcional sobre o dente pela união adesiva. As erradas diziam o contrário: diminui a resistência das paredes, promove selamento mas não protege a polpa, aumenta sensibilidade pós-operatória e aumenta manchamento marginal." },
-        { "ref": "Sistemas adesivos · adesivos universais (G0361)", "conceito": true, "texto": "Na prova G0361 (2021C), os adesivos universais podem ser usados com a técnica autocondicionante ou convencional. As erradas diziam que exigem condicionamento ácido sempre, que têm primer, adesivo e ácido em frascos separados, que removem todo o smear layer e que são de três passos." },
-        { "ref": "Dente anterior fraturado · guia palatina (G0313)", "conceito": true, "texto": "A prova G0313 (2025) tratou de restauração direta em resina no dente 11 com bordo incisal fraturado e dentina exposta, pela técnica da guia palatina. A afirmativa certa foi que, na primeira sessão, é interessante fazer uma simulação, sem condicionamento ácido, sobre o próprio dente fraturado, com camadas incrementais de resina, para prever o resultado final. As erradas: moldagem depois de fazer a restauração, ponta 1014, adaptar a guia de silicone e dizer que só se faz com isolamento absoluto e anestesia." },
-        { "ref": "Dente tratado endodonticamente · pino de fibra de vidro (G0354)", "conceito": true, "texto": "A prova G0354 (2021C) pediu o que NÃO é vantagem do pino de fibra de vidro em relação ao núcleo metálico: “alto módulo de elasticidade comparado com a dentina, podendo ocasionar fraturas dentárias”. As vantagens certas citadas: técnica simplificada, propriedades mecânicas próximas às da estrutura dentária, menor desgaste e adesão à dentina por cimentos resinosos." },
-        { "ref": "Clareamento · reação adversa (G0358)", "conceito": true, "texto": "Na prova G0358 (2021C), a reação adversa ao clareamento com gel em dentes vitais foi a hipersensibilidade. As erradas eram oxidação, recessão gengival, gengivite e abfração." }
+        {
+          "ref": "Materiais · cimento de ionômero de vidro (G0047)",
+          "conceito": true,
+          "texto": "A prova G0047 (2019) pediu associar propriedades do ionômero de vidro (adesividade, liberação de flúor, compatibilidade biológica, resistência à tração, coeficiente de expansão térmica) a descrições. O gabarito foi B – C – E – A – D, isto é: maior ação nas primeiras 24 a 48 horas = liberação de flúor; rápida precipitação do ácido poliacrílico pelos íons cálcio dos túbulos = compatibilidade biológica; maior vedamento marginal ao longo do tempo = coeficiente de expansão térmica; união dos grupos carboxílicos do cimento e do dente = adesividade; importante propriedade para indicar como base = resistência à tração. Coloque cada propriedade na sua frase e ligue."
+        },
+        {
+          "ref": "Materiais · amálgama (G0139)",
+          "conceito": true,
+          "texto": "Na prova G0139 pediram a alternativa que NÃO é indicação do amálgama, e o gabarito oficial, depois dos recursos, foi “quando há grande perda de estrutura dental”. Atenção: no gabarito preliminar a resposta era “realizar em caninos, por suportar grande carga”, e a banca a trocou depois dos recursos. Pela lógica do gabarito final, as outras alternativas (classe I e II, caninos, bruxismo, má higiene bucal) foram tratadas como indicações. Não leve isso como regra clínica. A literatura recente trata o amálgama como material de dentes POSTERIORES (a revisão Cochrane citada por Bailey, 2025, compara resina composta direta com amálgama em dentes permanentes posteriores) e relata maior sobrevida do amálgama em pacientes de alto risco de cárie (Bailey, 2025: a diferença foi estatisticamente significativa, mas com diferença clínica mínima, “minimal clinical difference”); a resina tem clara vantagem estética. Não achei fonte que indique amálgama em canino. Pela banca (gabarito final), “grande perda de estrutura” é o que NÃO é indicação; no preliminar era “caninos”. Na prova, siga o gabarito; para estudar, guarde que a pesquisa atual trata o amálgama como material de dentes posteriores; a lista de indicações (classes I e II) vem da questão e continua PENDENTE de livro de Dentística. PENDENTE: lista de indicações do amálgama em livro de Dentística."
+        },
+        {
+          "ref": "Materiais · resina composta (G0251)",
+          "conceito": true,
+          "texto": "Na prova G0251, uma característica importante da resina composta é a resistência ao desgaste. As erradas eram desvantagens: estética desfavorável, instabilidade de cor, dificuldade de polimento e manipulação complexa. Ao ver uma lista só de defeitos, a resposta é a única qualidade."
+        },
+        {
+          "ref": "Materiais · fator C (G0253)",
+          "conceito": true,
+          "texto": "Na prova G0253, o fator C (fator de configuração cavitária) expressa o quanto de tensão a resina transferirá às paredes durante a fotopolimerização; para uma cavidade classe I preenchida em um só incremento, o gabarito oficial foi 5 (as outras eram 1,5, 3, 1 e 2). Conceito: o fator C é a razão entre superfícies aderidas e superfícies livres da resina; quanto maior, maior a tensão. Fórmula (Feilzer, De Gee e Davidson, 1987): fator C = superfícies aderidas ÷ superfícies livres. Numa caixa de classe I preenchida de uma vez, 5 paredes estão aderidas e 1 face (a oclusal) fica livre: 5 ÷ 1 = 5. Num estudo de 2011 (Ghulman), a cavidade com todas as paredes aderidas foi descrita como “C-factor = 5/1”."
+        },
+        {
+          "ref": "Materiais · resina bulk fill (G0367)",
+          "conceito": true,
+          "texto": "Na prova G0367 (2021C), a vantagem da resina bulk fill em dentes posteriores é a redução da tensão na contração de polimerização. As erradas diziam aumento da resistência do dente, adaptação da cor, melhoria da estética e melhor polimento."
+        },
+        {
+          "ref": "Materiais · ensaio restaurador com bis-acryl (G0357)",
+          "conceito": true,
+          "texto": "Na prova G0357 (2021C), o ensaio restaurador intraoral em vários dentes anteriores, feito com uma resina para restaurações provisórias, usa a resina bis-acryl. As erradas eram resina bulk fill flow, nanoparticulada, Interlig e Ribbond."
+        },
+        {
+          "ref": "Preparo cavitário · número de faces (G0141)",
+          "conceito": true,
+          "texto": "Na prova G0141, uma lesão que acomete 3 faces é denominada cavidade complexa. As erradas eram concomitante, superficial, composta e circundante. Conceito geral da classificação por faces: cavidade simples envolve uma superfície; composta envolve duas superfícies; complexa envolve três ou mais superfícies (Oxford Reference, Black’s classification of cavities, https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095509657). A resposta oficial desta questão confirma complexa para três faces. (O gabarito preliminar era outro, “composta”; a banca mudou depois dos recursos.)"
+        },
+        {
+          "ref": "Preparo cavitário · ponta diamantada e lesão oculta (G0143)",
+          "conceito": true,
+          "texto": "A prova G0143 trouxe uma afirmação “I PORQUE II”: I diz que o preparo deve ser feito com ponta diamantada, e II diz que a lesão de cárie está oculta, com esmalte preservado. O gabarito oficial foi “I e II estão incorretas”. Em questões “PORQUE”, avalie cada frase separadamente e depois a relação entre elas. (O gabarito preliminar era outro, “I e II corretas e a II justifica a I”; a banca mudou depois dos recursos.)"
+        },
+        {
+          "ref": "Preparo cavitário · classe I de Black (G0144)",
+          "conceito": true,
+          "texto": "Na prova G0144, lesões em áreas de má coalescência de esmalte, como faces oclusais de posteriores, sulcos palatinos de molares superiores e região de cíngulo, são classe I. As outras alternativas eram as classes II, III, IV e V. Conceito geral verificado na classificação de Black: I = fóssulas e fissuras, incluindo superfícies oclusais de molares/pré-molares e fóssulas linguais de incisivos superiores; II = faces proximais de posteriores; III = faces proximais de anteriores sem o ângulo incisal; IV = faces proximais de anteriores com o ângulo incisal; V = terço cervical das faces vestibular, bucal, lingual ou palatina (Oxford Reference, Black’s classification of cavities, https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095509657)."
+        },
+        {
+          "ref": "Preparo cavitário · classe V para amálgama (G0235)",
+          "conceito": true,
+          "texto": "Na prova G0235, as características de uma cavidade classe V para amálgama no dente 35 eram: ângulo cavossuperficial nítido, livre de prismas fragilizados e sem bisel. As erradas falavam de ângulos internos de 90 graus, retenções obrigatórias na parede axial, parede axial côncava em todos os sentidos e paredes convergentes para oclusal."
+        },
+        {
+          "ref": "Proteção do complexo dentinopulpar · como definir a profundidade (G0137)",
+          "conceito": true,
+          "texto": "A prova G0137 perguntou como se define a profundidade da cavidade, e a resposta oficial foi pela dentina remanescente após a remoção da lesão. Não é pela classificação de Black, nem por radiografia antes de abrir, nem pelo contato oclusal. A profundidade é medida depois da remoção da cárie."
+        },
+        {
+          "ref": "Proteção do complexo dentinopulpar · remanescente de dentina (G0138)",
+          "conceito": true,
+          "texto": "Na prova G0138, uma cavidade com 1,8 mm de remanescente dentinário foi julgada como média (as outras alternativas eram muito profunda, rasa, profunda e muito rasa). O número vem da questão. PENDENTE: as faixas de cada categoria (rasa, média, profunda e muito profunda) em livro; não decore só o 1,8."
+        },
+        {
+          "ref": "Proteção do complexo dentinopulpar · exposição pulpar (G0244)",
+          "conceito": true,
+          "texto": "Na prova G0244, fonte Hargreaves, Caminhos da polpa: cárie profunda no 16, classe II, restauração em resina composta, exposição da polpa durante o corte de dentina sadia, com isolamento absoluto. A sequência oficial de proteção foi: hidróxido de cálcio P.A. + cimento de hidróxido de cálcio + cimento ionômero de vidro + sistema adesivo. As erradas omitiam camadas (por exemplo, sem o hidróxido de cálcio P.A.) ou usavam óxido de zinco e eugenol. Edição do livro PENDENTE."
+        },
+        {
+          "ref": "Sistemas adesivos · vantagens do uso (G0048)",
+          "conceito": true,
+          "texto": "Na prova G0048 (2019), a vantagem dos adesivos foi a melhor distribuição do estresse funcional sobre o dente pela união adesiva. As erradas diziam o contrário: diminui a resistência das paredes, promove selamento mas não protege a polpa, aumenta sensibilidade pós-operatória e aumenta manchamento marginal."
+        },
+        {
+          "ref": "Sistemas adesivos · adesivos universais (G0361)",
+          "conceito": true,
+          "texto": "Na prova G0361 (2021C), os adesivos universais podem ser usados com a técnica autocondicionante ou convencional. As erradas diziam que exigem condicionamento ácido sempre, que têm primer, adesivo e ácido em frascos separados, que removem todo o smear layer e que são de três passos."
+        },
+        {
+          "ref": "Dente anterior fraturado · guia palatina (G0313)",
+          "conceito": true,
+          "texto": "A prova G0313 (2025) tratou de restauração direta em resina no dente 11 com bordo incisal fraturado e dentina exposta, pela técnica da guia palatina. A afirmativa certa foi que, na primeira sessão, é interessante fazer uma simulação, sem condicionamento ácido, sobre o próprio dente fraturado, com camadas incrementais de resina, para prever o resultado final. As erradas: moldagem depois de fazer a restauração, ponta 1014, adaptar a guia de silicone e dizer que só se faz com isolamento absoluto e anestesia."
+        },
+        {
+          "ref": "Dente tratado endodonticamente · pino de fibra de vidro (G0354)",
+          "conceito": true,
+          "texto": "A prova G0354 (2021C) pediu o que NÃO é vantagem do pino de fibra de vidro em relação ao núcleo metálico: “alto módulo de elasticidade comparado com a dentina, podendo ocasionar fraturas dentárias”. As vantagens certas citadas: técnica simplificada, propriedades mecânicas próximas às da estrutura dentária, menor desgaste e adesão à dentina por cimentos resinosos."
+        },
+        {
+          "ref": "Clareamento · reação adversa (G0358)",
+          "conceito": true,
+          "texto": "Na prova G0358 (2021C), a reação adversa ao clareamento com gel em dentes vitais foi a hipersensibilidade. As erradas eram oxidação, recessão gengival, gengivite e abfração."
+        }
       ],
       "tabela": {
         "titulo": "Dentística: respostas que a banca já marcou",
-        "cab": ["Assunto", "O que a questão marcou", "Código"],
+        "cab": [
+          "Assunto",
+          "O que a questão marcou",
+          "Código"
+        ],
         "linhas": [
-          ["Profundidade da cavidade", "Pela dentina remanescente após remover a lesão", "G0137"],
-          ["Número de faces: 3 faces", "Cavidade complexa", "G0141"],
-          ["Oclusais de posteriores e cíngulo", "Classe I", "G0144"],
-          ["Classe V para amálgama", "Ângulo cavossuperficial nítido, sem bisel", "G0235"],
-          ["Fator C da classe I em incremento único", "5 (5 paredes aderidas ÷ 1 face livre)", "G0253"],
-          ["Qualidade da resina composta", "Resistência ao desgaste", "G0251"],
-          ["Vantagem da bulk fill", "Redução da tensão de contração de polimerização", "G0367"],
-          ["Ensaio restaurador", "Bis-acryl", "G0357"],
-          ["Adesivo universal", "Pode ser usado autocondicionante ou convencional", "G0361"],
-          ["Efeito adverso do clareamento", "Hipersensibilidade", "G0358"]
+          [
+            "Profundidade da cavidade",
+            "Pela dentina remanescente após remover a lesão",
+            "G0137"
+          ],
+          [
+            "Número de faces: 3 faces",
+            "Cavidade complexa",
+            "G0141"
+          ],
+          [
+            "Oclusais de posteriores e cíngulo",
+            "Classe I",
+            "G0144"
+          ],
+          [
+            "Classe V para amálgama",
+            "Ângulo cavossuperficial nítido, sem bisel",
+            "G0235"
+          ],
+          [
+            "Fator C da classe I em incremento único",
+            "5 (5 paredes aderidas ÷ 1 face livre)",
+            "G0253"
+          ],
+          [
+            "Qualidade da resina composta",
+            "Resistência ao desgaste",
+            "G0251"
+          ],
+          [
+            "Vantagem da bulk fill",
+            "Redução da tensão de contração de polimerização",
+            "G0367"
+          ],
+          [
+            "Ensaio restaurador",
+            "Bis-acryl",
+            "G0357"
+          ],
+          [
+            "Adesivo universal",
+            "Pode ser usado autocondicionante ou convencional",
+            "G0361"
+          ],
+          [
+            "Efeito adverso do clareamento",
+            "Hipersensibilidade",
+            "G0358"
+          ]
         ]
       },
       "macete": "Nas questões de materiais, escreva ao lado de cada alternativa se ela é vantagem ou desvantagem e leia de novo o comando (“EXCETO”, “NÃO corresponde”): a maior parte dos erros vem de inverter o comando. Nas de cavidade, imagine o dente e desenhe as paredes antes de escolher.",
@@ -183,11 +546,48 @@
       "mapa": {
         "centro": "Dentística e materiais",
         "ramos": [
-          { "t": "Proteção pulpar", "f": ["Profundidade pela dentina remanescente", "Sequência de materiais (G0244)", "Exposição pulpar"] },
-          { "t": "Preparo cavitário", "f": ["Classificação de Black", "Faces: simples, composta, complexa", "Classe V e amálgama", "Ponta diamantada"] },
-          { "t": "Materiais", "f": ["Ionômero de vidro", "Amálgama", "Resina e fator C", "Bulk fill", "Bis-acryl"] },
-          { "t": "Adesivos", "f": ["Vantagens da adesão", "Universais"] },
-          { "t": "Casos especiais", "f": ["Guia palatina", "Pino de fibra", "Clareamento e sensibilidade"] }
+          {
+            "t": "Proteção pulpar",
+            "f": [
+              "Profundidade pela dentina remanescente",
+              "Sequência de materiais (G0244)",
+              "Exposição pulpar"
+            ]
+          },
+          {
+            "t": "Preparo cavitário",
+            "f": [
+              "Classificação de Black",
+              "Faces: simples, composta, complexa",
+              "Classe V e amálgama",
+              "Ponta diamantada"
+            ]
+          },
+          {
+            "t": "Materiais",
+            "f": [
+              "Ionômero de vidro",
+              "Amálgama",
+              "Resina e fator C",
+              "Bulk fill",
+              "Bis-acryl"
+            ]
+          },
+          {
+            "t": "Adesivos",
+            "f": [
+              "Vantagens da adesão",
+              "Universais"
+            ]
+          },
+          {
+            "t": "Casos especiais",
+            "f": [
+              "Guia palatina",
+              "Pino de fibra",
+              "Clareamento e sensibilidade"
+            ]
+          }
         ]
       }
     },
@@ -195,29 +595,91 @@
       "id": "traumatismo",
       "titulo": "Traumatismo dentoalveolar",
       "nivel": 3,
-      "topicosBanco": ["trauma"],
+      "topicosBanco": [
+        "trauma"
+      ],
       "qtdQuestoes": 14,
       "intro": "14 questões únicas em 5 edições (2019: 5; 2021P: 3; 2023: 2; 2025: 3; 2021C: 1), nenhuma anulada. Só 5 caíram na prova de Clínico Geral. Subassuntos: trauma na dentição decídua (5 questões), lesões dos tecidos de suporte (3), fraturas e polpa (2) e, com 1 questão cada, avulsão em permanente, exame do traumatizado, tecidos moles e escurecimento pós-trauma. As condutas citadas vêm das diretrizes da IADT de 2020 (fraturas e luxações; avulsão); a diretriz da dentição decídua continua PENDENTE. Conduta de trauma aqui é para estudo; não use para tratar paciente.",
       "pontos": [
-        { "ref": "Tecidos de suporte · concussão, subluxação e luxação (G0035, G0305, G0167)", "conceito": true, "texto": "Lesões dos tecidos de suporte são as que atingem o ligamento periodontal e o osso, sem fraturar o dente como um todo: concussão, subluxação, luxações (extrusiva, lateral e intrusiva) e avulsão. Na prova G0305 (2025), trauma de intensidade baixa a moderada com mobilidade e sem mudança de posição é subluxação. Na G0035 (2019), ruptura de algumas fibras do ligamento, dente afrouxado sem deslocamento e sangramento pelo sulco gengival também é subluxação (a concussão não tem mobilidade nem sangramento). Na G0167, o item que NÃO é lesão de tecido de suporte foi a fratura coronorradicular complicada, porque é fratura do dente. Subluxação aparece como resposta nas duas." },
-        { "ref": "Dentição decídua · concussão e tratamento imediato (G0070, G0043)", "conceito": true, "texto": "Na prova G0070, criança de 2 anos, desconforto nos dentes 51 e 61 depois de batida, aparentemente concussão: a conduta oficial foi “não requer intervenção específica”. Na G0043 (afirmativas V ou F sobre dentes decíduos anteriores), a sequência oficial foi F – F – V – V: restaurar trinca de esmalte com resina é falso; preservação por radiografias em fratura com exposição pulpar é falso; fratura de esmalte e dentina sem exposição pulpar recebe proteção do complexo dentina-polpa e restauração em resina composta (verdadeiro); fratura só de esmalte pode receber só arredondamento das bordas cortantes (verdadeiro)." },
-        { "ref": "Dentição decídua · avulsão (G0071, G0257, G0374)", "conceito": true, "texto": "Na prova G0374 (2021C), a conduta na avulsão de dente decíduo é que o reimplante não está indicado na dentição decídua. Na G0071, se o dente avulsionado não foi encontrado, a radiografia serve para descartar a intrusão (o dente pode ter entrado no alvéolo). Na G0257 (2023), criança de 4 anos com o 61 avulsionado e lábio cortado: o primeiro socorro oficial foi o acolhimento da criança e da família. As erradas propunham reimplantar, tomar radiografia interproximal, anestesia geral ou sedação." },
-        { "ref": "Avulsão em permanente · antes de reimplantar (G0126)", "conceito": true, "texto": "A prova G0126 pediu o fator que NÃO deve ser considerado do jeito descrito (EXCETO) antes do reimplante de dente permanente avulsionado. O gabarito oficial foi a alternativa B, que dizia que só períodos acima de 24 horas fora do alvéolo dão maus resultados e que reimplantar dentro de 24 horas dá resultados excelentes. Essa afirmação está errada justamente no tempo: a diretriz da IADT (International Association of Dental Traumatology) de 2020 sobre avulsão (Fouad et al., Dental Traumatology 2020;36:331-342) diz que, depois de mais de 60 minutos de tempo extra-alveolar a seco (tenha o dente ficado em meio de armazenamento ou não), as células do ligamento periodontal provavelmente não são viáveis. Os outros itens foram tratados como fatores válidos: ausência de doença periodontal avançada, estágio de formação da raiz, alvéolo razoavelmente intacto e ausência de contraindicação ortodôntica. O prazo de “duas horas” para a polpa sobreviver, citado no item C, vem só da questão (PENDENTE de diretriz). A diretriz de avulsão da IADT (2020) não fixa prazo de horas para a polpa; ela diz que, em dente com ápice aberto, a revascularização espontânea da polpa pode ocorrer, e que o tratamento de canal deve ser evitado, a menos que haja sinal de necrose e infecção. Conferido pelo auditor em cópia do texto da diretriz; não conferido contra o PDF da prova." },
-        { "ref": "Fraturas e polpa · tratamento endodôntico após trauma (G0065)", "conceito": true, "texto": "Na prova G0065 (2019), o que foi marcado como certo: para dentes imaturos traumatizados com polpa necrosada, pode-se estimular a formação de uma barreira de tecido duro que permita uma boa obturação do canal (apicificação). As erradas confundiam pulpectomia, apicificação, pulpotomia e capeamento com definições trocadas." },
-        { "ref": "Fraturas e polpa · tratamento das fraturas em permanentes (G0306)", "conceito": true, "texto": "Na prova G0306 (2025), a alternativa marcada como certa foi: “dentes permanentes com fratura coronorradicular devem ser restaurados após curetagem pulpar, ou pulpotomia ou pulpectomia”. Guarde isso como resposta desta questão. ⚠ Aviso: a letra varia conforme o caderno (D no Buco-Maxilo-Facial; B nos outros quatro). A diretriz da IADT de 2020 (Bourguignon et al., Tabelas 5 e 6) separa dois casos. Fratura coronorradicular SEM exposição pulpar: estabilizar o fragmento até decidir o plano; depois, pode-se remover o fragmento solto e restaurar, cobrindo a dentina com ionômero de vidro ou com adesivo e resina. Fratura COM exposição pulpar: em dente com raiz incompleta, preferir a pulpotomia parcial; em dente com raiz completa, em geral está indicada a remoção da polpa. A diretriz não menciona tratamento pulpar quando não há exposição (manda restaurar). Com exposição, cita pulpotomia parcial (raiz incompleta) e remoção da polpa (raiz completa); não usa o termo “curetagem pulpar”. A alternativa marcada como certa pela banca é a D no caderno do Buco-Maxilo-Facial e a B nos cadernos Clínico, Endodontista, Odontopediatra e Periodontista (banco de questões, grupo G0306, cinco cópias). Na prova, siga o gabarito histórico; para estudo, entenda a diretriz (não use para tratar paciente). Estavam erradas as afirmativas que mandavam fazer curetagem pulpar em fratura sem exposição pulpar, desgaste seletivo e observação com envolvimento pulpar, capeamento indireto na trinca e pulpotomia em fratura sem exposição pulpar." },
-        { "ref": "Exame do paciente traumatizado (G0121)", "conceito": true, "texto": "Na prova G0121, o exame do paciente com trauma dentoalveolar deve ser completo e rotineiro: feridas de tecidos moles, fraturas de maxilares ou do processo alveolar, exame das coroas, deslocamento dentário, mobilidade, percussão e teste de vitalidade pulpar. A resposta oficial foi a alternativa com todas as sete afirmativas (I a VII)." },
-        { "ref": "Tecidos moles · contusão, abrasão e laceração (G0303)", "conceito": true, "texto": "Na prova G0303 (2025), o gabarito foi V – V – F: contusão é injúria mecânica por impacto com hemorragia e edema sob a pele ou mucosa não lacerada (V); abrasão é escoriação ou remoção circunscrita de camada superficial da pele ou mucosa (V); laceração é corte com descontinuidade do tecido, mas a afirmativa dizia que é causada por instrumentos rombos, e foi marcada como falsa." },
-        { "ref": "Escurecimento pós-trauma (G0239)", "conceito": true, "texto": "Na prova G0239, a causa do escurecimento depois de trauma com hemorragia na câmara pulpar foi a hemoglobina liberada pelos eritrócitos. As erradas citavam íon ferroso liberado pelas plaquetas, gases nos túbulos, hemólise dos bastões jovens e diálise de plaquetas." }
+        {
+          "ref": "Tecidos de suporte · concussão, subluxação e luxação (G0035, G0305, G0167)",
+          "conceito": true,
+          "texto": "Lesões dos tecidos de suporte são as que atingem o ligamento periodontal e o osso, sem fraturar o dente como um todo: concussão, subluxação, luxações (extrusiva, lateral e intrusiva) e avulsão. Na prova G0305 (2025), trauma de intensidade baixa a moderada com mobilidade e sem mudança de posição é subluxação. Na G0035 (2019), ruptura de algumas fibras do ligamento, dente afrouxado sem deslocamento e sangramento pelo sulco gengival também é subluxação (a concussão não tem mobilidade nem sangramento). Na G0167, o item que NÃO é lesão de tecido de suporte foi a fratura coronorradicular complicada, porque é fratura do dente. Subluxação aparece como resposta nas duas."
+        },
+        {
+          "ref": "Dentição decídua · concussão e tratamento imediato (G0070, G0043)",
+          "conceito": true,
+          "texto": "Na prova G0070, criança de 2 anos, desconforto nos dentes 51 e 61 depois de batida, aparentemente concussão: a conduta oficial foi “não requer intervenção específica”. Na G0043 (afirmativas V ou F sobre dentes decíduos anteriores), a sequência oficial foi F – F – V – V: restaurar trinca de esmalte com resina é falso; preservação por radiografias em fratura com exposição pulpar é falso; fratura de esmalte e dentina sem exposição pulpar recebe proteção do complexo dentina-polpa e restauração em resina composta (verdadeiro); fratura só de esmalte pode receber só arredondamento das bordas cortantes (verdadeiro)."
+        },
+        {
+          "ref": "Dentição decídua · avulsão (G0071, G0257, G0374)",
+          "conceito": true,
+          "texto": "Na prova G0374 (2021C), a conduta na avulsão de dente decíduo é que o reimplante não está indicado na dentição decídua. Na G0071, se o dente avulsionado não foi encontrado, a radiografia serve para descartar a intrusão (o dente pode ter entrado no alvéolo). Na G0257 (2023), criança de 4 anos com o 61 avulsionado e lábio cortado: o primeiro socorro oficial foi o acolhimento da criança e da família. As erradas propunham reimplantar, tomar radiografia interproximal, anestesia geral ou sedação."
+        },
+        {
+          "ref": "Avulsão em permanente · antes de reimplantar (G0126)",
+          "conceito": true,
+          "texto": "A prova G0126 pediu o fator que NÃO deve ser considerado do jeito descrito (EXCETO) antes do reimplante de dente permanente avulsionado. O gabarito oficial foi a alternativa B, que dizia que só períodos acima de 24 horas fora do alvéolo dão maus resultados e que reimplantar dentro de 24 horas dá resultados excelentes. Essa afirmação está errada justamente no tempo: a diretriz da IADT (International Association of Dental Traumatology) de 2020 sobre avulsão (Fouad et al., Dental Traumatology 2020;36:331-342) diz que, depois de mais de 60 minutos de tempo extra-alveolar a seco (tenha o dente ficado em meio de armazenamento ou não), as células do ligamento periodontal provavelmente não são viáveis. Os outros itens foram tratados como fatores válidos: ausência de doença periodontal avançada, estágio de formação da raiz, alvéolo razoavelmente intacto e ausência de contraindicação ortodôntica. O prazo de “duas horas” para a polpa sobreviver, citado no item C, vem só da questão (PENDENTE de diretriz). A diretriz de avulsão da IADT (2020) não fixa prazo de horas para a polpa; ela diz que, em dente com ápice aberto, a revascularização espontânea da polpa pode ocorrer, e que o tratamento de canal deve ser evitado, a menos que haja sinal de necrose e infecção. Conferido pelo auditor em cópia do texto da diretriz; não conferido contra o PDF da prova."
+        },
+        {
+          "ref": "Fraturas e polpa · tratamento endodôntico após trauma (G0065)",
+          "conceito": true,
+          "texto": "Na prova G0065 (2019), o que foi marcado como certo: para dentes imaturos traumatizados com polpa necrosada, pode-se estimular a formação de uma barreira de tecido duro que permita uma boa obturação do canal (apicificação). As erradas confundiam pulpectomia, apicificação, pulpotomia e capeamento com definições trocadas."
+        },
+        {
+          "ref": "Fraturas e polpa · tratamento das fraturas em permanentes (G0306)",
+          "conceito": true,
+          "texto": "Na prova G0306 (2025), a alternativa marcada como certa foi: “dentes permanentes com fratura coronorradicular devem ser restaurados após curetagem pulpar, ou pulpotomia ou pulpectomia”. Guarde isso como resposta desta questão. ⚠ Aviso: a letra varia conforme o caderno (D no Buco-Maxilo-Facial; B nos outros quatro). A diretriz da IADT de 2020 (Bourguignon et al., Tabelas 5 e 6) separa dois casos. Fratura coronorradicular SEM exposição pulpar: estabilizar o fragmento até decidir o plano; depois, pode-se remover o fragmento solto e restaurar, cobrindo a dentina com ionômero de vidro ou com adesivo e resina. Fratura COM exposição pulpar: em dente com raiz incompleta, preferir a pulpotomia parcial; em dente com raiz completa, em geral está indicada a remoção da polpa. A diretriz não menciona tratamento pulpar quando não há exposição (manda restaurar). Com exposição, cita pulpotomia parcial (raiz incompleta) e remoção da polpa (raiz completa); não usa o termo “curetagem pulpar”. A alternativa marcada como certa pela banca é a D no caderno do Buco-Maxilo-Facial e a B nos cadernos Clínico, Endodontista, Odontopediatra e Periodontista (banco de questões, grupo G0306, cinco cópias). Na prova, siga o gabarito histórico; para estudo, entenda a diretriz (não use para tratar paciente). Estavam erradas as afirmativas que mandavam fazer curetagem pulpar em fratura sem exposição pulpar, desgaste seletivo e observação com envolvimento pulpar, capeamento indireto na trinca e pulpotomia em fratura sem exposição pulpar."
+        },
+        {
+          "ref": "Exame do paciente traumatizado (G0121)",
+          "conceito": true,
+          "texto": "Na prova G0121, o exame do paciente com trauma dentoalveolar deve ser completo e rotineiro: feridas de tecidos moles, fraturas de maxilares ou do processo alveolar, exame das coroas, deslocamento dentário, mobilidade, percussão e teste de vitalidade pulpar. A resposta oficial foi a alternativa com todas as sete afirmativas (I a VII)."
+        },
+        {
+          "ref": "Tecidos moles · contusão, abrasão e laceração (G0303)",
+          "conceito": true,
+          "texto": "Na prova G0303 (2025), o gabarito foi V – V – F: contusão é injúria mecânica por impacto com hemorragia e edema sob a pele ou mucosa não lacerada (V); abrasão é escoriação ou remoção circunscrita de camada superficial da pele ou mucosa (V); laceração é corte com descontinuidade do tecido, mas a afirmativa dizia que é causada por instrumentos rombos, e foi marcada como falsa."
+        },
+        {
+          "ref": "Escurecimento pós-trauma (G0239)",
+          "conceito": true,
+          "texto": "Na prova G0239, a causa do escurecimento depois de trauma com hemorragia na câmara pulpar foi a hemoglobina liberada pelos eritrócitos. As erradas citavam íon ferroso liberado pelas plaquetas, gases nos túbulos, hemólise dos bastões jovens e diálise de plaquetas."
+        }
       ],
       "tabela": {
         "titulo": "Lesões dos tecidos de suporte (conceito geral e respostas da banca)",
-        "cab": ["Lesão", "Ideia central", "Onde caiu"],
+        "cab": [
+          "Lesão",
+          "Ideia central",
+          "Onde caiu"
+        ],
         "linhas": [
-          ["Concussão", "Dente sensível, sem mobilidade e sem deslocamento; na decídua, sem intervenção", "G0070"],
-          ["Subluxação", "Mobilidade aumentada sem deslocamento; pode haver sangramento pelo sulco", "G0035, G0305"],
-          ["Luxação lateral, extrusiva e intrusiva", "Dente deslocado de posição (alternativas erradas de G0035 e G0305)", "G0035, G0305"],
-          ["Avulsão", "Dente fora do alvéolo; na decídua, não se reimplanta", "G0374, G0071, G0257"],
-          ["Fratura coronorradicular", "Fratura do dente, não do tecido de suporte", "G0167"]
+          [
+            "Concussão",
+            "Dente sensível, sem mobilidade e sem deslocamento; na decídua, sem intervenção",
+            "G0070"
+          ],
+          [
+            "Subluxação",
+            "Mobilidade aumentada sem deslocamento; pode haver sangramento pelo sulco",
+            "G0035, G0305"
+          ],
+          [
+            "Luxação lateral, extrusiva e intrusiva",
+            "Dente deslocado de posição (alternativas erradas de G0035 e G0305)",
+            "G0035, G0305"
+          ],
+          [
+            "Avulsão",
+            "Dente fora do alvéolo; na decídua, não se reimplanta",
+            "G0374, G0071, G0257"
+          ],
+          [
+            "Fratura coronorradicular",
+            "Fratura do dente, não do tecido de suporte",
+            "G0167"
+          ]
         ]
       },
       "macete": "Traumatismo: primeiro pergunte “dente decíduo ou permanente?”. Na decídua, o foco é proteger o germe do permanente e a criança: não reimplante e acolha. Depois, “o dente se mexe? mudou de lugar? fraturou?”. Mexe sem mudar de lugar = subluxação.",
@@ -242,11 +704,47 @@
       "mapa": {
         "centro": "Traumatismo dentoalveolar",
         "ramos": [
-          { "t": "Tecidos de suporte", "f": ["Concussão", "Subluxação", "Luxações", "Avulsão"] },
-          { "t": "Dentição decídua", "f": ["Concussão sem intervenção", "Avulsão: não reimplantar", "Acolher a criança e a família"] },
-          { "t": "Permanentes", "f": ["Fratura coronorradicular", "Fraturas e polpa", "Reimplante: fatores"] },
-          { "t": "Exame", "f": ["Tecidos moles", "Maxilares", "Coroas", "Mobilidade e vitalidade"] },
-          { "t": "Outros", "f": ["Contusão, abrasão, laceração", "Escurecimento: hemoglobina"] }
+          {
+            "t": "Tecidos de suporte",
+            "f": [
+              "Concussão",
+              "Subluxação",
+              "Luxações",
+              "Avulsão"
+            ]
+          },
+          {
+            "t": "Dentição decídua",
+            "f": [
+              "Concussão sem intervenção",
+              "Avulsão: não reimplantar",
+              "Acolher a criança e a família"
+            ]
+          },
+          {
+            "t": "Permanentes",
+            "f": [
+              "Fratura coronorradicular",
+              "Fraturas e polpa",
+              "Reimplante: fatores"
+            ]
+          },
+          {
+            "t": "Exame",
+            "f": [
+              "Tecidos moles",
+              "Maxilares",
+              "Coroas",
+              "Mobilidade e vitalidade"
+            ]
+          },
+          {
+            "t": "Outros",
+            "f": [
+              "Contusão, abrasão, laceração",
+              "Escurecimento: hemoglobina"
+            ]
+          }
         ]
       }
     },
@@ -254,25 +752,71 @@
       "id": "oclusao-dtm",
       "titulo": "Oclusão e DTM",
       "nivel": 3,
-      "topicosBanco": ["dent.oclusao_dtm"],
+      "topicosBanco": [
+        "dent.oclusao_dtm"
+      ],
       "qtdQuestoes": 6,
       "intro": "6 questões únicas em 3 edições (2021P: 3; 2023: 2; 2021C: 1), nenhuma anulada nesta lição (mas a G0227, anulada em 2023 e de Dentística, também tratava de oclusão e não é usada como resposta). 3 das 6 caíram na prova de Clínico Geral. Os subassuntos que caíram: dor miofascial, o que é e o que não é DTM, terapia oclusal, forças de equilíbrio dos arcos e posições mandibulares.",
       "pontos": [
-        { "ref": "Dor miofascial (G0123)", "conceito": true, "texto": "Na prova G0123, o item INCORRETO sobre dor e disfunção miofascial (DDM) foi “na DDM isolada, ruídos articulares geralmente estão presentes”. Os itens corretos: a amplitude dos movimentos mandibulares pode estar diminuída com desvio para o lado afetado; o exame mostra sensibilidade difusa da musculatura mastigatória; os dentes frequentemente têm facetas de desgaste (mas a ausência delas não elimina o bruxismo); a fonte da dor é muscular." },
-        { "ref": "O que é e o que não é DTM (G0364, G0183)", "conceito": true, "texto": "Na prova G0364 (2021C), a patologia com dor na face, na ATM, nos músculos mastigatórios e na cabeça é a disfunção temporomandibular. As erradas eram paralisia de Bell, sinusite, neuralgia do trigêmeo e rosácea. Na G0183 pediam o que NÃO é DTM, e o gabarito oficial impresso no caderno da FURB foi “sensação de oclusão positiva” (bloco Periodontista, questão 39, fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf e gabarito oficial correspondente). Atenção: “gengivite” também não é uma desordem temporomandibular, portanto o enunciado admite mais de uma exclusão; isso é uma ambiguidade da questão e não altera o gabarito histórico." },
-        { "ref": "Terapia oclusal (G0173)", "conceito": true, "texto": "Na prova G0173, o item INCORRETO sobre terapia oclusal foi “é uma forma terapêutica irreversível”. Os corretos: ajuste oclusal é remodelação da face oclusal ou incisal; trauma oclusal pode produzir injúrias a dente, periodonto e sistema neuromuscular; reabilitação protética é uma forma de terapia oclusal; altera a estrutura do sistema estomatognático. Em outras palavras, a terapia oclusal pode ser reversível ou irreversível." },
-        { "ref": "Forças de equilíbrio dos arcos (G0229)", "conceito": true, "texto": "Na prova G0229 (2023), a afirmativa oficial foi: o equilíbrio vestibulolingual é mantido pela contraposição de dois sistemas musculares, os lábios e as bochechas empurrando os dentes para lingual, e a língua empurrando para vestibular. As erradas trocavam os nomes dos equilíbrios (mesiodistal, oclusocervical) e as direções das forças." },
-        { "ref": "Posições mandibulares (G0230)", "conceito": true, "texto": "Na prova G0230 (2023), a afirmativa oficial foi: a posição de repouso é a posição de relaxamento da mandíbula, na qual os dentes não estão em oclusão e existe um espaço entre os arcos, o espaço funcional livre. As erradas diziam que a posição de repouso é a oclusão habitual, que a máxima intercuspidação cêntrica é encontrada em 100% dos pacientes, que a relação cêntrica depende de contatos oclusais e que a máxima intercuspidação habitual é a posição de menor contato." }
+        {
+          "ref": "Dor miofascial (G0123)",
+          "conceito": true,
+          "texto": "Na prova G0123, o item INCORRETO sobre dor e disfunção miofascial (DDM) foi “na DDM isolada, ruídos articulares geralmente estão presentes”. Os itens corretos: a amplitude dos movimentos mandibulares pode estar diminuída com desvio para o lado afetado; o exame mostra sensibilidade difusa da musculatura mastigatória; os dentes frequentemente têm facetas de desgaste (mas a ausência delas não elimina o bruxismo); a fonte da dor é muscular."
+        },
+        {
+          "ref": "O que é e o que não é DTM (G0364, G0183)",
+          "conceito": true,
+          "texto": "Na prova G0364 (2021C), a patologia com dor na face, na ATM, nos músculos mastigatórios e na cabeça é a disfunção temporomandibular. As erradas eram paralisia de Bell, sinusite, neuralgia do trigêmeo e rosácea. Na G0183 pediam o que NÃO é DTM, e o gabarito oficial impresso no caderno da FURB foi “sensação de oclusão positiva” (bloco Periodontista, questão 39, fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-PERIODONTISTA-1-MATRIZ.pdf e gabarito oficial correspondente). Atenção: “gengivite” também não é uma desordem temporomandibular, portanto o enunciado admite mais de uma exclusão; isso é uma ambiguidade da questão e não altera o gabarito histórico."
+        },
+        {
+          "ref": "Terapia oclusal (G0173)",
+          "conceito": true,
+          "texto": "Na prova G0173, o item INCORRETO sobre terapia oclusal foi “é uma forma terapêutica irreversível”. Os corretos: ajuste oclusal é remodelação da face oclusal ou incisal; trauma oclusal pode produzir injúrias a dente, periodonto e sistema neuromuscular; reabilitação protética é uma forma de terapia oclusal; altera a estrutura do sistema estomatognático. Em outras palavras, a terapia oclusal pode ser reversível ou irreversível."
+        },
+        {
+          "ref": "Forças de equilíbrio dos arcos (G0229)",
+          "conceito": true,
+          "texto": "Na prova G0229 (2023), a afirmativa oficial foi: o equilíbrio vestibulolingual é mantido pela contraposição de dois sistemas musculares, os lábios e as bochechas empurrando os dentes para lingual, e a língua empurrando para vestibular. As erradas trocavam os nomes dos equilíbrios (mesiodistal, oclusocervical) e as direções das forças."
+        },
+        {
+          "ref": "Posições mandibulares (G0230)",
+          "conceito": true,
+          "texto": "Na prova G0230 (2023), a afirmativa oficial foi: a posição de repouso é a posição de relaxamento da mandíbula, na qual os dentes não estão em oclusão e existe um espaço entre os arcos, o espaço funcional livre. As erradas diziam que a posição de repouso é a oclusão habitual, que a máxima intercuspidação cêntrica é encontrada em 100% dos pacientes, que a relação cêntrica depende de contatos oclusais e que a máxima intercuspidação habitual é a posição de menor contato."
+        }
       ],
       "tabela": {
         "titulo": "Oclusão e DTM: o que a banca já cobrou",
-        "cab": ["Assunto", "Resposta oficial", "Código"],
+        "cab": [
+          "Assunto",
+          "Resposta oficial",
+          "Código"
+        ],
         "linhas": [
-          ["Dor miofascial isolada", "Ruídos articulares geralmente NÃO estão presentes (a alternativa errada dizia que estavam)", "G0123"],
-          ["Quadro com dor em face, ATM e músculos", "Disfunção temporomandibular", "G0364"],
-          ["Terapia oclusal", "Não é sempre irreversível", "G0173"],
-          ["Equilíbrio vestibulolingual", "Lábios e bochechas (para lingual) contra a língua (para vestibular)", "G0229"],
-          ["Posição de repouso", "Dentes sem contato; espaço funcional livre", "G0230"]
+          [
+            "Dor miofascial isolada",
+            "Ruídos articulares geralmente NÃO estão presentes (a alternativa errada dizia que estavam)",
+            "G0123"
+          ],
+          [
+            "Quadro com dor em face, ATM e músculos",
+            "Disfunção temporomandibular",
+            "G0364"
+          ],
+          [
+            "Terapia oclusal",
+            "Não é sempre irreversível",
+            "G0173"
+          ],
+          [
+            "Equilíbrio vestibulolingual",
+            "Lábios e bochechas (para lingual) contra a língua (para vestibular)",
+            "G0229"
+          ],
+          [
+            "Posição de repouso",
+            "Dentes sem contato; espaço funcional livre",
+            "G0230"
+          ]
         ]
       },
       "macete": "Em oclusão, desenhe a mandíbula e os músculos: DTM é dor e disfunção dos músculos e da articulação, não do dente. Em “posições mandibulares”, separe repouso (dentes sem contato), máxima intercuspidação (dentes em contato) e relação cêntrica (posição do côndilo).",
@@ -293,10 +837,38 @@
       "mapa": {
         "centro": "Oclusão e DTM",
         "ramos": [
-          { "t": "DTM", "f": ["Dor e disfunção miofascial", "Dor na face e na ATM", "Diagnóstico diferencial"] },
-          { "t": "Terapia oclusal", "f": ["Ajuste oclusal", "Reabilitação protética", "Reversível ou irreversível"] },
-          { "t": "Forças dos arcos", "f": ["Vestibulolingual", "Mesiodistal", "Oclusocervical"] },
-          { "t": "Posições mandibulares", "f": ["Repouso", "Máxima intercuspidação", "Relação cêntrica"] }
+          {
+            "t": "DTM",
+            "f": [
+              "Dor e disfunção miofascial",
+              "Dor na face e na ATM",
+              "Diagnóstico diferencial"
+            ]
+          },
+          {
+            "t": "Terapia oclusal",
+            "f": [
+              "Ajuste oclusal",
+              "Reabilitação protética",
+              "Reversível ou irreversível"
+            ]
+          },
+          {
+            "t": "Forças dos arcos",
+            "f": [
+              "Vestibulolingual",
+              "Mesiodistal",
+              "Oclusocervical"
+            ]
+          },
+          {
+            "t": "Posições mandibulares",
+            "f": [
+              "Repouso",
+              "Máxima intercuspidação",
+              "Relação cêntrica"
+            ]
+          }
         ]
       }
     },
@@ -304,25 +876,71 @@
       "id": "radiologia",
       "titulo": "Radiologia e imagem",
       "nivel": 3,
-      "topicosBanco": ["radio"],
+      "topicosBanco": [
+        "radio"
+      ],
       "qtdQuestoes": 5,
       "intro": "5 questões únicas em 3 edições (2021P: 3; 2023: 1; 2021C: 1), nenhuma anulada. Só 1 caiu na prova de Clínico Geral. Os assuntos: métodos de imagem da ATM e das fraturas (tomografia de feixe cônico, ressonância), posicionamento do filme, filme densimétrico e técnica de Clark.",
       "pontos": [
-        { "ref": "Métodos de imagem da ATM (G0129)", "conceito": true, "texto": "A prova G0129 pediu a afirmativa INCORRETA entre cinco descrições de métodos. A marcada foi a que dizia que a tomografia computadorizada cone beam tem a precisão dos scanners convencionais para estruturas ósseas, mas exige muito mais radiação e fornece imagens diagnósticas de tecidos moles. Atenção: o feixe cônico é bom para o osso (e não para tecidos moles), e a ressonância magnética é a técnica mais eficaz para tecidos moles da ATM. A RM não utiliza raios X nem radiação ionizante (RadiologyInfo/ACR–RSNA, https://www.radiologyinfo.org/en/info/safety-mr). A imagem nuclear (tecnécio-99) é muito sensível, mas as informações podem ser difíceis de interpretar e devem ser lidas junto com os achados clínicos. O mesmo item também afirma que o feixe cônico “requer muito mais exposição de radiação” que os scanners convencionais; o gabarito marcou o item inteiro como incorreto, sem indicar qual trecho. O item também erra na dose: a tomografia de feixe cônico expõe o paciente a MENOS radiação que a tomografia computadorizada convencional, e é limitada para tecidos moles; para eles, a ressonância magnética é o exame principal (Almashraqi et al., Eur Radiol, 2024)." },
-        { "ref": "Método para fraturas e perfurações radiculares (G0370)", "conceito": true, "texto": "Na prova G0370 (2021C), o melhor método para analisar fraturas ou perfurações no canal radicular é a tomografia de feixe cônico. As erradas eram técnica de Clark, teste térmico, teste elétrico e radiografia periapical." },
-        { "ref": "Posicionamento do filme (G0146)", "conceito": true, "texto": "Na prova G0146, o filme radiográfico em pré-molares deve ficar na mesial do canino, conforme o enunciado e o gabarito oficial do caderno (fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf). As erradas diziam horizontal e na mesial do lateral, vertical, centralizado no segundo molar e centralizado no canino." },
-        { "ref": "Filme densimétrico (G0156)", "conceito": true, "texto": "Na prova G0156, os filmes densimétricos são os que medem a exposição dos operadores de raios X (dosimetria). As erradas confundiam com radiografias oclusais, grau de inclinação, radiografias cervicais e processamento sem distorção." },
-        { "ref": "Técnica de Clark (G0247)", "conceito": true, "texto": "Na prova G0247 (2023), o gabarito foi a técnica de Clark para dissociação horizontal de raízes. As erradas eram bite-wing, Le Master, Shuller e Bregman. Na redação da questão, essa dissociação aparece ligada a “uma tomada”, mas a técnica radiográfica convencional usa deslocamento horizontal do tubo entre duas tomadas periapicais, com deslocamento de 20° a 30°, para aplicar o princípio da paralaxe e separar objetos sob duas dimensões (Mallineni et al., Front Dent Med 2025;6:1495025, PMC11847821). Conceito geral: variar o ângulo horizontal do feixe ajuda a distinguir a posição vestibular e lingual ou palatina dos objetos." }
+        {
+          "ref": "Métodos de imagem da ATM (G0129)",
+          "conceito": true,
+          "texto": "A prova G0129 pediu a afirmativa INCORRETA entre cinco descrições de métodos. A marcada foi a que dizia que a tomografia computadorizada cone beam tem a precisão dos scanners convencionais para estruturas ósseas, mas exige muito mais radiação e fornece imagens diagnósticas de tecidos moles. Atenção: o feixe cônico é bom para o osso (e não para tecidos moles), e a ressonância magnética é a técnica mais eficaz para tecidos moles da ATM. A RM não utiliza raios X nem radiação ionizante (RadiologyInfo/ACR–RSNA, https://www.radiologyinfo.org/en/info/safety-mr). A imagem nuclear (tecnécio-99) é muito sensível, mas as informações podem ser difíceis de interpretar e devem ser lidas junto com os achados clínicos. O mesmo item também afirma que o feixe cônico “requer muito mais exposição de radiação” que os scanners convencionais; o gabarito marcou o item inteiro como incorreto, sem indicar qual trecho. O item também erra na dose: a tomografia de feixe cônico expõe o paciente a MENOS radiação que a tomografia computadorizada convencional, e é limitada para tecidos moles; para eles, a ressonância magnética é o exame principal (Almashraqi et al., Eur Radiol, 2024)."
+        },
+        {
+          "ref": "Método para fraturas e perfurações radiculares (G0370)",
+          "conceito": true,
+          "texto": "Na prova G0370 (2021C), o melhor método para analisar fraturas ou perfurações no canal radicular é a tomografia de feixe cônico. As erradas eram técnica de Clark, teste térmico, teste elétrico e radiografia periapical."
+        },
+        {
+          "ref": "Posicionamento do filme (G0146)",
+          "conceito": true,
+          "texto": "Na prova G0146, o filme radiográfico em pré-molares deve ficar na mesial do canino, conforme o enunciado e o gabarito oficial do caderno (fontes/blumenau-2021-psps-002/provas/CIRURGIAO-DENTISTA-ENDODONTISTA-1-MATRIZ.pdf). As erradas diziam horizontal e na mesial do lateral, vertical, centralizado no segundo molar e centralizado no canino."
+        },
+        {
+          "ref": "Filme densimétrico (G0156)",
+          "conceito": true,
+          "texto": "Na prova G0156, os filmes densimétricos são os que medem a exposição dos operadores de raios X (dosimetria). As erradas confundiam com radiografias oclusais, grau de inclinação, radiografias cervicais e processamento sem distorção."
+        },
+        {
+          "ref": "Técnica de Clark (G0247)",
+          "conceito": true,
+          "texto": "Na prova G0247 (2023), o gabarito foi a técnica de Clark para dissociação horizontal de raízes. As erradas eram bite-wing, Le Master, Shuller e Bregman. Na redação da questão, essa dissociação aparece ligada a “uma tomada”, mas a técnica radiográfica convencional usa deslocamento horizontal do tubo entre duas tomadas periapicais, com deslocamento de 20° a 30°, para aplicar o princípio da paralaxe e separar objetos sob duas dimensões (Mallineni et al., Front Dent Med 2025;6:1495025, PMC11847821). Conceito geral: variar o ângulo horizontal do feixe ajuda a distinguir a posição vestibular e lingual ou palatina dos objetos."
+        }
       ],
       "tabela": {
         "titulo": "Radiologia: o que a banca já cobrou",
-        "cab": ["Pergunta", "Resposta oficial", "Código"],
+        "cab": [
+          "Pergunta",
+          "Resposta oficial",
+          "Código"
+        ],
         "linhas": [
-          ["Melhor método para ver fratura ou perfuração no canal", "Tomografia de feixe cônico", "G0370"],
-          ["Técnica que separa raízes na horizontal", "Clark", "G0247"],
-          ["Filme que mede a exposição dos operadores", "Filme densimétrico", "G0156"],
-          ["Filme em pré-molares", "Na mesial do canino (confirmado no enunciado e gabarito oficial da prova)", "G0146"],
-          ["Tecidos moles da ATM", "Ressonância magnética (exame principal para tecidos moles)", "G0129"]
+          [
+            "Melhor método para ver fratura ou perfuração no canal",
+            "Tomografia de feixe cônico",
+            "G0370"
+          ],
+          [
+            "Técnica que separa raízes na horizontal",
+            "Clark",
+            "G0247"
+          ],
+          [
+            "Filme que mede a exposição dos operadores",
+            "Filme densimétrico",
+            "G0156"
+          ],
+          [
+            "Filme em pré-molares",
+            "Na mesial do canino (confirmado no enunciado e gabarito oficial da prova)",
+            "G0146"
+          ],
+          [
+            "Tecidos moles da ATM",
+            "Ressonância magnética (exame principal para tecidos moles)",
+            "G0129"
+          ]
         ]
       },
       "macete": "Associe cada técnica a uma palavra: Clark = separa raízes na horizontal; densimétrico = dose do operador; feixe cônico = osso em 3D; ressonância = tecido mole sem radiação.",
@@ -341,10 +959,34 @@
       "mapa": {
         "centro": "Radiologia e imagem",
         "ramos": [
-          { "t": "Tomografia e imagens da ATM", "f": ["Feixe cônico: osso", "Ressonância: tecido mole", "Cintilografia"] },
-          { "t": "Técnicas intrabucais", "f": ["Clark: dissociação horizontal", "Bite-wing", "Posição do filme"] },
-          { "t": "Proteção do operador", "f": ["Filme densimétrico"] },
-          { "t": "Na endodontia", "f": ["Fratura e perfuração: feixe cônico"] }
+          {
+            "t": "Tomografia e imagens da ATM",
+            "f": [
+              "Feixe cônico: osso",
+              "Ressonância: tecido mole",
+              "Cintilografia"
+            ]
+          },
+          {
+            "t": "Técnicas intrabucais",
+            "f": [
+              "Clark: dissociação horizontal",
+              "Bite-wing",
+              "Posição do filme"
+            ]
+          },
+          {
+            "t": "Proteção do operador",
+            "f": [
+              "Filme densimétrico"
+            ]
+          },
+          {
+            "t": "Na endodontia",
+            "f": [
+              "Fratura e perfuração: feixe cônico"
+            ]
+          }
         ]
       }
     }
