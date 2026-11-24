@@ -1,11 +1,12 @@
 {
-  "atualizadoEm": "23/11/2026",
+  "atualizadoEm": "24/11/2026",
   "avisoTopo": "Somente certames com inscrições abertas. Certames encerrados foram removidos. Prazos podem mudar; confirme o edital e o portal oficial antes de se inscrever.",
   "situacao": [
     {
       "titulo": "Navegantes (FURB): inscrições abertas",
       "destaque": "prazo-inscricao",
       "texto": "Processo Seletivo 0172/2026 da Prefeitura de Navegantes. Inscrições até 25/11/2026 às 23h59; taxa de R$ 130,00 até 26/11/2026. Prova em 13/12/2026 pela manhã. Cargos temporários de Odontologia em cadastro de reserva, banca FURB.",
+      "encerraEm": "2026-11-25T23:59:00-03:00",
       "links": [
         {
           "texto": "Página oficial do certame",
@@ -24,26 +25,44 @@
     {
       "titulo": "IFFar (RS): inscrições abertas",
       "texto": "Concurso Público do Instituto Federal Farroupilha, Edital 406/2026, banca Fundatec. Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026.",
+      "encerraEm": "2026-12-21T17:00:00-03:00",
       "links": [
-        { "texto": "Edital oficial", "url": "https://www.iffarroupilha.edu.br/editais-reitoria/item/48859-edital-n%C2%BA-406-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar" },
-        { "texto": "Anexo do edital", "url": "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5" }
+        {
+          "texto": "Edital oficial",
+          "url": "https://www.iffarroupilha.edu.br/editais-reitoria/item/48859-edital-n%C2%BA-406-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar"
+        },
+        {
+          "texto": "Anexo do edital",
+          "url": "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5"
+        }
       ]
     },
     {
       "titulo": "Piratini (RS): inscrições abertas",
       "texto": "Concurso Público 01/2026. Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026 às 13h, pela Objetiva.",
+      "encerraEm": "2026-11-25T13:00:00-03:00",
       "links": [
-        { "texto": "Página oficial da banca", "url": "https://concursos.objetivas.com.br/informacoes/2638/" }
+        {
+          "texto": "Página oficial da banca",
+          "url": "https://concursos.objetivas.com.br/informacoes/2638/"
+        }
       ]
     },
     {
       "titulo": "São José do Inhacorá (RS): inscrições abertas",
       "texto": "Concurso Público 01/2026. Cargo Dentista. Inscrições prorrogadas até 30/11/2026, pela Premier.",
+      "encerraEm": "2026-11-30T23:59:00-03:00",
       "links": [
-        { "texto": "Página oficial da banca", "url": "https://www.premierconcursos.com.br/concursos_andamento_sji2026cp.html" },
-        { "texto": "Retificação oficial", "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1992026-PSP-GlOrJwPr-Retifica.pdf" }
+        {
+          "texto": "Página oficial da banca",
+          "url": "https://www.premierconcursos.com.br/concursos_andamento_sji2026cp.html"
+        },
+        {
+          "texto": "Retificação oficial",
+          "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1992026-PSP-GlOrJwPr-Retifica.pdf"
+        }
       ]
     }
   ],
-  "fonte": "Páginas oficiais das bancas e dos órgãos, conferidas em 23/11/2026 às 13:22."
+  "fonte": "Páginas oficiais das bancas e dos órgãos, conferidas em 24/11/2026 (Navegantes, Piratini e São José do Inhacorá nas páginas oficiais; IFFar no próprio edital 406/2026)."
 }

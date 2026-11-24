@@ -689,8 +689,22 @@ function desenharConcurso(raiz, C) {
   const bloco = (it) => h('div', null, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
   if (txt(C.avisoTopo)) raiz.append(h('p', { class: 'aviso', role: 'note' }, txt(C.avisoTopo)));
   if (txt(C.atualizadoEm)) raiz.append(h('p', { class: 'suave' }, `Atualizado em ${txt(C.atualizadoEm)}.`));
-  if (objs_(C.situacao).length) {
-    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, objs_(C.situacao).map((it) => {
+  /* "encerraEm" (ISO com fuso, opcional): certame com prazo vencido some sozinho; data inválida = continua à mostra */
+  const agora = Date.now();
+  const aberto = (it) => {
+    const t = Date.parse(txt(it.encerraEm));
+    if (Number.isNaN(t)) {
+      if (txt(it.encerraEm)) console.warn(`concurso.json: encerraEm inválido em "${txt(it.titulo)}" (use ISO, ex.: 2026-11-25T23:59:00-03:00)`);
+      return true;
+    }
+    return t > agora;
+  };
+  const situacao = objs_(C.situacao).filter(aberto);
+  if (objs_(C.situacao).length && !situacao.length) {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, h('p', null, 'Nenhum certame com inscrições abertas nesta lista no momento. Confira os portais oficiais.')));
+  }
+  if (situacao.length) {
+    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, situacao.map((it) => {
       const item = h('div', {
         class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
       }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
