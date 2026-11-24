@@ -155,7 +155,7 @@
       "tabela": {
         "titulo": "Decisões gerais — sem protocolar dose ou conduta",
         "cab": ["Situação", "Direção verificada"],
-        "linhas": [["Usuário coopera", "Considerar consultório e planejamento individual"], ["Dificuldade de manejo na APS/CEO", "Acesso hospitalar deve ser avaliado pela rede"], ["Consentimento/capacidade", "Comunicação, acompanhante e avaliação individual"], ["Anestesia geral/sedação", "Ambiente hospitalar apenas após indicação individual; doses e fármacos PENDENTES"]]
+        "linhas": [["Usuário coopera", "Considerar consultório e planejamento individual"], ["Dificuldade de manejo na APS/CEO", "Acesso hospitalar deve ser avaliado pela rede"], ["Consentimento/capacidade", "Comunicação, acompanhante e avaliação individual"], ["Anestesia geral/sedação", "Anestesia geral: só em ambiente hospitalar, aplicada por médico (Res. CFO 63/2005, art. 4º); sedação: só depois do manejo não farmacológico, com equipe habilitada e monitoramento (Guia MS 2019); doses e fármacos PENDENTES"]]
       },
       "macete": "PNE não significa hospital obrigatório: avalie funcionalidade, cooperação, complexidade e necessidade da rede.",
       "pegadinhas": ["Afirmação de que toda pessoa com deficiência precisa de anestesia geral", "Uso de dose ou medicamento sem fonte clínica individual", "Assumir que o cuidador substitui a avaliação do usuário"],
@@ -391,7 +391,7 @@
       "titulo": "Sedação em Odontologia (Guia do Ministério da Saúde)",
       "nivel": 2,
       "qtdQuestoes": 0,
-      "intro": "O cap. 9 do Guia define a sedação, lista as indicações e as contraindicações e exige equipe habilitada e monitoramento. O Guia não traz fármacos nem doses nos trechos lidos para esta apostila, e nenhum é apresentado aqui.",
+      "intro": "O cap. 9 do Guia define a sedação, lista as indicações e as contraindicações e exige equipe habilitada e monitoramento. O Guia cita classes de medicamentos em alguns trechos; fármacos, doses e vias para sedação não são apresentados nesta apostila (PENDENTE).",
       "pontos": [
         { "ref": "Quando usar (Guia, p. 97)", "conceito": true, "texto": "“Quando todas as técnicas de manejo de comportamento não permitirem o atendimento odontológico seguro, outras estratégias poderão ser utilizadas.” A sedação é uma “abordagem farmacológica que objetiva minimizar o estresse fisiológico e psicológico do usuário, podendo ser realizada com medicações isoladas ou combinadas”." },
         { "ref": "Definição de sedação (Guia, p. 97)", "conceito": true, "texto": "Na sedação ocorre “uma depressão mínima do nível de consciência, o que não afeta a habilidade de respirar de forma automática e independente, bem como de responder, de maneira apropriada, à estimulação física e ao comando verbal”." },
