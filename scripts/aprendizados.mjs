@@ -12,7 +12,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 // ---------------------------------------------------------------------------
@@ -1405,7 +1405,26 @@ export function main(argv = process.argv.slice(2), env = process.env) {
   }
 }
 
+/**
+ * Script global (24/11/2026, ordem do dono: "tem que funcionar sempre, em todos os projetos"):
+ * ~/.claude/memoria-global/aprendizados/aprendizados.mjs guarda o registro no Google Drive e vale em qualquer PC.
+ * Delega para ele quando APRENDIZADOS_DIR nao foi definida, a pasta antiga (fixa no PC de origem) nao existe
+ * e o script global existe. No PC de origem, sem script global, nada muda.
+ */
+export function scriptGlobalParaDelegar(env = process.env, home = os.homedir()) {
+  if (env.APRENDIZADOS_DIR) return null;
+  const antigo = path.join(home, '.claude', 'projects', 'c--Users-rafael-ioppi-apostilas-dentista-furb', 'memory');
+  if (fs.existsSync(antigo)) return null;
+  const global = path.join(home, '.claude', 'memoria-global', 'aprendizados', 'aprendizados.mjs');
+  return fs.existsSync(global) ? global : null;
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  if (process.argv[2] === 'gatilho') process.exitCode = await gatilhoAsync();
+  const global = scriptGlobalParaDelegar();
+  if (global) {
+    const r = spawnSync(process.execPath, [global, ...process.argv.slice(2)], { stdio: 'inherit' });
+    if (r.error || r.signal) process.stderr.write(`erro: o script global ${global} não rodou (${r.error?.message ?? `sinal ${r.signal}`})\n`);
+    process.exitCode = r.status ?? 3;
+  } else if (process.argv[2] === 'gatilho') process.exitCode = await gatilhoAsync();
   else process.exitCode = main();
 }
