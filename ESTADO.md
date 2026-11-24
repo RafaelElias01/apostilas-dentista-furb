@@ -13,7 +13,7 @@
 - **fontes/** (fora do git, pelo .gitignore): editais, cadernos, gabaritos e recursos de Blumenau (PSPS 002/2019, PSPS 002/2021, Concurso 002/2021, PSPS 003/2023, PSPS 003/2025). Também provas de outros municípios FURB (Biguaçu 2025, Florianópolis 2024, Itapema 2025) e a dispensa de licitação de Balneário Camboriú 2026 (cópia de terceiro; o ato oficial do DOM/SC é o 8903198).
   - Em 2026-11-19, segundo o coordenador da sessão, foi feito backup da pasta `fontes/` no Google Drive (não verificado por mim).
 - **fontes/leis/**: normas com origem, SHA256 e status em `fontes/leis/ORIGEM.md`. Refeita em 2026-11-19 (a PRC 2/2017 do bvsms é o texto atualizado; a Lei 7.564/2010 de Blumenau tem 12 leis alteradoras baixadas em `fontes/leis/blumenau-lei7564-alteradoras/`; Resolução CFO-271/2025 em `fontes/leis/cfo-ceo-alteracoes/`). Detalhes em `curso/edital.md`, seção 1.6.
-  - Federais: baixadas da Câmara dos Deputados, porque o planalto.gov.br não é alcançável desta rede, nem pelo proxy Px.
+  - Federais: baixadas da Câmara dos Deputados (histórico: planalto.gov.br estava inacessível; superado em 24/11/2026: planalto.gov.br acessível e respondendo 200).
   - Do bvsms: PNAB, PRC 2/2017, RDC 15/2012 e RDC 222/2018.
   - Do site do CFO: Código de Ética (Resolução CFO-118/2012).
   - Da Câmara de Blumenau: Lei 7.564/2010 (texto original de 2010, desatualizado; vale com as alteradoras) e as emendas à Lei Orgânica.
@@ -94,7 +94,7 @@ Scripts de conferência na pasta scratchpad da sessão, fora do repo.
 5. **Lei Orgânica de Blumenau:** falta o texto consolidado vigente (anexo de 2021 + emendas 52/2022, 53/2025 e 54/2026, sem consolidação oficial).
 6. **Lei 7.564/2010:** conferir alterações publicadas depois de 01/10/2026.
 7. **PRC 2/2017 (bvsms):** o texto é o atualizado até a PRT GM/MS 12.236 de 25/09/2026; alterações posteriores podem não estar anotadas.
-8. **Normas federais:** conferir com o Planalto quando houver rede; hoje a fonte é a Câmara dos Deputados.
+8. **Normas federais:** conferidas com o Planalto em 24/11/2026 via scripts/leis-compilar-e-conferir.mjs (94 trechos conferidos sem divergência; superada a pendência de rede).
 9. **Código de Ética do CFO:** vigente = Resolução CFO-118/2012 + CFO-271/2025; não foi possível confirmar que não existe outra resolução alteradora.
 10. **Questões com figura ou transcrição suspeita:** conferir no PDF da prova (14 `dependeDeFigura` e 5 `transcricaoSuspeita` no banco) quando os PDFs estiverem disponíveis.
 11. **Número de inscritos de 2025** (Clínico Geral 305, Endodontista 29, Buco-Maxilo-Facial 27, Odontopediatra 18, Periodontista 10): gravado e confirmado em `curso/inscritos-2025.json` (24/11/2026). Falta só decidir se exibe no site (texto de leitor: mostrar antes/depois).
