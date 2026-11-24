@@ -481,7 +481,7 @@ export function validarRegistro(eventos) {
       if (e.ev === 'revogar' && !campoTexto(e, 'motivo')) add(`revogar ${e.id}: falta motivo`);
       if (e.ev === 'verificar' && typeof e.ok !== 'boolean') add(`verificar ${e.id}: campo ok deve ser booleano`);
       if (e.ev === 'reincidir' && !campoTexto(e, 'evidencia')) add(`reincidir ${e.id}: falta evidencia`);
-      if (['revogar', 'superar'].includes(e.ev) && ORIGENS_DONO.includes(origem)) {
+      if (['rejeitar', 'revogar', 'superar'].includes(e.ev) && ORIGENS_DONO.includes(origem)) {
         if (e.por !== 'dono' || !campoTexto(e, 'citacao')) add(`${e.ev} ${e.id}: origem ${origem} exige por=dono e citacao`);
       }
     }
@@ -916,7 +916,7 @@ comandos:
   pendentes                       bloco curto para colar na resposta (não marca nada)
   marcar-mostrado <ids...>        marca como mostrado ao dono
   aceitar <id> --citacao ".."     aprovação do dono (texto literal)
-  rejeitar <id> --motivo ".." [--por dono]
+  rejeitar <id> --motivo ".." [--por dono --citacao "<texto>"]   (--por dono --citacao obrigatórios p/ origem dono)
   aplicar <id> --nota ".."
   verificar [ids...] [--rede]
   reincidir <id> --evidencia ".."
@@ -1077,13 +1077,13 @@ const CMDS = {
     let lembrete = '';
     transacao(ctx.dir, (estado) => {
       const it = exigirId(pos, estado);
-      if (ORIGENS_DONO.includes(it.origem) && opts.por !== 'dono') {
-        throw new ErroApp(2, `${id} tem origem ${it.origem}: rejeitar exige --por dono`);
-      }
+      exigirDono(it, opts, 'rejeitar');
       if (ATIVOS.includes(it.estado) || it.estado === 'aceito') {
         lembrete = `\nlembrete: desfazer as mudanças em: ${(it.alvos ?? []).join(', ') || '(sem alvos registrados)'}`;
       }
-      return { eventos: [ev('rejeitar', id, ctx.agora, opts.por ?? 'agente', { motivo })] };
+      const extra = { motivo };
+      if (opts.citacao) extra.citacao = opts.citacao.trim();
+      return { eventos: [ev('rejeitar', id, ctx.agora, opts.por ?? 'agente', extra)] };
     }, { esperaMs: ctx.esperaMs });
     return { out: `${id} rejeitado${lembrete}`, code: 0 };
   },
@@ -1221,33 +1221,36 @@ const CMDS = {
     const { opts } = parseOpcoes(args);
     // Confere antes de gravar qualquer coisa: o registro nunca pode ir para uma pasta que o git publicaria.
     if (opts['copiar-memoria']) garantirIgnorado(ctx.repo, path.join(ctx.repo, 'memoria'));
-    const estado = estadoOuErro(ctx);
-    const texto = gerarConsolidado(estado, ctx.agora);
-    const ativas = estado.itens.filter((i) => ATIVOS.includes(i.estado)).length;
-    const aguard = estado.itens.filter((i) => i.exigeAprovacao && !i.aceito && ['proposto', 'mostrado'].includes(i.estado)).length;
-    const avisos = [];
-    if (ativas > LIMITE_REGRAS || Buffer.byteLength(texto) > LIMITE_BYTES_CONSOLIDADO) {
-      avisos.push(`aviso: orçamento estourado (${ativas} regras, ${Buffer.byteLength(texto)} bytes; limite ${LIMITE_REGRAS} regras e ${LIMITE_BYTES_CONSOLIDADO} bytes); junte regras com --substitui`);
-    }
-    const arqCons = path.join(ctx.dir, ARQ_CONSOLIDADO);
-    const atual = fs.existsSync(arqCons) ? fs.readFileSync(arqCons, 'utf8') : null;
-    if (atual === null || semDataGerado(atual) !== semDataGerado(texto)) escreverAtomico(arqCons, texto);
-    const arqMem = path.join(ctx.dir, 'MEMORY.md');
-    const memAtual = fs.existsSync(arqMem) ? fs.readFileSync(arqMem, 'utf8') : '';
-    const memNovo = atualizarIndice(memAtual, gerarLinhaIndice(ativas, aguard));
-    let memMsg = 'sem mudança';
-    if (memNovo !== memAtual) { escreverAtomico(arqMem, memNovo); memMsg = 'atualizado'; }
-    const linhas = [`consolidado: ${ativas} ativas, ${aguard} aguardando; MEMORY.md ${memMsg}`, ...avisos];
-    if (opts['copiar-memoria']) {
-      const destino = path.join(ctx.repo, 'memoria');
-      fs.mkdirSync(destino, { recursive: true });
-      for (const nome of [ARQ_REGISTRO, ARQ_CONSOLIDADO]) {
-        const origem = path.join(ctx.dir, nome);
-        if (fs.existsSync(origem)) escreverAtomico(path.join(destino, nome), fs.readFileSync(origem, 'utf8'));
+    // Leitura do estado, gravacoes e copia no mesmo bloqueio: um `add` concorrente nao fica de fora do consolidado.
+    return comBloqueio(ctx.dir, () => {
+      const estado = estadoOuErro(ctx);
+      const texto = gerarConsolidado(estado, ctx.agora);
+      const ativas = estado.itens.filter((i) => ATIVOS.includes(i.estado)).length;
+      const aguard = estado.itens.filter((i) => i.exigeAprovacao && !i.aceito && ['proposto', 'mostrado'].includes(i.estado)).length;
+      const avisos = [];
+      if (ativas > LIMITE_REGRAS || Buffer.byteLength(texto) > LIMITE_BYTES_CONSOLIDADO) {
+        avisos.push(`aviso: orçamento estourado (${ativas} regras, ${Buffer.byteLength(texto)} bytes; limite ${LIMITE_REGRAS} regras e ${LIMITE_BYTES_CONSOLIDADO} bytes); junte regras com --substitui`);
       }
-      linhas.push(`copiado para ${destino}`);
-    }
-    return { out: linhas.join('\n'), code: 0 };
+      const arqCons = path.join(ctx.dir, ARQ_CONSOLIDADO);
+      const atual = fs.existsSync(arqCons) ? fs.readFileSync(arqCons, 'utf8') : null;
+      if (atual === null || semDataGerado(atual) !== semDataGerado(texto)) escreverAtomico(arqCons, texto);
+      const arqMem = path.join(ctx.dir, 'MEMORY.md');
+      const memAtual = fs.existsSync(arqMem) ? fs.readFileSync(arqMem, 'utf8') : '';
+      const memNovo = atualizarIndice(memAtual, gerarLinhaIndice(ativas, aguard));
+      let memMsg = 'sem mudança';
+      if (memNovo !== memAtual) { escreverAtomico(arqMem, memNovo); memMsg = 'atualizado'; }
+      const linhas = [`consolidado: ${ativas} ativas, ${aguard} aguardando; MEMORY.md ${memMsg}`, ...avisos];
+      if (opts['copiar-memoria']) {
+        const destino = path.join(ctx.repo, 'memoria');
+        fs.mkdirSync(destino, { recursive: true });
+        for (const nome of [ARQ_REGISTRO, ARQ_CONSOLIDADO]) {
+          const origem = path.join(ctx.dir, nome);
+          if (fs.existsSync(origem)) escreverAtomico(path.join(destino, nome), fs.readFileSync(origem, 'utf8'));
+        }
+        linhas.push(`copiado para ${destino}`);
+      }
+      return { out: linhas.join('\n'), code: 0 };
+    }, { esperaMs: ctx.esperaMs });
   },
 
   validar(ctx) {

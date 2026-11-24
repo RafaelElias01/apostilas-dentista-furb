@@ -49,14 +49,16 @@ export const decodificar = (buf) => {
   const u = buf.toString('utf8');
   return u.includes('�') && !/[À-ÿ]/.test(u) ? new TextDecoder('windows-1252').decode(buf) : u;
 };
+// entidade numérica fora do Unicode válido (0, > 0x10FFFF, substitutos) fica literal, para entidadesSobrando acusar
+const codigo = (n, literal) => (n > 0 && n <= 0x10FFFF && !(n >= 0xD800 && n <= 0xDFFF) ? String.fromCodePoint(n) : literal);
 export function htmlParaTexto(html) {
   return html
     .replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<\/(p|div|tr|li|h\d|table|center|blockquote)>|<br\s*\/?>/gi, '\n')
     .replace(/<\/t[dh]>|<t[dh](\s[^>]*)?>/gi, ' ')
     .replace(/<[^>]+>/g, '')
-    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n))
-    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&#(\d+);/g, (m, n) => codigo(+n, m))
+    .replace(/&#x([0-9a-f]+);/gi, (m, n) => codigo(parseInt(n, 16), m))
     // entidades acentuadas (&uacute; &ccedil; &atilde; ...): letra base + marca combinante, recomposta em NFC
     .replace(/&([a-zA-Z])(acute|grave|circ|tilde|uml|cedil);/g, (_, l, a) => (l + MARCA[a]).normalize('NFC'))
     .replace(/&([a-z]+);/gi, (m, n) => ENT[n.toLowerCase()] ?? m)
@@ -92,9 +94,11 @@ export function validarDownload(buf) {
   return '';
 }
 
+// Devolve { falhas: [arquivos cuja baixa falhou] } (e também define exitCode = 1 se houver falha).
 function baixar() {
   fs.mkdirSync(PLAN, { recursive: true });
   const linhas = [];
+  const falharam = [];
   for (const [arq, url] of Object.entries(NORMAS)) {
     const dest = path.join(PLAN, arq);
     const tmp = `${dest}.tmp`;
@@ -110,6 +114,7 @@ function baixar() {
       try { fs.rmSync(tmp, { force: true }); } catch { /* ignora */ }
       console.error('FALHOU', arq, url, String(e.message).split('\n')[0]);
       process.exitCode = 1;
+      falharam.push(arq);
     }
   }
   // não perde as linhas de normas cuja baixa falhou agora: lê o TSV existente (se houver) e troca só as baixadas
@@ -122,6 +127,7 @@ function baixar() {
   const ordem = Object.keys(NORMAS);
   const finais = [...ordem.filter((a) => antigas.has(a)), ...[...antigas.keys()].filter((a) => !ordem.includes(a))].map((a) => antigas.get(a));
   fs.writeFileSync(tsv, ['arquivo\turl\tbaixado_em\ttamanho\tsha256', ...finais].join('\n') + '\n');
+  return { falhas: falharam };
 }
 
 // entidade HTML que sobrou sem decodificar (&xxx; ou &#123; ou &#xAB;): sinal de bug na conversão
@@ -170,19 +176,27 @@ function carregarFontes(dirLeis, dirTxt) {
 function* trechos(no, caminho = '') {
   if (Array.isArray(no)) { for (let i = 0; i < no.length; i++) yield* trechos(no[i], `${caminho}[${i}]`); return; }
   if (no && typeof no === 'object') {
-    if (typeof no.trecho === 'string' && no.trecho.length > 30) yield { caminho, trecho: no.trecho, fonte: no.fonte, ref: no.ref };
+    if (typeof no.trecho === 'string' && no.trecho.trim().length > 0) yield { caminho, trecho: no.trecho, fonte: no.fonte, ref: no.ref };
     for (const [k, v] of Object.entries(no)) yield* trechos(v, `${caminho}.${k}`);
   }
 }
 // "..." / "[...]" / "…" dividem o trecho em segmentos; cada segmento tem de existir no texto oficial
 const cortar = (t) => t.split(/\[\s*\.{3}\s*\]|\.{3}|…/);
-const longos = (t, norm, minimo = 12) => cortar(t).map(norm).filter((x) => x.length > minimo);
-// o trecho existe na fonte se todos os segmentos aparecem (normalização normal, ou fraca para acento corrompido)
-// lista vazia de segmentos NÃO conta como achado (`[].every` seria true): sem segmento, não há o que comparar
-const achaTodos = (segs, corpo) => segs.length > 0 && segs.every((x) => corpo.includes(x));
-// curto = nenhum segmento passa de 12 caracteres: então todos os segmentos não vazios têm de ser achados
-const tem = (corpo, trecho, curto = false) => achaTodos(longos(trecho, normalizar, curto ? 0 : 12), corpo.n) ||
-  achaTodos(longos(trecho, normalizarFraca, curto ? 0 : 12), corpo.f);
+// todos os segmentos não vazios (inclusive curtos) têm de aparecer na MESMA norma e NA ORDEM do trecho
+const segmentos = (t, norm) => cortar(t).map(norm).filter((x) => x.length > 0);
+const achaEmOrdem = (segs, corpo) => {
+  if (segs.length === 0) return false; // lista vazia não conta como achado
+  let pos = 0;
+  for (const x of segs) {
+    const i = corpo.indexOf(x, pos);
+    if (i < 0) return false;
+    pos = i + x.length;
+  }
+  return true;
+};
+// normalização normal, ou fraca para acento corrompido na origem
+const tem = (corpo, trecho) => achaEmOrdem(segmentos(trecho, normalizar), corpo.n) ||
+  achaEmOrdem(segmentos(trecho, normalizarFraca), corpo.f);
 
 // Confere os "trecho" das apostilas (dirApostilas/*.json) contra as normas em dirLeis e dirTxt.
 // Não imprime nem grava nada. fontes = quantas normas foram carregadas.
@@ -196,10 +210,9 @@ export function conferirEm({ dirLeis, dirApostilas, dirTxt }) {
       total++;
       const segs = cortar(t.trecho).map(normalizar);
       if (!segs.some((x) => x.length > 0)) { falhas.push({ arq, ref: t.ref, motivo: 'trecho vazio após normalizar', fonte: t.fonte }); continue; }
-      const curto = !segs.some((x) => x.length > 12);
       const corpoCitado = t.fonte && fontes.get(t.fonte);
-      const noCitado = corpoCitado ? tem(corpoCitado, t.trecho, curto) : null;
-      const emAlguma = noCitado === true || todas.some((c) => tem(c, t.trecho, curto));
+      const noCitado = corpoCitado ? tem(corpoCitado, t.trecho) : null;
+      const emAlguma = noCitado === true || todas.some((c) => tem(c, t.trecho));
       if (noCitado === null && !emAlguma) { semFonte++; falhas.push({ arq, ref: t.ref, motivo: 'fonte não carregada e trecho não achado em nenhuma norma', fonte: t.fonte }); }
       else if (noCitado === false && !emAlguma) falhas.push({ arq, ref: t.ref, motivo: 'trecho NÃO achado em nenhuma norma oficial carregada', fonte: t.fonte });
       else if (noCitado === null && t.fonte) { semFonte++; falhas.push({ arq, ref: t.ref, motivo: `fonte citada não carregada: ${t.fonte}`, fonte: t.fonte }); }
@@ -241,6 +254,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   else if (cmd === 'compilar') compilar();
   else if (cmd === 'conferir') conferir();
   else if (cmd === 'buscar') buscar(arg);
-  else if (cmd === 'tudo') { baixar(); compilar(); conferir(); }
+  else if (cmd === 'tudo') {
+    const { falhas } = baixar();
+    if (falhas.length) { console.error(`tudo interrompido: baixar falhou em: ${falhas.join(', ')}; os arquivos locais podem estar desatualizados`); process.exitCode = 1; }
+    else { compilar(); conferir(); }
+  }
   else console.log('uso: node scripts/leis-compilar-e-conferir.mjs baixar|compilar|conferir|buscar "termo"|tudo');
 }

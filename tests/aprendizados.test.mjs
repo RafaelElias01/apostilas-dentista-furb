@@ -1160,3 +1160,74 @@ test('39. mudanca, gatilho e aprendi com quebra de linha são recusados com cód
   }
   assert.deepEqual(eventos(c), []);
 });
+
+// ---------- regressões (origem dono, consolidar sob bloqueio, IPv4) ----------
+test('40. rejeitar item de origem dono exige --por dono --citacao; validar acusa registro sem isso', (t) => {
+  const c = ctx(t);
+  const a = addOk(c, { origem: 'ordem-dono', chave: 'metodo.dono.um' });
+  const b = addOk(c, { origem: 'correcao-dono', chave: 'metodo.dono.dois' });
+  let r = run(c, ['rejeitar', a, '--motivo', 'não quero']);
+  assert.equal(r.status, 2, r.todo);
+  r = run(c, ['rejeitar', a, '--motivo', 'não quero', '--por', 'dono']);
+  assert.equal(r.status, 2, 'só --por dono, sem citação: ' + r.todo);
+  assert.deepEqual(eventos(c).filter((e) => e.ev === 'rejeitar'), []);
+  r = run(c, ['rejeitar', a, '--motivo', 'não quero', '--por', 'dono', '--citacao', 'rejeito ' + a]);
+  assert.equal(r.status, 0, r.todo);
+  const ev = eventos(c).filter((e) => e.ev === 'rejeitar');
+  assert.equal(ev.length, 1);
+  assert.equal(ev[0].por, 'dono');
+  assert.equal(ev[0].citacao, 'rejeito ' + a);
+  assert.equal(run(c, ['validar']).status, 0);
+
+  // registro montado à mão, com eventos sobre item de origem dono sem por=dono/citacao
+  const c2 = ctx(t);
+  const x = addOk(c2, { origem: 'ordem-dono', chave: 'metodo.mao.um' });
+  const y = addOk(c2, { origem: 'correcao-dono', chave: 'metodo.mao.dois' });
+  const z = addOk(c2, { origem: 'ordem-dono', chave: 'metodo.mao.tres' });
+  const linha = (o) => JSON.stringify({ v: 1, em: AGORA, ...o });
+  fs.appendFileSync(
+    c2.jsonl,
+    [
+      linha({ ev: 'rejeitar', id: x, por: 'agente', motivo: 'sem citação' }),
+      linha({ ev: 'revogar', id: y, por: 'dono', motivo: 'sem citacao do dono' }),
+      linha({ ev: 'superar', id: z, por: 'agente', por_id: 'A001' }),
+    ].join('\n') + '\n',
+    'utf8',
+  );
+  const v = run(c2, ['validar']);
+  assert.equal(v.status, 2, v.todo);
+  assert.ok(new RegExp(`rejeitar ${x}: origem ordem-dono exige por=dono e citacao`).test(v.todo), v.todo);
+  assert.ok(new RegExp(`revogar ${y}: origem correcao-dono exige`).test(v.todo), v.todo);
+  assert.ok(new RegExp(`superar ${z}: origem ordem-dono exige`).test(v.todo), v.todo);
+  assert.ok(b);
+});
+
+test('41. consolidar roda sob o bloqueio: com lock fresco espera, dá código 3 e não grava nada', (t) => {
+  const c = ctx(t);
+  const id = addOk(c);
+  assert.equal(run(c, ['aplicar', id, '--nota', 'teste']).status, 0);
+  const mem = path.join(c.dir, 'MEMORY.md');
+  fs.writeFileSync(mem, '# Memória intocada\n', 'utf8');
+  const lock = path.join(c.dir, 'aprendizados.lock');
+  fs.writeFileSync(lock, 'outro-processo\n', 'utf8');
+  const r = run(c, ['consolidar'], { env: { APRENDIZADOS_LOCK_ESPERA_MS: '300' } });
+  assert.equal(r.status, 3, r.todo);
+  assert.match(r.stderr, /em uso/);
+  assert.ok(!fs.existsSync(path.join(c.dir, 'regras-aprendidas.md')), 'regras-aprendidas.md não deve ser gravado');
+  assert.equal(fs.readFileSync(mem, 'utf8'), '# Memória intocada\n', 'MEMORY.md intacto');
+  assert.ok(fs.existsSync(lock), 'lock alheio permanece');
+  // sem o lock, consolidar funciona
+  fs.rmSync(lock);
+  assert.equal(run(c, ['consolidar']).status, 0);
+  assert.ok(fs.existsSync(path.join(c.dir, 'regras-aprendidas.md')));
+});
+
+test('42. acharSegredo: IPv4 de verdade é acusado; versões e números parecidos não', () => {
+  const achar = fn('acharSegredo');
+  for (const s of ['Chrome 131.0.6778.85', '300.1.2.3', '1.2.3.4.5', '127.0.0.1:3129']) {
+    assert.ok(!temSegredo(achar(s)), `não deveria acusar: ${s}`);
+  }
+  for (const s of ['10.1.2.3', 'ip 192.168.1.10.']) {
+    assert.ok(temSegredo(achar(s)), `deveria acusar: ${s}`);
+  }
+});

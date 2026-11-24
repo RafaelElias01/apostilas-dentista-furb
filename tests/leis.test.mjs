@@ -274,3 +274,57 @@ test('conferirEm: trecho só com segmentos curtos (<= 12 caracteres) falha se au
     assert.equal(r.falhas[0].ref, 'curto-ausente');
   } finally { limpar(raiz); }
 });
+
+test('conferirEm conta e confere trecho curto (ex.: "Art. 5"): presente confere, ausente falha', () => {
+  const { raiz, dirLeis, dirTxt, dirApostilas } = montarRaiz({
+    txts: { 'lei-a.txt': 'Art. 5º Todos são iguais perante a lei.' },
+    apostila: {
+      'a.json': [
+        { ref: 'curto-presente', trecho: 'Art. 5', fonte: 'planalto/lei-a.htm' },
+        { ref: 'curto-ausente', trecho: 'Art. 77', fonte: 'planalto/lei-a.htm' }
+      ]
+    }
+  });
+  try {
+    const r = L.conferirEm({ dirLeis, dirApostilas, dirTxt });
+    assert.equal(r.total, 2);
+    assert.equal(r.ok, 1);
+    assert.equal(r.falhas.length, 1);
+    assert.equal(r.falhas[0].ref, 'curto-ausente');
+  } finally { limpar(raiz); }
+});
+
+test('reticências: segmentos na mesma norma e na ordem; ordem invertida e segmento curto adulterado falham', () => {
+  const { raiz, dirLeis, dirTxt, dirApostilas } = montarRaiz({
+    txts: {
+      'lei-a.txt': 'Primeiro dispositivo aqui presente. Depois, o segundo dispositivo ali presente. A saúde, não é dever do Estado garantido mediante políticas sociais.',
+      'lei-b.txt': 'Outra norma qualquer sem relação com os dispositivos acima.'
+    },
+    apostila: {
+      'a.json': [
+        { ref: 'ordem-certa', trecho: 'Primeiro dispositivo aqui presente [...] segundo dispositivo ali presente', fonte: 'planalto/lei-a.htm' },
+        { ref: 'ordem-invertida', trecho: 'segundo dispositivo ali presente [...] Primeiro dispositivo aqui presente', fonte: 'planalto/lei-a.htm' },
+        { ref: 'curto-certo', trecho: 'A saúde [...] não [...] garantido mediante políticas sociais', fonte: 'planalto/lei-a.htm' },
+        { ref: 'curto-adulterado', trecho: 'A saúde [...] sim [...] garantido mediante políticas sociais', fonte: 'planalto/lei-a.htm' }
+      ]
+    }
+  });
+  try {
+    const r = L.conferirEm({ dirLeis, dirApostilas, dirTxt });
+    assert.equal(r.total, 4);
+    assert.equal(r.ok, 2);
+    assert.deepEqual(r.falhas.map((f) => f.ref).sort(), ['curto-adulterado', 'ordem-invertida']);
+  } finally { limpar(raiz); }
+});
+
+test('htmlParaTexto com entidade numérica inválida não lança, mantém a literal; &#233; vira "é"; entidadesSobrando acusa a inválida', () => {
+  let out;
+  assert.doesNotThrow(() => { out = L.htmlParaTexto('<p>a &#9999999; b &#x110000; c &#xD800; d &#233; e</p>'); });
+  assert.ok(out.includes('&#9999999;'), out);
+  assert.ok(out.includes('&#x110000;'), out);
+  assert.ok(out.includes('&#xD800;'), out);
+  assert.ok(out.includes('d é e'), out);
+  const sobra = L.entidadesSobrando(out);
+  assert.ok(sobra.length >= 3, JSON.stringify(sobra));
+  assert.ok(!achou(L.entidadesSobrando(L.htmlParaTexto('<p>&#233;</p>'))));
+});
