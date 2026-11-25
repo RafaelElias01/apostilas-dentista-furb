@@ -1,6 +1,6 @@
 [
   { "numero": 1, "arquivo": "apostila-01-lingua-portuguesa.pdf", "concurso": { "navegantes": "direta", "geral": "complementar" } },
-  { "numero": 2, "arquivo": "apostila-02-conhecimentos-gerais-legislacao.pdf", "concurso": { "navegantes": "nao-usar", "geral": "nao-usar" } },
+  { "numero": 2, "arquivo": "apostila-02-conhecimentos-gerais-legislacao.pdf", "concurso": { "navegantes": "complementar", "geral": "direta" } },
   { "numero": 3, "arquivo": "apostila-03-sus-saude-publica.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 4, "arquivo": "apostila-04-etica-biosseguranca.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
   { "numero": 5, "arquivo": "apostila-05-cariologia-prevencao-odontopediatria.pdf", "concurso": { "navegantes": "direta", "geral": "direta" } },
