@@ -320,11 +320,30 @@ export function ehTelaLogin(url) {
   return RE_LOGIN.test(caminho) || RE_AUTH.test(caminho);
 }
 
-/** true se o item tem encerraEm válido e já passado em relação a `agora` (ms). */
+/**
+ * Prazo (ms) de um encerraEm, na mesma regra do site (site/app.js, prazoMs):
+ * - "AAAA-MM-DD"                  -> fim do dia em Brasília (T23:59:00-03:00);
+ * - ISO com hora e sem fuso       -> interpretado como -03:00 (Brasília), não como fuso da máquina;
+ * - com fuso explícito (Z, ±hh:mm) -> Date.parse normal.
+ * Valor inválido ou não-texto -> NaN.
+ */
+export function prazoMs(valor) {
+  if (typeof valor !== 'string') return NaN;
+  const s = valor.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return Date.parse(`${s}T23:59:00-03:00`);
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(s)) return Date.parse(`${s}-03:00`);
+  return Date.parse(s);
+}
+
+/**
+ * true se o item tem encerraEm em texto válido e o prazo já chegou: encerrado quando
+ * prazo <= agora (mesma fronteira do site, que trata como aberto só se prazo > agora).
+ * Não-texto ou prazo inválido (NaN) = não encerrado.
+ */
 export function certameEncerrado(item, agora = Date.now()) {
   if (!item || typeof item.encerraEm !== 'string') return false;
-  const t = Date.parse(item.encerraEm);
-  return Number.isFinite(t) && t < agora;
+  const t = prazoMs(item.encerraEm);
+  return Number.isFinite(t) && t <= agora;
 }
 
 /** Títulos dos certames com encerraEm já passado (não são monitorados). */

@@ -683,6 +683,150 @@ function tabela(legenda, colunas, linhas) {
       return h('tr', null, colunas.map((_, i) => h('td', null, txt(l[i]) || '—')));
     }))));
 }
+/* ----- helpers só da aba Concurso (cartão de cada certame) ----- */
+/* nome curto: corta só em ": " (dois-pontos + espaço), para não partir "10:2026"; se sobrar menos de 4 caracteres, título inteiro */
+function certameNome(it) {
+  const t = txt(it.titulo).trim();
+  const n = t.split(': ')[0].trim();
+  return n.length < 4 ? t : n;
+}
+/* texto com "PENDENTE" destacado (marca amarela), para não passar despercebido */
+function comPendente(v) {
+  const s = txt(v);
+  if (!s) return '—';
+  return s.split(/(PENDENTE)/).filter(Boolean).map((p) => (p === 'PENDENTE' ? h('mark', { class: 'cc-pendente' }, 'PENDENTE') : p));
+}
+/* resumo para o "chip": só a 1ª frase (sem cortar em abreviações como "Prof." ou "art."); sem ponto final, o valor inteiro.
+   Nunca corta no meio e não tira parênteses (eles podem dizer qual valor vale para quê). O texto completo segue no cartão do cargo/detalhes.
+   "n." e "p." não entram na lista: só são abreviação antes de número ("n. 5", "p. 12"), e o corte só acontece antes de maiúscula.
+   Também não corta: ponto dentro de parênteses abertos ("(vencimento. Ver anexo II)"), "Ltda.", "Cia.", "S.A." e iniciais ("J. Silva").
+   Quando corta, termina em " …" para avisar que há mais texto */
+const ABREV_CHIP = new Set(['prof', 'dr', 'dra', 'sr', 'sra', 'art', 'arts', 'inc', 'ex', 'profa', 'srta', 'av', 'tel', 'obs', 'aprox', 'ltda', 'cia', 'sa']);
+const normChip = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/º/g, 'o').toLowerCase();
+/* profundidade de parênteses ao fim do trecho (")" sobrando não deixa negativo) */
+function parentesesAbertos(s) {
+  let d = 0;
+  for (const c of s) {
+    if (c === '(') d++;
+    else if (c === ')' && d > 0) d--;
+  }
+  return d;
+}
+function resumoChip(v) {
+  const s = txt(v).trim();
+  if (!s) return '';
+  const fimFrase = /\.\s+(?=[A-ZÀ-Ú])/g;
+  for (let m = fimFrase.exec(s); m; m = fimFrase.exec(s)) {
+    const antes = s.slice(0, m.index);
+    if (parentesesAbertos(antes) > 0) continue; // ponto dentro de "( ... )"
+    const palavra = (antes.match(/(\S+)$/) || ['', ''])[1].replace(/^[^A-Za-zÀ-ú]+/, '');
+    if (/^[A-ZÀ-Ú]$/.test(palavra)) continue; // inicial: "J. Silva"
+    if (ABREV_CHIP.has(normChip(palavra).replace(/\./g, ''))) continue; // "Prof. Fulano", "art. 5º", "S.A."
+    return `${antes.replace(/\.$/, '')} …`;
+  }
+  return s.replace(/\.$/, '');
+}
+/* encerraEm em ms; só data (AAAA-MM-DD) = fim do dia em Brasília (23h59), não meia-noite UTC;
+   com hora mas sem fuso (AAAA-MM-DDThh:mm[:ss[.fração]]) = horário de Brasília (-03:00); com Z ou ±hh:mm, como veio; NaN se inválido.
+   Só aceita texto (número ou outro tipo = NaN). Mesma regra de scripts/monitorar-concursos.mjs (prazoMs); aberto enquanto prazo > agora */
+function prazoMs(valor) {
+  if (typeof valor !== 'string') return NaN;
+  const s = valor.trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return Date.parse(`${s}T23:59:00-03:00`);
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(s)) return Date.parse(`${s}-03:00`);
+  return Date.parse(s);
+}
+const semAcento = (s) => txt(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+/* partes de data/hora no fuso de Brasília; null se o navegador não souber */
+function partesSP(t) {
+  try {
+    const f = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+    const p = Object.fromEntries(f.formatToParts(new Date(t)).map((x) => [x.type, x.value]));
+    return { a: Number(p.year), m: Number(p.month), d: Number(p.day), hh: p.hour, mm: p.minute };
+  } catch (e) { return null; }
+}
+/* selo de prazo a partir de encerraEm: "Inscrições até 30/11/2026 às 23h59" + quantos dias faltam (vermelho se <= 3) */
+function seloPrazo(it, agora) {
+  const destaque = it.destaque === 'prazo-inscricao';
+  /* sem data válida mas marcado como destaque: selo vermelho sem data (a data está no texto/detalhes) */
+  const seloSemData = () => (destaque ? h('p', { class: 'cc-selo urgente' }, h('span', { class: 'cc-selo-falta' }, 'Prazo de inscrição em destaque')) : null);
+  const t = prazoMs(it.encerraEm);
+  if (Number.isNaN(t)) return seloSemData();
+  let fim = partesSP(t);
+  const hoje = partesSP(agora);
+  if (!fim || !hoje) return seloSemData();
+  const dd = (n) => String(n).padStart(2, '0');
+  let hora = fim.mm === '00' ? `${Number(fim.hh)}h` : `${Number(fim.hh)}h${fim.mm}`;
+  if (fim.hh === '00' && fim.mm === '00') {
+    /* 00:00 = fim do dia anterior: mostra "dia anterior às 23h59" e conta os dias a partir dele */
+    const ant = new Date(Date.UTC(fim.a, fim.m - 1, fim.d - 1));
+    fim = { a: ant.getUTCFullYear(), m: ant.getUTCMonth() + 1, d: ant.getUTCDate(), hh: '23', mm: '59' };
+    hora = '23h59';
+  }
+  const dias = Math.round((Date.UTC(fim.a, fim.m - 1, fim.d) - Date.UTC(hoje.a, hoje.m - 1, hoje.d)) / 864e5);
+  const falta = dias <= 0 ? 'Último dia' : dias === 1 ? 'Termina amanhã' : `Faltam ${dias} dias`;
+  const urgente = dias <= 3 || destaque;
+  return h('p', { class: `cc-selo${urgente ? ' urgente' : ''}` },
+    h('span', { class: 'cc-selo-data' }, `Inscrições até ${dd(fim.d)}/${dd(fim.m)}/${fim.a} às ${hora}`),
+    h('span', { class: 'cc-selo-falta' }, falta));
+}
+function desenharCertame(it, id, agora) {
+  const titulo = txt(it.titulo);
+  const art = h('article', { class: 'cc-certame', id, tabindex: '-1', 'aria-labelledby': `${id}-t` },
+    h('header', { class: 'cc-cabeca' },
+      h('h3', { id: `${id}-t`, class: 'cc-titulo' }, titulo || 'Certame'),
+      seloPrazo(it, agora)),
+    txt(it.texto) ? h('p', { class: 'cc-texto' }, comPendente(it.texto)) : null);
+  /* opcionais: "cargos" [{cargo, vagas, salario, cargaHoraria, requisitos}], "detalhes" [{rotulo, valor}], "fonteDados" (texto), "links" [{texto, url}] */
+  const cargos = objs_(it.cargos);
+  const detalhes = objs_(it.detalhes).filter((d) => txt(d.rotulo) || txt(d.valor));
+  const det = (rot) => { const d = detalhes.find((x) => semAcento(x.rotulo) === semAcento(rot)); return d ? d.valor : ''; };
+  /* números-chave: do cargo só quando há um cargo (com vários, cada cartão de cargo mostra os seus) */
+  const c0 = cargos.length === 1 ? cargos[0] : {};
+  const chaves = [
+    ['Salário', c0.salario], ['Carga horária', c0.cargaHoraria], ['Vagas', c0.vagas],
+    ['Data da prova', det('Data da prova')], ['Taxa de inscrição', det('Taxa de inscrição')],
+  ].filter(([, v]) => resumoChip(v));
+  if (chaves.length) {
+    art.append(h('dl', { class: 'cc-chips' }, chaves.map(([rot, v]) => h('div', { class: 'cc-chip' },
+      h('dt', null, rot),
+      h('dd', null, (() => {
+        const r = resumoChip(v);
+        /* PENDENTE extra só quando o valor completo tem PENDENTE e o resumo (1ª frase) não tem (evita "PENDENTE PENDENTE") */
+        /* h() achata só um nível: devolve lista plana */
+        return [...[comPendente(r)].flat(), ...(txt(v).includes('PENDENTE') && !r.includes('PENDENTE') ? [' ', h('mark', { class: 'cc-pendente' }, 'PENDENTE')] : [])];
+      })())))));
+  }
+  /* prazos fora do <details>, para não ficarem escondidos (continuam também lá dentro) */
+  const prazos = ['Inscrições', 'Pagamento da taxa', 'Próximas datas'].map((rot) => [rot, det(rot)]).filter(([, v]) => txt(v));
+  if (prazos.length) {
+    art.append(h('h4', { class: 'cc-sub' }, 'Prazos'));
+    art.append(h('dl', { class: 'cc-dl' }, prazos.map(([rot, v]) => h('div', { class: 'cc-par' },
+      h('dt', null, rot), h('dd', null, comPendente(v))))));
+  }
+  if (cargos.length) {
+    art.append(h('h4', { class: 'cc-sub' }, cargos.length > 1 ? 'Cargos' : 'Cargo'));
+    art.append(h('div', { class: 'cc-cargos' }, cargos.map((c) => h('section', { class: 'cc-cargo', 'aria-label': txt(c.cargo) || 'Cargo' },
+      h('p', { class: 'cc-cargo-nome' }, txt(c.cargo) || 'Cargo'),
+      h('dl', { class: 'cc-dl' }, [['Vagas', c.vagas], ['Salário', c.salario], ['Carga horária', c.cargaHoraria], ['Requisitos', c.requisitos]]
+        .filter(([, v]) => txt(v))
+        .map(([rot, v]) => h('div', { class: 'cc-par' }, h('dt', null, rot), h('dd', null, comPendente(v)))))))));
+  }
+  if (detalhes.length) {
+    art.append(h('details', { class: 'cc-detalhes' },
+      h('summary', null, `Ver todos os detalhes (${detalhes.length})`),
+      h('dl', { class: 'cc-dl' }, detalhes.map((d) => h('div', { class: 'cc-par' },
+        h('dt', null, txt(d.rotulo) || '—'), h('dd', null, comPendente(d.valor)))))));
+  }
+  const links = objs_(it.links).filter((l) => txt(l.url));
+  if (links.length) {
+    art.append(h('p', { class: 'concurso-links cc-links' }, links.map((link) => h('a', {
+      href: txt(link.url), target: '_blank', rel: 'noopener noreferrer', class: 'btn sec',
+    }, txt(link.texto) || 'Abrir fonte oficial', h('span', { class: 'so-leitor' }, ' (abre em nova aba)')))));
+  }
+  if (txt(it.fonteDados)) art.append(h('p', { class: 'cc-fonte' }, 'Fonte: ', comPendente(it.fonteDados)));
+  return art;
+}
 function desenharConcurso(raiz, C) {
   const ref = ehObj(C.referencia) ? C.referencia : {};
   const ant = ehObj(C.anteriores) ? C.anteriores : null;
@@ -692,9 +836,9 @@ function desenharConcurso(raiz, C) {
   /* "encerraEm" (ISO com fuso, opcional): certame com prazo vencido some sozinho; data inválida = continua à mostra */
   const agora = Date.now();
   const aberto = (it) => {
-    const t = Date.parse(txt(it.encerraEm));
+    const t = prazoMs(it.encerraEm);
     if (Number.isNaN(t)) {
-      if (txt(it.encerraEm)) console.warn(`concurso.json: encerraEm inválido em "${txt(it.titulo)}" (use ISO, ex.: 2026-11-25T23:59:00-03:00)`);
+      if (txt(it.encerraEm)) console.warn(`concurso.json: encerraEm inválido em "${txt(it.titulo)}" (formatos aceitos: AAAA-MM-DD, AAAA-MM-DDThh:mm ou com fuso, ex.: 2026-11-25T23:59:00-03:00)`);
       return true;
     }
     return t > agora;
@@ -704,38 +848,26 @@ function desenharConcurso(raiz, C) {
     raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, h('p', null, 'Nenhum certame com inscrições abertas nesta lista no momento. Confira os portais oficiais.')));
   }
   if (situacao.length) {
-    raiz.append(h('h2', null, 'Situação'), h('div', { class: 'card' }, situacao.map((it) => {
-      const item = h('div', {
-        class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
-      }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
-      /* opcionais: "cargos" [{cargo, vagas, salario, cargaHoraria, requisitos}], "detalhes" [{rotulo, valor}], "fonteDados" (texto) */
-      const cargos = objs_(it.cargos);
-      if (cargos.length) {
-        item.append(tabela(`Cargos de ${txt(it.titulo)}`, ['Cargo', 'Vagas', 'Salário', 'Carga horária', 'Requisitos'],
-          cargos.map((c) => [c.cargo, c.vagas, c.salario, c.cargaHoraria, c.requisitos])));
-      }
-      const detalhes = objs_(it.detalhes);
-      if (detalhes.length) {
-        item.append(tabela(`Informações de ${txt(it.titulo)}`, ['Item', 'Informação'],
-          detalhes.map((d) => [d.rotulo, d.valor])));
-      }
-      if (txt(it.fonteDados)) item.append(h('p', { class: 'suave' }, `Fonte: ${txt(it.fonteDados)}`));
-      const links = objs_(it.links);
-      if (links.length) {
-        const nav = h('p', { class: 'concurso-links' });
-        for (const link of links) {
-          if (!txt(link.url)) continue;
-          nav.append(h('a', {
-            href: txt(link.url),
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            class: 'btn sec'
-          }, txt(link.texto || 'Abrir fonte oficial')));
-        }
-        item.append(nav);
-      }
-      return item;
-    })));
+    /* mais urgente primeiro (prazo mais próximo); "prazo-inscricao" sem data válida vem antes de todos (o editor o marcou
+       como urgente); os demais sem data vão para o fim; empate = ordem do arquivo */
+    const chave = (it) => {
+      const t = prazoMs(it.encerraEm);
+      if (!Number.isNaN(t)) return [1, t];
+      return it.destaque === 'prazo-inscricao' ? [0, 0] : [2, 0];
+    };
+    const ordenados = situacao.map((it, i) => [it, i, chave(it)])
+      .sort((a, b) => (a[2][0] - b[2][0]) || (a[2][1] - b[2][1]) || (a[1] - b[1])).map((p) => p[0]);
+    raiz.append(h('h2', null, 'Situação'));
+    const ids = ordenados.map((_, i) => `certame-${i + 1}`);
+    if (ordenados.length > 1) {
+      /* atalhos: botões (não âncoras #, que o roteador por hash trataria como rota) */
+      raiz.append(h('nav', { class: 'cc-atalhos', 'aria-label': 'Ir para o certame' },
+        ordenados.map((it, i) => h('button', {
+          type: 'button', class: 'cc-atalho',
+          onclick: () => { const alvo = document.getElementById(ids[i]); if (alvo) { alvo.scrollIntoView({ block: 'start' }); alvo.focus({ preventScroll: true }); } },
+        }, certameNome(it) || `Certame ${i + 1}`))));
+    }
+    raiz.append(h('div', { class: 'cc-lista' }, ordenados.map((it, i) => desenharCertame(it, ids[i], agora))));
   }
   if (objs_(C.inscricao).length) {
     raiz.append(h('h2', null, 'Inscrição'), h('div', { class: 'card' }, objs_(C.inscricao).map((it) => h('div', null,

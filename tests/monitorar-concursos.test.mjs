@@ -519,7 +519,7 @@ test('achatarEstado: formato url -> { titulo, dados }, primeira ocorrência e en
   assert.equal(achatar({ A: null, B: {} }).size, 0);
 });
 
-test('listarUrls(concurso, agora): encerraEm passado fica fora; futuro, inválido, ausente e igual a agora continuam', () => {
+test('listarUrls(concurso, agora): encerraEm passado ou igual a agora fica fora; futuro, inválido, não-texto e ausente continuam', () => {
   const listarUrls = fn('listarUrls');
   const concurso = {
     situacao: [
@@ -536,10 +536,16 @@ test('listarUrls(concurso, agora): encerraEm passado fica fora; futuro, inválid
     Invalido: ['https://i/1'],
     NaoString: ['https://n/1'],
     Ausente: ['https://a/1'],
-    Agora: ['https://g/1'],
   });
-  // Um milissegundo depois, "Agora" já está encerrado.
-  assert.equal('Agora' in listarUrls(concurso, AGORA + 1), false);
+  // Fronteira igual à do site (aberto só se prazo > agora): prazo == agora já é encerrado;
+  // um milissegundo antes, "Agora" ainda é monitorado.
+  assert.equal('Agora' in listarUrls(concurso, AGORA), false);
+  assert.deepEqual(listarUrls(concurso, AGORA - 1).Agora, ['https://g/1']);
+  // encerraEm não-texto (0) não é prazo: prazoMs dá NaN e o item segue aberto.
+  const prazoMs = fn('prazoMs');
+  assert.ok(Number.isNaN(prazoMs(0)), 'prazoMs(0) deve ser NaN');
+  assert.ok(Number.isNaN(prazoMs(1790000000000)), 'prazoMs(1790000000000) deve ser NaN');
+  assert.equal(fn('certameEncerrado')({ encerraEm: 0 }, AGORA), false);
 });
 
 test('certameEncerrado e listarEncerrados com agora injetado', () => {
@@ -547,7 +553,9 @@ test('certameEncerrado e listarEncerrados com agora injetado', () => {
   const listarEncerrados = fn('listarEncerrados');
   assert.equal(certameEncerrado({ encerraEm: '2026-11-25' }, AGORA), true);
   assert.equal(certameEncerrado({ encerraEm: '2026-11-27' }, AGORA), false);
-  assert.equal(certameEncerrado({ encerraEm: new Date(AGORA).toISOString() }, AGORA), false);
+  // prazo == agora: encerrado (o site só mostra aberto se prazo > agora); 1 ms antes, aberto.
+  assert.equal(certameEncerrado({ encerraEm: new Date(AGORA).toISOString() }, AGORA), true);
+  assert.equal(certameEncerrado({ encerraEm: new Date(AGORA).toISOString() }, AGORA - 1), false);
   assert.equal(certameEncerrado({ encerraEm: 'xx' }, AGORA), false);
   assert.equal(certameEncerrado({}, AGORA), false);
   assert.equal(certameEncerrado(null, AGORA), false);
@@ -1159,4 +1167,79 @@ test('main: estado válido {"itens":{}} com URL nova lida com sucesso sai com 3 
   assert.doesNotMatch(stderr, /malformado/);
   assert.ok(cont.n >= 1, 'a URL nova deveria ter sido lida');
   assert.match(relatorio, /Houve mudança/);
+});
+
+// ---------- prazoMs (fim do dia e hora sem fuso = Brasília) ----------
+test('prazoMs: "AAAA-MM-DD" vira 23:59 de Brasília (com ou sem espaços)', () => {
+  const prazoMs = fn('prazoMs');
+  const esperado = Date.parse('2026-12-01T02:59:00Z');
+  assert.equal(prazoMs('2026-11-30'), esperado);
+  assert.equal(prazoMs('  2026-11-30 \n'), esperado);
+});
+
+test('prazoMs: ISO com hora e sem fuso é lido como -03:00', () => {
+  const prazoMs = fn('prazoMs');
+  assert.equal(prazoMs('2026-11-30T10:00'), Date.parse('2026-11-30T13:00:00Z'));
+  assert.equal(prazoMs('2026-11-30T10:00:00'), Date.parse('2026-11-30T13:00:00Z'));
+  assert.equal(prazoMs('2026-11-30T10:00:00.500'), Date.parse('2026-11-30T13:00:00.500Z'));
+});
+
+test('prazoMs: com fuso explícito segue Date.parse', () => {
+  const prazoMs = fn('prazoMs');
+  for (const s of ['2026-11-30T23:59:00Z', '2026-11-30T23:59:00-03:00', '2026-11-30T23:59:00+00:00']) {
+    assert.equal(prazoMs(s), Date.parse(s), s);
+  }
+  assert.equal(prazoMs('2026-11-30T23:59:00Z'), prazoMs('2026-11-30T23:59:00+00:00'));
+});
+
+test('prazoMs: inválido ou não-texto dá NaN', () => {
+  const prazoMs = fn('prazoMs');
+  for (const v of ['lixo', '', null, undefined, {}]) {
+    assert.ok(Number.isNaN(prazoMs(v)), `esperava NaN para ${JSON.stringify(v)}`);
+  }
+});
+
+test('certameEncerrado: "AAAA-MM-DD" só encerra depois do fim do dia em Brasília', () => {
+  const certameEncerrado = fn('certameEncerrado');
+  const item = { encerraEm: '2026-11-30' };
+  assert.equal(certameEncerrado(item, Date.parse('2026-11-30T22:00:00-03:00')), false);
+  assert.equal(certameEncerrado(item, Date.parse('2026-12-01T00:00:00-03:00')), true);
+});
+
+test('listarUrls/listarEncerrados: encerraEm "2026-11-30" às 22h de 29/11 (Brasília) continua monitorado', () => {
+  const listarUrls = fn('listarUrls');
+  const listarEncerrados = fn('listarEncerrados');
+  const agora = Date.parse('2026-11-29T22:00:00-03:00');
+  const concurso = { situacao: [{ titulo: 'C', encerraEm: '2026-11-30', links: [{ url: 'https://c/1' }] }] };
+  assert.deepEqual(listarUrls(concurso, agora), { C: ['https://c/1'] });
+  assert.deepEqual(listarEncerrados(concurso, agora), []);
+});
+
+test('prazoMs: resultado igual com TZ=UTC e TZ=America/Sao_Paulo', (t) => {
+  fn('prazoMs');
+  const dir = pastaTemp(t);
+  const sonda = path.join(dir, 'sonda-prazo.mjs');
+  const entradas = ['2026-11-30', ' 2026-11-30 ', '2026-11-30T10:00', '2026-11-30T10:00:00', '2026-11-30T10:00:00.500',
+    '2026-11-30T23:59:00Z', '2026-11-30T23:59:00-03:00', '2026-11-30T23:59:00+00:00', 'lixo', '',
+    '2026-11-30T10:00:00.123456'];
+  const iLonga = entradas.length - 1;
+  fs.writeFileSync(sonda, [
+    `import { prazoMs } from ${JSON.stringify(pathToFileURL(SCRIPT).href)};`,
+    `const entradas = ${JSON.stringify(entradas)};`,
+    `process.stdout.write(JSON.stringify(entradas.map((e) => String(prazoMs(e)))));`,
+  ].join('\n'));
+  const rodar = (tz) => {
+    const r = spawnSync(process.execPath, [sonda], { env: { ...process.env, TZ: tz }, encoding: 'utf8', timeout: 30000 });
+    assert.equal(r.status, 0, `TZ=${tz}: ${r.stderr}`);
+    return JSON.parse(r.stdout);
+  };
+  const utc = rodar('UTC');
+  const sp = rodar('America/Sao_Paulo');
+  assert.deepEqual(utc, sp);
+  assert.equal(utc[0], String(Date.parse('2026-12-01T02:59:00Z')));
+  assert.equal(utc[2], String(Date.parse('2026-11-30T13:00:00Z')));
+  // Hora sem fuso (sem segundos e com casas decimais longas) = Brasília, igual nos dois fusos.
+  assert.equal(utc[2], String(Date.parse('2026-11-30T10:00-03:00')));
+  assert.equal(utc[iLonga], String(Date.parse('2026-11-30T10:00:00.123456-03:00')));
+  assert.ok(Number.isFinite(Number(utc[iLonga])), 'casas decimais longas devem dar número');
 });
