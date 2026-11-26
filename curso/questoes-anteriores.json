@@ -39396,8 +39396,9 @@
    "fonteGabarito": "fontes/outros-municipios-furb/biguacu-2025-concurso-001/provas/256-ODONTOLOGO-I-E-II-1-MATRIZ.pdf (gabarito oficial impresso no caderno)",
    "grupo": "G0599",
    "repeticoesNoMesmoEdital": 1,
-   "topico": "perio",
-   "metodoClassificacao": "auto-palavra-chave"
+   "topico": "ped",
+   "metodoClassificacao": "manual",
+   "motivoReclassificacao": "26/11/2026: era perio por palavra-chave (furca); é contraindicação de pulpotomia em decíduo"
   },
   {
    "prova": "ita-2025-clinico",

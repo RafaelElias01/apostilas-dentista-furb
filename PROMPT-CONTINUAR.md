@@ -13,7 +13,8 @@ Antes de agir: `git pull`, depois leia `ESTADO.md` (seção "Estado geral em 202
 Os JSONs citam nomes de arquivo de `fontes/leis/` que podem não existir em outro computador (ex.: `constituicao-federal-camara.html` x `constituicao-federal-1988-camara-normaatualizada.html`). Não é erro de conteúdo: crie uma cópia com o nome citado e anote em `fontes/leis/ALIASES-ESTE-PC.txt`; depois rode `node scripts/leis-compilar-e-conferir.mjs conferir` (tem que dar 117/117).
 
 ## O que falta (decisão do dono primeiro)
-1. HIV (Apostila 08) usa fonte de 2006; G0405 (Apostila 09) pode perder o PENDENTE.
+1. G0405 (Apostila 09) pode perder o PENDENTE. (HIV, lesão endoperiodontal e furca foram resolvidos em 26/11/2026: ver `ESTADO.md`, "Lote de 26/11/2026".)
+   Gerar PDF neste PC: `$env:NAVEGADOR_PDF='C:/Program Files/Google/Chrome/Application/chrome.exe'` e `$env:PDFTOTEXT` apontando para o pdftotext do Git (mingw64).
 2. Registro de aprendizados: aprovar G:A001 a G:A003 (regras globais) e importar o registro antigo do PC de origem (ver `CLAUDE.md`).
 3. Fontes PENDENTES (abaixo). Reconferir Navegantes na véspera da prova.
 
@@ -25,4 +26,4 @@ Os JSONs citam nomes de arquivo de `fontes/leis/` que podem não existir em outr
 - Admitir erro na hora; nunca dizer "feito" sem verificar. Ao atualizar este arquivo ou o `ESTADO.md`, conferir o estado real (git log, testes) antes de escrever.
 
 ## Pendências sem fonte oficial
-Lei Orgânica de Navegantes oficial; história e geografia de Navegantes; Leis 3.985/2025 e 4.022/2026 (só cópia não oficial); lesão endoperiodontal; cirurgia pré-protética e infecções odontogênicas; atualidades 2026.
+Lei Orgânica de Navegantes oficial; história e geografia de Navegantes; Leis 3.985/2025 e 4.022/2026 (só cópia não oficial); tratamento da lesão endoperiodontal e do abscesso periodontal; PCDT HIV (CAPTCHA); cirurgia pré-protética e infecções odontogênicas; atualidades 2026.

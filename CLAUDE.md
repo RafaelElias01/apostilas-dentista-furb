@@ -12,6 +12,7 @@ Projeto enxuto, criado em 2026-11-18 a partir do curso-template (Brigada Academy
 - Code review (`/code-review`) em todo código/script antes de push; mostrar os achados; só doc/memória é isento.
 - Texto que o leitor vê: mostrar antes/depois e esperar "aprovado" antes de mudar em massa.
 - Commit/push/merge a qualquer hora (regra do dono para estes projetos).
+- **Vários PCs (dono, 26/11/2026):** o dono usa mais de um PC; um tem proxy (Px 127.0.0.1:3129) e o outro não. `fontes/`, `memoria/` e a memória em ~/.claude NÃO viajam pelo git: o que o outro PC precisa vai para `ESTADO.md`/`PROMPT-CONTINUAR.md`. Gerar PDF: `NAVEGADOR_PDF` = Chrome >= 131 e `PDFTOTEXT` = pdftotext (no PC com proxy, o do Git mingw64; o Edge de lá é 127).
 - No Windows: vitest só pelo PowerShell; heredocs do Bash estragam barras invertidas (usar Write/Edit); `git push` atrás do proxy: PowerShell, ou Px 127.0.0.1:3129 para `gh`.
 
 - **Checklist de aprendizados ao fim de cada lote** (melhoria recursiva):
