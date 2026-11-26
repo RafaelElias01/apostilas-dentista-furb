@@ -1,0 +1,171 @@
+name: Monitorar concursos
+
+on:
+  schedule:
+    - cron: '0 10 * * *' # 7h de Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: monitorar-concursos
+  cancel-in-progress: false
+
+# Contrato do script (scripts/monitorar-concursos.mjs):
+#   0 = sem mudança e nada inacessível
+#   3 = houve mudança
+#   4 = sem mudança, mas há URL inacessível ou referência incompleta (URL nunca lida:
+#       rodar --atualizar)
+#   2 = erro de uso/arquivo
+# 3 e 4 abrem/comentam issue (sem repetir o mesmo aviso); 2 e código inesperado falham o job.
+# Cada tipo tem sua issue: rótulo comum monitor-concursos + monitor-mudanca (3) ou
+# monitor-inacessivel (4). O dedupe só olha a issue ABERTA mais recente do mesmo tipo e
+# só marcadores "<!-- monitor-hash: HASH tipo: N -->" do mesmo tipo; issue fechada não
+# segura aviso novo.
+# --chave chave.txt grava um texto estável do aviso (código, mudanças ordenadas e URLs
+# inacessíveis SEM o motivo, sem horário); o dedupe usa o sha256 dele, para que a mesma
+# página fora do ar com motivo diferente (timeout/ECONNRESET/503) não gere aviso novo.
+# Sem chave.txt, o hash cai no método antigo: código + relatório sem "Verificado em".
+#
+# Atenção (limite do GitHub): em repositório público, o GitHub desativa sozinho o
+# agendamento (schedule) depois de 60 dias sem atividade no repositório. O monitor não
+# faz commits, então pode parar sem aviso. De tempos em tempos, conferir em
+# Actions > Monitorar concursos se o workflow está ativo; se estiver desativado,
+# reativar pelo botão "Enable workflow" ou disparar "Run workflow". Qualquer commit no
+# repositório reinicia a contagem dos 60 dias.
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar pdftotext (poppler-utils)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: Rodar o monitor
+        id: monitor
+        run: |
+          set +e
+          node scripts/monitorar-concursos.mjs --relatorio relatorio.md --chave chave.txt
+          codigo=$?
+          set -e
+          echo "Código de saída do monitor: $codigo"
+          echo "codigo=$codigo" >> "$GITHUB_OUTPUT"
+
+      - name: Publicar relatório no resumo
+        if: always()
+        env:
+          CODIGO: ${{ steps.monitor.outputs.codigo }}
+        run: |
+          if [ -f relatorio.md ]; then
+            cat relatorio.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Relatório não foi gerado (código ${CODIGO:-desconhecido})." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Abrir ou atualizar issue (mudança, página inacessível ou referência incompleta)
+        if: steps.monitor.outputs.codigo == '3' || steps.monitor.outputs.codigo == '4'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          CODIGO: ${{ steps.monitor.outputs.codigo }}
+        run: |
+          set -euo pipefail
+          hoje="$(TZ=America/Sao_Paulo date +%Y-%m-%d)"
+
+          # Tipo do aviso = código de saída; cada tipo tem rótulo e issue próprios.
+          if [ "$CODIGO" = "3" ]; then
+            tipo=3
+            rotulo_tipo="monitor-mudanca"
+            titulo="Concurso mudou: conferir datas/documentos ($hoje)"
+          else
+            tipo=4
+            rotulo_tipo="monitor-inacessivel"
+            titulo="Monitor de concursos: página inacessível ou referência incompleta ($hoje)"
+          fi
+
+          # Hash do aviso, para não repetir o mesmo aviso todo dia. Só contém hex.
+          # Preferência: chave.txt (texto estável, sem motivo de falha nem horário).
+          # Sem ela: código + relatório sem o carimbo de hora ("Verificado em ...").
+          if [ -f chave.txt ]; then
+            hash="$(sha256sum < chave.txt | cut -d' ' -f1)"
+            echo "Hash da chave (chave.txt): $hash"
+          else
+            hash="$( { printf 'codigo=%s\n' "$CODIGO"; grep -v '^Verificado em' relatorio.md || true; } | sha256sum | cut -d' ' -f1)"
+            echo "Hash do relatório (sem chave.txt): $hash"
+          fi
+
+          # Corpo: relatório cortado por linhas inteiras (até ~60000 bytes, sem partir UTF-8).
+          {
+            LC_ALL=C awk -v max=60000 '
+              { n += length($0) + 1; if (n > max) { cortado = 1; exit } print }
+              END { if (cortado) print "\n(relatório cortado)" }
+            ' relatorio.md
+            printf '\n\n---\n\n'
+            if [ "$CODIGO" = "3" ]; then
+              printf '%s\n' 'Conferir no documento oficial, atualizar `site/dados/concurso.json` e rodar `node scripts/monitorar-concursos.mjs --atualizar` e commitar o estado (`curso/monitor-concursos-estado.json`).'
+            else
+              printf '%s\n' 'Uma ou mais páginas oficiais não responderam, ou a referência está incompleta (URL monitorada que nunca foi lida).'
+              printf '%s\n' '- Página não respondeu: conferir manualmente se saiu do ar ou mudou de endereço; se mudou, atualizar a URL monitorada.'
+              printf '%s\n' '- Referência incompleta: rodar `node scripts/monitorar-concursos.mjs --atualizar` e commitar o estado (`curso/monitor-concursos-estado.json`).'
+            fi
+            printf '\n<!-- monitor-hash: %s tipo: %s -->\n' "$hash" "$tipo"
+          } > corpo.md
+
+          gh label create monitor-concursos --color FBCA04 --description "Aviso do monitor de concursos" --force
+          if [ "$tipo" = "3" ]; then
+            gh label create monitor-mudanca --color D93F0B --description "Monitor: mudança detectada em concurso" --force
+          else
+            gh label create monitor-inacessivel --color 5319E7 --description "Monitor: página inacessível ou referência incompleta" --force
+          fi
+
+          # Último marcador DO MESMO TIPO no texto lido da entrada (corpo e comentários em
+          # ordem cronológica); marcadores de outro tipo ou no formato antigo são ignorados.
+          extrair_hash() {
+            grep -o "monitor-hash: [0-9a-f]\{64\} tipo: ${tipo} -->" | tail -n 1 | cut -d' ' -f2 || true
+          }
+
+          # Só issue ABERTA, com os dois rótulos do tipo (vários --label = E), a mais recente.
+          numero="$(gh issue list --label monitor-concursos --label "$rotulo_tipo" --state open --limit 1 --json number --jq '.[0].number // empty')"
+          hash_anterior=""
+          if [ -n "$numero" ]; then
+            gh issue view "$numero" --json body,comments --jq '.body // "", (.comments[].body)' > ultimo-aviso.txt
+            hash_anterior="$(extrair_hash < ultimo-aviso.txt)"
+          fi
+
+          if [ -n "$numero" ] && [ "$hash_anterior" = "$hash" ]; then
+            echo "Mesmo aviso (tipo $tipo) já está na issue aberta #$numero; nada a fazer."
+            printf '\n\nMesmo aviso (tipo %s) já está na issue aberta #%s; não foi aberta nem comentada issue.\n' "$tipo" "$numero" >> "$GITHUB_STEP_SUMMARY"
+          elif [ -n "$numero" ]; then
+            echo "Comentando na issue aberta #$numero (tipo $tipo)."
+            gh issue comment "$numero" --body-file corpo.md
+          else
+            echo "Nenhuma issue aberta do tipo $tipo; abrindo issue nova."
+            gh issue create \
+              --title "$titulo" \
+              --label monitor-concursos \
+              --label "$rotulo_tipo" \
+              --body-file corpo.md
+          fi
+
+      - name: Falhar em erro de uso/arquivo
+        if: steps.monitor.outputs.codigo == '2'
+        run: |
+          echo "::error::O monitor terminou com código 2 (erro de uso ou de arquivo: entrada/estado ilegível, estado de referência inexistente ou falha ao gravar o relatório). Veja o log do passo 'Rodar o monitor'."
+          exit 1
+
+      - name: Falhar em código inesperado
+        if: steps.monitor.outputs.codigo != '0' && steps.monitor.outputs.codigo != '2' && steps.monitor.outputs.codigo != '3' && steps.monitor.outputs.codigo != '4'
+        env:
+          CODIGO: ${{ steps.monitor.outputs.codigo }}
+        run: |
+          echo "::error::O monitor terminou com código inesperado (${CODIGO:-vazio})."
+          exit 1

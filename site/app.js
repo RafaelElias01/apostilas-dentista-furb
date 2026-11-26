@@ -708,6 +708,18 @@ function desenharConcurso(raiz, C) {
       const item = h('div', {
         class: it.destaque === 'prazo-inscricao' ? 'destaque-prazo' : null
       }, h('h3', null, txt(it.titulo)), h('p', null, txt(it.texto)));
+      /* opcionais: "cargos" [{cargo, vagas, salario, cargaHoraria, requisitos}], "detalhes" [{rotulo, valor}], "fonteDados" (texto) */
+      const cargos = objs_(it.cargos);
+      if (cargos.length) {
+        item.append(tabela(`Cargos de ${txt(it.titulo)}`, ['Cargo', 'Vagas', 'Salário', 'Carga horária', 'Requisitos'],
+          cargos.map((c) => [c.cargo, c.vagas, c.salario, c.cargaHoraria, c.requisitos])));
+      }
+      const detalhes = objs_(it.detalhes);
+      if (detalhes.length) {
+        item.append(tabela(`Informações de ${txt(it.titulo)}`, ['Item', 'Informação'],
+          detalhes.map((d) => [d.rotulo, d.valor])));
+      }
+      if (txt(it.fonteDados)) item.append(h('p', { class: 'suave' }, `Fonte: ${txt(it.fonteDados)}`));
       const links = objs_(it.links);
       if (links.length) {
         const nav = h('p', { class: 'concurso-links' });

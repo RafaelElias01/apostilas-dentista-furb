@@ -191,6 +191,8 @@ summary { min-height: 44px; padding: 10px 0; cursor: pointer; }
 table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
 th, td { border: 1px solid var(--borda); padding: 6px 8px; text-align: left; }
 .rolavel { overflow-x: auto; margin: 8px 0; position: relative; }
+/* células quebram só entre palavras; se não couber, a tabela rola dentro do .rolavel */
+.rolavel th, .rolavel td { overflow-wrap: break-word; }
 .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .timer { font-variant-numeric: tabular-nums; font-size: 1.3rem; font-weight: 700; }
 ul.lista { padding-left: 1.2rem; }

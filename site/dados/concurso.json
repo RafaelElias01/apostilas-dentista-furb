@@ -1,31 +1,43 @@
 {
-  "atualizadoEm": "24/11/2026",
+  "atualizadoEm": "26/11/2026",
   "avisoTopo": "Somente certames com inscrições abertas. Certames encerrados foram removidos. Prazos podem mudar; confirme o edital e o portal oficial antes de se inscrever.",
   "situacao": [
     {
-      "titulo": "Navegantes (FURB): inscrições abertas",
-      "destaque": "prazo-inscricao",
-      "texto": "Processo Seletivo 0172/2026 da Prefeitura de Navegantes. Inscrições até 25/11/2026 às 23h59; taxa de R$ 130,00 até 26/11/2026. Prova em 13/12/2026 pela manhã. Cargos temporários de Odontologia em cadastro de reserva, banca FURB.",
-      "encerraEm": "2026-11-25T23:59:00-03:00",
-      "links": [
-        {
-          "texto": "Página oficial do certame",
-          "url": "https://concursos.furb.br/concurso/579-prefeitura-municipal-de-navegantes-processo-seletivo-edital"
-        },
-        {
-          "texto": "Edital com erratas",
-          "url": "https://anexos-r2.selecao.net.br/uploads/342/concursos/579/anexos/5e21661c-60c2-4607-8628-787d9bffc7c5.pdf"
-        },
-        {
-          "texto": "Inscrição online",
-          "url": "https://concursos.furb.br/area-candidato/concurso/579/inscricao"
-        }
-      ]
-    },
-    {
       "titulo": "IFFar (RS): inscrições abertas",
-      "texto": "Concurso Público do Instituto Federal Farroupilha, Edital 406/2026, banca Fundatec. Odontólogo, 4 vagas, 40 horas semanais. Inscrições de 19/11 a 21/12/2026.",
+      "texto": "Concurso do Instituto Federal Farroupilha (Edital 406/2026), banca Fundatec. Odontólogo: 4 vagas, 40 horas por semana, vencimento básico de R$ 5.215,39; inscrições até 21/12/2026 às 17h.",
       "encerraEm": "2026-12-21T17:00:00-03:00",
+      "cargos": [
+        {
+          "cargo": "Odontólogo (nível E, Técnico-Administrativo em Educação)",
+          "vagas": "4 vagas imediatas, sendo 1 reservada para pessoas negras (distribuição antes do sorteio de 18/11/2026; resultado do sorteio não conferido: PENDENTE)",
+          "salario": "Vencimento básico de R$ 5.215,39. O auxílio-alimentação de R$ 1.192,00 é pago à parte. O edital não informa remuneração total.",
+          "cargaHoraria": "40 horas por semana, em dois turnos (manhã, tarde e/ou noite), inclusive aos sábados",
+          "requisitos": "Graduação em Odontologia (diploma registrado, curso reconhecido pelo MEC) e registro profissional ativo no conselho competente. Ter 18 anos na posse."
+        }
+      ],
+      "detalhes": [
+        { "rotulo": "Banca", "valor": "Fundatec" },
+        { "rotulo": "Regime", "valor": "Servidor federal estatutário (Lei nº 8.112/1990)" },
+        { "rotulo": "Lotação", "valor": "Reitoria ou qualquer campus do IFFar, conforme a necessidade e a classificação" },
+        { "rotulo": "Taxa de inscrição", "valor": "R$ 120,00" },
+        { "rotulo": "Inscrições", "valor": "De 19/11 a 21/12/2026, até as 17h do último dia. Só pela internet, no site da Fundatec (www.fundatec.org.br)." },
+        { "rotulo": "Pagamento da taxa", "valor": "Boleto pago até 22/12/2026" },
+        { "rotulo": "Isenção da taxa", "valor": "Pedidos de 19/11 a 24/11/2026 (prazo encerrado). Resultado preliminar em 03/12 e definitivo em 16/12/2026." },
+        { "rotulo": "Prova", "valor": "Só prova objetiva, eliminatória e classificatória. 50 questões com 4 alternativas (A a D)." },
+        { "rotulo": "Questões e pontuação", "valor": "Língua Portuguesa 10, Legislação 15 e Conhecimentos Específicos 25. Cada questão vale 2 pontos, total de 100." },
+        { "rotulo": "Nota mínima", "valor": "50 pontos de 100, com pelo menos 2 acertos em Português, 2 em Legislação e 5 em Específicos" },
+        { "rotulo": "Data da prova", "valor": "31/01/2027 (data provável), domingo, turno da manhã. Pode passar para sábado." },
+        { "rotulo": "Duração", "valor": "3h30" },
+        { "rotulo": "Local da prova", "valor": "Santa Maria/RS, em princípio. Pode ir para outras cidades da região. Data, hora e local para consulta em 22/01/2027." },
+        { "rotulo": "Outras etapas", "valor": "Não há outra etapa de avaliação. Para cotistas negros, há verificação da autodeclaração em 20 e/ou 21/03/2027." },
+        { "rotulo": "Validade", "valor": "2 anos a partir da homologação, prorrogável uma vez por mais 2" },
+        { "rotulo": "Próximas datas", "valor": "Isenção preliminar 03/12; isenção definitiva 16/12; fim das inscrições 21/12; boleto até 22/12/2026; inscritos 05/01; consulta do local 22/01; prova 31/01; gabarito preliminar 01/02; gabarito definitivo 23/02; notas preliminares 26/02; notas definitivas 08/03; homologação 07/04/2027. A Fundatec pode mudar o cronograma." },
+        { "rotulo": "Auxílio-alimentação", "valor": "R$ 1.192,00 (jornada de 40 horas)" },
+        { "rotulo": "Auxílio pré-escolar", "valor": "R$ 526,64" },
+        { "rotulo": "Outros benefícios", "valor": "Auxílio-transporte e assistência à saúde suplementar, na forma da lei (sem valor no edital)" },
+        { "rotulo": "Incentivo à qualificação", "valor": "Pago sobre o vencimento a quem tiver escolaridade superior à exigida pelo cargo (item 1.7.7.1 do edital). Como o Odontólogo já exige graduação, contam: especialização (360 h ou mais) 30%, mestrado 52% e doutorado 75%." }
+      ],
+      "fonteDados": "Edital nº 406/2026 do IFFar (PDF oficial, Rev 10 de 12/11/2026), conferido em 26/11/2026. PENDENTE: o resultado do sorteio das vagas reservadas (18/11/2026) e eventuais retificações no site da Fundatec não foram conferidos (o site da banca não respondeu à consulta automática); a página oficial do IFFar lista só o edital Rev 10.",
       "links": [
         {
           "texto": "Edital oficial",
@@ -38,31 +50,53 @@
       ]
     },
     {
-      "titulo": "Piratini (RS): inscrições abertas",
-      "texto": "Concurso Público 01/2026. Odontólogo e Auxiliar de Saúde Bucal. Inscrições até 25/11/2026 às 13h, pela Objetiva.",
-      "encerraEm": "2026-11-25T13:00:00-03:00",
-      "links": [
-        {
-          "texto": "Página oficial da banca",
-          "url": "https://concursos.objetivas.com.br/informacoes/2638/"
-        }
-      ]
-    },
-    {
       "titulo": "São José do Inhacorá (RS): inscrições abertas",
-      "texto": "Concurso Público 01/2026. Cargo Dentista. Inscrições prorrogadas até 30/11/2026, pela Premier.",
+      "texto": "Concurso Público 01/2026 da Prefeitura, banca Premier. Dentista: cadastro de reserva, 40 horas por semana, vencimento de R$ 9.885,71; inscrições prorrogadas até 30/11/2026.",
       "encerraEm": "2026-11-30T23:59:00-03:00",
+      "cargos": [
+        {
+          "cargo": "Dentista",
+          "vagas": "Cadastro de reserva (CR): não há vaga imediata",
+          "salario": "R$ 9.885,71 (vencimento). O edital não cita adicional para Dentista.",
+          "cargaHoraria": "40 horas por semana",
+          "requisitos": "Curso superior em Odontologia e registro em vigor no CRO-RS. Ter 18 anos na posse."
+        }
+      ],
+      "detalhes": [
+        { "rotulo": "Banca", "valor": "Premier Concursos" },
+        { "rotulo": "Regime", "valor": "Estatutário (Lei Municipal nº 970/2011)" },
+        { "rotulo": "Taxa de inscrição", "valor": "R$ 125,64" },
+        { "rotulo": "Inscrições", "valor": "Prorrogadas até 30/11/2026, até 23h59 (horário de Brasília). Só pela internet, no site da Premier." },
+        { "rotulo": "Pagamento da taxa", "valor": "Último dia: 1º/12/2026" },
+        { "rotulo": "Prova", "valor": "Só prova escrita objetiva, eliminatória e classificatória. 30 questões com 4 alternativas, valendo 100 pontos." },
+        { "rotulo": "Questões e pontuação", "valor": "Língua Portuguesa: 10 questões de 2 pontos (20 pontos). Legislação e Conhecimentos Específicos: 20 questões de 4 pontos (80 pontos)." },
+        { "rotulo": "Nota mínima", "valor": "50 pontos de 100" },
+        { "rotulo": "Data da prova", "valor": "20/12/2026 (data provável), turno da tarde" },
+        { "rotulo": "Duração", "valor": "2h30" },
+        { "rotulo": "Local e horário", "valor": "Ainda não divulgados. Saem no edital de homologação das inscrições (previsto para 10/12/2026)." },
+        { "rotulo": "Outras etapas", "valor": "Nenhuma para Dentista. Prova prática e títulos são só de outros cargos." },
+        { "rotulo": "Validade", "valor": "2 anos a partir da homologação final, prorrogável por mais 2" },
+        { "rotulo": "Posse", "valor": "10 dias após a nomeação, prorrogável a pedido por igual período" },
+        { "rotulo": "Pessoas com deficiência", "valor": "Reserva de 10% (1 a cada 10 nomeados), aplicada às vagas futuras" },
+        { "rotulo": "Próximas datas", "valor": "Inscrições deferidas 04/12; recursos 05 a 07/12; homologação das inscrições 10/12; prova 20/12; gabarito preliminar 21/12/2026. As demais datas sairão por edital." },
+        { "rotulo": "Benefícios e adicionais", "valor": "O edital não cita adicional para Dentista" }
+      ],
+      "fonteDados": "Edital nº 195/2026 (abertura) e Edital nº 198/2026 (retificação) da Premier Concursos, conferidos em 26/11/2026.",
       "links": [
         {
           "texto": "Página oficial da banca",
           "url": "https://www.premierconcursos.com.br/concursos_andamento_sji2026cp.html"
         },
         {
-          "texto": "Retificação oficial",
-          "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1992026-PSP-GlOrJwPr-Retifica.pdf"
+          "texto": "Edital de abertura (nº 195/2026)",
+          "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1962026-CP-LvEqGwZo.pdf"
+        },
+        {
+          "texto": "Retificação do concurso (nº 198/2026)",
+          "url": "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1982026-CP-PgKeImMe-Retifica.pdf"
         }
       ]
     }
   ],
-  "fonte": "Páginas oficiais das bancas e dos órgãos, conferidas em 24/11/2026 (Navegantes, Piratini e São José do Inhacorá nas páginas oficiais; IFFar no próprio edital 406/2026)."
+  "fonte": "Dados tirados dos editais oficiais, conferidos em 26/11/2026. Uma rotina diária vigia mudanças de datas e novos documentos nas páginas oficiais dos certames listados, enquanto as inscrições estão abertas."
 }
