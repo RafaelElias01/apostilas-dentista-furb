@@ -24,6 +24,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import tls from 'node:tls';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -769,6 +770,42 @@ function chamadoDiretamente() {
   } catch { return false; }
 }
 
+/**
+ * Soma os certificados raiz do sistema operacional aos do Node (que só traz os da Mozilla).
+ * Necessário no PC atrás do proxy corporativo, que intercepta HTTPS com um certificado da
+ * empresa instalado no Windows: sem isso, todo portal dá UNABLE_TO_VERIFY_LEAF_SIGNATURE.
+ * Equivale a NODE_OPTIONS=--use-system-ca; no GitHub Actions e no PC sem proxy não muda nada.
+ * Node sem essa API (< 22.19 / 24.5): segue com os certificados padrão.
+ */
+export function confiarNosCertificadosDoSistema() {
+  const dica = 'Atrás de proxy que intercepta HTTPS, rode com NODE_OPTIONS=--use-system-ca.';
+  if (typeof tls.setDefaultCACertificates !== 'function' || typeof tls.getCACertificates !== 'function') {
+    console.error(`Aviso: este Node (${process.version}) não soma os certificados do sistema sozinho. ${dica}`);
+    return false;
+  }
+  try {
+    // Os padrão do Node entram todos, sem filtro. Os do sistema: sem duplicatas (a mesma raiz pode vir nas duas
+    // listas com quebras de linha diferentes) e só os que o Node consegue ler (um ruim não pode derrubar os outros).
+    const todos = new Map();
+    for (const c of tls.getCACertificates('default')) todos.set(c.replace(/\s+/g, ''), c);
+    let ilegiveis = 0;
+    for (const c of tls.getCACertificates('system')) {
+      const chave = c.replace(/\s+/g, '');
+      if (todos.has(chave)) continue;
+      try { new crypto.X509Certificate(c); } catch { ilegiveis++; continue; }
+      todos.set(chave, c);
+    }
+    if (ilegiveis) console.error(`Aviso: ${ilegiveis} certificado(s) do sistema ilegível(is) ignorado(s). Se algum portal der ` +
+      `UNABLE_TO_VERIFY_LEAF_SIGNATURE, ${dica.charAt(0).toLowerCase()}${dica.slice(1)}`);
+    tls.setDefaultCACertificates([...todos.values()]);
+    return true;
+  } catch (e) {
+    console.error(`Aviso: não consegui somar os certificados do sistema (${e.message}). ${dica}`);
+    return false;
+  }
+}
+
 if (chamadoDiretamente()) {
+  confiarNosCertificadosDoSistema(); // falha já avisada no stderr; o monitor segue com os certificados padrão
   main(process.argv.slice(2)).then((codigo) => { process.exitCode = codigo; }, (e) => { console.error(e); process.exitCode = 2; });
 }

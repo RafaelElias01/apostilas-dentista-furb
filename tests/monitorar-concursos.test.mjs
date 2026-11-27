@@ -1243,3 +1243,49 @@ test('prazoMs: resultado igual com TZ=UTC e TZ=America/Sao_Paulo', (t) => {
   assert.equal(utc[iLonga], String(Date.parse('2026-11-30T10:00:00.123456-03:00')));
   assert.ok(Number.isFinite(Number(utc[iLonga])), 'casas decimais longas devem dar número');
 });
+
+// ---------- certificados do sistema (PC atrás de proxy que intercepta HTTPS) ----------
+test('confiarNosCertificadosDoSistema: soma os do sistema sem perder os do Node', async (t) => {
+  const tls = await import('node:tls');
+  const { X509Certificate } = await import('node:crypto');
+  const confiar = fn('confiarNosCertificadosDoSistema');
+  if (typeof tls.setDefaultCACertificates !== 'function' || typeof tls.getCACertificates !== 'function') {
+    assert.equal(confiar(), false); // Node antigo: não mexe em nada (só avisa no stderr)
+    return;
+  }
+  const antes = tls.getCACertificates('default');
+  t.after(() => tls.setDefaultCACertificates(antes)); // não deixa a troca vazar para os outros testes
+  const legivel = (c) => { try { new X509Certificate(c); return true; } catch { return false; } };
+  const sistema = tls.getCACertificates('system').filter(legivel); // ilegíveis são descartados de propósito
+  assert.equal(confiar(), true);
+  // o Node devolve o mesmo certificado com quebras de linha diferentes: comparar sem espaços
+  const norm = (c) => c.replace(/\s+/g, '');
+  const depoisLista = tls.getCACertificates('default');
+  const depois = new Set(depoisLista.map(norm));
+  assert.ok(antes.every((c) => depois.has(norm(c))), 'perdeu certificado padrão do Node');
+  assert.ok(sistema.every((c) => depois.has(norm(c))), 'faltou certificado do sistema');
+  assert.equal(depoisLista.length, depois.size, 'ficou certificado duplicado');
+  assert.equal(confiar(), true, 'chamar de novo não pode falhar');
+});
+
+test('confiarNosCertificadosDoSistema: chamada uma única vez, dentro do bloco chamadoDiretamente, antes de main', () => {
+  const fonte = fs.readFileSync(SCRIPT, 'utf8');
+  const chamadas = fonte.match(/^\s*confiarNosCertificadosDoSistema\(\);/gm) || [];
+  assert.equal(chamadas.length, 1, 'deve haver uma única chamada (a do bloco chamadoDiretamente)');
+  const bloco = fonte.slice(fonte.lastIndexOf('if (chamadoDiretamente())'));
+  assert.match(bloco, /^\s*confiarNosCertificadosDoSistema\(\);[^\n]*\n\s*main\(/m);
+});
+
+test('confiarNosCertificadosDoSistema: importar o script não troca os certificados padrão', async (t) => {
+  const tls = await import('node:tls');
+  if (typeof tls.getCACertificates !== 'function') { t.skip('Node sem tls.getCACertificates'); return; }
+  // processo novo: importa o módulo e confere que a lista padrão (conteúdo, não só o tamanho) não mudou
+  const codigo = `import tls from 'node:tls';
+    const lista = () => tls.getCACertificates('default').map((c) => c.replace(/\\s+/g, '')).sort().join('|');
+    const a = lista();
+    await import(${JSON.stringify(pathToFileURL(SCRIPT).href)});
+    console.log(a === lista() ? 'igual' : 'mudou');`;
+  const r = spawnSync(process.execPath, ['--input-type=module', '-e', codigo], { encoding: 'utf8', timeout: 60000 });
+  assert.equal(r.status, 0, r.stderr);
+  assert.equal(r.stdout.trim(), 'igual', r.stderr);
+});
