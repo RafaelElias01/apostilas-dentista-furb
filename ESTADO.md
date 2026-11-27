@@ -1,5 +1,10 @@
 # ESTADO: Apostilas Cirurgião-Dentista FURB (atualizado em 2026-11-24)
 
+## Memória do Claude entre PCs (2026-11-27)
+- A memória de `~/.claude` agora viaja pelo repo **privado** `RafaelElias01/claude-memoria` (clone em `~/claude-memoria`; ver o LEIAME de lá). Neste PC (o do proxy) os hooks SessionStart/Stop já estão instalados.
+- **No outro PC, uma vez:** `git clone https://github.com/RafaelElias01/claude-memoria.git "$HOME/claude-memoria"`, depois `node "$HOME/claude-memoria/sync.mjs" sincronizar`, depois instalar os mesmos dois hooks no `~/.claude/settings.json` de lá (sem copiar o settings.json daqui: ele tem o proxy).
+- Monitor de concursos: 1ª execução agendada (7h de 27/11) não apareceu; disparado à mão às 8h19 (saída 0, sem issue). Conferir nos próximos dias se o agendamento roda sozinho.
+
 ## Estado geral em 2026-11-24 (fim do dia)
 - Projeto **pessoal, sem fins comerciais**. Foco: concurso **Navegantes SC** (Proc. Seletivo 0172/2026, FURB; prova 13/12/2026; inscrições até 25/11 23h59). Cargos: ESF, PNE, Endodontista, Periodontista, BMF.
 - **Regra de agentes (ordem final do dono, 24/11/2026):** somente Sonnets, **no máximo 3 em paralelo**, um arquivo cada; nada de Opus.
