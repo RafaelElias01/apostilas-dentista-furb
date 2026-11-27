@@ -4,6 +4,7 @@
 - A memória de `~/.claude` agora viaja pelo repo **privado** `RafaelElias01/claude-memoria` (clone em `~/claude-memoria`; ver o LEIAME de lá). Neste PC (o do proxy) os hooks SessionStart/Stop já estão instalados.
 - **No outro PC, uma vez:** `git clone https://github.com/RafaelElias01/claude-memoria.git "$HOME/claude-memoria"`, depois `node "$HOME/claude-memoria/sync.mjs" sincronizar`, depois instalar os mesmos dois hooks no `~/.claude/settings.json` de lá (sem copiar o settings.json daqui: ele tem o proxy).
 - Monitor de concursos: 1ª execução agendada (7h de 27/11) não apareceu; disparado à mão às 8h19 (saída 0, sem issue). Conferir nos próximos dias se o agendamento roda sozinho.
+- Teste forçado do monitor (27/11, local, cópia do estado adulterada: prazo 15/12 no lugar de 21/12 e link do edital removido): detectou as duas mudanças contra os portais reais (código 3). **No PC com proxy**, rodar o monitor localmente exige `$env:NODE_OPTIONS='--use-system-ca'` (o proxy intercepta HTTPS; sem isso todos os portais dão `UNABLE_TO_VERIFY_LEAF_SIGNATURE`, código 4). No GitHub Actions e no PC sem proxy não precisa.
 
 ## Estado geral em 2026-11-24 (fim do dia)
 - Projeto **pessoal, sem fins comerciais**. Foco: concurso **Navegantes SC** (Proc. Seletivo 0172/2026, FURB; prova 13/12/2026; inscrições até 25/11 23h59). Cargos: ESF, PNE, Endodontista, Periodontista, BMF.
