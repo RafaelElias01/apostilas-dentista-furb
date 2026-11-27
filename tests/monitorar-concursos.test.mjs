@@ -1289,3 +1289,202 @@ test('confiarNosCertificadosDoSistema: importar o script não troca os certifica
   assert.equal(r.status, 0, r.stderr);
   assert.equal(r.stdout.trim(), 'igual', r.stderr);
 });
+
+// ---------- Rodada 2026-11-27: trechos das datas novas e sugestão de ajuste no site ----------
+test('trechosDeData: acha dd/mm/aaaa, dd/mm/aa, por extenso com acento e sem ano; respeita max', () => {
+  const trechosDeData = fn('trechosDeData');
+  const texto = 'Inscrições de 19/11 a 21/12/2026 às 17h. Prova em 1º de Março de 2027. Recurso até 22/12/26. Cronograma: 05/01.';
+  assert.match(trechosDeData(texto, '2026-12-21')[0], /19\/11 a 21\/12\/2026 às 17h/);
+  assert.match(trechosDeData(texto, '2027-03-01')[0], /1º de Março de 2027/);
+  assert.match(trechosDeData(texto, '2026-12-22')[0], /22\/12\/26/);
+  assert.match(trechosDeData(texto, '--01-05')[0], /Cronograma: 05\/01/);
+  assert.deepEqual(trechosDeData(texto, '2026-12-25'), []);
+  const repetido = Array.from({ length: 5 }, (_, i) => `item ${i} em 10/10/2026 ${'x'.repeat(200)}`).join(' ');
+  assert.equal(trechosDeData(repetido, '2026-10-10').length, 2);
+  assert.equal(trechosDeData(repetido, '2026-10-10', { max: 1 }).length, 1);
+  assert.ok(trechosDeData(repetido, '2026-10-10')[0].endsWith('…'));
+});
+
+test('trechosDeData: 21/12/2026 não casa dentro de 121/12/2026 nem 21/12/20260', () => {
+  const trechosDeData = fn('trechosDeData');
+  assert.deepEqual(trechosDeData('código 121/12/2026 e 21/12/20260', '2026-12-21'), []);
+});
+
+const mudConteudo = (o) => [{ titulo: T, url: U, tipo: 'conteudo', datasEntraram: [], datasSairam: [], linksEntraram: [], linksSairam: [], ...o }];
+const atuais = (...datas) => ({ datasAtuais: new Map([[T, new Set(datas)]]) });
+const tem = (lista, re) => lista.some((x) => re.test(x));
+
+test('sugerirAjustes: prazo do site não aparece -> provável mudança; data do cartão ausente; documento novo; datas novas', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-15T17:00:00-03:00', texto: 'Inscrições até 15/12/2026; prova em 10/01/2027.' }] };
+  const mud = mudConteudo({ datasEntraram: ['2026-12-21', '--01-05'], datasSairam: ['2026-12-15', '2027-01-10'], linksEntraram: ['https://x/retifica.pdf'] });
+  const s = sugerirAjustes(mud, concurso, atuais('2026-12-21', '--01-05')).get(T);
+  assert.ok(tem(s, /Datas novas nos documentos: 05\/01 \(sem ano\), 21\/12\/2026\./), s.join('\n'));
+  assert.ok(tem(s, /Prazo no site: 15\/12\/2026.*NÃO foi encontrada/), s.join('\n'));
+  assert.ok(tem(s, /cartão.*10\/01\/2027/), s.join('\n'));
+  assert.ok(tem(s, /Documento novo publicado \(1\)/), s.join('\n'));
+});
+
+test('sugerirAjustes: nunca diz que está tudo bem; prazo presente é dito com ressalva e as datas novas aparecem', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-21', texto: 'até 21/12/2026' }] };
+  const s = sugerirAjustes(mudConteudo({ datasEntraram: ['2027-02-02'] }), concurso, atuais('2026-12-21', '2027-02-02')).get(T);
+  assert.ok(tem(s, /Datas novas nos documentos: 02\/02\/2027/), s.join('\n'));
+  assert.ok(tem(s, /Prazo no site: 21\/12\/2026.*ainda aparece \(pode ser só no edital antigo\)/), s.join('\n'));
+  assert.ok(!tem(s, /Nada indica|tudo certo|nada muda/i), s.join('\n'));
+  assert.equal(sugerirAjustes([{ titulo: T, url: U, tipo: 'url-nova' }], concurso).size, 0);
+  assert.equal(sugerirAjustes([], {}).size, 0);
+});
+
+test('sugerirAjustes: sem retrato do certame não confere prazo nem cartão (não chuta "NÃO aparece")', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-21', texto: 'até 21/12/2026' }] };
+  const s = sugerirAjustes(mudConteudo({ datasEntraram: ['2027-02-02'] }), concurso).get(T);
+  assert.ok(tem(s, /Sem retrato atual/), s.join('\n'));
+  assert.ok(!tem(s, /NÃO foi encontrada|Prazo no site/), s.join('\n'));
+});
+
+test('presencaDaData: com ano, só sem ano e ausente; data sem ano casa com data completa do mesmo dia', () => {
+  const p = fn('presencaDaData');
+  assert.equal(p('2026-12-10', ['2026-12-10']), 'com ano');
+  assert.equal(p('2026-12-10', ['--12-10']), 'sem ano');
+  assert.equal(p('2026-12-10', ['2025-12-10']), 'nao');
+  assert.equal(p('--12-10', ['2026-12-10']), 'com ano');
+  assert.equal(p('--12-10', ['--12-10']), 'sem ano');
+  assert.equal(p('--12-10', []), 'nao');
+});
+
+test('main: relatório traz o trecho da data nova e a sugestão; --atualizar não grava o texto no estado', async (t) => {
+  const base = await servidorLocal(t, (req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end('<html><body><p>Inscrições prorrogadas até 21/12/2026 às 17h.</p></body></html>');
+  });
+  const UL = `${base}/pagina`;
+  const entrada = { situacao: [{ titulo: 'Local', encerraEm: '2099-12-15', texto: 'até 15/12/2099', links: [{ url: UL }] }] };
+  const estadoAnt = { geradoEm: 'x', itens: { Local: { [UL]: ok(['2099-12-15']) } } };
+  const dir = pastaTemp(t);
+  const arq = { entrada: path.join(dir, 'c.json'), estado: path.join(dir, 'e.json'), rel: path.join(dir, 'r.md') };
+  fs.writeFileSync(arq.entrada, JSON.stringify(entrada));
+  fs.writeFileSync(arq.estado, JSON.stringify(estadoAnt));
+  const arqChave = path.join(dir, 'chave.txt');
+  const codigo = await fn('main')(['--entrada', arq.entrada, '--estado', arq.estado, '--relatorio', arq.rel, '--chave', arqChave, '--atualizar', '--timeout', '5'], { agora: AGORA });
+  const rel = fs.readFileSync(arq.rel, 'utf8');
+  assert.equal(codigo, 3, rel);
+  assert.match(rel, /Trecho com 21\/12\/2026: `Inscrições prorrogadas até 21\/12\/2026 às 17h\.`/);
+  assert.match(rel, /Sugestão de ajuste no site/);
+  assert.match(rel, /Prazo no site: 15\/12\/2099.*NÃO foi encontrada/);
+  assert.match(rel, /Para aplicar:/);
+  assert.ok(rel.indexOf('Sugestão de ajuste') < rel.indexOf('Datas que entraram'), 'a sugestão vem antes da lista');
+  const gravado = fs.readFileSync(arq.estado, 'utf8');
+  assert.ok(!gravado.includes('prorrogadas'), 'o texto do documento não pode ir para o estado');
+  assert.equal(JSON.parse(gravado).itens.Local[UL].texto, undefined);
+  // a chave de deduplicação (hash do aviso) não leva trecho nem sugestão: só as mudanças
+  const chave = fs.readFileSync(arqChave, 'utf8');
+  assert.ok(!/prorrogadas|Sugest|Trecho/.test(chave), chave);
+});
+
+test('trechosDeData: segue as fronteiras do extrator (fração, número com ponto, ano de 2 dígitos)', () => {
+  const trechosDeData = fn('trechosDeData');
+  assert.deepEqual(trechosDeData('nota 5/1 apenas', '--01-05'), []); // "5/1" é fração
+  assert.match(trechosDeData('nota 5/1; cronograma 05/01', '--01-05')[0], /05\/01/);
+  assert.deepEqual(trechosDeData('versão 21.12.2026.1', '2026-12-21'), []);
+  // positivos de dd.mm.aaaa e dd-mm-aaaa (o negativo acima só vale se estes casam)
+  assert.equal(trechosDeData('até 15-12-2026', '2026-12-15').length, 1);
+  assert.equal(trechosDeData('até 15.12.2026', '2026-12-15').length, 1);
+  assert.equal(trechosDeData('em 2-2-2026', '2026-02-02').length, 1);
+  assert.equal(trechosDeData('em 21.12.2026 às 17h', '2026-12-21').length, 1);
+  assert.deepEqual(trechosDeData('em 01/01/69', '1969-01-01'), []); // o extrator lê 69 como 2069
+  assert.equal(trechosDeData('em 01/01/69', '2069-01-01').length, 1);
+});
+
+test('sugerirAjustes: cronograma sem ano 15/12 -> 21/12 dá "NÃO aparece"; prazo só sem ano dá aviso de conferência', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-15T23:59:00-03:00', texto: '' }] };
+  const mud = mudConteudo({ datasEntraram: ['--12-21'], datasSairam: ['--12-15'] });
+  const a = sugerirAjustes(mud, concurso, atuais('--12-21')).get(T);
+  assert.ok(tem(a, /15\/12\/2026.*NÃO foi encontrada/) && tem(a, /21\/12 \(sem ano\)/), a.join('\n'));
+  // prazo mudou, mas o cronograma ainda cita "15/12" para outro evento: não esconde, pede conferência
+  const b = sugerirAjustes(mud, concurso, atuais('2026-12-21', '--12-15')).get(T);
+  assert.ok(tem(b, /só aparece sem o ano \(15\/12\): conferir/), b.join('\n'));
+});
+
+test('sugerirAjustes: data que só mudou de documento continua "aparece" (com ressalva); sumida de todos dá "NÃO aparece"', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-15', texto: '' }] };
+  const mud = mudConteudo({ datasSairam: ['2026-12-15'] });
+  assert.ok(tem(sugerirAjustes(mud, concurso, atuais('2026-12-15')).get(T), /ainda aparece/));
+  assert.ok(tem(sugerirAjustes(mud, concurso, atuais()).get(T), /NÃO foi encontrada/));
+});
+
+test('sugerirAjustes: data do cartão sem ano é achada pela data completa; cargos/detalhes não viram "data do cartão"', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, texto: 'inscrições até 10/12', detalhes: [{ rotulo: 'carga', valor: '20/11 h' }] }] };
+  const mud = mudConteudo({ datasEntraram: ['2026-12-15'], datasSairam: ['2026-12-10'] });
+  const s = sugerirAjustes(mud, concurso, atuais('2026-12-15')).get(T);
+  assert.ok(tem(s, /cartão.*10\/12 \(sem ano\)/), s.join('\n'));
+  assert.ok(!tem(s, /20\/11/), s.join('\n'));
+  assert.ok(!tem(sugerirAjustes(mud, concurso, atuais('2026-12-10')).get(T), /cartão/));
+});
+
+test('sugerirAjustes: documento que não abriu (com e sem leitura anterior) é avisado; datas novas com teto', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const concurso = { situacao: [{ titulo: T, encerraEm: '2026-12-15', texto: '' }] };
+  const muitas = Array.from({ length: 12 }, (_, i) => `2027-03-${String(i + 1).padStart(2, '0')}`);
+  const s = sugerirAjustes(mudConteudo({ datasEntraram: muitas }), concurso,
+    { ...atuais(...muitas), naoAbriram: new Map([[T, 2]]), semLeitura: new Map([[T, 1]]) }).get(T);
+  assert.ok(tem(s, /Datas novas nos documentos: .*\(\+4\)\./), s.join('\n'));
+  assert.ok(tem(s, /1 documento\(s\) deste certame não abriram agora; para eles valeu a última leitura boa/), s.join('\n'));
+  assert.ok(tem(s, /1 documento\(s\) deste certame nunca foram lidos/), s.join('\n'));
+});
+
+test('sugerirAjustes: encerraEm em UTC e às 00:00 são lidos no dia certo de Brasília; usa o certame aberto', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const mud = mudConteudo({ datasSairam: ['2026-12-21'] });
+  const utc = { situacao: [{ titulo: T, encerraEm: '2026-12-22T02:59:00Z', texto: '' }] }; // 21/12 23h59 em Brasília
+  assert.ok(tem(sugerirAjustes(mud, utc, atuais('2026-12-21')).get(T), /Prazo no site: 21\/12\/2026.*ainda aparece/));
+  const meiaNoite = { situacao: [{ titulo: T, encerraEm: '2026-12-22T00:00:00-03:00', texto: '' }] }; // até o fim do dia 21
+  assert.ok(tem(sugerirAjustes(mud, meiaNoite, atuais('2026-12-21')).get(T), /Prazo no site: 21\/12\/2026/));
+  const dois = { situacao: [{ titulo: T, encerraEm: '2020-01-10', texto: '' }, { titulo: T, encerraEm: '2099-12-21', texto: '' }] };
+  assert.ok(tem(sugerirAjustes(mud, dois, { ...atuais('2099-12-21'), agora: AGORA }).get(T), /Prazo no site: 21\/12\/2099/));
+});
+
+test('trechosDeData: "010/12/2026" não é data; emoji não é cortado ao meio', () => {
+  const trechosDeData = fn('trechosDeData');
+  assert.deepEqual(trechosDeData('protocolo 010/12/2026', '2026-12-10'), []);
+  const emoji = '😀';
+  // emoji ocupa as posições 88-89; a data começa em 91; raio 2 faz o corte cair em 89 (metade baixa do emoji)
+  const t = trechosDeData(`${'x'.repeat(88)}${emoji} 10/12/2026`, '2026-12-10', { raio: 2 })[0];
+  assert.ok(t.includes(emoji), t);
+  assert.ok(!/[\uD800-\uDFFF]/.test(t.replace(/😀/g, '')), 'sobrou metade de par substituto');
+});
+
+test('montarRelatorio: teto de trechos e trecho como código inline (sem @, HTML nem comentário)', () => {
+  const montarRelatorio = fn('montarRelatorio');
+  const isos = Array.from({ length: 40 }, (_, i) => `2027-01-${String((i % 28) + 1).padStart(2, '0')}`).filter((x, i, a) => a.indexOf(x) === i);
+  const mud = [{ titulo: T, url: U, tipo: 'conteudo', datasEntraram: isos, datasSairam: [], linksEntraram: [], linksSairam: [] }];
+  const trechos = new Map([[U, new Map(isos.map((iso) => [iso, [`a ${iso} b`, `c ${iso} d`]]))]]);
+  const rel = montarRelatorio({ comparacao: { mudancas: mud, inacessiveis: [], linhasBase: [] }, urlsPorTitulo: { [T]: [U] }, geradoEm: 'x', semReferencia: false, trechos });
+  assert.equal((rel.match(/Trecho com/g) || []).length, 30);
+  assert.match(rel, /trecho\(s\) omitido\(s\)/);
+  const trechoSeguro = fn('trechoSeguro');
+  assert.equal(trechoSeguro('até 21/12 @fulano <!-- x `y`'), '`até 21/12 @fulano <!-- x \'y\'`');
+});
+
+test('trechosDeDatas: toda data que extrairDatas acha tem pelo menos um trecho (consistência)', () => {
+  const extrairDatas = fn('extrairDatas');
+  const trechosDeDatas = fn('trechosDeDatas');
+  const texto = 'Inscrições de 19/11 a 21/12/2026 às 17h; prova 1º de março de 2027; recurso 22/12/26; '
+    + 'resultado 15-01-2027 e 16.01.2027; homologação em 3 de Fevereiro de 2027; cronograma 05/01, 10/12.';
+  const datas = extrairDatas(texto);
+  assert.ok(datas.length >= 9, datas.join(','));
+  const t = trechosDeDatas(texto, datas);
+  for (const iso of datas) assert.ok((t.get(iso) || []).length >= 1, `sem trecho para ${iso}`);
+});
+test('sugerirAjustes: mudança só de datas que saíram, sem prazo nem cartão, não gera sugestão nem "Para aplicar"', () => {
+  const sugerirAjustes = fn('sugerirAjustes');
+  const mud = mudConteudo({ datasSairam: ['2026-10-01'] });
+  const sug = sugerirAjustes(mud, { situacao: [{ titulo: T, texto: '' }] }, atuais());
+  assert.equal(sug.size, 0);
+  const rel = fn('montarRelatorio')({ comparacao: { mudancas: mud, inacessiveis: [], linhasBase: [] }, urlsPorTitulo: { [T]: [U] }, geradoEm: 'x', semReferencia: false, sugestoes: sug });
+  assert.ok(!rel.includes('Para aplicar'), rel);
+});

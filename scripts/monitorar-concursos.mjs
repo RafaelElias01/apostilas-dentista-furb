@@ -143,6 +143,140 @@ export function extrairDatas(texto) {
 /** true se a data extraída é dd/mm sem ano (formato "--mm-dd"). */
 const ehSemAno = (x) => String(x).startsWith('--');
 
+/**
+ * Trechos do texto onde a data `iso` (aaaa-mm-dd ou --mm-dd) aparece, nos mesmos formatos que
+ * extrairDatas reconhece; ±`raio` caracteres de contexto, no máximo `max` trechos distintos.
+ * Serve para o relatório mostrar ONDE a data nova apareceu (conferência humana).
+ */
+export function trechosDeData(texto, iso, opcoes = {}) {
+  return trechosDeDatas(texto, [iso], opcoes).get(iso) || [];
+}
+
+/**
+ * Versão em lote: normaliza o texto UMA vez e devolve Map iso -> [trechos] para todas as datas.
+ * Mesmas fronteiras de extrairDatas (só mostra trecho do que o extrator de fato reconheceria).
+ */
+export function trechosDeDatas(texto, isos = [], { max = 2, raio = 90 } = {}) {
+  const original = String(texto ?? '');
+  // Mesma posição de cada caractere: tira acento e põe em minúsculas unidade por unidade.
+  const plano = original.split('').map((ch) => (ch.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()[0] ?? ch)).join('');
+  const saida = new Map();
+  for (const iso of isos) {
+    const semAno = ehSemAno(iso);
+    const [a, m, d] = semAno ? [null, ...iso.slice(2).split('-')] : iso.split('-');
+    // 1 ou 2 dígitos, como o \d{1,2} do extrator ("010/12" não é data)
+    const umOuDois = (x) => (Number(x) < 10 ? `(?:0${Number(x)}|${Number(x)})` : `${Number(x)}`);
+    const dd = umOuDois(d);
+    const mm = umOuDois(m);
+    const padroes = [];
+    if (semAno) {
+      // como no extrator: pelo menos 3 dígitos no total ("5/1" é fração, não data)
+      const minimo = (x) => x.replace(/[^\d]/g, '').length >= 3;
+      padroes.push([`(?<![\\d/.,])${dd}\\/${mm}(?![\\d/]|[.,]\\d)`, minimo]);
+    } else {
+      // ano com 2 dígitos só onde o extrator o leria como este ano (00-69 -> 20xx; 70-99 -> 19xx)
+      const ano = Number(a);
+      const curto = (ano >= 2000 && ano < 2070) || (ano >= 1970 && ano < 2000) ? `|${a.slice(2)}` : '';
+      padroes.push([`(?<![\\d/])${dd}\\/${mm}\\/(?:${a}${curto})(?![\\d/])`]);
+      padroes.push([`(?<![\\d.\\-/])${dd}([.-])${mm}\\1(?:${a})(?![\\d.\\-/]*\\d)`]); // (?:) evita que "\\1" + ano vire escape octal
+      const nomes = Object.entries(MESES).filter(([, n]) => n === Number(m)).map(([k]) => k).join('|');
+      padroes.push([`(?<!\\d)${dd}\\s*\\.?\\s*(?:º|°|o)?\\s+de\\s+(?:${nomes})\\s+de\\s+${a}(?!\\d)`]);
+    }
+    const trechos = [];
+    fora: for (const [p, aceita] of padroes) {
+      for (const r of plano.matchAll(new RegExp(p, 'g'))) {
+        if (aceita && !aceita(r[0])) continue;
+        let ini = Math.max(0, r.index - raio);
+        let fim = Math.min(original.length, r.index + r[0].length + raio);
+        // não cortar um caractere fora do plano básico (emoji etc.) ao meio
+        if (ini > 0 && /[\uDC00-\uDFFF]/.test(original[ini])) ini--;
+        if (fim < original.length && /[\uD800-\uDBFF]/.test(original[fim - 1])) fim++;
+        const t = `${ini > 0 ? '…' : ''}${original.slice(ini, fim).replace(/\s+/g, ' ').trim()}${fim < original.length ? '…' : ''}`;
+        if (!trechos.includes(t)) trechos.push(t);
+        if (trechos.length >= max) break fora;
+      }
+    }
+    saida.set(iso, trechos);
+  }
+  return saida;
+}
+
+/** Data (aaaa-mm-dd) de encerraEm no horário de Brasília (o fuso escrito no texto não importa). */
+function dataDoPrazo(encerraEm) {
+  const ms = prazoMs(encerraEm);
+  if (Number.isNaN(ms)) return null;
+  // -1 min: prazo às 00:00 de um dia significa "até o fim do dia anterior"
+  return new Date(ms - 3 * 3600 * 1000 - 60 * 1000).toISOString().slice(0, 10);
+}
+
+/**
+ * Como a data aparece no conjunto de datas lidas: 'com ano', 'sem ano' (só dd/mm) ou 'nao'.
+ * Para data sem ano ("--mm-dd"), qualquer data completa com o mesmo dia/mês conta como 'com ano'.
+ */
+export function presencaDaData(iso, datas) {
+  const lista = [...(datas || [])];
+  if (ehSemAno(iso)) {
+    if (lista.some((x) => !ehSemAno(x) && x.slice(4) === iso.slice(1))) return 'com ano';
+    return lista.includes(iso) ? 'sem ano' : 'nao';
+  }
+  if (lista.includes(iso)) return 'com ano';
+  return lista.includes(`--${iso.slice(5)}`) ? 'sem ano' : 'nao';
+}
+
+const MAX_DATAS_NA_SUGESTAO = 8;
+
+/**
+ * Sugestões de ajuste no site para cada certame com mudança de conteúdo. NÃO deduz nada a partir
+ * do que entrou/saiu: só CONSTATA, no retrato atual de todos os documentos do certame
+ * (`datasAtuais`: Map titulo -> datas lidas agora, com a última leitura boa dos que não abriram),
+ * se o prazo do site e as datas do cartão aparecem. Não muda nada; o dono confere e aprova.
+ * `naoAbriram` (opcional): Map titulo -> nº de documentos do certame que não abriram nesta execução.
+ */
+export function sugerirAjustes(mudancas = [], concurso = {}, { datasAtuais = new Map(), naoAbriram = new Map(), semLeitura = new Map(), agora: momento = Date.now() } = {}) {
+  // Só fatos; nunca "está tudo bem" (o edital antigo continua citando datas antigas e esconderia uma prorrogação).
+  const porTitulo = new Map();
+  const certames = Array.isArray(concurso?.situacao) ? concurso.situacao : [];
+  const lim = (lista) => lista.slice(0, MAX_DATAS_NA_SUGESTAO).map(brData).join(', ') +
+    (lista.length > MAX_DATAS_NA_SUGESTAO ? ` (+${lista.length - MAX_DATAS_NA_SUGESTAO})` : '');
+  for (const titulo of new Set(mudancas.map((x) => x.titulo))) {
+    const doCertame = mudancas.filter((x) => x.titulo === titulo && x.tipo === 'conteudo');
+    if (!doCertame.length) continue;
+    // mesmo critério do listarUrls: o certame aberto com esse título (o encerrado não é vigiado)
+    const comTitulo = certames.filter((c) => c?.titulo === titulo);
+    const item = comTitulo.find((c) => !certameEncerrado(c, momento)) || comTitulo[0] || {};
+    const entraram = [...new Set(doCertame.flatMap((x) => x.datasEntraram))].sort();
+    const novosDocs = [...new Set(doCertame.flatMap((x) => x.linksEntraram))];
+    const lista = [];
+    if (entraram.length) lista.push(`Datas novas nos documentos: ${lim(entraram)}. Ver os trechos abaixo (quando houver) e conferir se alguma muda prazo, prova ou resultado do site.`);
+    if (novosDocs.length) {
+      lista.push(`Documento novo publicado (${novosDocs.length}). Conferir se é retificação ou errata e se muda salário, vagas, datas, taxa ou prova; se mudar, atualizar o cartão e acrescentar o link.`);
+    }
+    const retrato = datasAtuais.get(titulo);
+    const prazo = typeof item.encerraEm === 'string' ? dataDoPrazo(item.encerraEm) : null;
+    if (!retrato) {
+      lista.push('Sem retrato atual dos documentos deste certame: não conferi o prazo nem as datas do cartão.');
+    } else {
+      if (prazo) {
+        const p = presencaDaData(prazo, retrato);
+        const base = `Prazo no site: ${brData(prazo)} (encerraEm). Nos documentos lidos agora, `;
+        if (p === 'com ano') lista.push(`${base}essa data ainda aparece (pode ser só no edital antigo).`);
+        else if (p === 'sem ano') lista.push(`${base}essa data só aparece sem o ano (${brData(`--${prazo.slice(5)}`).replace(' (sem ano)', '')}): conferir se ainda é o fim das inscrições.`);
+        else lista.push(`${base}essa data NÃO foi encontrada (mudança de prazo, ou data escrita num formato que o monitor não reconhece). Conferir no edital/retificação e, se mudou, atualizar encerraEm e o texto do cartão.`);
+      }
+      // só o texto do cartão (cargos/detalhes têm números como "20/11 h" que não são datas)
+      const doCartao = [...new Set(extrairDatas(item.texto || ''))]
+        .filter((x) => x !== prazo && !(prazo && x === `--${prazo.slice(5)}`) && presencaDaData(x, retrato) === 'nao');
+      if (doCartao.length) lista.push(`Data(s) do texto do cartão que não aparecem em nenhum documento lido agora: ${lim(doCartao)}. Conferir e corrigir o cartão.`);
+    }
+    const falhas = naoAbriram.get(titulo) || 0;
+    const nunca = semLeitura.get(titulo) || 0;
+    if (falhas - nunca > 0) lista.push(`Atenção: ${falhas - nunca} documento(s) deste certame não abriram agora; para eles valeu a última leitura boa.`);
+    if (nunca) lista.push(`Atenção: ${nunca} documento(s) deste certame nunca foram lidos com sucesso; a conferência acima está incompleta.`);
+    if (lista.length) porTitulo.set(titulo, lista); // certame sem nada a sugerir não entra (nem dispara "Para aplicar")
+  }
+  return porTitulo;
+}
+
 const PALAVRAS_DOCUMENTO = ['anexo', 'download', 'edital', 'retific', 'errata', 'cronograma'];
 
 /** Extrai de um HTML os links (absolutos) que parecem documentos; ordenados e únicos. */
@@ -518,13 +652,13 @@ export async function verificarUrl(url, { timeoutMs = 30000 } = {}) {
     if (ehPdf) {
       const texto = normalizarTexto(await pdfParaTexto(bytes, timeoutMs));
       if (!texto) return falha('PDF sem texto extraível (imagem escaneada?)');
-      return { datas: extrairDatas(texto), links: [], sha: sha256(texto), status: 'ok', verificadoEm };
+      return { datas: extrairDatas(texto), links: [], sha: sha256(texto), status: 'ok', verificadoEm, texto };
     }
     const html = decodificar(bytes, detectarCharset(tipo, bytes));
     const texto = /html|xml/i.test(tipo) || /<html|<body|<a\s/i.test(html) ? htmlParaTexto(html) : normalizarTexto(html);
     const bloqueio = ehBloqueio(texto, html, resp.status);
     if (bloqueio) return falha(bloqueio);
-    return { datas: extrairDatas(texto), links: extrairLinksDocumento(html, resp.url || url), sha: sha256(texto), status: 'ok', verificadoEm };
+    return { datas: extrairDatas(texto), links: extrairLinksDocumento(html, resp.url || url), sha: sha256(texto), status: 'ok', verificadoEm, texto };
   } catch (e) {
     return falha(e?.message || String(e));
   }
@@ -553,6 +687,17 @@ const brData = (iso) => {
   const [a, m, d] = iso.split('-'); return `${d}/${m}/${a}`;
 };
 
+const MAX_TRECHOS_RELATORIO = 30;
+
+/**
+ * Trecho de documento externo dentro da issue (repo público): vai como código inline, que o GitHub
+ * não interpreta (sem menção @, link, imagem, HTML nem comentário <!-- que esconderia o resto).
+ * Crases do próprio trecho viram apóstrofo.
+ */
+export function trechoSeguro(tr) {
+  return `\`${String(tr).replace(/`/g, '\'').replace(/[\r\n]+/g, ' ')}\``;
+}
+
 /** Dica para URLs não atualizadas: se a falha foi do pdftotext, lembrar de definir PDFTOTEXT. */
 function dicaNaoAtualizadas(lista) {
   return lista.some((x) => /pdftotext/i.test(String(x.motivo || '')))
@@ -564,7 +709,7 @@ function dicaNaoAtualizadas(lista) {
  * `naoAtualizadas` (opcional, só com --atualizar): [{ titulo, url, motivo }] das URLs
  * inacessíveis cuja referência NÃO foi atualizada (ficaram os dados da última leitura boa).
  */
-export function montarRelatorio({ comparacao, urlsPorTitulo, geradoEm, semReferencia, encerrados = [], naoAtualizadas = [] }) {
+export function montarRelatorio({ comparacao, urlsPorTitulo, geradoEm, semReferencia, encerrados = [], naoAtualizadas = [], trechos = new Map(), sugestoes = new Map() }) {
   const { mudancas, inacessiveis, linhasBase, removidos = [] } = comparacao;
   const L = [];
   L.push('# Monitor de concursos');
@@ -585,20 +730,45 @@ export function montarRelatorio({ comparacao, urlsPorTitulo, geradoEm, semRefere
     L.push('');
     const porTitulo = new Map();
     for (const m of mudancas) { if (!porTitulo.has(m.titulo)) porTitulo.set(m.titulo, []); porTitulo.get(m.titulo).push(m); }
+    let trechosRestantes = MAX_TRECHOS_RELATORIO; // a issue é cortada em ~60 KB: trechos com teto global
+    let trechosOmitidos = 0;
     for (const [titulo, lista] of porTitulo) {
       L.push(`### ${titulo}`);
       L.push('');
       const oficial = (urlsPorTitulo[titulo] || [])[0];
       if (oficial) { L.push(`URL oficial: ${oficial}`); L.push(''); }
+      // A sugestão vem antes da lista de datas (se a issue for cortada, é a lista que se perde).
+      const sug = sugestoes.get(titulo);
+      if (sug?.length) {
+        L.push('**Sugestão de ajuste no site** (nada foi mudado; conferir no documento oficial):');
+        L.push('');
+        for (const s of sug) L.push(`- ${s}`);
+        L.push('');
+      }
       for (const m of lista) {
         if (m.tipo === 'url-nova') { L.push(`- URL nova na lista monitorada: ${m.url}`); continue; }
         if (m.tipo === 'url-removida') { L.push(`- URL removida da lista monitorada: ${m.url}`); continue; }
         L.push(`- Em ${m.url}:`);
         if (m.datasEntraram.length) L.push(`  - Datas que entraram: ${m.datasEntraram.map(brData).join(', ')}`);
+        const t = trechos.get(m.url);
+        if (t) {
+          for (const iso of m.datasEntraram) {
+            for (const tr of t.get(iso) || []) {
+              if (trechosRestantes <= 0) { trechosOmitidos++; continue; }
+              trechosRestantes--;
+              L.push(`    - Trecho com ${brData(iso)}: ${trechoSeguro(tr)}`);
+            }
+          }
+        }
         if (m.datasSairam.length) L.push(`  - Datas que saíram: ${m.datasSairam.map(brData).join(', ')}`);
         for (const l of m.linksEntraram) L.push(`  - Documento novo: ${l}`);
         for (const l of m.linksSairam) L.push(`  - Documento que saiu: ${l}`);
       }
+      L.push('');
+    }
+    if (trechosOmitidos) { L.push(`(${trechosOmitidos} trecho(s) omitido(s) para o relatório não ficar grande demais.)`); L.push(''); }
+    if (sugestoes.size) {
+      L.push('Para aplicar: numa sessão do Claude neste projeto (responder aqui na issue não dispara nada), peça para conferir este aviso; ele confere o documento oficial, mostra o que mudaria e só publica depois do seu "aprovado".');
       L.push('');
     }
   }
@@ -716,8 +886,10 @@ export async function main(argv, { agora = Date.now() } = {}) {
   const itensAnt = anterior?.itens || {};
   const antPorUrl = achatarEstado(itensAnt);
   const atual = {};
+  const textos = new Map(); // url -> texto lido agora (só para os trechos do relatório; não vai para o estado)
   pares.forEach(({ titulo, url }, k) => {
     let r = resultados[k];
+    if (typeof r.texto === 'string') { textos.set(url, r.texto); const { texto, ...semTexto } = r; r = semTexto; } // eslint-disable-line no-unused-vars
     // Falha passageira não apaga a referência: mantém datas/links da última leitura boa.
     const prev = antPorUrl.get(url)?.dados;
     if (r.status !== 'ok' && prev && Array.isArray(prev.datas)) r = { ...r, datas: prev.datas, links: prev.links, sha: prev.sha };
@@ -738,7 +910,26 @@ export async function main(argv, { agora = Date.now() } = {}) {
     ? pares.flatMap(({ titulo, url }, k) => (resultados[k].status === 'ok' ? []
       : [{ titulo, url, motivo: resultados[k].motivo || resultados[k].status }]))
     : [];
-  const relatorio = montarRelatorio({ comparacao, urlsPorTitulo, geradoEm, semReferencia: !anterior, encerrados, naoAtualizadas });
+  const trechos = new Map(); // url -> Map(iso -> [trechos]) das datas que entraram
+  for (const m of comparacao.mudancas) {
+    if (m.tipo !== 'conteudo' || !m.datasEntraram.length || !textos.has(m.url)) continue;
+    trechos.set(m.url, trechosDeDatas(textos.get(m.url), m.datasEntraram));
+  }
+  // Retrato atual de TODOS os documentos de cada certame (URL compartilhada conta para todos os
+  // certames que a listam; documento que não abriu entra com a última leitura boa, já copiada em `atual`).
+  const porUrl = new Map();
+  for (const doTitulo of Object.values(atual)) for (const [url, r] of Object.entries(doTitulo)) porUrl.set(url, r);
+  const datasAtuais = new Map();
+  const naoAbriram = new Map();
+  const semLeitura = new Map();
+  for (const [titulo, urls] of Object.entries(urlsPorTitulo)) {
+    const rs = urls.map((u) => porUrl.get(u)).filter(Boolean);
+    datasAtuais.set(titulo, new Set(rs.flatMap((r) => (Array.isArray(r.datas) ? r.datas : []))));
+    naoAbriram.set(titulo, rs.filter((r) => r.status !== 'ok').length);
+    semLeitura.set(titulo, rs.filter((r) => r.status !== 'ok' && !Array.isArray(r.datas)).length);
+  }
+  const sugestoes = sugerirAjustes(comparacao.mudancas, concurso, { datasAtuais, naoAbriram, semLeitura, agora });
+  const relatorio = montarRelatorio({ comparacao, urlsPorTitulo, geradoEm, semReferencia: !anterior, encerrados, naoAtualizadas, trechos, sugestoes });
   const codigo = anterior && comparacao.mudancas.length ? 3
     // Referência incompleta só pesa sem --atualizar (com ele, essas URLs acabam de ser gravadas).
     : comparacao.inacessiveis.length || (!op.atualizar && comparacao.linhasBase.length) ? 4 : 0;
