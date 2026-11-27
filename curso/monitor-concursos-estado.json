@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-26T13:15:19.822Z",
+  "geradoEm": "2026-11-27T18:59:29.089Z",
   "itens": {
     "IFFar (RS): inscrições abertas": {
       "https://www.iffarroupilha.edu.br/editais-reitoria/item/48859-edital-n%C2%BA-406-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar": {
@@ -13,9 +13,9 @@
         "links": [
           "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5"
         ],
-        "sha": "e6e33cb1aa8d86619235db7d8742b3a5d7c177ac747137a81f66f1c1f0ad5d1a",
+        "sha": "97334295f7b2b1666b58238ef0b041694517a5eead9ab625fabe9a3d324688cb",
         "status": "ok",
-        "verificadoEm": "2026-11-26T13:15:17.320Z"
+        "verificadoEm": "2026-11-27T18:59:26.626Z"
       },
       "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5": {
         "datas": [
@@ -76,7 +76,52 @@
         "links": [],
         "sha": "180d08c898088f149013203b5c0566e95430c7f61388b8ec84f51f2fe1e40f62",
         "status": "ok",
-        "verificadoEm": "2026-11-26T13:15:17.332Z"
+        "verificadoEm": "2026-11-27T18:59:26.638Z"
+      },
+      "https://www.iffarroupilha.edu.br/editais-reitoria/item/49039-edital-n%C2%BA-434-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar-resultado-do-sorteio-p%C3%BAblico-complementar": {
+        "datas": [
+          "2021-01-29",
+          "2021-02-01",
+          "2026-11-25"
+        ],
+        "links": [
+          "https://www.iffarroupilha.edu.br/component/k2/attachments/download/61091/130cd667c4c93e107648b74893b6627a"
+        ],
+        "sha": "646b0469a01ec70b29eb9378018913eb13fe7b84361f4658ab746b7100b7cf17",
+        "status": "ok",
+        "verificadoEm": "2026-11-27T18:59:26.639Z"
+      },
+      "https://www.iffarroupilha.edu.br/editais-concursos": {
+        "datas": [
+          "2021-01-29",
+          "2021-02-01",
+          "2024-12-11",
+          "2024-12-12",
+          "2025-01-30",
+          "2025-01-31",
+          "2025-07-25",
+          "2025-07-29",
+          "2025-07-31",
+          "2025-08-05",
+          "2026-11-12",
+          "2026-11-25",
+          "2026-11-26"
+        ],
+        "links": [
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42118-edital-n%C2%BA-319-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-retifica%C3%A7%C3%A3o-do-edital-n%C2%BA-314-2025",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42129-edital-n%C2%BA-320-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-2%C2%AA-retifica%C3%A7%C3%A3o-do-edital-n%C2%BA-314-2025",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42145-edital-n%C2%BA-323-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-divulga%C3%A7%C3%A3o-das-notas-definitivas",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42146-edital-n%C2%BA-324-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-retifica%C3%A7%C3%A3o-do-cronograma",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42170-edital-n%C2%BA-328-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-homologa%C3%A7%C3%A3o-do-resultado-final",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/42224-edital-n%C2%BA-332-2025-concurso-p%C3%BAblico-de-docentes-do-iffar-retifica%C3%A7%C3%A3o-do-resultado-final",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/48859-edital-n%C2%BA-406-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/49039-edital-n%C2%BA-434-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar-resultado-do-sorteio-p%C3%BAblico-complementar",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/49040-edital-n%C2%BA-437-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar-retifica%C3%A7%C3%A3o-do-edital-de-abertura",
+          "https://www.iffarroupilha.edu.br/editais-reitoria/item/49070-edital-n%C2%BA-440-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar-2%C2%AA-retifica%C3%A7%C3%A3o-do-edital-de-abertura"
+        ],
+        "sha": "eaa6d0d72b1237c0a4ebfa375324fe90c6faf3241d1c19bb68bafa0a2cf354b2",
+        "status": "ok",
+        "verificadoEm": "2026-11-27T18:59:26.640Z"
       }
     },
     "São José do Inhacorá (RS): inscrições abertas": {
@@ -92,7 +137,7 @@
         ],
         "sha": "1b689e23f2d84c33fa2d4ab528bc675dcf4366370625b2cf501aa8e551ecab89",
         "status": "ok",
-        "verificadoEm": "2026-11-26T13:15:17.333Z"
+        "verificadoEm": "2026-11-27T18:59:26.966Z"
       },
       "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1962026-CP-LvEqGwZo.pdf": {
         "datas": [
@@ -114,7 +159,7 @@
         "links": [],
         "sha": "f6cfda0cd91904d2df57518fa2231205b8ca344bea1a1e19a8da2b55fa329f4f",
         "status": "ok",
-        "verificadoEm": "2026-11-26T13:15:17.333Z"
+        "verificadoEm": "2026-11-27T18:59:27.036Z"
       },
       "https://www.premierconcursos.com.br/2026/files/saojosedoinhacora/SJI-ED1982026-CP-PgKeImMe-Retifica.pdf": {
         "datas": [
@@ -134,7 +179,7 @@
         "links": [],
         "sha": "ae634e8ac62f95e0045ce2ca803b42a4c6726676cacbaa3a06b7dd13141615b7",
         "status": "ok",
-        "verificadoEm": "2026-11-26T13:15:17.542Z"
+        "verificadoEm": "2026-11-27T18:59:27.039Z"
       }
     }
   }

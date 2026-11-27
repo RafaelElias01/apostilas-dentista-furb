@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "26/11/2026",
+  "atualizadoEm": "27/11/2026",
   "avisoTopo": "Somente certames com inscrições abertas. Certames encerrados foram removidos. Prazos podem mudar; confirme o edital e o portal oficial antes de se inscrever.",
   "situacao": [
     {
@@ -9,7 +9,7 @@
       "cargos": [
         {
           "cargo": "Odontólogo (nível E, Técnico-Administrativo em Educação)",
-          "vagas": "4 vagas imediatas, sendo 1 reservada para pessoas negras (distribuição antes do sorteio de 18/11/2026; resultado do sorteio não conferido: PENDENTE)",
+          "vagas": "4 vagas imediatas: 3 de ampla concorrência e 1 reservada para pessoas negras; nenhuma para pessoas com deficiência, indígenas ou quilombolas (resultado do sorteio de 18/11/2026, Edital nº 434/2026)",
           "salario": "Vencimento básico de R$ 5.215,39. O auxílio-alimentação de R$ 1.192,00 é pago à parte. O edital não informa remuneração total.",
           "cargaHoraria": "40 horas por semana, em dois turnos (manhã, tarde e/ou noite), inclusive aos sábados",
           "requisitos": "Graduação em Odontologia (diploma registrado, curso reconhecido pelo MEC) e registro profissional ativo no conselho competente. Ter 18 anos na posse."
@@ -37,7 +37,8 @@
         { "rotulo": "Outros benefícios", "valor": "Auxílio-transporte e assistência à saúde suplementar, na forma da lei (sem valor no edital)" },
         { "rotulo": "Incentivo à qualificação", "valor": "Pago sobre o vencimento a quem tiver escolaridade superior à exigida pelo cargo (item 1.7.7.1 do edital). Como o Odontólogo já exige graduação, contam: especialização (360 h ou mais) 30%, mestrado 52% e doutorado 75%." }
       ],
-      "fonteDados": "Edital nº 406/2026 do IFFar (PDF oficial, Rev 10 de 12/11/2026), conferido em 26/11/2026. PENDENTE: o resultado do sorteio das vagas reservadas (18/11/2026) e eventuais retificações no site da Fundatec não foram conferidos (o site da banca não respondeu à consulta automática); a página oficial do IFFar lista só o edital Rev 10.",
+      "fonteDados": "Edital nº 406/2026 do IFFar (PDF oficial, Rev 10 de 12/11/2026), conferido em 26/11/2026, e Edital nº 434/2026 (resultado do sorteio complementar das vagas reservadas e retificação do Anexo I, DOU de 25/11/2026), conferido em 27/11/2026. PENDENTE: o site da Fundatec não respondeu à consulta automática, então outras publicações da banca não foram conferidas.",
+      "monitorar": ["https://www.iffarroupilha.edu.br/editais-concursos"],
       "links": [
         {
           "texto": "Edital oficial",
@@ -46,6 +47,10 @@
         {
           "texto": "Anexo do edital",
           "url": "https://www.iffarroupilha.edu.br/component/k2/attachments/download/60771/6db1a9c7c5589cf415840c0d8e9c79d5"
+        },
+        {
+          "texto": "Resultado do sorteio das vagas (Edital 434/2026)",
+          "url": "https://www.iffarroupilha.edu.br/editais-reitoria/item/49039-edital-n%C2%BA-434-2026-concurso-p%C3%BAblico-de-t%C3%A9cnicos-administrativos-em-educa%C3%A7%C3%A3o-do-iffar-resultado-do-sorteio-p%C3%BAblico-complementar"
         }
       ]
     },
