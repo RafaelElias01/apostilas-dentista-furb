@@ -8,9 +8,10 @@
 
 ## Propostas em espera (27/11/2026; dono: "nao faça apostilas ainda")
 Conferidas, NADA aplicado. Retomar só quando o dono mandar:
-- `curso/auditoria/proposta-2026-11-27-hiv-iffar.md`: (1) site, IFFar, resultado do sorteio (Edital 434/2026: 3 AC + 1 negros) e link; (2) Apostila 08, PCDT HIV 2024 (decidir com ou sem doses de fluconazol/nistatina).
+- APLICADO em 27/11 (commit cf80bd6, conferido no ar): site IFFar com o resultado do sorteio (Edital 434/2026: 3 AC + 1 negros) e link; vigia com `monitorar: [https://www.iffarroupilha.edu.br/editais-concursos]`.
+- ACHADO 27/11: Editais 437/2026 e 440/2026 do IFFar (retificações, DOU 25 e 26/11) reescrevem o item 1.7.7.1 (incentivo à qualificação) citando a Lei 15.141/2025 e dizem "conforme quadro a seguir", mas não trazem o quadro. Os percentuais do cartão (30/52/75%, do edital 406) ficam por conferir na Lei 11.091 com redação da Lei 15.141 (o Planalto não respondeu do PC com proxy). Vencimento do Odontólogo não mudou (R$ 5.215,39).
+- `curso/auditoria/proposta-2026-11-27-hiv-iffar.md`: (2) Apostila 08, PCDT HIV 2024 (decidir com ou sem doses de fluconazol/nistatina).
 - `curso/auditoria/proposta-2026-11-27-perio.md`: (3) Apostila 07, os três nomes das doenças necrosantes e os dois tipos de paciente (Papapanou 2018, repositório Univ. Genebra); (4) Apostilas 06 e 07, sequência do MS 2018 para a lesão endoperiodontal de causa endodôntica (o MS se contradiz sobre o momento da raspagem). Abscesso periodontal (técnica) continua PENDENTE: Herrera 2018 deu 403 na Wiley; o dono pode baixar pelo navegador para `fontes/`.
-- Vigia: acrescentar a página de editais do IFFar à lista (não pegou o Edital 434).
 - PDFs de conferência ficam só no `%TEMP%\perio27` do PC com proxy; no outro PC, baixar de novo pelas URLs das propostas.
 
 ## Estado geral em 2026-11-24 (fim do dia)
