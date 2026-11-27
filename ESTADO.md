@@ -6,6 +6,13 @@
 - Monitor de concursos: 1ª execução agendada (7h de 27/11) não apareceu; disparado à mão às 8h19 (saída 0, sem issue). Conferir nos próximos dias se o agendamento roda sozinho.
 - Teste forçado do monitor (27/11, local, cópia do estado adulterada: prazo 15/12 no lugar de 21/12 e link do edital removido): detectou as duas mudanças contra os portais reais (código 3). **No PC com proxy** o proxy intercepta HTTPS (sem ajuste, todos os portais dão `UNABLE_TO_VERIFY_LEAF_SIGNATURE`, código 4). Desde 27/11 o próprio script soma os certificados do Windows (`confiarNosCertificadosDoSistema`, Node ≥ 22.19/24.5); conferido sem `NODE_OPTIONS`: teste adulterado = 3, estado real = 0. Só em Node mais antigo é preciso `$env:NODE_OPTIONS='--use-system-ca'` (o script avisa no stderr). No GitHub Actions e no PC sem proxy não muda nada.
 
+## Propostas em espera (27/11/2026; dono: "nao faça apostilas ainda")
+Conferidas, NADA aplicado. Retomar só quando o dono mandar:
+- `curso/auditoria/proposta-2026-11-27-hiv-iffar.md`: (1) site, IFFar, resultado do sorteio (Edital 434/2026: 3 AC + 1 negros) e link; (2) Apostila 08, PCDT HIV 2024 (decidir com ou sem doses de fluconazol/nistatina).
+- `curso/auditoria/proposta-2026-11-27-perio.md`: (3) Apostila 07, os três nomes das doenças necrosantes e os dois tipos de paciente (Papapanou 2018, repositório Univ. Genebra); (4) Apostilas 06 e 07, sequência do MS 2018 para a lesão endoperiodontal de causa endodôntica (o MS se contradiz sobre o momento da raspagem). Abscesso periodontal (técnica) continua PENDENTE: Herrera 2018 deu 403 na Wiley; o dono pode baixar pelo navegador para `fontes/`.
+- Vigia: acrescentar a página de editais do IFFar à lista (não pegou o Edital 434).
+- PDFs de conferência ficam só no `%TEMP%\perio27` do PC com proxy; no outro PC, baixar de novo pelas URLs das propostas.
+
 ## Estado geral em 2026-11-24 (fim do dia)
 - Projeto **pessoal, sem fins comerciais**. Foco: concurso **Navegantes SC** (Proc. Seletivo 0172/2026, FURB; prova 13/12/2026; inscrições até 25/11 23h59). Cargos: ESF, PNE, Endodontista, Periodontista, BMF.
 - **Regra de agentes (ordem final do dono, 24/11/2026):** somente Sonnets, **no máximo 3 em paralelo**, um arquivo cada; nada de Opus.
